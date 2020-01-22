@@ -1,0 +1,217 @@
+
+/*------------------------------------*\
+    $DEBUG
+\*------------------------------------*/
+/**
+ * Activa esta hoja de estilos para detectar visualmente cualquier
+ * anidación impropia o marcado potencialmente inválido.
+ *
+ * Rojo           ==      Definitivamente un error
+ * Amarillo       ==      a revisar
+ * Ninguno        ==      debería estar bien
+ *
+ * Este método de validación no es más que una guía, no te bases en el
+ * para validar tu marcado
+ *
+ */
+
+
+/**
+ * Hay elementos vacíos?
+ */
+:empty{
+    outline:5px solid yellow;
+}  
+
+.container-2{
+border: 1px solid green;
+}
+
+
+
+/**
+ * Las imágenes requieren el atributo ALT, un ALT vacío no es del todo malo
+ * pero una imagen sin ALT definitivamente está mal.
+ */
+img{
+    outline:5px solid red;
+}
+img[alt]{
+    outline:none;
+}
+img[alt=""]{
+    outline:5px solid yellow;
+}
+
+
+/**
+ * Los links algunas veces, no siempre, se benefician del atributo "title".
+ * Links sin 'title' no son inválidos, pero es buena idea revisar.
+ */
+a{
+    outline:5px solid yellow;
+}
+a[title]{
+    outline:none;
+}
+
+
+/**
+ * Revisa los "href" con contenido dudoso.
+ */
+a[href="#"],
+a[href*="javascript"]{
+    outline:5px solid yellow;
+}
+
+
+/**
+ * El atributo 'target=""' es.... bueno, revisa.
+ */
+a[target]{
+    outline:5px solid yellow;
+}
+
+
+/**
+ * Asegúrate que una lista solo anida LI's
+ */
+ul,
+ol{
+    > *:not(li){
+        outline:5px solid red;
+    }
+}
+
+
+/**
+ * Deberíamos asignar un atributo 'scope' a los th
+ * http://bit.ly/1aHBDgW
+ */
+th{
+    outline:5px solid yellow;
+}
+th[scope]{
+    outline:none;
+}
+
+
+/**
+ * los tr hijos de 'table' no son buenos, ¿necesitabas un 'thead' / 'tbody'?
+ */
+table > tr{
+    outline:5px solid yellow;
+}
+
+
+/**
+ * `tfoot` debe estar *antes* de `tbody`.
+ */
+tbody + tfoot{
+    outline:5px solid yellow;
+}
+
+
+/**
+ * Forms necesitan del atributo `action`
+ */
+form{
+    outline:5px solid red;
+}
+form[action]{
+    outline:none;
+}
+
+
+/**
+ * Varios elementos de formularios requieren atributos. 'input' necsita de 'type'
+ * 'textarea' necesita `rows' y 'cols' y 'submit' necesita del atributo 'value'.
+ */
+textarea,
+input{
+    outline:5px solid red;
+}
+input[type]{
+    outline:none;
+}
+textarea[rows][cols]{
+    outline:none;
+}
+input[type=submit]{
+    outline:5px solid red;
+}
+input[type=submit][value]{
+    outline:none;
+}
+
+
+/**
+ * Evitamos estilos _inline_ a ser posible.
+ */
+[style]{
+        outline:5px solid yellow;
+}
+
+
+/**
+ * Deberías evitar IDs para CSS.
+ */
+[id]{
+        outline:5px solid yellow;
+}
+@mixin random-bgr(){
+  background: rgb(random(255), random(255), random(255));
+}
+@for $i from 1 through 8{
+
+
+.h#{$i} {
+position: relative;
+    &:after{
+content:"h#{$i}";
+position:absolute;
+      @include random-bgr();
+width:20px;
+height:20px;
+color:#fff;
+border-radius: 50%;
+padding: 3px;
+left: 0;
+top: -10px;
+font-size:10px;
+font-weight: bold;
+
+    }
+
+}
+}
+
+
+/* Elementos vacios*/
+div:empty, span:empty, li:empty, p:empty, td:empty, th:empty
+{ margin: 5px; border: 5px dotted yellow !important; }
+
+/*  Attributos vacios*/
+*[alt=""], *[title=""], *[class=""], *[id=""], a[href=""], a[href="#"]
+{ border: 5px solid yellow !important; }
+
+/*  Attributos deprecados*/
+applet, basefont, center, dir, font, isindex, menu, s, strike, u
+{ border: 5px dotted red !important; }
+
+
+*[background], *[bgcolor], *[clear], *[color], *[compact], *[noshade], *[nowrap], *[size], *[start],
+*[bottommargin], *[leftmargin], *[rightmargin], *[topmargin], *[marginheight], *[marginwidth], *[alink], *[link], *[text], *[vlink],
+*[align], *[valign],
+*[hspace], *[vspace],
+*[height], *[width],
+ul[type], ol[type], li[type]
+{ border: 5px solid red !important; }
+
+/* Proposed Deprecated Elements */
+input[type="button"], big, tt
+{ border: 5px dotted #33FF00 !important; }
+
+/* Proposed Deprecated Attributes */
+*[border], a[target], table[cellpadding], table[cellspacing], *[name]
+{ border: 5px solid #33FF00 !important; }

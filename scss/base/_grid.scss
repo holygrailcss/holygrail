@@ -1,0 +1,231 @@
+.is-flex {
+  display: flex;
+}
+
+
+/*+------------------------------------------------------------+
+ |       -CONTAINERS        
+ +------------------------------------------------------------+*/
+
+.container {
+  
+  padding-right: $padding-global;
+  padding-left: $padding-global;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+
+  max-width: 800px;
+
+  @media (min-width:$break-sm) {
+    //600px
+    padding-right: $padding-global;
+    padding-left: $padding-global;
+    width: 90%;
+    max-width: nth(map-values($breakpoints), 2);
+  }
+
+  @media (min-width:$break-md) {
+    //992px
+    width: 80%;
+    max-width: nth(map-values($breakpoints), 3);
+  }
+
+  @media (min-width:$break-lg) {
+    //1200px
+    width: 80%;
+    max-width: nth(map-values($breakpoints), 4);
+  }
+}
+
+.container-fluid {
+
+  padding-right: $padding-global;
+  padding-left: $padding-global;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+
+
+}
+
+.container-2 {
+  padding-right: $padding-global;
+  padding-left: $padding-global;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  width: 90%;
+  max-width: $container-2;
+
+}
+
+.container-3 {
+  padding-right: $padding-global;
+  padding-left: $padding-global;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  width: 90%;
+  max-width: $container-3;
+
+}
+
+.container-4 {
+  padding-right: $padding-global;
+  padding-left: $padding-global;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  width: 90%;
+  max-width: $container-4;
+
+}
+
+/*+------------------------------------------------------------+
+ |       -ROW        
+ +------------------------------------------------------------+*/
+
+
+
+@media (max-width:$break-sm - 1) {
+  [class*="col-"] {
+    padding-bottom: $padding-global;
+  }
+
+}
+
+@media (max-width:$break-md - 1) {
+  [class*="col-"] {
+    padding-bottom: $padding-global * 2;
+  }
+
+}
+
+@media (max-width:$break-lg - 1) {
+  [class*="col-"] {
+    padding-bottom: $padding-global * 2;
+  }
+
+}
+
+
+.row {
+     display: flex;
+         flex-wrap: wrap;
+  margin-right: -$padding-global;
+  margin-left: -$padding-global;
+
+  @for $i from 2 through length($breakpoints) {
+    @media (min-width: nth(map-values($breakpoints), $i)) {
+      margin-right: -$padding-global;
+      margin-left: -$padding-global;
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+/*+------------------------------------------------------------+
+ |       -COLS        
+ +------------------------------------------------------------+*/
+
+$colBreakpoints: length($breakpoints) - 1;
+
+@for $i from 1 through $colBreakpoints {
+  @media (min-width: nth(map-values($breakpoints), $i)) {
+
+    @for $c from 1 through $totalCols {
+      .col-#{nth(map-keys($breakpoints), $i)}-#{$c} {
+
+
+
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 percentage($c / $totalCols);
+          flex: 0 0 percentage($c / $totalCols);
+          max-width: percentage($c / $totalCols);
+
+      }
+    }
+  }
+}
+
+[class*="col-"] {
+  box-sizing: border-box;
+  position: relative;
+  min-height: 1px;
+  padding-right: $padding-global;
+  padding-left: $padding-global;
+
+
+}
+
+.col {
+  display: block;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding:0 $padding-global;
+}
+
+
+@mixin bleed($margin) {
+  .container-bleed-#{$margin} {
+    padding: 0;
+    overflow: hidden;
+
+    .row {
+      margin-left: -$margin/2+px;
+      margin-right: -$margin/2+px;
+
+      box-sizing: border-box;
+
+      display: flex;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+      flex: 0 1 auto;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+
+      flex-direction: row;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
+
+    [class*="col"] {
+      padding: $margin/2+px;
+      box-sizing: border-box;
+      box-sizing: border-box;
+    }
+  }
+
+  .single {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+
+  .double {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  @media (min-width: 768px) {
+    .single {
+      flex-basis: 25%;
+      max-width: 25%;
+    }
+
+    .double {
+      flex-basis: 50%;
+      max-width: 50%;
+    }
+  }
+}
+
+@include bleed(8);

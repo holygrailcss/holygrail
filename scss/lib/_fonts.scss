@@ -1,0 +1,45 @@
+
+@mixin font-light(){
+    font-family: $font-family-light;
+    font-weight: 300;
+
+}
+
+@mixin font-regular(){
+    font-family: $font-family-regular;
+    font-weight: 400;
+    line-height: 1.6;
+
+}
+
+@mixin font-medium(){
+    font-family:$font-family-medium;
+    font-weight: 600;
+
+}
+
+@mixin font-bold(){
+    font-family: $font-family-bold;
+    font-weight: 700;
+
+}
+
+
+@mixin fonters($param) {
+
+    @if($param=="regular") {
+       @include font-regular();
+    }
+
+    @else if($param=="medium") {
+            @include font-medium();
+    }
+
+    @else if($param=="bold") {
+           @include font-bold();
+    }
+
+    @else if($param=="light") {
+            @include font-light();
+    }
+}

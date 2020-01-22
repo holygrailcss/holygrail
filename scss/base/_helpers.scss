@@ -1,0 +1,187 @@
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+
+.text-justify {
+  text-align: justify;
+}
+
+//tamaños en altura de covers
+
+.hero-big {
+
+  min-height: 300px;
+
+  @media (min-width:$break-sm) {
+    min-height: 500px;
+  }
+
+}
+
+.hero-medium {
+
+  min-height: 200px;
+
+  @media (min-width:$break-sm) {
+    min-height: 400px;
+  }
+
+}
+
+.hero-mini {
+
+  min-height: 100px;
+
+  @media (min-width:$break-sm) {
+    min-height: 300px;
+  }
+
+}
+
+
+.title-tiny {
+  min-height: 50px;
+}
+
+.pt-20 {
+
+  padding-top: 20px;
+}
+
+
+
+/*+------------------------------------------------------------+
+ |       -flexbox    helpers
+ +------------------------------------------------------------+*/
+
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+
+.content-start {
+  justify-content: flex-start;
+}
+
+.content-end {
+  justify-content: flex-end;
+}
+
+.content-center {
+  justify-content: center;
+}
+
+.content-sp-between {
+  justify-content: space-between;
+}
+
+.content-sp-around {
+  justify-content: space-around;
+}
+
+.content-sp-evenly {
+  justify-content: space-evenly;
+}
+
+
+
+
+.align-top {
+  align-items: flex-start;
+}
+
+
+.align-middle {
+  align-items: center;
+}
+
+.align-bottom {
+  align-items: flex-end;
+}
+
+.align-stretch {
+  align-items: stretch;
+}
+
+.align-multi-top{
+align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.align-multi-bottom{
+align-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.align-multi-center{
+align-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+.align-multi-between{
+align-content: space-between;
+    flex-wrap: wrap;
+}
+
+.align-multi-around{
+align-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+.align-multi-stretch{
+align-content: stretch;
+    flex-wrap: wrap;
+}
+
+
+
+
+.d-inline {
+  display: inline-block;
+
+
+}
+
+ img.d-inline{
+  }
+
+.sticky-bottom {
+  width: 100%;
+
+  position: absolute;
+  box-sizing: border-box;
+  left: 0;
+  padding: 0 $padding-global $padding-global;
+  bottom: 0;
+
+
+}
+
+.bg-dark {
+  background-color: #eaeaea;
+  color: #fff; }

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html class="no-js" dir="ltr" lang="en-US" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#"
+	xmlns:fb="http://www.facebook.com/2008/fbml" prefix="og: http://ogp.me/ns#
+            fb: http://ogp.me/ns/fb#
+            rdfs: http://www.w3.org/2000/01/rdf-schema# 
+            xsd: http://www.w3.org/2001/XMLSchema#" itemscope="">
+
+<head>
+	<!--  Metadata Basica-->
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<!-- http://t.co/dKP3o1e -->
+	<meta name="HandheldFriendly" content="True" />
+	<meta name="MobileOptimized" content="320" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<link rel="stylesheet" href="../dist/js/prism/prism.css" />
+
+	<link rel="stylesheet" href="../dist/guide.css" />
+	<meta http-equiv="Accept-CH" content="DPR,Width,Viewport-Width" />
+	<!-- Core Meta -->
+	<title>GUIA </title>
+</head>
+
+<body class="ltr guide">
+
+	<div class="header-menu">
+
+			<iframe class="menutop" src="../../docs/menutop.html" height="100%" frameborder="0" seamless></iframe>
+
+
+	</div>
+
+
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-3">
+
+
+				<iframe class="menulateral" src="../../docs/menu.html" height="100%" frameborder="0" seamless></iframe>
+
+			</div>
+
+			<div class="col-xs-9 pt-50">
+
+
+				<section>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-xs-12">
+								<h1 class="h1">Grid</h1>
+
+								<p class="text-18-r">
+Diseñando la estructura con las siguientes clases						</p>
+								<p class="text-18-r">
+					
+
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+
+
+				<section>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="title-guide">Modo de uso
+								<div class="h3"> Estructura inicial</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col">
+								<div class="box-info  mb-20">
+									<p class="p1">
+										Antes de nada , vamos al sass de settings y habilitamos el for
+										con colores randoms. descomentamos @include random-bgr() para
+										maquetar;
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col">
+								<div class="steps">
+									<span class="num">1</span>
+									<div class="h3">
+										section
+									</div>
+									<p>preparamos la seccion / tipo de espaciado en paddings / tipo de
+										background oscuro o claro
+									</p>
+								</div>
+
+								<div class="steps">
+									<span class="num">2</span>
+									<div class="h3">
+										Container
+									</div>
+									<p>elegimos el tipo de container-fluid usado</p>
+									<ul>
+										<li> .container-2 600px </li>
+										<li> .container-3 900px</li>
+										<li> .container-fluid 100%</li>
+									</ul>
+								</div>
+
+								<div class="steps">
+									<span class="num">3</span>
+
+									<div class="h3">
+										Row
+									</div>
+
+									<p>Colocamos el row , siempre es flex menos en el primer
+										breakpoint sm <br />
+										ademas, usaremos tipo de centrado vertical .flex-column ,
+										.flex-row, .align-stretch , .align-top, .align-middle ,
+										.align-bottom <br />
+										/ altura de la caja .hero-big .hero-medium .hero-mini
+									</p>
+
+									<ul>
+										<li>
+											.col-[xs,sm,md,lg ]-12 <br />
+											<p> @media (min-width:$break-xs) col-xs-12 desde 1px </p>
+											<p> @media (min-width:$break-sm) col-xs-12 desde 600px </p>
+											<p> @media (min-width:$break-md) col-xs-12 desde 992px </p>
+											<p> @media (min-width:$break-lg) col-xs-12 desde 1280px </p>
+										</li>
+										<li> .col (flex)</li>
+									</ul>
+
+									<ul>
+										<li> 2- Incluimos los textos seo < h1,h2,h3,h4, p>
+										</li>
+										<li>
+											<p> TEXTO-- le damos tamaño y propiedades de texto </p>
+										</li>
+										<li>
+											<p> MARGENES Y PADDINGS -- margenes y paddings </p>
+										</li>
+										<li>
+											<p> HELPERS -- alineamos </p>
+										</li>
+									</ul>
+
+									Creación de un componente
+
+									<div class="col-xs-12">
+										-nombre
+									</div>
+
+									<li>3- row
+										<ul>
+											<li> .col-xs-12 </li>
+											<li> .col (flex)</li>
+										</ul>
+									</li>
+								</div>
+							</div>
+
+							<div class="col">
+								<div class="box-demo">
+									section
+
+									<div class="box-demo">
+										.container
+										<div class="box-demo">
+											.row
+										</div>
+										<div class="box-demo">
+											<div class="row">
+												<div class="col">
+													.col-xs-12 col-sm-12 col-md-12 col-lg-12
+													<div class="box-demo-inner">
+														Componente X
+													</div>
+												</div>
+												<div class="col">
+													.col-xs-12 col-sm-12 col-md-12 col-lg-12
+													<div class="box-demo-inner">
+														Componente X
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="title-guide">Modo de uso
+								<div class="h3"> Creación de un componente</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col"> </div>
+							<div class="col">
+								<div class="box-demo2">
+									md-componente
+
+									<div class="box-demo2">
+										md-componente-wrap
+										<div class="box-demo2">
+											md-componente-inner
+											<div class="box-demo2">
+												<ul class="list-clear">
+													<li> + -img </li>
+													<li>+ -text </li>
+													<li>+ -info </li>
+													<li>+ -ref </li>
+													<li>+ -delete </li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="title-guide">Modo de uso
+								<div class="h3"> Creación de un estilo</div>
+							</div>
+						</div>
+
+						<div class="col">
+							<h5 class="h5">texto de la composición</h5>
+
+							<pre><code class="language-markup">
+    
+  &lt;h5 class=&quot;[ fuentes h5  ] [ margenes mb-20] [paddings py-20] [text-center]  &quot;&gt;texto &lt;/h5&gt; 
+
+  &lt;p class=&quot;[ fuentes p1  ] [ margenes mt-20] [paddings pt-20]  [text-right]  &quot;&gt;texto &lt;/p&gt;  
+  
+  </code></pre>
+
+							<div class="row">
+								<div class="col">
+									Anatomia de un Texto
+								</div>
+							</div>
+
+							<div class="row text-14-m">
+								<div class="col">
+									h1 h2 h3 h4 h5 h6 p span <br />
+									<p class="p1">Usados para SEO</p>
+								</div>
+								<div class="col">
+									fuentes <br />
+									<p class="p1">
+										.H para headers responsive <br />
+										.P para parrafos responsive <br />
+										.TEXT- para fijos
+									</p>
+								</div>
+								<div class="col">
+									márgenes <br />
+									<p class="p1"> </p>
+								</div>
+
+								<div class="col"> paddings </div>
+
+								<div class="col"> helpers </div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="mb-50">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="title-guide">Breakpoints </div>
+
+						</div>
+						<div class="row">
+
+							<div class="guide-breakpoints">
+								<div class="guide-xs">xs</div>
+								<div class="guide-sm">sm</div>
+								<div class="guide-md">md</div>
+								<div class="guide-lg">lg</div>
+								<div class="guide-xl">xl</div>
+							</div>
+							<img src="../images/interval.png" alt="" />
+						</div>
+					</div>
+				</section>
+
+
+
+			</div>
+		</div>
+	</div>
+	<script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,187 @@
+/*------------------------------------*\
+    $BOTONES
+\*------------------------------------*/
+/*
+ * Definimos los botones y sus variantes
+ */
+
+
+/**
+ * .btn es la clase principal para definir un botón  es el tipo
+ */
+.btn {
+    position: relative;
+    display: inline-block;
+    line-height: 1.2;
+    text-align: center;
+    vertical-align: middle;
+    box-sizing: border-box;
+    font-size: 14px;
+    margin-right:$padding-global;
+
+    white-space: nowrap;
+    cursor: pointer;
+
+    padding: $padding-btn;
+    height: 48px;
+
+
+    /**
+ 	* Nadie quiere un botón con texto subrayado cuando
+ 	* hacemos hover.
+ 	*/
+
+    &:hover {
+        text-decoration: none;
+        opacity: .6;
+
+    }
+
+    &:active,
+    &:focus {
+        outline: none;
+    }
+
+    &:visited {}
+
+
+}
+
+
+.btn-xs {
+    position: relative;
+    display: inline-block;
+    line-height: 1.2;
+    text-align: center;
+    vertical-align: middle;
+    box-sizing: border-box;
+    font-size: 12px;
+    margin-right:$padding-global;
+
+    white-space: nowrap;
+    cursor: pointer;
+
+    padding: $padding-btn / 2;
+
+    /**
+ 	* Nadie quiere un botón con texto subrayado cuando
+ 	* hacemos hover.
+ 	*/
+
+    &:hover {
+        text-decoration: none;
+        opacity: .6;
+
+    }
+
+    &:active,
+    &:focus {
+        outline: none;
+    }
+
+    &:visited {}
+
+
+}
+
+
+
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.link-btn {
+    height: 42px;
+    width: 100%;
+    line-height: 42px;
+    text-align: center;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    background: $primary;
+    border: none;
+    color: #fff;
+    transition: all 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+}
+
+
+/*------------------------------------*\
+    $BOTONES-TAMAÑOS
+\*------------------------------------*/
+/**
+ * Variantes de los botones por tamaño.
+ *
+ */
+
+.btn--mini {
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+    line-height: 1.5;
+    font-size: fs(x-small);
+}
+
+.btn--small {
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+    line-height: 2;
+    font-size: fs(small);
+}
+
+.btn--large {
+    padding-right: 3em;
+    padding-left: 3em;
+    line-height: 3;
+    font-size: fs(big);
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: $primary;
+    border: 1px solid $primary;
+
+}
+
+.btn-phantom {
+    color: black;
+    background-color: transparent;
+    border: 1px solid black;
+
+}
+
+.btn-phantom-invert {
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+
+}
+
+
+/*------------------------------------*\
+    $BOTONES-GRUPOS
+\*------------------------------------*/
+/**
+ * Con esta clase podemos agrupar los botones
+ * en grupos horizontales.
+ *
+ */
+.btn-group {
+    position: relative;
+
+    [class^="btn--"],
+    [class*=" btn--"] {
+        position: relative;
+        border-radius: 0;
+        float: left;
+        margin-left: -1px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:last-child {}
+    }
+}

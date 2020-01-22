@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html class="no-js" dir="ltr" lang="en-US" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#"
+  xmlns:fb="http://www.facebook.com/2008/fbml" prefix="og: http://ogp.me/ns#
+            fb: http://ogp.me/ns/fb#
+            rdfs: http://www.w3.org/2000/01/rdf-schema# 
+            xsd: http://www.w3.org/2001/XMLSchema#" itemscope="">
+
+
+<head>
+  <!--  Metadata Basica-->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+  <meta http-equiv="x-dns-prefetch-control" content="on" />
+  <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://ajax.googleapis.com">
+  <link rel="dns-prefetch" href="//www.google-analytics.com">
+
+
+  <link rel="stylesheet" href="dist/guide.css">
+  <!-- 3. Prefetch Hints
+  - captura previa de activos para una navegación futura, colocar en caché ...
+          - identifica un archivo de recursos, como una imagen o una hoja de estilo CSS, para descargar en la memoria caché.
+          - identifica recursos que pueden ser necesarios en la navegación futura
+          - tener la menor prioridad posible
+          USO DE FUENTES EXTERNAS GOOGLE FONTS
+            <link rel="prefetch" href="{font}.woff">
+            <link rel="preload" href="{font}.woff" as="font">
+        -->
+
+  <!-- 4. Prerender hints
+- página de representación previa en la pestaña de fondo para navegación futura
+          - Identifica una página web para cargar en segundo plano, en caso de que el usuario quiera navegar a continuación.
+          - iniciar el procesamiento de fondo de toda la página
+          - la página se recupera y todos sus activos
+          - Use ** API de visibilidad de página ** para diferir las acciones de JS hasta que la página sea visible
+          - Solo se pueden procesar previamente las páginas "seguras" (también conocido como GET)
+          - La representación previa requiere muchos recursos: úsela con precaución
+                    SI USAMOS ANGULAR
+  <link rel="prerender" href="//example.org/next_page.html">
+          -->
+
+
+
+  <meta http-equiv="Accept-CH" content="DPR,Width,Viewport-Width">
+
+  <!-- Core Meta -->
+  <title>Gabinete jurídico líder en asesoria legal laboral | {domain}.es </title>
+  <meta name="description"
+    content="{domain}.es -  Velamos por sus intereses. respetamos su confianza. Tel: +34 888 88 88 88 Sevilla" />
+  <meta name="keywords" content="
+  abogado laboral, servicios jurídicos, abogado laboralista, defensa jurídica, indemnizaciones,despidos, abogado sevilla, incapacidades, jubilaciones, gabinete jurídico, asesoría jurídica, despacho abogados, accidentes laborales, impagados
+  
+  " />
+
+
+  <link rel="icon" sizes="any" mask="true" href="favicons/favicon.svg">
+  <link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="favicons/favicon-194x194.png" sizes="194x194">
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="favicons/apple-touch-icon-57x57.png">
+  <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="favicons/apple-touch-icon-57x57.png"
+    sizes="16x16 32x32 48x48">
+
+
+
+  <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon-180x180.png">
+  <!-- Apple Startup Images https://developers.google.com/web/fundamentals/device-access/stickyness/additional-customizations?hl=en-->
+  <!-- iOS 6 & 7 iPad (retina, portrait) -->
+  <link href="/static/images/apple-touch-startup-image-1536x2008.png" media="(device-width: 768px) and (device-height: 1024px)
+                and (orientation: portrait)
+                and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+  <!-- iOS 6 & 7 iPad (retina, landscape) -->
+  <link href="/static/images/apple-touch-startup-image-1496x2048.png" media="(device-width: 768px) and (device-height: 1024px)
+                and (orientation: landscape)
+                and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+  <!-- iOS 6 iPad (portrait) -->
+  <link href="/static/images/apple-touch-startup-image-768x1004.png" media="(device-width: 768px) and (device-height: 1024px)
+                and (orientation: portrait)
+                and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+  <!-- iOS 6 iPad (landscape) -->
+  <link href="/static/images/apple-touch-startup-image-748x1024.png" media="(device-width: 768px) and (device-height: 1024px)
+                and (orientation: landscape)
+                and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+  <!-- iOS 6 & 7 iPhone 5 -->
+  <link href="/static/images/apple-touch-startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px)
+                and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+  <!-- iOS 6 & 7 iPhone (retina) -->
+  <link href="/static/images/apple-touch-startup-image-640x920.png" media="(device-width: 320px) and (device-height: 480px)
+                and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+  <!-- iOS 6 iPhone -->
+  <link href="/static/images/apple-touch-startup-image-320x460.png" media="(device-width: 320px) and (device-height: 480px)
+                and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+  <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="{domain}.es">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!-- Toolbar color for Chrome on Android-->
+  <meta name="theme-color" content="#125688">
+
+  <!-- Mobile Internet Explorer ClearType Technology -->
+  <meta http-equiv="cleartype" content="on">
+
+  <!-- Let google know which URL to use for Mobile devices-->
+  <link rel="alternate" media="only screen and (max-width: 640px)" href="http://m.example.com/page-1" />
+  <link rel="alternate" media="handheld" href="http://phone.example.com/page-1" />
+
+  <!-- Google Indexing for Mobile Apps 
+  <link rel="alternate" href="android-app://android.{domain}.es/URL">
+  <link rel="alternate" href="ios-app://000000000/{domain}.es/URL">
+  -->
+
+  <!-- IE9+ and Windows7+ Pinned Tabs Check
+       http://davidwalsh.name/msapplication-task
+       http://www.hanselman.com/blog/IE9SiteSpecificBrowsersAndAddingYourOwnJumpListItemsToPinnedTabs.aspx
+    -->
+  <meta name="application-name" content="{domain}.es">
+  <meta name="application-url" content="https://www.{domain}.es">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="msapplication-tooltip" content="{domain}.es - description" />
+  <meta name="msapplication-starturl" content="./" />
+  <meta name="msapplication-navbutton-color" content="#FF3300" />
+  <meta name="msapplication-window" content="width=device-width;height=device-height" />
+
+  <!-- Windows 8+ Pinned Live Tiles
+       Check
+       http://www.hanselman.com/blog/MakeAWindows81PinnedLiveTileForYOURWebsiteInMinutes.aspx
+    -->
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="msapplication-config" content="/browserconfig.xml" />
+
+  <!-- Humans, Robots and Friends - Check 
+       http://www.robotstxt.org/ and 
+       http://humanstxt.org/
+       http://gmpg.org/xfn/
+    -->
+  <meta name="generator" content="{domain}.es">
+  <meta name="robots" content="index, follow">
+  <meta name="revisit-after" content="1 DAYS">
+  <link rel="author" type="text/plain" href="humans.txt" />
+
+  <meta name="contact" content="info@{domain}.es" />
+  <meta name="geography" content="spain">
+
+
+  <!-- XHTML Friends Network -->
+  <link rel="profile" href="http://gmpg.org/xfn/11">
+  <link rel="me" type="text/html" href="http://twitter.com/{domain}.es" />
+  <link rel="me" type="text/html" href="http://facebook.com/{domain}.es" />
+
+  <!-- Twitter Card - Check - https://blog.bufferapp.com/twitter-cards-guide; https://dev.twitter.com/cards/getting-started-->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="">
+  <meta name="twitter:title" content="Twitter title">
+  <meta name="twitter:description" content="Twitter description">
+  <meta name="twitter:image" content="image URL">
+  <meta name="twitter:site" content="@{domain}.es" />
+  <!-- 
+La cuenta de Twitter del sitio web / plataforma en la que se publicó el contenido-->
+  <meta name="twitter:creator" content="@{domain}.es">
+  <!-- The Twitter account that created the content within the card -->
+
+  <!-- Facebook - Check http://davidwalsh.name/facebook-meta-tags -->
+  <meta property="fb:page_id" content="{fbPageID}" />
+  <meta property="fb:app_id" content="{fbAppID}" />
+  <meta property="fb:admins" content="{adminUser}" />
+
+  <meta name="google-site-verification" content="U3HBKfJqVjIEMVkI-sYvWVfuDmC4AvVDlPSvQs3ZgvA" />
+
+  <!-- Open Graph Tags - Check http://ogp.me/ -->
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Title" />
+  <meta property="og:description" content="description..." />
+  <meta property="og:url" content="http://current.url.com" />
+  <meta property="og:image" content="http://image.url.com/cover.jpg" />
+  <meta property="og:site_name" content="{domain}.es" />
+
+  <!-- Facebook Publicar imágenes. Se puede repetir para permitir la elección al publicar-->
+  <link rel="image_src" href="http://URL-TO-YOUR-IMAGE" />
+
+  <!-- Dublin Core Metadata : http://dublincore.org/ -->
+  <meta name="DC.title" content="">
+  <meta name="DC.creator" content="">
+  <meta name="DC.subject" content="">
+  <meta name="DC.description" content="">
+  <meta name="DC.publisher" content="">
+  <meta name="DC.contributor" content="">
+  <meta name="DC.date" content="">
+  <meta name="DC.type" content="">
+  <meta name="DC.language" content="">
+  <meta name="DC.relation" scheme="URI" content="">
+  <meta name="DC.right" content="">
+
+
+  <!-- Geo -->
+  <meta name="geo.placename" content="spain" />
+  <meta name="geo.position" content="37.3765021,-6.0393076" />
+  <meta name="geo.region" content="spain" />
+  <meta name="ICBM" content="37.3765021,-6.0393076" />
+
+  <!-- App links - Check http://applinks.org/documentation/-->
+  <meta property="al:iphone:url" content="applinks://docs" />
+  <meta property="al:iphone:app_name" content="{domain}.es" />
+  <meta property="al:android:app_name" content="{domain}.es" />
+  <meta property="al:android:package" content="com.{domain}.es" />
+  <meta property="al:web:url" content="https://{domain}.es" />
+
+  <!-- RSS + ATOM Feed -->
+  <link rel="alternate" type="application/rss+xml" title="{domain}.es &raquo; Feed" href="http://{domain}.es/feed/" />
+  <link rel="alternate" type="application/rss+xml" title="{domain}.es &raquo; Feed and blogs"
+    href="http://{domain}.es/blog/feed/" />
+
+  <!-- Open Search -->
+  <link rel="search" type="application/opensearchdescription+xml" href="opensearch.xml" title="{domain}.es">
+
+
+
+
+  <script type='application/ld+json'>
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "name": "{domain}.es",
+      "url": "https://www.{domain}.es",
+      "logo": "https://www.{domain}.es/images/logo_2.png",
+      "sameAs": [
+        "https://www.facebook.com/{domain}.es",
+        "https://plus.google.com/+{domain}.es"
+      ],
+      "contactPoint": [{
+        "@type": "ContactPoint",
+        "telephone": "+34854746720",
+        "contactType": "customer service",
+        "availableLanguage": [
+          "Spanish"
+        ]
+      }]
+    }
+  </script>
+
+
+
+  <!-- Verification -->
+  <meta name="alexaVerifyID" content="" />
+  <meta name="msvalidate.01" content="" />
+  <meta name="google-site-verification" content="" />
+  <meta name="yandex-verification" content="" />
+  <meta name="verify-v1" content="" />
+  <meta name="y_key" content="">
+
+  <!-- No Translate -->
+  <meta name="google" content="notranslate">
+
+
+  <!-- IE Fix for HTML5 Tags -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  <!-- Inline above-the-fold css here see:
+        http://www.smashingmagazine.com/2014/09/improving-smashing-magazine-performance-case-study/#inlining-critical-css
+    -->
+  <style>
+  </style>
+</head>
+
+<body class="ltr">
+
+
+  <!--[if lt IE 8]>
+    <p class="browserupgrade">Esta usando un navegador obsoleto <strong>desactualizado</strong>. Por favor <a href="http://browsehappy.com/">actualize su navegadorr</a> para mejorar su experiencia de usuario</p>
+    <![endif]-->
+
+  <div class="columns align-middle  is-flex hero-big   fondo-1">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="logo"> <img alt="logo" src="images/logo_2.png" alt="">  </div>
+          <h1 class="h1 "><b>
+              Tu abogado laboral
+            </b>
+          </h1>
+          <h2 class="h2">
+
+
+            ¿Quieres respuesta a tu problema laboral?
+            Has encontrado los expertos que buscabas <br>
+
+            Somos los especialistas que necesitas</h2>
+          <p>Nuestros años de experiencia laboral y en materias de seguridad social nos avalan
+          </p>
+          <h1> <a href="guia.html"> guia</a></h1>
+        </div>
+        <div class="col"></div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <section class="py-50">
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col">
+          <img alt="logo" src="images/a_laboral.jpg" alt="">
+        </div>
+        <div class="col">
+
+          <h3 class="h3 pb-20">BIENVENIDOS A <br> <b>
+              ABOGADO LABORAL
+            </b> </h3>
+
+
+
+          <p class="text-justify">
+
+            Nuestra firma se forma por la unión de abogados especializados en derecho laboral,
+            incapacidad y en centros especiales de empleo, asesorando indistintamente a
+            empresas, particulares y asociaciones. <br> <br>
+            Nuestra marca se basa en que solo con el conocimiento específico de la materia
+            pueden conseguirse la perfección profesional, por tal motivo desde el bufete se
+            mantienen rigurosas normas de calidad, teniendo como único objetivo el éxito del
+            procedimiento.
+          </p>
+
+
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <section class="py-50">
+
+    <div class="container-2">
+      <div class="row">
+        <div class="col text-center">
+          <h4 class="h4">
+            Nuestros Servicios </h4>
+          <h2 class="h2 pb-20">
+            SERVICIOS
+          </h2>
+          <p>
+            Para dar un servicio completo, el bufete cuenta con un departamento laboral, fiscal y
+            contable donde trabajan expertos por materias para solucionar los problemas diarios
+
+            de empresas y particulares
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modulo 3 - 3 items -->
+
+  <section>
+    <div class="container">
+      <div class="row-6">
+        <div class="col">
+          <h5 class="h5 title-tiny"> Centros Especiales de empleo </h5>
+          <p class="text-justify">Somos el primer despacho de abogados en Andalucía especializado íntegramente en
+            centros especiales de empleo, tanto en la creación, gestión y asesoramiento de los
+            mismos, así como la tramitación de todo tipo de subvenciones.
+            Asesoramos a diferentes entidades empresariales y sociales a nivel provincial y
+            autonómico, en temas de contrataciones de discapacitados así como en derecho
+
+            laboral. </p>
+        </div>
+        <div class="col">
+          <h5 class="h5 title-tiny"> Pensiones por incapacidad laboral
+          </h5>
+          <p class="text-justify">Solucionamos tus problemas y dudas para conseguir cualquier pensión por
+            incapacidad, nuestra especialización en la materia nos hace diferentes, ya sea en vía
+            administrativa o judicial. Tenemos la respuesta para cada una de tus problemas.
+          </p>
+        </div>
+        <div class="col">
+          <h5 class="h5 title-tiny"> Jubilaciones </h5>
+          <p class="text-justify">Si estás pensando en jubilarte, podemos asesorarte en cómo conseguir la máxima
+            pensión posible, deja que abogados laboralistas estudien tu caso.
+          </p>
+        </div>
+
+        <div class="col">
+          <h5 class="h5 title-tiny"> Reclamación de seguros por muerte o invalidez
+          </h5>
+          <p class="text-justify">Una gran mayoría de personas cuando se les concede una pensión no conocen que
+            pueden cobrar indemnizaciones de seguros o convenios que habían firmado en el
+            pasado, si quieres aclarar tus dudas o informarte, podemos ayudarte.
+          </p>
+        </div>
+        <div class="col">
+          <h5 class="h5 title-tiny"> Discapacidad
+          </h5>
+          <p class="text-justify">Si te planteas que puedes tener un grado de discapacidad, pero no conoces los
+            medios o los sistemas de valoración, no dudes en ponerte en contacto con nosotros
+
+            para aclararte.
+          </p>
+        </div>
+        <div class="col">
+          <h5 class="h5 title-tiny"> Incrementos de pensiones por accidente de trabajo
+          </h5>
+          <p class="text-justify">Si sufriste un accidente de trabajo por imprudencia empresarial o falta de medida de
+            seguridad, puedes solicitar un incremento de tu pensión desde un 30% a un 50%,
+
+            incluso aunque estés en incapacidad temporal.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Modulo text-center items -->
+  <section>
+    <div class=" is-flex hero-big align-middle fondo-2 ">
+      <div class="container-2 text-center">
+        <p>La victoria para los que la preparan
+        </p>
+        <h3 class="h3"> Amat victoria curam </h3>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- Modulo text-centrado container-2 -->
+
+  <section class="py-50">
+    <div class="container-2">
+      <div class="row">
+        <div class="col text-center">
+          <h4 class="h4">
+            Elígenos </h4>
+          <h2 class="h2 pb-20">
+            Somos tu mejor opción
+          </h2>
+          <p class="text-justify">
+
+            El bufete Abogado Laboral, se caracteriza por su especialización en el ámbito laboral y
+            pensiones por incapacidad, prestando servicios en toda Andalucía.
+            No podemos prometer resultados pero sí garantizamos luchar por tus intereses,
+            también nos avala como marca de excelencia la firma de una hoja de encargo donde
+            se detallarán los trabajos a realizar y el precio de los mismos para su seguridad jurídica. <br> <br>
+
+            Nuestra experiencia desde 2009 solo en temas laborales y de pensiones de
+            incapacidad, nos avalan pudiendo realizar procedimientos allí donde se nos contrate,
+
+            salvando el problema de la distancia.
+            Nuestro compromiso es su éxito. </p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="py-50 fondo-5">
+    <div class="container-2">
+      <div class="row">
+        <div class="col text-center">
+          <h4 class="h4">
+            Servicios a empresas
+          </h4>
+          <h2 class="h2 pb-20">
+            ¿Eres empresario?
+          </h2>
+          <p class="text-justify">
+            A los efectos de cubrir todas tus necesidades, nuestro bufete cuenta con un
+            departamento fiscal, contable y laboral para que puedas confiar todas tus necesidades
+            en nosotros, con el objetivo de ahorrar costes y maximizar tus ingresos.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <!-- Modulo 3 items-->
+  <section class="py-50">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h5 class="h5 title-tiny"> Inspecciones de trabajo </h5>
+          <p class="text-justify">Te representamos ante las inspecciones de trabajo, así como impugnamos actas de
+            infracción y liquidación, acompañándote en el procedimiento judicial.
+          </p>
+        </div>
+        <div class="col">
+          <h5 class="h5 title-tiny"> Despidos </h5>
+          <p class="text-justify">
+            ¿Te han despedido o quieres despedir? Como especialistas en la materia te
+            informamos de los requisitos que deben tener estos trámites y que pueden suponer
+
+            tu éxito en el juzgado.
+          </p>
+        </div>
+        <div class="col">
+          <h5 class="h5 title-tiny"> Modificaciones de condiciones de trabajo
+          </h5>
+          <p class="text-justify">Los cambios de jornada, horario o turno, deben realizarse según un protocolo
+            establecido en el Estatuto de los Trabajadores, un fallo en el mismo considera nulo la
+
+            medida tomada, no corras el riesgo y consúltanos.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class=" is-flex hero-big align-middle fondo-3">
+      <div class="container">
+        <div class="row">
+          <div class="col"> </div>
+          <div class="col">
+            <h3 class="h3 pb-20">Único bufete de abogados especializado en centros especiales de empleo en Andalucía
+            </h3>
+            <p>
+              Convertimos tu empresa en un centro especial de empleo, te orientamos y solicitamos
+
+              todas las subvenciones posibles</p>
+            <ul>
+              <li> <a class="link1" href="">Inspecciones de trabajo</a>
+              <li> <a class="link1" href="">Despidos</a> </li>
+              <li> <a class="link1" href="">Modificación sustancial de condiciones</a> </li>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section>
+    <div class=" is-flex hero-big align-middle">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h3 class="h3 pb-20">Todo bajo Control </h3>
+            <h4 class="h4 pb-20">
+              Claridad
+            </h4>
+            <p>
+              Es uno de nuestros pilares, por ello desde la web puedes conectarte a la extranet y ver
+
+              como está tu expediente.
+            </p>
+            <h4 class="h4 pb-20">
+              Transparencia
+            </h4>
+            <p>
+              Es clave en nuestras relación profesional, prueba de ello es la firma de una hoja de
+              encargo, donde se detalla el servicio contratado y precio pactado para ello, sin
+
+              sorpresas ni letra pequeña.
+            </p>
+          </div>
+          <div class="col">
+
+            <img src="images/monitor.png" alt="abogado monitor control"> </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="py-50">
+    <div class="container-2">
+      <div class="row">
+        <div class="col text-center">
+          <h4 class="h4">
+            {domain}.es
+          </h4>
+          <h4 class="h2 pb-20">
+            Estamos en Youtube
+          </h4>
+          <p class="text-justify">
+            Abogado Laboral tiene como objetivo llegar a cuantas más personas mejor, por ello
+            hemos creado un canal de youtube, para resolver las dudas que aparecen en el
+            mundo laboral. Nuestra misión es que se comprenda el derecho y que llegue a todos
+            los interesados, si quieres resolver tu duda no lo pienses y ¡Envía tu consulta!.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section>
+    <div class=" is-flex py-50  fondo-basic">
+      <div class="container-2">
+        <div class="row">
+          <div class="col text-center">
+            <h4 class="h4">
+              Nuestro equipo
+            </h4>
+            <h2 class="h2 pb-20">
+              SOMOS LABORALISTAS
+            </h2>
+            <p>
+              Constituido por abogados que tienen como único objetivo solventar tu problema
+
+              laboral, nos gusta poner soluciones a tus problemas
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="is-flex py-50 fondo-basic">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <img src="images/abogado-laboral-sevilla_a.jpg" alt="pedro lopez" class="pb-20">
+              <div class="title">Abogado laboralista
+              </div>
+              <div class="subtitle">Pedro López</div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="images/abogado-laboral-sevilla_b.jpg" alt="sara vera" class="pb-20">
+              <div class="title">Consultora Fiscal y Asesora de empresas
+              </div>
+              <div class="subtitle">Sara Vera
+              </div>
+            </div>
+
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="images/abogado-laboral-sevilla_c.jpg" alt="javier gago" class="pb-20">
+              <div class="title">Consultor Fiscal y Asesor de empresas
+              </div>
+              <div class="subtitle">Javier Gago
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="py-50">
+
+    <form method="post" action="contact.php" name="contactform" id="contactform">
+      <div class="container-3 ">
+        <div class="row flex-row">
+
+
+
+          <div class="col">
+
+            <h6 class="h4 mb-20">Contacta con nosotros</h6>
+            <p class="h6">
+              Email, llámanos o visíte <br>
+              nuestras oficinas en el <br>
+              centro de Sevilla <br>
+            </p>
+
+
+
+            <h6 class="h7">
+              Dirección de {domain}.es
+            </h6>
+            <p class="p1">
+              Avenida república argentina 37-a 2º1ª
+            </p>
+            <p class="p1">
+              info@agobado-laboral.es
+            </p>
+
+            <p class="p1">
+              Telf: 888 88 88 88
+            </p>
+            <span class="h7">
+              Email:
+            </span>
+            <a class="h7" mailto="info@{domain}.es " href="">info@{domain}.es</a>
+          </div>
+          <div class="col">
+            <div class="pt-20">
+              <div class="field pb-10">
+                <label class="text-1 pb-10">Nombre
+
+                  <input required="" class="input " name="name" type="text" id="name" size="30" value=""
+                    placeholder="Nombre apellidos">
+                </label>
+              </div>
+              <div class="field pb-10">
+                <label class="text-1 pb-10">Email
+                  <input required="" class="input " name="email" type="email" id="email" size="30" value=""
+                    placeholder="e.g. info@{domain}.es">
+                </label>
+              </div>
+              <div class="field pb-10">
+                <label class="text-1 pb-10">Comentarios
+                  <textarea required="" name="comments" cols="40" rows="3" id="comments" class="textarea "
+                    placeholder="Tus dudas"></textarea>
+                </label>
+              </div>
+              <div class="field pb-10">
+                <p><span class="required">*</span> Confirma que no eres un robot: </p>
+                <label class="text-2" for="verify" accesskey="V">3 + 1 =
+                  <input class="inputmini" required="" name="verify" type="text" id="verify" size="4">
+                  <input type="hidden" name="lang" class="submit" id="lang" value="es">
+                </label>
+              </div>
+
+
+              <div class="field pb-10">
+                <span class="checkmark"></span>
+
+
+                <input id="agreement" type="checkbox">
+                <label for="agreement ">
+                  <span class="text-1 pb-10">He leído y acepto la <a href="politica.html">Política de
+                      privacidad</a></span></label>
+
+
+
+              </div>
+              <div class="field">
+                <input disabled="" type="submit" class="link-btn " id="submit" value="Enviar">
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+
+    </form>
+
+
+  </section>
+
+
+
+  <section>
+    <div class="columns align-middle  is-flex hero-medium fondo-4">
+      <div class="container-2">
+        <div class="row">
+          <div class="col text-center">
+            <!-- <h1 class="h1">titulo</h1>
+            <h2 class="h2">titulo h2</h2> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h3 class="h7 pb-20">{domain}.es</h3>
+
+          <p class="p-14 mb-10">
+            En {domain}.es nos avala la confianza de asociaciones como Asperger Sevilla, Autismo Sevilla o TDHA Sevilla.
+
+          </p>
+        </div>
+
+        <div class="col">
+
+        </div>
+        <div class="col">
+          <h3 class="h7 pb-20">links de interés</h3>
+          <ul>
+            <li><a class="link1" href="https://google.es/">www.google.es</a></li>
+            <!-- <li><a class="link1" href="">link2</a></li>
+            <li><a class="link1" href="">link3</a></li>
+            <li><a class="link1" href="">link4</a></li> -->
+          </ul>
+        </div>
+        <div class="col">
+          <h3 class="h7 pb-20">Datos legales</h3>
+          <ul>
+            <li><a class="link1" href="legal/avisolegal.html">Aviso legal</a></li>
+            <li><a class="link1" href="legal/politica.html">Política de cookies</a></li>
+            <li><a class="link1" href="legal/proteccion.html">Protección de Datos</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p>
+            © {domain}.es,. 2019 / All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Google analytics Snippet by https://mathiasbynens.be/notes/async-analytics-snippet 
+    (function (G, o, O, g, l) {
+      G.GoogleAnalyticsObject = O;
+      G[O] || (G[O] = function () {
+        (G[O].q = G[O].q || []).push(arguments)
+      });
+      G[O].l = +new Date;
+      g = o.createElement('script'), l = o.scripts[0];
+      g.src = 'https://www.google-analytics.com/analytics.js';
+      l.parentNode.insertBefore(g, l)
+    }(this, document, 'ga'));
+    ga('create', 'UA-XXXX-Y');
+    ga('send', 'pageview')
+  </script>
+-->
+  <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script>
+    // Contact logic 
+    var agreementCheckbox = document.getElementById('agreement');
+    agreementCheckbox.addEventListener('click', function (event) {
+      document.getElementById('submit').disabled = !agreementCheckbox.checked;
+    });
+
+    $(document).ready(function () {
+      //your code here
+      $("#contactform").submit(function () {
+        var action = $(this).attr("action");
+        $("#message").slideUp(750, function () {
+          $("#message").hide();
+          $("#submit").after('<img src="http://www.kivnon.com/assets/ajax-loader.gif" class="loader" />')
+            .attr(
+              "disabled", "disabled");
+          $.post(action, {
+            name: $("#name").val(),
+            email: $("#email").val(),
+            phone: $("#phone").val(),
+            subject: $("#subject").val(),
+            comments: $("#comments").val(),
+            verify: $("#verify").val(),
+            lang: $("#lang").val()
+          }, function (data) {
+            document.getElementById("message").innerHTML = data;
+            $("#message").slideDown("slow");
+            $("#contactform img.loader").fadeOut("slow", function () {
+              $(this).remove();
+            });
+            $("#submit").removeAttr("disabled");
+            if (data.match("success") != null) $("#contactform").slideUp("slow");
+          });
+        });
+        return false;
+      });
+
+    });
+  </script>
+</body>
+
+</html>

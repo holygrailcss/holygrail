@@ -1,0 +1,84 @@
+
+
+.checkbox-item{
+    display: inline-block;
+    text-align: center;
+    margin: 10px 10px 0 0;
+}
+
+[type="checkbox"]:not(:checked)+label,
+[type="checkbox"]:checked+label {
+    position: relative;
+    padding-left: 0;
+    cursor: pointer;
+    font-weight: normal;
+    font-size: 12px;
+    text-align: initial;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+[type="checkbox"]:not(:checked)+label:before,
+[type="checkbox"]:checked+label:before {
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 25px;
+    left: 0;
+    border: none;
+    border: 1px solid #a3a0a0;
+    outline: 0;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px 0 0px;
+}
+
+[type="checkbox"]:not(:checked)+label span,
+[type="checkbox"]:checked+label span {
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px 0 0;
+    line-height: 16px;
+    padding-left: 40px;
+    min-height: 20px;
+}
+
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+    position: absolute;
+    left: -9999px;
+}
+
+input[type="checkbox"] {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+input[type="checkbox"] {
+    margin: 4px 0 0;
+    margin-top: 1px \9;
+    line-height: normal;
+}
+
+
+[type="checkbox"]:not(:checked)+label .icon,
+[type="checkbox"]:checked+label .icon {
+    position: absolute;
+    top: 8px;
+    left: 6px;
+    color: #000;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+
+[type="checkbox"]:not(:checked)+label .icon {
+    opacity: 0;
+    transform: scale(0);
+}
+
+[type="checkbox"]:checked+label .icon {
+    opacity: 1;
+    transform: scale(1);
+}

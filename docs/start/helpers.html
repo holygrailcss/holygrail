@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html class="no-js" dir="ltr" lang="en-US" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#"
+	xmlns:fb="http://www.facebook.com/2008/fbml" prefix="og: http://ogp.me/ns#
+            fb: http://ogp.me/ns/fb#
+            rdfs: http://www.w3.org/2000/01/rdf-schema# 
+            xsd: http://www.w3.org/2001/XMLSchema#" itemscope="">
+
+<head>
+	<!--  Metadata Basica-->
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<!-- http://t.co/dKP3o1e -->
+	<meta name="HandheldFriendly" content="True" />
+	<meta name="MobileOptimized" content="320" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<link rel="stylesheet" href="../dist/js/prism/prism.css" />
+
+	<link rel="stylesheet" href="../dist/guide.css" />
+	<meta http-equiv="Accept-CH" content="DPR,Width,Viewport-Width" />
+	<!-- Core Meta -->
+	<title>Helpers </title>
+</head>
+
+<body class="ltr guide">
+
+	<div class="header-bg">
+
+  		<section>
+  		  <div class="header-menu">
+  		    <iframe class="menutop" src="../../docs/menutop.html" height="100%" frameborder="0" seamless></iframe>
+  		  </div>
+  		</section>
+
+
+
+	</div>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-3">
+
+
+				<iframe class="menulateral" src="../menu.html" height="100%" frameborder="0"></iframe>
+
+			</div>
+
+			<div class="col-xs-9 pt-50">
+
+				<section>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-xs-12">
+								<h1 class="h1">Helpers</h1>
+
+								<p class="text-18-r">
+                                   Fuentes Variables vs fuentes fijas								</p>
+								<p class="text-18-r">
+									Holygrail is a CSS and html library for building user interfaces. Learn what
+									Holygrail is all
+									about on our homepage .
+								</p>
+
+							</div>
+						</div>
+					</div>
+				</section>
+
+				
+
+
+
+				<section>
+					<div class="container-fluid">
+						<div class="row">
+
+
+							<div class="title-guide">Helpers </div>
+
+							<div class="col">
+								<table>
+									<thead>
+										<tr>
+											<th>helper</th>
+											<th>Description</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><code class="highlighter-rouge">.text-center</code></td>
+											<td>Centrado de texto</td>
+										</tr>
+										<tr>
+											<td><code class="highlighter-rouge">.text-left</code></td>
+											<td>Alineación izquierda</td>
+										</tr>
+										<tr>
+											<td><code class="highlighter-rouge">.text-right</code></td>
+											<td>Alineación derecha</td>
+										</tr>
+										<tr>
+											<td><code class="highlighter-rouge">.text-justify</code></td>
+											<td>Texto justificado </td>
+										</tr>
+									</tbody>
+								</table>
+
+								<table>
+									<thead>
+										<tr>
+											<th>helper flex</th>
+											<th>Description</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><code class="highlighter-rouge">.is-flex</code></td>
+											<td>Convierte el contenedor en flexbox</td>
+										</tr>
+
+
+									</tbody>
+								</table>
+							</div>
+
+
+						</div>
+
+
+					</div>
+				</section>
+
+								<section>
+					<div class="container-fluid  flexbox-map">
+						<div class="row">
+							<div class="title-guide">Flexbox </div>
+						</div>
+
+						<div class="row">
+							<div class="col">
+								<h4 class="h2">
+									1- Añadimos flex al contenedor
+								</h4>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col">
+								<h4 class="h4">Display </h4>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col">
+								<div class="mb-20">
+									<p>Activamos flex en el contenedor </p>
+									<p>.is-flex</p>
+									<div class="item-w is-flex">
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col">
+								<h4 class="h2">
+									2- Añadimos Atributos de distribución o alineado al contenedor
+								</h4>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col">
+								<div class="h3 mb-50"> Dirección de los elementos</div>
+								<div class="mb-20">
+									<h4 class="h4">Dirección horizontal </h4>
+									<p>+ flex-row</p>
+									<div class="item-w is-flex flex-row">
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+									</div>
+								</div>
+
+								<h4 class="h4">Dirección Vertical </h4>
+								<p>+ flex-column</p>
+
+								<div class="item-w is-flex flex-column">
+									<div class="item-i"> </div>
+									<div class="item-i"> </div>
+									<div class="item-i"> </div>
+									<div class="item-i"> </div>
+									<div class="item-i"> </div>
+								</div>
+							</div>
+
+							<div class="col">
+								<div class="h3 mb-50"> Dirección de los elementos</div>
+
+								<div class="mb-20">
+									<h4 class="h4">Flex-wrap </h4>
+									<p>+ flex-wrap</p>
+
+									<div class="item-w is-flex flex-wrap">
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+									</div>
+								</div>
+
+								<div class="mb-20">
+									<h4 class="h4">Flex-nowrap </h4>
+									<p>+ flex-nowrap</p>
+
+									<div class="item-w is-flex flex-nowrap">
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col">
+								<div class="h3 mb-50"> Distribución de los elementos </div>
+								<h4 class="h4">Contenido al inicio </h4>
+								<div class="mb-20">
+									<p> + content-start </p>
+									<div class="item-w is-flex content-start">
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+									</div>
+								</div>
+
+								<div class="mb-20">
+									<h4 class="h4">Contenido al final </h4>
+									<p>+ content-end </p>
+
+									<div class="item-w is-flex content-end">
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+									</div>
+								</div>
+								<div class="mb-20">
+									<h4 class="h4">Contenido centrado </h4>
+									<p>+ content-center </p>
+
+									<div class="item-w is-flex content-center">
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+									</div>
+								</div>
+								<div class="mb-20">
+									<h4 class="h4">Contenido entre</h4>
+									<p>+ content-sp-between </p>
+
+									<div class="item-w is-flex content-sp-between">
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+									</div>
+								</div>
+								<div class="mb-20">
+									<h4 class="h4">Contenido alrededor </h4>
+									<p>+ content-sp-around </p>
+
+									<div class="item-w is-flex content-sp-around">
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+									</div>
+								</div>
+
+								<div>
+									<h4 class="h4">justificado</h4>
+									<p>+ content-sp-evenly </p>
+
+									<div class="item-w is-flex content-sp-evenly">
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col">
+								<div class="h3 mb-50"> Alineacion vertical</div>
+
+								<div class="mb-20">
+									<h4 class="h4">Align top</h4>
+									<p> + align-top</p>
+									<div class="item-w is-flex  align-top">
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+									</div>
+								</div>
+
+								<div class="mb-20">
+									<h4 class="h4">Align middle</h4>
+									<p> + align-middle</p>
+									<div class="item-w is-flex  align-middle">
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+									</div>
+								</div>
+
+								<div class="mb-20">
+									<h5 class="h5">Alineación al bottom</h5>
+									<p> + align-bottom</p>
+									<div class="item-w is-flex  align-bottom">
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col">
+								<div class="h3 mb-50"> Distribución múltiple</div>
+
+								<div class="mb-20">
+									<h5 class="h5">Alineación al top</h5>
+									<p> + align-multi-top</p>
+									<div class="item-w is-flex  align-multi-top">
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+									</div>
+								</div>
+
+								<div class="mb-20">
+									<h5 class="h5">Alineación al bottom</h5>
+									<p> + align-multi-bottom</p>
+									<div class="item-w is-flex  align-multi-bottom">
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+									</div>
+								</div>
+
+								<div class="mb-20">
+									<h5 class="h5">Alineación al centro</h5>
+									<p> + align-multi-center</p>
+									<div class="item-w is-flex  align-multi-center">
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+									</div>
+								</div>
+								<div class="mb-20">
+									<h5 class="h5">distribución between</h5>
+									<p> + align-multi-between</p>
+									<div class="item-w is-flex  align-multi-between">
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+									</div>
+								</div>
+								<div class="mb-20">
+									<h5 class="h5">Alineación around</h5>
+									<p> + align-multi-around</p>
+									<div class="item-w is-flex  align-multi-around">
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+									</div>
+								</div>
+								<div class="mb-20">
+									<h5 class="h5">Alineación stretch</h5>
+									<p> + align-multi-stretch</p>
+									<div class="item-w is-flex  align-multi-stretch">
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+										<div class="item-i"> </div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col">
+								<h4 class="h2">
+									3- Añadimos Atributos de orden, tamaño a los hijos
+								</h4>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+
+
+			</div>
+		</div>
+	</div>
+
+
+
+	<script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script>
+</body>
+
+</html>

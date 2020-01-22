@@ -1,0 +1,78 @@
+/*------------------------------------*\
+    $BOTONES
+\*------------------------------------*/
+/*
+ * Definimos los botones y sus variantes
+
+ <div class="tabs">
+  <ul>
+    <li class="is-active"><a>Pictures</a></li>
+    <li><a>Music</a></li>
+    <li><a>Videos</a></li>
+    <li><a>Documents</a></li>
+  </ul>
+</div>
+ */
+
+
+.tabs {
+    ul {
+        align-items: center;
+        border-bottom-color: #dbdbdb;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        display: flex;
+        flex-grow: 1;
+        flex-shrink: 0;
+        justify-content: flex-start;
+        margin: 0;
+        font-size: 14px;
+        @include font-bold();
+    }
+
+    li {
+        display: block;
+        margin: 0;
+
+        &.is-active a {
+            border-bottom-color: $primary;
+            border-bottom-width: 2px;
+            padding-bottom: $padding-global*2 - 0;
+            
+            color: $primary;
+        }
+
+        &:after {
+            display: none;
+
+        }
+    }
+
+    a {
+        align-items: center;
+        border-bottom-color: #dbdbdb;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        color: $primary;
+        display: flex;
+        justify-content: center;
+        margin-bottom: -1px;
+        padding: $padding-global*2 ;
+        vertical-align: top;
+        padding-bottom: $padding-global*2 + 1;
+
+        &:hover {
+            border-bottom-color: $primary;
+             border-bottom-width: 2px;
+                 padding-bottom: $padding-global*2 - 0;
+            color: $primary;
+            cursor:pointer;
+        }
+    }
+/*********** Casuisticas  ********/
+
+    &.is-center ul {
+    justify-content: center;
+}
+}
+

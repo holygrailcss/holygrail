@@ -1,0 +1,257 @@
+html {
+  font-size: 1rem;
+  @include font-regular();
+
+  @media all and (max-width: 640px) {
+    overflow-x: hidden;
+  }
+
+  @media all and (min-width: $break-xs) {
+    font-size: calc(1rem + 0.5vw);
+  }
+
+  @media all and (min-width: $break-xs + 700) {
+    font-size: calc(1rem + 0.2vw);
+  }
+
+  @media all and (min-width: $break-xs + 1100) {
+    font-size: calc(1rem + 0.3vw);
+  }
+
+  @media all and (min-width: $break-xs + 1400) {
+    font-size: calc(1rem + 0.4vw);
+  }
+}
+
+select{
+    @include font-regular();
+}
+
+.h1 {
+  font-size: calc(1em + .5vw);
+  line-height: 1.2;
+  @include font-regular()
+}
+
+.h2 {
+  font-size: calc(1em + .3vw);
+  line-height: 1.2;
+  @include font-light()
+}
+
+.h3 {
+  font-size: calc(1em + .5vw);
+  line-height: 1.2;
+  @include font-light()
+}
+
+.h4 {
+  font-size: 16px;
+  line-height: 1.2;
+  @include font-bold()
+}
+
+.h5 {
+  font-size: 18px;
+  line-height: 1.2;
+  @include font-medium()
+}
+
+.h6 {
+  font-size: calc(1em + 0.25vw);
+  @include font-light()
+}
+
+.h7 {
+  font-size: 18px;
+  @include font-regular()
+}
+
+p {
+  @include font-regular();
+  margin: 0;
+
+  font-size: 14px;
+
+  &.b {
+    @include font-medium();
+    color: $primary;
+
+  }
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.p1 {
+  span {
+    color: $primary;
+  }
+}
+
+b,
+mark {
+  color: $primary;
+  @include font-bold()
+}
+
+
+/*------------------------------------*\
+    $LINKS
+\*------------------------------------*/
+
+
+
+
+.text-1 {
+  font-size: 16px;
+}
+
+.text-2 {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+label {
+  float: left;
+  font-size: 14px;
+  float: left;
+  font-size: 14px;
+  padding-bottom: 4px;
+
+}
+
+
+
+
+
+
+$fs: "font-size";
+$lh: "line-height";
+
+
+
+
+$headers: // name:mobile,768,992,1280,line-height,font
+
+(
+
+
+h1: (32px, 32px, 32px, 40px, 1.2, "medium"),
+h2: (24px, 24px, 24px, 32px, 1.2, "medium"),
+h3: (18px, 18px, 18px, 24px, 1.2, "medium"),
+h4: (16px, 16px, 16px, 18px, 1.2, "medium"),
+h5: (14px, 14px, 14px, 16px, 1.2, "medium"),
+h6: (12px, 12px, 12px, 14px, 1.2, "medium"),
+h7: (10px, 10px, 10px, 12px, 1.2, "medium"),
+h8: (8px, 8px, 8px, 10px, 1.2, "medium"),
+
+/* PROMOTIONS BANNER */
+display1: (32px, 32px, 32px, 48px, 1.2, "bold"),/* SALES */
+display2: (20px, 20px, 20px, 40px, 1.2, "bold"),/* BLACK FRIDAY */
+display3: (16px, 16px, 16px, 24px, 1.5, "medium"),/* SALES */
+display4: (14px, 14px, 14px, 24px, 1.5, "medium"),/* BLACK FRIDAY */
+display5: (14px, 14px, 14px, 18px, 1.5, "regular"),/* SALES */
+display6: (12px, 12px, 12px, 18px, 1.5, "regular"),/* BLACK FRIDAY */
+display7: (14px, 14px, 14px, 18px, 1.5, "medium"),/* SALES + BLACK FRIDAY */
+
+p1: (12px, 12px, 12px, 14px, 1.4, "regular"),
+p4: (14px, 16px, 16px, 18px, 1.4, "medium"));
+
+
+//array para elementos fijos
+$headersFixers: ( //name :  fontsize, lineheight
+  12 : (12px, 1.5),
+  14 : (14px, 1.5),
+  16 : (16px, 1.5),
+  18 : (18px, 1.5),
+  20 : (20px, 1.5),
+  24 : (24px, 1.5),
+);
+
+
+
+
+
+
+
+//array para elementos fijos
+
+
+@mixin types($breakpoints, $headers, $cssattr) {
+
+  @for $i from 1 through length($breakpoints) {
+
+    // map-key
+    @media (min-width: nth(map-values($breakpoints), $i)) {
+      @each $name,
+
+      $fsize in $headers {
+
+        $fontsize: nth($fsize, $i);
+        $fontheight: nth($fsize, 5);
+
+        $fontweight: nth($fsize, 6);
+
+        .#{$name} {
+          #{$cssattr }: $fontsize;
+          line-height: $fontheight;
+          @include fonters($fontweight);
+
+        }
+      }
+    }
+  }
+}
+
+
+
+@mixin typesFixers($headersFixers, $cssattr) {
+
+  @for $i from 1 through 1 {
+
+    @each $name,
+    $fsize in $headersFixers {
+      $fontsize: nth($fsize, $i);
+      $fontheight: nth($fsize, 2);
+
+      .text-#{$name}-r {
+        @include fonters(regular);
+        #{$cssattr }: $fontsize;
+        line-height: $fontheight;
+      }
+
+      .text-#{$name}-m {
+        @include fonters(medium);
+        #{$cssattr }: $fontsize;
+        line-height: $fontheight;
+      }
+
+      .text-#{$name}-b {
+        @include fonters(bold);
+        #{$cssattr }: $fontsize;
+        line-height: $fontheight;
+      }
+    }
+  }
+}
+
+
+
+
+
+  @for $i from 1 through length($breakpoints) {
+
+
+
+  }
+
+
+
+
+@include typesFixers($headersFixers, $fs);
+
+@include types($breakpoints, $headers, $fs);
