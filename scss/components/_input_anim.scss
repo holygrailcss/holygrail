@@ -77,9 +77,11 @@
   }
 
   &.btn {
-        padding:  13px 16px 15px 45px;
+    padding: 0 16px 0 45px;
+
     .form-icon {
-      top: 12px;
+      top: 50%;
+      transform: translateY(-50%);
       left: 12px;
 
     }
@@ -102,9 +104,11 @@
   }
 
   &.btn {
-       padding: 13px 45px 15px 16px;
+    padding: 0 45px 0 16px;
+
     .form-icon {
-      top: 12px;
+      top: 50%;
+      transform: translateY(-50%);
       right: 12px;
       left: auto;
     }

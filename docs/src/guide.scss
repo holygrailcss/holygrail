@@ -18,7 +18,7 @@
 
 
 .guide {
-  padding-top:77px;
+  padding-top: 77px;
 
   .menulateral {
     position: fixed;
@@ -30,8 +30,8 @@
 
     box-sizing: border-box;
 
-    padding-right: 8px;
-    padding-left: 8px;
+
+
 
     -webkit-box-flex: 0;
     -ms-flex: 0 0 25%;
@@ -39,8 +39,8 @@
     max-width: 25%;
 
 
-    html{
-          font-size: 12px;
+    html {
+      font-size: 12px;
 
     }
   }
@@ -51,22 +51,22 @@
 
     section {
 
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-size: 40px;
-    transform-origin: 0 0;
-    transform: scale(0.5, 0.5);
-    width: 200%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 40px;
+      transform-origin: 0 0;
+      transform: scale(0.5, 0.5);
+      width: 200%;
 
-    box-sizing: border-box;
- 
+      box-sizing: border-box;
+
 
 
     }
   }
 
-.guide-mini {
+  .guide-mini {
 
     position: relative;
     float: left;
@@ -78,26 +78,26 @@
     border: 2px solid #eaeaea;
 
 
-}
+  }
 
-    .header-menu {
+  .header-menu {
     position: fixed;
     top: 0px;
     overflow: auto;
-    min-height:40px;
-    padding: 20px 20px 10px 20px ;
+    min-height: 40px;
+    padding: 20px 20px 10px 20px;
     border-bottom: 1px solid #eaeaea;
     background: white;
     font-size: 12px;
     z-index: 100;
     width: calc(100% - 40px);
 
-    html{
-          font-size: 12px;
+    html {
+      font-size: 12px;
 
     }
 
-    .menutop{
+    .menutop {
       width: 100%;
       height: 44px;
     }
@@ -105,24 +105,20 @@
 
 
 
-.guide-header{
-  z-index: 100;
-padding: 16px;
+  .guide-header {
+    z-index: 100;
+    padding: 16px;
     background-color: #ffffff;
     border-bottom: 1px solid #eaeaea;
     position: fixed;
     top: 0;
     width: 100%;
     box-sizing: border-box;
-}
-
-  .guide-sidebar{
-
   }
 
-  .guide-contents{
-    
-  }
+  .guide-sidebar {}
+
+  .guide-contents {}
 
   .guide-hover {
     text-decoration: none;
@@ -132,7 +128,7 @@ padding: 16px;
 
   .header-bg {
 
-color: #134b46;
+    color: #134b46;
 
 
   }
@@ -293,6 +289,66 @@ color: #134b46;
     }
   }
 
+  code[class*="language-"],
+  pre[class*="language-"] {
+    font-size: 12px;
+  }
+
+  table {
+    font-size: 12px;
+    text-align: left;
+
+    thead {
+      background-color: #e3f0e2;
+      color: #4a5568;
+    }
+
+    td {
+      &:first-child {
+        font-family: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace !important;
+        color: #6b46c1 !important;
+      }
+    }
+  }
+code{
+background-color: #f1f1f1;
+    padding-left: 4px;
+    padding-right: 4px;
+        color: #beabea ;
+}
+
+pre>code{
+  background-color: transparent;
+}
+
+  .table-flex {
+    text-align: center;
+
+    p {
+      font-size: 12px;
+      font-family: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace !important;
+      color: #6b46c1 !important;
+      text-align: center;
+      width: 100%;
+      background-color: #efe5ef;
+      margin: 20px 0 0 0;
+
+    }
+
+    th {
+      width: 20%;
+    }
+
+    td {
+      text-align: center;
+      padding: 10px;
+    }
+
+    .item-w {
+      margin: 20px auto;
+    }
+
+  }
 
 
 }
@@ -494,45 +550,4 @@ a {
   font-style: italic;
   opacity: .5;
 
-}
-
-/**   pre coding ***/
-pre[class*="language-"] {
-  padding: 20px;
-  font-size: 15px;
-}
-
-.token.atrule,
-.token.attr-value {
-  color: #50d4b7;
-}
-
-:not(pre)>code[class*="language-"],
-pre[class*="language-"] {
-  background: #fbfbfb;
-}
-
-code[class*="language-"],
-pre[class*="language-"] {
-  text-shadow: none;
-  ;
-}
-
-.token.selector,
-.token.attr-name,
-.token.string,
-.token.char,
-.token.builtin,
-.token.inserted {
-  color: #45ada8;
-}
-
-.token.property,
-.token.keyword,
-.token.tag {
-  color: #537980;
-}
-
-.header-menu{
-  width: 100%;
 }

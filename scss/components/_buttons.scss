@@ -17,13 +17,13 @@
     vertical-align: middle;
     box-sizing: border-box;
     font-size: 14px;
-    margin-right:$padding-global;
+    margin-right: $padding-global;
+    vertical-align: middle;
+    border: none;
+    line-height: 38px;
 
     white-space: nowrap;
     cursor: pointer;
-
-    padding: $padding-btn;
-    height: 48px;
 
 
     /**
@@ -47,6 +47,83 @@
 
 }
 
+/*tamaños*/
+
+
+$btn-text-mini:12px;
+$btn-text-small:14px;
+$btn-text-medium:14px;
+$btn-text-large:14px;
+$btn-text-xlarge:16px;
+$btn-text-full:16px;
+
+.btn--mini {
+    padding-right: $padding-global * 3;
+    padding-left: $padding-global * 3;
+    font-size: $btn-text-mini;
+    line-height: $btn-text-mini*2;
+
+
+}
+
+.btn--small {
+    padding-right: $padding-global * 5;
+    padding-left: $padding-global * 5;
+
+    font-size: $btn-text-small;
+    line-height: $btn-text-small * 2;
+
+
+}
+
+.btn--medium {
+    padding-right: $padding-global * 2;
+    padding-left: $padding-global * 2;
+
+    font-size: $btn-text-medium;
+    line-height: $btn-text-medium * 3 + 4;
+
+
+}
+
+.btn--large {
+    padding-right: $padding-global * 7;
+    padding-left: $padding-global * 7;
+
+    font-size: $btn-text-large;
+    line-height: $btn-text-large * 3;
+
+
+}
+
+.btn--xlarge {
+    padding-right: $padding-global * 8;
+    padding-left: $padding-global * 8;
+
+    font-size: $btn-text-xlarge;
+    line-height: $btn-text-xlarge * 3 - 2;
+
+
+}
+
+.btn--full {
+    width: 100%;
+    padding-right: $padding-global * 8;
+    padding-left: $padding-global * 8;
+
+    font-size: $btn-text-full;
+    line-height: $btn-text-full * 3 - 2;
+
+
+}
+
+/*tamaños*/
+
+
+
+
+/*modificadores tipo*/
+
 
 .btn-xs {
     position: relative;
@@ -56,7 +133,7 @@
     vertical-align: middle;
     box-sizing: border-box;
     font-size: 12px;
-    margin-right:$padding-global;
+    margin-right: $padding-global;
 
     white-space: nowrap;
     cursor: pointer;
@@ -117,26 +194,6 @@
  *
  */
 
-.btn--mini {
-    padding-right: 0.5em;
-    padding-left: 0.5em;
-    line-height: 1.5;
-    font-size: fs(x-small);
-}
-
-.btn--small {
-    padding-right: 1.5em;
-    padding-left: 1.5em;
-    line-height: 2;
-    font-size: fs(small);
-}
-
-.btn--large {
-    padding-right: 3em;
-    padding-left: 3em;
-    line-height: 3;
-    font-size: fs(big);
-}
 
 .btn-primary {
     color: #fff;
@@ -183,5 +240,18 @@
         }
 
         &:last-child {}
+    }
+}
+
+.btn-group-inline {
+    text-align: center;
+    max-width: 480px;
+    margin: 0 auto;
+
+    .btn {
+        display: inline-block;
+        width: auto;
+        min-width: 200px;
+        margin: 0 5px;
     }
 }

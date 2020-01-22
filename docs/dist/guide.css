@@ -1017,7 +1017,6 @@ img {
 html {
   font-size: 1rem;
   font-family: "BasisGrotesque-Regular-Pro";
-  font-weight: 400;
   line-height: 1.6; }
   @media all and (max-width: 640px) {
     html {
@@ -1037,60 +1036,50 @@ html {
 
 select {
   font-family: "BasisGrotesque-Regular-Pro";
-  font-weight: 400;
   line-height: 1.6; }
 
 .h1 {
   font-size: calc(1em + .5vw);
   line-height: 1.2;
   font-family: "BasisGrotesque-Regular-Pro";
-  font-weight: 400;
   line-height: 1.6; }
 
 .h2 {
   font-size: calc(1em + .3vw);
   line-height: 1.2;
-  font-family: "BasisGrotesque-Light-Pro";
-  font-weight: 300; }
+  font-family: "BasisGrotesque-Light-Pro"; }
 
 .h3 {
   font-size: calc(1em + .5vw);
   line-height: 1.2;
-  font-family: "BasisGrotesque-Light-Pro";
-  font-weight: 300; }
+  font-family: "BasisGrotesque-Light-Pro"; }
 
 .h4, .card .title {
   font-size: 16px;
   line-height: 1.2;
-  font-family: "BasisGrotesque-Bold-Pro";
-  font-weight: 700; }
+  font-family: "BasisGrotesque-Bold-Pro"; }
 
 .h5 {
   font-size: 18px;
   line-height: 1.2;
-  font-family: "BasisGrotesque-Medium-Pro";
-  font-weight: 600; }
+  font-family: "BasisGrotesque-Medium-Pro"; }
 
 .h6, .card .subtitle {
   font-size: calc(1em + 0.25vw);
-  font-family: "BasisGrotesque-Light-Pro";
-  font-weight: 300; }
+  font-family: "BasisGrotesque-Light-Pro"; }
 
 .h7 {
   font-size: 18px;
   font-family: "BasisGrotesque-Regular-Pro";
-  font-weight: 400;
   line-height: 1.6; }
 
 p {
   font-family: "BasisGrotesque-Regular-Pro";
-  font-weight: 400;
   line-height: 1.6;
   margin: 0;
   font-size: 14px; }
   p.b {
     font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600;
     color: #000; }
 
 .h1 span,
@@ -1107,8 +1096,7 @@ p {
 b,
 mark {
   color: #000;
-  font-family: "BasisGrotesque-Bold-Pro";
-  font-weight: 700; }
+  font-family: "BasisGrotesque-Bold-Pro"; }
 
 /*------------------------------------*\
     $LINKS
@@ -1129,115 +1117,97 @@ label {
 
 .text-12-r {
   font-family: "BasisGrotesque-Regular-Pro";
-  font-weight: 400;
   line-height: 1.6;
   font-size: 12px;
   line-height: 1.5; }
 
 .text-12-m {
   font-family: "BasisGrotesque-Medium-Pro";
-  font-weight: 600;
   font-size: 12px;
   line-height: 1.5; }
 
 .text-12-b {
   font-family: "BasisGrotesque-Bold-Pro";
-  font-weight: 700;
   font-size: 12px;
   line-height: 1.5; }
 
 .text-14-r {
   font-family: "BasisGrotesque-Regular-Pro";
-  font-weight: 400;
   line-height: 1.6;
   font-size: 14px;
   line-height: 1.5; }
 
 .text-14-m {
   font-family: "BasisGrotesque-Medium-Pro";
-  font-weight: 600;
   font-size: 14px;
   line-height: 1.5; }
 
 .text-14-b {
   font-family: "BasisGrotesque-Bold-Pro";
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.5; }
 
 .text-16-r {
   font-family: "BasisGrotesque-Regular-Pro";
-  font-weight: 400;
   line-height: 1.6;
   font-size: 16px;
   line-height: 1.5; }
 
 .text-16-m {
   font-family: "BasisGrotesque-Medium-Pro";
-  font-weight: 600;
   font-size: 16px;
   line-height: 1.5; }
 
 .text-16-b {
   font-family: "BasisGrotesque-Bold-Pro";
-  font-weight: 700;
   font-size: 16px;
   line-height: 1.5; }
 
 .text-18-r {
   font-family: "BasisGrotesque-Regular-Pro";
-  font-weight: 400;
   line-height: 1.6;
   font-size: 18px;
   line-height: 1.5; }
 
 .text-18-m {
   font-family: "BasisGrotesque-Medium-Pro";
-  font-weight: 600;
   font-size: 18px;
   line-height: 1.5; }
 
 .text-18-b {
   font-family: "BasisGrotesque-Bold-Pro";
-  font-weight: 700;
   font-size: 18px;
   line-height: 1.5; }
 
 .text-20-r {
   font-family: "BasisGrotesque-Regular-Pro";
-  font-weight: 400;
   line-height: 1.6;
   font-size: 20px;
   line-height: 1.5; }
 
 .text-20-m {
   font-family: "BasisGrotesque-Medium-Pro";
-  font-weight: 600;
   font-size: 20px;
   line-height: 1.5; }
 
 .text-20-b {
   font-family: "BasisGrotesque-Bold-Pro";
-  font-weight: 700;
   font-size: 20px;
   line-height: 1.5; }
 
 .text-24-r {
   font-family: "BasisGrotesque-Regular-Pro";
-  font-weight: 400;
   line-height: 1.6;
   font-size: 24px;
   line-height: 1.5; }
 
 .text-24-m {
   font-family: "BasisGrotesque-Medium-Pro";
-  font-weight: 600;
   font-size: 24px;
   line-height: 1.5; }
 
 .text-24-b {
   font-family: "BasisGrotesque-Bold-Pro";
-  font-weight: 700;
   font-size: 24px;
   line-height: 1.5; }
 
@@ -1245,451 +1215,366 @@ label {
   .h1 {
     font-size: 32px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; }
+    font-family: "BasisGrotesque-Medium-Pro"; }
   .h2 {
     font-size: 24px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; }
+    font-family: "BasisGrotesque-Medium-Pro"; }
   .h3 {
     font-size: 18px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; }
+    font-family: "BasisGrotesque-Medium-Pro"; }
   .h4, .card .title {
     font-size: 16px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; }
+    font-family: "BasisGrotesque-Medium-Pro"; }
   .h5 {
     font-size: 14px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; }
+    font-family: "BasisGrotesque-Medium-Pro"; }
   .h6, .card .subtitle {
     font-size: 12px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; }
+    font-family: "BasisGrotesque-Medium-Pro"; }
   .h7 {
     font-size: 10px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; }
+    font-family: "BasisGrotesque-Medium-Pro"; }
   .h8 {
     font-size: 8px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; }
+    font-family: "BasisGrotesque-Medium-Pro"; }
   .display1 {
     font-size: 32px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Bold-Pro";
-    font-weight: 700; }
+    font-family: "BasisGrotesque-Bold-Pro"; }
   .display2 {
     font-size: 20px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Bold-Pro";
-    font-weight: 700; }
+    font-family: "BasisGrotesque-Bold-Pro"; }
   .display3 {
     font-size: 16px;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; }
+    font-family: "BasisGrotesque-Medium-Pro"; }
   .display4 {
     font-size: 14px;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; }
+    font-family: "BasisGrotesque-Medium-Pro"; }
   .display5 {
     font-size: 14px;
     line-height: 1.5;
     font-family: "BasisGrotesque-Regular-Pro";
-    font-weight: 400;
     line-height: 1.6; }
   .display6 {
     font-size: 12px;
     line-height: 1.5;
     font-family: "BasisGrotesque-Regular-Pro";
-    font-weight: 400;
     line-height: 1.6; }
   .display7 {
     font-size: 14px;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; }
+    font-family: "BasisGrotesque-Medium-Pro"; }
   .p1 {
     font-size: 12px;
     line-height: 1.4;
     font-family: "BasisGrotesque-Regular-Pro";
-    font-weight: 400;
     line-height: 1.6; }
   .p4 {
     font-size: 14px;
     line-height: 1.4;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; } }
+    font-family: "BasisGrotesque-Medium-Pro"; } }
 
 @media (min-width: 600px) {
   .h1 {
     font-size: 32px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; }
+    font-family: "BasisGrotesque-Medium-Pro"; }
   .h2 {
     font-size: 24px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; }
+    font-family: "BasisGrotesque-Medium-Pro"; }
   .h3 {
     font-size: 18px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; }
+    font-family: "BasisGrotesque-Medium-Pro"; }
   .h4, .card .title {
     font-size: 16px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; }
+    font-family: "BasisGrotesque-Medium-Pro"; }
   .h5 {
     font-size: 14px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; }
+    font-family: "BasisGrotesque-Medium-Pro"; }
   .h6, .card .subtitle {
     font-size: 12px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; }
+    font-family: "BasisGrotesque-Medium-Pro"; }
   .h7 {
     font-size: 10px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; }
+    font-family: "BasisGrotesque-Medium-Pro"; }
   .h8 {
     font-size: 8px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; }
+    font-family: "BasisGrotesque-Medium-Pro"; }
   .display1 {
     font-size: 32px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Bold-Pro";
-    font-weight: 700; }
+    font-family: "BasisGrotesque-Bold-Pro"; }
   .display2 {
     font-size: 20px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Bold-Pro";
-    font-weight: 700; }
+    font-family: "BasisGrotesque-Bold-Pro"; }
   .display3 {
     font-size: 16px;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; }
+    font-family: "BasisGrotesque-Medium-Pro"; }
   .display4 {
     font-size: 14px;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; }
+    font-family: "BasisGrotesque-Medium-Pro"; }
   .display5 {
     font-size: 14px;
     line-height: 1.5;
     font-family: "BasisGrotesque-Regular-Pro";
-    font-weight: 400;
     line-height: 1.6; }
   .display6 {
     font-size: 12px;
     line-height: 1.5;
     font-family: "BasisGrotesque-Regular-Pro";
-    font-weight: 400;
     line-height: 1.6; }
   .display7 {
     font-size: 14px;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; }
+    font-family: "BasisGrotesque-Medium-Pro"; }
   .p1 {
     font-size: 12px;
     line-height: 1.4;
     font-family: "BasisGrotesque-Regular-Pro";
-    font-weight: 400;
     line-height: 1.6; }
   .p4 {
     font-size: 16px;
     line-height: 1.4;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; } }
+    font-family: "BasisGrotesque-Medium-Pro"; } }
 
 @media (min-width: 992px) {
   .h1 {
     font-size: 32px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; }
+    font-family: "BasisGrotesque-Medium-Pro"; }
   .h2 {
     font-size: 24px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; }
+    font-family: "BasisGrotesque-Medium-Pro"; }
   .h3 {
     font-size: 18px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; }
+    font-family: "BasisGrotesque-Medium-Pro"; }
   .h4, .card .title {
     font-size: 16px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; }
+    font-family: "BasisGrotesque-Medium-Pro"; }
   .h5 {
     font-size: 14px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; }
+    font-family: "BasisGrotesque-Medium-Pro"; }
   .h6, .card .subtitle {
     font-size: 12px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; }
+    font-family: "BasisGrotesque-Medium-Pro"; }
   .h7 {
     font-size: 10px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; }
+    font-family: "BasisGrotesque-Medium-Pro"; }
   .h8 {
     font-size: 8px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; }
+    font-family: "BasisGrotesque-Medium-Pro"; }
   .display1 {
     font-size: 32px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Bold-Pro";
-    font-weight: 700; }
+    font-family: "BasisGrotesque-Bold-Pro"; }
   .display2 {
     font-size: 20px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Bold-Pro";
-    font-weight: 700; }
+    font-family: "BasisGrotesque-Bold-Pro"; }
   .display3 {
     font-size: 16px;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; }
+    font-family: "BasisGrotesque-Medium-Pro"; }
   .display4 {
     font-size: 14px;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; }
+    font-family: "BasisGrotesque-Medium-Pro"; }
   .display5 {
     font-size: 14px;
     line-height: 1.5;
     font-family: "BasisGrotesque-Regular-Pro";
-    font-weight: 400;
     line-height: 1.6; }
   .display6 {
     font-size: 12px;
     line-height: 1.5;
     font-family: "BasisGrotesque-Regular-Pro";
-    font-weight: 400;
     line-height: 1.6; }
   .display7 {
     font-size: 14px;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; }
+    font-family: "BasisGrotesque-Medium-Pro"; }
   .p1 {
     font-size: 12px;
     line-height: 1.4;
     font-family: "BasisGrotesque-Regular-Pro";
-    font-weight: 400;
     line-height: 1.6; }
   .p4 {
     font-size: 16px;
     line-height: 1.4;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; } }
+    font-family: "BasisGrotesque-Medium-Pro"; } }
 
 @media (min-width: 1200px) {
   .h1 {
     font-size: 40px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; }
+    font-family: "BasisGrotesque-Medium-Pro"; }
   .h2 {
     font-size: 32px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; }
+    font-family: "BasisGrotesque-Medium-Pro"; }
   .h3 {
     font-size: 24px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; }
+    font-family: "BasisGrotesque-Medium-Pro"; }
   .h4, .card .title {
     font-size: 18px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; }
+    font-family: "BasisGrotesque-Medium-Pro"; }
   .h5 {
     font-size: 16px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; }
+    font-family: "BasisGrotesque-Medium-Pro"; }
   .h6, .card .subtitle {
     font-size: 14px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; }
+    font-family: "BasisGrotesque-Medium-Pro"; }
   .h7 {
     font-size: 12px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; }
+    font-family: "BasisGrotesque-Medium-Pro"; }
   .h8 {
     font-size: 10px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; }
+    font-family: "BasisGrotesque-Medium-Pro"; }
   .display1 {
     font-size: 48px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Bold-Pro";
-    font-weight: 700; }
+    font-family: "BasisGrotesque-Bold-Pro"; }
   .display2 {
     font-size: 40px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Bold-Pro";
-    font-weight: 700; }
+    font-family: "BasisGrotesque-Bold-Pro"; }
   .display3 {
     font-size: 24px;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; }
+    font-family: "BasisGrotesque-Medium-Pro"; }
   .display4 {
     font-size: 24px;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; }
+    font-family: "BasisGrotesque-Medium-Pro"; }
   .display5 {
     font-size: 18px;
     line-height: 1.5;
     font-family: "BasisGrotesque-Regular-Pro";
-    font-weight: 400;
     line-height: 1.6; }
   .display6 {
     font-size: 18px;
     line-height: 1.5;
     font-family: "BasisGrotesque-Regular-Pro";
-    font-weight: 400;
     line-height: 1.6; }
   .display7 {
     font-size: 18px;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; }
+    font-family: "BasisGrotesque-Medium-Pro"; }
   .p1 {
     font-size: 14px;
     line-height: 1.4;
     font-family: "BasisGrotesque-Regular-Pro";
-    font-weight: 400;
     line-height: 1.6; }
   .p4 {
     font-size: 18px;
     line-height: 1.4;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; } }
+    font-family: "BasisGrotesque-Medium-Pro"; } }
 
 @media (min-width: 1500px) {
   .h1 {
     font-size: 1.2;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; }
+    font-family: "BasisGrotesque-Medium-Pro"; }
   .h2 {
     font-size: 1.2;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; }
+    font-family: "BasisGrotesque-Medium-Pro"; }
   .h3 {
     font-size: 1.2;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; }
+    font-family: "BasisGrotesque-Medium-Pro"; }
   .h4, .card .title {
     font-size: 1.2;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; }
+    font-family: "BasisGrotesque-Medium-Pro"; }
   .h5 {
     font-size: 1.2;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; }
+    font-family: "BasisGrotesque-Medium-Pro"; }
   .h6, .card .subtitle {
     font-size: 1.2;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; }
+    font-family: "BasisGrotesque-Medium-Pro"; }
   .h7 {
     font-size: 1.2;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; }
+    font-family: "BasisGrotesque-Medium-Pro"; }
   .h8 {
     font-size: 1.2;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; }
+    font-family: "BasisGrotesque-Medium-Pro"; }
   .display1 {
     font-size: 1.2;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Bold-Pro";
-    font-weight: 700; }
+    font-family: "BasisGrotesque-Bold-Pro"; }
   .display2 {
     font-size: 1.2;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Bold-Pro";
-    font-weight: 700; }
+    font-family: "BasisGrotesque-Bold-Pro"; }
   .display3 {
     font-size: 1.5;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; }
+    font-family: "BasisGrotesque-Medium-Pro"; }
   .display4 {
     font-size: 1.5;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; }
+    font-family: "BasisGrotesque-Medium-Pro"; }
   .display5 {
     font-size: 1.5;
     line-height: 1.5;
     font-family: "BasisGrotesque-Regular-Pro";
-    font-weight: 400;
     line-height: 1.6; }
   .display6 {
     font-size: 1.5;
     line-height: 1.5;
     font-family: "BasisGrotesque-Regular-Pro";
-    font-weight: 400;
     line-height: 1.6; }
   .display7 {
     font-size: 1.5;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; }
+    font-family: "BasisGrotesque-Medium-Pro"; }
   .p1 {
     font-size: 1.4;
     line-height: 1.4;
     font-family: "BasisGrotesque-Regular-Pro";
-    font-weight: 400;
     line-height: 1.6; }
   .p4 {
     font-size: 1.4;
     line-height: 1.4;
-    font-family: "BasisGrotesque-Medium-Pro";
-    font-weight: 600; } }
+    font-family: "BasisGrotesque-Medium-Pro"; } }
 
 .text-center {
   text-align: center; }
@@ -1841,10 +1726,11 @@ label {
   box-sizing: border-box;
   font-size: 14px;
   margin-right: 8px;
+  vertical-align: middle;
+  border: none;
+  line-height: 38px;
   white-space: nowrap;
   cursor: pointer;
-  padding: 16px;
-  height: 48px;
   /**
  	* Nadie quiere un botón con texto subrayado cuando
  	* hacemos hover.
@@ -1855,6 +1741,46 @@ label {
   .btn:active, .btn:focus {
     outline: none; }
 
+/*tamaños*/
+.btn--mini {
+  padding-right: 24px;
+  padding-left: 24px;
+  font-size: 12px;
+  line-height: 24px; }
+
+.btn--small {
+  padding-right: 40px;
+  padding-left: 40px;
+  font-size: 14px;
+  line-height: 28px; }
+
+.btn--medium {
+  padding-right: 16px;
+  padding-left: 16px;
+  font-size: 14px;
+  line-height: 46px; }
+
+.btn--large {
+  padding-right: 56px;
+  padding-left: 56px;
+  font-size: 14px;
+  line-height: 42px; }
+
+.btn--xlarge {
+  padding-right: 64px;
+  padding-left: 64px;
+  font-size: 16px;
+  line-height: 46px; }
+
+.btn--full {
+  width: 100%;
+  padding-right: 64px;
+  padding-left: 64px;
+  font-size: 16px;
+  line-height: 46px; }
+
+/*tamaños*/
+/*modificadores tipo*/
 .btn-xs {
   position: relative;
   display: inline-block;
@@ -1902,24 +1828,6 @@ label {
  * Variantes de los botones por tamaño.
  *
  */
-.btn--mini {
-  padding-right: 0.5em;
-  padding-left: 0.5em;
-  line-height: 1.5;
-  font-size: fs(x-small); }
-
-.btn--small {
-  padding-right: 1.5em;
-  padding-left: 1.5em;
-  line-height: 2;
-  font-size: fs(small); }
-
-.btn--large {
-  padding-right: 3em;
-  padding-left: 3em;
-  line-height: 3;
-  font-size: fs(big); }
-
 .btn-primary {
   color: #fff;
   background-color: #000;
@@ -1954,6 +1862,16 @@ label {
     .btn-group [class^="btn--"]:first-child,
     .btn-group [class*=" btn--"]:first-child {
       margin-left: 0; }
+
+.btn-group-inline {
+  text-align: center;
+  max-width: 480px;
+  margin: 0 auto; }
+  .btn-group-inline .btn {
+    display: inline-block;
+    width: auto;
+    min-width: 200px;
+    margin: 0 5px; }
 
 /*------------------------------------*\
     $LINKS
@@ -2005,7 +1923,6 @@ label {
 .link3,
 .link3::before {
   font-family: "BasisGrotesque-Regular-Pro";
-  font-weight: 400;
   line-height: 1.6;
   font-size: 14px;
   text-align: center;
@@ -2024,8 +1941,7 @@ label {
   padding: 0;
   content: attr(data-text);
   opacity: 0;
-  font-family: "BasisGrotesque-Medium-Pro";
-  font-weight: 600; }
+  font-family: "BasisGrotesque-Medium-Pro"; }
 
 .link3:hover {
   opacity: 0; }
@@ -2268,7 +2184,6 @@ select {
     width: 150px;
     text-align: center;
     font-family: "BasisGrotesque-Regular-Pro";
-    font-weight: 400;
     line-height: 1.6; }
   .guide-font .guide-title {
     padding-left: 200px; }
@@ -2465,9 +2380,10 @@ input::-webkit-input-placeholder {
   padding: 13px 16px 15px 45px; }
 
 .icon-pre.btn {
-  padding: 13px 16px 15px 45px; }
+  padding: 0 16px 0 45px; }
   .icon-pre.btn .form-icon {
-    top: 12px;
+    top: 50%;
+    transform: translateY(-50%);
     left: 12px; }
 
 .icon-post > input,
@@ -2479,9 +2395,10 @@ input::-webkit-input-placeholder {
   left: auto; }
 
 .icon-post.btn {
-  padding: 13px 45px 15px 16px; }
+  padding: 0 45px 0 16px; }
   .icon-post.btn .form-icon {
-    top: 12px;
+    top: 50%;
+    transform: translateY(-50%);
     right: 12px;
     left: auto; }
 
@@ -2533,8 +2450,7 @@ input::-webkit-input-placeholder {
     justify-content: flex-start;
     margin: 0;
     font-size: 14px;
-    font-family: "BasisGrotesque-Bold-Pro";
-    font-weight: 700; }
+    font-family: "BasisGrotesque-Bold-Pro"; }
   .tabs li {
     display: block;
     margin: 0; }
@@ -4503,7 +4419,6 @@ input::-webkit-input-placeholder {
   border-right: 1px solid #eaeaea;
   float: left;
   font-family: "BasisGrotesque-Medium-Pro";
-  font-weight: 600;
   position: relative;
   width: 100%;
   transition: all ease 300ms;
@@ -4525,26 +4440,20 @@ input::-webkit-input-placeholder {
     word-wrap: break-word; }
   .wrap-item-type_header .item-1:after {
     font-family: "BasisGrotesque-Light-Pro";
-    font-weight: 300;
     content: " - 1px"; }
   .wrap-item-type_header .item-2:after {
     font-family: "BasisGrotesque-Light-Pro";
-    font-weight: 300;
     content: " - 600px"; }
   .wrap-item-type_header .item-3:after {
     font-family: "BasisGrotesque-Light-Pro";
-    font-weight: 300;
     content: " - 992px"; }
   .wrap-item-type_header .item-4:after {
     font-family: "BasisGrotesque-Light-Pro";
-    font-weight: 300;
     content: " - 1200px"; }
   .wrap-item-type_header .item-5:after {
-    font-family: "BasisGrotesque-Light-Pro";
-    font-weight: 300; }
+    font-family: "BasisGrotesque-Light-Pro"; }
   .wrap-item-type_header .item-6:after {
-    font-family: "BasisGrotesque-Bold-Pro";
-    font-weight: 700; }
+    font-family: "BasisGrotesque-Bold-Pro"; }
 
 .wrap-item-type {
   border-right: 1px solid #eaeaea;
@@ -4586,11 +4495,9 @@ input::-webkit-input-placeholder {
     content: "40px"; }
   .wrap-item-type:nth-child(1) .item-5:after {
     font-family: "BasisGrotesque-Light-Pro";
-    font-weight: 300;
     content: "1.2"; }
   .wrap-item-type:nth-child(1) .item-6:after {
     font-family: "BasisGrotesque-Bold-Pro";
-    font-weight: 700;
     content: "medium"; }
 
 .wrap-item-type {
@@ -4633,11 +4540,9 @@ input::-webkit-input-placeholder {
     content: "32px"; }
   .wrap-item-type:nth-child(2) .item-5:after {
     font-family: "BasisGrotesque-Light-Pro";
-    font-weight: 300;
     content: "1.2"; }
   .wrap-item-type:nth-child(2) .item-6:after {
     font-family: "BasisGrotesque-Bold-Pro";
-    font-weight: 700;
     content: "medium"; }
 
 .wrap-item-type {
@@ -4680,11 +4585,9 @@ input::-webkit-input-placeholder {
     content: "24px"; }
   .wrap-item-type:nth-child(3) .item-5:after {
     font-family: "BasisGrotesque-Light-Pro";
-    font-weight: 300;
     content: "1.2"; }
   .wrap-item-type:nth-child(3) .item-6:after {
     font-family: "BasisGrotesque-Bold-Pro";
-    font-weight: 700;
     content: "medium"; }
 
 .wrap-item-type {
@@ -4727,11 +4630,9 @@ input::-webkit-input-placeholder {
     content: "18px"; }
   .wrap-item-type:nth-child(4) .item-5:after {
     font-family: "BasisGrotesque-Light-Pro";
-    font-weight: 300;
     content: "1.2"; }
   .wrap-item-type:nth-child(4) .item-6:after {
     font-family: "BasisGrotesque-Bold-Pro";
-    font-weight: 700;
     content: "medium"; }
 
 .wrap-item-type {
@@ -4774,11 +4675,9 @@ input::-webkit-input-placeholder {
     content: "16px"; }
   .wrap-item-type:nth-child(5) .item-5:after {
     font-family: "BasisGrotesque-Light-Pro";
-    font-weight: 300;
     content: "1.2"; }
   .wrap-item-type:nth-child(5) .item-6:after {
     font-family: "BasisGrotesque-Bold-Pro";
-    font-weight: 700;
     content: "medium"; }
 
 .wrap-item-type {
@@ -4821,11 +4720,9 @@ input::-webkit-input-placeholder {
     content: "14px"; }
   .wrap-item-type:nth-child(6) .item-5:after {
     font-family: "BasisGrotesque-Light-Pro";
-    font-weight: 300;
     content: "1.2"; }
   .wrap-item-type:nth-child(6) .item-6:after {
     font-family: "BasisGrotesque-Bold-Pro";
-    font-weight: 700;
     content: "medium"; }
 
 .wrap-item-type {
@@ -4868,11 +4765,9 @@ input::-webkit-input-placeholder {
     content: "12px"; }
   .wrap-item-type:nth-child(7) .item-5:after {
     font-family: "BasisGrotesque-Light-Pro";
-    font-weight: 300;
     content: "1.2"; }
   .wrap-item-type:nth-child(7) .item-6:after {
     font-family: "BasisGrotesque-Bold-Pro";
-    font-weight: 700;
     content: "medium"; }
 
 .wrap-item-type {
@@ -4915,11 +4810,9 @@ input::-webkit-input-placeholder {
     content: "10px"; }
   .wrap-item-type:nth-child(8) .item-5:after {
     font-family: "BasisGrotesque-Light-Pro";
-    font-weight: 300;
     content: "1.2"; }
   .wrap-item-type:nth-child(8) .item-6:after {
     font-family: "BasisGrotesque-Bold-Pro";
-    font-weight: 700;
     content: "medium"; }
 
 .wrap-item-type {
@@ -4962,11 +4855,9 @@ input::-webkit-input-placeholder {
     content: "48px"; }
   .wrap-item-type:nth-child(9) .item-5:after {
     font-family: "BasisGrotesque-Light-Pro";
-    font-weight: 300;
     content: "1.2"; }
   .wrap-item-type:nth-child(9) .item-6:after {
     font-family: "BasisGrotesque-Bold-Pro";
-    font-weight: 700;
     content: "bold"; }
 
 .wrap-item-type {
@@ -5009,11 +4900,9 @@ input::-webkit-input-placeholder {
     content: "40px"; }
   .wrap-item-type:nth-child(10) .item-5:after {
     font-family: "BasisGrotesque-Light-Pro";
-    font-weight: 300;
     content: "1.2"; }
   .wrap-item-type:nth-child(10) .item-6:after {
     font-family: "BasisGrotesque-Bold-Pro";
-    font-weight: 700;
     content: "bold"; }
 
 .wrap-item-type {
@@ -5056,11 +4945,9 @@ input::-webkit-input-placeholder {
     content: "24px"; }
   .wrap-item-type:nth-child(11) .item-5:after {
     font-family: "BasisGrotesque-Light-Pro";
-    font-weight: 300;
     content: "1.5"; }
   .wrap-item-type:nth-child(11) .item-6:after {
     font-family: "BasisGrotesque-Bold-Pro";
-    font-weight: 700;
     content: "medium"; }
 
 .wrap-item-type {
@@ -5103,11 +4990,9 @@ input::-webkit-input-placeholder {
     content: "24px"; }
   .wrap-item-type:nth-child(12) .item-5:after {
     font-family: "BasisGrotesque-Light-Pro";
-    font-weight: 300;
     content: "1.5"; }
   .wrap-item-type:nth-child(12) .item-6:after {
     font-family: "BasisGrotesque-Bold-Pro";
-    font-weight: 700;
     content: "medium"; }
 
 .wrap-item-type {
@@ -5150,11 +5035,9 @@ input::-webkit-input-placeholder {
     content: "18px"; }
   .wrap-item-type:nth-child(13) .item-5:after {
     font-family: "BasisGrotesque-Light-Pro";
-    font-weight: 300;
     content: "1.5"; }
   .wrap-item-type:nth-child(13) .item-6:after {
     font-family: "BasisGrotesque-Bold-Pro";
-    font-weight: 700;
     content: "regular"; }
 
 .wrap-item-type {
@@ -5197,11 +5080,9 @@ input::-webkit-input-placeholder {
     content: "18px"; }
   .wrap-item-type:nth-child(14) .item-5:after {
     font-family: "BasisGrotesque-Light-Pro";
-    font-weight: 300;
     content: "1.5"; }
   .wrap-item-type:nth-child(14) .item-6:after {
     font-family: "BasisGrotesque-Bold-Pro";
-    font-weight: 700;
     content: "regular"; }
 
 .wrap-item-type {
@@ -5244,11 +5125,9 @@ input::-webkit-input-placeholder {
     content: "18px"; }
   .wrap-item-type:nth-child(15) .item-5:after {
     font-family: "BasisGrotesque-Light-Pro";
-    font-weight: 300;
     content: "1.5"; }
   .wrap-item-type:nth-child(15) .item-6:after {
     font-family: "BasisGrotesque-Bold-Pro";
-    font-weight: 700;
     content: "medium"; }
 
 .wrap-item-type {
@@ -5291,11 +5170,9 @@ input::-webkit-input-placeholder {
     content: "14px"; }
   .wrap-item-type:nth-child(16) .item-5:after {
     font-family: "BasisGrotesque-Light-Pro";
-    font-weight: 300;
     content: "1.4"; }
   .wrap-item-type:nth-child(16) .item-6:after {
     font-family: "BasisGrotesque-Bold-Pro";
-    font-weight: 700;
     content: "regular"; }
 
 .wrap-item-type {
@@ -5338,11 +5215,9 @@ input::-webkit-input-placeholder {
     content: "18px"; }
   .wrap-item-type:nth-child(17) .item-5:after {
     font-family: "BasisGrotesque-Light-Pro";
-    font-weight: 300;
     content: "1.4"; }
   .wrap-item-type:nth-child(17) .item-6:after {
     font-family: "BasisGrotesque-Bold-Pro";
-    font-weight: 700;
     content: "medium"; }
 
 .guide table td {
@@ -5415,7 +5290,7 @@ input::-webkit-input-placeholder {
   border-bottom: 1px solid black;
   display: inline-block;
   width: 100%;
-  margin: 0 8px 40px; }
+  margin: 0 0  40px; }
 
 section {
   padding-bottom: 20px; }
@@ -5496,8 +5371,6 @@ section {
     border-right: 1px solid #eaeaea;
     font-size: 12px;
     box-sizing: border-box;
-    padding-right: 8px;
-    padding-left: 8px;
     -webkit-box-flex: 0;
     -ms-flex: 0 0 25%;
     flex: 0 0 25%;
@@ -5581,7 +5454,6 @@ section {
         position: absolute;
         font-size: 16px;
         font-family: "BasisGrotesque-Bold-Pro";
-        font-weight: 700;
         top: 15px;
         left: 0;
         color: #fff; }
@@ -5650,6 +5522,42 @@ section {
     .guide .submenu .col {
       padding: 0;
       border-bottom: 1px solid black; }
+  .guide code[class*="language-"],
+  .guide pre[class*="language-"] {
+    font-size: 12px; }
+  .guide table {
+    font-size: 12px;
+    text-align: left; }
+    .guide table thead {
+      background-color: #e3f0e2;
+      color: #4a5568; }
+    .guide table td:first-child {
+      font-family: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace !important;
+      color: #6b46c1 !important; }
+  .guide code {
+    background-color: #f1f1f1;
+    padding-left: 4px;
+    padding-right: 4px;
+    color: #beabea; }
+  .guide pre > code {
+    background-color: transparent; }
+  .guide .table-flex {
+    text-align: center; }
+    .guide .table-flex p {
+      font-size: 12px;
+      font-family: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace !important;
+      color: #6b46c1 !important;
+      text-align: center;
+      width: 100%;
+      background-color: #efe5ef;
+      margin: 20px 0 0 0; }
+    .guide .table-flex th {
+      width: 20%; }
+    .guide .table-flex td {
+      text-align: center;
+      padding: 10px; }
+    .guide .table-flex .item-w {
+      margin: 20px auto; }
 
 .title-page {
   text-align: center;
@@ -5797,36 +5705,3 @@ a {
   border-radius: 10px;
   font-style: italic;
   opacity: .5; }
-
-/**   pre coding ***/
-pre[class*="language-"] {
-  padding: 20px;
-  font-size: 15px; }
-
-.token.atrule,
-.token.attr-value {
-  color: #50d4b7; }
-
-:not(pre) > code[class*="language-"],
-pre[class*="language-"] {
-  background: #fbfbfb; }
-
-code[class*="language-"],
-pre[class*="language-"] {
-  text-shadow: none; }
-
-.token.selector,
-.token.attr-name,
-.token.string,
-.token.char,
-.token.builtin,
-.token.inserted {
-  color: #45ada8; }
-
-.token.property,
-.token.keyword,
-.token.tag {
-  color: #537980; }
-
-.header-menu {
-  width: 100%; }
