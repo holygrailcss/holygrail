@@ -16,6 +16,19 @@
  */
 
 
+//  1- habilitamos colores en divs
+@mixin random-bgr(){
+    background: rgb(random(255), random(255), random(255));
+  }
+  
+    @for $i from 1 through 500{
+      div:nth-child(#{$i}){  	    @include random-bgr();
+  
+     }
+    }
+  
+
+
 /**
  * Hay elementos vacíos?
  */

@@ -1,0 +1,31 @@
+{
+  "name": "holygrail",
+  "version": "1.0.0",
+  "description": "webmaker",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/holygrailcss/holygrail.git"
+  },
+  "keywords": [
+    "holygrail",
+    "css",
+    "sass"
+  ],
+  "author": "manuel ruiz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/holygrailcss/holygrail/issues"
+  },
+  "homepage": "https://github.com/holygrailcss/holygrail#readme",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
+}

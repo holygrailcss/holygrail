@@ -126,6 +126,21 @@
 }
 
 
+// .bleed{
+
+//   [class*="container-fluid"],  [class*="container"] {
+//     padding:0 ;
+//   }
+//   [class*="col-"] {
+//     padding:0 ;
+//   }
+//   [class*="row"] {
+//     padding:0 ;
+//   }
+
+// }
+
+
 
 
 
@@ -176,9 +191,15 @@ $colBreakpoints: length($breakpoints) - 1;
 
 
 @mixin bleed($margin) {
-  .container-bleed-#{$margin} {
+  .bleed {
     padding: 0;
     overflow: hidden;
+
+    .container-fluid{
+      margin-left: -$margin/2+px;
+      margin-right: -$margin/2+px;
+      padding: $margin/2+px;
+    }
 
     .row {
       margin-left: -$margin/2+px;
@@ -200,7 +221,6 @@ $colBreakpoints: length($breakpoints) - 1;
 
     [class*="col"] {
       padding: $margin/2+px;
-      box-sizing: border-box;
       box-sizing: border-box;
     }
   }
@@ -228,4 +248,4 @@ $colBreakpoints: length($breakpoints) - 1;
   }
 }
 
-@include bleed(8);
+@include bleed(0);
