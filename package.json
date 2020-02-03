@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass --watch scss -o dist"
+    "scss": "node-sass --watch scss -o dist",
+    "guide": "node-sass --watch docs/src -o docs/dist"
   },
   "repository": {
     "type": "git",

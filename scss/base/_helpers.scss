@@ -125,37 +125,37 @@
   align-items: stretch;
 }
 
-.align-multi-top{
-align-content: flex-start;
-    flex-wrap: wrap;
+.align-multi-top {
+  align-content: flex-start;
+  flex-wrap: wrap;
 }
 
-.align-multi-bottom{
-align-content: flex-end;
-    flex-wrap: wrap;
+.align-multi-bottom {
+  align-content: flex-end;
+  flex-wrap: wrap;
 }
 
-.align-multi-center{
-align-content: center;
-    flex-wrap: wrap;
-}
-
-
-
-.align-multi-between{
-align-content: space-between;
-    flex-wrap: wrap;
-}
-
-.align-multi-around{
-align-content: space-around;
-    flex-wrap: wrap;
+.align-multi-center {
+  align-content: center;
+  flex-wrap: wrap;
 }
 
 
-.align-multi-stretch{
-align-content: stretch;
-    flex-wrap: wrap;
+
+.align-multi-between {
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+
+.align-multi-around {
+  align-content: space-around;
+  flex-wrap: wrap;
+}
+
+
+.align-multi-stretch {
+  align-content: stretch;
+  flex-wrap: wrap;
 }
 
 
@@ -167,8 +167,7 @@ align-content: stretch;
 
 }
 
- img.d-inline{
-  }
+img.d-inline {}
 
 .sticky-bottom {
   width: 100%;
@@ -184,25 +183,28 @@ align-content: stretch;
 
 .bg-dark {
   background-color: #eaeaea;
-  color: #fff; }
+  color: #fff;
+}
 
-  @mixin ratio($width, $height) {
-    position: relative;
-    &:before {
-      display: block;
-      content: "";
-      width: 100%;
-      padding-top: ($height / $width) * 100%;
-    }
-    > .content {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-    }
+@mixin ratio($width, $height) {
+  position: relative;
+
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
   }
 
-  .rat-16-9 {
-    @include ratio(16, 9);
+  >.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
   }
+}
+
+.rat-16-9 {
+  @include ratio(16, 9);
+}
