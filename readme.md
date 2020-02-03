@@ -22,9 +22,13 @@ Holygrail is a **modern CSS framework** based on [Flexbox](https://developer.moz
 [![](https://data.jsdelivr.com/v1/package/npm/holygrail/badge)](https://www.jsdelivr.com/package/npm/holygrail)
 [![Awesome][awesome-badge]][awesome-link]
 
+<p align="center">
+<a href="https://holygrail.io">
+<img src="https://raw.githubusercontent.com/jgthms/holygrail/master/docs/images/holygrail-banner.png" alt="holygrail: a Flexbox CSS framework" style="max-width:100%;" width="140">
+</a>
+</p>
 
 
-<a href="https://holygrail.io"><img src="https://raw.githubusercontent.com/jgthms/holygrail/master/docs/images/holygrail-banner.png" alt="holygrail: a Flexbox CSS framework" style="max-width:100%;" width="600"></a>
 
 ## Quick install
 
