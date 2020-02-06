@@ -90,21 +90,21 @@
 
 @media (max-width:$break-sm - 1) {
   [class*="col-"] {
-    padding-bottom: $padding-global;
+   // padding-bottom: $padding-global;
   }
 
 }
 
 @media (max-width:$break-md - 1) {
   [class*="col-"] {
-    padding-bottom: $padding-global * 2;
+   // padding-bottom: $padding-global * 2;
   }
 
 }
 
 @media (max-width:$break-lg - 1) {
   [class*="col-"] {
-    padding-bottom: $padding-global * 2;
+  //  padding-bottom: $padding-global * 2;
   }
 
 }
