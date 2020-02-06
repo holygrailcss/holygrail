@@ -1713,16 +1713,16 @@ label {
     right: 0;
     bottom: 0; }
 
-.h-height-sm {
+.height-sm {
   height: 100px; }
 
-.h-height-md {
+.height-md {
   height: 150px; }
 
-.h-height-lg {
+.height-lg {
   height: 300px; }
 
-.h-height-xl {
+.height-xl {
   height: 450px; }
 
 /*------------------------------------*\
@@ -5389,6 +5389,7 @@ section {
     height: calc(100vh - 81px);
     border-right: 1px solid #eaeaea;
     font-size: 12px;
+    padding-top: 40px;
     box-sizing: border-box;
     -webkit-box-flex: 0;
     width: 218px; }
