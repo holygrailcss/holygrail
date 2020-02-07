@@ -4,7 +4,6 @@
 /**
  * Nuestra base esencial
  */
-
 /**
 * Lógica de scss 
 **/
@@ -13,28 +12,17 @@
 @import "lib/mixins";
 @import "lib/fonts";
 
-
-
-
-
 //@import "lib/debug"; // si queremos debugar la maqueta
-
 /**
 * Base estilo inline    class="[col-sm-2]    [py-20m-20]    [h1 text-1 link-2] [text-center]"
 **/
-
-
-
 @import "base/grid";
 @import "base/margins";
 @import "base/typography";
 @import "base/helpers";
 @import "base/height";
 
-
-
 // componentes html
-
 @import "components/buttons";
 @import "components/links";
 @import "components/list";
@@ -44,14 +32,8 @@
 @import "components/footer";
 @import "components/tabs";
 @import "components/select";
-
-
-
-
 /**
 * modulos componentizados  
 **/
-
-
 @import "moduls/row-6";
 @import "moduls/card";

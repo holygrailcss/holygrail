@@ -1,13 +1,11 @@
 /*------------------------------------*\
     $LINKS
 \*------------------------------------*/
-
 a {
   &:hover {
   //  opacity: .5;
   }
 }
-
 .link1 {
   font-size: 16px;
   color: $black;
@@ -15,34 +13,26 @@ a {
   transition: color 250ms linear;
   text-decoration: none;
   position: relative;
-
   &:hover {
    // color: $linkHover;
-
     &::after {
       -webkit-transform: scaleX(1);
       -ms-transform: scaleX(1);
       transform: scaleX(1)
     }
-
-
   }
-
   &:focus {
     outline: none;
     color: $black;
     text-decoration: none;
   }
-
   &:focus:hover {
     color: $black;
   }
-
   &:-moz-focusring {
     outline: none !important;
     background: none;
   }
-
   &::after {
     content: "";
     position: absolute;
@@ -52,43 +42,28 @@ a {
     left: 0;
     background: $primary;
     transform: scaleX(0);
-
     transition: transform $transition;
     transition: transform $transition, -webkit-transform $transition;
   }
 }
-
-
 .link2 {
-
   font-size: 12px;
   color: $black;
-
   text-decoration: none;
   position: relative;
-
   &:hover {
     opacity: .6;
-
     &::after {
       -webkit-transform: scaleX(1);
       -ms-transform: scaleX(1);
       transform: scaleX(1)
     }
-
-
   }
-
 }
-
-
-
 .link3,
 .link3::before {
-
   @include font-regular();
   font-size: 14px;
-
   text-align: center;
   display: inline-block;
   position: relative;
@@ -97,9 +72,7 @@ a {
   transition: all .2s linear;
   white-space: nowrap;
 }
-
 .link3::before {
-
   position: absolute;
   top: 0;
   left: 0;
@@ -107,23 +80,14 @@ a {
   padding: 0;
   content: attr(data-text);
   opacity: 0;
-
   @include font-medium();
-
 }
-
 .link3:hover {
   opacity: 0;
 }
-
-
 .link3:hover::before {
   opacity: 1;
 }
-
-
-
-
 .btn-links {
   position: relative;
   display: inline-block;
@@ -135,11 +99,9 @@ a {
   color: black;
   line-height: 16px;
   padding: 12px 0;
-
   &:hover {
     opacity: .5;
   }
-
   .ma-link-span-underline {
     background: #0e0d0d;
     height: 1px;
@@ -150,33 +112,22 @@ a {
     left: 0;
   }
 }
-
-
-
 .link-button-prev {
   background: transparent !important;
   position: relative;
-
   width: 40px;
   height: 40px;
-
   z-index: 1;
   cursor: pointer;
-
-
   border-radius: 50%;
-
   border: 1px solid #ccc;
-
 }
-
 .inner-button {
   margin-top: -1px;
   display: block;
   width: 40px;
   height: 40px;
   color: white;
-
   &::after {
     border: 1px solid #000;
     border-radius: 0px;
@@ -194,5 +145,4 @@ a {
     transform-origin: center;
     width: 10px;
   }
-
 }

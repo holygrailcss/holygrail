@@ -3,7 +3,6 @@
 \*------------------------------------*/
 /*
  * Definimos los botones y sus variantes
-
  <div class="tabs">
   <ul>
     <li class="is-active"><a>Pictures</a></li>
@@ -13,8 +12,7 @@
   </ul>
 </div>
  */
-
-
+ 
 .tabs {
     ul {
         align-items: center;
@@ -38,13 +36,11 @@
             border-bottom-color: $primary;
             border-bottom-width: 2px;
             padding-bottom: $padding-global*2 - 0;
-            
             color: $primary;
         }
 
         &:after {
             display: none;
-
         }
     }
 
@@ -57,22 +53,22 @@
         display: flex;
         justify-content: center;
         margin-bottom: -1px;
-        padding: $padding-global*2 ;
+        padding: $padding-global*2;
         vertical-align: top;
         padding-bottom: $padding-global*2 + 1;
 
         &:hover {
             border-bottom-color: $primary;
-             border-bottom-width: 2px;
-                 padding-bottom: $padding-global*2 - 0;
+            border-bottom-width: 2px;
+            padding-bottom: $padding-global*2 - 0;
             color: $primary;
-            cursor:pointer;
+            cursor: pointer;
         }
     }
-/*********** Casuisticas  ********/
 
+    /*********** Casuisticas  ********/
+    
     &.is-center ul {
-    justify-content: center;
+        justify-content: center;
+    }
 }
-}
-

@@ -17,7 +17,6 @@
     display: block;
     max-width: 100%;
     outline: 0;
-
   }
 
   &::after {
@@ -38,9 +37,8 @@
     width: 8px;
   }
 
-
   &:not(.is-multiple) {
- height: 56px;
+    height: 56px;
   }
 
   &:not(.is-multiple):not(.is-loading)::after {
@@ -73,17 +71,16 @@
     border-color: #363636
   }
 
-&.select-label{
-  select{
-  padding-left:100px
+  &.select-label {
+    select {
+      padding-left: 100px
+    }
   }
 
-}
-label{
-  position: absolute; 
-  top: 17px ;
-  left: 16px;
-  z-index:1;
-}
-
+  label {
+    position: absolute;
+    top: 17px;
+    left: 16px;
+    z-index: 1;
+  }
 }

@@ -1,12 +1,6 @@
-
-
-
-
-
 /*------------------------------------*\
     $MIXINS
 \*------------------------------------*/
-
 
 
 // .background-alpha(VALUE VALUE);
@@ -14,15 +8,11 @@
 	background-color : hsla(hue($color), saturation($color), lightness($color), $alpha);
 }
 
-// .userselect(VALUE) (all, element, none, text)
 
+// .userselect(VALUE) (all, element, none, text)
 @mixin user-select($select) {
 	-webkit-user-select : $select;
 	-moz-user-select : $select;
 	-o-user-select : $select;
 	user-select : $select;
 }
-
-
-
-

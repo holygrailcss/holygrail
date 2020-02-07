@@ -10,60 +10,46 @@
   text-align: left;
 }
 
-
 .text-justify {
   text-align: justify;
 }
 
 //tamaños en altura de covers
-
 .hero-big {
-
   min-height: 300px;
 
   @media (min-width:$break-sm) {
     min-height: 500px;
   }
-
 }
 
 .hero-medium {
-
   min-height: 200px;
 
   @media (min-width:$break-sm) {
     min-height: 400px;
   }
-
 }
 
 .hero-mini {
-
   min-height: 100px;
 
   @media (min-width:$break-sm) {
     min-height: 300px;
   }
-
 }
-
 
 .title-tiny {
   min-height: 50px;
 }
 
 .pt-20 {
-
   padding-top: 20px;
 }
-
-
 
 /*+------------------------------------------------------------+
  |       -flexbox    helpers
  +------------------------------------------------------------+*/
-
-
 .flex-column {
   flex-direction: column;
 }
@@ -79,7 +65,6 @@
 .flex-wrap {
   flex-wrap: wrap;
 }
-
 
 .content-start {
   justify-content: flex-start;
@@ -105,13 +90,9 @@
   justify-content: space-evenly;
 }
 
-
-
-
 .align-top {
   align-items: flex-start;
 }
-
 
 .align-middle {
   align-items: center;
@@ -140,8 +121,6 @@
   flex-wrap: wrap;
 }
 
-
-
 .align-multi-between {
   align-content: space-between;
   flex-wrap: wrap;
@@ -152,33 +131,24 @@
   flex-wrap: wrap;
 }
 
-
 .align-multi-stretch {
   align-content: stretch;
   flex-wrap: wrap;
 }
 
-
-
-
 .d-inline {
   display: inline-block;
-
-
 }
 
 img.d-inline {}
 
 .sticky-bottom {
   width: 100%;
-
   position: absolute;
   box-sizing: border-box;
   left: 0;
   padding: 0 $padding-global $padding-global;
   bottom: 0;
-
-
 }
 
 .bg-dark {
