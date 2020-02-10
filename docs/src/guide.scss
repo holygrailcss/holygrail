@@ -158,12 +158,13 @@
       position: absolute;
       top: 0;
       z-index: 1000;
-      font-size: 14px;
       color: #fff;
+      
+      @include fluid-text($min_width, $break-lg, 10px, 16px);
 
       &:after {
         position: absolute;
-        font-size: 16px;
+        @include fluid-text($min_width, $break-lg, 10px, 16px);
         @include font-bold();
         top: 15px;
         left: 0;

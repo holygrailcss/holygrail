@@ -1,3 +1,8 @@
+/*+------------------------------------------------------------+
+ |       -SELECT  
+ +------------------------------------------------------------+*/
+
+
 .select {
   display: inline-block;
   max-width: 100%;
@@ -17,6 +22,12 @@
     display: block;
     max-width: 100%;
     outline: 0;
+  }
+  label {
+    position: absolute;
+    top: 17px;
+    left: 16px;
+    z-index: 1;
   }
 
   &::after {
@@ -75,12 +86,5 @@
     select {
       padding-left: 100px
     }
-  }
-
-  label {
-    position: absolute;
-    top: 17px;
-    left: 16px;
-    z-index: 1;
   }
 }

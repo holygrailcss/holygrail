@@ -1,3 +1,6 @@
+/*+------------------------------------------------------------+
+ |       -HELPERS DE TEXTO , ALINEACIONES        
+ +------------------------------------------------------------+*/
 .text-center {
   text-align: center;
 }
@@ -14,7 +17,9 @@
   text-align: justify;
 }
 
-//tamaños en altura de covers
+/*+------------------------------------------------------------+
+ |       -HEROS        
+ +------------------------------------------------------------+*/
 .hero-big {
   min-height: 300px;
 
@@ -48,8 +53,12 @@
 }
 
 /*+------------------------------------------------------------+
- |       -flexbox    helpers
+ |       -FLEXBOX    helpers
  +------------------------------------------------------------+*/
+.is-flex {
+  display: flex;
+}
+
 .flex-column {
   flex-direction: column;
 }
@@ -139,8 +148,6 @@
 .d-inline {
   display: inline-block;
 }
-
-img.d-inline {}
 
 .sticky-bottom {
   width: 100%;

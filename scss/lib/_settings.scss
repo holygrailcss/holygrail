@@ -1,5 +1,5 @@
 /*+------------------------------------------------------------+
- |       -Fuentes        
+ |       -IMPORT FONTS        
  +------------------------------------------------------------+*/
 $font-family-light: 'BasisGrotesque-Light-Pro';
 $font-family-regular: 'BasisGrotesque-Regular-Pro';
@@ -8,51 +8,67 @@ $font-family-bold: 'BasisGrotesque-Bold-Pro';
 $theme:'theme-dutti';
 
 @font-face {
-    font-family:$font-family-bold;
+    font-family: $font-family-bold;
     src: url('../themes/#{$theme}/fonts/basis/BasisGrotesque-Bold-Pro.eot');
     src: url('../themes/#{$theme}/fonts/basis/BasisGrotesque-Bold-Pro.eot?#iefix') format('embedded-opentype'),
-        url('../themes/#{$theme}/fonts/basis/BasisGrotesque-Bold-Pro.woff2') format('woff2'),
-        url('../themes/#{$theme}/fonts/basis/BasisGrotesque-Bold-Pro.woff') format('woff'),
-        url('../themes/#{$theme}/fonts/basis/BasisGrotesque-Bold-Pro.ttf') format('truetype'),
+    url('../themes/#{$theme}/fonts/basis/BasisGrotesque-Bold-Pro.woff2') format('woff2'),
+    url('../themes/#{$theme}/fonts/basis/BasisGrotesque-Bold-Pro.woff') format('woff'),
+    url('../themes/#{$theme}/fonts/basis/BasisGrotesque-Bold-Pro.ttf') format('truetype'),
 }
+
 @font-face {
-    font-family:$font-family-medium;
+    font-family: $font-family-medium;
     src: url('../themes/#{$theme}/fonts/basis/BasisGrotesque-Medium-Pro.eot');
     src: url('../themes/#{$theme}/fonts/basis/BasisGrotesque-Medium-Pro.eot?#iefix') format('embedded-opentype'),
-        url('../themes/#{$theme}/fonts/basis/BasisGrotesque-Medium-Pro.woff2') format('woff2'),
-        url('../themes/#{$theme}/fonts/basis/BasisGrotesque-Medium-Pro.woff') format('woff'),
-        url('../themes/#{$theme}/fonts/basis/BasisGrotesque-Medium-Pro.ttf') format('truetype'),
+    url('../themes/#{$theme}/fonts/basis/BasisGrotesque-Medium-Pro.woff2') format('woff2'),
+    url('../themes/#{$theme}/fonts/basis/BasisGrotesque-Medium-Pro.woff') format('woff'),
+    url('../themes/#{$theme}/fonts/basis/BasisGrotesque-Medium-Pro.ttf') format('truetype'),
 }
+
 @font-face {
-    font-family:$font-family-light;
+    font-family: $font-family-light;
     src: url('../themes/#{$theme}/fonts/basis/BasisGrotesque-Light-Pro.eot');
     src: url('../themes/#{$theme}/fonts/basis/BasisGrotesque-Light-Pro.eot?#iefix') format('embedded-opentype'),
-        url('../themes/#{$theme}/fonts/basis/BasisGrotesque-Light-Pro.woff2') format('woff2'),
-        url('../themes/#{$theme}/fonts/basis/BasisGrotesque-Light-Pro.woff') format('woff'),
-        url('../themes/#{$theme}/fonts/basis/BasisGrotesque-Light-Pro.ttf') format('truetype'),
+    url('../themes/#{$theme}/fonts/basis/BasisGrotesque-Light-Pro.woff2') format('woff2'),
+    url('../themes/#{$theme}/fonts/basis/BasisGrotesque-Light-Pro.woff') format('woff'),
+    url('../themes/#{$theme}/fonts/basis/BasisGrotesque-Light-Pro.ttf') format('truetype'),
 }
+
 @font-face {
     font-family: $font-family-regular;
     src: url('../themes/#{$theme}/fonts/basis/BasisGrotesque-Regular-Pro.eot');
     src: url('../themes/#{$theme}/fonts/basis/BasisGrotesque-Regular-Pro.eot?#iefix') format('embedded-opentype'),
-        url('../themes/#{$theme}/fonts/basis/BasisGrotesque-Regular-Pro.woff2') format('woff2'),
-        url('../themes/#{$theme}/fonts/basis/BasisGrotesque-Regular-Pro.woff') format('woff'),
-        url('../themes/#{$theme}/fonts/basis/BasisGrotesque-Regular-Pro.ttf') format('truetype'),
+    url('../themes/#{$theme}/fonts/basis/BasisGrotesque-Regular-Pro.woff2') format('woff2'),
+    url('../themes/#{$theme}/fonts/basis/BasisGrotesque-Regular-Pro.woff') format('woff'),
+    url('../themes/#{$theme}/fonts/basis/BasisGrotesque-Regular-Pro.ttf') format('truetype'),
 }
 
 /*+------------------------------------------------------------+
- |       -Breakpoints        
+ |       -BREAKPOINTS        
  +------------------------------------------------------------+*/
- 
- 
+
+
 $breakpoints: (
-  xs: 1px,
-  sm: 600px,
-  md: 992px,
-  lg: 1200px,
-  xl: 1500px);
-  
-  
+    xs: 1px,
+    sm: 600px,
+    md: 992px,
+    lg: 1200px,
+    xl: 1500px);
+
+
+$break-xs:nth(map-values($breakpoints), 1);
+$break-sm:nth(map-values($breakpoints), 2);
+$break-md:nth(map-values($breakpoints), 3);
+$break-lg:nth(map-values($breakpoints), 4);
+$break-xl:nth(map-values($breakpoints), 5);
+
+$min-width:320px;
+
+
+/*+------------------------------------------------------------+
+ |       -Variables  Globales      
+ +------------------------------------------------------------+*/
+
 $totalCols :12;
 $padding-global: 8px;
 $padding-button: 8px;
@@ -61,20 +77,9 @@ $height-inputs: 48px;
 $error-primary:#FD675E;
 
 
-/*+------------------------------------------------------------+
- |       -Variables  Globales      
- +------------------------------------------------------------+*/
- 
- 
-$break-xs:nth(map-values($breakpoints), 1);
-$break-sm:nth(map-values($breakpoints), 2);
-$break-md:nth(map-values($breakpoints), 3);
-$break-lg:nth(map-values($breakpoints), 4);
-$break-xl:nth(map-values($breakpoints), 5);
-
 $container-2: 600px; //maxwidth del container2
-$container-3: 900px ; //maxwidth del container2
-$container-4: 350px ; //maxwidth del container4
+$container-3: 900px; //maxwidth del container2
+$container-4: 350px; //maxwidth del container4
 $link:rgb(207, 236, 240);
 $linkHover:#999;
 $black:rgb(3, 2, 2);

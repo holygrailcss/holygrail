@@ -1,3 +1,9 @@
+
+/*+------------------------------------------------------------+
+ |       -MARGINS  
+ +------------------------------------------------------------+*/
+
+
 $mg: "margin";
 $margin: //name : margen total mobile, tablet, desktop, longdesktop
 (m-20: (10px, 20px, 20px, 20px),
@@ -53,6 +59,9 @@ $margin-right: //name : margen bottom
   mr-50: (20px, 50px, 50px, 50px));
   
   
+/*+------------------------------------------------------------+
+ |       -PADDINGS  
+ +------------------------------------------------------------+*/
 $p: "padding";
 $padding: //name : padding  top
 (p-10: (10px, 10px, 10px, 10px),
@@ -106,7 +115,10 @@ $padding-right: //name : padding  bottom
   pr-30: (10px, 30px, 30px, 30px),
   pr-50: (20px, 50px, 50px, 50px));
   
-  
+ 
+  /*+------------------------------------------------------------+
+ |       -MIXINS SPACE  
+ +------------------------------------------------------------+*/
 
 @mixin space($breakpoints, $paddings, $cssattr) {
   @for $i from 1 through $colBreakpoints {
