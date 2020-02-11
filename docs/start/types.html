@@ -4,7 +4,6 @@
             fb: http://ogp.me/ns/fb#
             rdfs: http://www.w3.org/2000/01/rdf-schema# 
             xsd: http://www.w3.org/2001/XMLSchema#" itemscope="">
-
 <head>
 	<!--  Metadata Basica-->
 	<meta charset="utf-8" />
@@ -19,7 +18,6 @@
 	<!-- Core Meta -->
 	<title>Types </title>
 </head>
-
 <body class="ltr guide">
 	<div class="header-bg">
 		<section>
@@ -60,8 +58,9 @@
 							</div>
 							<div class="row">
 								<div class="col">
-									headers
-									<table class="demo">
+									<h3 class="h3 mb-30">
+										Encabezados
+									</h3>									<table class="demo">
 										<thead>
 											<tr>
 												<th>Class</th>
@@ -111,7 +110,9 @@
 											</tr>
 										<tbody>
 									</table>
-									paragrafs
+									<h3 class="h3 mb-30">
+										Párrafos
+									</h3>
 									<table class="demo">
 										<thead>
 											<tr>
@@ -162,7 +163,9 @@
 											</tr>
 										<tbody>
 									</table>
-									Tipografias fijas
+									<h3 class="h3 mb-30">
+										Tipografias fijas
+									</h3>
 									<table class="demo">
 										<thead>
 											<tr>
@@ -224,6 +227,9 @@
 								</div>
 							</div>
 							<div class="separator"> </div>
+							<h3 class="h3 mb-30">
+								Tipografias Responsive
+							</h3>
 							<div class="row">
 								<div class="col">
 									<div class="wrap-item-type_header">
@@ -394,6 +400,74 @@
 									</div>
 								</div>
 							</div>
+							<h3 class="h3 mb-30">
+								Fluid Text
+							</h3>
+							<p class="mb-30"> <code>
+									@include fluid-text($min_width, $break-lg, 10px, 16px);
+								</code></p>
+							<table class="demo">
+								<thead>
+									<tr>
+										<th>Type</th>
+										<th>min vw</th>
+										<th>max vw</th>
+										<th>min font size</th>
+										<th>max font size</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>.fluid-h1 </td>
+										<td>$min_width :  <div class="min-width"></div> </td>
+										<td>$break-lg : 1500px</td>
+										<td>20px</td>
+										<td>30px</td>
+									</tr>
+									<tr>
+										<td>.fluid-h2</td>
+										<td>$min_width :  <div class="min-width"></div> </td>
+										<td>$break-lg : 1500px</td>
+										<td>18px</td>
+										<td>26px</td>
+									</tr>
+									<tr>
+										<td>.fluid-h3 </td>
+										<td>$min_width :  <div class="min-width"></div> </td>
+										<td>$break-lg : 1500px</td>
+										<td>18px</td>
+										<td>24px</td>
+									</tr>
+									<tr>
+										<td>.fluid-h4 </td>
+										<td>$min_width :  <div class="min-width"></div> </td>
+										<td>$break-lg : 1500px</td>
+										<td>16px</td>
+										<td>22px</td>
+									</tr>
+									<tr>
+										<td>.fluid-h5 </td>
+										<td>$min_width :  <div class="min-width"></div> </td>
+										<td>$break-lg : 1500px</td>
+										<td>14px</td>
+										<td>20px</td>
+									</tr>
+									<tr>
+										<td>.fluid-h6 </td>
+										<td>$min_width :  <div class="min-width"></div> </td>
+										<td>$break-lg : 1500px</td>
+										<td>14px</td>
+										<td>18px</td>
+									</tr>
+									<tr>
+										<td>.fluid-h7 </td>
+										<td>$min_width :  <div class="min-width"></div> </td>
+										<td>$min_width :  <div class="break-xs"></div> </td>
+										<td>12px</td>
+										<td>18px</td>
+									</tr>
+								</tbody>
+							</table>
 						</div>
 					</section>
 				</div>
@@ -402,5 +476,4 @@
 		<script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script>
 </body>
-
 </html>

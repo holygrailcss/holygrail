@@ -4,151 +4,117 @@
 .text-center {
   text-align: center;
 }
-
 .text-right {
   text-align: right;
 }
-
 .text-left {
   text-align: left;
 }
-
 .text-justify {
   text-align: justify;
 }
-
 /*+------------------------------------------------------------+
  |       -HEROS        
  +------------------------------------------------------------+*/
 .hero-big {
   min-height: 300px;
-
   @media (min-width:$break-sm) {
     min-height: 500px;
   }
 }
-
 .hero-medium {
   min-height: 200px;
-
   @media (min-width:$break-sm) {
     min-height: 400px;
   }
 }
-
 .hero-mini {
   min-height: 100px;
-
   @media (min-width:$break-sm) {
     min-height: 300px;
   }
 }
-
 .title-tiny {
   min-height: 50px;
 }
-
 .pt-20 {
   padding-top: 20px;
 }
-
 /*+------------------------------------------------------------+
  |       -FLEXBOX    helpers
  +------------------------------------------------------------+*/
 .is-flex {
   display: flex;
 }
-
 .flex-column {
   flex-direction: column;
 }
-
 .flex-row {
   flex-direction: row;
 }
-
 .flex-nowrap {
   flex-wrap: nowrap;
 }
-
 .flex-wrap {
   flex-wrap: wrap;
 }
-
 .content-start {
   justify-content: flex-start;
 }
-
 .content-end {
   justify-content: flex-end;
 }
-
 .content-center {
   justify-content: center;
 }
-
 .content-sp-between {
   justify-content: space-between;
 }
-
 .content-sp-around {
   justify-content: space-around;
 }
-
 .content-sp-evenly {
   justify-content: space-evenly;
 }
-
 .align-top {
   align-items: flex-start;
 }
-
 .align-middle {
   align-items: center;
 }
-
 .align-bottom {
   align-items: flex-end;
 }
-
 .align-stretch {
   align-items: stretch;
 }
-
 .align-multi-top {
   align-content: flex-start;
   flex-wrap: wrap;
 }
-
 .align-multi-bottom {
   align-content: flex-end;
   flex-wrap: wrap;
 }
-
 .align-multi-center {
   align-content: center;
   flex-wrap: wrap;
 }
-
 .align-multi-between {
   align-content: space-between;
   flex-wrap: wrap;
 }
-
 .align-multi-around {
   align-content: space-around;
   flex-wrap: wrap;
 }
-
 .align-multi-stretch {
   align-content: stretch;
   flex-wrap: wrap;
 }
-
 .d-inline {
   display: inline-block;
 }
-
 .sticky-bottom {
   width: 100%;
   position: absolute;
@@ -157,31 +123,39 @@
   padding: 0 $padding-global $padding-global;
   bottom: 0;
 }
-
 .bg-dark {
-  background-color: #eaeaea;
+  background-color: #3dbfcb;
   color: #fff;
 }
 
-@mixin ratio($width, $height) {
-  position: relative;
-
-  &:before {
-    display: block;
-    content: "";
-    width: 100%;
-    padding-top: ($height / $width) * 100%;
-  }
-
-  >.content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
-}
-
+/*+------------------------------------------------------------+
+ |       -RATIOS        
+ +------------------------------------------------------------+*/
+ 
 .rat-16-9 {
   @include ratio(16, 9);
+}
+.rat-21-9 {
+  @include ratio(21, 9);
+}
+.rat-1-1 {
+  @include ratio(1, 1);
+}
+.rat-2-1 {
+  @include ratio(2, 1);
+}
+.rat-2-3 {
+  @include ratio(2, 3);
+}
+.rat-3-2{
+  @include ratio(3, 2);
+}
+.rat-3-4{
+  @include ratio(3, 4);
+}
+.rat-4-2{
+  @include ratio(4, 2);
+}
+.rat-4-3{
+  @include ratio(4, 3);
 }

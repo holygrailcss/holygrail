@@ -212,3 +212,28 @@ input[type="button"], big, tt
  
 *[border], a[target], table[cellpadding], table[cellspacing], *[name]
 { border: 5px solid #33FF00 !important; }
+
+
+
+/*+------------------------------------------------------------+
+ |       -Coloreamos los headers
+ +------------------------------------------------------------+*/
+@for $i from 1 through 8 {
+	.h#{$i} {
+		position: relative;
+		@include random-bgr();
+		&:after {
+			content:"h#{$i}";
+			position: absolute;
+			@include random-bgr();
+			opacity: .7;
+			color: #fff;
+			border-radius: 50%;
+			padding: 3px;
+			left: 0;
+			top: -10px;
+			font-size: 10px;
+			font-weight: bold;
+		}
+	}
+}

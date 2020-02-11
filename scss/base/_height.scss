@@ -17,3 +17,10 @@
 .height-xl {
     height: 450px;
 }
+
+.height-full {
+    height: 100vh;
+}
+.height-home {
+    height: calc(100vh - 80px);
+}

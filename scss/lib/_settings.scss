@@ -77,7 +77,7 @@ $height-inputs: 48px;
 $error-primary:#FD675E;
 
 
-$container-2: 600px; //maxwidth del container2
+$container-2: 700px; //maxwidth del container2
 $container-3: 900px; //maxwidth del container2
 $container-4: 350px; //maxwidth del container4
 $link:rgb(207, 236, 240);
@@ -85,3 +85,52 @@ $linkHover:#999;
 $black:rgb(3, 2, 2);
 $primary:#000;
 $transition:278ms;
+
+.min-width{
+    display: inline-block;
+    &:after {
+        content: "#{$min-width}";
+
+    }
+}
+
+.break-xs {
+    display: inline-block;
+    &:after {
+        content: "#{$min-width}";
+
+    }
+}
+
+.break-sm {
+    &:after {
+        display: inline-block;
+        content: "#{$break-sm}";
+display: inline-block;
+    }
+}
+
+.break-md {
+    &:after {
+        display: inline-block;
+        content: "#{$break-md}";
+display: inline-block;
+    }
+}
+
+
+
+.break-lg {
+    &:after {
+        display: inline-block;
+        content: "#{$break-lg}";
+display: inline-block;
+    }
+}
+.break-xl {
+    &:after {
+        display: inline-block;
+        content: "#{$break-lg}";
+display: inline-block;
+    }
+}

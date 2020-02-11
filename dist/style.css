@@ -13,9 +13,9 @@
 /**
 * Lógica de scss 
 **/
-/*------------------------------------*\
-    $RESET
-\*------------------------------------*/
+/*+------------------------------------------------------------+
+ |       -RESET  
+ +------------------------------------------------------------+*/
 html, body, div, span, select, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, main, menu, nav, section, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -25,18 +25,7 @@ html, body, div, span, select, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline;
   background: transparent; }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-main,
-menu,
-nav,
-section,
-summary {
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
   display: block; }
 
 img {
@@ -46,7 +35,7 @@ img {
   -ms-interpolation-mode: bicubic; }
 
 /*+------------------------------------------------------------+
- |       -ARRAYS        
+ |       -IMPORT FONTS        
  +------------------------------------------------------------+*/
 @font-face {
   font-family: "BasisGrotesque-Bold-Pro";
@@ -69,17 +58,59 @@ img {
   src: url("../themes/theme-dutti/fonts/basis/BasisGrotesque-Regular-Pro.eot?#iefix") format("embedded-opentype"), url("../themes/theme-dutti/fonts/basis/BasisGrotesque-Regular-Pro.woff2") format("woff2"), url("../themes/theme-dutti/fonts/basis/BasisGrotesque-Regular-Pro.woff") format("woff"), url("../themes/theme-dutti/fonts/basis/BasisGrotesque-Regular-Pro.ttf") format("truetype"); }
 
 /*+------------------------------------------------------------+
- |       -VARIABLES        
+ |       -BREAKPOINTS        
  +------------------------------------------------------------+*/
-/*------------------------------------*\
-    $MIXINS
-\*------------------------------------*/
+/*+------------------------------------------------------------+
+ |       -Variables  Globales      
+ +------------------------------------------------------------+*/
+.min-width {
+  display: inline-block; }
+  .min-width:after {
+    content: "320px"; }
+
+.break-xs {
+  display: inline-block; }
+  .break-xs:after {
+    content: "320px"; }
+
+.break-sm:after {
+  display: inline-block;
+  content: "600px";
+  display: inline-block; }
+
+.break-md:after {
+  display: inline-block;
+  content: "992px";
+  display: inline-block; }
+
+.break-lg:after {
+  display: inline-block;
+  content: "1200px";
+  display: inline-block; }
+
+.break-xl:after {
+  display: inline-block;
+  content: "1200px";
+  display: inline-block; }
+
+/*+------------------------------------------------------------+
+ |       -MIXINS        
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -MIXINS FONTS        
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -COLORES RANDOM       
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -FLUID TEXT 
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -RATIO 
+ +------------------------------------------------------------+*/
 /**
 * Base estilo inline    class="[col-sm-2]    [py-20m-20]    [h1 text-1 link-2] [text-center]"
 **/
-.is-flex {
-  display: flex; }
-
 /*+------------------------------------------------------------+
  |       -CONTAINERS        
  +------------------------------------------------------------+*/
@@ -119,7 +150,7 @@ img {
   margin-left: auto;
   position: relative;
   width: 90%;
-  max-width: 600px; }
+  max-width: 700px; }
 
 .container-3 {
   padding-right: 8px;
@@ -142,18 +173,25 @@ img {
 /*+------------------------------------------------------------+
  |       -ROW        
  +------------------------------------------------------------+*/
-@media (max-width: 599px) {
-  [class*="col-"] {
-    padding-bottom: 8px; } }
+/* Todos los rows tienen padding bottom
 
-@media (max-width: 991px) {
+ @media (max-width:$break-sm - 1) {
   [class*="col-"] {
-    padding-bottom: 16px; } }
-
-@media (max-width: 1199px) {
+  padding-bottom: $padding-global;
+  }
+}
+@media (max-width:$break-md - 1) {
   [class*="col-"] {
-    padding-bottom: 16px; } }
+   padding-bottom: $padding-global * 2;
+  }
+}
+@media (max-width:$break-lg - 1) {
+  [class*="col-"] {
+ padding-bottom: $padding-global * 2;
+  }
+}
 
+*/
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -441,6 +479,9 @@ img {
   flex-shrink: 1;
   padding: 0 8px; }
 
+/*+------------------------------------------------------------+
+ |       -BLEED A SANGRE  
+ +------------------------------------------------------------+*/
 .bleed {
   padding: 0;
   overflow: hidden; }
@@ -465,6 +506,9 @@ img {
     padding: 0px;
     box-sizing: border-box; }
 
+/*+------------------------------------------------------------+
+ |       -SINGLE AND DOUBLE  
+ +------------------------------------------------------------+*/
 .single {
   flex-basis: 50%;
   max-width: 50%; }
@@ -481,6 +525,15 @@ img {
     flex-basis: 50%;
     max-width: 50%; } }
 
+/*+------------------------------------------------------------+
+ |       -MARGINS  
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -PADDINGS  
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -MIXINS SPACE  
+ +------------------------------------------------------------+*/
 @media (min-width: 1px) {
   .m-20 {
     margin: 10px; }
@@ -1017,6 +1070,9 @@ img {
   .pr-50 {
     padding-right: 50px; } }
 
+/*+------------------------------------------------------------+
+ |       -HTML REMS        
+ +------------------------------------------------------------+*/
 html {
   font-size: 1rem;
   font-family: "BasisGrotesque-Regular-Pro";
@@ -1041,41 +1097,9 @@ select {
   font-family: "BasisGrotesque-Regular-Pro";
   line-height: 1.6; }
 
-.h1 {
-  font-size: calc(1em + .5vw);
-  line-height: 1.2;
-  font-family: "BasisGrotesque-Regular-Pro";
-  line-height: 1.6; }
-
-.h2 {
-  font-size: calc(1em + .3vw);
-  line-height: 1.2;
-  font-family: "BasisGrotesque-Light-Pro"; }
-
-.h3 {
-  font-size: calc(1em + .5vw);
-  line-height: 1.2;
-  font-family: "BasisGrotesque-Light-Pro"; }
-
-.h4, .card .title {
-  font-size: 16px;
-  line-height: 1.2;
-  font-family: "BasisGrotesque-Bold-Pro"; }
-
-.h5 {
-  font-size: 18px;
-  line-height: 1.2;
-  font-family: "BasisGrotesque-Medium-Pro"; }
-
-.h6, .card .subtitle {
-  font-size: calc(1em + 0.25vw);
-  font-family: "BasisGrotesque-Light-Pro"; }
-
-.h7 {
-  font-size: 18px;
-  font-family: "BasisGrotesque-Regular-Pro";
-  line-height: 1.6; }
-
+/*+------------------------------------------------------------+
+ |       -HEADERS ELÁSTICOS        
+ +------------------------------------------------------------+*/
 p {
   font-family: "BasisGrotesque-Regular-Pro";
   line-height: 1.6;
@@ -1101,9 +1125,9 @@ mark {
   color: #000;
   font-family: "BasisGrotesque-Bold-Pro"; }
 
-/*------------------------------------*\
-    $LINKS
-\*------------------------------------*/
+/*+------------------------------------------------------------+
+ |       -LINKS        
+ +------------------------------------------------------------+*/
 .text-1 {
   font-size: 16px; }
 
@@ -1579,6 +1603,96 @@ label {
     line-height: 1.4;
     font-family: "BasisGrotesque-Medium-Pro"; } }
 
+/*+-----------------------------------------------------------------------------------------+
+ |       -FLUID TEXT   Desde min_width   hasta  break-lg  <--->  font-minima hasta font-maxima
+ +-------------------------------------------------------------------------------------------+*/
+.fluid-h1 {
+  font-family: "BasisGrotesque-Regular-Pro";
+  line-height: 1.6; }
+  .fluid-h1 {
+    font-size: 20px; }
+    @media screen and (min-width: 320px) {
+      .fluid-h1 {
+        font-size: calc(20px + 10 * ((100vw - 320px) / 880)); } }
+    @media screen and (min-width: 1200px) {
+      .fluid-h1 {
+        font-size: 30px; } }
+
+.fluid-h2 {
+  line-height: 1.2;
+  font-family: "BasisGrotesque-Light-Pro"; }
+  .fluid-h2 {
+    font-size: 18px; }
+    @media screen and (min-width: 320px) {
+      .fluid-h2 {
+        font-size: calc(18px + 8 * ((100vw - 320px) / 880)); } }
+    @media screen and (min-width: 1200px) {
+      .fluid-h2 {
+        font-size: 26px; } }
+
+.fluid-h3 {
+  line-height: 1.2;
+  font-family: "BasisGrotesque-Light-Pro"; }
+  .fluid-h3 {
+    font-size: 18px; }
+    @media screen and (min-width: 320px) {
+      .fluid-h3 {
+        font-size: calc(18px + 6 * ((100vw - 320px) / 880)); } }
+    @media screen and (min-width: 1200px) {
+      .fluid-h3 {
+        font-size: 24px; } }
+
+.fluid-h4 {
+  line-height: 1.2;
+  font-family: "BasisGrotesque-Bold-Pro"; }
+  .fluid-h4 {
+    font-size: 16px; }
+    @media screen and (min-width: 320px) {
+      .fluid-h4 {
+        font-size: calc(16px + 6 * ((100vw - 320px) / 880)); } }
+    @media screen and (min-width: 1200px) {
+      .fluid-h4 {
+        font-size: 22px; } }
+
+.fluid-h5 {
+  line-height: 1.2;
+  font-family: "BasisGrotesque-Medium-Pro"; }
+  .fluid-h5 {
+    font-size: 14px; }
+    @media screen and (min-width: 320px) {
+      .fluid-h5 {
+        font-size: calc(14px + 6 * ((100vw - 320px) / 880)); } }
+    @media screen and (min-width: 1200px) {
+      .fluid-h5 {
+        font-size: 20px; } }
+
+.fluid-h6 {
+  font-size: calc(1em + 0.25vw);
+  font-family: "BasisGrotesque-Light-Pro"; }
+  .fluid-h6 {
+    font-size: 14px; }
+    @media screen and (min-width: 320px) {
+      .fluid-h6 {
+        font-size: calc(14px + 4 * ((100vw - 320px) / 880)); } }
+    @media screen and (min-width: 1200px) {
+      .fluid-h6 {
+        font-size: 18px; } }
+
+.fluid-h7 {
+  font-family: "BasisGrotesque-Regular-Pro";
+  line-height: 1.6; }
+  .fluid-h7 {
+    font-size: 12px; }
+    @media screen and (min-width: 320px) {
+      .fluid-h7 {
+        font-size: calc(12px + 6 * ((100vw - 320px) / 880)); } }
+    @media screen and (min-width: 1200px) {
+      .fluid-h7 {
+        font-size: 18px; } }
+
+/*+------------------------------------------------------------+
+ |       -HELPERS DE TEXTO , ALINEACIONES        
+ +------------------------------------------------------------+*/
 .text-center {
   text-align: center; }
 
@@ -1591,6 +1705,9 @@ label {
 .text-justify {
   text-align: justify; }
 
+/*+------------------------------------------------------------+
+ |       -HEROS        
+ +------------------------------------------------------------+*/
 .hero-big {
   min-height: 300px; }
   @media (min-width: 600px) {
@@ -1616,8 +1733,11 @@ label {
   padding-top: 20px; }
 
 /*+------------------------------------------------------------+
- |       -flexbox    helpers
+ |       -FLEXBOX    helpers
  +------------------------------------------------------------+*/
+.is-flex {
+  display: flex; }
+
 .flex-column {
   flex-direction: column; }
 
@@ -1696,9 +1816,12 @@ label {
   bottom: 0; }
 
 .bg-dark {
-  background-color: #eaeaea;
+  background-color: #3dbfcb;
   color: #fff; }
 
+/*+------------------------------------------------------------+
+ |       -RATIOS        
+ +------------------------------------------------------------+*/
 .rat-16-9 {
   position: relative; }
   .rat-16-9:before {
@@ -1713,6 +1836,121 @@ label {
     right: 0;
     bottom: 0; }
 
+.rat-21-9 {
+  position: relative; }
+  .rat-21-9:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 42.85714%; }
+  .rat-21-9 > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+
+.rat-1-1 {
+  position: relative; }
+  .rat-1-1:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 100%; }
+  .rat-1-1 > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+
+.rat-2-1 {
+  position: relative; }
+  .rat-2-1:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 50%; }
+  .rat-2-1 > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+
+.rat-2-3 {
+  position: relative; }
+  .rat-2-3:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 150%; }
+  .rat-2-3 > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+
+.rat-3-2 {
+  position: relative; }
+  .rat-3-2:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 66.66667%; }
+  .rat-3-2 > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+
+.rat-3-4 {
+  position: relative; }
+  .rat-3-4:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 133.33333%; }
+  .rat-3-4 > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+
+.rat-4-2 {
+  position: relative; }
+  .rat-4-2:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 50%; }
+  .rat-4-2 > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+
+.rat-4-3 {
+  position: relative; }
+  .rat-4-3:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 75%; }
+  .rat-4-3 > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+
+/*+------------------------------------------------------------+
+ |       -Alturas         
+ +------------------------------------------------------------+*/
 .height-sm {
   height: 100px; }
 
@@ -1725,9 +1963,15 @@ label {
 .height-xl {
   height: 450px; }
 
-/*------------------------------------*\
-    $BOTONES
-\*------------------------------------*/
+.height-full {
+  height: 100vh; }
+
+.height-home {
+  height: calc(100vh - 80px); }
+
+/*+------------------------------------------------------------+
+ |       -BOTONES    
+ +------------------------------------------------------------+*/
 /*
  * Definimos los botones y sus variantes
  */
@@ -1749,16 +1993,19 @@ label {
   white-space: nowrap;
   cursor: pointer;
   /**
- 	* Nadie quiere un botón con texto subrayado cuando
- 	* hacemos hover.
+ 	* Nadie quiere un botón con texto subrayado cuando hacemos hover.
  	*/ }
   .btn:hover {
     text-decoration: none;
     opacity: .6; }
   .btn:active, .btn:focus {
     outline: none; }
+  .btn:visited {
+    outline: none; }
 
-/*tamaños*/
+/*+------------------------------------------------------------+
+ |       -TAMAÑOS    
+ +------------------------------------------------------------+*/
 .btn--mini {
   padding-right: 24px;
   padding-left: 24px;
@@ -1796,8 +2043,9 @@ label {
   font-size: 16px;
   line-height: 46px; }
 
-/*tamaños*/
-/*modificadores tipo*/
+/*+------------------------------------------------------------+
+ |       -MODIFICADORES DE TAMAÑO    
+ +------------------------------------------------------------+*/
 .btn-xs {
   position: relative;
   display: inline-block;
@@ -1819,6 +2067,8 @@ label {
     opacity: .6; }
   .btn-xs:active, .btn-xs:focus {
     outline: none; }
+  .btn-xs:visited {
+    outline: none; }
 
 .btn-block {
   display: block;
@@ -1838,9 +2088,9 @@ label {
   color: #fff;
   transition: all 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955); }
 
-/*------------------------------------*\
-    $BOTONES-TAMAÑOS
-\*------------------------------------*/
+/*+------------------------------------------------------------+
+ |       -TIPOS DE BOTONES    
+ +------------------------------------------------------------+*/
 /**
  * Variantes de los botones por tamaño.
  *
@@ -1860,9 +2110,9 @@ label {
   background-color: transparent;
   border: 1px solid white; }
 
-/*------------------------------------*\
-    $BOTONES-GRUPOS
-\*------------------------------------*/
+/*+------------------------------------------------------------+
+ |       -GRUPOS DE BOTONES    
+ +------------------------------------------------------------+*/
 /**
  * Con esta clase podemos agrupar los botones
  * en grupos horizontales.
@@ -1879,6 +2129,9 @@ label {
     .btn-group [class^="btn--"]:first-child,
     .btn-group [class*=" btn--"]:first-child {
       margin-left: 0; }
+    .btn-group [class^="btn--"]:last-child,
+    .btn-group [class*=" btn--"]:last-child {
+      outline: none; }
 
 .btn-group-inline {
   text-align: center;
@@ -1890,9 +2143,12 @@ label {
     min-width: 200px;
     margin: 0 5px; }
 
-/*------------------------------------*\
-    $LINKS
-\*------------------------------------*/
+/*+------------------------------------------------------------+
+ |       -LINKS    
+ +------------------------------------------------------------+*/
+a:hover {
+  opacity: .9; }
+
 .link1 {
   font-size: 16px;
   color: #030202;
@@ -1966,7 +2222,7 @@ label {
 .link3:hover::before {
   opacity: 1; }
 
-.btn-links {
+.link4 {
   position: relative;
   display: inline-block;
   border: 0;
@@ -1977,9 +2233,9 @@ label {
   color: black;
   line-height: 16px;
   padding: 12px 0; }
-  .btn-links:hover {
+  .link4:hover {
     opacity: .5; }
-  .btn-links .ma-link-span-underline {
+  .link4 .ma-link-span-underline {
     background: #0e0d0d;
     height: 1px;
     width: 100%;
@@ -2021,6 +2277,9 @@ label {
     transform-origin: center;
     width: 10px; }
 
+/*+------------------------------------------------------------+
+ |       -LISTA CON BULLET    
+ +------------------------------------------------------------+*/
 ul.list-disc {
   list-style: none;
   margin: 16px 0;
@@ -2045,24 +2304,31 @@ ul.list-disc {
     ul.list-disc li a::after {
       bottom: 7px; }
 
-ul.list-inline {
-  margin: 0px; }
-  ul.list-inline li {
-    display: inline-block;
-    padding: 0;
-    margin: 0; }
-    ul.list-inline li a {
-      padding: 8px;
-      float: left; }
-    ul.list-inline li:after {
-      display: none; }
+/*+------------------------------------------------------------+
+ |       -LISTA HORIZONTAL LIMPIA    
+ +------------------------------------------------------------+*/
+ul.list-inline li {
+  display: inline-block;
+  padding: 0;
+  margin: 0; }
+  ul.list-inline li a {
+    padding: 8px 8px 8px 0;
+    float: left; }
+  ul.list-inline li:after {
+    display: none; }
 
+/*+------------------------------------------------------------+
+ |       -LISTA VERTICAL LIMPIA    
+ +------------------------------------------------------------+*/
 ul.list-clear li {
   list-style: none;
   margin: 8px 0px; }
   ul.list-clear li:after {
     display: none; }
 
+/*+------------------------------------------------------------+
+ |       -LISTA DE SELECTOR DE TALLAS    
+ +------------------------------------------------------------+*/
 ul.h-size-selector a {
   position: relative;
   width: 20px;
@@ -2084,6 +2350,9 @@ ul.h-size-selector a {
     border-radius: 50%;
     transition: .5s ease all; }
 
+/*+------------------------------------------------------------+
+ |       -INPUTS    
+ +------------------------------------------------------------+*/
 input:focus {
   outline: none;
   border: 1px solid black; }
@@ -2097,7 +2366,8 @@ select {
   border-radius: 0;
   color: #363636; }
 
-.input, .select select {
+.input,
+.select select {
   -webkit-appearance: none;
   align-items: center;
   border: 1px solid transparent;
@@ -2112,7 +2382,9 @@ select {
   height: 48px;
   box-sizing: border-box; }
 
-.input, .textarea, .select select {
+.input,
+.textarea,
+.select select {
   background-color: #fff;
   border-color: #dbdbdb;
   color: #363636;
@@ -2161,10 +2433,8 @@ select {
 .checkbox-text {
   float: left; }
   .checkbox-text label {
-    float: left;
     display: inline-block; }
   .checkbox-text input {
-    float: left;
     display: inline-block;
     margin-right: 10px; }
 
@@ -2194,7 +2464,7 @@ select {
   padding: 10px; }
   .guide-font span {
     top: 15px;
-    color: #e83e8c;
+    color: #05aeb9;
     font-size: 14px;
     position: absolute;
     line-height: 1;
@@ -2419,16 +2689,15 @@ input::-webkit-input-placeholder {
     right: 12px;
     left: auto; }
 
-/* Fallback for Edge
--------------------------------------------------- */
+/*+------------------------------------------------------------+
+ |       -FALLBACK PARA EDGE    
+ +------------------------------------------------------------+*/
 @supports (-ms-ime-align: auto) {
   .form-label-group > label {
     display: none; }
   .form-label-group input::-ms-input-placeholder {
     color: #777; } }
 
-/* Fallback for IE
--------------------------------------------------- */
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .form-label-group > label {
     display: none; }
@@ -2439,12 +2708,11 @@ input::-webkit-input-placeholder {
   padding: 16px 0;
   border-top: 1px solid #eaeaea; }
 
-/*------------------------------------*\
-    $BOTONES
-\*------------------------------------*/
+/*+------------------------------------------------------------+
+ |       -TABS  
+ +------------------------------------------------------------+*/
 /*
  * Definimos los botones y sus variantes
-
  <div class="tabs">
   <ul>
     <li class="is-active"><a>Pictures</a></li>
@@ -2455,7 +2723,9 @@ input::-webkit-input-placeholder {
 </div>
  */
 .tabs {
-  /*********** Casuisticas  ********/ }
+  /*+------------------------------------------------------------+
+ |       -CASUISTICAS  
+ +------------------------------------------------------------+*/ }
   .tabs ul {
     align-items: center;
     border-bottom-color: #dbdbdb;
@@ -2499,6 +2769,9 @@ input::-webkit-input-placeholder {
   .tabs.is-center ul {
     justify-content: center; }
 
+/*+------------------------------------------------------------+
+ |       -SELECT  
+ +------------------------------------------------------------+*/
 .select {
   display: inline-block;
   max-width: 100%;
@@ -2517,6 +2790,11 @@ input::-webkit-input-placeholder {
     display: block;
     max-width: 100%;
     outline: 0; }
+  .select label {
+    position: absolute;
+    top: 17px;
+    left: 16px;
+    z-index: 1; }
   .select::after {
     border: 1px solid #000;
     border-radius: 0px;
@@ -2553,11 +2831,6 @@ input::-webkit-input-placeholder {
     border-color: #363636; }
   .select.select-label select {
     padding-left: 100px; }
-  .select label {
-    position: absolute;
-    top: 17px;
-    left: 16px;
-    z-index: 1; }
 
 /**
 * modulos componentizados  

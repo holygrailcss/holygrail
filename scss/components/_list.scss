@@ -44,7 +44,7 @@ ul.list-inline {
     padding: 0;
     margin: 0;
     a {
-      padding: $padding-global;
+      padding: $padding-global  $padding-global  $padding-global 0;
       float: left;
     }
     &:after {
