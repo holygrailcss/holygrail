@@ -146,3 +146,30 @@ a {
     width: 10px;
   }
 }
+
+
+.link5 {
+  position: relative;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.6;
+  text-decoration: none;
+  
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    width: 0;
+    height: 1px;
+    background: #ffffff;
+    -webkit-animation: underline 1s 0.5s cubic-bezier(0.55, 0.085, 0, 0.99) forwards;
+    animation: underline 1s 0.5s cubic-bezier(0.55, 0.085, 0, 0.99) forwards;
+  }
+  
+  &:hover{
+    opacity: .5;
+  }
+  
+}

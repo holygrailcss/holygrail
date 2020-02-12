@@ -3,17 +3,22 @@
 \*------------------------------------*/
 /* no usar col- nunca ya que hay un selector asi
  */
-@import "../../scss/partials"; //core holygrail
-@import "./assets/colors";
+ @import "./assets/colors";
+ @import "../../scss/partials";
+
+
+@import "../../themes/theme-guide/site"; //imagenes, fuentes, customización del site
 @import "./assets/headers";
-@import "../../themes/theme-dutti/site"; //imagenes, fuentes, customización del site
+@import "../../themes/theme-guide/tags"; 
 
 .guide {
   .row {
     position: relative;
+    
   }
 
   .menulateral {
+    
     position: fixed;
     top: 62px;
     overflow: auto;
@@ -55,9 +60,8 @@
   }
 
   .site-main {
-
-    margin:0  300px;
-    padding: 40px 40px 60px 40px;
+    margin:0  200px;
+    padding: 100px 40px 60px 40px;
   }
   
 
@@ -99,7 +103,7 @@
     position: fixed;
     top: 0px;
     height: 62px;
-    background-color: #00bfcb;
+    background-color: $primary-guide;
 
     overflow: hidden;
     min-height: 40px;
@@ -123,7 +127,7 @@
   .guide-header {
     z-index: 100;
     padding: 16px;
-    background: #00bfcb;
+    background: $primary-guide;
 
     position: fixed;
     top: 0;
@@ -174,57 +178,39 @@
       top: 0;
       z-index: 1000;
       color: #fff;
+      display: inline-block;
+      background-color: $primary-guide;
       
-      @include fluid-text($min_width, $break-lg, 10px, 16px);
+      @include fluid-text($min_width, $break-lg, 10px, 14px);
 
-      &:after {
-        position: absolute;
-        @include fluid-text($min_width, $break-lg, 10px, 16px);
-        @include font-bold();
-        top: 15px;
-        left: 0;
-        color: #fff;
-      }
+
     }
 
     .guide-xs {
-      left: 5px;
+      left: 1px;
 
-      &:after {
-        content: '#{$break-xs}';
-      }
+
     }
 
     .guide-sm {
-      left: 22%;
+      left: 20%;
 
-      &:after {
-        content: '#{$break-sm}';
-      }
     }
 
     .guide-md {
-      left: 34%;
+      left: 32%;
 
-      &:after {
-        content: '#{$break-md}';
-      }
+
     }
 
     .guide-lg {
-      left: 45%;
+      left: 43%;
 
-      &:after {
-        content: '#{$break-lg}';
-      }
     }
 
     .guide-xl {
-      left: 57%;
+      left: 55%;
 
-      &:after {
-        content: '#{$break-xl}';
-      }
     }
   }
 
@@ -237,21 +223,15 @@
   }
 
   .num {
+    display: inline-block;
 
     font-size: 80px;
     text-align: center;
     line-height: 1;
-    color: #36aeb9;
+    color: $primary-guide;
     margin-top: 5px;
   }
 
-  .steps {
-
-    .h3,
-    .num {
-      display: inline-block;
-    }
-  }
 
   table {
     width: 100%;
@@ -310,14 +290,14 @@
     text-align: left;
 
     thead {
-      background-color: #05aeb9;
+      background-color: $primary-guide;
       color: #ffffff;
     }
 
     td {
       &:first-child {
         font-family: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace !important;
-        color: #267e86 !important;
+        color: $primary-guide !important;
       }
     }
   }
@@ -326,7 +306,7 @@
     background-color: #f1f1f1;
     padding-left: 4px;
     padding-right: 4px;
-    color: #05aeb9;
+    color: $primary-guide;
     ;
   }
 
@@ -340,7 +320,7 @@
     p {
       font-size: 12px;
       font-family: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace !important;
-      color: #267e86 !important;
+      color: $primary-guide!important;
       text-align: center;
       width: 100%;
       background-color: #efe5ef;
@@ -443,43 +423,56 @@ a {
 }
 
 .item-i:nth-child(1) {
-  background-color: rgba(0, 191, 203, 0.93)
+
+  background-color: $primary-guide;
+  opacity: .93;
+
+  
 }
 
 .item-i:nth-child(2) {
-  background-color: rgba(0, 191, 203, 0.86)
+  background-color: $primary-guide;
+  opacity: .83;
 }
 
 .item-i:nth-child(3) {
-  background-color: rgba(0, 191, 203, 0.79)
+  background-color: $primary-guide;
+  opacity: .79;
 }
 
 .item-i:nth-child(4) {
-  background-color: rgba(0, 191, 203, 0.72)
+  background-color: $primary-guide;
+  opacity: .72;
 }
 
 .item-i:nth-child(5) {
-  background-color: rgba(0, 191, 203, 0.65)
+  background-color: $primary-guide;
+  opacity: .65;
 }
 
 .item-i:nth-child(6) {
-  background-color: rgba(0, 191, 203, 0.58)
+  background-color: $primary-guide;
+  opacity: .58;
 }
 
 .item-i:nth-child(7) {
-  background-color: rgba(0, 191, 203, 0.51)
+  background-color: $primary-guide;
+  opacity: .51;
 }
 
 .item-i:nth-child(8) {
-  background-color: rgba(0, 191, 203, 0.44)
+  background-color: $primary-guide;
+  opacity: .44;
 }
 
 .item-i:nth-child(9) {
-  background-color: rgba(0, 191, 203, 0.37)
+  background-color: $primary-guide;
+  opacity: .37;
 }
 
 .item-i:nth-child(10) {
-  background-color: rgba(0, 191, 203, 0.3)
+  background-color: $primary-guide;
+  opacity: .3;
 }
 
 .box-demo,
@@ -491,7 +484,8 @@ a {
 .box-demo-inner {
   height: 200px;
   border: 1px solid white;
-  background-color: rgba(0, 191, 203, 0.60);
+  background-color: $primary-guide;
+  opacity: .6;
   font-size: 20px;
   padding-top: 100px;
   text-align: center;

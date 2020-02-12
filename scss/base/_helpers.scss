@@ -159,3 +159,13 @@
 .rat-4-3{
   @include ratio(4, 3);
 }
+
+
+/*+------------------------------------------------------------+
+ |       -BACKGROUNDS        
+ +------------------------------------------------------------+*/
+ 
+ .bg-cover{
+   background-position: center center;
+   background-size: cover;
+ }

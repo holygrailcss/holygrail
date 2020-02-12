@@ -1,26 +1,39 @@
 /*+------------------------------------------------------------+
  |       -Alturas         
  +------------------------------------------------------------+*/
+$height-xs:80px;
+$height-sm:100px;
+$height-md:150px;
+$height-lg:400px;
+$height-xl:450px;
+$height-full:100vh;
+$height-home:calc(100vh - 80px);
+
+.height-xs {
+    height: $height-xs;
+}
+
 
 .height-sm {
-    height: 100px;
+    height: $height-sm;
 }
 
 .height-md {
-    height: 150px;
+    height: $height-md;
 }
 
 .height-lg {
-    height: 300px;
+    height: $height-lg;
 }
 
 .height-xl {
-    height: 450px;
+    height: $height-xl;
 }
 
 .height-full {
     height: 100vh;
 }
+
 .height-home {
     height: calc(100vh - 80px);
 }

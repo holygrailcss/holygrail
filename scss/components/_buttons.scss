@@ -82,6 +82,20 @@ $btn-text-full:16px;
     padding-left: $padding-global * 8;
     font-size: $btn-text-xlarge;
     line-height: $btn-text-xlarge * 3 - 2;
+    
+    
+    position: relative;
+    display: inline-block;
+    min-height: 48px;
+    min-width: 288px;
+    max-width: 400px;
+    padding: 16px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    
 }
 
 .btn--full {

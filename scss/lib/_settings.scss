@@ -76,14 +76,19 @@ $padding-btn: 16px;
 $height-inputs: 48px;
 $error-primary:#FD675E;
 
-
+$container: 800px; //maxwidth del container2
 $container-2: 700px; //maxwidth del container2
 $container-3: 900px; //maxwidth del container2
 $container-4: 350px; //maxwidth del container4
+
+
 $link:rgb(207, 236, 240);
 $linkHover:#999;
 $black:rgb(3, 2, 2);
 $primary:#000;
+$primary-guide:#00bfcb;
+
+$primary-guide:red;
 $transition:278ms;
 
 .min-width{
@@ -134,3 +139,6 @@ display: inline-block;
 display: inline-block;
     }
 }
+
+
+

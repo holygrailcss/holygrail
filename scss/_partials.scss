@@ -16,6 +16,7 @@
 /**
 * Base estilo inline    class="[col-sm-2]    [py-20m-20]    [h1 text-1 link-2] [text-center]"
 **/
+@import "base/animations";
 @import "base/grid";
 @import "base/margins";
 @import "base/typography";
@@ -37,5 +38,9 @@
 /**
 * modulos componentizados  
 **/
+@import "moduls/logo";
+@import "moduls/cover-1";
+@import "moduls/cover-2";
 @import "moduls/row-6";
+@import "moduls/row-3";
 @import "moduls/card";

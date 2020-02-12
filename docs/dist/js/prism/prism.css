@@ -44,8 +44,8 @@
 	 padding: 1em;
 	 margin: .5em 0;
 	 overflow: auto;
-	 border: 1px solid #dddddd;
-	 background-color: white;
+
+	 background-color: #f7f7f7;
  }
  
  /* Inline code */
@@ -95,7 +95,7 @@
  .language-json .token.boolean,
  .language-json .token.number,
  code[class*="language-css"] {
-	 color: #0000ff;
+	 color: #038890;
  }
  
  .token.function {

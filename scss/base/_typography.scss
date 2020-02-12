@@ -186,14 +186,14 @@ $headersFixers: ( //name :  fontsize, lineheight
 
 
 .fluid-h1 {
-  @include fluid-text($min_width, $break-lg, 20px, 30px);
+  @include fluid-text($min_width, $break-lg, 30px, 88px);
   @include font-regular()
 }
 
 .fluid-h2 {
-  @include fluid-text($min_width, $break-lg, 18px, 26px);
+  @include fluid-text($min_width, $break-lg, 24px, 48px);
   line-height: 1.2;
-  @include font-light()
+  @include font-bold()
 }
 
 .fluid-h3 {

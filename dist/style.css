@@ -112,6 +112,37 @@ img {
 * Base estilo inline    class="[col-sm-2]    [py-20m-20]    [h1 text-1 link-2] [text-center]"
 **/
 /*+------------------------------------------------------------+
+ |       -ANIMATIONS    
+ +------------------------------------------------------------+*/
+@keyframes underline {
+  0% {
+    width: 0; }
+  100% {
+    width: 100%; } }
+
+@keyframes opacity {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes stretch {
+  0% {
+    height: 0; }
+  100% {
+    height: 80px; } }
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%); }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0); } }
+
+/*+------------------------------------------------------------+
  |       -CONTAINERS        
  +------------------------------------------------------------+*/
 .container {
@@ -482,16 +513,16 @@ img {
 /*+------------------------------------------------------------+
  |       -BLEED A SANGRE  
  +------------------------------------------------------------+*/
-.bleed {
-  padding: 0;
+.bleed-0 {
+  padding: 0 0px 0 0px;
   overflow: hidden; }
-  .bleed .container-fluid {
+  .bleed-0 .container-fluid {
     margin-left: 0px;
     margin-right: 0px;
-    padding: 0px; }
-  .bleed .row {
-    margin-left: 0px;
-    margin-right: 0px;
+    padding: 0 0px 0 0px; }
+  .bleed-0 .row {
+    margin-left: 0;
+    margin-right: 0;
     box-sizing: border-box;
     display: flex;
     -webkit-box-flex: 0;
@@ -502,8 +533,94 @@ img {
     flex-direction: row;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
-  .bleed [class*="col"] {
+  .bleed-0 [class*="col"] {
     padding: 0px;
+    box-sizing: border-box; }
+
+/*+------------------------------------------------------------+
+ |       -SINGLE AND DOUBLE  
+ +------------------------------------------------------------+*/
+.single {
+  flex-basis: 50%;
+  max-width: 50%; }
+
+.double {
+  flex-basis: 100%;
+  max-width: 100%; }
+
+@media (min-width: 768px) {
+  .single {
+    flex-basis: 25%;
+    max-width: 25%; }
+  .double {
+    flex-basis: 50%;
+    max-width: 50%; } }
+
+.bleed-4 {
+  padding: 0 2px 0 2px;
+  overflow: hidden; }
+  .bleed-4 .container-fluid {
+    margin-left: -2px;
+    margin-right: -2px;
+    padding: 0 2px 0 2px; }
+  .bleed-4 .row {
+    margin-left: 0;
+    margin-right: 0;
+    box-sizing: border-box;
+    display: flex;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .bleed-4 [class*="col"] {
+    padding: 2px;
+    box-sizing: border-box; }
+
+/*+------------------------------------------------------------+
+ |       -SINGLE AND DOUBLE  
+ +------------------------------------------------------------+*/
+.single {
+  flex-basis: 50%;
+  max-width: 50%; }
+
+.double {
+  flex-basis: 100%;
+  max-width: 100%; }
+
+@media (min-width: 768px) {
+  .single {
+    flex-basis: 25%;
+    max-width: 25%; }
+  .double {
+    flex-basis: 50%;
+    max-width: 50%; } }
+
+.bleed-8 {
+  padding: 0 4px 0 4px;
+  overflow: hidden; }
+  .bleed-8 .container-fluid {
+    margin-left: -4px;
+    margin-right: -4px;
+    padding: 0 4px 0 4px; }
+  .bleed-8 .row {
+    margin-left: 0;
+    margin-right: 0;
+    box-sizing: border-box;
+    display: flex;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .bleed-8 [class*="col"] {
+    padding: 4px;
     box-sizing: border-box; }
 
 /*+------------------------------------------------------------+
@@ -1610,25 +1727,25 @@ label {
   font-family: "BasisGrotesque-Regular-Pro";
   line-height: 1.6; }
   .fluid-h1 {
-    font-size: 20px; }
+    font-size: 30px; }
     @media screen and (min-width: 320px) {
       .fluid-h1 {
-        font-size: calc(20px + 10 * ((100vw - 320px) / 880)); } }
+        font-size: calc(30px + 58 * ((100vw - 320px) / 880)); } }
     @media screen and (min-width: 1200px) {
       .fluid-h1 {
-        font-size: 30px; } }
+        font-size: 88px; } }
 
 .fluid-h2 {
   line-height: 1.2;
-  font-family: "BasisGrotesque-Light-Pro"; }
+  font-family: "BasisGrotesque-Bold-Pro"; }
   .fluid-h2 {
-    font-size: 18px; }
+    font-size: 24px; }
     @media screen and (min-width: 320px) {
       .fluid-h2 {
-        font-size: calc(18px + 8 * ((100vw - 320px) / 880)); } }
+        font-size: calc(24px + 24 * ((100vw - 320px) / 880)); } }
     @media screen and (min-width: 1200px) {
       .fluid-h2 {
-        font-size: 26px; } }
+        font-size: 48px; } }
 
 .fluid-h3 {
   line-height: 1.2;
@@ -1949,8 +2066,18 @@ label {
     bottom: 0; }
 
 /*+------------------------------------------------------------+
+ |       -BACKGROUNDS        
+ +------------------------------------------------------------+*/
+.bg-cover {
+  background-position: center center;
+  background-size: cover; }
+
+/*+------------------------------------------------------------+
  |       -Alturas         
  +------------------------------------------------------------+*/
+.height-xs {
+  height: 80px; }
+
 .height-sm {
   height: 100px; }
 
@@ -1958,7 +2085,7 @@ label {
   height: 150px; }
 
 .height-lg {
-  height: 300px; }
+  height: 400px; }
 
 .height-xl {
   height: 450px; }
@@ -2034,7 +2161,18 @@ label {
   padding-right: 64px;
   padding-left: 64px;
   font-size: 16px;
-  line-height: 46px; }
+  line-height: 46px;
+  position: relative;
+  display: inline-block;
+  min-height: 48px;
+  min-width: 288px;
+  max-width: 400px;
+  padding: 16px;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer; }
 
 .btn--full {
   width: 100%;
@@ -2276,6 +2414,26 @@ a:hover {
     transform: rotate(-135deg);
     transform-origin: center;
     width: 10px; }
+
+.link5 {
+  position: relative;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.6;
+  text-decoration: none; }
+  .link5:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    width: 0;
+    height: 1px;
+    background: #ffffff;
+    -webkit-animation: underline 1s 0.5s cubic-bezier(0.55, 0.085, 0, 0.99) forwards;
+    animation: underline 1s 0.5s cubic-bezier(0.55, 0.085, 0, 0.99) forwards; }
+  .link5:hover {
+    opacity: .5; }
 
 /*+------------------------------------------------------------+
  |       -LISTA CON BULLET    
@@ -2835,6 +2993,20 @@ input::-webkit-input-placeholder {
 /**
 * modulos componentizados  
 **/
+.logo-mini {
+  max-width: 48px;
+  fill: #ffffff; }
+
+.cover-1 .cover-1-down-button {
+  position: absolute;
+  bottom: 0;
+  width: 200px; }
+
+.cover-2 {
+  width: 100%; }
+  .cover-2 span {
+    position: absolute; }
+
 .row-6 {
   display: -webkit-box;
   display: flex;
@@ -2846,6 +3018,29 @@ input::-webkit-input-placeholder {
 
 /**
 
+ section>.container>.row-6>.col>.h5+p.p1
+**/
+.row-3 {
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .row-3 .col {
+    display: flex;
+    text-align: center;
+    flex-basis: 80%; }
+    @media (min-width: 600px) {
+      .row-3 .col {
+        flex-basis: 40%; } }
+    @media (min-width: 992px) {
+      .row-3 .col {
+        flex-basis: 30%; } }
+
+/**
  section>.container>.row-6>.col>.h5+p.p1
 **/
 .card {

@@ -114,6 +114,7 @@
  |       -COLS        
  +------------------------------------------------------------+*/
 $colBreakpoints: length($breakpoints) - 1;
+
 @for $i from 1 through $colBreakpoints {
   @media (min-width: nth(map-values($breakpoints), $i)) {
     @for $c from 1 through $totalCols {
@@ -146,17 +147,18 @@ $colBreakpoints: length($breakpoints) - 1;
  |       -BLEED A SANGRE  
  +------------------------------------------------------------+*/
 @mixin bleed($margin) {
-  .bleed {
-    padding: 0;
+  
+  .bleed-#{$margin} {
+    padding: 0 $margin/2+px 0 $margin/2+px ;
     overflow: hidden;
     .container-fluid {
       margin-left: -$margin/2+px;
       margin-right: -$margin/2+px;
-      padding: $margin/2+px;
+      padding: 0 $margin/2+px 0 $margin/2+px ;
     }
     .row {
-      margin-left: -$margin/2+px;
-      margin-right: -$margin/2+px;
+      margin-left: 0;
+      margin-right: 0;
       box-sizing: border-box;
       display: flex;
       -webkit-box-flex: 0;
@@ -197,3 +199,5 @@ $colBreakpoints: length($breakpoints) - 1;
   }
 }
 @include bleed(0);
+@include bleed(4);
+@include bleed(8);

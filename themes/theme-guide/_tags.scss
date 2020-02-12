@@ -1,0 +1,44 @@
+$variable-list: (
+
+  break-xs: #{$break-xs},/*Breakpoints*/
+  break-sm: #{$break-sm},
+  break-md: #{$break-md},
+  break-lg: #{$break-lg},
+  break-xl: #{$break-xl},
+  
+  height-xs: #{$height-xs},
+  height-sm: #{$height-sm},
+  height-md: #{$height-md},
+  height-lg: #{$height-lg},
+  height-xl: #{$height-xl},
+  height-full: #{$height-full},
+  height-home: #{$height-home},
+  
+  
+  container-2:  #{$container-2}, //maxwidth del container2
+container-3:  #{$container-3}, //maxwidth del container2
+container-4: #{$container-4}, //maxwidth del container4
+  xl: 1500px);
+
+
+
+$variabletotals: length($variable-list);
+
+@for $i from 1 through $variabletotals {
+  .var-a-#{nth(map-keys($variable-list), $i)} {
+    &:after {
+      display: inline-block;
+      content: "#{nth(map-keys($variable-list), $i)}";
+
+    }
+  }
+
+  .var-b-#{nth(map-keys($variable-list), $i)} {
+    &:after {
+      content: "#{nth(map-values($variable-list), $i)}";
+      display: inline-block;
+    }
+  }
+}
+
+//var-height-sm
