@@ -2999,6 +2999,7 @@ input::-webkit-input-placeholder {
 
 .cover-1 .cover-1-down-button {
   position: absolute;
+  text-align: center;
   bottom: 0;
   width: 200px; }
 
