@@ -2082,7 +2082,7 @@ label {
   height: 100px; }
 
 .height-md {
-  height: 150px; }
+  height: 350px; }
 
 .height-lg {
   height: 400px; }
@@ -2622,7 +2622,7 @@ select {
   padding: 10px; }
   .guide-font span {
     top: 15px;
-    color: #05aeb9;
+    color: red;
     font-size: 14px;
     position: absolute;
     line-height: 1;
