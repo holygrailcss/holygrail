@@ -1941,6 +1941,12 @@ label {
   align-content: stretch;
   flex-wrap: wrap; }
 
+.align-vertical {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
+
 .d-inline {
   display: inline-block; }
 
