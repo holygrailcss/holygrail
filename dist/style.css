@@ -108,8 +108,12 @@ img {
 /*+------------------------------------------------------------+
  |       -RATIO 
  +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -BLEED A SANGRE  
+ +------------------------------------------------------------+*/
 /**
 * Base estilo inline    class="[col-sm-2]    [py-20m-20]    [h1 text-1 link-2] [text-center]"
+
 **/
 /*+------------------------------------------------------------+
  |       -ANIMATIONS    
@@ -510,11 +514,8 @@ img {
   flex-shrink: 1;
   padding: 0 8px; }
 
-/*+------------------------------------------------------------+
- |       -BLEED A SANGRE  
- +------------------------------------------------------------+*/
 .bleed-0 {
-  padding: 0 0px 0 0px;
+  padding: 0px 0px 0 0px;
   overflow: hidden; }
   .bleed-0 .container-fluid {
     margin-left: 0px;
@@ -538,8 +539,8 @@ img {
     box-sizing: border-box; }
 
 /*+------------------------------------------------------------+
- |       -SINGLE AND DOUBLE  
- +------------------------------------------------------------+*/
+   |       -SINGLE AND DOUBLE  
+   +------------------------------------------------------------+*/
 .single {
   flex-basis: 50%;
   max-width: 50%; }
@@ -557,7 +558,7 @@ img {
     max-width: 50%; } }
 
 .bleed-4 {
-  padding: 0 2px 0 2px;
+  padding: 2px 2px 0 2px;
   overflow: hidden; }
   .bleed-4 .container-fluid {
     margin-left: -2px;
@@ -581,8 +582,8 @@ img {
     box-sizing: border-box; }
 
 /*+------------------------------------------------------------+
- |       -SINGLE AND DOUBLE  
- +------------------------------------------------------------+*/
+   |       -SINGLE AND DOUBLE  
+   +------------------------------------------------------------+*/
 .single {
   flex-basis: 50%;
   max-width: 50%; }
@@ -600,7 +601,7 @@ img {
     max-width: 50%; } }
 
 .bleed-8 {
-  padding: 0 4px 0 4px;
+  padding: 4px 4px 0 4px;
   overflow: hidden; }
   .bleed-8 .container-fluid {
     margin-left: -4px;
@@ -624,8 +625,8 @@ img {
     box-sizing: border-box; }
 
 /*+------------------------------------------------------------+
- |       -SINGLE AND DOUBLE  
- +------------------------------------------------------------+*/
+   |       -SINGLE AND DOUBLE  
+   +------------------------------------------------------------+*/
 .single {
   flex-basis: 50%;
   max-width: 50%; }
@@ -1426,7 +1427,8 @@ label {
   .p2 {
     font-size: 14px;
     line-height: 1.4;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "BasisGrotesque-Regular-Pro";
+    line-height: 1.6; }
   .p4 {
     font-size: 14px;
     line-height: 1.4;
@@ -1503,7 +1505,8 @@ label {
   .p2 {
     font-size: 16px;
     line-height: 1.4;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "BasisGrotesque-Regular-Pro";
+    line-height: 1.6; }
   .p4 {
     font-size: 16px;
     line-height: 1.4;
@@ -1580,7 +1583,8 @@ label {
   .p2 {
     font-size: 16px;
     line-height: 1.4;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "BasisGrotesque-Regular-Pro";
+    line-height: 1.6; }
   .p4 {
     font-size: 16px;
     line-height: 1.4;
@@ -1657,7 +1661,8 @@ label {
   .p2 {
     font-size: 18px;
     line-height: 1.4;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "BasisGrotesque-Regular-Pro";
+    line-height: 1.6; }
   .p4 {
     font-size: 18px;
     line-height: 1.4;
@@ -1734,7 +1739,8 @@ label {
   .p2 {
     font-size: 1.4;
     line-height: 1.4;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "BasisGrotesque-Regular-Pro";
+    line-height: 1.6; }
   .p4 {
     font-size: 1.4;
     line-height: 1.4;
@@ -1943,7 +1949,7 @@ label {
 
 .align-vertical {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center; }
 
@@ -2648,7 +2654,7 @@ select {
   padding: 10px; }
   .guide-font span {
     top: 15px;
-    color: red;
+    color: #00bfcb;
     font-size: 14px;
     position: absolute;
     line-height: 1;
@@ -3028,6 +3034,30 @@ input::-webkit-input-placeholder {
   text-align: center;
   bottom: 0;
   width: 200px; }
+
+.cover-1 .line-scrolldown:before {
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #da8f71;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%); }
+
+.cover-1 .line-scrolldown::after {
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #da8f71;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%); }
 
 .cover-2 {
   width: 100%; }

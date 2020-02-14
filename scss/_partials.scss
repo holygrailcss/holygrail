@@ -15,13 +15,19 @@
 //@import "lib/debug"; // si queremos debugar la maqueta
 /**
 * Base estilo inline    class="[col-sm-2]    [py-20m-20]    [h1 text-1 link-2] [text-center]"
+
 **/
+
+
 @import "base/animations";
+
 @import "base/grid";
+
 @import "base/margins";
 @import "base/typography";
 @import "base/helpers";
 @import "base/height";
+
 
 
 
@@ -35,6 +41,8 @@
 @import "components/footer";
 @import "components/tabs";
 @import "components/select";
+
+
 /**
 * modulos componentizados  
 **/
@@ -44,3 +52,4 @@
 @import "moduls/row-6";
 @import "moduls/row-3";
 @import "moduls/card";
+

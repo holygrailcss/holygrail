@@ -105,6 +105,63 @@
 	}
   }
   
+
+  /*+------------------------------------------------------------+
+ |       -BLEED A SANGRE  
+ +------------------------------------------------------------+*/
+@mixin bleed($margin) {
+  
+	.bleed-#{$margin} {
+	  padding: $margin/2+px $margin/2+px 0 $margin/2+px ;
+	  overflow: hidden;
+	  .container-fluid {
+		margin-left: -$margin/2+px;
+		margin-right: -$margin/2+px;
+		padding: 0 $margin/2+px 0 $margin/2+px ;
+	  }
+	  .row {
+		margin-left: 0;
+		margin-right: 0;
+		box-sizing: border-box;
+		display: flex;
+		-webkit-box-flex: 0;
+		-ms-flex: 0 1 auto;
+		flex: 0 1 auto;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		flex-direction: row;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+	  }
+	  [class*="col"] {
+		padding: $margin/2+px;
+		box-sizing: border-box;
+	  }
+	}
+	
+	/*+------------------------------------------------------------+
+   |       -SINGLE AND DOUBLE  
+   +------------------------------------------------------------+*/
+	.single {
+
+	  flex-basis: 50%;
+	  max-width: 50%;
+	}
+	.double {
+	  flex-basis: 100%;
+	  max-width: 100%;
+	}
+	@media (min-width: 768px) {
+	  .single {
+		flex-basis: 25%;
+		max-width: 25%;
+	  }
+	  .double {
+		flex-basis: 50%;
+		max-width: 50%;
+	  }
+	}
+  }
   
   
   

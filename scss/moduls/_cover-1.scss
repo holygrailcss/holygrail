@@ -1,10 +1,39 @@
-.cover-1{
-  
-  .cover-1-down-button{
+.cover-1 {
+
+  .cover-1-down-button {
     position: absolute;
     text-align: center;
     bottom: 0;
     width: 200px;
   }
-  
+
+  .line-scrolldown {
+    &:before {
+      content: '';
+      position: absolute;
+      top: 40px;
+      left: 50%;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #da8f71;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+    }
+
+    
+    &::after {
+      content: '';
+      position: absolute;
+      top: 40px;
+      left: 50%;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #da8f71;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+    }
+  }
+
 }
