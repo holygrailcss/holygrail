@@ -140,5 +140,13 @@ display: inline-block;
     }
 }
 
+$height-xs:80px;
+$height-sm:100px;
+$height-md:350px;
+$height-lg:400px;
+$height-xl:450px;
+$height-full:100vh;
+$height-home:calc(100vh - 80px);
+
 
 
