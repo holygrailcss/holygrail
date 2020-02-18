@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html class="no-js" dir="ltr" lang="en-US" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#"
+  xmlns:fb="http://www.facebook.com/2008/fbml" prefix="og: http://ogp.me/ns#
+            fb: http://ogp.me/ns/fb#
+            rdfs: http://www.w3.org/2000/01/rdf-schema# 
+            xsd: http://www.w3.org/2001/XMLSchema#" itemscope="">
+<head>
+  <!--  Metadata Basica-->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+  <link rel="stylesheet" href="../../dist/style.css">
+  <meta http-equiv="Accept-CH" content="DPR,Width,Viewport-Width">
+  <!-- Core Meta -->
+  <title>grids </title>
+</head>
+<body class="ltr guide ">
+  <div class="header-bg">
+    <section>
+      <div class="header-menu">
+        <iframe class="menutop" src="../../docs/menutop.html" height="100%" frameborder="0" seamless></iframe>
+      </div>
+    </section>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="site-navigation">
+        <iframe class="menulateral" src="../../docs/menu.html" height="100%" frameborder="0" seamless></iframe>
+      </div>
+      <div class="container-main">
+        <div class="site-main">
+
+            <h2 class="h4 mt-20"> Layouts</h2>
+
+          <!-- VIRTUAL TOUR -->
+
+          
+          
+          <input type="button" name="btn" id="btn1" value="cards" />
+          <input type="button" name="btn" id="btn2" value="covers" />
+          <input type="button" name="btn" id="btn3" value="footers" />
+          <input type="button" name="btn" id="btn4" value="forms" />
+          <input type="button" name="btn" id="btn5" value="gallery" />
+          <input type="button" name="btn" id="btn6" value="grids" />
+          <input type="button" name="btn" id="btn7" value="texts" />
+
+
+            <iframe id="guideFrame" src="../layout/layout-cards.html" frameborder="0"  width="900"
+              height="600"></iframe>
+ 
+          
+          
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    
+    
+    <script>
+$( document ).ready(function() {
+        $("#btn1").click(function () {
+          $("#guideFrame").attr('src', '../layout/layout-cards.html');
+
+        })
+        
+        $("#btn2").click(function () {
+          $("#guideFrame").attr('src', '../layout/layout-covers.html');
+
+        })
+        
+        $("#btn3").click(function () {
+          $("#guideFrame").attr('src', '../layout/layout-footers.html');
+
+        })
+        
+        $("#btn4").click(function () {
+          $("#guideFrame").attr('src', '../layout/layout-forms.html');
+
+        })
+        
+        $("#btn5").click(function () {
+          $("#guideFrame").attr('src', '../layout/layout-gallery.html');
+
+        })
+        
+        $("#btn6").click(function () {
+          $("#guideFrame").attr('src', '../layout/layout-grids.html');
+
+        })
+        
+        $("#btn7").click(function () {
+          $("#guideFrame").attr('src', '../layout/layout-texts.html');
+
+        })
+      });
+    </script>
+    
+    
+</body>
+</html>

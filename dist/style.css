@@ -37,62 +37,12 @@ img {
 /*+------------------------------------------------------------+
  |       -IMPORT FONTS        
  +------------------------------------------------------------+*/
-@font-face {
-  font-family: "BasisGrotesque-Bold-Pro";
-  src: url("../themes/theme-dutti/fonts/basis/BasisGrotesque-Bold-Pro.eot");
-  src: url("../themes/theme-dutti/fonts/basis/BasisGrotesque-Bold-Pro.eot?#iefix") format("embedded-opentype"), url("../themes/theme-dutti/fonts/basis/BasisGrotesque-Bold-Pro.woff2") format("woff2"), url("../themes/theme-dutti/fonts/basis/BasisGrotesque-Bold-Pro.woff") format("woff"), url("../themes/theme-dutti/fonts/basis/BasisGrotesque-Bold-Pro.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "BasisGrotesque-Medium-Pro";
-  src: url("../themes/theme-dutti/fonts/basis/BasisGrotesque-Medium-Pro.eot");
-  src: url("../themes/theme-dutti/fonts/basis/BasisGrotesque-Medium-Pro.eot?#iefix") format("embedded-opentype"), url("../themes/theme-dutti/fonts/basis/BasisGrotesque-Medium-Pro.woff2") format("woff2"), url("../themes/theme-dutti/fonts/basis/BasisGrotesque-Medium-Pro.woff") format("woff"), url("../themes/theme-dutti/fonts/basis/BasisGrotesque-Medium-Pro.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "BasisGrotesque-Light-Pro";
-  src: url("../themes/theme-dutti/fonts/basis/BasisGrotesque-Light-Pro.eot");
-  src: url("../themes/theme-dutti/fonts/basis/BasisGrotesque-Light-Pro.eot?#iefix") format("embedded-opentype"), url("../themes/theme-dutti/fonts/basis/BasisGrotesque-Light-Pro.woff2") format("woff2"), url("../themes/theme-dutti/fonts/basis/BasisGrotesque-Light-Pro.woff") format("woff"), url("../themes/theme-dutti/fonts/basis/BasisGrotesque-Light-Pro.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "BasisGrotesque-Regular-Pro";
-  src: url("../themes/theme-dutti/fonts/basis/BasisGrotesque-Regular-Pro.eot");
-  src: url("../themes/theme-dutti/fonts/basis/BasisGrotesque-Regular-Pro.eot?#iefix") format("embedded-opentype"), url("../themes/theme-dutti/fonts/basis/BasisGrotesque-Regular-Pro.woff2") format("woff2"), url("../themes/theme-dutti/fonts/basis/BasisGrotesque-Regular-Pro.woff") format("woff"), url("../themes/theme-dutti/fonts/basis/BasisGrotesque-Regular-Pro.ttf") format("truetype"); }
-
 /*+------------------------------------------------------------+
  |       -BREAKPOINTS        
  +------------------------------------------------------------+*/
 /*+------------------------------------------------------------+
  |       -Variables  Globales      
  +------------------------------------------------------------+*/
-.min-width {
-  display: inline-block; }
-  .min-width:after {
-    content: "320px"; }
-
-.break-xs {
-  display: inline-block; }
-  .break-xs:after {
-    content: "320px"; }
-
-.break-sm:after {
-  display: inline-block;
-  content: "600px";
-  display: inline-block; }
-
-.break-md:after {
-  display: inline-block;
-  content: "992px";
-  display: inline-block; }
-
-.break-lg:after {
-  display: inline-block;
-  content: "1200px";
-  display: inline-block; }
-
-.break-xl:after {
-  display: inline-block;
-  content: "1200px";
-  display: inline-block; }
-
 /*+------------------------------------------------------------+
  |       -MIXINS        
  +------------------------------------------------------------+*/
@@ -1193,7 +1143,7 @@ img {
  +------------------------------------------------------------+*/
 html {
   font-size: 1rem;
-  font-family: "BasisGrotesque-Regular-Pro";
+  font-family: "Arial";
   line-height: 1.6; }
   @media all and (max-width: 640px) {
     html {
@@ -1212,19 +1162,19 @@ html {
       font-size: calc(1rem + 0.4vw); } }
 
 select {
-  font-family: "BasisGrotesque-Regular-Pro";
+  font-family: "Arial";
   line-height: 1.6; }
 
 /*+------------------------------------------------------------+
  |       -HEADERS ELÁSTICOS        
  +------------------------------------------------------------+*/
 p {
-  font-family: "BasisGrotesque-Regular-Pro";
+  font-family: "Arial";
   line-height: 1.6;
   margin: 0;
   font-size: 14px; }
   p.b {
-    font-family: "BasisGrotesque-Medium-Pro";
+    font-family: "Arial";
     color: #000; }
 
 .h1 span,
@@ -1241,7 +1191,7 @@ p {
 b,
 mark {
   color: #000;
-  font-family: "BasisGrotesque-Bold-Pro"; }
+  font-family: "Arial"; }
 
 /*+------------------------------------------------------------+
  |       -LINKS        
@@ -1261,98 +1211,98 @@ label {
   padding-bottom: 4px; }
 
 .text-12-r {
-  font-family: "BasisGrotesque-Regular-Pro";
+  font-family: "Arial";
   line-height: 1.6;
   font-size: 12px;
   line-height: 1.5; }
 
 .text-12-m {
-  font-family: "BasisGrotesque-Medium-Pro";
+  font-family: "Arial";
   font-size: 12px;
   line-height: 1.5; }
 
 .text-12-b {
-  font-family: "BasisGrotesque-Bold-Pro";
+  font-family: "Arial";
   font-size: 12px;
   line-height: 1.5; }
 
 .text-14-r {
-  font-family: "BasisGrotesque-Regular-Pro";
+  font-family: "Arial";
   line-height: 1.6;
   font-size: 14px;
   line-height: 1.5; }
 
 .text-14-m {
-  font-family: "BasisGrotesque-Medium-Pro";
+  font-family: "Arial";
   font-size: 14px;
   line-height: 1.5; }
 
 .text-14-b {
-  font-family: "BasisGrotesque-Bold-Pro";
+  font-family: "Arial";
   font-size: 14px;
   line-height: 1.5; }
 
 .text-16-r {
-  font-family: "BasisGrotesque-Regular-Pro";
+  font-family: "Arial";
   line-height: 1.6;
   font-size: 16px;
   line-height: 1.5; }
 
 .text-16-m {
-  font-family: "BasisGrotesque-Medium-Pro";
+  font-family: "Arial";
   font-size: 16px;
   line-height: 1.5; }
 
 .text-16-b {
-  font-family: "BasisGrotesque-Bold-Pro";
+  font-family: "Arial";
   font-size: 16px;
   line-height: 1.5; }
 
 .text-18-r {
-  font-family: "BasisGrotesque-Regular-Pro";
+  font-family: "Arial";
   line-height: 1.6;
   font-size: 18px;
   line-height: 1.5; }
 
 .text-18-m {
-  font-family: "BasisGrotesque-Medium-Pro";
+  font-family: "Arial";
   font-size: 18px;
   line-height: 1.5; }
 
 .text-18-b {
-  font-family: "BasisGrotesque-Bold-Pro";
+  font-family: "Arial";
   font-size: 18px;
   line-height: 1.5; }
 
 .text-20-r {
-  font-family: "BasisGrotesque-Regular-Pro";
+  font-family: "Arial";
   line-height: 1.6;
   font-size: 20px;
   line-height: 1.5; }
 
 .text-20-m {
-  font-family: "BasisGrotesque-Medium-Pro";
+  font-family: "Arial";
   font-size: 20px;
   line-height: 1.5; }
 
 .text-20-b {
-  font-family: "BasisGrotesque-Bold-Pro";
+  font-family: "Arial";
   font-size: 20px;
   line-height: 1.5; }
 
 .text-24-r {
-  font-family: "BasisGrotesque-Regular-Pro";
+  font-family: "Arial";
   line-height: 1.6;
   font-size: 24px;
   line-height: 1.5; }
 
 .text-24-m {
-  font-family: "BasisGrotesque-Medium-Pro";
+  font-family: "Arial";
   font-size: 24px;
   line-height: 1.5; }
 
 .text-24-b {
-  font-family: "BasisGrotesque-Bold-Pro";
+  font-family: "Arial";
   font-size: 24px;
   line-height: 1.5; }
 
@@ -1360,397 +1310,397 @@ label {
   .h1 {
     font-size: 32px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Arial"; }
   .h2 {
     font-size: 24px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Arial"; }
   .h3 {
     font-size: 18px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Arial"; }
   .h4, .card .title {
     font-size: 16px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Arial"; }
   .h5 {
     font-size: 14px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Arial"; }
   .h6, .card .subtitle {
     font-size: 12px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Arial"; }
   .h7 {
     font-size: 10px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Arial"; }
   .h8 {
     font-size: 8px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Arial"; }
   .display1 {
     font-size: 32px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Bold-Pro"; }
+    font-family: "Arial"; }
   .display2 {
     font-size: 20px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Bold-Pro"; }
+    font-family: "Arial"; }
   .display3 {
     font-size: 16px;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Arial"; }
   .display4 {
     font-size: 14px;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Arial"; }
   .display5 {
     font-size: 14px;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Regular-Pro";
+    font-family: "Arial";
     line-height: 1.6; }
   .display6 {
     font-size: 12px;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Regular-Pro";
+    font-family: "Arial";
     line-height: 1.6; }
   .display7 {
     font-size: 14px;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Arial"; }
   .p1 {
     font-size: 12px;
     line-height: 1.4;
-    font-family: "BasisGrotesque-Regular-Pro";
+    font-family: "Arial";
     line-height: 1.6; }
   .p2 {
     font-size: 14px;
     line-height: 1.4;
-    font-family: "BasisGrotesque-Regular-Pro";
+    font-family: "Arial";
     line-height: 1.6; }
   .p4 {
     font-size: 14px;
     line-height: 1.4;
-    font-family: "BasisGrotesque-Medium-Pro"; } }
+    font-family: "Arial"; } }
 
 @media (min-width: 600px) {
   .h1 {
     font-size: 32px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Arial"; }
   .h2 {
     font-size: 24px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Arial"; }
   .h3 {
     font-size: 18px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Arial"; }
   .h4, .card .title {
     font-size: 16px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Arial"; }
   .h5 {
     font-size: 14px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Arial"; }
   .h6, .card .subtitle {
     font-size: 12px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Arial"; }
   .h7 {
     font-size: 10px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Arial"; }
   .h8 {
     font-size: 8px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Arial"; }
   .display1 {
     font-size: 32px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Bold-Pro"; }
+    font-family: "Arial"; }
   .display2 {
     font-size: 20px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Bold-Pro"; }
+    font-family: "Arial"; }
   .display3 {
     font-size: 16px;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Arial"; }
   .display4 {
     font-size: 14px;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Arial"; }
   .display5 {
     font-size: 14px;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Regular-Pro";
+    font-family: "Arial";
     line-height: 1.6; }
   .display6 {
     font-size: 12px;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Regular-Pro";
+    font-family: "Arial";
     line-height: 1.6; }
   .display7 {
     font-size: 14px;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Arial"; }
   .p1 {
     font-size: 12px;
     line-height: 1.4;
-    font-family: "BasisGrotesque-Regular-Pro";
+    font-family: "Arial";
     line-height: 1.6; }
   .p2 {
     font-size: 16px;
     line-height: 1.4;
-    font-family: "BasisGrotesque-Regular-Pro";
+    font-family: "Arial";
     line-height: 1.6; }
   .p4 {
     font-size: 16px;
     line-height: 1.4;
-    font-family: "BasisGrotesque-Medium-Pro"; } }
+    font-family: "Arial"; } }
 
 @media (min-width: 992px) {
   .h1 {
     font-size: 32px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Arial"; }
   .h2 {
     font-size: 24px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Arial"; }
   .h3 {
     font-size: 18px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Arial"; }
   .h4, .card .title {
     font-size: 16px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Arial"; }
   .h5 {
     font-size: 14px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Arial"; }
   .h6, .card .subtitle {
     font-size: 12px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Arial"; }
   .h7 {
     font-size: 10px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Arial"; }
   .h8 {
     font-size: 8px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Arial"; }
   .display1 {
     font-size: 32px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Bold-Pro"; }
+    font-family: "Arial"; }
   .display2 {
     font-size: 20px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Bold-Pro"; }
+    font-family: "Arial"; }
   .display3 {
     font-size: 16px;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Arial"; }
   .display4 {
     font-size: 14px;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Arial"; }
   .display5 {
     font-size: 14px;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Regular-Pro";
+    font-family: "Arial";
     line-height: 1.6; }
   .display6 {
     font-size: 12px;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Regular-Pro";
+    font-family: "Arial";
     line-height: 1.6; }
   .display7 {
     font-size: 14px;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Arial"; }
   .p1 {
     font-size: 12px;
     line-height: 1.4;
-    font-family: "BasisGrotesque-Regular-Pro";
+    font-family: "Arial";
     line-height: 1.6; }
   .p2 {
     font-size: 16px;
     line-height: 1.4;
-    font-family: "BasisGrotesque-Regular-Pro";
+    font-family: "Arial";
     line-height: 1.6; }
   .p4 {
     font-size: 16px;
     line-height: 1.4;
-    font-family: "BasisGrotesque-Medium-Pro"; } }
+    font-family: "Arial"; } }
 
 @media (min-width: 1200px) {
   .h1 {
     font-size: 40px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Arial"; }
   .h2 {
     font-size: 32px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Arial"; }
   .h3 {
     font-size: 24px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Arial"; }
   .h4, .card .title {
     font-size: 18px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Arial"; }
   .h5 {
     font-size: 16px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Arial"; }
   .h6, .card .subtitle {
     font-size: 14px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Arial"; }
   .h7 {
     font-size: 12px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Arial"; }
   .h8 {
     font-size: 10px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Arial"; }
   .display1 {
     font-size: 48px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Bold-Pro"; }
+    font-family: "Arial"; }
   .display2 {
     font-size: 40px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Bold-Pro"; }
+    font-family: "Arial"; }
   .display3 {
     font-size: 24px;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Arial"; }
   .display4 {
     font-size: 24px;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Arial"; }
   .display5 {
     font-size: 18px;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Regular-Pro";
+    font-family: "Arial";
     line-height: 1.6; }
   .display6 {
     font-size: 18px;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Regular-Pro";
+    font-family: "Arial";
     line-height: 1.6; }
   .display7 {
     font-size: 18px;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Arial"; }
   .p1 {
     font-size: 14px;
     line-height: 1.4;
-    font-family: "BasisGrotesque-Regular-Pro";
+    font-family: "Arial";
     line-height: 1.6; }
   .p2 {
     font-size: 18px;
     line-height: 1.4;
-    font-family: "BasisGrotesque-Regular-Pro";
+    font-family: "Arial";
     line-height: 1.6; }
   .p4 {
     font-size: 18px;
     line-height: 1.4;
-    font-family: "BasisGrotesque-Medium-Pro"; } }
+    font-family: "Arial"; } }
 
 @media (min-width: 1500px) {
   .h1 {
     font-size: 1.2;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Arial"; }
   .h2 {
     font-size: 1.2;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Arial"; }
   .h3 {
     font-size: 1.2;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Arial"; }
   .h4, .card .title {
     font-size: 1.2;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Arial"; }
   .h5 {
     font-size: 1.2;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Arial"; }
   .h6, .card .subtitle {
     font-size: 1.2;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Arial"; }
   .h7 {
     font-size: 1.2;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Arial"; }
   .h8 {
     font-size: 1.2;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Arial"; }
   .display1 {
     font-size: 1.2;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Bold-Pro"; }
+    font-family: "Arial"; }
   .display2 {
     font-size: 1.2;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Bold-Pro"; }
+    font-family: "Arial"; }
   .display3 {
     font-size: 1.5;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Arial"; }
   .display4 {
     font-size: 1.5;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Arial"; }
   .display5 {
     font-size: 1.5;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Regular-Pro";
+    font-family: "Arial";
     line-height: 1.6; }
   .display6 {
     font-size: 1.5;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Regular-Pro";
+    font-family: "Arial";
     line-height: 1.6; }
   .display7 {
     font-size: 1.5;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Arial"; }
   .p1 {
     font-size: 1.4;
     line-height: 1.4;
-    font-family: "BasisGrotesque-Regular-Pro";
+    font-family: "Arial";
     line-height: 1.6; }
   .p2 {
     font-size: 1.4;
     line-height: 1.4;
-    font-family: "BasisGrotesque-Regular-Pro";
+    font-family: "Arial";
     line-height: 1.6; }
   .p4 {
     font-size: 1.4;
     line-height: 1.4;
-    font-family: "BasisGrotesque-Medium-Pro"; } }
+    font-family: "Arial"; } }
 
 /*+-----------------------------------------------------------------------------------------+
  |       -FLUID TEXT   Desde min_width   hasta  break-lg  <--->  font-minima hasta font-maxima
  +-------------------------------------------------------------------------------------------+*/
 .fluid-h1 {
-  font-family: "BasisGrotesque-Regular-Pro";
+  font-family: "Arial";
   line-height: 1.6; }
   .fluid-h1 {
     font-size: 30px; }
@@ -1763,7 +1713,7 @@ label {
 
 .fluid-h2 {
   line-height: 1.2;
-  font-family: "BasisGrotesque-Bold-Pro"; }
+  font-family: "Arial"; }
   .fluid-h2 {
     font-size: 24px; }
     @media screen and (min-width: 320px) {
@@ -1775,7 +1725,7 @@ label {
 
 .fluid-h3 {
   line-height: 1.2;
-  font-family: "BasisGrotesque-Light-Pro"; }
+  font-family: "Arial"; }
   .fluid-h3 {
     font-size: 18px; }
     @media screen and (min-width: 320px) {
@@ -1787,7 +1737,7 @@ label {
 
 .fluid-h4 {
   line-height: 1.2;
-  font-family: "BasisGrotesque-Bold-Pro"; }
+  font-family: "Arial"; }
   .fluid-h4 {
     font-size: 16px; }
     @media screen and (min-width: 320px) {
@@ -1799,7 +1749,7 @@ label {
 
 .fluid-h5 {
   line-height: 1.2;
-  font-family: "BasisGrotesque-Medium-Pro"; }
+  font-family: "Arial"; }
   .fluid-h5 {
     font-size: 14px; }
     @media screen and (min-width: 320px) {
@@ -1811,7 +1761,7 @@ label {
 
 .fluid-h6 {
   font-size: calc(1em + 0.25vw);
-  font-family: "BasisGrotesque-Light-Pro"; }
+  font-family: "Arial"; }
   .fluid-h6 {
     font-size: 14px; }
     @media screen and (min-width: 320px) {
@@ -1822,7 +1772,7 @@ label {
         font-size: 18px; } }
 
 .fluid-h7 {
-  font-family: "BasisGrotesque-Regular-Pro";
+  font-family: "Arial";
   line-height: 1.6; }
   .fluid-h7 {
     font-size: 12px; }
@@ -2365,7 +2315,7 @@ a:hover {
 
 .link3,
 .link3::before {
-  font-family: "BasisGrotesque-Regular-Pro";
+  font-family: "Arial";
   line-height: 1.6;
   font-size: 14px;
   text-align: center;
@@ -2384,7 +2334,7 @@ a:hover {
   padding: 0;
   content: attr(data-text);
   opacity: 0;
-  font-family: "BasisGrotesque-Medium-Pro"; }
+  font-family: "Arial"; }
 
 .link3:hover {
   opacity: 0; }
@@ -2660,7 +2610,7 @@ select {
     line-height: 1;
     width: 150px;
     text-align: center;
-    font-family: "BasisGrotesque-Regular-Pro";
+    font-family: "Arial";
     line-height: 1.6; }
   .guide-font .guide-title {
     padding-left: 200px; }
@@ -2927,7 +2877,7 @@ input::-webkit-input-placeholder {
     justify-content: flex-start;
     margin: 0;
     font-size: 14px;
-    font-family: "BasisGrotesque-Bold-Pro"; }
+    font-family: "Arial"; }
   .tabs li {
     display: block;
     margin: 0; }
