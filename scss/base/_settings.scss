@@ -1,0 +1,145 @@
+:root{
+
+    --Black :#000000;
+    --secondary-color :#F5F5F5;
+    --gray-90:#171717;
+    --gray-80:#2E2E2E;
+    --gray-70:#464646;
+    --gray-60:#5D5D5D;
+    --gray-50:#757575;
+    --gray-40:#909090;
+    --gray-30:#ACACAC;
+    --gray-20:#C7C7C7;
+    --gray-10:#E3E3E3;
+    --white-smoke:#F5F5F5;
+    --White :#ffffff;
+       
+    --quartory-color :#E6F5FF;
+    --cinco-color :#B5E6C8;
+    --six-color :#FEF7C1;
+    --siete-color :#FADFC1;
+    --ocho-color :#FCD8CD;
+    --Error :#FD675E;
+    --Sales :#FA3B2C;
+    --Sales-Variant :#E43628;
+    
+    --error-primary:#FD675E;
+    --link:rgb(207, 236, 240);
+    --linkHover:#999;
+    --black:rgb(3, 2, 2);
+    --primary:#000;
+    
+    --break-xs: 1px;
+    --break-sm: 786px;
+    --break-md: 992px;
+    --break-lg: 1280px;
+    --break-xl: 1500px;
+    
+    --min-width:319px;
+    
+    --font-family-light: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-regular: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-medium: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-bold: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    
+    }
+    
+
+/*+------------------------------------------------------------+
+ |-COLORS
+ +------------------------------------------------------------+*/
+$colorsGuide: (Black : (#000000, "RGB : 0 0 0"),
+ secondary-color : (#F5F5F5, "RGB : 0 0 0"),
+ gray-90: (#171717, "RGB : 0 0 9"),
+ gray-80: (#2E2E2E, "RGB : 0 0 18"),
+ gray-70: (#464646, "RGB : 0 0 27"),
+ gray-60: (#5D5D5D, "RGB : 0 0 36"),
+ gray-50: (#757575, "RGB : 0 0 46"),
+ gray-40: (#909090, "RGB : 0 0 56"),
+ gray-30: (#ACACAC, "RGB : 0 0 67"),
+ gray-20: (#C7C7C7, "RGB : 0 0 78"),
+ gray-10: (#E3E3E3, "RGB : 0 0 89"),
+ white-smoke:(#F5F5F5, "RGB : 0 0 96"),
+ White : (#ffffff, "RGB : 0 0 0"),
+
+ quartory-color : (#E6F5FF, "RGB : 0 0 0"),
+ cinco-color : (#B5E6C8, "RGB : 0 0 0"),
+ six-color : (#FEF7C1, "RGB : 0 0 0"),
+ siete-color : (#FADFC1, "RGB : 0 0 0"),
+ ocho-color : (#FCD8CD, "RGB : 0 0 0"),
+ Error : (#FD675E, "RGB : 0 0 0"),
+ Sales : (#FA3B2C, "RGB : 0 0 0"),
+ Sales-Variant : (#E43628, "RGB : 228 54 40"));
+
+
+$primary-guide:#00bfcb;
+
+$error-primary:#FD675E;
+$link:rgb(207, 236, 240);
+$linkHover:#999;
+$black:rgb(3, 2, 2);
+$primary:#000;
+
+
+
+/*+------------------------------------------------------------+
+ |       -IMPORT FONTS
+ +------------------------------------------------------------+*/
+$font-family-light: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-regular: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-medium: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-bold: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+
+
+/*+------------------------------------------------------------+
+ |       -BREAKPOINTS
+ +------------------------------------------------------------+*/
+
+
+$breakpoints: (
+    xs: 1px,
+    sm: 786px,
+    md: 992px,
+    lg: 1280px,
+    xl: 1500px);
+
+
+$break-xs:nth(map-values($breakpoints), 1);
+$break-sm:nth(map-values($breakpoints), 2);
+$break-md:nth(map-values($breakpoints), 3);
+$break-lg:nth(map-values($breakpoints), 4);
+$break-xl:nth(map-values($breakpoints), 5);
+
+$min-width:319px;
+
+
+/*+------------------------------------------------------------+
+ |       -Variables  Globales
+ +------------------------------------------------------------+*/
+
+$totalCols :12;
+$padding-global: 8px;
+$padding-button: 8px;
+$padding-btn: 16px;
+$height-inputs: 48px;
+
+
+$container: 800px; //maxwidth del container2
+$container-2: 700px; //maxwidth del container2
+$container-3: 900px; //maxwidth del container2
+$container-4: 350px; //maxwidth del container4
+
+$transition:278ms;
+
+
+$height-xs:80px;
+$height-sm:100px;
+$height-md:350px;
+$height-lg:400px;
+$height-xl:450px;
+$height-full:100vh;
+$height-home:calc(100vh - 80px);
+
+
+

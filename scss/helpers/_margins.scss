@@ -123,23 +123,7 @@ $padding-right: //name : padding  bottom
  |       -MIXINS SPACE  
  +------------------------------------------------------------+*/
 
-@mixin space($breakpoints, $paddings, $cssattr) {
-  @for $i from 1 through $colBreakpoints {
 
-    // map-key
-    @media (min-width: nth(map-values($breakpoints), $i)) {
-
-      @each $name,
-      $pad in $paddings {
-        $padding: nth($pad, $i);
-
-        .#{$name} {
-          #{$cssattr }: $padding;
-        }
-      }
-    }
-  }
-}
 
 //margin
 @include space($breakpoints, $margin, $mg);

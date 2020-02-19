@@ -121,59 +121,6 @@ $headersFixers: ( //name :  fontsize, lineheight
   24 : (24px, 1.5),
 );
 
-//array para elementos fijos
-@mixin types($breakpoints, $headers, $cssattr) {
-  @for $i from 1 through length($breakpoints) {
-
-    // map-key
-    @media (min-width: nth(map-values($breakpoints), $i)) {
-
-      @each $name,
-      $fsize in $headers {
-        $fontsize: nth($fsize, $i);
-        $fontheight: nth($fsize, 5);
-        $fontweight: nth($fsize, 6);
-
-        .#{$name} {
-          #{$cssattr }: $fontsize;
-          line-height: $fontheight;
-          @include fonters($fontweight);
-        }
-      }
-    }
-  }
-}
-
-@mixin typesFixers($headersFixers, $cssattr) {
-  @for $i from 1 through 1 {
-
-    @each $name,
-    $fsize in $headersFixers {
-      $fontsize: nth($fsize, $i);
-      $fontheight: nth($fsize, 2);
-
-      .text-#{$name}-r {
-        @include fonters(regular);
-        #{$cssattr }: $fontsize;
-        line-height: $fontheight;
-      }
-
-      .text-#{$name}-m {
-        @include fonters(medium);
-        #{$cssattr }: $fontsize;
-        line-height: $fontheight;
-      }
-
-      .text-#{$name}-b {
-        @include fonters(bold);
-        #{$cssattr }: $fontsize;
-        line-height: $fontheight;
-      }
-    }
-  }
-}
-
-@for $i from 1 through length($breakpoints) {}
 
 @include typesFixers($headersFixers, $fs);
 @include types($breakpoints, $headers, $fs);

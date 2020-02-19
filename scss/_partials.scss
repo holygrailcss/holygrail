@@ -7,49 +7,49 @@
 /**
 * Lógica de scss 
 **/
-@import "lib/reset";
-@import "lib/settings";
-@import "lib/mixins";
-@import "lib/fonts";
+@import "base/settings";
+@import "base/mixins";
+@import "base/reset";
+@import "base/fonts";
 
-//@import "lib/debug"; // si queremos debugar la maqueta
+//@import "base/debug"; // si queremos debugar la maqueta
 /**
 * Base estilo inline    class="[col-sm-2]    [py-20m-20]    [h1 text-1 link-2] [text-center]"
 
 **/
 
 
-@import "base/animations";
+@import "helpers/animations";
 
-@import "base/grid";
+@import "helpers/grid";
 
-@import "base/margins";
-@import "base/typography";
-@import "base/helpers";
-@import "base/height";
+@import "helpers/margins";
+@import "helpers/typography";
+@import "helpers/helpers";
+@import "helpers/height";
 
 
 
 
 // componentes html
-@import "components/buttons";
-@import "components/links";
-@import "components/list";
-@import "components/form";
-@import "components/checkbox";
-@import "components/input_anim";
-@import "components/footer";
-@import "components/tabs";
-@import "components/select";
+@import "items/buttons";
+@import "items/links";
+@import "items/list";
+@import "items/form";
+@import "items/checkbox";
+@import "items/input_anim";
+@import "items/footer";
+@import "items/tabs";
+@import "items/select";
 
 
 /**
 * modulos componentizados  
-**/
-@import "moduls/logo";
-@import "moduls/cover-1";
-@import "moduls/cover-2";
-@import "moduls/row-6";
-@import "moduls/row-3";
-@import "moduls/card";
+**/ 
+@import "templates/logo";
+@import "templates/cover-1";
+@import "templates/cover-2";
+@import "templates/row-6";
+@import "templates/row-3";
+@import "templates/card";
 
