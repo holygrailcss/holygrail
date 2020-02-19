@@ -1,33 +1,41 @@
 {
-  "name": "holygrail",
-  "version": "1.0.0",
-  "description": "webmaker",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass --watch scss -o dist    ",
-    "guide": "node-sass --watch themes -o dist_theme "
-
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/holygrailcss/holygrail.git"
-  },
-  "keywords": [
-    "holygrail",
-    "css",
-    "sass"
-  ],
-  "author": "manuel ruiz",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/holygrailcss/holygrail/issues"
-  },
-  "homepage": "https://github.com/holygrailcss/holygrail#readme",
-  "dependencies": {
-    "node-sass": "^4.13.1"
-  }
+    "name": "holygrailcss",
+    "version": "1.0.1",
+    "description": "webmaker",
+    "main": "index.js",
+    "directories": {
+        "doc": "docs"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "scss": "node-sass --watch scss -o dist    ",
+        "guide": "node-sass --watch themes -o dist_theme ",
+        "build": "gulp style"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/holygrailcss/holygrail.git"
+    },
+    "keywords": [
+        "holygrail",
+        "css",
+        "sass"
+    ],
+    "author": "manuel ruiz",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/holygrailcss/holygrail/issues"
+    },
+    "homepage": "https://github.com/holygrailcss/holygrail#readme",
+    "dependencies": {},
+    "devDependencies": {
+        "autoprefixer": "^9.7.4",
+        "cssnano": "^4.1.10",
+        "gulp": "^4.0.2",
+        "gulp-postcss": "^8.0.0",
+        "gulp-rename": "^2.0.0",
+        "gulp-sass": "^4.0.2",
+        "gulp-sourcemaps": "^2.6.5",
+        "node-sass": "^4.13.1"
+    }
 }
