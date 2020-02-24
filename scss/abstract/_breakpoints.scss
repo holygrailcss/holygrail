@@ -1,0 +1,21 @@
+
+/*+------------------------------------------------------------+
+ |       -BREAKPOINTS
+ +------------------------------------------------------------+*/
+
+
+ $breakpoints: (
+    xs: 1px,
+    sm: 786px,
+    md: 992px,
+    lg: 1280px,
+    xl: 1500px);
+
+
+$break-xs:nth(map-values($breakpoints), 1);
+$break-sm:nth(map-values($breakpoints), 2);
+$break-md:nth(map-values($breakpoints), 3);
+$break-lg:nth(map-values($breakpoints), 4);
+$break-xl:nth(map-values($breakpoints), 5);
+
+$min-width:319px;

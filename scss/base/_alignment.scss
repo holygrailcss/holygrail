@@ -1,7 +1,7 @@
 /*+------------------------------------------------------------+
  |       -HELPERS DE TEXTO , ALINEACIONES        
  +------------------------------------------------------------+*/
-.text-center {
+ .text-center {
   text-align: center;
 }
 .text-right {
@@ -13,30 +13,7 @@
 .text-justify {
   text-align: justify;
 }
-/*+------------------------------------------------------------+
- |       -HEROS        
- +------------------------------------------------------------+*/
-.hero-big {
-  min-height: 300px;
-  @media (min-width:$break-sm) {
-    min-height: 500px;
-  }
-}
-.hero-medium {
-  min-height: 200px;
-  @media (min-width:$break-sm) {
-    min-height: 400px;
-  }
-}
-.hero-mini {
-  min-height: 100px;
-  @media (min-width:$break-sm) {
-    min-height: 300px;
-  }
-}
-.title-tiny {
-  min-height: 50px;
-}
+
 .pt-20 {
   padding-top: 20px;
 }
@@ -131,49 +108,5 @@
   padding: 0 $padding-global $padding-global;
   bottom: 0;
 }
-.bg-dark {
-  background-color: #3dbfcb;
-  color: #fff;
-}
-
-/*+------------------------------------------------------------+
- |       -RATIOS        
- +------------------------------------------------------------+*/
- 
-.rat-16-9 {
-  @include ratio(16, 9);
-}
-.rat-21-9 {
-  @include ratio(21, 9);
-}
-.rat-1-1 {
-  @include ratio(1, 1);
-}
-.rat-2-1 {
-  @include ratio(2, 1);
-}
-.rat-2-3 {
-  @include ratio(2, 3);
-}
-.rat-3-2{
-  @include ratio(3, 2);
-}
-.rat-3-4{
-  @include ratio(3, 4);
-}
-.rat-4-2{
-  @include ratio(4, 2);
-}
-.rat-4-3{
-  @include ratio(4, 3);
-}
 
 
-/*+------------------------------------------------------------+
- |       -BACKGROUNDS        
- +------------------------------------------------------------+*/
- 
- .bg-cover{
-   background-position: center center;
-   background-size: cover;
- }

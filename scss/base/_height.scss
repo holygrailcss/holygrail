@@ -1,0 +1,59 @@
+/*+------------------------------------------------------------+
+ |       -Alturas
+ +------------------------------------------------------------+*/
+
+
+.height-xs {
+    height: $height-xs;
+}
+
+.height-sm {
+    height: $height-sm;
+}
+
+.height-md {
+    height: $height-md;
+}
+
+.height-lg {
+    height: $height-lg;
+}
+
+.height-xl {
+    height: $height-xl;
+}
+
+.height-full {
+    height: 100vh;
+}
+
+.height-home {
+    height: calc(100vh - 80px);
+}
+
+
+
+/*+------------------------------------------------------------+
+ |       -HEROS        
+ +------------------------------------------------------------+*/
+ .hero-big {
+    min-height: 300px;
+    @media (min-width:$break-sm) {
+      min-height: 500px;
+    }
+  }
+  .hero-medium {
+    min-height: 200px;
+    @media (min-width:$break-sm) {
+      min-height: 400px;
+    }
+  }
+  .hero-mini {
+    min-height: 100px;
+    @media (min-width:$break-sm) {
+      min-height: 300px;
+    }
+  }
+  .title-tiny {
+    min-height: 50px;
+  }

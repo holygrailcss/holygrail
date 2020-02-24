@@ -1,55 +1,63 @@
-/*------------------------------------*\
-    $PARTIALS
-\*------------------------------------*/
-/**
- * Nuestra base esencial
- */
-/**
-* Lógica de scss 
-**/
-@import "base/settings";
-@import "base/mixins";
-@import "base/reset";
-@import "base/fonts";
-
-//@import "base/debug"; // si queremos debugar la maqueta
+//@import "abstract/0debug"; // si queremos debugar la maqueta
 /**
 * Base estilo inline    class="[col-sm-2]    [py-20m-20]    [h1 text-1 link-2] [text-center]"
 
 **/
 
+/*------------------------------------*\
+    $ABSTRACT
+\*------------------------------------*/
+@import "abstract/reset";
+@import "abstract/settings";
+@import "abstract/breakpoints";
+@import "abstract/mixins";
+@import "abstract/animations";
 
-@import "helpers/animations";
+/*------------------------------------*\
+    $BASE
+\*------------------------------------*/
+/* Nuestra base esencial*/
 
-@import "helpers/grid";
-
-@import "helpers/margins";
-@import "helpers/typography";
-@import "helpers/helpers";
-@import "helpers/height";
-
-
-
-
-// componentes html
-@import "items/buttons";
-@import "items/links";
-@import "items/list";
-@import "items/form";
-@import "items/checkbox";
-@import "items/input_anim";
-@import "items/footer";
-@import "items/tabs";
-@import "items/select";
+@import "base/alignment";
+@import "base/fonts";
+@import "base/grid";
+@import "base/height";
+@import "base/icons";
+@import "base/media";
+@import "base/ratios";
+@import "base/spacing";
+@import "base/types";
 
 
-/**
-* modulos componentizados  
-**/ 
-@import "templates/logo";
-@import "templates/cover-1";
-@import "templates/cover-2";
-@import "templates/row-6";
-@import "templates/row-3";
-@import "templates/card";
+
+/*------------------------------------*\
+    $ELEMENTS COMPONENTES
+\*------------------------------------*/
+
+@import "elements/buttons";
+@import "elements/checkbox";
+@import "elements/form";
+@import "elements/links";
+@import "elements/list";
+@import "elements/tabs";
+
+/*
+@import "elements/tables";
+@import "elements/dropbox";
+@import "elements/accordions";
+@import "elements/badge";
+@import "elements/tooltips";
+@import "elements/spinners";*/
+
+/*------------------------------------*\
+    $LAYOUTS, Conjuntos de elementos
+\*------------------------------------*/
+
+@import "layouts/logo";
+@import "layouts/cover-1";
+@import "layouts/cover-2";
+@import "layouts/row-6";
+@import "layouts/row-3";
+@import "layouts/card";
+@import "layouts/footer";
 
