@@ -14,7 +14,7 @@ a {
   text-decoration: none;
   position: relative;
   &:hover {
-   // color: $linkHover;
+   /* color: $linkHover; */
     &::after {
       -webkit-transform: scaleX(1);
       -ms-transform: scaleX(1);

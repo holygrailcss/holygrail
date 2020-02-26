@@ -22,19 +22,24 @@ select {
 
 .input,
 .select select {
-    -webkit-appearance: none;
-    align-items: center;
-    border: 1px solid transparent;
-    box-shadow: none;
-    display: inline-flex;
-    justify-content: flex-start;
-    line-height: 1.5;
-    padding: 13px 16px;
-    position: relative;
-    vertical-align: top;
-    font-size: 12px;
-    height: 48px;
-    box-sizing: border-box;
+  -webkit-appearance: none;
+  align-items: center;
+  border: 1px solid transparent;
+  box-shadow: none;
+  display: inline-flex;
+
+  justify-content: flex-start;
+  line-height: 1.5;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 16px;
+  position: relative;
+  vertical-align: top;
+  font-size:12px;
+
+  height: 48px;
+  box-sizing: border-box;
 }
 
 .input,
@@ -172,11 +177,11 @@ input::-webkit-input-placeholder {
 
 .form-input-label {
     position: relative;
-    margin-bottom: 16px;
+    margin-bottom: 32px;
   
     &>input,
     &>label {
-      padding: 13px 16px;
+      padding: 14px 16px;
     }
   
     &>label {
@@ -187,7 +192,6 @@ input::-webkit-input-placeholder {
       display: block;
       width: 100%;
       margin-bottom: 0;
-      /* Override default `<label>` margin */
       line-height: 1.5;
       color: #495057;
       border: 1px solid transparent;
@@ -241,15 +245,14 @@ input::-webkit-input-placeholder {
   
     &>input,
     &>label {
-      padding: 13px 16px 15px 45px;
+      padding: 18px 16px 15px 56px;
     }
   
     &.btn {
-      padding: 0 16px 0 45px;
+      padding: 18px 16px 15px 56px;
   
       .form-icon {
-        top: 50%;
-        transform: translateY(-50%);
+        top: 12px;
         left: 12px;
       }
     }
@@ -259,7 +262,7 @@ input::-webkit-input-placeholder {
   
     &>input,
     &>label {
-      padding: 13px 45px 15px 16px;
+      padding: 18px 56px 15px 16px;
     }
   
     .form-icon {
@@ -268,11 +271,10 @@ input::-webkit-input-placeholder {
     }
   
     &.btn {
-      padding: 0 45px 0 16px;
+      padding: 18px 56px 15px 16px;
   
       .form-icon {
-        top: 50%;
-        transform: translateY(-50%);
+        top: 12px;
         right: 12px;
         left: auto;
       }

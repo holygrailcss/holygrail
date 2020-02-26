@@ -1,4 +1,4 @@
-$list-disc:8px;
+$list-disc:4px;
 $list-disc-color:#000;
 
 /*+------------------------------------------------------------+
@@ -19,7 +19,7 @@ ul.list-disc {
       height: $list-disc;
       position: absolute;
       left: 0;
-      margin-top: -$list-disc / 4; //variable
+      margin-top: -$list-disc / 4; 
       top: 50%;
       transform: translateY(-50%);
     }
@@ -39,6 +39,7 @@ ul.list-disc {
  +------------------------------------------------------------+*/
 
 ul.list-inline {
+  margin: 0px;
   li {
     display: inline-block;
     padding: 0;

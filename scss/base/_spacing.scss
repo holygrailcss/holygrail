@@ -5,14 +5,14 @@
 
 
  $mg: "margin";
- $margin: //name : margen total mobile, tablet, desktop, longdesktop
+ $margin: /* name : margen total mobile, tablet, desktop, longdesktop*/
  (m-20: (10px, 20px, 20px, 20px),
    m-30: (10px, 30px, 30px, 30px),
    m-50: (20px, 50px, 50px, 50px));
    
    
  $mx: "margin";
- $margin-x: //name : margen bottom
+ $margin-x: /* name : margen bottom   */
  (mx-10: (0 10px, 0 10px, 0 10px, 0 10px),
    mx-20: (0 10px, 0 20px, 0 20px, 0 20px),
    mx-30: (0 10px, 0 30px, 0 30px, 0 30px),
@@ -20,7 +20,7 @@
    
    
  $my: "margin";
- $margin-y: //name : margen bottom
+ $margin-y: /* name : margen bottom*/
  (my-10: (10px 0, 10px 0, 10px 0, 10px 0),
    my-20: (10px 0, 20px 0, 20px 0, 20px 0),
    my-30: (10px 0, 30p 0x, 30p 0, 30px 0),
@@ -29,7 +29,7 @@
    
      
  $mt: "margin-top";
- $margin-top: //name : margen bottom
+ $margin-top: /* name : margen bottom*/
  (mt-10: (10px, 10px, 10px, 10px),
    mt-20: (10px, 20px, 20px, 20px),
    mt-30: (10px, 30px, 30px, 30px),
@@ -37,14 +37,14 @@
    
    
    $mr: "margin-right";
-   $margin-right: //name : margen bottom
+   $margin-right: /* name : margen bottom*/
    (mr-10: (10px, 10px, 10px, 10px),
      mr-20: (10px, 20px, 20px, 20px),
      mr-30: (10px, 30px, 30px, 30px),
      mr-50: (20px, 50px, 50px, 50px));
    
  $mb: "margin-bottom";
- $margin-bottom: //name : margen bottom
+ $margin-bottom: /* name : margen bottom*/
  (mb-10: (10px, 10px, 10px, 10px),
    mb-20: (10px, 20px, 20px, 20px),
    mb-30: (10px, 30px, 30px, 30px),
@@ -53,7 +53,7 @@
  
    
  $ml: "margin-left";
- $margin-left: //name : margen bottom
+ $margin-left: /* name : margen bottom*/
  (ml-10: (10px, 10px, 10px, 10px),
    ml-20: (10px, 20px, 20px, 20px),
    ml-30: (10px, 30px, 30px, 30px),
@@ -66,7 +66,7 @@
   |       -PADDINGS  
   +------------------------------------------------------------+*/
  $p: "padding";
- $padding: //name : padding  top
+ $padding: /* name : padding  top*/
  (p-10: (10px, 10px, 10px, 10px),
    p-20: (10px, 20px, 20px, 20px),
    p-30: (10px, 30px, 30px, 30px),
@@ -74,7 +74,7 @@
    
    
  $py: "padding";
- $padding-y: //name : padding  arriba y abajo
+ $padding-y: /* name : padding  arriba y abajo*/
  (py-20: (10px 0, 20px 0, 20px 0, 20px 0),
    py-30: (10px 0, 30px 0, 30px 0, 30px 0),
    py-50: (20px 0, 30px 0, 40px 0, 50px 0),
@@ -84,14 +84,14 @@
    
    
  $px: "padding";
- $padding-x: //name : padding  arriba y abajo
+ $padding-x: /* name : padding  arriba y abajo*/
  (px-20: (0 10px, 0 20px, 0 20px, 0 20px),
    px-30: (0 10px, 0 30px, 0 30px, 0 30px),
    px-50: (0 20px, 0 30px, 0 40px, 0 50px));
    
    
  $pt: "padding-top";
- $padding-top: //name : padding  top
+ $padding-top: /* name : padding  top*/
  (pt-10: (10px, 10px, 10px, 10px),
    pt-20: (10px, 20px, 20px, 20px),
    pt-30: (10px, 30px, 30px, 30px),
@@ -99,7 +99,7 @@
    
    
  $pb: "padding-bottom";
- $padding-bottom: //name : padding  bottom
+ $padding-bottom: /* name : padding  bottom*/
  (pb-10: (10px, 10px, 10px, 10px),
    pb-20: (10px, 20px, 20px, 20px),
    pb-30: (10px, 30px, 30px, 30px),
@@ -107,7 +107,7 @@
    
    
  $pl: "padding-left";
- $padding-left: //name : padding  bottom
+ $padding-left: /* name : padding  bottom*/
  (pl-10: (10px, 10px, 10px, 10px),
    pl-20: (10px, 20px, 20px, 20px),
    pl-30: (10px, 30px, 30px, 30px),
@@ -115,7 +115,7 @@
    
    
  $pr: "padding-right";
- $padding-right: //name : padding  bottom
+ $padding-right: /* name : padding  bottom*/
  (pr-10: (10px, 10px, 10px, 10px),
    pr-20: (10px, 20px, 20px, 20px),
    pr-30: (10px, 30px, 30px, 30px),
@@ -128,7 +128,7 @@
  
  
  
- //margin
+ /* margin*/
  @include space($breakpoints, $margin, $mg);
  @include space($breakpoints, $margin-y, $my);
  @include space($breakpoints, $margin-x, $mx);
@@ -136,7 +136,7 @@
  @include space($breakpoints, $margin-right, $mr);
  @include space($breakpoints, $margin-bottom, $mb);
  @include space($breakpoints, $margin-left, $ml);
- //padding
+ /* padding*/
  @include space($breakpoints, $padding, $p);
  @include space($breakpoints, $padding-y, $py);
  @include space($breakpoints, $padding-x, $px);

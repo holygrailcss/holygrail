@@ -31,7 +31,7 @@ html {
 
 $fs: "font-size";
 $lh: "line-height";
-$headers: // name:mobile,768,992,1280,line-height,font
+$headers:/* name:mobile,768,992,1280,line-height,font */
 (h1: (32px, 32px, 32px, 40px, 1.2, "medium"),
   h2: (24px, 24px, 24px, 32px, 1.2, "medium"),
   h3: (18px, 18px, 18px, 24px, 1.2, "medium"),
@@ -60,8 +60,8 @@ $headers: // name:mobile,768,992,1280,line-height,font
 
 
 
-//array para elementos fijos
-$headersFixers: ( //name :  fontsize, lineheight
+/* array para elementos fijos*/
+$headersFixers: (/*name :  fontsize, lineheight */
   12 : (12px, 1.5),
   14 : (14px, 1.5),
   16 : (16px, 1.5),

@@ -80,6 +80,26 @@ a {
 /*+------------------------------------------------------------+
  |       -Variables  Globales
  +------------------------------------------------------------+*/
+@font-face {
+  font-family: "BasisGrotesque-Bold-Pro";
+  src: url("../assets/fonts/basis/BasisGrotesque-Bold-Pro.eot");
+  src: url("../assets/fonts/basis/BasisGrotesque-Bold-Pro.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/basis/BasisGrotesque-Bold-Pro.woff2") format("woff2"), url("../assets/fonts/basis/BasisGrotesque-Bold-Pro.woff") format("woff"), url("../assets/fonts/basis/BasisGrotesque-Bold-Pro.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "BasisGrotesque-Medium-Pro";
+  src: url("../assets/fonts/basis/BasisGrotesque-Medium-Pro.eot");
+  src: url("../assets/fonts/basis/BasisGrotesque-Medium-Pro.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/basis/BasisGrotesque-Medium-Pro.woff2") format("woff2"), url("../assets/fonts/basis/BasisGrotesque-Medium-Pro.woff") format("woff"), url("../assets/fonts/basis/BasisGrotesque-Medium-Pro.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "BasisGrotesque-Light-Pro";
+  src: url("../assets/fonts/basis/BasisGrotesque-Light-Pro.eot");
+  src: url("../assets/fonts/basis/BasisGrotesque-Light-Pro.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/basis/BasisGrotesque-Light-Pro.woff2") format("woff2"), url("../assets/fonts/basis/BasisGrotesque-Light-Pro.woff") format("woff"), url("../assets/fonts/basis/BasisGrotesque-Light-Pro.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "BasisGrotesque-Regular-Pro";
+  src: url("../assets/fonts/basis/BasisGrotesque-Regular-Pro.eot");
+  src: url("../assets/fonts/basis/BasisGrotesque-Regular-Pro.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/basis/BasisGrotesque-Regular-Pro.woff2") format("woff2"), url("../assets/fonts/basis/BasisGrotesque-Regular-Pro.woff") format("woff"), url("../assets/fonts/basis/BasisGrotesque-Regular-Pro.ttf") format("truetype"); }
+
 /*+------------------------------------------------------------+
  |       -BREAKPOINTS
  +------------------------------------------------------------+*/
@@ -244,26 +264,6 @@ a {
   padding: 0 8px 8px;
   bottom: 0; }
 
-@font-face {
-  font-family: "BasisGrotesque-Bold-Pro";
-  src: url("../assets/fonts/basis/BasisGrotesque-Bold-Pro.eot");
-  src: url("../assets/fonts/basis/BasisGrotesque-Bold-Pro.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/basis/BasisGrotesque-Bold-Pro.woff2") format("woff2"), url("../assets/fonts/basis/BasisGrotesque-Bold-Pro.woff") format("woff"), url("../assets/fonts/basis/BasisGrotesque-Bold-Pro.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "BasisGrotesque-Medium-Pro";
-  src: url("../assets/fonts/basis/BasisGrotesque-Medium-Pro.eot");
-  src: url("../assets/fonts/basis/BasisGrotesque-Medium-Pro.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/basis/BasisGrotesque-Medium-Pro.woff2") format("woff2"), url("../assets/fonts/basis/BasisGrotesque-Medium-Pro.woff") format("woff"), url("../assets/fonts/basis/BasisGrotesque-Medium-Pro.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "BasisGrotesque-Light-Pro";
-  src: url("../assets/fonts/basis/BasisGrotesque-Light-Pro.eot");
-  src: url("../assets/fonts/basis/BasisGrotesque-Light-Pro.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/basis/BasisGrotesque-Light-Pro.woff2") format("woff2"), url("../assets/fonts/basis/BasisGrotesque-Light-Pro.woff") format("woff"), url("../assets/fonts/basis/BasisGrotesque-Light-Pro.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "BasisGrotesque-Regular-Pro";
-  src: url("../assets/fonts/basis/BasisGrotesque-Regular-Pro.eot");
-  src: url("../assets/fonts/basis/BasisGrotesque-Regular-Pro.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/basis/BasisGrotesque-Regular-Pro.woff2") format("woff2"), url("../assets/fonts/basis/BasisGrotesque-Regular-Pro.woff") format("woff"), url("../assets/fonts/basis/BasisGrotesque-Regular-Pro.ttf") format("truetype"); }
-
 /*+------------------------------------------------------------+
  |       -CONTAINERS        
  +------------------------------------------------------------+*/
@@ -326,25 +326,6 @@ a {
 /*+------------------------------------------------------------+
    |       -ROW        
    +------------------------------------------------------------+*/
-/* Todos los rows tienen padding bottom
-  
-   @media (max-width:$break-sm - 1) {
-    [class*="col-"] {
-    padding-bottom: $padding-global;
-    }
-  }
-  @media (max-width:$break-md - 1) {
-    [class*="col-"] {
-     padding-bottom: $padding-global * 2;
-    }
-  }
-  @media (max-width:$break-lg - 1) {
-    [class*="col-"] {
-   padding-bottom: $padding-global * 2;
-    }
-  }
-  
-  */
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -1599,6 +1580,96 @@ label {
   font-size: 14px;
   padding-bottom: 4px; }
 
+/*+-----------------------------------------------------------------------------------------+
+ |       -FLUID TEXT   Desde min_width   hasta  break-lg  <--->  font-minima hasta font-maxima
+ +-------------------------------------------------------------------------------------------+*/
+.fluid-h1 {
+  font-family: "BasisGrotesque-Regular-Pro";
+  line-height: 1.6; }
+  .fluid-h1 {
+    font-size: 30px; }
+    @media screen and (min-width: 319px) {
+      .fluid-h1 {
+        font-size: calc(30px + 58 * ((100vw - 319px) / 961)); } }
+    @media screen and (min-width: 1280px) {
+      .fluid-h1 {
+        font-size: 88px; } }
+
+.fluid-h2 {
+  line-height: 1.2;
+  font-family: "BasisGrotesque-Bold-Pro"; }
+  .fluid-h2 {
+    font-size: 24px; }
+    @media screen and (min-width: 319px) {
+      .fluid-h2 {
+        font-size: calc(24px + 24 * ((100vw - 319px) / 961)); } }
+    @media screen and (min-width: 1280px) {
+      .fluid-h2 {
+        font-size: 48px; } }
+
+.fluid-h3 {
+  line-height: 1.2;
+  font-family: "BasisGrotesque-Light-Pro"; }
+  .fluid-h3 {
+    font-size: 18px; }
+    @media screen and (min-width: 319px) {
+      .fluid-h3 {
+        font-size: calc(18px + 6 * ((100vw - 319px) / 961)); } }
+    @media screen and (min-width: 1280px) {
+      .fluid-h3 {
+        font-size: 24px; } }
+
+.fluid-h4 {
+  line-height: 1.2;
+  font-family: "BasisGrotesque-Bold-Pro"; }
+  .fluid-h4 {
+    font-size: 16px; }
+    @media screen and (min-width: 319px) {
+      .fluid-h4 {
+        font-size: calc(16px + 6 * ((100vw - 319px) / 961)); } }
+    @media screen and (min-width: 1280px) {
+      .fluid-h4 {
+        font-size: 22px; } }
+
+.fluid-h5 {
+  line-height: 1.2;
+  font-family: "BasisGrotesque-Medium-Pro"; }
+  .fluid-h5 {
+    font-size: 14px; }
+    @media screen and (min-width: 319px) {
+      .fluid-h5 {
+        font-size: calc(14px + 6 * ((100vw - 319px) / 961)); } }
+    @media screen and (min-width: 1280px) {
+      .fluid-h5 {
+        font-size: 20px; } }
+
+.fluid-h6 {
+  font-size: calc(1em + 0.25vw);
+  font-family: "BasisGrotesque-Light-Pro"; }
+  .fluid-h6 {
+    font-size: 14px; }
+    @media screen and (min-width: 319px) {
+      .fluid-h6 {
+        font-size: calc(14px + 4 * ((100vw - 319px) / 961)); } }
+    @media screen and (min-width: 1280px) {
+      .fluid-h6 {
+        font-size: 18px; } }
+
+.fluid-h7 {
+  font-family: "BasisGrotesque-Regular-Pro";
+  line-height: 1.6; }
+  .fluid-h7 {
+    font-size: 12px; }
+    @media screen and (min-width: 319px) {
+      .fluid-h7 {
+        font-size: calc(12px + 6 * ((100vw - 319px) / 961)); } }
+    @media screen and (min-width: 1280px) {
+      .fluid-h7 {
+        font-size: 18px; } }
+
+.miller {
+  font-family: "Times new roman"; }
+
 .text-12-r {
   font-family: "BasisGrotesque-Regular-Pro";
   line-height: 1.6;
@@ -2085,96 +2156,6 @@ label {
     line-height: 1.4;
     font-family: "BasisGrotesque-Medium-Pro"; } }
 
-/*+-----------------------------------------------------------------------------------------+
- |       -FLUID TEXT   Desde min_width   hasta  break-lg  <--->  font-minima hasta font-maxima
- +-------------------------------------------------------------------------------------------+*/
-.fluid-h1 {
-  font-family: "BasisGrotesque-Regular-Pro";
-  line-height: 1.6; }
-  .fluid-h1 {
-    font-size: 30px; }
-    @media screen and (min-width: 319px) {
-      .fluid-h1 {
-        font-size: calc(30px + 58 * ((100vw - 319px) / 961)); } }
-    @media screen and (min-width: 1280px) {
-      .fluid-h1 {
-        font-size: 88px; } }
-
-.fluid-h2 {
-  line-height: 1.2;
-  font-family: "BasisGrotesque-Bold-Pro"; }
-  .fluid-h2 {
-    font-size: 24px; }
-    @media screen and (min-width: 319px) {
-      .fluid-h2 {
-        font-size: calc(24px + 24 * ((100vw - 319px) / 961)); } }
-    @media screen and (min-width: 1280px) {
-      .fluid-h2 {
-        font-size: 48px; } }
-
-.fluid-h3 {
-  line-height: 1.2;
-  font-family: "BasisGrotesque-Light-Pro"; }
-  .fluid-h3 {
-    font-size: 18px; }
-    @media screen and (min-width: 319px) {
-      .fluid-h3 {
-        font-size: calc(18px + 6 * ((100vw - 319px) / 961)); } }
-    @media screen and (min-width: 1280px) {
-      .fluid-h3 {
-        font-size: 24px; } }
-
-.fluid-h4 {
-  line-height: 1.2;
-  font-family: "BasisGrotesque-Bold-Pro"; }
-  .fluid-h4 {
-    font-size: 16px; }
-    @media screen and (min-width: 319px) {
-      .fluid-h4 {
-        font-size: calc(16px + 6 * ((100vw - 319px) / 961)); } }
-    @media screen and (min-width: 1280px) {
-      .fluid-h4 {
-        font-size: 22px; } }
-
-.fluid-h5 {
-  line-height: 1.2;
-  font-family: "BasisGrotesque-Medium-Pro"; }
-  .fluid-h5 {
-    font-size: 14px; }
-    @media screen and (min-width: 319px) {
-      .fluid-h5 {
-        font-size: calc(14px + 6 * ((100vw - 319px) / 961)); } }
-    @media screen and (min-width: 1280px) {
-      .fluid-h5 {
-        font-size: 20px; } }
-
-.fluid-h6 {
-  font-size: calc(1em + 0.25vw);
-  font-family: "BasisGrotesque-Light-Pro"; }
-  .fluid-h6 {
-    font-size: 14px; }
-    @media screen and (min-width: 319px) {
-      .fluid-h6 {
-        font-size: calc(14px + 4 * ((100vw - 319px) / 961)); } }
-    @media screen and (min-width: 1280px) {
-      .fluid-h6 {
-        font-size: 18px; } }
-
-.fluid-h7 {
-  font-family: "BasisGrotesque-Regular-Pro";
-  line-height: 1.6; }
-  .fluid-h7 {
-    font-size: 12px; }
-    @media screen and (min-width: 319px) {
-      .fluid-h7 {
-        font-size: calc(12px + 6 * ((100vw - 319px) / 961)); } }
-    @media screen and (min-width: 1280px) {
-      .fluid-h7 {
-        font-size: 18px; } }
-
-.miller {
-  font-family: "Times new roman"; }
-
 /*------------------------------------*\
     $ELEMENTS COMPONENTES
 \*------------------------------------*/
@@ -2522,7 +2503,10 @@ select {
   display: inline-flex;
   justify-content: flex-start;
   line-height: 1.5;
-  padding: 13px 16px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 16px;
   position: relative;
   vertical-align: top;
   font-size: 12px;
@@ -2632,10 +2616,10 @@ input::-webkit-input-placeholder {
 
 .form-input-label {
   position: relative;
-  margin-bottom: 16px; }
+  margin-bottom: 32px; }
   .form-input-label > input,
   .form-input-label > label {
-    padding: 13px 16px; }
+    padding: 14px 16px; }
   .form-input-label > label {
     box-sizing: border-box;
     position: absolute;
@@ -2644,7 +2628,6 @@ input::-webkit-input-placeholder {
     display: block;
     width: 100%;
     margin-bottom: 0;
-    /* Override default `<label>` margin */
     line-height: 1.5;
     color: #495057;
     border: 1px solid transparent;
@@ -2679,28 +2662,26 @@ input::-webkit-input-placeholder {
 
 .icon-pre > input,
 .icon-pre > label {
-  padding: 13px 16px 15px 45px; }
+  padding: 18px 16px 15px 56px; }
 
 .icon-pre.btn {
-  padding: 0 16px 0 45px; }
+  padding: 18px 16px 15px 56px; }
   .icon-pre.btn .form-icon {
-    top: 50%;
-    transform: translateY(-50%);
+    top: 12px;
     left: 12px; }
 
 .icon-post > input,
 .icon-post > label {
-  padding: 13px 45px 15px 16px; }
+  padding: 18px 56px 15px 16px; }
 
 .icon-post .form-icon {
   right: 16px;
   left: auto; }
 
 .icon-post.btn {
-  padding: 0 45px 0 16px; }
+  padding: 18px 56px 15px 16px; }
   .icon-post.btn .form-icon {
-    top: 50%;
-    transform: translateY(-50%);
+    top: 12px;
     right: 12px;
     left: auto; }
 
@@ -2950,11 +2931,11 @@ ul.list-disc {
       background-color: #000;
       content: '';
       border-radius: 50%;
-      width: 8px;
-      height: 8px;
+      width: 4px;
+      height: 4px;
       position: absolute;
       left: 0;
-      margin-top: -2px;
+      margin-top: -1px;
       top: 50%;
       transform: translateY(-50%); }
     ul.list-disc li a {
@@ -2966,15 +2947,17 @@ ul.list-disc {
 /*+------------------------------------------------------------+
  |       -LISTA HORIZONTAL LIMPIA    
  +------------------------------------------------------------+*/
-ul.list-inline li {
-  display: inline-block;
-  padding: 0;
-  margin: 0; }
-  ul.list-inline li a {
-    padding: 8px 8px 8px 0;
-    float: left; }
-  ul.list-inline li:after {
-    display: none; }
+ul.list-inline {
+  margin: 0px; }
+  ul.list-inline li {
+    display: inline-block;
+    padding: 0;
+    margin: 0; }
+    ul.list-inline li a {
+      padding: 8px 8px 8px 0;
+      float: left; }
+    ul.list-inline li:after {
+      display: none; }
 
 /*+------------------------------------------------------------+
  |       -LISTA VERTICAL LIMPIA    
@@ -3023,52 +3006,107 @@ ul.h-size-selector a {
   </ul>
 </div>
  */
-.tabs {
-  /*+------------------------------------------------------------+
- |       -CASUISTICAS  
- +------------------------------------------------------------+*/ }
-  .tabs ul {
-    align-items: center;
-    border-bottom-color: #dbdbdb;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    display: flex;
-    flex-grow: 1;
-    flex-shrink: 0;
-    justify-content: flex-start;
-    margin: 0;
-    font-size: 14px;
-    font-family: "BasisGrotesque-Bold-Pro"; }
-  .tabs li {
-    display: block;
-    margin: 0; }
-    .tabs li.is-active a {
-      border-bottom-color: #000;
-      border-bottom-width: 2px;
-      padding-bottom: 16px;
-      color: #000; }
-    .tabs li:after {
-      display: none; }
-  .tabs a {
-    align-items: center;
-    border-bottom-color: #dbdbdb;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
+.tabs .list-equal {
+  display: flex; }
+  .tabs .list-equal li {
+    flex-grow: 1; }
+
+.tabs ul {
+  align-items: center;
+  border-bottom-color: #dbdbdb;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 0;
+  justify-content: flex-start;
+  margin: 0;
+  font-size: 14px;
+  font-family: "BasisGrotesque-Bold-Pro"; }
+
+.tabs li {
+  display: block;
+  margin: 0; }
+  .tabs li.is-active a {
+    border-bottom-color: #000;
+    border-bottom-width: 2px;
+    padding-bottom: 16px;
+    color: #000; }
+  .tabs li.is-active span {
+    border-bottom-color: #000;
+    border-bottom-width: 2px;
+    padding-bottom: 16px;
+    color: #000; }
+  .tabs li:after {
+    display: none; }
+
+.tabs a {
+  align-items: center;
+  border-bottom-color: #dbdbdb;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  margin-bottom: -1px;
+  padding: 16px;
+  vertical-align: top;
+  padding-bottom: 17px; }
+  .tabs a:hover {
+    border-bottom-color: #000;
+    border-bottom-width: 2px;
+    padding-bottom: 16px;
     color: #000;
-    display: flex;
-    justify-content: center;
-    margin-bottom: -1px;
-    padding: 16px;
-    vertical-align: top;
-    padding-bottom: 17px; }
-    .tabs a:hover {
-      border-bottom-color: #000;
-      border-bottom-width: 2px;
-      padding-bottom: 16px;
-      color: #000;
-      cursor: pointer; }
-  .tabs.is-center ul {
-    justify-content: center; }
+    cursor: pointer; }
+
+.tabs span {
+  align-items: center;
+  border-bottom-color: #dbdbdb;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  margin-bottom: -1px;
+  padding: 16px;
+  vertical-align: top;
+  padding-bottom: 17px; }
+  .tabs span:hover {
+    border-bottom-color: #000;
+    border-bottom-width: 2px;
+    padding-bottom: 16px;
+    color: #000;
+    cursor: pointer; }
+
+.tabs.is-center ul {
+  justify-content: center; }
+
+.tabs-list {
+  margin-left: -8px; }
+  .tabs-list li {
+    margin: 0;
+    padding-left: 8px;
+    padding-right: 8px; }
+    .tabs-list li span {
+      position: relative; }
+      .tabs-list li span:hover {
+        cursor: pointer; }
+        .tabs-list li span:hover:after {
+          content: '';
+          width: 100%;
+          background: black;
+          height: 2px;
+          position: absolute;
+          bottom: -4px;
+          left: 0; }
+    .tabs-list li.is-active span:after {
+      content: '';
+      width: 100%;
+      background: black;
+      height: 2px;
+      position: absolute;
+      bottom: -4px;
+      left: 0; }
 
 /*
 @import "elements/tables";

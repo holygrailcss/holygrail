@@ -1,12 +1,12 @@
 /*+------------------------------------------------------------+
  |       -MIXINS
  +------------------------------------------------------------+*/
-// .background-alpha(VALUE VALUE);
+/* .background-alpha(VALUE VALUE);*/
 @mixin background-alpha($color: $color-white, $alpha: 1) {
 	background-color: hsla(hue($color), saturation($color), lightness($color), $alpha);
 }
 
-// .userselect(VALUE) (all, element, none, text)
+/* .userselect(VALUE) (all, element, none, text) */
 @mixin user-select($select) {
 	-webkit-user-select: $select;
 	-moz-user-select: $select;
@@ -54,7 +54,7 @@
 
 
 
-@import url("https://use.typekit.net/puz7rnx.css"); 
+@import url("https:/*use.typekit.net/puz7rnx.css"); 
 
 @mixin font-miller {
   font-family: "miller-display",serif !important;
@@ -182,11 +182,11 @@
 	}
 }
 
-//array para elementos fijos
+/*array para elementos fijos*/
 @mixin types($breakpoints, $headers, $cssattr) {
 	@for $i from 1 through length($breakpoints) {
 
-		// map-key
+		/* map-key*/
 		@media (min-width: nth(map-values($breakpoints), $i)) {
 
 			@each $name,
@@ -239,7 +239,7 @@
 @mixin space($breakpoints, $paddings, $cssattr) {
 	@for $i from 1 through $colBreakpoints {
 
-		// map-key
+		/* map-key*/
 		@media (min-width: nth(map-values($breakpoints), $i)) {
 
 			@each $name,
