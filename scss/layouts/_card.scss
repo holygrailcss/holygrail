@@ -120,7 +120,7 @@
         width: 100%;
     }
 
-    .card-4-wrap {
+    .card-4-content {
         &:hover {
             cursor: pointer;
 
@@ -186,7 +186,7 @@
     }
 
 
-    .card-5-wrap {
+    .card-5-content {
         padding: $padding-global * 2;
         width: 50%;
         position: relative;
@@ -205,7 +205,7 @@ background: #eaeaea;
     }
 
 
-    .card-6-wrap {
+    .card-6-content {
         padding: $padding-global * 2;
         width: 100%;
         position: relative;
@@ -214,3 +214,40 @@ background: #eaeaea;
     }
 
 }
+
+//como son formados????
+
+
+.card-7{
+    .card-7-img {
+        width: 100%;
+    }
+    .card-7-text {
+        padding: $padding-global 0;
+        width: 100%;
+    }
+}
+
+.card-8{
+
+    .card-8-video {
+        video{
+            width: 100%;
+        }
+
+    }
+    .card-8-text {
+        padding: $padding-global 0;
+        width: 100%;
+    }
+}
+
+
+
+
+/*
+Caja y texto inferior
+
+.card-7>.card-7-img+.card-7-text>h5.h5{titulo}
+
+*/

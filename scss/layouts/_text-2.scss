@@ -1,0 +1,32 @@
+.text-2 {
+    width: 100%;
+    position: relative;
+
+    .text-2-content {
+
+        display: flex;
+        align-items: center;
+        align-content: center;
+
+        [class*="h"] {
+            flex-grow: 0.15;
+    
+        }
+
+        div {
+            height: 2px;
+            background: #eaeaea;
+            flex-grow: 1;
+        }
+
+    }
+
+}
+
+/*
+TITULO: Separador linea titular linea
+
+ZEN:
+.text-2>.text-2-content>div+h3.h3{titulo}+div
+
+*/

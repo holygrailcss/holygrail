@@ -1,0 +1,16 @@
+.cover-3{
+  width: 50%;
+  float: left;
+  span{position: absolute;
+  
+  bottom:$padding-global;
+  left: $padding-global;
+  }
+
+
+  &.sp{
+    width: 100%;
+
+  }
+  
+}

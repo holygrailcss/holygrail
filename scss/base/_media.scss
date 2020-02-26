@@ -9,6 +9,26 @@
 }
 
 .bg-dark {
- background-color: #3dbfcb;
+ background-color: #eaeaea;
  color: #fff;
 }
+
+
+
+/*+------------------------------------------------------------+
+ |       -LOGOS        
+ +------------------------------------------------------------+*/
+ 
+
+.logo-mini {
+  max-width: 48px;
+  fill: #ffffff;
+}
+
+
+.logo-full {
+  width:calc( 100% - #{$padding-global}*2);
+  max-width: 662px;
+  fill: #ffffff;
+}
+

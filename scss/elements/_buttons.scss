@@ -71,6 +71,11 @@ $btn-text-full:16px;
 }
 
 .btn--large {
+
+
+    min-width: 288px;
+    max-width: 400px;
+
     padding-right: $padding-global * 7;
     padding-left: $padding-global * 7;
     font-size: $btn-text-large;

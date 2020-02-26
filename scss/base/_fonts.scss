@@ -1,1 +1,40 @@
 
+//fuentes
+$font-family-light: 'BasisGrotesque-Light-Pro';
+$font-family-regular: 'BasisGrotesque-Regular-Pro';
+$font-family-medium: 'BasisGrotesque-Medium-Pro';
+$font-family-bold: 'BasisGrotesque-Bold-Pro';
+
+@font-face {
+  font-family: $font-family-bold;
+  src: url('../assets/fonts/basis/BasisGrotesque-Bold-Pro.eot');
+  src: url('../assets/fonts/basis/BasisGrotesque-Bold-Pro.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/basis/BasisGrotesque-Bold-Pro.woff2') format('woff2'),
+  url('../assets/fonts/basis/BasisGrotesque-Bold-Pro.woff') format('woff'),
+  url('../assets/fonts/basis/BasisGrotesque-Bold-Pro.ttf') format('truetype'),
+}
+@font-face {
+  font-family: $font-family-medium;
+  src: url('../assets/fonts/basis/BasisGrotesque-Medium-Pro.eot');
+  src: url('../assets/fonts/basis/BasisGrotesque-Medium-Pro.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/basis/BasisGrotesque-Medium-Pro.woff2') format('woff2'),
+  url('../assets/fonts/basis/BasisGrotesque-Medium-Pro.woff') format('woff'),
+  url('../assets/fonts/basis/BasisGrotesque-Medium-Pro.ttf') format('truetype'),
+}
+@font-face {
+  font-family: $font-family-light;
+  src: url('../assets/fonts/basis/BasisGrotesque-Light-Pro.eot');
+  src: url('../assets/fonts/basis/BasisGrotesque-Light-Pro.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/basis/BasisGrotesque-Light-Pro.woff2') format('woff2'),
+  url('../assets/fonts/basis/BasisGrotesque-Light-Pro.woff') format('woff'),
+  url('../assets/fonts/basis/BasisGrotesque-Light-Pro.ttf') format('truetype'),
+}
+
+@font-face {
+  font-family: $font-family-regular;
+  src: url('../assets/fonts/basis/BasisGrotesque-Regular-Pro.eot');
+  src: url('../assets/fonts/basis/BasisGrotesque-Regular-Pro.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/basis/BasisGrotesque-Regular-Pro.woff2') format('woff2'),
+  url('../assets/fonts/basis/BasisGrotesque-Regular-Pro.woff') format('woff'),
+  url('../assets/fonts/basis/BasisGrotesque-Regular-Pro.ttf') format('truetype'),
+}

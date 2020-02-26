@@ -172,3 +172,7 @@ $headersFixers: ( //name :  fontsize, lineheight
   @include fluid-text($min_width, $break-lg, 12px, 18px);
   @include font-regular()
 }
+
+.miller{
+  font-family:$font-family-secondary;
+}

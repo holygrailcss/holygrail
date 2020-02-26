@@ -28,8 +28,16 @@
 }
 
 .height-home {
+
     height: calc(100vh - 80px);
 }
+.height-header {
+  
+  @media (min-width:$break-sm) {
+    height: calc(100vh - 80px);
+  }
+}
+
 
 
 
