@@ -11,6 +11,7 @@
     lg: 1280px,
     xl: 1500px);
 
+$colBreakpoints: length($breakpoints) - 1;
 
 $break-xs:nth(map-values($breakpoints), 1);
 $break-sm:nth(map-values($breakpoints), 2);

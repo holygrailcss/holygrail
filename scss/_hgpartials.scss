@@ -19,6 +19,7 @@
 \*------------------------------------*/
 /* Nuestra base esencial*/
 
+.hg{  
 @import "base/alignment";
 
 @import "base/grid";
@@ -64,9 +65,10 @@
 @import "layouts/row-3";
 
 @import "layouts/text-2";
-
 @import "layouts/text-3";
 
 @import "layouts/card";
 @import "layouts/footer";
+
+}
 

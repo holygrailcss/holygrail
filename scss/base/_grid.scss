@@ -67,25 +67,7 @@
   /*+------------------------------------------------------------+
    |       -ROW        
    +------------------------------------------------------------+*/
-  /* Todos los rows tienen padding bottom
-  
-   @media (max-width:$break-sm - 1) {
-    [class*="col-"] {
-    padding-bottom: $padding-global;
-    }
-  }
-  @media (max-width:$break-md - 1) {
-    [class*="col-"] {
-     padding-bottom: $padding-global * 2;
-    }
-  }
-  @media (max-width:$break-lg - 1) {
-    [class*="col-"] {
-   padding-bottom: $padding-global * 2;
-    }
-  }
-  
-  */
+
   .row {
     display: flex;
     flex-wrap: wrap;
@@ -99,22 +81,11 @@
     }
   }
   
-  // .bleed{
-  //   [class*="container-fluid"],  [class*="container"] {
-  //     padding:0 ;
-  //   }
-  //   [class*="col-"] {
-  //     padding:0 ;
-  //   }
-  //   [class*="row"] {
-  //     padding:0 ;
-  //   }
-  // }
   
   /*+------------------------------------------------------------+
    |       -COLS        
    +------------------------------------------------------------+*/
-  $colBreakpoints: length($breakpoints) - 1;
+
   
   @for $i from 1 through $colBreakpoints {
     @media (min-width: nth(map-values($breakpoints), $i)) {
