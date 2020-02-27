@@ -20,6 +20,11 @@ select {
     color: #363636;
 }
 
+label {
+  font-size: 14px;
+  padding-bottom: $padding-global;
+}
+
 .input,
 .select select {
   -webkit-appearance: none;
@@ -50,7 +55,10 @@ select {
     color: #363636;
     max-width: 100%;
     width: 100%;
+    font-size: 16px;
+    @media (min-width: $break-sm) {
     font-size: 14px;
+  }
 }
 
 .textarea {
@@ -110,16 +118,30 @@ select {
     }
 }
 
-.error-input {
-    label {
-        color: $error-primary;
-    }
+.help {
+  position: absolute;
+  font-size: 12px;
+  margin-top: 4px;
 
-    .input {
-        border: 1px solid $error-primary;
-        color: $error-primary;
-    }
 }
+.info-text{
+  margin-top: 4px;
+  width: 100%;
+  float: left;
+}
+
+
+.is-error {
+  .input,label,.help{
+         color: $error-primary!important;
+  }
+
+  .input {
+      border: 1px solid $error-primary;
+
+  }
+}
+
 
 .ok-input {
     label {
