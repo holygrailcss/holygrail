@@ -1,0 +1,16 @@
+.card-3{
+    width: 100%;
+    float: left;
+    span{position: absolute;
+    
+    bottom:$padding-global;
+    left: $padding-global;
+    }
+  
+  
+    &.sp{
+      width: 50%;
+  
+    }
+    
+  }
