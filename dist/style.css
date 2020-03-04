@@ -4,6 +4,9 @@
 \*------------------------------------*/
 /* no usar col- nunca ya que hay un selector asi
  */
+/*cargamos el tema por defecto con las fuentes y colores propios */
+/* @import "../../themes/theme-dutti/site";*/
+/*@import "abstract/0debug";  si queremos debugar la maqueta */
 /**
 * Base estilo inline    class="[col-sm-2]    [py-20m-20]    [h1 text-1 link-2] [text-center]"
 
@@ -14,7 +17,7 @@
 /*+------------------------------------------------------------+
  |       -RESET  
  +------------------------------------------------------------+*/
-@import url("https://use.typekit.net/puz7rnx.css");
+@import url("https:/*use.typekit.net/puz7rnx.css");
 html, body, div, span, select, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, main, menu, nav, section, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -80,6 +83,10 @@ a {
 /*+------------------------------------------------------------+
  |       -Variables  Globales
  +------------------------------------------------------------+*/
+/* maxwidth del container */
+/* maxwidth del container2*/
+/* maxwidth del container3*/
+/* maxwidth del container4*/
 @font-face {
   font-family: "BasisGrotesque-Bold-Pro";
   src: url("../assets/fonts/basis/BasisGrotesque-Bold-Pro.eot");
@@ -106,6 +113,8 @@ a {
 /*+------------------------------------------------------------+
  |       -MIXINS
  +------------------------------------------------------------+*/
+/* .background-alpha(VALUE VALUE);*/
+/* .userselect(VALUE) (all, element, none, text) */
 /*+------------------------------------------------------------+
  |       -MIXINS FONTS
  +------------------------------------------------------------+*/
@@ -122,6 +131,7 @@ a {
 /*+------------------------------------------------------------+
  |       -BLEED A SANGRE
  +------------------------------------------------------------+*/
+/*array para elementos fijos*/
 /*+------------------------------------------------------------+
  |       -ANIMATIONS    
  +------------------------------------------------------------+*/
@@ -276,16 +286,19 @@ a {
   max-width: 800px; }
   @media (min-width: 786px) {
     .container {
+      /*600px*/
       padding-right: 8px;
       padding-left: 8px;
       width: 90%;
       max-width: 786px; } }
   @media (min-width: 992px) {
     .container {
+      /* 992px*/
       width: 80%;
       max-width: 992px; } }
   @media (min-width: 1280px) {
     .container {
+      /* 1200px*/
       width: 80%;
       max-width: 1280px; } }
 
@@ -964,6 +977,8 @@ a {
 /*+------------------------------------------------------------+
   |       -MIXINS SPACE  
   +------------------------------------------------------------+*/
+/* margin*/
+/* map-key*/
 @media (min-width: 1px) {
   .m-20 {
     margin: 10px; }
@@ -972,6 +987,7 @@ a {
   .m-50 {
     margin: 20px; } }
 
+/* map-key*/
 @media (min-width: 786px) {
   .m-20 {
     margin: 20px; }
@@ -980,6 +996,7 @@ a {
   .m-50 {
     margin: 50px; } }
 
+/* map-key*/
 @media (min-width: 992px) {
   .m-20 {
     margin: 20px; }
@@ -988,6 +1005,7 @@ a {
   .m-50 {
     margin: 50px; } }
 
+/* map-key*/
 @media (min-width: 1280px) {
   .m-20 {
     margin: 20px; }
@@ -996,6 +1014,7 @@ a {
   .m-50 {
     margin: 50px; } }
 
+/* map-key*/
 @media (min-width: 1px) {
   .my-10 {
     margin: 10px 0; }
@@ -1006,6 +1025,7 @@ a {
   .my-50 {
     margin: 20px 0; } }
 
+/* map-key*/
 @media (min-width: 786px) {
   .my-10 {
     margin: 10px 0; }
@@ -1016,6 +1036,7 @@ a {
   .my-50 {
     margin: 50px 0; } }
 
+/* map-key*/
 @media (min-width: 992px) {
   .my-10 {
     margin: 10px 0; }
@@ -1026,6 +1047,7 @@ a {
   .my-50 {
     margin: 50px 0; } }
 
+/* map-key*/
 @media (min-width: 1280px) {
   .my-10 {
     margin: 10px 0; }
@@ -1036,6 +1058,7 @@ a {
   .my-50 {
     margin: 50px 0; } }
 
+/* map-key*/
 @media (min-width: 1px) {
   .mx-10 {
     margin: 0 10px; }
@@ -1046,6 +1069,7 @@ a {
   .mx-50 {
     margin: 0 20px; } }
 
+/* map-key*/
 @media (min-width: 786px) {
   .mx-10 {
     margin: 0 10px; }
@@ -1056,6 +1080,7 @@ a {
   .mx-50 {
     margin: 0 50px; } }
 
+/* map-key*/
 @media (min-width: 992px) {
   .mx-10 {
     margin: 0 10px; }
@@ -1066,6 +1091,7 @@ a {
   .mx-50 {
     margin: 0 50px; } }
 
+/* map-key*/
 @media (min-width: 1280px) {
   .mx-10 {
     margin: 0 10px; }
@@ -1076,6 +1102,7 @@ a {
   .mx-50 {
     margin: 0 50px; } }
 
+/* map-key*/
 @media (min-width: 1px) {
   .mt-10 {
     margin-top: 10px; }
@@ -1086,6 +1113,7 @@ a {
   .mt-50 {
     margin-top: 20px; } }
 
+/* map-key*/
 @media (min-width: 786px) {
   .mt-10 {
     margin-top: 10px; }
@@ -1096,6 +1124,7 @@ a {
   .mt-50 {
     margin-top: 50px; } }
 
+/* map-key*/
 @media (min-width: 992px) {
   .mt-10 {
     margin-top: 10px; }
@@ -1106,6 +1135,7 @@ a {
   .mt-50 {
     margin-top: 50px; } }
 
+/* map-key*/
 @media (min-width: 1280px) {
   .mt-10 {
     margin-top: 10px; }
@@ -1116,6 +1146,7 @@ a {
   .mt-50 {
     margin-top: 50px; } }
 
+/* map-key*/
 @media (min-width: 1px) {
   .mr-10 {
     margin-right: 10px; }
@@ -1126,6 +1157,7 @@ a {
   .mr-50 {
     margin-right: 20px; } }
 
+/* map-key*/
 @media (min-width: 786px) {
   .mr-10 {
     margin-right: 10px; }
@@ -1136,6 +1168,7 @@ a {
   .mr-50 {
     margin-right: 50px; } }
 
+/* map-key*/
 @media (min-width: 992px) {
   .mr-10 {
     margin-right: 10px; }
@@ -1146,6 +1179,7 @@ a {
   .mr-50 {
     margin-right: 50px; } }
 
+/* map-key*/
 @media (min-width: 1280px) {
   .mr-10 {
     margin-right: 10px; }
@@ -1156,6 +1190,7 @@ a {
   .mr-50 {
     margin-right: 50px; } }
 
+/* map-key*/
 @media (min-width: 1px) {
   .mb-10 {
     margin-bottom: 10px; }
@@ -1166,6 +1201,7 @@ a {
   .mb-50 {
     margin-bottom: 20px; } }
 
+/* map-key*/
 @media (min-width: 786px) {
   .mb-10 {
     margin-bottom: 10px; }
@@ -1176,6 +1212,7 @@ a {
   .mb-50 {
     margin-bottom: 50px; } }
 
+/* map-key*/
 @media (min-width: 992px) {
   .mb-10 {
     margin-bottom: 10px; }
@@ -1186,6 +1223,7 @@ a {
   .mb-50 {
     margin-bottom: 50px; } }
 
+/* map-key*/
 @media (min-width: 1280px) {
   .mb-10 {
     margin-bottom: 10px; }
@@ -1196,6 +1234,7 @@ a {
   .mb-50 {
     margin-bottom: 50px; } }
 
+/* map-key*/
 @media (min-width: 1px) {
   .ml-10 {
     margin-left: 10px; }
@@ -1206,6 +1245,7 @@ a {
   .ml-50 {
     margin-left: 20px; } }
 
+/* map-key*/
 @media (min-width: 786px) {
   .ml-10 {
     margin-left: 10px; }
@@ -1216,6 +1256,7 @@ a {
   .ml-50 {
     margin-left: 50px; } }
 
+/* map-key*/
 @media (min-width: 992px) {
   .ml-10 {
     margin-left: 10px; }
@@ -1226,6 +1267,7 @@ a {
   .ml-50 {
     margin-left: 50px; } }
 
+/* map-key*/
 @media (min-width: 1280px) {
   .ml-10 {
     margin-left: 10px; }
@@ -1236,6 +1278,8 @@ a {
   .ml-50 {
     margin-left: 50px; } }
 
+/* padding*/
+/* map-key*/
 @media (min-width: 1px) {
   .p-10 {
     padding: 10px; }
@@ -1246,6 +1290,7 @@ a {
   .p-50 {
     padding: 20px; } }
 
+/* map-key*/
 @media (min-width: 786px) {
   .p-10 {
     padding: 10px; }
@@ -1256,6 +1301,7 @@ a {
   .p-50 {
     padding: 50px; } }
 
+/* map-key*/
 @media (min-width: 992px) {
   .p-10 {
     padding: 10px; }
@@ -1266,6 +1312,7 @@ a {
   .p-50 {
     padding: 50px; } }
 
+/* map-key*/
 @media (min-width: 1280px) {
   .p-10 {
     padding: 10px; }
@@ -1276,6 +1323,7 @@ a {
   .p-50 {
     padding: 50px; } }
 
+/* map-key*/
 @media (min-width: 1px) {
   .py-20 {
     padding: 10px 0; }
@@ -1286,6 +1334,7 @@ a {
   .py-60 {
     padding: 24px 16px; } }
 
+/* map-key*/
 @media (min-width: 786px) {
   .py-20 {
     padding: 20px 0; }
@@ -1296,6 +1345,7 @@ a {
   .py-60 {
     padding: 24px 16px; } }
 
+/* map-key*/
 @media (min-width: 992px) {
   .py-20 {
     padding: 20px 0; }
@@ -1306,6 +1356,7 @@ a {
   .py-60 {
     padding: 24px 16px; } }
 
+/* map-key*/
 @media (min-width: 1280px) {
   .py-20 {
     padding: 20px 0; }
@@ -1316,6 +1367,7 @@ a {
   .py-60 {
     padding: 60px 60px; } }
 
+/* map-key*/
 @media (min-width: 1px) {
   .px-20 {
     padding: 0 10px; }
@@ -1324,6 +1376,7 @@ a {
   .px-50 {
     padding: 0 20px; } }
 
+/* map-key*/
 @media (min-width: 786px) {
   .px-20 {
     padding: 0 20px; }
@@ -1332,6 +1385,7 @@ a {
   .px-50 {
     padding: 0 30px; } }
 
+/* map-key*/
 @media (min-width: 992px) {
   .px-20 {
     padding: 0 20px; }
@@ -1340,6 +1394,7 @@ a {
   .px-50 {
     padding: 0 40px; } }
 
+/* map-key*/
 @media (min-width: 1280px) {
   .px-20 {
     padding: 0 20px; }
@@ -1348,6 +1403,7 @@ a {
   .px-50 {
     padding: 0 50px; } }
 
+/* map-key*/
 @media (min-width: 1px) {
   .pt-10 {
     padding-top: 10px; }
@@ -1358,6 +1414,7 @@ a {
   .pt-50 {
     padding-top: 20px; } }
 
+/* map-key*/
 @media (min-width: 786px) {
   .pt-10 {
     padding-top: 10px; }
@@ -1368,6 +1425,7 @@ a {
   .pt-50 {
     padding-top: 50px; } }
 
+/* map-key*/
 @media (min-width: 992px) {
   .pt-10 {
     padding-top: 10px; }
@@ -1378,6 +1436,7 @@ a {
   .pt-50 {
     padding-top: 50px; } }
 
+/* map-key*/
 @media (min-width: 1280px) {
   .pt-10 {
     padding-top: 10px; }
@@ -1388,6 +1447,7 @@ a {
   .pt-50 {
     padding-top: 50px; } }
 
+/* map-key*/
 @media (min-width: 1px) {
   .pl-10 {
     padding-left: 10px; }
@@ -1398,6 +1458,7 @@ a {
   .pl-50 {
     padding-left: 20px; } }
 
+/* map-key*/
 @media (min-width: 786px) {
   .pl-10 {
     padding-left: 10px; }
@@ -1408,6 +1469,7 @@ a {
   .pl-50 {
     padding-left: 50px; } }
 
+/* map-key*/
 @media (min-width: 992px) {
   .pl-10 {
     padding-left: 10px; }
@@ -1418,6 +1480,7 @@ a {
   .pl-50 {
     padding-left: 50px; } }
 
+/* map-key*/
 @media (min-width: 1280px) {
   .pl-10 {
     padding-left: 10px; }
@@ -1428,6 +1491,7 @@ a {
   .pl-50 {
     padding-left: 50px; } }
 
+/* map-key*/
 @media (min-width: 1px) {
   .pb-10 {
     padding-bottom: 10px; }
@@ -1438,6 +1502,7 @@ a {
   .pb-50 {
     padding-bottom: 20px; } }
 
+/* map-key*/
 @media (min-width: 786px) {
   .pb-10 {
     padding-bottom: 10px; }
@@ -1448,6 +1513,7 @@ a {
   .pb-50 {
     padding-bottom: 50px; } }
 
+/* map-key*/
 @media (min-width: 992px) {
   .pb-10 {
     padding-bottom: 10px; }
@@ -1458,6 +1524,7 @@ a {
   .pb-50 {
     padding-bottom: 50px; } }
 
+/* map-key*/
 @media (min-width: 1280px) {
   .pb-10 {
     padding-bottom: 10px; }
@@ -1468,6 +1535,7 @@ a {
   .pb-50 {
     padding-bottom: 50px; } }
 
+/* map-key*/
 @media (min-width: 1px) {
   .pr-10 {
     padding-right: 10px; }
@@ -1478,6 +1546,7 @@ a {
   .pr-50 {
     padding-right: 20px; } }
 
+/* map-key*/
 @media (min-width: 786px) {
   .pr-10 {
     padding-right: 10px; }
@@ -1488,6 +1557,7 @@ a {
   .pr-50 {
     padding-right: 50px; } }
 
+/* map-key*/
 @media (min-width: 992px) {
   .pr-10 {
     padding-right: 10px; }
@@ -1498,6 +1568,7 @@ a {
   .pr-50 {
     padding-right: 50px; } }
 
+/* map-key*/
 @media (min-width: 1280px) {
   .pr-10 {
     padding-right: 10px; }
@@ -1531,6 +1602,7 @@ html {
     html {
       font-size: calc(1rem + 0.4vw); } }
 
+/* array para elementos fijos*/
 select {
   font-family: "BasisGrotesque-Regular-Pro";
   line-height: 1.6; }
@@ -1572,13 +1644,6 @@ mark {
 .text-2 {
   font-size: 18px;
   line-height: 1.6; }
-
-label {
-  float: left;
-  font-size: 14px;
-  float: left;
-  font-size: 14px;
-  padding-bottom: 4px; }
 
 /*+-----------------------------------------------------------------------------------------+
  |       -FLUID TEXT   Desde min_width   hasta  break-lg  <--->  font-minima hasta font-maxima
@@ -1668,7 +1733,7 @@ label {
         font-size: 18px; } }
 
 .miller {
-  font-family: "Times new roman"; }
+  font-family: "Times new roman" !important; }
 
 .text-12-r {
   font-family: "BasisGrotesque-Regular-Pro";
@@ -1766,6 +1831,7 @@ label {
   font-size: 24px;
   line-height: 1.5; }
 
+/* map-key*/
 @media (min-width: 1px) {
   .h1 {
     font-size: 32px;
@@ -1844,6 +1910,7 @@ label {
     line-height: 1.4;
     font-family: "BasisGrotesque-Medium-Pro"; } }
 
+/* map-key*/
 @media (min-width: 786px) {
   .h1 {
     font-size: 32px;
@@ -1922,6 +1989,7 @@ label {
     line-height: 1.4;
     font-family: "BasisGrotesque-Medium-Pro"; } }
 
+/* map-key*/
 @media (min-width: 992px) {
   .h1 {
     font-size: 32px;
@@ -2000,6 +2068,7 @@ label {
     line-height: 1.4;
     font-family: "BasisGrotesque-Medium-Pro"; } }
 
+/* map-key*/
 @media (min-width: 1280px) {
   .h1 {
     font-size: 40px;
@@ -2078,6 +2147,7 @@ label {
     line-height: 1.4;
     font-family: "BasisGrotesque-Medium-Pro"; } }
 
+/* map-key*/
 @media (min-width: 1500px) {
   .h1 {
     font-size: 1.2;
@@ -2159,6 +2229,43 @@ label {
 /*------------------------------------*\
     $ELEMENTS COMPONENTES
 \*------------------------------------*/
+.arrow-cover {
+  height: auto;
+  padding: 30px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 1;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  transition: opacity .3s ease;
+  z-index: 6; }
+
+.arrow-cover svg {
+  -webkit-animation: bounce .8s infinite alternate;
+  animation: bounce .8s infinite alternate; }
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0); }
+  to {
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0); } }
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0); }
+  to {
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0); } }
+
 /*+------------------------------------------------------------+
  |       -BOTONES    
  +------------------------------------------------------------+*/
@@ -2179,7 +2286,6 @@ label {
   margin-right: 8px;
   vertical-align: middle;
   border: none;
-  line-height: 38px;
   white-space: nowrap;
   cursor: pointer;
   /**
@@ -2494,6 +2600,10 @@ select {
   border-radius: 0;
   color: #363636; }
 
+label {
+  font-size: 14px;
+  padding-bottom: 8px; }
+
 .input,
 .select select {
   -webkit-appearance: none;
@@ -2521,7 +2631,12 @@ select {
   color: #363636;
   max-width: 100%;
   width: 100%;
-  font-size: 14px; }
+  font-size: 16px; }
+  @media (min-width: 786px) {
+    .input,
+    .textarea,
+    .select select {
+      font-size: 14px; } }
 
 .textarea {
   height: 100px;
@@ -2569,12 +2684,21 @@ select {
     display: inline-block;
     margin-right: 10px; }
 
-.error-input label {
-  color: #FD675E; }
+.help {
+  position: absolute;
+  font-size: 12px;
+  margin-top: 4px; }
 
-.error-input .input {
-  border: 1px solid #FD675E;
-  color: #FD675E; }
+.info-text {
+  margin-top: 4px;
+  width: 100%;
+  float: left; }
+
+.is-error .input, .is-error label, .is-error .help {
+  color: #FD675E !important; }
+
+.is-error .input {
+  border: 1px solid #FD675E; }
 
 .ok-input label {
   color: green; }
@@ -2776,10 +2900,12 @@ a:hover {
   transition: color 250ms linear;
   text-decoration: none;
   position: relative; }
-  .link1:hover::after {
-    -webkit-transform: scaleX(1);
-    -ms-transform: scaleX(1);
-    transform: scaleX(1); }
+  .link1:hover {
+    /* color: $linkHover; */ }
+    .link1:hover::after {
+      -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+      transform: scaleX(1); }
   .link1:focus {
     outline: none;
     color: #030202;
@@ -2951,7 +3077,7 @@ ul.list-inline {
   margin: 0px; }
   ul.list-inline li {
     display: inline-block;
-    padding: 0;
+    padding: 0 8px;
     margin: 0; }
     ul.list-inline li a {
       padding: 8px 8px 8px 0;
@@ -3118,13 +3244,13 @@ ul.h-size-selector a {
 /*------------------------------------*\
     $LAYOUTS, Conjuntos de elementos
 \*------------------------------------*/
-.cover-1 .cover-1-down-button {
+.cover1 .cover1-down-button {
   position: absolute;
   text-align: center;
   bottom: 0;
   width: 200px; }
 
-.cover-1 .line-scrolldown:before {
+.cover1 .line-scrolldown:before {
   content: '';
   position: absolute;
   top: 40px;
@@ -3136,7 +3262,7 @@ ul.h-size-selector a {
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%); }
 
-.cover-1 .line-scrolldown::after {
+.cover1 .line-scrolldown::after {
   content: '';
   position: absolute;
   top: 40px;
@@ -3148,30 +3274,40 @@ ul.h-size-selector a {
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%); }
 
-.cover-2 {
+.cover2 {
   width: 100%; }
-  .cover-2 span {
+  .cover2 span {
     position: absolute; }
 
-.cover-3 {
+.cover3 {
   width: 50%;
   float: left; }
-  .cover-3 span {
+  .cover3 span {
     position: absolute;
     bottom: 8px;
     left: 8px; }
-  .cover-3.sp {
+  .cover3.sp {
     width: 100%; }
 
-.cover-4 {
+.cover4 {
   width: 100%; }
-  .cover-4 h1 {
+  .cover4 h1 {
     position: absolute;
     z-index: 2; }
-  .cover-4 video {
+  .cover4 video {
     position: absolute;
     z-index: 1;
-    width: 100%; }
+    width: 100%;
+    object-fit: cover; }
+
+.cover5 {
+  width: 100%; }
+  .cover5 .cover5-img {
+    width: 60px; }
+  .cover5 .cover5-text {
+    height: 100%; }
+    .cover5 .cover5-text h2, .cover5 .cover5-text h3, .cover5 .cover5-text p, .cover5 .cover5-text a {
+      width: 100%; }
 
 .row-6 {
   display: -webkit-box;
@@ -3243,7 +3379,7 @@ ZEN:
 /**
  .card>img.pb-20[src="https://via.placeholder.com/600x800.png?text=Logo+text" alt="{altimagen}"]+.title{title}+.subtitle{subtitle}
 **/
-.card-1 {
+.card1 {
   border: 1px solid #eaeaea;
   align-items: stretch;
   height: calc(100% - 20px);
@@ -3296,34 +3432,34 @@ ZEN:
       opacity: .6;
       cursor: pointer; }
 
-.card-3 {
+.card3 {
   display: flex;
   background: #eaeaea; }
-  .card-3 .card-3-img {
+  .card3 .card3-img {
     width: 50%; }
-  .card-3 .card-3-text {
+  .card3 .card3-text {
     padding: 16px;
     width: 50%;
     position: relative;
     text-align: left; }
-    .card-3 .card-3-text .link1 {
+    .card3 .card3-text .link1 {
       position: absolute;
       bottom: 16px; }
 
-.card-4 {
+.card4 {
   position: relative;
   overflow: hidden; }
-  .card-4 .card-4-img {
+  .card4 .card4-img {
     width: 100%; }
-  .card-4 .card-4-content:hover {
+  .card4 .card4-content:hover {
     cursor: pointer; }
-    .card-4 .card-4-content:hover .card-4-h {
+    .card4 .card4-content:hover .card4-h {
       bottom: 100px;
       transition: all .3s ease; }
-      .card-4 .card-4-content:hover .card-4-h button {
+      .card4 .card4-content:hover .card4-h button {
         bottom: 8px;
         transition: all .5s ease; }
-  .card-4 .card-4-h {
+  .card4 .card4-h {
     z-index: 1;
     position: absolute;
     width: 100%;
@@ -3334,13 +3470,13 @@ ZEN:
     padding: 16px;
     box-sizing: border-box;
     transition: all .2s ease; }
-    .card-4 .card-4-h button {
+    .card4 .card4-h button {
       position: absolute;
       bottom: -50px;
       transition: all .4s ease;
       left: 0;
       width: 100%; }
-  .card-4 .card-4-text {
+  .card4 .card4-text {
     z-index: 10;
     padding: 16px;
     width: 100%;
@@ -3348,50 +3484,61 @@ ZEN:
     position: relative;
     box-sizing: border-box;
     background: white; }
-    .card-4 .card-4-text .link1 {
+    .card4 .card4-text .link1 {
       position: absolute;
       bottom: 16px; }
 
-.card-5 {
+.card5 {
   display: flex; }
-  .card-5 .card-5-img {
+  .card5 .card5-img {
     width: 50%; }
-  .card-5 .card-5-content {
+  .card5 .card5-content {
     padding: 16px;
     width: 50%;
     position: relative;
     text-align: left; }
 
-.card-6 {
+.card6 {
   background: #eaeaea; }
-  .card-6 .card-6-img {
+  .card6 .card6-img {
     width: 100%; }
-  .card-6 .card-6-content {
+  .card6 .card6-content {
     padding: 16px;
     width: 100%;
     position: relative;
     box-sizing: border-box; }
 
-.card-7 .card-7-img {
+/*como son formados????*/
+.card7 .card7-img {
   width: 100%; }
 
-.card-7 .card-7-text {
+.card7 .card7-text {
   padding: 8px 0;
   width: 100%; }
 
-.card-8 .card-8-video video {
+.card8 .card8-video video {
   width: 100%; }
 
-.card-8 .card-8-text {
+.card8 .card8-text {
   padding: 8px 0;
   width: 100%; }
 
 /*
 Caja y texto inferior
 
-.card-7>.card-7-img+.card-7-text>h5.h5{titulo}
+.card7>.card7-img+.card7-text>h5.h5{titulo}
 
 */
+.card3 {
+  width: 100%;
+  float: left; }
+  .card3 span {
+    position: absolute;
+    bottom: 8px;
+    left: 8px; }
+  .card3.sp {
+    width: 50%; }
+
 .footer-bottom {
   padding: 16px 0;
   border-top: 1px solid #eaeaea; }

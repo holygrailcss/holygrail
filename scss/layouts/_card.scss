@@ -17,7 +17,7 @@
 **/
 
 
-.card-1 {
+.card1 {
     border: 1px solid #eaeaea;
     align-items: stretch;
     height: calc(100% - 20px);
@@ -91,15 +91,15 @@
     }
 }
 
-.card-3 {
+.card3 {
     display: flex;
     background: #eaeaea;
 
-    .card-3-img {
+    .card3-img {
         width: 50%;
     }
 
-    .card-3-text {
+    .card3-text {
         padding: $padding-global*2;
         width: 50%;
         position: relative;
@@ -112,19 +112,19 @@
     }
 }
 
-.card-4 {
+.card4 {
     position: relative;
     overflow: hidden;
 
-    .card-4-img {
+    .card4-img {
         width: 100%;
     }
 
-    .card-4-content {
+    .card4-content {
         &:hover {
             cursor: pointer;
 
-            .card-4-h {
+            .card4-h {
                 bottom: 100px;
                 transition: all .3s ease;
 
@@ -136,7 +136,7 @@
         }
     }
 
-    .card-4-h {
+    .card4-h {
         z-index: 1;
         position: absolute;
         width: 100%;
@@ -161,7 +161,7 @@
         }
     }
 
-    .card-4-text {
+    .card4-text {
         z-index: 10;
 
         padding: $padding-global*2;
@@ -178,15 +178,15 @@
     }
 }
 
-.card-5 {
+.card5 {
     display: flex;
 
-    .card-5-img {
+    .card5-img {
         width: 50%;
     }
 
 
-    .card-5-content {
+    .card5-content {
         padding: $padding-global * 2;
         width: 50%;
         position: relative;
@@ -197,15 +197,15 @@
 
 
 
-.card-6 {
+.card6 {
 
 background: #eaeaea;
-    .card-6-img {
+    .card6-img {
         width: 100%;
     }
 
 
-    .card-6-content {
+    .card6-content {
         padding: $padding-global * 2;
         width: 100%;
         position: relative;
@@ -218,25 +218,25 @@ background: #eaeaea;
 /*como son formados????*/
 
 
-.card-7{
-    .card-7-img {
+.card7{
+    .card7-img {
         width: 100%;
     }
-    .card-7-text {
+    .card7-text {
         padding: $padding-global 0;
         width: 100%;
     }
 }
 
-.card-8{
+.card8{
 
-    .card-8-video {
+    .card8-video {
         video{
             width: 100%;
         }
 
     }
-    .card-8-text {
+    .card8-text {
         padding: $padding-global 0;
         width: 100%;
     }
@@ -248,6 +248,6 @@ background: #eaeaea;
 /*
 Caja y texto inferior
 
-.card-7>.card-7-img+.card-7-text>h5.h5{titulo}
+.card7>.card7-img+.card7-text>h5.h5{titulo}
 
 */

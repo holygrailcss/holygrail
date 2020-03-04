@@ -36,6 +36,7 @@
     $ELEMENTS COMPONENTES
 \*------------------------------------*/
 
+@import "elements/animated";
 @import "elements/buttons";
 @import "elements/checkbox";
 @import "elements/form";
@@ -56,11 +57,13 @@
 \*------------------------------------*/
 
 @import "layouts/logo";
-@import "layouts/cover-1";
-@import "layouts/cover-2";
-@import "layouts/cover-3";
+@import "layouts/cover1";
+@import "layouts/cover2";
+@import "layouts/cover3";
+@import "layouts/cover4";
 
-@import "layouts/cover-4";
+@import "layouts/card3";
+
 @import "layouts/row-6";
 @import "layouts/row-3";
 
@@ -68,7 +71,7 @@
 @import "layouts/text-3";
 
 @import "layouts/card";
-@import "layouts/card-3";
+
 @import "layouts/footer";
 
 }
