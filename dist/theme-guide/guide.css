@@ -969,9 +969,23 @@ a {
 /*+------------------------------------------------------------+
  |       -MARGINS  
  +------------------------------------------------------------+*/
+/* propiedad que modificamos */
+/* propiedad que modificamos */
+/* propiedad que modificamos */
+/* propiedad que modificamos */
+/* propiedad que modificamos */
+/* propiedad que modificamos */
+/* propiedad que modificamos */
 /*+------------------------------------------------------------+
   |       -PADDINGS  
   +------------------------------------------------------------+*/
+/* propiedad que modificamos */
+/* propiedad que modificamos */
+/* propiedad que modificamos */
+/* propiedad que modificamos */
+/* propiedad que modificamos */
+/* propiedad que modificamos */
+/* propiedad que modificamos */
 /*+------------------------------------------------------------+
   |       -MIXINS SPACE  
   +------------------------------------------------------------+*/
@@ -1731,7 +1745,7 @@ mark {
         font-size: 18px; } }
 
 .miller {
-  font-family: "Times new roman"; }
+  font-family: "Times new roman" !important; }
 
 .text-12-r {
   font-family: "BasisGrotesque-Regular-Pro";
@@ -2227,6 +2241,43 @@ mark {
 /*------------------------------------*\
     $ELEMENTS COMPONENTES
 \*------------------------------------*/
+.arrow-cover {
+  height: auto;
+  padding: 30px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 1;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  transition: opacity .3s ease;
+  z-index: 6; }
+
+.arrow-cover svg {
+  -webkit-animation: bounce .8s infinite alternate;
+  animation: bounce .8s infinite alternate; }
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0); }
+  to {
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0); } }
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0); }
+  to {
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0); } }
+
 /*+------------------------------------------------------------+
  |       -BOTONES    
  +------------------------------------------------------------+*/
@@ -2249,6 +2300,8 @@ mark {
   border: none;
   white-space: nowrap;
   cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
   /**
  	* Nadie quiere un botón con texto subrayado cuando hacemos hover.
  	*/ }
@@ -2272,28 +2325,24 @@ mark {
 .btn--small {
   padding-right: 40px;
   padding-left: 40px;
-  font-size: 14px;
-  line-height: 28px; }
+  font-size: 14px; }
 
 .btn--medium {
   padding-right: 16px;
   padding-left: 16px;
-  font-size: 14px;
-  line-height: 46px; }
+  font-size: 14px; }
 
 .btn--large {
   min-width: 288px;
   max-width: 400px;
   padding-right: 56px;
   padding-left: 56px;
-  font-size: 14px;
-  line-height: 42px; }
+  font-size: 14px; }
 
 .btn--xlarge {
   padding-right: 64px;
   padding-left: 64px;
   font-size: 16px;
-  line-height: 46px;
   position: relative;
   display: inline-block;
   min-height: 48px;
@@ -2722,8 +2771,6 @@ input::-webkit-input-placeholder {
     color: transparent; }
   .form-input-label input:-ms-input-placeholder {
     color: transparent; }
-  .form-input-label input::-ms-input-placeholder {
-    color: transparent; }
   .form-input-label input::-moz-placeholder {
     color: transparent; }
   .form-input-label input::placeholder {
@@ -2747,24 +2794,24 @@ input::-webkit-input-placeholder {
 
 .icon-pre > input,
 .icon-pre > label {
-  padding: 18px 16px 15px 56px; }
+  padding-left: 56px; }
 
 .icon-pre.btn {
-  padding: 18px 16px 15px 56px; }
+  padding-left: 56px; }
   .icon-pre.btn .form-icon {
     top: 12px;
     left: 12px; }
 
 .icon-post > input,
 .icon-post > label {
-  padding: 18px 56px 15px 16px; }
+  padding-right: 56px; }
 
 .icon-post .form-icon {
   right: 16px;
   left: auto; }
 
 .icon-post.btn {
-  padding: 18px 56px 15px 16px; }
+  padding-right: 56px; }
   .icon-post.btn .form-icon {
     top: 12px;
     right: 12px;
@@ -2774,16 +2821,16 @@ input::-webkit-input-placeholder {
    |       -FALLBACK PARA EDGE    
    +------------------------------------------------------------+*/
 @supports (-ms-ime-align: auto) {
-  .form-label-group > label {
+  .form-input-label > label {
     display: none; }
-  .form-label-group input::-ms-input-placeholder {
+  .form-input-label input:-ms-input-placeholder {
     color: #777; } }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .form-label-group > label {
+  .form-input-label > label {
     display: none; }
-  .form-label-group input:-ms-input-placeholder {
-    color: #777; } }
+  .form-input-label input:-ms-input-placeholder {
+    color: #777 !important; } }
 
 /*+------------------------------------------------------------+
  |       -SELECT  
@@ -3205,13 +3252,13 @@ ul.h-size-selector a {
 /*------------------------------------*\
     $LAYOUTS, Conjuntos de elementos
 \*------------------------------------*/
-.cover-1 .cover-1-down-button {
+.cover1 .cover1-down-button {
   position: absolute;
   text-align: center;
   bottom: 0;
   width: 200px; }
 
-.cover-1 .line-scrolldown:before {
+.cover1 .line-scrolldown:before {
   content: '';
   position: absolute;
   top: 40px;
@@ -3223,7 +3270,7 @@ ul.h-size-selector a {
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%); }
 
-.cover-1 .line-scrolldown::after {
+.cover1 .line-scrolldown::after {
   content: '';
   position: absolute;
   top: 40px;
@@ -3235,35 +3282,40 @@ ul.h-size-selector a {
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%); }
 
-.cover-2 {
+.cover2 {
   width: 100%; }
-  .cover-2 span {
+  .cover2 span {
     position: absolute; }
 
-.cover-3 {
+.cover3 {
   width: 50%;
   float: left; }
-  .cover-3 span {
+  .cover3 span {
     position: absolute;
     bottom: 8px;
     left: 8px; }
-  .cover-3.sp {
+  .cover3.sp {
     width: 100%; }
 
-.cover-4 {
+.cover4 {
   width: 100%; }
-  .cover-4 h1 {
+  .cover4 h1 {
     position: absolute;
     z-index: 2; }
-  .cover-4 video {
+  .cover4 video {
     position: absolute;
     z-index: 1;
-    width: 100%; }
+    width: 100%;
+    object-fit: cover; }
 
-.cover-5 {
+.cover5 {
   width: 100%; }
-  .cover-5 .cover-5-text {
+  .cover5 .cover5-img {
+    width: 60px; }
+  .cover5 .cover5-text {
     height: 100%; }
+    .cover5 .cover5-text h2, .cover5 .cover5-text h3, .cover5 .cover5-text p, .cover5 .cover5-text a {
+      width: 100%; }
 
 .row-6 {
   display: -webkit-box;
@@ -3335,7 +3387,7 @@ ZEN:
 /**
  .card>img.pb-20[src="https://via.placeholder.com/600x800.png?text=Logo+text" alt="{altimagen}"]+.title{title}+.subtitle{subtitle}
 **/
-.card-1 {
+.card1 {
   border: 1px solid #eaeaea;
   align-items: stretch;
   height: calc(100% - 20px);
@@ -3388,34 +3440,34 @@ ZEN:
       opacity: .6;
       cursor: pointer; }
 
-.card-3 {
+.card3 {
   display: flex;
   background: #eaeaea; }
-  .card-3 .card-3-img {
+  .card3 .card3-img {
     width: 50%; }
-  .card-3 .card-3-text {
+  .card3 .card3-text {
     padding: 16px;
     width: 50%;
     position: relative;
     text-align: left; }
-    .card-3 .card-3-text .link1 {
+    .card3 .card3-text .link1 {
       position: absolute;
       bottom: 16px; }
 
-.card-4 {
+.card4 {
   position: relative;
   overflow: hidden; }
-  .card-4 .card-4-img {
+  .card4 .card4-img {
     width: 100%; }
-  .card-4 .card-4-content:hover {
+  .card4 .card4-content:hover {
     cursor: pointer; }
-    .card-4 .card-4-content:hover .card-4-h {
+    .card4 .card4-content:hover .card4-h {
       bottom: 100px;
       transition: all .3s ease; }
-      .card-4 .card-4-content:hover .card-4-h button {
+      .card4 .card4-content:hover .card4-h button {
         bottom: 8px;
         transition: all .5s ease; }
-  .card-4 .card-4-h {
+  .card4 .card4-h {
     z-index: 1;
     position: absolute;
     width: 100%;
@@ -3426,13 +3478,13 @@ ZEN:
     padding: 16px;
     box-sizing: border-box;
     transition: all .2s ease; }
-    .card-4 .card-4-h button {
+    .card4 .card4-h button {
       position: absolute;
       bottom: -50px;
       transition: all .4s ease;
       left: 0;
       width: 100%; }
-  .card-4 .card-4-text {
+  .card4 .card4-text {
     z-index: 10;
     padding: 16px;
     width: 100%;
@@ -3440,51 +3492,61 @@ ZEN:
     position: relative;
     box-sizing: border-box;
     background: white; }
-    .card-4 .card-4-text .link1 {
+    .card4 .card4-text .link1 {
       position: absolute;
       bottom: 16px; }
 
-.card-5 {
+.card5 {
   display: flex; }
-  .card-5 .card-5-img {
+  .card5 .card5-img {
     width: 50%; }
-  .card-5 .card-5-content {
+  .card5 .card5-content {
     padding: 16px;
     width: 50%;
     position: relative;
     text-align: left; }
 
-.card-6 {
+.card6 {
   background: #eaeaea; }
-  .card-6 .card-6-img {
+  .card6 .card6-img {
     width: 100%; }
-  .card-6 .card-6-content {
+  .card6 .card6-content {
     padding: 16px;
     width: 100%;
     position: relative;
     box-sizing: border-box; }
 
 /*como son formados????*/
-.card-7 .card-7-img {
+.card7 .card7-img {
   width: 100%; }
 
-.card-7 .card-7-text {
+.card7 .card7-text {
   padding: 8px 0;
   width: 100%; }
 
-.card-8 .card-8-video video {
+.card8 .card8-video video {
   width: 100%; }
 
-.card-8 .card-8-text {
+.card8 .card8-text {
   padding: 8px 0;
   width: 100%; }
 
 /*
 Caja y texto inferior
 
-.card-7>.card-7-img+.card-7-text>h5.h5{titulo}
+.card7>.card7-img+.card7-text>h5.h5{titulo}
 
 */
+.card3 {
+  width: 100%;
+  float: left; }
+  .card3 span {
+    position: absolute;
+    bottom: 8px;
+    left: 8px; }
+  .card3.sp {
+    width: 50%; }
+
 .footer-bottom {
   padding: 16px 0;
   border-top: 1px solid #eaeaea; }
@@ -6822,27 +6884,6 @@ section {
   width: 100%;
   height: calc(100vh - 200px);
   border: 8px solid #eaeaea; }
-
-.guide .btn {
-  position: relative;
-  display: inline-block;
-  line-height: 1.2;
-  text-align: center;
-  vertical-align: middle;
-  box-sizing: border-box;
-  font-size: 14px;
-  margin-right: 8px;
-  vertical-align: middle;
-  line-height: 38px;
-  white-space: nowrap;
-  cursor: pointer; }
-  .guide .btn:hover {
-    text-decoration: none;
-    opacity: .6; }
-  .guide .btn:active, .guide .btn:focus {
-    outline: none; }
-  .guide .btn:visited {
-    outline: none; }
 
 .guide .guide-icon-top {
   display: inline-block; }

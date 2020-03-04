@@ -4,6 +4,9 @@
 \*------------------------------------*/
 /* no usar col- nunca ya que hay un selector asi
  */
+/*cargamos el tema por defecto con las fuentes y colores propios */
+/*@import "../../themes/theme-dutti/site"; */
+/*@import "abstract/0debug"; si queremos debugar la maqueta*/
 /**
 * Base estilo inline    class="[col-sm-2]    [py-20m-20]    [h1 text-1 link-2] [text-center]"
 
@@ -14,7 +17,7 @@
 /*+------------------------------------------------------------+
  |       -RESET  
  +------------------------------------------------------------+*/
-@import url("https://use.typekit.net/puz7rnx.css");
+@import url("https:/*use.typekit.net/puz7rnx.css");
 html, body, div, span, select, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, main, menu, nav, section, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -80,6 +83,10 @@ a {
 /*+------------------------------------------------------------+
  |       -Variables  Globales
  +------------------------------------------------------------+*/
+/* maxwidth del container */
+/* maxwidth del container2*/
+/* maxwidth del container3*/
+/* maxwidth del container4*/
 @font-face {
   font-family: "BasisGrotesque-Bold-Pro";
   src: url("../assets/fonts/basis/BasisGrotesque-Bold-Pro.eot");
@@ -106,6 +113,8 @@ a {
 /*+------------------------------------------------------------+
  |       -MIXINS
  +------------------------------------------------------------+*/
+/* .background-alpha(VALUE VALUE);*/
+/* .userselect(VALUE) (all, element, none, text) */
 /*+------------------------------------------------------------+
  |       -MIXINS FONTS
  +------------------------------------------------------------+*/
@@ -122,6 +131,7 @@ a {
 /*+------------------------------------------------------------+
  |       -BLEED A SANGRE
  +------------------------------------------------------------+*/
+/*array para elementos fijos*/
 /*+------------------------------------------------------------+
  |       -ANIMATIONS    
  +------------------------------------------------------------+*/
@@ -200,15 +210,88 @@ a {
   /*+------------------------------------------------------------+
  |       -MARGINS  
  +------------------------------------------------------------+*/
+  /* propiedad que modificamos */
+  /* propiedad que modificamos */
+  /* propiedad que modificamos */
+  /* propiedad que modificamos */
+  /* propiedad que modificamos */
+  /* propiedad que modificamos */
+  /* propiedad que modificamos */
   /*+------------------------------------------------------------+
   |       -PADDINGS  
   +------------------------------------------------------------+*/
+  /* propiedad que modificamos */
+  /* propiedad que modificamos */
+  /* propiedad que modificamos */
+  /* propiedad que modificamos */
+  /* propiedad que modificamos */
+  /* propiedad que modificamos */
+  /* propiedad que modificamos */
   /*+------------------------------------------------------------+
   |       -MIXINS SPACE  
   +------------------------------------------------------------+*/
+  /* margin*/
+  /* map-key*/
+  /* map-key*/
+  /* map-key*/
+  /* map-key*/
+  /* map-key*/
+  /* map-key*/
+  /* map-key*/
+  /* map-key*/
+  /* map-key*/
+  /* map-key*/
+  /* map-key*/
+  /* map-key*/
+  /* map-key*/
+  /* map-key*/
+  /* map-key*/
+  /* map-key*/
+  /* map-key*/
+  /* map-key*/
+  /* map-key*/
+  /* map-key*/
+  /* map-key*/
+  /* map-key*/
+  /* map-key*/
+  /* map-key*/
+  /* map-key*/
+  /* map-key*/
+  /* map-key*/
+  /* map-key*/
+  /* padding*/
+  /* map-key*/
+  /* map-key*/
+  /* map-key*/
+  /* map-key*/
+  /* map-key*/
+  /* map-key*/
+  /* map-key*/
+  /* map-key*/
+  /* map-key*/
+  /* map-key*/
+  /* map-key*/
+  /* map-key*/
+  /* map-key*/
+  /* map-key*/
+  /* map-key*/
+  /* map-key*/
+  /* map-key*/
+  /* map-key*/
+  /* map-key*/
+  /* map-key*/
+  /* map-key*/
+  /* map-key*/
+  /* map-key*/
+  /* map-key*/
+  /* map-key*/
+  /* map-key*/
+  /* map-key*/
+  /* map-key*/
   /*+------------------------------------------------------------+
  |       -HTML REMS        
  +------------------------------------------------------------+*/
+  /* array para elementos fijos*/
   /*+------------------------------------------------------------+
  |       -HEADERS ELÁSTICOS        
  +------------------------------------------------------------+*/
@@ -218,6 +301,11 @@ a {
   /*+-----------------------------------------------------------------------------------------+
  |       -FLUID TEXT   Desde min_width   hasta  break-lg  <--->  font-minima hasta font-maxima
  +-------------------------------------------------------------------------------------------+*/
+  /* map-key*/
+  /* map-key*/
+  /* map-key*/
+  /* map-key*/
+  /* map-key*/
   /*------------------------------------*\
     $ELEMENTS COMPONENTES
 \*------------------------------------*/
@@ -323,10 +411,11 @@ ZEN:
   /**
  .card>img.pb-20[src="https://via.placeholder.com/600x800.png?text=Logo+text" alt="{altimagen}"]+.title{title}+.subtitle{subtitle}
 **/
+  /*como son formados????*/
   /*
 Caja y texto inferior
 
-.card-7>.card-7-img+.card-7-text>h5.h5{titulo}
+.card7>.card7-img+.card7-text>h5.h5{titulo}
 
 */ }
   .hg .text-center {
@@ -393,6 +482,7 @@ Caja y texto inferior
     align-items: center;
     justify-content: center; }
   .hg .d-inline {
+    width: 100%;
     display: inline-block; }
   .hg .sticky-bottom {
     width: 100%;
@@ -410,16 +500,19 @@ Caja y texto inferior
     max-width: 800px; }
     @media (min-width: 786px) {
       .hg .container {
+        /*600px*/
         padding-right: 8px;
         padding-left: 8px;
         width: 90%;
         max-width: 786px; } }
     @media (min-width: 992px) {
       .hg .container {
+        /* 992px*/
         width: 80%;
         max-width: 992px; } }
     @media (min-width: 1280px) {
       .hg .container {
+        /* 1200px*/
         width: 80%;
         max-width: 1280px; } }
   .hg .container-fluid {
@@ -1547,12 +1640,6 @@ Caja y texto inferior
   .hg .text-2 {
     font-size: 18px;
     line-height: 1.6; }
-  .hg label {
-    float: left;
-    font-size: 14px;
-    float: left;
-    font-size: 14px;
-    padding-bottom: 4px; }
   .hg .fluid-h1 {
     font-family: "BasisGrotesque-Regular-Pro";
     line-height: 1.6; }
@@ -1631,7 +1718,7 @@ Caja y texto inferior
         .hg .fluid-h7 {
           font-size: 18px; } }
   .hg .miller {
-    font-family: "Times new roman"; }
+    font-family: "Times new roman" !important; }
   .hg .text-12-r {
     font-family: "BasisGrotesque-Regular-Pro";
     line-height: 1.6;
@@ -2095,10 +2182,45 @@ Caja y texto inferior
       font-size: 1.4;
       line-height: 1.4;
       font-family: "BasisGrotesque-Medium-Pro"; } }
+  .hg .arrow-cover {
+    height: auto;
+    padding: 30px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    opacity: 1;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    transition: opacity .3s ease;
+    z-index: 6; }
+  .hg .arrow-cover svg {
+    -webkit-animation: bounce .8s infinite alternate;
+    animation: bounce .8s infinite alternate; }
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0); }
+  to {
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0); } }
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0); }
+  to {
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0); } }
   .hg .btn {
     position: relative;
     display: inline-block;
-    line-height: 1.2;
+    line-height: 1;
     text-align: center;
     vertical-align: middle;
     box-sizing: border-box;
@@ -2106,9 +2228,11 @@ Caja y texto inferior
     margin-right: 8px;
     vertical-align: middle;
     border: none;
-    line-height: 38px;
     white-space: nowrap;
     cursor: pointer;
+    padding: 16px;
+    background-color: #fff;
+    border: 1px solid #ccc;
     /**
  	* Nadie quiere un botón con texto subrayado cuando hacemos hover.
  	*/ }
@@ -2122,30 +2246,25 @@ Caja y texto inferior
   .hg .btn--mini {
     padding-right: 24px;
     padding-left: 24px;
-    font-size: 12px;
-    line-height: 24px; }
+    font-size: 12px; }
   .hg .btn--small {
     padding-right: 40px;
     padding-left: 40px;
-    font-size: 14px;
-    line-height: 28px; }
+    font-size: 14px; }
   .hg .btn--medium {
     padding-right: 16px;
     padding-left: 16px;
-    font-size: 14px;
-    line-height: 46px; }
+    font-size: 14px; }
   .hg .btn--large {
     min-width: 288px;
     max-width: 400px;
     padding-right: 56px;
     padding-left: 56px;
-    font-size: 14px;
-    line-height: 42px; }
+    font-size: 14px; }
   .hg .btn--xlarge {
     padding-right: 64px;
     padding-left: 64px;
     font-size: 16px;
-    line-height: 46px;
     position: relative;
     display: inline-block;
     min-height: 48px;
@@ -2161,8 +2280,7 @@ Caja y texto inferior
     width: 100%;
     padding-right: 64px;
     padding-left: 64px;
-    font-size: 16px;
-    line-height: 46px; }
+    font-size: 16px; }
   .hg .btn-xs {
     position: relative;
     display: inline-block;
@@ -2377,6 +2495,9 @@ Caja y texto inferior
     border-color: #dbdbdb;
     border-radius: 0;
     color: #363636; }
+  .hg label {
+    font-size: 14px;
+    padding-bottom: 8px; }
   .hg .input,
   .hg .select select {
     -webkit-appearance: none;
@@ -2403,7 +2524,12 @@ Caja y texto inferior
     color: #363636;
     max-width: 100%;
     width: 100%;
-    font-size: 14px; }
+    font-size: 16px; }
+    @media (min-width: 786px) {
+      .hg .input,
+      .hg .textarea,
+      .hg .select select {
+        font-size: 14px; } }
   .hg .textarea {
     height: 100px;
     padding: 10px;
@@ -2445,11 +2571,18 @@ Caja y texto inferior
     .hg .checkbox-text input {
       display: inline-block;
       margin-right: 10px; }
-  .hg .error-input label {
-    color: #FD675E; }
-  .hg .error-input .input {
-    border: 1px solid #FD675E;
-    color: #FD675E; }
+  .hg .help {
+    position: absolute;
+    font-size: 12px;
+    margin-top: 4px; }
+  .hg .info-text {
+    margin-top: 4px;
+    width: 100%;
+    float: left; }
+  .hg .is-error .input, .hg .is-error label, .hg .is-error .help {
+    color: #FD675E !important; }
+  .hg .is-error .input {
+    border: 1px solid #FD675E; }
   .hg .ok-input label {
     color: green; }
   .hg .ok-input .input {
@@ -2506,8 +2639,6 @@ Caja y texto inferior
       color: transparent; }
     .hg .form-input-label input:-ms-input-placeholder {
       color: transparent; }
-    .hg .form-input-label input::-ms-input-placeholder {
-      color: transparent; }
     .hg .form-input-label input::-moz-placeholder {
       color: transparent; }
     .hg .form-input-label input::placeholder {
@@ -2529,34 +2660,34 @@ Caja y texto inferior
     background: #eaeaea; }
   .hg .icon-pre > input,
   .hg .icon-pre > label {
-    padding: 18px 16px 15px 56px; }
+    padding-left: 56px; }
   .hg .icon-pre.btn {
-    padding: 18px 16px 15px 56px; }
+    padding-left: 56px; }
     .hg .icon-pre.btn .form-icon {
       top: 12px;
       left: 12px; }
   .hg .icon-post > input,
   .hg .icon-post > label {
-    padding: 18px 56px 15px 16px; }
+    padding-right: 56px; }
   .hg .icon-post .form-icon {
     right: 16px;
     left: auto; }
   .hg .icon-post.btn {
-    padding: 18px 56px 15px 16px; }
+    padding-right: 56px; }
     .hg .icon-post.btn .form-icon {
       top: 12px;
       right: 12px;
       left: auto; }
   @supports (-ms-ime-align: auto) {
-    .hg .form-label-group > label {
+    .hg .form-input-label > label {
       display: none; }
-    .hg .form-label-group input::-ms-input-placeholder {
+    .hg .form-input-label input:-ms-input-placeholder {
       color: #777; } }
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    .hg .form-label-group > label {
+    .hg .form-input-label > label {
       display: none; }
-    .hg .form-label-group input:-ms-input-placeholder {
-      color: #777; } }
+    .hg .form-input-label input:-ms-input-placeholder {
+      color: #777 !important; } }
   .hg .select {
     display: inline-block;
     max-width: 100%;
@@ -2625,10 +2756,12 @@ Caja y texto inferior
     transition: color 250ms linear;
     text-decoration: none;
     position: relative; }
-    .hg .link1:hover::after {
-      -webkit-transform: scaleX(1);
-      -ms-transform: scaleX(1);
-      transform: scaleX(1); }
+    .hg .link1:hover {
+      /* color: $linkHover; */ }
+      .hg .link1:hover::after {
+        -webkit-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+        transform: scaleX(1); }
     .hg .link1:focus {
       outline: none;
       color: #030202;
@@ -2783,7 +2916,7 @@ Caja y texto inferior
     margin: 0px; }
     .hg ul.list-inline li {
       display: inline-block;
-      padding: 0;
+      padding: 0 8px;
       margin: 0; }
       .hg ul.list-inline li a {
         padding: 8px 8px 8px 0;
@@ -2910,12 +3043,12 @@ Caja y texto inferior
         position: absolute;
         bottom: -4px;
         left: 0; }
-  .hg .cover-1 .cover-1-down-button {
+  .hg .cover1 .cover1-down-button {
     position: absolute;
     text-align: center;
     bottom: 0;
     width: 200px; }
-  .hg .cover-1 .line-scrolldown:before {
+  .hg .cover1 .line-scrolldown:before {
     content: '';
     position: absolute;
     top: 40px;
@@ -2926,7 +3059,7 @@ Caja y texto inferior
     background: #da8f71;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%); }
-  .hg .cover-1 .line-scrolldown::after {
+  .hg .cover1 .line-scrolldown::after {
     content: '';
     position: absolute;
     top: 40px;
@@ -2937,28 +3070,38 @@ Caja y texto inferior
     background: #da8f71;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%); }
-  .hg .cover-2 {
+  .hg .cover2 {
     width: 100%; }
-    .hg .cover-2 span {
+    .hg .cover2 span {
       position: absolute; }
-  .hg .cover-3 {
+  .hg .cover3 {
     width: 50%;
     float: left; }
-    .hg .cover-3 span {
+    .hg .cover3 span {
       position: absolute;
       bottom: 8px;
       left: 8px; }
-    .hg .cover-3.sp {
+    .hg .cover3.sp {
       width: 100%; }
-  .hg .cover-4 {
+  .hg .cover4 {
     width: 100%; }
-    .hg .cover-4 h1 {
+    .hg .cover4 h1 {
       position: absolute;
       z-index: 2; }
-    .hg .cover-4 video {
+    .hg .cover4 video {
       position: absolute;
       z-index: 1;
-      width: 100%; }
+      width: 100%;
+      object-fit: cover; }
+  .hg .card3 {
+    width: 100%;
+    float: left; }
+    .hg .card3 span {
+      position: absolute;
+      bottom: 8px;
+      left: 8px; }
+    .hg .card3.sp {
+      width: 50%; }
   .hg .row-6 {
     display: -webkit-box;
     display: flex;
@@ -3001,7 +3144,7 @@ Caja y texto inferior
         flex-grow: 1; }
   .hg .card {
     width: 100%; }
-  .hg .card-1 {
+  .hg .card1 {
     border: 1px solid #eaeaea;
     align-items: stretch;
     height: calc(100% - 20px);
@@ -3049,33 +3192,33 @@ Caja y texto inferior
       .hg .card-video .card-video-play:hover {
         opacity: .6;
         cursor: pointer; }
-  .hg .card-3 {
+  .hg .card3 {
     display: flex;
     background: #eaeaea; }
-    .hg .card-3 .card-3-img {
+    .hg .card3 .card3-img {
       width: 50%; }
-    .hg .card-3 .card-3-text {
+    .hg .card3 .card3-text {
       padding: 16px;
       width: 50%;
       position: relative;
       text-align: left; }
-      .hg .card-3 .card-3-text .link1 {
+      .hg .card3 .card3-text .link1 {
         position: absolute;
         bottom: 16px; }
-  .hg .card-4 {
+  .hg .card4 {
     position: relative;
     overflow: hidden; }
-    .hg .card-4 .card-4-img {
+    .hg .card4 .card4-img {
       width: 100%; }
-    .hg .card-4 .card-4-content:hover {
+    .hg .card4 .card4-content:hover {
       cursor: pointer; }
-      .hg .card-4 .card-4-content:hover .card-4-h {
+      .hg .card4 .card4-content:hover .card4-h {
         bottom: 100px;
         transition: all .3s ease; }
-        .hg .card-4 .card-4-content:hover .card-4-h button {
+        .hg .card4 .card4-content:hover .card4-h button {
           bottom: 8px;
           transition: all .5s ease; }
-    .hg .card-4 .card-4-h {
+    .hg .card4 .card4-h {
       z-index: 1;
       position: absolute;
       width: 100%;
@@ -3086,13 +3229,13 @@ Caja y texto inferior
       padding: 16px;
       box-sizing: border-box;
       transition: all .2s ease; }
-      .hg .card-4 .card-4-h button {
+      .hg .card4 .card4-h button {
         position: absolute;
         bottom: -50px;
         transition: all .4s ease;
         left: 0;
         width: 100%; }
-    .hg .card-4 .card-4-text {
+    .hg .card4 .card4-text {
       z-index: 10;
       padding: 16px;
       width: 100%;
@@ -3100,37 +3243,51 @@ Caja y texto inferior
       position: relative;
       box-sizing: border-box;
       background: white; }
-      .hg .card-4 .card-4-text .link1 {
+      .hg .card4 .card4-text .link1 {
         position: absolute;
         bottom: 16px; }
-  .hg .card-5 {
+  .hg .card5 {
     display: flex; }
-    .hg .card-5 .card-5-img {
+    .hg .card5 .card5-img {
       width: 50%; }
-    .hg .card-5 .card-5-content {
+    .hg .card5 .card5-content {
       padding: 16px;
       width: 50%;
       position: relative;
       text-align: left; }
-  .hg .card-6 {
+  .hg .card6 {
     background: #eaeaea; }
-    .hg .card-6 .card-6-img {
+    .hg .card6 .card6-img {
       width: 100%; }
-    .hg .card-6 .card-6-content {
+    .hg .card6 .card6-content {
       padding: 16px;
       width: 100%;
       position: relative;
       box-sizing: border-box; }
-  .hg .card-7 .card-7-img {
+  .hg .card7 .card7-img {
     width: 100%; }
-  .hg .card-7 .card-7-text {
+  .hg .card7 .card7-text {
     padding: 8px 0;
     width: 100%; }
-  .hg .card-8 .card-8-video video {
+  .hg .card8 .card8-video video {
     width: 100%; }
-  .hg .card-8 .card-8-text {
+  .hg .card8 .card8-text {
     padding: 8px 0;
     width: 100%; }
+  .hg .card2 div {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center; }
+  .hg .card3 {
+    width: 100%;
+    float: left; }
+    .hg .card3 span {
+      position: absolute;
+      bottom: 8px;
+      left: 8px; }
+    .hg .card3.sp {
+      width: 50%; }
   .hg .footer-bottom {
     padding: 16px 0;
     border-top: 1px solid #eaeaea; }

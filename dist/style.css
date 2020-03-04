@@ -264,6 +264,7 @@ a {
   justify-content: center; }
 
 .d-inline {
+  width: 100%;
   display: inline-block; }
 
 .sticky-bottom {
@@ -971,9 +972,23 @@ a {
 /*+------------------------------------------------------------+
  |       -MARGINS  
  +------------------------------------------------------------+*/
+/* propiedad que modificamos */
+/* propiedad que modificamos */
+/* propiedad que modificamos */
+/* propiedad que modificamos */
+/* propiedad que modificamos */
+/* propiedad que modificamos */
+/* propiedad que modificamos */
 /*+------------------------------------------------------------+
   |       -PADDINGS  
   +------------------------------------------------------------+*/
+/* propiedad que modificamos */
+/* propiedad que modificamos */
+/* propiedad que modificamos */
+/* propiedad que modificamos */
+/* propiedad que modificamos */
+/* propiedad que modificamos */
+/* propiedad que modificamos */
 /*+------------------------------------------------------------+
   |       -MIXINS SPACE  
   +------------------------------------------------------------+*/
@@ -2278,7 +2293,7 @@ mark {
 .btn {
   position: relative;
   display: inline-block;
-  line-height: 1.2;
+  line-height: 1;
   text-align: center;
   vertical-align: middle;
   box-sizing: border-box;
@@ -2288,6 +2303,9 @@ mark {
   border: none;
   white-space: nowrap;
   cursor: pointer;
+  padding: 16px;
+  background-color: #fff;
+  border: 1px solid #ccc;
   /**
  	* Nadie quiere un botón con texto subrayado cuando hacemos hover.
  	*/ }
@@ -2305,34 +2323,29 @@ mark {
 .btn--mini {
   padding-right: 24px;
   padding-left: 24px;
-  font-size: 12px;
-  line-height: 24px; }
+  font-size: 12px; }
 
 .btn--small {
   padding-right: 40px;
   padding-left: 40px;
-  font-size: 14px;
-  line-height: 28px; }
+  font-size: 14px; }
 
 .btn--medium {
   padding-right: 16px;
   padding-left: 16px;
-  font-size: 14px;
-  line-height: 46px; }
+  font-size: 14px; }
 
 .btn--large {
   min-width: 288px;
   max-width: 400px;
   padding-right: 56px;
   padding-left: 56px;
-  font-size: 14px;
-  line-height: 42px; }
+  font-size: 14px; }
 
 .btn--xlarge {
   padding-right: 64px;
   padding-left: 64px;
   font-size: 16px;
-  line-height: 46px;
   position: relative;
   display: inline-block;
   min-height: 48px;
@@ -2349,8 +2362,7 @@ mark {
   width: 100%;
   padding-right: 64px;
   padding-left: 64px;
-  font-size: 16px;
-  line-height: 46px; }
+  font-size: 16px; }
 
 /*+------------------------------------------------------------+
  |       -MODIFICADORES DE TAMAÑO    
@@ -2761,8 +2773,6 @@ input::-webkit-input-placeholder {
     color: transparent; }
   .form-input-label input:-ms-input-placeholder {
     color: transparent; }
-  .form-input-label input::-ms-input-placeholder {
-    color: transparent; }
   .form-input-label input::-moz-placeholder {
     color: transparent; }
   .form-input-label input::placeholder {
@@ -2786,24 +2796,24 @@ input::-webkit-input-placeholder {
 
 .icon-pre > input,
 .icon-pre > label {
-  padding: 18px 16px 15px 56px; }
+  padding-left: 56px; }
 
 .icon-pre.btn {
-  padding: 18px 16px 15px 56px; }
+  padding-left: 56px; }
   .icon-pre.btn .form-icon {
     top: 12px;
     left: 12px; }
 
 .icon-post > input,
 .icon-post > label {
-  padding: 18px 56px 15px 16px; }
+  padding-right: 56px; }
 
 .icon-post .form-icon {
   right: 16px;
   left: auto; }
 
 .icon-post.btn {
-  padding: 18px 56px 15px 16px; }
+  padding-right: 56px; }
   .icon-post.btn .form-icon {
     top: 12px;
     right: 12px;
@@ -2813,16 +2823,16 @@ input::-webkit-input-placeholder {
    |       -FALLBACK PARA EDGE    
    +------------------------------------------------------------+*/
 @supports (-ms-ime-align: auto) {
-  .form-label-group > label {
+  .form-input-label > label {
     display: none; }
-  .form-label-group input::-ms-input-placeholder {
+  .form-input-label input:-ms-input-placeholder {
     color: #777; } }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .form-label-group > label {
+  .form-input-label > label {
     display: none; }
-  .form-label-group input:-ms-input-placeholder {
-    color: #777; } }
+  .form-input-label input:-ms-input-placeholder {
+    color: #777 !important; } }
 
 /*+------------------------------------------------------------+
  |       -SELECT  
@@ -3529,6 +3539,12 @@ Caja y texto inferior
 .card7>.card7-img+.card7-text>h5.h5{titulo}
 
 */
+.card2 div {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center; }
+
 .card3 {
   width: 100%;
   float: left; }

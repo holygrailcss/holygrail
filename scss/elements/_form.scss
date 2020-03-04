@@ -265,11 +265,12 @@ input::-webkit-input-placeholder {
   
     &>input,
     &>label {
-      padding: 18px 16px 15px 56px;
+      padding-left:56px;
+   
     }
   
     &.btn {
-      padding: 18px 16px 15px 56px;
+      padding-left:56px;
   
       .form-icon {
         top: 12px;
@@ -282,7 +283,7 @@ input::-webkit-input-placeholder {
   
     &>input,
     &>label {
-      padding: 18px 56px 15px 16px;
+      padding-right:56px;
     }
   
     .form-icon {
@@ -291,7 +292,7 @@ input::-webkit-input-placeholder {
     }
   
     &.btn {
-      padding: 18px 56px 15px 16px;
+      padding-right:56px;
   
       .form-icon {
         top: 12px;
