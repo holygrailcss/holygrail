@@ -229,10 +229,6 @@ input::-webkit-input-placeholder {
       color: transparent;
     }
   
-    & input::-ms-input-placeholder {
-      color: transparent;
-    }
-  
     & input::-moz-placeholder {
       color: transparent;
     }
@@ -253,6 +249,8 @@ input::-webkit-input-placeholder {
       color: #777;
     }
   }
+
+
   
   .form-icon {
     position: absolute;
@@ -306,30 +304,29 @@ input::-webkit-input-placeholder {
   /*+------------------------------------------------------------+
    |       -FALLBACK PARA EDGE    
    +------------------------------------------------------------+*/
+
+  
+  
   @supports (-ms-ime-align: auto) {
-    .form-label-group>label {
-      display: none;
-    }
-  
-    .form-label-group input::-ms-input-placeholder {
-      color: #777;
-    }
+      .form-input-label>label {
+          display: none;
+      }
+
+      .form-input-label input:-ms-input-placeholder {
+          color: #777;
+      }
   }
-  
-  
+
   @media all and (-ms-high-contrast: none),
   (-ms-high-contrast: active) {
-    .form-label-group>label {
-      display: none;
-    }
-  
-    .form-label-group input:-ms-input-placeholder {
-      color: #777;
-    }
+      .form-input-label>label {
+          display: none;
+      }
+
+      .form-input-label input:-ms-input-placeholder {
+          color: #777!important;
+      }
   }
-  
-
-
 
   /*+------------------------------------------------------------+
  |       -SELECT  
