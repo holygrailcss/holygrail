@@ -1995,12 +1995,12 @@ mark {
     font-family: "BasisGrotesque-Regular-Pro";
     line-height: 1.6; }
   .p2 {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.4;
     font-family: "BasisGrotesque-Regular-Pro";
     line-height: 1.6; }
   .p4 {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.4;
     font-family: "BasisGrotesque-Medium-Pro"; } }
 
@@ -2086,6 +2086,85 @@ mark {
 /* map-key*/
 @media (min-width: 1280px) {
   .h1 {
+    font-size: 32px;
+    line-height: 1.2;
+    font-family: "BasisGrotesque-Medium-Pro"; }
+  .h2 {
+    font-size: 24px;
+    line-height: 1.2;
+    font-family: "BasisGrotesque-Medium-Pro"; }
+  .h3 {
+    font-size: 18px;
+    line-height: 1.2;
+    font-family: "BasisGrotesque-Medium-Pro"; }
+  .h4, .card .title {
+    font-size: 16px;
+    line-height: 1.2;
+    font-family: "BasisGrotesque-Medium-Pro"; }
+  .h5 {
+    font-size: 14px;
+    line-height: 1.2;
+    font-family: "BasisGrotesque-Medium-Pro"; }
+  .h6, .card .subtitle {
+    font-size: 12px;
+    line-height: 1.2;
+    font-family: "BasisGrotesque-Medium-Pro"; }
+  .h7 {
+    font-size: 10px;
+    line-height: 1.2;
+    font-family: "BasisGrotesque-Medium-Pro"; }
+  .h8 {
+    font-size: 8px;
+    line-height: 1.2;
+    font-family: "BasisGrotesque-Medium-Pro"; }
+  .display1 {
+    font-size: 32px;
+    line-height: 1.2;
+    font-family: "BasisGrotesque-Bold-Pro"; }
+  .display2 {
+    font-size: 20px;
+    line-height: 1.2;
+    font-family: "BasisGrotesque-Bold-Pro"; }
+  .display3 {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: "BasisGrotesque-Medium-Pro"; }
+  .display4 {
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: "BasisGrotesque-Medium-Pro"; }
+  .display5 {
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: "BasisGrotesque-Regular-Pro";
+    line-height: 1.6; }
+  .display6 {
+    font-size: 12px;
+    line-height: 1.5;
+    font-family: "BasisGrotesque-Regular-Pro";
+    line-height: 1.6; }
+  .display7 {
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: "BasisGrotesque-Medium-Pro"; }
+  .p1 {
+    font-size: 12px;
+    line-height: 1.4;
+    font-family: "BasisGrotesque-Regular-Pro";
+    line-height: 1.6; }
+  .p2 {
+    font-size: 16px;
+    line-height: 1.4;
+    font-family: "BasisGrotesque-Regular-Pro";
+    line-height: 1.6; }
+  .p4 {
+    font-size: 16px;
+    line-height: 1.4;
+    font-family: "BasisGrotesque-Medium-Pro"; } }
+
+/* map-key*/
+@media (min-width: 1500px) {
+  .h1 {
     font-size: 40px;
     line-height: 1.2;
     font-family: "BasisGrotesque-Medium-Pro"; }
@@ -2159,85 +2238,6 @@ mark {
     line-height: 1.6; }
   .p4 {
     font-size: 18px;
-    line-height: 1.4;
-    font-family: "BasisGrotesque-Medium-Pro"; } }
-
-/* map-key*/
-@media (min-width: 1500px) {
-  .h1 {
-    font-size: 1.2;
-    line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
-  .h2 {
-    font-size: 1.2;
-    line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
-  .h3 {
-    font-size: 1.2;
-    line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
-  .h4, .card .title {
-    font-size: 1.2;
-    line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
-  .h5 {
-    font-size: 1.2;
-    line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
-  .h6, .card .subtitle {
-    font-size: 1.2;
-    line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
-  .h7 {
-    font-size: 1.2;
-    line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
-  .h8 {
-    font-size: 1.2;
-    line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
-  .display1 {
-    font-size: 1.2;
-    line-height: 1.2;
-    font-family: "BasisGrotesque-Bold-Pro"; }
-  .display2 {
-    font-size: 1.2;
-    line-height: 1.2;
-    font-family: "BasisGrotesque-Bold-Pro"; }
-  .display3 {
-    font-size: 1.5;
-    line-height: 1.5;
-    font-family: "BasisGrotesque-Medium-Pro"; }
-  .display4 {
-    font-size: 1.5;
-    line-height: 1.5;
-    font-family: "BasisGrotesque-Medium-Pro"; }
-  .display5 {
-    font-size: 1.5;
-    line-height: 1.5;
-    font-family: "BasisGrotesque-Regular-Pro";
-    line-height: 1.6; }
-  .display6 {
-    font-size: 1.5;
-    line-height: 1.5;
-    font-family: "BasisGrotesque-Regular-Pro";
-    line-height: 1.6; }
-  .display7 {
-    font-size: 1.5;
-    line-height: 1.5;
-    font-family: "BasisGrotesque-Medium-Pro"; }
-  .p1 {
-    font-size: 1.4;
-    line-height: 1.4;
-    font-family: "BasisGrotesque-Regular-Pro";
-    line-height: 1.6; }
-  .p2 {
-    font-size: 1.4;
-    line-height: 1.4;
-    font-family: "BasisGrotesque-Regular-Pro";
-    line-height: 1.6; }
-  .p4 {
-    font-size: 1.4;
     line-height: 1.4;
     font-family: "BasisGrotesque-Medium-Pro"; } }
 

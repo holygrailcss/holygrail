@@ -192,8 +192,8 @@
 			@each $name,
 			$fsize in $headers {
 				$fontsize: nth($fsize, $i);
-				$fontheight: nth($fsize, 5);
-				$fontweight: nth($fsize, 6);
+				$fontheight: nth($fsize, 6);
+				$fontweight: nth($fsize, 7);
 
 				.#{$name} {
 					#{$cssattr }: $fontsize;
