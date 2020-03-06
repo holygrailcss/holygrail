@@ -3286,8 +3286,19 @@ ul.h-size-selector a {
 
 .cover2 {
   width: 100%; }
-  .cover2 span {
-    position: absolute; }
+  .cover2 h1 {
+    position: absolute;
+    z-index: 2; }
+  .cover2 video {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    object-fit: cover; }
+  .cover2 img {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    object-fit: cover; }
 
 .cover3 {
   width: 50%;
@@ -3319,17 +3330,36 @@ ul.h-size-selector a {
     .cover5 .cover5-text h2, .cover5 .cover5-text h3, .cover5 .cover5-text p, .cover5 .cover5-text a {
       width: 100%; }
 
-.row-6 {
-  display: -webkit-box;
+/* .cover5>.cover5-img+.cover5-text>.h2{lorem} */
+.row-2 {
+  box-sizing: border-box;
   display: flex;
-  flex-wrap: wrap; }
-  .row-6 .col {
-    -webkit-box-flex: 1;
-    flex-grow: 1;
-    flex-basis: 313.33333px; }
+  width: 100%;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .row-2 .col {
+    display: flex;
+    text-align: center;
+    flex-basis: 80%; }
+    @media (min-width: 786px) {
+      .row-2 .col {
+        flex-basis: 25%; } }
+    @media (min-width: 992px) {
+      .row-2 .col {
+        flex-basis: 25%; } }
+    .row-2 .col.sp {
+      flex-basis: 80%; }
+      @media (min-width: 786px) {
+        .row-2 .col.sp {
+          flex-basis: 40%; } }
+      @media (min-width: 992px) {
+        .row-2 .col.sp {
+          flex-basis: 50%; } }
 
 /**
-
  section>.container>.row-6>.col>.h5+p.p1
 **/
 .row-3 {
@@ -3355,6 +3385,29 @@ ul.h-size-selector a {
 /**
  section>.container>.row-6>.col>.h5+p.p1
 **/
+.row-6 {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap; }
+  .row-6 .col {
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    flex-basis: 313.33333px; }
+
+/**
+
+ section>.container>.row-6>.col>.h5+p.p1
+**/
+.text-1 {
+  width: 100%; }
+
+/*
+TITULO: caja básica con elementos centrados en el medio
+
+ZEN:
+.text-1.align-vertical.height-md>.text-1-content.text-center>h2.h2{titular}
+
+*/
 .text-2 {
   width: 100%;
   position: relative; }
@@ -3442,20 +3495,26 @@ ZEN:
       opacity: .6;
       cursor: pointer; }
 
-.card3 {
-  display: flex;
-  background: #eaeaea; }
-  .card3 .card3-img {
-    width: 50%; }
-  .card3 .card3-text {
-    padding: 16px;
-    width: 50%;
-    position: relative;
-    text-align: left; }
-    .card3 .card3-text .link1 {
-      position: absolute;
-      bottom: 16px; }
+/*como son formados????*/
+.card2 div {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center; }
 
+/*  .card2*/
+.card3 {
+  width: 100%;
+  float: left; }
+  .card3 span {
+    position: absolute;
+    bottom: 8px;
+    left: 8px; }
+  .card3.half {
+    width: 50%; }
+
+/* .card3>img>span{texto} */
+/* .card3.half>img>span{texto} */
 .card4 {
   position: relative;
   overflow: hidden; }
@@ -3518,7 +3577,6 @@ ZEN:
     position: relative;
     box-sizing: border-box; }
 
-/*como son formados????*/
 .card7 .card7-img {
   width: 100%; }
 
@@ -3526,34 +3584,13 @@ ZEN:
   padding: 8px 0;
   width: 100%; }
 
+/*  .card7>.card7-img+.card7-text>h5.h5{titulo}  */
 .card8 .card8-video video {
   width: 100%; }
 
 .card8 .card8-text {
   padding: 8px 0;
   width: 100%; }
-
-/*
-Caja y texto inferior
-
-.card7>.card7-img+.card7-text>h5.h5{titulo}
-
-*/
-.card2 div {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  text-align: center; }
-
-.card3 {
-  width: 100%;
-  float: left; }
-  .card3 span {
-    position: absolute;
-    bottom: 8px;
-    left: 8px; }
-  .card3.sp {
-    width: 50%; }
 
 .footer-bottom {
   padding: 16px 0;
