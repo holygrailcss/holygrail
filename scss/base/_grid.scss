@@ -115,7 +115,11 @@
   }
   
   
-  
+  .bleed {
+    margin-left: -$padding-global;
+    margin-right: -$padding-global;
+    width: auto;
+}
   @include bleed(0);
   @include bleed(4);
   @include bleed(8);
