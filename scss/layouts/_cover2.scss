@@ -1,6 +1,20 @@
-.cover2{
-  width: 100%;
-  span{position: absolute;}
-  
-  
+.cover2 {
+    width: 100%;
+    h1 {
+        position: absolute;
+        z-index: 2;
+    }
+    video {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    img{
+      position: absolute;
+      z-index: 1;
+      width: 100%;
+      object-fit: cover;
+    }
 }

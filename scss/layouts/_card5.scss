@@ -1,0 +1,17 @@
+.card5 {
+    display: flex;
+
+    .card5-img {
+        width: 50%;
+    }
+
+
+    .card5-content {
+        padding: $padding-global * 2;
+        width: 50%;
+        position: relative;
+        text-align: left;
+    }
+
+}
+
