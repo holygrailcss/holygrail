@@ -387,13 +387,28 @@ a {
   /*------------------------------------*\
     $LAYOUTS, Conjuntos de elementos
 \*------------------------------------*/
+  /* .cover5>.cover5-img+.cover5-text>.h2{lorem} */
+  /**
+ section>.container>.row-6>.col>.h5+p.p1
+**/
+  /**
+ section>.container>.row-6>.col>.h5+p.p1
+**/
   /**
 
  section>.container>.row-6>.col>.h5+p.p1
 **/
   /**
+
  section>.container>.row-6>.col>.h5+p.p1
 **/
+  /*
+TITULO: caja básica con elementos centrados en el medio
+
+ZEN:
+.text-1.align-vertical.height-md>.text-1-content.text-center>h2.h2{titular}
+
+*/
   /*
 TITULO: Separador linea titular linea
 
@@ -412,12 +427,10 @@ ZEN:
  .card>img.pb-20[src="https://via.placeholder.com/600x800.png?text=Logo+text" alt="{altimagen}"]+.title{title}+.subtitle{subtitle}
 **/
   /*como son formados????*/
-  /*
-Caja y texto inferior
-
-.card7>.card7-img+.card7-text>h5.h5{titulo}
-
-*/ }
+  /*  .card2*/
+  /* .card3>img>span{texto} */
+  /* .card3.half>img>span{texto} */
+  /*  .card7>.card7-img+.card7-text>h5.h5{titulo}  */ }
   .hg .text-center {
     text-align: center; }
   .hg .text-right {
@@ -480,7 +493,8 @@ Caja y texto inferior
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    text-align: center; }
   .hg .d-inline {
     width: 100%;
     display: inline-block; }
@@ -822,8 +836,12 @@ Caja y texto inferior
     flex-grow: 1;
     flex-shrink: 1;
     padding: 0 8px; }
+  .hg .bleed {
+    margin-left: -8px;
+    margin-right: -8px;
+    width: auto; }
   .hg .bleed-0 {
-    padding: 0px 0px 0 0px;
+    padding: 0 0px 0 0px;
     overflow: hidden; }
     .hg .bleed-0 .container-fluid {
       margin-left: 0px;
@@ -851,7 +869,7 @@ Caja y texto inferior
   .hg .double {
     flex-basis: 100%;
     max-width: 100%; }
-  @media (min-width: 768px) {
+  @media (min-width: 786px) {
     .hg .single {
       flex-basis: 25%;
       max-width: 25%; }
@@ -859,7 +877,7 @@ Caja y texto inferior
       flex-basis: 50%;
       max-width: 50%; } }
   .hg .bleed-4 {
-    padding: 2px 2px 0 2px;
+    padding: 0 2px 0 2px;
     overflow: hidden; }
     .hg .bleed-4 .container-fluid {
       margin-left: -2px;
@@ -887,7 +905,7 @@ Caja y texto inferior
   .hg .double {
     flex-basis: 100%;
     max-width: 100%; }
-  @media (min-width: 768px) {
+  @media (min-width: 786px) {
     .hg .single {
       flex-basis: 25%;
       max-width: 25%; }
@@ -895,7 +913,7 @@ Caja y texto inferior
       flex-basis: 50%;
       max-width: 50%; } }
   .hg .bleed-8 {
-    padding: 4px 4px 0 4px;
+    padding: 0 4px 0 4px;
     overflow: hidden; }
     .hg .bleed-8 .container-fluid {
       margin-left: -4px;
@@ -923,7 +941,7 @@ Caja y texto inferior
   .hg .double {
     flex-basis: 100%;
     max-width: 100%; }
-  @media (min-width: 768px) {
+  @media (min-width: 786px) {
     .hg .single {
       flex-basis: 25%;
       max-width: 25%; }
@@ -969,6 +987,8 @@ Caja y texto inferior
     background-size: cover; }
   .hg .bg-dark {
     background-color: #eaeaea;
+    color: #fff; }
+  .hg .has-light {
     color: #fff; }
   .hg .logo-mini {
     max-width: 48px;
@@ -1595,19 +1615,19 @@ Caja y texto inferior
     font-size: 1rem;
     font-family: "BasisGrotesque-Regular-Pro";
     line-height: 1.6; }
-    @media all and (max-width: 640px) {
+    @media all and (max-width: 785px) {
       .hg html {
         overflow-x: hidden; } }
     @media all and (min-width: 1px) {
       .hg html {
         font-size: calc(1rem + 0.5vw); } }
-    @media all and (min-width: 701px) {
+    @media all and (min-width: 786px) {
       .hg html {
         font-size: calc(1rem + 0.2vw); } }
-    @media all and (min-width: 1101px) {
+    @media all and (min-width: 992px) {
       .hg html {
         font-size: calc(1rem + 0.3vw); } }
-    @media all and (min-width: 1401px) {
+    @media all and (min-width: 1280px) {
       .hg html {
         font-size: calc(1rem + 0.4vw); } }
   .hg select {
@@ -1644,13 +1664,13 @@ Caja y texto inferior
     font-family: "BasisGrotesque-Regular-Pro";
     line-height: 1.6; }
     .hg .fluid-h1 {
-      font-size: 30px; }
+      font-size: 36px; }
       @media screen and (min-width: 319px) {
         .hg .fluid-h1 {
-          font-size: calc(30px + 58 * ((100vw - 319px) / 961)); } }
+          font-size: calc(36px + 28 * ((100vw - 319px) / 961)); } }
       @media screen and (min-width: 1280px) {
         .hg .fluid-h1 {
-          font-size: 88px; } }
+          font-size: 64px; } }
   .hg .fluid-h2 {
     line-height: 1.2;
     font-family: "BasisGrotesque-Bold-Pro"; }
@@ -1718,7 +1738,8 @@ Caja y texto inferior
         .hg .fluid-h7 {
           font-size: 18px; } }
   .hg .miller {
-    font-family: "Times new roman" !important; }
+    font-family: "Times new roman" !important;
+    font-weight: 100; }
   .hg .text-12-r {
     font-family: "BasisGrotesque-Regular-Pro";
     line-height: 1.6;
@@ -2188,7 +2209,7 @@ Caja y texto inferior
     position: absolute;
     bottom: 0;
     right: 0;
-    color: #fff;
+    color: #000;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2217,6 +2238,47 @@ Caja y texto inferior
   to {
     -webkit-transform: translate3d(0, -15px, 0);
     transform: translate3d(0, -15px, 0); } }
+  .hg .line-scrolldown {
+    position: absolute;
+    top: calc(100% - 120px);
+    left: 50%;
+    z-index: 3;
+    opacity: 1;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%); }
+    .hg .line-scrolldown:before {
+      content: '';
+      position: absolute;
+      top: 40px;
+      left: 50%;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: black;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%); }
+    .hg .line-scrolldown::after {
+      content: '';
+      position: absolute;
+      top: 40px;
+      left: 50%;
+      width: 1px;
+      height: 0;
+      border-radius: 2px;
+      background: black;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      -webkit-animation: stretch 1s 1.5s cubic-bezier(0.55, 0.085, 0, 0.99) forwards;
+      animation: stretch 1s 1.5s cubic-bezier(0.55, 0.085, 0, 0.99) forwards; }
+  .hg .has-light .arrow-cover {
+    color: #fff; }
+  .hg .has-light .line-scrolldown:before {
+    background: white; }
+  .hg .has-light .line-scrolldown::after {
+    background: #fff; }
+  .hg hr {
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid transparent; }
   .hg .btn {
     position: relative;
     display: inline-block;
@@ -2751,8 +2813,7 @@ Caja y texto inferior
     opacity: .9; }
   .hg .link1 {
     font-size: 16px;
-    color: #030202;
-    font-weight: bold;
+    font-family: "BasisGrotesque-Bold-Pro";
     transition: color 250ms linear;
     text-decoration: none;
     position: relative; }
@@ -2764,10 +2825,7 @@ Caja y texto inferior
         transform: scaleX(1); }
     .hg .link1:focus {
       outline: none;
-      color: #030202;
       text-decoration: none; }
-    .hg .link1:focus:hover {
-      color: #030202; }
     .hg .link1:-moz-focusring {
       outline: none !important;
       background: none; }
@@ -2784,9 +2842,10 @@ Caja y texto inferior
       transition: transform 278ms, -webkit-transform 278ms; }
   .hg .link2 {
     font-size: 12px;
-    color: #030202;
     text-decoration: none;
-    position: relative; }
+    position: relative;
+    font-family: "BasisGrotesque-Regular-Pro";
+    line-height: 1.6; }
     .hg .link2:hover {
       opacity: .6; }
       .hg .link2:hover::after {
@@ -2819,6 +2878,8 @@ Caja y texto inferior
   .hg .link3:hover::before {
     opacity: 1; }
   .hg .link4 {
+    font-family: "BasisGrotesque-Regular-Pro";
+    line-height: 1.6;
     position: relative;
     display: inline-block;
     border: 0;
@@ -2826,13 +2887,12 @@ Caja y texto inferior
     transition: background-color 0.3s ease-in-out;
     margin: 0px;
     font-size: 16px;
-    color: black;
     line-height: 16px;
     padding: 12px 0; }
     .hg .link4:hover {
       opacity: .5; }
     .hg .link4 .link4-underline {
-      background: #0e0d0d;
+      background: #000;
       height: 1px;
       width: 100%;
       display: inline-block;
@@ -2872,7 +2932,6 @@ Caja y texto inferior
       width: 10px; }
   .hg .link5 {
     position: relative;
-    color: #ffffff;
     font-size: 16px;
     line-height: 1.6;
     text-decoration: none; }
@@ -2884,11 +2943,17 @@ Caja y texto inferior
       z-index: 3;
       width: 0;
       height: 1px;
-      background: #ffffff;
+      background: #000;
       -webkit-animation: underline 1s 0.5s cubic-bezier(0.55, 0.085, 0, 0.99) forwards;
       animation: underline 1s 0.5s cubic-bezier(0.55, 0.085, 0, 0.99) forwards; }
     .hg .link5:hover {
       opacity: .5; }
+  .hg .has-light .link5 {
+    color: #ffffff; }
+    .hg .has-light .link5:after {
+      background: #ffffff; }
+  .hg .has-light .link4 .link4-underline {
+    background: #fff; }
   .hg ul.list-disc {
     list-style: none;
     margin: 16px 0;
@@ -2918,9 +2983,6 @@ Caja y texto inferior
       display: inline-block;
       padding: 0 8px;
       margin: 0; }
-      .hg ul.list-inline li a {
-        padding: 8px 8px 8px 0;
-        float: left; }
       .hg ul.list-inline li:after {
         display: none; }
   .hg ul.list-clear li {
@@ -3043,37 +3105,34 @@ Caja y texto inferior
         position: absolute;
         bottom: -4px;
         left: 0; }
+  .hg .cover1 .cover1-content {
+    position: absolute; }
+  .hg .cover1 .cover1-img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center; }
+  .hg .cover1 .mini-logo {
+    width: 50px;
+    margin: 0 auto; }
+    .hg .cover1 .mini-logo svg {
+      fill: white; }
   .hg .cover1 .cover1-down-button {
     position: absolute;
     text-align: center;
     bottom: 0;
     width: 200px; }
-  .hg .cover1 .line-scrolldown:before {
-    content: '';
+  .hg .cover2 h1 {
     position: absolute;
-    top: 40px;
-    left: 50%;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: #da8f71;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%); }
-  .hg .cover1 .line-scrolldown::after {
-    content: '';
+    z-index: 2; }
+  .hg .cover2 video {
     position: absolute;
-    top: 40px;
-    left: 50%;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: #da8f71;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%); }
-  .hg .cover2 {
+    z-index: 1;
+    width: 100%;
+    object-fit: cover; }
+  .hg .cover2 img {
+    z-index: 1;
     width: 100%; }
-    .hg .cover2 span {
-      position: absolute; }
   .hg .cover3 {
     width: 50%;
     float: left; }
@@ -3093,23 +3152,41 @@ Caja y texto inferior
       z-index: 1;
       width: 100%;
       object-fit: cover; }
-  .hg .card3 {
-    width: 100%;
-    float: left; }
-    .hg .card3 span {
-      position: absolute;
-      bottom: 8px;
-      left: 8px; }
-    .hg .card3.sp {
-      width: 50%; }
-  .hg .row-6 {
-    display: -webkit-box;
+  .hg .cover5 {
+    width: 100%; }
+    .hg .cover5 .cover5-img {
+      width: 60px; }
+    .hg .cover5 .cover5-text {
+      height: 100%; }
+      .hg .cover5 .cover5-text h2, .hg .cover5 .cover5-text h3, .hg .cover5 .cover5-text p, .hg .cover5 .cover5-text a {
+        width: 100%; }
+  .hg .row-2 {
+    box-sizing: border-box;
     display: flex;
-    flex-wrap: wrap; }
-    .hg .row-6 .col {
-      -webkit-box-flex: 1;
-      flex-grow: 1;
-      flex-basis: 313.33333px; }
+    width: 100%;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .hg .row-2 .col {
+      display: flex;
+      text-align: center;
+      flex-basis: 80%; }
+      @media (min-width: 786px) {
+        .hg .row-2 .col {
+          flex-basis: 25%; } }
+      @media (min-width: 992px) {
+        .hg .row-2 .col {
+          flex-basis: 25%; } }
+      .hg .row-2 .col.sp {
+        flex-basis: 80%; }
+        @media (min-width: 786px) {
+          .hg .row-2 .col.sp {
+            flex-basis: 40%; } }
+        @media (min-width: 992px) {
+          .hg .row-2 .col.sp {
+            flex-basis: 50%; } }
   .hg .row-3 {
     box-sizing: border-box;
     display: flex;
@@ -3129,15 +3206,42 @@ Caja y texto inferior
       @media (min-width: 992px) {
         .hg .row-3 .col {
           flex-basis: 30%; } }
+  .hg .row6 {
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap; }
+    .hg .row6 .col {
+      -webkit-box-flex: 1;
+      flex-grow: 1;
+      flex-basis: calc(100% - 1em); }
+      @media (min-width: 786px) {
+        .hg .row6 .col {
+          flex-basis: calc(50% - 1em); } }
+      @media (min-width: 992px) {
+        .hg .row6 .col {
+          flex-basis: calc(33.33% - 1em); } }
+      @media (min-width: 1280px) {
+        .hg .row6 .col {
+          flex-basis: calc(33.33% - 1em); } }
+  .hg .text-1 {
+    width: 100%; }
   .hg .text-2 {
     width: 100%;
     position: relative; }
     .hg .text-2 .text-2-content {
       display: flex;
       align-items: center;
-      align-content: center; }
+      align-content: center;
+      text-align: center; }
       .hg .text-2 .text-2-content [class*="h"] {
-        flex-grow: 0.15; }
+        flex-grow: 0.15;
+        font-family: "BasisGrotesque-Regular-Pro";
+        line-height: 1.6;
+        font-size: 16px;
+        line-height: 1.2;
+        letter-spacing: 0.5px;
+        color: #808284;
+        margin-top: 5px; }
       .hg .text-2 .text-2-content div {
         height: 2px;
         background: #eaeaea;
@@ -3192,19 +3296,20 @@ Caja y texto inferior
       .hg .card-video .card-video-play:hover {
         opacity: .6;
         cursor: pointer; }
+  .hg .card2 div {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center; }
   .hg .card3 {
-    display: flex;
-    background: #eaeaea; }
-    .hg .card3 .card3-img {
+    width: 100%;
+    float: left; }
+    .hg .card3 span {
+      position: absolute;
+      bottom: 8px;
+      left: 8px; }
+    .hg .card3.half {
       width: 50%; }
-    .hg .card3 .card3-text {
-      padding: 16px;
-      width: 50%;
-      position: relative;
-      text-align: left; }
-      .hg .card3 .card3-text .link1 {
-        position: absolute;
-        bottom: 16px; }
   .hg .card4 {
     position: relative;
     overflow: hidden; }
@@ -3267,27 +3372,8 @@ Caja y texto inferior
   .hg .card7 .card7-img {
     width: 100%; }
   .hg .card7 .card7-text {
+    text-align: center;
     padding: 8px 0;
     width: 100%; }
   .hg .card8 .card8-video video {
     width: 100%; }
-  .hg .card8 .card8-text {
-    padding: 8px 0;
-    width: 100%; }
-  .hg .card2 div {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    text-align: center; }
-  .hg .card3 {
-    width: 100%;
-    float: left; }
-    .hg .card3 span {
-      position: absolute;
-      bottom: 8px;
-      left: 8px; }
-    .hg .card3.sp {
-      width: 50%; }
-  .hg .footer-bottom {
-    padding: 16px 0;
-    border-top: 1px solid #eaeaea; }
