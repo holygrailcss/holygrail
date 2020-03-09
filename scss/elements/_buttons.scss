@@ -171,6 +171,13 @@ $btn-text-full:16px;
     color: #fff;
     background-color: $primary;
     border: 1px solid $primary;
+    &:hover{
+        opacity: .7;
+        color: #fff;
+        background-color: $primary;
+        border: 1px solid $primary;
+
+    }
 }
 
 .btn-phantom {
