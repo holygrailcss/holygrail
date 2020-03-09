@@ -1,15 +1,15 @@
 /*+------------------------------------------------------------+
  |       -LINKS    
  +------------------------------------------------------------+*/
-a {
+ a {
   &:hover {
    opacity: .9;
   }
 }
 .link1 {
   font-size: 16px;
-  color: $black;
-  font-weight: bold;
+
+  @include font-bold();
   transition: color 250ms linear;
   text-decoration: none;
   position: relative;
@@ -23,11 +23,11 @@ a {
   }
   &:focus {
     outline: none;
-    color: $black;
+
     text-decoration: none;
   }
   &:focus:hover {
-    color: $black;
+
   }
   &:-moz-focusring {
     outline: none !important;
@@ -48,9 +48,9 @@ a {
 }
 .link2 {
   font-size: 12px;
-  color: $black;
   text-decoration: none;
   position: relative;
+  @include font-regular();
   &:hover {
     opacity: .6;
     &::after {
@@ -89,6 +89,7 @@ a {
   opacity: 1;
 }
 .link4 {
+  @include font-regular();
   position: relative;
   display: inline-block;
   border: 0;
@@ -96,22 +97,27 @@ a {
   transition: background-color 0.3s ease-in-out;
   margin: 0px;
   font-size: 16px;
-  color: black;
+
   line-height: 16px;
   padding: 12px 0;
   &:hover {
     opacity: .5;
   }
-  .ma-link-span-underline {
-    background: #0e0d0d;
+  .link4-underline {
+    background: #000;
     height: 1px;
     width: 100%;
     display: inline-block;
     position: absolute;
     bottom: 12px;
     left: 0;
+
+
   }
+
 }
+
+
 .link-button-prev {
   background: transparent !important;
   position: relative;
@@ -150,7 +156,6 @@ a {
 
 .link5 {
   position: relative;
-  color: #ffffff;
   font-size: 16px;
   line-height: 1.6;
   text-decoration: none;
@@ -163,7 +168,7 @@ a {
     z-index: 3;
     width: 0;
     height: 1px;
-    background: #ffffff;
+    background: #000;
     -webkit-animation: underline 1s 0.5s cubic-bezier(0.55, 0.085, 0, 0.99) forwards;
     animation: underline 1s 0.5s cubic-bezier(0.55, 0.085, 0, 0.99) forwards;
   }
@@ -172,4 +177,23 @@ a {
     opacity: .5;
   }
   
+}
+
+
+
+
+.bg-dark {
+
+  .link5 {
+    color: #ffffff;
+    &:after {
+      background: #ffffff; }
+
+    }
+
+  .link4 {
+    .link4-underline {
+      background: #fff;
+    }
+  }
 }

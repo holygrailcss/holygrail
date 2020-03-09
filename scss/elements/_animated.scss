@@ -1,11 +1,10 @@
-
-  .arrow-cover {
+.arrow-cover {
     height: auto;
     padding: 30px;
     position: absolute;
     bottom: 0;
     right: 0;
-    color: #fff;
+    color: #000;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -14,16 +13,13 @@
     -ms-flex-align: end;
     align-items: flex-end;
     transition: opacity .3s ease;
-
     z-index: 6;
 }
 
- .arrow-cover svg {
+.arrow-cover svg {
     -webkit-animation: bounce .8s infinite alternate;
     animation: bounce .8s infinite alternate
 }
-
-
 
 @-webkit-keyframes bounce {
     0% {
@@ -32,8 +28,8 @@
     }
 
     to {
-        -webkit-transform: translate3d(0,-15px,0);
-        transform: translate3d(0,-15px,0)
+        -webkit-transform: translate3d(0, -15px, 0);
+        transform: translate3d(0, -15px, 0)
     }
 }
 
@@ -44,8 +40,70 @@
     }
 
     to {
-        -webkit-transform: translate3d(0,-15px,0);
-        transform: translate3d(0,-15px,0)
+        -webkit-transform: translate3d(0, -15px, 0);
+        transform: translate3d(0, -15px, 0)
     }
 }
 
+//Effects
+.line-scrolldown {
+    position: absolute;
+    top: calc(100% - 120px);
+    left: 50%;
+    z-index: 3;
+    opacity: 1;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 40px;
+        left: 50%;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: black;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 40px;
+        left: 50%;
+        width: 1px;
+        height: 0;
+        border-radius: 2px;
+        background: black;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        -webkit-animation: stretch 1s 1.5s cubic-bezier(0.55, 0.085, 0, 0.99) forwards;
+        animation: stretch 1s 1.5s cubic-bezier(0.55, 0.085, 0, 0.99) forwards;
+    }
+}
+
+
+
+.has-light {
+    .arrow-cover {
+        color: #fff;
+    }
+
+    .line-scrolldown {
+        &:before {
+            background: white;
+        }
+
+        &::after {
+            background: #fff;
+        }
+    }
+}
+
+
+hr {
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid transparent;
+}

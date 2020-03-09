@@ -5,7 +5,7 @@ html {
   font-size: 1rem;
   @include font-regular();
 
-  @media all and (max-width: 640px) {
+  @media all and (max-width: $break-sm - 1) {
     overflow-x: hidden;
   }
 
@@ -13,15 +13,15 @@ html {
     font-size: calc(1rem + 0.5vw);
   }
 
-  @media all and (min-width: $break-xs + 700) {
+  @media all and (min-width: $break-sm) {
     font-size: calc(1rem + 0.2vw);
   }
 
-  @media all and (min-width: $break-xs + 1100) {
+  @media all and (min-width: $break-md) {
     font-size: calc(1rem + 0.3vw);
   }
 
-  @media all and (min-width: $break-xs + 1400) {
+  @media all and (min-width: $break-lg) {
     font-size: calc(1rem + 0.4vw);
   }
 }
@@ -133,7 +133,7 @@ mark {
 
 
 .fluid-h1 {
-  @include fluid-text($min_width, $break-lg, 30px, 88px);
+  @include fluid-text($min_width, $break-lg, 36px, 64px);
   @include font-regular()
 }
 
@@ -174,6 +174,7 @@ mark {
 
 .miller{
   font-family:$font-family-secondary !important;
+  font-weight: 100;
 }
 
 

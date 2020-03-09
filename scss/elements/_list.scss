@@ -44,10 +44,7 @@ ul.list-inline {
     display: inline-block;
     padding: 0 $padding-global;
     margin: 0;
-    a {
-      padding: $padding-global  $padding-global  $padding-global 0;
-      float: left;
-    }
+
     &:after {
       display: none
     }

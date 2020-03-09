@@ -126,7 +126,7 @@
  +------------------------------------------------------------+*/
 @mixin bleed($margin) {
 	.bleed-#{$margin} {
-		padding: $margin/2+px $margin/2+px 0 $margin/2+px;
+		padding: 0 $margin/2+px 0 $margin/2+px;
 		overflow: hidden;
 
 		.container-fluid {
@@ -169,7 +169,7 @@
 		max-width: 100%;
 	}
 
-	@media (min-width: 768px) {
+    @media (min-width:$break-sm) {
 		.single {
 			flex-basis: 25%;
 			max-width: 25%;

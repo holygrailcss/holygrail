@@ -7,10 +7,16 @@
         display: flex;
         align-items: center;
         align-content: center;
+        text-align: center;
 
         [class*="h"] {
             flex-grow: 0.15;
-    
+            @include font-regular();
+            font-size: 16px;
+            line-height: 1.2;
+            letter-spacing: 0.5px;
+            color: #808284;
+            margin-top: 5px;
         }
 
         div {

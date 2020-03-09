@@ -1,4 +1,4 @@
-.row-6 {
+.row6 {
   display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
@@ -6,10 +6,30 @@
   .col {
     -webkit-box-flex: 1;
     flex-grow: 1;
-    flex-basis: ($break-lg  / 6) + 100px;
 
+    flex-basis: calc(100% - 1em);
+
+
+    @media (min-width:$break-sm) {
+      flex-basis: calc(50% - 1em);
+    }
+
+
+    @media (min-width:$break-md) {
+      flex-basis: calc(33.33% - 1em);
+    }
+
+    @media (min-width:$break-lg) {
+      flex-basis: calc(33.33% - 1em);
+    }
   }
 }
+
+
+/**
+
+ section>.container>.row-6>.col>.h5+p.p1
+**/
 
 
 /**
