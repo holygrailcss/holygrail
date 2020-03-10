@@ -17,7 +17,6 @@
 /*+------------------------------------------------------------+
  |       -RESET  
  +------------------------------------------------------------+*/
-@import url("https:/*use.typekit.net/puz7rnx.css");
 html, body, div, span, select, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, main, menu, nav, section, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -2386,6 +2385,11 @@ ZEN:
     color: #fff;
     background-color: #000;
     border: 1px solid #000; }
+    .hg .btn-primary:hover {
+      opacity: .7;
+      color: #fff;
+      background-color: #000;
+      border: 1px solid #000; }
   .hg .btn-phantom {
     color: black;
     background-color: transparent;

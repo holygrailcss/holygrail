@@ -6,6 +6,24 @@
  */
 /*cargamos el tema por defecto con las fuentes y colores propios */
 /* @import "../../themes/theme-dutti/site";*/
+/* propiedad que modificamos */
+/* propiedad que modificamos */
+/* propiedad que modificamos */
+/* propiedad que modificamos */
+/* propiedad que modificamos */
+/* propiedad que modificamos */
+/* propiedad que modificamos */
+/*+------------------------------------------------------------+
+ |       -PADDINGS  
+ +------------------------------------------------------------+*/
+/* propiedad que modificamos */
+/* propiedad que modificamos */
+/* propiedad que modificamos */
+/* propiedad que modificamos */
+/* propiedad que modificamos */
+/* propiedad que modificamos */
+/* propiedad que modificamos */
+/* array para elementos fijos*/
 /*@import "abstract/0debug";  si queremos debugar la maqueta */
 /**
 * Base estilo inline    class="[col-sm-2]    [py-20m-20]    [h1 text-1 link-2] [text-center]"
@@ -17,7 +35,6 @@
 /*+------------------------------------------------------------+
  |       -RESET  
  +------------------------------------------------------------+*/
-@import url("https:/*use.typekit.net/puz7rnx.css");
 html, body, div, span, select, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, main, menu, nav, section, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -981,25 +998,8 @@ a {
 /*+------------------------------------------------------------+
  |       -MARGINS  
  +------------------------------------------------------------+*/
-/* propiedad que modificamos */
-/* propiedad que modificamos */
-/* propiedad que modificamos */
-/* propiedad que modificamos */
-/* propiedad que modificamos */
-/* propiedad que modificamos */
-/* propiedad que modificamos */
 /*+------------------------------------------------------------+
-  |       -PADDINGS  
-  +------------------------------------------------------------+*/
-/* propiedad que modificamos */
-/* propiedad que modificamos */
-/* propiedad que modificamos */
-/* propiedad que modificamos */
-/* propiedad que modificamos */
-/* propiedad que modificamos */
-/* propiedad que modificamos */
-/*+------------------------------------------------------------+
-  |       -MIXINS SPACE  
+  |      -MIXINS SPACE  
   +------------------------------------------------------------+*/
 /* margin*/
 /* map-key*/
@@ -1606,6 +1606,20 @@ a {
 /*+------------------------------------------------------------+
  |       -HTML REMS        
  +------------------------------------------------------------+*/
+body,
+button,
+input,
+select,
+textarea {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+
+pre,
+code,
+kbd,
+samp {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 1em; }
+
 html {
   font-size: 1rem;
   font-family: "BasisGrotesque-Regular-Pro";
@@ -1626,7 +1640,6 @@ html {
     html {
       font-size: calc(1rem + 0.4vw); } }
 
-/* array para elementos fijos*/
 select {
   font-family: "BasisGrotesque-Regular-Pro";
   line-height: 1.6; }
@@ -1756,7 +1769,7 @@ mark {
       .fluid-h7 {
         font-size: 18px; } }
 
-.miller {
+.secondary {
   font-family: "Times new roman" !important;
   font-weight: 100; }
 
@@ -2476,6 +2489,11 @@ hr {
   color: #fff;
   background-color: #000;
   border: 1px solid #000; }
+  .btn-primary:hover {
+    opacity: .7;
+    color: #fff;
+    background-color: #000;
+    border: 1px solid #000; }
 
 .btn-phantom {
   color: black;

@@ -1,7 +1,23 @@
 /*+------------------------------------------------------------+
  |       -HTML REMS        
  +------------------------------------------------------------+*/
-html {
+ body,
+ button,
+ input,
+ select,
+ textarea {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+ }
+ pre,
+code,
+kbd,
+samp {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 1em;
+}
+
+
+ html {
   font-size: 1rem;
   @include font-regular();
 
@@ -25,51 +41,6 @@ html {
     font-size: calc(1rem + 0.4vw);
   }
 }
-
-
-
-
-$fs: "font-size";
-$lh: "line-height";
-$headers:/* name:mobile,768,992,1280,line-height,font */
-(h1: (32px,32px, 32px, 32px, 40px, 1.2, "medium"),
-  h2: (24px,24px, 24px, 24px, 32px, 1.2, "medium"),
-  h3: (18px,18px, 18px, 18px, 24px, 1.2, "medium"),
-  h4: (16px,16px, 16px, 16px, 18px, 1.2, "medium"),
-  h5: (14px, 14px, 14px, 14px, 16px, 1.2, "medium"),
-  h6: (12px, 12px, 12px, 12px, 14px, 1.2, "medium"),
-  h7: (10px, 10px, 10px, 10px, 12px, 1.2, "medium"),
-  h8: (8px,8px, 8px, 8px, 10px, 1.2, "medium"),
-  display1: (32px,32px, 32px, 32px, 48px, 1.2, "bold"),
-  /* PROMOTIONS BANNER */
-  display2: (20px,20px, 20px, 20px, 40px, 1.2, "bold"),
-  /* SALES */
-  display3: (16px, 16px, 16px, 16px, 24px, 1.5, "medium"),
-  /* BLACK FRIDAY */
-  display4: (14px,14px, 14px, 14px, 24px, 1.5, "medium"),
-  /* SALES */
-  display5: (14px,14px, 14px, 14px, 18px, 1.5, "regular"),
-  /* BLACK FRIDAY */
-  display6: (12px,12px, 12px, 12px, 18px, 1.5, "regular"),
-  /* SALES */
-  display7: (14px, 14px, 14px, 14px, 18px, 1.5, "medium"),
-  /* SALES + BLACK FRIDAY */
-  p1: (12px,12px, 12px, 12px, 14px, 1.4, "regular"),
-  p2: (14px, 14px, 16px, 16px, 18px, 1.4, "regular"),
-  p4: (14px,14px, 16px, 16px, 18px, 1.4, "medium"));
-
-
-
-/* array para elementos fijos*/
-$headersFixers: (/*name :  fontsize, lineheight */
-  12 : (12px, 1.5),
-  14 : (14px, 1.5),
-  16 : (16px, 1.5),
-  18 : (18px, 1.5),
-  20 : (20px, 1.5),
-  24 : (24px, 1.5),
-);
-
 
 
 
@@ -172,7 +143,7 @@ mark {
   @include font-regular()
 }
 
-.miller{
+.secondary{
   font-family:$font-family-secondary !important;
   font-weight: 100;
 }
