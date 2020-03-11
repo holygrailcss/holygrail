@@ -12,33 +12,8 @@
 
 **/
 /*------------------------------------*\
-    $ABSTRACT
+    $ABSTRACT 
 \*------------------------------------*/
-/*+------------------------------------------------------------+
- |       -RESET  
- +------------------------------------------------------------+*/
-html, body, div, span, select, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, main, menu, nav, section, time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent; }
-
-article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
-  display: block; }
-
-img {
-  max-width: 100%;
-  border-width: 0;
-  vertical-align: middle;
-  -ms-interpolation-mode: bicubic; }
-
-a {
-  color: inherit;
-  text-decoration: none; }
-
 :root {
   --Black:#000000;
   --secondary-color:#F5F5F5;
@@ -79,13 +54,25 @@ a {
 /*+------------------------------------------------------------+
  |       -IMPORT FONTS
  +------------------------------------------------------------+*/
+/* BREAKPOINTS */
 /*+------------------------------------------------------------+
- |       -Variables  Globales
- +------------------------------------------------------------+*/
+  |       -FASE 2 : PERSONALIZA TU HOLYGRAIL
+  +------------------------------------------------------------+*/
+/*  breakpoints  */
+/*  grid  */
 /* maxwidth del container */
 /* maxwidth del container2*/
 /* maxwidth del container3*/
 /* maxwidth del container4*/
+/*  alturas minimas  */
+/*  animaciones  */
+/* ALTURA MINIMA */
+/* Types.scss */
+/* Types responsive  xs sm md lg xl line-height font-weight */
+/* TYPES FIJOS */
+/*+------------------------------------------------------------+
+|       -spacing  
++------------------------------------------------------------+*/
 @font-face {
   font-family: "BasisGrotesque-Bold-Pro";
   src: url("../assets/fonts/basis/BasisGrotesque-Bold-Pro.eot");
@@ -165,7 +152,7 @@ a {
 /*------------------------------------*\
     $BASE
 \*------------------------------------*/
-/* Nuestra base esencial*/
+/* hg en el parent para afectar a su interior*/
 .hg {
   /*+------------------------------------------------------------+
  |       -HELPERS DE TEXTO , ALINEACIONES        
@@ -209,25 +196,8 @@ a {
   /*+------------------------------------------------------------+
  |       -MARGINS  
  +------------------------------------------------------------+*/
-  /* propiedad que modificamos */
-  /* propiedad que modificamos */
-  /* propiedad que modificamos */
-  /* propiedad que modificamos */
-  /* propiedad que modificamos */
-  /* propiedad que modificamos */
-  /* propiedad que modificamos */
   /*+------------------------------------------------------------+
-  |       -PADDINGS  
-  +------------------------------------------------------------+*/
-  /* propiedad que modificamos */
-  /* propiedad que modificamos */
-  /* propiedad que modificamos */
-  /* propiedad que modificamos */
-  /* propiedad que modificamos */
-  /* propiedad que modificamos */
-  /* propiedad que modificamos */
-  /*+------------------------------------------------------------+
-  |       -MIXINS SPACE  
+  |      -MIXINS SPACE  
   +------------------------------------------------------------+*/
   /* margin*/
   /* map-key*/
@@ -290,7 +260,6 @@ a {
   /*+------------------------------------------------------------+
  |       -HTML REMS        
  +------------------------------------------------------------+*/
-  /* array para elementos fijos*/
   /*+------------------------------------------------------------+
  |       -HEADERS ELÁSTICOS        
  +------------------------------------------------------------+*/
@@ -1610,6 +1579,18 @@ ZEN:
       padding-right: 30px; }
     .hg .pr-50 {
       padding-right: 50px; } }
+  .hg body,
+  .hg button,
+  .hg input,
+  .hg select,
+  .hg textarea {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+  .hg pre,
+  .hg code,
+  .hg kbd,
+  .hg samp {
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: 1em; }
   .hg html {
     font-size: 1rem;
     font-family: "BasisGrotesque-Regular-Pro";
@@ -1736,7 +1717,7 @@ ZEN:
       @media screen and (min-width: 1280px) {
         .hg .fluid-h7 {
           font-size: 18px; } }
-  .hg .miller {
+  .hg .secondary {
     font-family: "Times new roman" !important;
     font-weight: 100; }
   .hg .text-12-r {
@@ -2590,7 +2571,8 @@ ZEN:
     color: #363636;
     max-width: 100%;
     width: 100%;
-    font-size: 16px; }
+    font-size: 16px;
+    line-height: 1; }
     @media (min-width: 786px) {
       .hg .input,
       .hg .textarea,

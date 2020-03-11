@@ -2707,7 +2707,8 @@ label {
   color: #363636;
   max-width: 100%;
   width: 100%;
-  font-size: 16px; }
+  font-size: 16px;
+  line-height: 1; }
   @media (min-width: 786px) {
     .input,
     .textarea,
