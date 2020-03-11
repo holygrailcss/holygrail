@@ -85,18 +85,33 @@ $primary:#000;
 $font-family-secondary:"Times new roman";
 
 
+/* BREAKPOINTS */
 
 
+ /*+------------------------------------------------------------+
+  |       -FASE 2 : PERSONALIZA TU HOLYGRAIL
+  +------------------------------------------------------------+*/
 
-/*+------------------------------------------------------------+
- |       -Variables  Globales
- +------------------------------------------------------------+*/
 
-$totalCols :12;
-$padding-global: 8px;
-$padding-button: 8px;
-$padding-btn: 16px;
-$height-inputs: 48px;
+/*  breakpoints  */
+
+
+  $breakpoints: (
+    xs: 1px,
+    sm: 786px,
+    md: 992px,
+    lg: 1280px,
+    xl: 1500px);
+ 
+    
+
+/*  grid  */
+
+ $totalCols :      12;
+ $padding-global: 8px;
+ $padding-button: 8px;
+ $padding-btn:   16px;
+ $height-inputs: 48px;
 
 
 $container: 800px; /* maxwidth del container */
@@ -107,6 +122,8 @@ $container-4: 350px; /* maxwidth del container4*/
 $transition:278ms;
 
 
+/*  alturas minimas  */
+
 $height-xs:80px;
 $height-sm:100px;
 $height-md:350px;
@@ -114,6 +131,178 @@ $height-lg:400px;
 $height-xl:450px;
 $height-full:100vh;
 $height-home:calc(100vh - 80px);
+
+/*  animaciones  */
+
+$transition:278ms;
+
+
+
+/* ALTURA MINIMA */
+
+   $min-width:319px;
+
+
+
+/* Types.scss */
+
+/* Types responsive  xs sm md lg xl line-height font-weight */
+
+   $fs: "font-size";
+   $lh: "line-height";
+   $headers:/* name:mobile,768,992,1280,line-height,font */
+          (h1: (32px, 32px, 32px, 32px, 40px, 1.2, "medium" ),
+           h2: (24px, 24px, 24px, 24px, 32px, 1.2, "medium" ),
+           h3: (18px, 18px, 18px, 18px, 24px, 1.2, "medium" ),
+           h4: (16px, 16px, 16px, 16px, 18px, 1.2, "medium" ),
+           h5: (14px, 14px, 14px, 14px, 16px, 1.2, "medium" ),
+           h6: (12px, 12px, 12px, 12px, 14px, 1.2, "medium" ),
+           h7: (10px, 10px, 10px, 10px, 12px, 1.2, "medium" ),
+           h8: (8px,   8px,  8px,  8px, 10px, 1.2, "medium" ),
+     display1: (32px, 32px, 32px, 32px, 48px, 1.2, "bold"   ),/* PROMOTIONS BANNER */
+     display2: (20px, 20px, 20px, 20px, 40px, 1.2, "bold"   ),/* SALES */
+     display3: (16px, 16px, 16px, 16px, 24px, 1.5, "medium" ),/* BLACK FRIDAY */
+     display4: (14px, 14px, 14px, 14px, 24px, 1.5, "medium" ),/* SALES */
+     display5: (14px, 14px, 14px, 14px, 18px, 1.5, "regular"),/* BLACK FRIDAY */
+     display6: (12px, 12px, 12px, 12px, 18px, 1.5, "regular"),/* SALES */
+     display7: (14px, 14px, 14px, 14px, 18px, 1.5, "medium" ),/* SALES + BLACK FRIDAY */
+           p1: (12px, 12px, 12px, 12px, 14px, 1.4, "regular"),
+           p2: (14px, 14px, 16px, 16px, 18px, 1.4, "regular"),
+           p4: (14px, 14px, 16px, 16px, 18px, 1.4, "medium" ));
+   
+
+/* TYPES FIJOS */
+
+$headersFixers: (/*name :  fontsize, lineheight */
+   12 : (12px, 1.5),
+   14 : (14px, 1.5),
+   16 : (16px, 1.5),
+   18 : (18px, 1.5),
+   20 : (20px, 1.5),
+   24 : (24px, 1.5),
+);
+   
+   
+
+/*+------------------------------------------------------------+
+|       -spacing  
++------------------------------------------------------------+*/
+
+$mg: "margin"; 
+$margin: /* name : margen total mobile, tablet, desktop, longdesktop*/
+(m-20: (10px, 20px, 20px, 20px),
+ m-30: (10px, 30px, 30px, 30px),
+ m-50: (20px, 50px, 50px, 50px));
+ 
+ 
+$mx: "margin"; 
+$margin-x: /* name : margen bottom   */
+(mx-10: (0 10px, 0 10px, 0 10px, 0 10px),
+ mx-20: (0 10px, 0 20px, 0 20px, 0 20px),
+ mx-30: (0 10px, 0 30px, 0 30px, 0 30px),
+ mx-50: (0 20px, 0 50px, 0 50px, 0 50px));
+ 
+ 
+$my: "margin"; 
+$margin-y: /* name : margen bottom*/
+(my-10: (10px 0, 10px 0, 10px 0, 10px 0),
+ my-20: (10px 0, 20px 0, 20px 0, 20px 0),
+ my-30: (10px 0, 30p 0x, 30p 0, 30px 0),
+ my-50: (20px 0, 50px 0, 50px 0, 50px 0));
+ 
+ 
+   
+$mt: "margin-top";
+$margin-top: /* name : margen bottom*/
+(mt-10: (10px, 10px, 10px, 10px),
+ mt-20: (10px, 20px, 20px, 20px),
+ mt-30: (10px, 30px, 30px, 30px),
+ mt-50: (20px, 50px, 50px, 50px));
+ 
+ 
+ $mr: "margin-right";
+ $margin-right: /* name : margen bottom*/
+ (mr-10: (10px, 10px, 10px, 10px),
+   mr-20: (10px, 20px, 20px, 20px),
+   mr-30: (10px, 30px, 30px, 30px),
+   mr-50: (20px, 50px, 50px, 50px));
+ 
+$mb: "margin-bottom";
+$margin-bottom: /* name : margen bottom*/
+(mb-10: (10px, 10px, 10px, 10px),
+ mb-20: (10px, 20px, 20px, 20px),
+ mb-30: (10px, 30px, 30px, 30px),
+ mb-50: (20px, 50px, 50px, 50px));
+ 
+
+ 
+$ml: "margin-left";
+$margin-left: /* name : margen bottom*/
+(ml-10: (10px, 10px, 10px, 10px),
+ ml-20: (10px, 20px, 20px, 20px),
+ ml-30: (10px, 30px, 30px, 30px),
+ ml-50: (20px, 50px, 50px, 50px));
+ 
+
+ 
+ 
+
+$p: "padding"; 
+$padding: /* name : padding  top*/
+(p-10: (10px, 10px, 10px, 10px),
+ p-20: (10px, 20px, 20px, 20px),
+ p-30: (10px, 30px, 30px, 30px),
+ p-50: (20px, 50px, 50px, 50px));
+ 
+ 
+$py: "padding";
+$padding-y: /* name : padding  arriba y abajo*/
+(py-20: (10px 0, 20px 0, 20px 0, 20px 0),
+ py-30: (10px 0, 30px 0, 30px 0, 30px 0),
+ py-50: (20px 0, 30px 0, 40px 0, 50px 0),
+ py-60: (24px 16px,24px 16px, 24px 16px, 60px 60px),
+ 
+ );
+ 
+ 
+$px: "padding";
+$padding-x: /* name : padding  arriba y abajo*/
+(px-20: (0 10px, 0 20px, 0 20px, 0 20px),
+ px-30: (0 10px, 0 30px, 0 30px, 0 30px),
+ px-50: (0 20px, 0 30px, 0 40px, 0 50px));
+ 
+ 
+$pt: "padding-top";
+$padding-top: /* name : padding  top*/
+(pt-10: (10px, 10px, 10px, 10px),
+ pt-20: (10px, 20px, 20px, 20px),
+ pt-30: (10px, 30px, 30px, 30px),
+ pt-50: (20px, 50px, 50px, 50px));
+ 
+ 
+$pb: "padding-bottom";
+$padding-bottom: /* name : padding  bottom*/
+(pb-10: (10px, 10px, 10px, 10px),
+ pb-20: (10px, 20px, 20px, 20px),
+ pb-30: (10px, 30px, 30px, 30px),
+ pb-50: (20px, 50px, 50px, 50px));
+ 
+ 
+$pl: "padding-left";
+$padding-left: /* name : padding  bottom*/
+(pl-10: (10px, 10px, 10px, 10px),
+ pl-20: (10px, 20px, 20px, 20px),
+ pl-30: (10px, 30px, 30px, 30px),
+ pl-50: (20px, 50px, 50px, 50px));
+ 
+ 
+$pr: "padding-right";
+$padding-right: /* name : padding  bottom*/
+(pr-10: (10px, 10px, 10px, 10px),
+ pr-20: (10px, 20px, 20px, 20px),
+ pr-30: (10px, 30px, 30px, 30px),
+ pr-50: (20px, 50px, 50px, 50px));
+ 
 
 
 

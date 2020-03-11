@@ -1,29 +1,7 @@
 @charset "UTF-8";
-/*------------------------------------*\
-    $STYLE
-\*------------------------------------*/
 /* no usar col- nunca ya que hay un selector asi
  */
 /*cargamos el tema por defecto con las fuentes y colores propios */
-/* @import "../../themes/theme-dutti/site";*/
-/* propiedad que modificamos */
-/* propiedad que modificamos */
-/* propiedad que modificamos */
-/* propiedad que modificamos */
-/* propiedad que modificamos */
-/* propiedad que modificamos */
-/* propiedad que modificamos */
-/*+------------------------------------------------------------+
- |       -PADDINGS  
- +------------------------------------------------------------+*/
-/* propiedad que modificamos */
-/* propiedad que modificamos */
-/* propiedad que modificamos */
-/* propiedad que modificamos */
-/* propiedad que modificamos */
-/* propiedad que modificamos */
-/* propiedad que modificamos */
-/* array para elementos fijos*/
 /*@import "abstract/0debug";  si queremos debugar la maqueta */
 /**
 * Base estilo inline    class="[col-sm-2]    [py-20m-20]    [h1 text-1 link-2] [text-center]"
@@ -97,13 +75,25 @@ a {
 /*+------------------------------------------------------------+
  |       -IMPORT FONTS
  +------------------------------------------------------------+*/
+/* BREAKPOINTS */
 /*+------------------------------------------------------------+
- |       -Variables  Globales
- +------------------------------------------------------------+*/
+  |       -FASE 2 : PERSONALIZA TU HOLYGRAIL
+  +------------------------------------------------------------+*/
+/*  breakpoints  */
+/*  grid  */
 /* maxwidth del container */
 /* maxwidth del container2*/
 /* maxwidth del container3*/
 /* maxwidth del container4*/
+/*  alturas minimas  */
+/*  animaciones  */
+/* ALTURA MINIMA */
+/* Types.scss */
+/* Types responsive  xs sm md lg xl line-height font-weight */
+/* TYPES FIJOS */
+/*+------------------------------------------------------------+
+|       -spacing  
++------------------------------------------------------------+*/
 @font-face {
   font-family: "BasisGrotesque-Bold-Pro";
   src: url("../assets/fonts/basis/BasisGrotesque-Bold-Pro.eot");

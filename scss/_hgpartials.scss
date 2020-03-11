@@ -11,7 +11,7 @@
   }
 
 /*------------------------------------*\
-    $ABSTRACT
+    $ABSTRACT 
 \*------------------------------------*/
 //@import "abstract/reset";
 @import "abstract/settings";
@@ -23,7 +23,7 @@
 /*------------------------------------*\
     $BASE
 \*------------------------------------*/
-/* Nuestra base esencial*/
+/* hg en el parent para afectar a su interior*/
 
 .hg{  
 @import "base/alignment";
@@ -57,14 +57,6 @@
 @import "elements/badge";
 @import "elements/tooltips";
 @import "elements/spinners";*/
-
-
-
-
-
-
-
-
 
 /*------------------------------------*\
     $LAYOUTS, Conjuntos de elementos
