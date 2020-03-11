@@ -73,26 +73,6 @@
 /*+------------------------------------------------------------+
 |       -spacing  
 +------------------------------------------------------------+*/
-@font-face {
-  font-family: "BasisGrotesque-Bold-Pro";
-  src: url("../assets/fonts/basis/BasisGrotesque-Bold-Pro.eot");
-  src: url("../assets/fonts/basis/BasisGrotesque-Bold-Pro.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/basis/BasisGrotesque-Bold-Pro.woff2") format("woff2"), url("../assets/fonts/basis/BasisGrotesque-Bold-Pro.woff") format("woff"), url("../assets/fonts/basis/BasisGrotesque-Bold-Pro.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "BasisGrotesque-Medium-Pro";
-  src: url("../assets/fonts/basis/BasisGrotesque-Medium-Pro.eot");
-  src: url("../assets/fonts/basis/BasisGrotesque-Medium-Pro.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/basis/BasisGrotesque-Medium-Pro.woff2") format("woff2"), url("../assets/fonts/basis/BasisGrotesque-Medium-Pro.woff") format("woff"), url("../assets/fonts/basis/BasisGrotesque-Medium-Pro.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "BasisGrotesque-Light-Pro";
-  src: url("../assets/fonts/basis/BasisGrotesque-Light-Pro.eot");
-  src: url("../assets/fonts/basis/BasisGrotesque-Light-Pro.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/basis/BasisGrotesque-Light-Pro.woff2") format("woff2"), url("../assets/fonts/basis/BasisGrotesque-Light-Pro.woff") format("woff"), url("../assets/fonts/basis/BasisGrotesque-Light-Pro.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "BasisGrotesque-Regular-Pro";
-  src: url("../assets/fonts/basis/BasisGrotesque-Regular-Pro.eot");
-  src: url("../assets/fonts/basis/BasisGrotesque-Regular-Pro.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/basis/BasisGrotesque-Regular-Pro.woff2") format("woff2"), url("../assets/fonts/basis/BasisGrotesque-Regular-Pro.woff") format("woff"), url("../assets/fonts/basis/BasisGrotesque-Regular-Pro.ttf") format("truetype"); }
-
 /*+------------------------------------------------------------+
  |       -BREAKPOINTS
  +------------------------------------------------------------+*/
@@ -1593,8 +1573,7 @@ ZEN:
     font-size: 1em; }
   .hg html {
     font-size: 1rem;
-    font-family: "BasisGrotesque-Regular-Pro";
-    line-height: 1.6; }
+    font-family: "BasisGrotesque-Regular-Pro"; }
     @media all and (max-width: 785px) {
       .hg html {
         overflow-x: hidden; } }
@@ -1611,11 +1590,9 @@ ZEN:
       .hg html {
         font-size: calc(1rem + 0.4vw); } }
   .hg select {
-    font-family: "BasisGrotesque-Regular-Pro";
-    line-height: 1.6; }
+    font-family: "BasisGrotesque-Regular-Pro"; }
   .hg p {
     font-family: "BasisGrotesque-Regular-Pro";
-    line-height: 1.6;
     margin: 0;
     font-size: 14px; }
     .hg p.b {
@@ -1641,8 +1618,7 @@ ZEN:
     font-size: 18px;
     line-height: 1.6; }
   .hg .fluid-h1 {
-    font-family: "BasisGrotesque-Regular-Pro";
-    line-height: 1.6; }
+    font-family: "BasisGrotesque-Regular-Pro"; }
     .hg .fluid-h1 {
       font-size: 36px; }
       @media screen and (min-width: 319px) {
@@ -1707,8 +1683,7 @@ ZEN:
         .hg .fluid-h6 {
           font-size: 18px; } }
   .hg .fluid-h7 {
-    font-family: "BasisGrotesque-Regular-Pro";
-    line-height: 1.6; }
+    font-family: "BasisGrotesque-Regular-Pro"; }
     .hg .fluid-h7 {
       font-size: 12px; }
       @media screen and (min-width: 319px) {
@@ -1722,7 +1697,6 @@ ZEN:
     font-weight: 100; }
   .hg .text-12-r {
     font-family: "BasisGrotesque-Regular-Pro";
-    line-height: 1.6;
     font-size: 12px;
     line-height: 1.5; }
   .hg .text-12-m {
@@ -1735,7 +1709,6 @@ ZEN:
     line-height: 1.5; }
   .hg .text-14-r {
     font-family: "BasisGrotesque-Regular-Pro";
-    line-height: 1.6;
     font-size: 14px;
     line-height: 1.5; }
   .hg .text-14-m {
@@ -1748,7 +1721,6 @@ ZEN:
     line-height: 1.5; }
   .hg .text-16-r {
     font-family: "BasisGrotesque-Regular-Pro";
-    line-height: 1.6;
     font-size: 16px;
     line-height: 1.5; }
   .hg .text-16-m {
@@ -1761,7 +1733,6 @@ ZEN:
     line-height: 1.5; }
   .hg .text-18-r {
     font-family: "BasisGrotesque-Regular-Pro";
-    line-height: 1.6;
     font-size: 18px;
     line-height: 1.5; }
   .hg .text-18-m {
@@ -1774,7 +1745,6 @@ ZEN:
     line-height: 1.5; }
   .hg .text-20-r {
     font-family: "BasisGrotesque-Regular-Pro";
-    line-height: 1.6;
     font-size: 20px;
     line-height: 1.5; }
   .hg .text-20-m {
@@ -1787,7 +1757,6 @@ ZEN:
     line-height: 1.5; }
   .hg .text-24-r {
     font-family: "BasisGrotesque-Regular-Pro";
-    line-height: 1.6;
     font-size: 24px;
     line-height: 1.5; }
   .hg .text-24-m {
@@ -1850,13 +1819,11 @@ ZEN:
     .hg .display5 {
       font-size: 14px;
       line-height: 1.5;
-      font-family: "BasisGrotesque-Regular-Pro";
-      line-height: 1.6; }
+      font-family: "BasisGrotesque-Regular-Pro"; }
     .hg .display6 {
       font-size: 12px;
       line-height: 1.5;
-      font-family: "BasisGrotesque-Regular-Pro";
-      line-height: 1.6; }
+      font-family: "BasisGrotesque-Regular-Pro"; }
     .hg .display7 {
       font-size: 14px;
       line-height: 1.5;
@@ -1864,13 +1831,11 @@ ZEN:
     .hg .p1 {
       font-size: 12px;
       line-height: 1.4;
-      font-family: "BasisGrotesque-Regular-Pro";
-      line-height: 1.6; }
+      font-family: "BasisGrotesque-Regular-Pro"; }
     .hg .p2 {
       font-size: 14px;
       line-height: 1.4;
-      font-family: "BasisGrotesque-Regular-Pro";
-      line-height: 1.6; }
+      font-family: "BasisGrotesque-Regular-Pro"; }
     .hg .p4 {
       font-size: 14px;
       line-height: 1.4;
@@ -1927,13 +1892,11 @@ ZEN:
     .hg .display5 {
       font-size: 14px;
       line-height: 1.5;
-      font-family: "BasisGrotesque-Regular-Pro";
-      line-height: 1.6; }
+      font-family: "BasisGrotesque-Regular-Pro"; }
     .hg .display6 {
       font-size: 12px;
       line-height: 1.5;
-      font-family: "BasisGrotesque-Regular-Pro";
-      line-height: 1.6; }
+      font-family: "BasisGrotesque-Regular-Pro"; }
     .hg .display7 {
       font-size: 14px;
       line-height: 1.5;
@@ -1941,13 +1904,11 @@ ZEN:
     .hg .p1 {
       font-size: 12px;
       line-height: 1.4;
-      font-family: "BasisGrotesque-Regular-Pro";
-      line-height: 1.6; }
+      font-family: "BasisGrotesque-Regular-Pro"; }
     .hg .p2 {
       font-size: 14px;
       line-height: 1.4;
-      font-family: "BasisGrotesque-Regular-Pro";
-      line-height: 1.6; }
+      font-family: "BasisGrotesque-Regular-Pro"; }
     .hg .p4 {
       font-size: 14px;
       line-height: 1.4;
@@ -2004,13 +1965,11 @@ ZEN:
     .hg .display5 {
       font-size: 14px;
       line-height: 1.5;
-      font-family: "BasisGrotesque-Regular-Pro";
-      line-height: 1.6; }
+      font-family: "BasisGrotesque-Regular-Pro"; }
     .hg .display6 {
       font-size: 12px;
       line-height: 1.5;
-      font-family: "BasisGrotesque-Regular-Pro";
-      line-height: 1.6; }
+      font-family: "BasisGrotesque-Regular-Pro"; }
     .hg .display7 {
       font-size: 14px;
       line-height: 1.5;
@@ -2018,13 +1977,11 @@ ZEN:
     .hg .p1 {
       font-size: 12px;
       line-height: 1.4;
-      font-family: "BasisGrotesque-Regular-Pro";
-      line-height: 1.6; }
+      font-family: "BasisGrotesque-Regular-Pro"; }
     .hg .p2 {
       font-size: 16px;
       line-height: 1.4;
-      font-family: "BasisGrotesque-Regular-Pro";
-      line-height: 1.6; }
+      font-family: "BasisGrotesque-Regular-Pro"; }
     .hg .p4 {
       font-size: 16px;
       line-height: 1.4;
@@ -2081,13 +2038,11 @@ ZEN:
     .hg .display5 {
       font-size: 14px;
       line-height: 1.5;
-      font-family: "BasisGrotesque-Regular-Pro";
-      line-height: 1.6; }
+      font-family: "BasisGrotesque-Regular-Pro"; }
     .hg .display6 {
       font-size: 12px;
       line-height: 1.5;
-      font-family: "BasisGrotesque-Regular-Pro";
-      line-height: 1.6; }
+      font-family: "BasisGrotesque-Regular-Pro"; }
     .hg .display7 {
       font-size: 14px;
       line-height: 1.5;
@@ -2095,13 +2050,11 @@ ZEN:
     .hg .p1 {
       font-size: 12px;
       line-height: 1.4;
-      font-family: "BasisGrotesque-Regular-Pro";
-      line-height: 1.6; }
+      font-family: "BasisGrotesque-Regular-Pro"; }
     .hg .p2 {
       font-size: 16px;
       line-height: 1.4;
-      font-family: "BasisGrotesque-Regular-Pro";
-      line-height: 1.6; }
+      font-family: "BasisGrotesque-Regular-Pro"; }
     .hg .p4 {
       font-size: 16px;
       line-height: 1.4;
@@ -2158,13 +2111,11 @@ ZEN:
     .hg .display5 {
       font-size: 18px;
       line-height: 1.5;
-      font-family: "BasisGrotesque-Regular-Pro";
-      line-height: 1.6; }
+      font-family: "BasisGrotesque-Regular-Pro"; }
     .hg .display6 {
       font-size: 18px;
       line-height: 1.5;
-      font-family: "BasisGrotesque-Regular-Pro";
-      line-height: 1.6; }
+      font-family: "BasisGrotesque-Regular-Pro"; }
     .hg .display7 {
       font-size: 18px;
       line-height: 1.5;
@@ -2172,13 +2123,11 @@ ZEN:
     .hg .p1 {
       font-size: 14px;
       line-height: 1.4;
-      font-family: "BasisGrotesque-Regular-Pro";
-      line-height: 1.6; }
+      font-family: "BasisGrotesque-Regular-Pro"; }
     .hg .p2 {
       font-size: 18px;
       line-height: 1.4;
-      font-family: "BasisGrotesque-Regular-Pro";
-      line-height: 1.6; }
+      font-family: "BasisGrotesque-Regular-Pro"; }
     .hg .p4 {
       font-size: 18px;
       line-height: 1.4;
@@ -2653,8 +2602,7 @@ ZEN:
       line-height: 1;
       width: 150px;
       text-align: center;
-      font-family: "BasisGrotesque-Regular-Pro";
-      line-height: 1.6; }
+      font-family: "BasisGrotesque-Regular-Pro"; }
     .hg .guide-font .guide-title {
       padding-left: 200px; }
     .hg .guide-font:last-child {
@@ -2830,8 +2778,7 @@ ZEN:
     font-size: 12px;
     text-decoration: none;
     position: relative;
-    font-family: "BasisGrotesque-Regular-Pro";
-    line-height: 1.6; }
+    font-family: "BasisGrotesque-Regular-Pro"; }
     .hg .link2:hover {
       opacity: .6; }
       .hg .link2:hover::after {
@@ -2841,7 +2788,6 @@ ZEN:
   .hg .link3,
   .hg .link3::before {
     font-family: "BasisGrotesque-Regular-Pro";
-    line-height: 1.6;
     font-size: 14px;
     text-align: center;
     display: inline-block;
@@ -2865,7 +2811,6 @@ ZEN:
     opacity: 1; }
   .hg .link4 {
     font-family: "BasisGrotesque-Regular-Pro";
-    line-height: 1.6;
     position: relative;
     display: inline-block;
     border: 0;
@@ -3222,7 +3167,6 @@ ZEN:
       .hg .text-2 .text-2-content [class*="h"] {
         flex-grow: 0.15;
         font-family: "BasisGrotesque-Regular-Pro";
-        line-height: 1.6;
         font-size: 16px;
         line-height: 1.2;
         letter-spacing: 0.5px;

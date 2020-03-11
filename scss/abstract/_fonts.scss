@@ -1,9 +1,34 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 
-$font-family-light: 'BasisGrotesque-Light-Pro';
-$font-family-regular: 'BasisGrotesque-Regular-Pro';
-$font-family-medium: 'BasisGrotesque-Medium-Pro';
-$font-family-bold: 'BasisGrotesque-Bold-Pro';
+$font-family-light: 'Open Sans';
+$font-family-regular: 'Open Sans';
+$font-family-medium: 'Open Sans';
+$font-family-bold: 'Open Sans';
+
+
+@mixin font-light() {
+  font-family: $font-family-light;
+  font-weight:300;
+}
+
+@mixin font-regular() {
+	font-family: $font-family-regular;
+	font-weight:400;
+	line-height: 1.6;
+}
+
+@mixin font-medium() {
+  font-family: $font-family-medium;
+  font-weight:600;
+}
+
+@mixin font-bold() {
+  font-family: $font-family-bold;
+  font-weight:700;
+}
+
+
 
 @font-face {
   font-family: $font-family-bold;

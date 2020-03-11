@@ -17,22 +17,6 @@
 /*+------------------------------------------------------------+
  |       -MIXINS FONTS
  +------------------------------------------------------------+*/
-@mixin font-light() {
-	font-family: $font-family-light;
-}
-
-@mixin font-regular() {
-	font-family: $font-family-regular;
-	line-height: 1.6;
-}
-
-@mixin font-medium() {
-	font-family: $font-family-medium;
-}
-
-@mixin font-bold() {
-	font-family: $font-family-bold;
-}
 
 @mixin fonters($param) {
 	@if($param=="regular") {

@@ -5,20 +5,40 @@
 **/
 
 
+$font-family-light: 'BasisGrotesque-Light-Pro';
+$font-family-regular: 'BasisGrotesque-Regular-Pro';
+$font-family-medium: 'BasisGrotesque-Medium-Pro';
+$font-family-bold: 'BasisGrotesque-Bold-Pro';
 
 @mixin font-secondary {
     font-family: "miller-display",serif !important;
   }
+  @mixin font-light() {
+	font-family: $font-family-light;
+}
+
+@mixin font-regular() {
+	font-family: $font-family-regular;
+}
+
+@mixin font-medium() {
+	font-family: $font-family-medium;
+}
+
+@mixin font-bold() {
+	font-family: $font-family-bold;
+}
+
 
 /*------------------------------------*\
     $ABSTRACT 
 \*------------------------------------*/
 //@import "abstract/reset";
 @import "abstract/settings";
-@import "abstract/fonts";
 @import "abstract/breakpoints";
 @import "abstract/mixins";
 @import "abstract/animations";
+
 
 /*------------------------------------*\
     $BASE

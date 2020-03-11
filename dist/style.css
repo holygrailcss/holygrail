@@ -13,6 +13,7 @@
 /*+------------------------------------------------------------+
  |       -RESET  
  +------------------------------------------------------------+*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
 html, body, div, span, select, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, main, menu, nav, section, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -95,22 +96,22 @@ a {
 |       -spacing  
 +------------------------------------------------------------+*/
 @font-face {
-  font-family: "BasisGrotesque-Bold-Pro";
+  font-family: "Open Sans";
   src: url("../assets/fonts/basis/BasisGrotesque-Bold-Pro.eot");
   src: url("../assets/fonts/basis/BasisGrotesque-Bold-Pro.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/basis/BasisGrotesque-Bold-Pro.woff2") format("woff2"), url("../assets/fonts/basis/BasisGrotesque-Bold-Pro.woff") format("woff"), url("../assets/fonts/basis/BasisGrotesque-Bold-Pro.ttf") format("truetype"); }
 
 @font-face {
-  font-family: "BasisGrotesque-Medium-Pro";
+  font-family: "Open Sans";
   src: url("../assets/fonts/basis/BasisGrotesque-Medium-Pro.eot");
   src: url("../assets/fonts/basis/BasisGrotesque-Medium-Pro.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/basis/BasisGrotesque-Medium-Pro.woff2") format("woff2"), url("../assets/fonts/basis/BasisGrotesque-Medium-Pro.woff") format("woff"), url("../assets/fonts/basis/BasisGrotesque-Medium-Pro.ttf") format("truetype"); }
 
 @font-face {
-  font-family: "BasisGrotesque-Light-Pro";
+  font-family: "Open Sans";
   src: url("../assets/fonts/basis/BasisGrotesque-Light-Pro.eot");
   src: url("../assets/fonts/basis/BasisGrotesque-Light-Pro.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/basis/BasisGrotesque-Light-Pro.woff2") format("woff2"), url("../assets/fonts/basis/BasisGrotesque-Light-Pro.woff") format("woff"), url("../assets/fonts/basis/BasisGrotesque-Light-Pro.ttf") format("truetype"); }
 
 @font-face {
-  font-family: "BasisGrotesque-Regular-Pro";
+  font-family: "Open Sans";
   src: url("../assets/fonts/basis/BasisGrotesque-Regular-Pro.eot");
   src: url("../assets/fonts/basis/BasisGrotesque-Regular-Pro.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/basis/BasisGrotesque-Regular-Pro.woff2") format("woff2"), url("../assets/fonts/basis/BasisGrotesque-Regular-Pro.woff") format("woff"), url("../assets/fonts/basis/BasisGrotesque-Regular-Pro.ttf") format("truetype"); }
 
@@ -1612,7 +1613,8 @@ samp {
 
 html {
   font-size: 1rem;
-  font-family: "BasisGrotesque-Regular-Pro";
+  font-family: "Open Sans";
+  font-weight: 400;
   line-height: 1.6; }
   @media all and (max-width: 785px) {
     html {
@@ -1631,19 +1633,22 @@ html {
       font-size: calc(1rem + 0.4vw); } }
 
 select {
-  font-family: "BasisGrotesque-Regular-Pro";
+  font-family: "Open Sans";
+  font-weight: 400;
   line-height: 1.6; }
 
 /*+------------------------------------------------------------+
  |       -HEADERS ELÁSTICOS        
  +------------------------------------------------------------+*/
 p {
-  font-family: "BasisGrotesque-Regular-Pro";
+  font-family: "Open Sans";
+  font-weight: 400;
   line-height: 1.6;
   margin: 0;
   font-size: 14px; }
   p.b {
-    font-family: "BasisGrotesque-Medium-Pro";
+    font-family: "Open Sans";
+    font-weight: 600;
     color: #000; }
 
 .h1 span,
@@ -1660,7 +1665,8 @@ p {
 b,
 mark {
   color: #000;
-  font-family: "BasisGrotesque-Bold-Pro"; }
+  font-family: "Open Sans";
+  font-weight: 700; }
 
 /*+------------------------------------------------------------+
  |       -LINKS        
@@ -1676,7 +1682,8 @@ mark {
  |       -FLUID TEXT   Desde min_width   hasta  break-lg  <--->  font-minima hasta font-maxima
  +-------------------------------------------------------------------------------------------+*/
 .fluid-h1 {
-  font-family: "BasisGrotesque-Regular-Pro";
+  font-family: "Open Sans";
+  font-weight: 400;
   line-height: 1.6; }
   .fluid-h1 {
     font-size: 36px; }
@@ -1689,7 +1696,8 @@ mark {
 
 .fluid-h2 {
   line-height: 1.2;
-  font-family: "BasisGrotesque-Bold-Pro"; }
+  font-family: "Open Sans";
+  font-weight: 700; }
   .fluid-h2 {
     font-size: 24px; }
     @media screen and (min-width: 319px) {
@@ -1701,7 +1709,8 @@ mark {
 
 .fluid-h3 {
   line-height: 1.2;
-  font-family: "BasisGrotesque-Light-Pro"; }
+  font-family: "Open Sans";
+  font-weight: 300; }
   .fluid-h3 {
     font-size: 18px; }
     @media screen and (min-width: 319px) {
@@ -1713,7 +1722,8 @@ mark {
 
 .fluid-h4 {
   line-height: 1.2;
-  font-family: "BasisGrotesque-Bold-Pro"; }
+  font-family: "Open Sans";
+  font-weight: 700; }
   .fluid-h4 {
     font-size: 16px; }
     @media screen and (min-width: 319px) {
@@ -1725,7 +1735,8 @@ mark {
 
 .fluid-h5 {
   line-height: 1.2;
-  font-family: "BasisGrotesque-Medium-Pro"; }
+  font-family: "Open Sans";
+  font-weight: 600; }
   .fluid-h5 {
     font-size: 14px; }
     @media screen and (min-width: 319px) {
@@ -1737,7 +1748,8 @@ mark {
 
 .fluid-h6 {
   font-size: calc(1em + 0.25vw);
-  font-family: "BasisGrotesque-Light-Pro"; }
+  font-family: "Open Sans";
+  font-weight: 300; }
   .fluid-h6 {
     font-size: 14px; }
     @media screen and (min-width: 319px) {
@@ -1748,7 +1760,8 @@ mark {
         font-size: 18px; } }
 
 .fluid-h7 {
-  font-family: "BasisGrotesque-Regular-Pro";
+  font-family: "Open Sans";
+  font-weight: 400;
   line-height: 1.6; }
   .fluid-h7 {
     font-size: 12px; }
@@ -1764,98 +1777,116 @@ mark {
   font-weight: 100; }
 
 .text-12-r {
-  font-family: "BasisGrotesque-Regular-Pro";
+  font-family: "Open Sans";
+  font-weight: 400;
   line-height: 1.6;
   font-size: 12px;
   line-height: 1.5; }
 
 .text-12-m {
-  font-family: "BasisGrotesque-Medium-Pro";
+  font-family: "Open Sans";
+  font-weight: 600;
   font-size: 12px;
   line-height: 1.5; }
 
 .text-12-b {
-  font-family: "BasisGrotesque-Bold-Pro";
+  font-family: "Open Sans";
+  font-weight: 700;
   font-size: 12px;
   line-height: 1.5; }
 
 .text-14-r {
-  font-family: "BasisGrotesque-Regular-Pro";
+  font-family: "Open Sans";
+  font-weight: 400;
   line-height: 1.6;
   font-size: 14px;
   line-height: 1.5; }
 
 .text-14-m {
-  font-family: "BasisGrotesque-Medium-Pro";
+  font-family: "Open Sans";
+  font-weight: 600;
   font-size: 14px;
   line-height: 1.5; }
 
 .text-14-b {
-  font-family: "BasisGrotesque-Bold-Pro";
+  font-family: "Open Sans";
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.5; }
 
 .text-16-r {
-  font-family: "BasisGrotesque-Regular-Pro";
+  font-family: "Open Sans";
+  font-weight: 400;
   line-height: 1.6;
   font-size: 16px;
   line-height: 1.5; }
 
 .text-16-m {
-  font-family: "BasisGrotesque-Medium-Pro";
+  font-family: "Open Sans";
+  font-weight: 600;
   font-size: 16px;
   line-height: 1.5; }
 
 .text-16-b {
-  font-family: "BasisGrotesque-Bold-Pro";
+  font-family: "Open Sans";
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.5; }
 
 .text-18-r {
-  font-family: "BasisGrotesque-Regular-Pro";
+  font-family: "Open Sans";
+  font-weight: 400;
   line-height: 1.6;
   font-size: 18px;
   line-height: 1.5; }
 
 .text-18-m {
-  font-family: "BasisGrotesque-Medium-Pro";
+  font-family: "Open Sans";
+  font-weight: 600;
   font-size: 18px;
   line-height: 1.5; }
 
 .text-18-b {
-  font-family: "BasisGrotesque-Bold-Pro";
+  font-family: "Open Sans";
+  font-weight: 700;
   font-size: 18px;
   line-height: 1.5; }
 
 .text-20-r {
-  font-family: "BasisGrotesque-Regular-Pro";
+  font-family: "Open Sans";
+  font-weight: 400;
   line-height: 1.6;
   font-size: 20px;
   line-height: 1.5; }
 
 .text-20-m {
-  font-family: "BasisGrotesque-Medium-Pro";
+  font-family: "Open Sans";
+  font-weight: 600;
   font-size: 20px;
   line-height: 1.5; }
 
 .text-20-b {
-  font-family: "BasisGrotesque-Bold-Pro";
+  font-family: "Open Sans";
+  font-weight: 700;
   font-size: 20px;
   line-height: 1.5; }
 
 .text-24-r {
-  font-family: "BasisGrotesque-Regular-Pro";
+  font-family: "Open Sans";
+  font-weight: 400;
   line-height: 1.6;
   font-size: 24px;
   line-height: 1.5; }
 
 .text-24-m {
-  font-family: "BasisGrotesque-Medium-Pro";
+  font-family: "Open Sans";
+  font-weight: 600;
   font-size: 24px;
   line-height: 1.5; }
 
 .text-24-b {
-  font-family: "BasisGrotesque-Bold-Pro";
+  font-family: "Open Sans";
+  font-weight: 700;
   font-size: 24px;
   line-height: 1.5; }
 
@@ -1864,395 +1895,485 @@ mark {
   .h1 {
     font-size: 32px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 600; }
   .h2 {
     font-size: 24px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 600; }
   .h3 {
     font-size: 18px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 600; }
   .h4, .card .title {
     font-size: 16px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 600; }
   .h5 {
     font-size: 14px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 600; }
   .h6, .card .subtitle {
     font-size: 12px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 600; }
   .h7 {
     font-size: 10px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 600; }
   .h8 {
     font-size: 8px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 600; }
   .display1 {
     font-size: 32px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Bold-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 700; }
   .display2 {
     font-size: 20px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Bold-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 700; }
   .display3 {
     font-size: 16px;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 600; }
   .display4 {
     font-size: 14px;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 600; }
   .display5 {
     font-size: 14px;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Regular-Pro";
+    font-family: "Open Sans";
+    font-weight: 400;
     line-height: 1.6; }
   .display6 {
     font-size: 12px;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Regular-Pro";
+    font-family: "Open Sans";
+    font-weight: 400;
     line-height: 1.6; }
   .display7 {
     font-size: 14px;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 600; }
   .p1 {
     font-size: 12px;
     line-height: 1.4;
-    font-family: "BasisGrotesque-Regular-Pro";
+    font-family: "Open Sans";
+    font-weight: 400;
     line-height: 1.6; }
   .p2 {
     font-size: 14px;
     line-height: 1.4;
-    font-family: "BasisGrotesque-Regular-Pro";
+    font-family: "Open Sans";
+    font-weight: 400;
     line-height: 1.6; }
   .p4 {
     font-size: 14px;
     line-height: 1.4;
-    font-family: "BasisGrotesque-Medium-Pro"; } }
+    font-family: "Open Sans";
+    font-weight: 600; } }
 
 /* map-key*/
 @media (min-width: 786px) {
   .h1 {
     font-size: 32px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 600; }
   .h2 {
     font-size: 24px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 600; }
   .h3 {
     font-size: 18px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 600; }
   .h4, .card .title {
     font-size: 16px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 600; }
   .h5 {
     font-size: 14px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 600; }
   .h6, .card .subtitle {
     font-size: 12px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 600; }
   .h7 {
     font-size: 10px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 600; }
   .h8 {
     font-size: 8px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 600; }
   .display1 {
     font-size: 32px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Bold-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 700; }
   .display2 {
     font-size: 20px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Bold-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 700; }
   .display3 {
     font-size: 16px;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 600; }
   .display4 {
     font-size: 14px;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 600; }
   .display5 {
     font-size: 14px;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Regular-Pro";
+    font-family: "Open Sans";
+    font-weight: 400;
     line-height: 1.6; }
   .display6 {
     font-size: 12px;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Regular-Pro";
+    font-family: "Open Sans";
+    font-weight: 400;
     line-height: 1.6; }
   .display7 {
     font-size: 14px;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 600; }
   .p1 {
     font-size: 12px;
     line-height: 1.4;
-    font-family: "BasisGrotesque-Regular-Pro";
+    font-family: "Open Sans";
+    font-weight: 400;
     line-height: 1.6; }
   .p2 {
     font-size: 14px;
     line-height: 1.4;
-    font-family: "BasisGrotesque-Regular-Pro";
+    font-family: "Open Sans";
+    font-weight: 400;
     line-height: 1.6; }
   .p4 {
     font-size: 14px;
     line-height: 1.4;
-    font-family: "BasisGrotesque-Medium-Pro"; } }
+    font-family: "Open Sans";
+    font-weight: 600; } }
 
 /* map-key*/
 @media (min-width: 992px) {
   .h1 {
     font-size: 32px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 600; }
   .h2 {
     font-size: 24px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 600; }
   .h3 {
     font-size: 18px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 600; }
   .h4, .card .title {
     font-size: 16px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 600; }
   .h5 {
     font-size: 14px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 600; }
   .h6, .card .subtitle {
     font-size: 12px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 600; }
   .h7 {
     font-size: 10px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 600; }
   .h8 {
     font-size: 8px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 600; }
   .display1 {
     font-size: 32px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Bold-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 700; }
   .display2 {
     font-size: 20px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Bold-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 700; }
   .display3 {
     font-size: 16px;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 600; }
   .display4 {
     font-size: 14px;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 600; }
   .display5 {
     font-size: 14px;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Regular-Pro";
+    font-family: "Open Sans";
+    font-weight: 400;
     line-height: 1.6; }
   .display6 {
     font-size: 12px;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Regular-Pro";
+    font-family: "Open Sans";
+    font-weight: 400;
     line-height: 1.6; }
   .display7 {
     font-size: 14px;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 600; }
   .p1 {
     font-size: 12px;
     line-height: 1.4;
-    font-family: "BasisGrotesque-Regular-Pro";
+    font-family: "Open Sans";
+    font-weight: 400;
     line-height: 1.6; }
   .p2 {
     font-size: 16px;
     line-height: 1.4;
-    font-family: "BasisGrotesque-Regular-Pro";
+    font-family: "Open Sans";
+    font-weight: 400;
     line-height: 1.6; }
   .p4 {
     font-size: 16px;
     line-height: 1.4;
-    font-family: "BasisGrotesque-Medium-Pro"; } }
+    font-family: "Open Sans";
+    font-weight: 600; } }
 
 /* map-key*/
 @media (min-width: 1280px) {
   .h1 {
     font-size: 32px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 600; }
   .h2 {
     font-size: 24px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 600; }
   .h3 {
     font-size: 18px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 600; }
   .h4, .card .title {
     font-size: 16px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 600; }
   .h5 {
     font-size: 14px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 600; }
   .h6, .card .subtitle {
     font-size: 12px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 600; }
   .h7 {
     font-size: 10px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 600; }
   .h8 {
     font-size: 8px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 600; }
   .display1 {
     font-size: 32px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Bold-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 700; }
   .display2 {
     font-size: 20px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Bold-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 700; }
   .display3 {
     font-size: 16px;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 600; }
   .display4 {
     font-size: 14px;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 600; }
   .display5 {
     font-size: 14px;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Regular-Pro";
+    font-family: "Open Sans";
+    font-weight: 400;
     line-height: 1.6; }
   .display6 {
     font-size: 12px;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Regular-Pro";
+    font-family: "Open Sans";
+    font-weight: 400;
     line-height: 1.6; }
   .display7 {
     font-size: 14px;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 600; }
   .p1 {
     font-size: 12px;
     line-height: 1.4;
-    font-family: "BasisGrotesque-Regular-Pro";
+    font-family: "Open Sans";
+    font-weight: 400;
     line-height: 1.6; }
   .p2 {
     font-size: 16px;
     line-height: 1.4;
-    font-family: "BasisGrotesque-Regular-Pro";
+    font-family: "Open Sans";
+    font-weight: 400;
     line-height: 1.6; }
   .p4 {
     font-size: 16px;
     line-height: 1.4;
-    font-family: "BasisGrotesque-Medium-Pro"; } }
+    font-family: "Open Sans";
+    font-weight: 600; } }
 
 /* map-key*/
 @media (min-width: 1500px) {
   .h1 {
     font-size: 40px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 600; }
   .h2 {
     font-size: 32px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 600; }
   .h3 {
     font-size: 24px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 600; }
   .h4, .card .title {
     font-size: 18px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 600; }
   .h5 {
     font-size: 16px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 600; }
   .h6, .card .subtitle {
     font-size: 14px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 600; }
   .h7 {
     font-size: 12px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 600; }
   .h8 {
     font-size: 10px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 600; }
   .display1 {
     font-size: 48px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Bold-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 700; }
   .display2 {
     font-size: 40px;
     line-height: 1.2;
-    font-family: "BasisGrotesque-Bold-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 700; }
   .display3 {
     font-size: 24px;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 600; }
   .display4 {
     font-size: 24px;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 600; }
   .display5 {
     font-size: 18px;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Regular-Pro";
+    font-family: "Open Sans";
+    font-weight: 400;
     line-height: 1.6; }
   .display6 {
     font-size: 18px;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Regular-Pro";
+    font-family: "Open Sans";
+    font-weight: 400;
     line-height: 1.6; }
   .display7 {
     font-size: 18px;
     line-height: 1.5;
-    font-family: "BasisGrotesque-Medium-Pro"; }
+    font-family: "Open Sans";
+    font-weight: 600; }
   .p1 {
     font-size: 14px;
     line-height: 1.4;
-    font-family: "BasisGrotesque-Regular-Pro";
+    font-family: "Open Sans";
+    font-weight: 400;
     line-height: 1.6; }
   .p2 {
     font-size: 18px;
     line-height: 1.4;
-    font-family: "BasisGrotesque-Regular-Pro";
+    font-family: "Open Sans";
+    font-weight: 400;
     line-height: 1.6; }
   .p4 {
     font-size: 18px;
     line-height: 1.4;
-    font-family: "BasisGrotesque-Medium-Pro"; } }
+    font-family: "Open Sans";
+    font-weight: 600; } }
 
 /*------------------------------------*\
     $ELEMENTS COMPONENTES
@@ -2802,7 +2923,8 @@ label {
     line-height: 1;
     width: 150px;
     text-align: center;
-    font-family: "BasisGrotesque-Regular-Pro";
+    font-family: "Open Sans";
+    font-weight: 400;
     line-height: 1.6; }
   .guide-font .guide-title {
     padding-left: 200px; }
@@ -2970,7 +3092,8 @@ a:hover {
 
 .link1 {
   font-size: 16px;
-  font-family: "BasisGrotesque-Bold-Pro";
+  font-family: "Open Sans";
+  font-weight: 700;
   transition: color 250ms linear;
   text-decoration: none;
   position: relative; }
@@ -3002,7 +3125,8 @@ a:hover {
   font-size: 12px;
   text-decoration: none;
   position: relative;
-  font-family: "BasisGrotesque-Regular-Pro";
+  font-family: "Open Sans";
+  font-weight: 400;
   line-height: 1.6; }
   .link2:hover {
     opacity: .6; }
@@ -3013,7 +3137,8 @@ a:hover {
 
 .link3,
 .link3::before {
-  font-family: "BasisGrotesque-Regular-Pro";
+  font-family: "Open Sans";
+  font-weight: 400;
   line-height: 1.6;
   font-size: 14px;
   text-align: center;
@@ -3032,7 +3157,8 @@ a:hover {
   padding: 0;
   content: attr(data-text);
   opacity: 0;
-  font-family: "BasisGrotesque-Medium-Pro"; }
+  font-family: "Open Sans";
+  font-weight: 600; }
 
 .link3:hover {
   opacity: 0; }
@@ -3041,7 +3167,8 @@ a:hover {
   opacity: 1; }
 
 .link4 {
-  font-family: "BasisGrotesque-Regular-Pro";
+  font-family: "Open Sans";
+  font-weight: 400;
   line-height: 1.6;
   position: relative;
   display: inline-block;
@@ -3225,7 +3352,8 @@ ul.h-size-selector a {
   justify-content: flex-start;
   margin: 0;
   font-size: 14px;
-  font-family: "BasisGrotesque-Bold-Pro"; }
+  font-family: "Open Sans";
+  font-weight: 700; }
 
 .tabs li {
   display: block;
@@ -3487,7 +3615,8 @@ ZEN:
     text-align: center; }
     .text-2 .text-2-content [class*="h"] {
       flex-grow: 0.15;
-      font-family: "BasisGrotesque-Regular-Pro";
+      font-family: "Open Sans";
+      font-weight: 400;
       line-height: 1.6;
       font-size: 16px;
       line-height: 1.2;
