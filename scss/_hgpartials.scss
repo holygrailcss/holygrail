@@ -4,38 +4,13 @@
 
 **/
 
-
-$font-family-light: 'BasisGrotesque-Light-Pro';
-$font-family-regular: 'BasisGrotesque-Regular-Pro';
-$font-family-medium: 'BasisGrotesque-Medium-Pro';
-$font-family-bold: 'BasisGrotesque-Bold-Pro';
-
-@mixin font-secondary {
-    font-family: "miller-display",serif !important;
-  }
-  @mixin font-light() {
-	font-family: $font-family-light;
-}
-
-@mixin font-regular() {
-	font-family: $font-family-regular;
-}
-
-@mixin font-medium() {
-	font-family: $font-family-medium;
-}
-
-@mixin font-bold() {
-	font-family: $font-family-bold;
-}
-
-
 /*------------------------------------*\
     $ABSTRACT 
 \*------------------------------------*/
 //@import "abstract/reset";
 @import "abstract/settings";
 @import "abstract/breakpoints";
+@import "abstract/fonts";
 @import "abstract/mixins";
 @import "abstract/animations";
 
@@ -89,6 +64,7 @@ $font-family-bold: 'BasisGrotesque-Bold-Pro';
 @import "layouts/cover4";
 @import "layouts/cover5";
 
+@import "layouts/row1";
 @import "layouts/row2";
 @import "layouts/row3";
 @import "layouts/row6";
@@ -106,6 +82,7 @@ $font-family-bold: 'BasisGrotesque-Bold-Pro';
 @import "layouts/card6";
 @import "layouts/card7";
 @import "layouts/card8";
+@import "layouts/card9";
 
 }
 

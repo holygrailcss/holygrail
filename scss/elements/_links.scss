@@ -76,16 +76,13 @@
 }
 .link3::before {
   position: absolute;
-  top: 0;
-  left: 0;
-  letter-spacing: -.28px;
   padding: 0;
   content: attr(data-text);
   opacity: 0;
   @include font-medium();
 }
-.link3:hover {
-  opacity: 0;
+.link3:hover ,.link3.hover {
+  opacity: 0.9;
 }
 .link3:hover::before {
   opacity: 1;

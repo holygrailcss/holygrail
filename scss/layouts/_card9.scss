@@ -1,0 +1,55 @@
+.card9 {
+    .card9-img {
+        position: relative;
+    }
+    .color-wrap {
+        position: relative;
+        padding: 8px 0;
+    }
+    .card9-add {
+        z-index: 1000;
+        position: absolute;
+        background: rgba(255, 255, 255, 1);
+        padding: 16px;
+        bottom: 16px;
+        left: 16px;
+        right: 16px;
+    }
+    .card9-sizes {
+        padding: 0;
+        display: inline-flex;
+        &:last-child {
+            border-right: 1px solid #E3E3E3;
+        }
+
+        button {
+            @include font-medium();
+            border: none;
+            background-color: #fff;
+            border-top: 1px solid #E3E3E3;
+            border-bottom: 1px solid #E3E3E3;
+            border-left: 1px solid #E3E3E3;
+            border-right: none;
+            padding: 10px 0;
+            min-width: 48px;
+            display: inline-block;
+            -webkit-appearance: initial;
+            &:hover {
+                background-color: #000;
+                color: #fff;
+                cursor: pointer;
+            }
+        }
+
+    }
+
+}
+
+
+.product-tag {
+    @include font-bold;
+    font-size: 14px;
+    color: #000000;
+    letter-spacing: 0;
+    line-height: 16px;
+}

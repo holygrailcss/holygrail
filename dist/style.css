@@ -95,26 +95,6 @@ a {
 /*+------------------------------------------------------------+
 |       -spacing  
 +------------------------------------------------------------+*/
-@font-face {
-  font-family: "Open Sans";
-  src: url("../assets/fonts/basis/BasisGrotesque-Bold-Pro.eot");
-  src: url("../assets/fonts/basis/BasisGrotesque-Bold-Pro.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/basis/BasisGrotesque-Bold-Pro.woff2") format("woff2"), url("../assets/fonts/basis/BasisGrotesque-Bold-Pro.woff") format("woff"), url("../assets/fonts/basis/BasisGrotesque-Bold-Pro.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "Open Sans";
-  src: url("../assets/fonts/basis/BasisGrotesque-Medium-Pro.eot");
-  src: url("../assets/fonts/basis/BasisGrotesque-Medium-Pro.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/basis/BasisGrotesque-Medium-Pro.woff2") format("woff2"), url("../assets/fonts/basis/BasisGrotesque-Medium-Pro.woff") format("woff"), url("../assets/fonts/basis/BasisGrotesque-Medium-Pro.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "Open Sans";
-  src: url("../assets/fonts/basis/BasisGrotesque-Light-Pro.eot");
-  src: url("../assets/fonts/basis/BasisGrotesque-Light-Pro.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/basis/BasisGrotesque-Light-Pro.woff2") format("woff2"), url("../assets/fonts/basis/BasisGrotesque-Light-Pro.woff") format("woff"), url("../assets/fonts/basis/BasisGrotesque-Light-Pro.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "Open Sans";
-  src: url("../assets/fonts/basis/BasisGrotesque-Regular-Pro.eot");
-  src: url("../assets/fonts/basis/BasisGrotesque-Regular-Pro.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/basis/BasisGrotesque-Regular-Pro.woff2") format("woff2"), url("../assets/fonts/basis/BasisGrotesque-Regular-Pro.woff") format("woff"), url("../assets/fonts/basis/BasisGrotesque-Regular-Pro.ttf") format("truetype"); }
-
 /*+------------------------------------------------------------+
  |       -BREAKPOINTS
  +------------------------------------------------------------+*/
@@ -139,7 +119,6 @@ a {
 /*+------------------------------------------------------------+
  |       -BLEED A SANGRE
  +------------------------------------------------------------+*/
-/*array para elementos fijos*/
 /*+------------------------------------------------------------+
  |       -ANIMATIONS    
  +------------------------------------------------------------+*/
@@ -661,13 +640,10 @@ a {
     flex-direction: row;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
-  .bleed-0 [class*="col"] {
+  .bleed-0 [class*="col-"] {
     padding: 0px;
     box-sizing: border-box; }
 
-/*+------------------------------------------------------------+
-   |       -SINGLE AND DOUBLE  
-   +------------------------------------------------------------+*/
 .single {
   flex-basis: 50%;
   max-width: 50%; }
@@ -704,13 +680,10 @@ a {
     flex-direction: row;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
-  .bleed-4 [class*="col"] {
+  .bleed-4 [class*="col-"] {
     padding: 2px;
     box-sizing: border-box; }
 
-/*+------------------------------------------------------------+
-   |       -SINGLE AND DOUBLE  
-   +------------------------------------------------------------+*/
 .single {
   flex-basis: 50%;
   max-width: 50%; }
@@ -747,13 +720,10 @@ a {
     flex-direction: row;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
-  .bleed-8 [class*="col"] {
+  .bleed-8 [class*="col-"] {
     padding: 4px;
     box-sizing: border-box; }
 
-/*+------------------------------------------------------------+
-   |       -SINGLE AND DOUBLE  
-   +------------------------------------------------------------+*/
 .single {
   flex-basis: 50%;
   max-width: 50%; }
@@ -849,7 +819,7 @@ a {
   fill: #ffffff; }
 
 /*+------------------------------------------------------------+
- |       -RATIOS        
+ |       -RATIOS    ancho x alto    
  +------------------------------------------------------------+*/
 .rat-16-9 {
   position: relative;
@@ -858,7 +828,7 @@ a {
     display: block;
     content: "";
     width: 100%;
-    padding-top: 56%; }
+    padding-top: 56.25%; }
   .rat-16-9 > .content {
     position: absolute;
     top: 0;
@@ -873,7 +843,7 @@ a {
     display: block;
     content: "";
     width: 100%;
-    padding-top: 42%; }
+    padding-top: 42.85714%; }
   .rat-21-9 > .content {
     position: absolute;
     top: 0;
@@ -888,7 +858,7 @@ a {
     display: block;
     content: "";
     width: 100%;
-    padding-top: 99%; }
+    padding-top: 100%; }
   .rat-1-1 > .content {
     position: absolute;
     top: 0;
@@ -903,7 +873,7 @@ a {
     display: block;
     content: "";
     width: 100%;
-    padding-top: 49%; }
+    padding-top: 50%; }
   .rat-2-1 > .content {
     position: absolute;
     top: 0;
@@ -918,7 +888,7 @@ a {
     display: block;
     content: "";
     width: 100%;
-    padding-top: 149%; }
+    padding-top: 133.25%; }
   .rat-2-3 > .content {
     position: absolute;
     top: 0;
@@ -933,7 +903,7 @@ a {
     display: block;
     content: "";
     width: 100%;
-    padding-top: 66%; }
+    padding-top: 66.66667%; }
   .rat-3-2 > .content {
     position: absolute;
     top: 0;
@@ -948,7 +918,7 @@ a {
     display: block;
     content: "";
     width: 100%;
-    padding-top: 133%; }
+    padding-top: 133.33333%; }
   .rat-3-4 > .content {
     position: absolute;
     top: 0;
@@ -963,7 +933,7 @@ a {
     display: block;
     content: "";
     width: 100%;
-    padding-top: 49%; }
+    padding-top: 50%; }
   .rat-4-2 > .content {
     position: absolute;
     top: 0;
@@ -978,8 +948,23 @@ a {
     display: block;
     content: "";
     width: 100%;
-    padding-top: 74%; }
+    padding-top: 75%; }
   .rat-4-3 > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+
+.rat-main {
+  position: relative;
+  overflow: hidden; }
+  .rat-main:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 133.25%; }
+  .rat-main > .content {
     position: absolute;
     top: 0;
     left: 0;
@@ -993,7 +978,6 @@ a {
   |      -MIXINS SPACE  
   +------------------------------------------------------------+*/
 /* margin*/
-/* map-key*/
 @media (min-width: 1px) {
   .m-20 {
     margin: 10px; }
@@ -1002,7 +986,6 @@ a {
   .m-50 {
     margin: 20px; } }
 
-/* map-key*/
 @media (min-width: 786px) {
   .m-20 {
     margin: 20px; }
@@ -1011,7 +994,6 @@ a {
   .m-50 {
     margin: 50px; } }
 
-/* map-key*/
 @media (min-width: 992px) {
   .m-20 {
     margin: 20px; }
@@ -1020,7 +1002,6 @@ a {
   .m-50 {
     margin: 50px; } }
 
-/* map-key*/
 @media (min-width: 1280px) {
   .m-20 {
     margin: 20px; }
@@ -1029,7 +1010,6 @@ a {
   .m-50 {
     margin: 50px; } }
 
-/* map-key*/
 @media (min-width: 1px) {
   .my-10 {
     margin: 10px 0; }
@@ -1040,7 +1020,6 @@ a {
   .my-50 {
     margin: 20px 0; } }
 
-/* map-key*/
 @media (min-width: 786px) {
   .my-10 {
     margin: 10px 0; }
@@ -1051,7 +1030,6 @@ a {
   .my-50 {
     margin: 50px 0; } }
 
-/* map-key*/
 @media (min-width: 992px) {
   .my-10 {
     margin: 10px 0; }
@@ -1062,7 +1040,6 @@ a {
   .my-50 {
     margin: 50px 0; } }
 
-/* map-key*/
 @media (min-width: 1280px) {
   .my-10 {
     margin: 10px 0; }
@@ -1073,7 +1050,6 @@ a {
   .my-50 {
     margin: 50px 0; } }
 
-/* map-key*/
 @media (min-width: 1px) {
   .mx-10 {
     margin: 0 10px; }
@@ -1084,7 +1060,6 @@ a {
   .mx-50 {
     margin: 0 20px; } }
 
-/* map-key*/
 @media (min-width: 786px) {
   .mx-10 {
     margin: 0 10px; }
@@ -1095,7 +1070,6 @@ a {
   .mx-50 {
     margin: 0 50px; } }
 
-/* map-key*/
 @media (min-width: 992px) {
   .mx-10 {
     margin: 0 10px; }
@@ -1106,7 +1080,6 @@ a {
   .mx-50 {
     margin: 0 50px; } }
 
-/* map-key*/
 @media (min-width: 1280px) {
   .mx-10 {
     margin: 0 10px; }
@@ -1117,7 +1090,6 @@ a {
   .mx-50 {
     margin: 0 50px; } }
 
-/* map-key*/
 @media (min-width: 1px) {
   .mt-10 {
     margin-top: 10px; }
@@ -1128,7 +1100,6 @@ a {
   .mt-50 {
     margin-top: 20px; } }
 
-/* map-key*/
 @media (min-width: 786px) {
   .mt-10 {
     margin-top: 10px; }
@@ -1139,7 +1110,6 @@ a {
   .mt-50 {
     margin-top: 50px; } }
 
-/* map-key*/
 @media (min-width: 992px) {
   .mt-10 {
     margin-top: 10px; }
@@ -1150,7 +1120,6 @@ a {
   .mt-50 {
     margin-top: 50px; } }
 
-/* map-key*/
 @media (min-width: 1280px) {
   .mt-10 {
     margin-top: 10px; }
@@ -1161,7 +1130,6 @@ a {
   .mt-50 {
     margin-top: 50px; } }
 
-/* map-key*/
 @media (min-width: 1px) {
   .mr-10 {
     margin-right: 10px; }
@@ -1172,7 +1140,6 @@ a {
   .mr-50 {
     margin-right: 20px; } }
 
-/* map-key*/
 @media (min-width: 786px) {
   .mr-10 {
     margin-right: 10px; }
@@ -1183,7 +1150,6 @@ a {
   .mr-50 {
     margin-right: 50px; } }
 
-/* map-key*/
 @media (min-width: 992px) {
   .mr-10 {
     margin-right: 10px; }
@@ -1194,7 +1160,6 @@ a {
   .mr-50 {
     margin-right: 50px; } }
 
-/* map-key*/
 @media (min-width: 1280px) {
   .mr-10 {
     margin-right: 10px; }
@@ -1205,7 +1170,6 @@ a {
   .mr-50 {
     margin-right: 50px; } }
 
-/* map-key*/
 @media (min-width: 1px) {
   .mb-10 {
     margin-bottom: 10px; }
@@ -1216,7 +1180,6 @@ a {
   .mb-50 {
     margin-bottom: 20px; } }
 
-/* map-key*/
 @media (min-width: 786px) {
   .mb-10 {
     margin-bottom: 10px; }
@@ -1227,7 +1190,6 @@ a {
   .mb-50 {
     margin-bottom: 50px; } }
 
-/* map-key*/
 @media (min-width: 992px) {
   .mb-10 {
     margin-bottom: 10px; }
@@ -1238,7 +1200,6 @@ a {
   .mb-50 {
     margin-bottom: 50px; } }
 
-/* map-key*/
 @media (min-width: 1280px) {
   .mb-10 {
     margin-bottom: 10px; }
@@ -1249,7 +1210,6 @@ a {
   .mb-50 {
     margin-bottom: 50px; } }
 
-/* map-key*/
 @media (min-width: 1px) {
   .ml-10 {
     margin-left: 10px; }
@@ -1260,7 +1220,6 @@ a {
   .ml-50 {
     margin-left: 20px; } }
 
-/* map-key*/
 @media (min-width: 786px) {
   .ml-10 {
     margin-left: 10px; }
@@ -1271,7 +1230,6 @@ a {
   .ml-50 {
     margin-left: 50px; } }
 
-/* map-key*/
 @media (min-width: 992px) {
   .ml-10 {
     margin-left: 10px; }
@@ -1282,7 +1240,6 @@ a {
   .ml-50 {
     margin-left: 50px; } }
 
-/* map-key*/
 @media (min-width: 1280px) {
   .ml-10 {
     margin-left: 10px; }
@@ -1294,7 +1251,6 @@ a {
     margin-left: 50px; } }
 
 /* padding*/
-/* map-key*/
 @media (min-width: 1px) {
   .p-10 {
     padding: 10px; }
@@ -1305,7 +1261,6 @@ a {
   .p-50 {
     padding: 20px; } }
 
-/* map-key*/
 @media (min-width: 786px) {
   .p-10 {
     padding: 10px; }
@@ -1316,7 +1271,6 @@ a {
   .p-50 {
     padding: 50px; } }
 
-/* map-key*/
 @media (min-width: 992px) {
   .p-10 {
     padding: 10px; }
@@ -1327,7 +1281,6 @@ a {
   .p-50 {
     padding: 50px; } }
 
-/* map-key*/
 @media (min-width: 1280px) {
   .p-10 {
     padding: 10px; }
@@ -1338,7 +1291,6 @@ a {
   .p-50 {
     padding: 50px; } }
 
-/* map-key*/
 @media (min-width: 1px) {
   .py-20 {
     padding: 10px 0; }
@@ -1349,7 +1301,6 @@ a {
   .py-60 {
     padding: 24px 16px; } }
 
-/* map-key*/
 @media (min-width: 786px) {
   .py-20 {
     padding: 20px 0; }
@@ -1360,7 +1311,6 @@ a {
   .py-60 {
     padding: 24px 16px; } }
 
-/* map-key*/
 @media (min-width: 992px) {
   .py-20 {
     padding: 20px 0; }
@@ -1371,7 +1321,6 @@ a {
   .py-60 {
     padding: 24px 16px; } }
 
-/* map-key*/
 @media (min-width: 1280px) {
   .py-20 {
     padding: 20px 0; }
@@ -1382,7 +1331,6 @@ a {
   .py-60 {
     padding: 60px 60px; } }
 
-/* map-key*/
 @media (min-width: 1px) {
   .px-20 {
     padding: 0 10px; }
@@ -1391,7 +1339,6 @@ a {
   .px-50 {
     padding: 0 20px; } }
 
-/* map-key*/
 @media (min-width: 786px) {
   .px-20 {
     padding: 0 20px; }
@@ -1400,7 +1347,6 @@ a {
   .px-50 {
     padding: 0 30px; } }
 
-/* map-key*/
 @media (min-width: 992px) {
   .px-20 {
     padding: 0 20px; }
@@ -1409,7 +1355,6 @@ a {
   .px-50 {
     padding: 0 40px; } }
 
-/* map-key*/
 @media (min-width: 1280px) {
   .px-20 {
     padding: 0 20px; }
@@ -1418,7 +1363,6 @@ a {
   .px-50 {
     padding: 0 50px; } }
 
-/* map-key*/
 @media (min-width: 1px) {
   .pt-10 {
     padding-top: 10px; }
@@ -1429,7 +1373,6 @@ a {
   .pt-50 {
     padding-top: 20px; } }
 
-/* map-key*/
 @media (min-width: 786px) {
   .pt-10 {
     padding-top: 10px; }
@@ -1440,7 +1383,6 @@ a {
   .pt-50 {
     padding-top: 50px; } }
 
-/* map-key*/
 @media (min-width: 992px) {
   .pt-10 {
     padding-top: 10px; }
@@ -1451,7 +1393,6 @@ a {
   .pt-50 {
     padding-top: 50px; } }
 
-/* map-key*/
 @media (min-width: 1280px) {
   .pt-10 {
     padding-top: 10px; }
@@ -1462,7 +1403,6 @@ a {
   .pt-50 {
     padding-top: 50px; } }
 
-/* map-key*/
 @media (min-width: 1px) {
   .pl-10 {
     padding-left: 10px; }
@@ -1473,7 +1413,6 @@ a {
   .pl-50 {
     padding-left: 20px; } }
 
-/* map-key*/
 @media (min-width: 786px) {
   .pl-10 {
     padding-left: 10px; }
@@ -1484,7 +1423,6 @@ a {
   .pl-50 {
     padding-left: 50px; } }
 
-/* map-key*/
 @media (min-width: 992px) {
   .pl-10 {
     padding-left: 10px; }
@@ -1495,7 +1433,6 @@ a {
   .pl-50 {
     padding-left: 50px; } }
 
-/* map-key*/
 @media (min-width: 1280px) {
   .pl-10 {
     padding-left: 10px; }
@@ -1506,7 +1443,6 @@ a {
   .pl-50 {
     padding-left: 50px; } }
 
-/* map-key*/
 @media (min-width: 1px) {
   .pb-10 {
     padding-bottom: 10px; }
@@ -1517,7 +1453,6 @@ a {
   .pb-50 {
     padding-bottom: 20px; } }
 
-/* map-key*/
 @media (min-width: 786px) {
   .pb-10 {
     padding-bottom: 10px; }
@@ -1528,7 +1463,6 @@ a {
   .pb-50 {
     padding-bottom: 50px; } }
 
-/* map-key*/
 @media (min-width: 992px) {
   .pb-10 {
     padding-bottom: 10px; }
@@ -1539,7 +1473,6 @@ a {
   .pb-50 {
     padding-bottom: 50px; } }
 
-/* map-key*/
 @media (min-width: 1280px) {
   .pb-10 {
     padding-bottom: 10px; }
@@ -1550,7 +1483,6 @@ a {
   .pb-50 {
     padding-bottom: 50px; } }
 
-/* map-key*/
 @media (min-width: 1px) {
   .pr-10 {
     padding-right: 10px; }
@@ -1561,7 +1493,6 @@ a {
   .pr-50 {
     padding-right: 20px; } }
 
-/* map-key*/
 @media (min-width: 786px) {
   .pr-10 {
     padding-right: 10px; }
@@ -1572,7 +1503,6 @@ a {
   .pr-50 {
     padding-right: 50px; } }
 
-/* map-key*/
 @media (min-width: 992px) {
   .pr-10 {
     padding-right: 10px; }
@@ -1583,7 +1513,6 @@ a {
   .pr-50 {
     padding-right: 50px; } }
 
-/* map-key*/
 @media (min-width: 1280px) {
   .pr-10 {
     padding-right: 10px; }
@@ -1614,8 +1543,7 @@ samp {
 html {
   font-size: 1rem;
   font-family: "Open Sans";
-  font-weight: 400;
-  line-height: 1.6; }
+  font-weight: 400; }
   @media all and (max-width: 785px) {
     html {
       overflow-x: hidden; } }
@@ -1634,8 +1562,7 @@ html {
 
 select {
   font-family: "Open Sans";
-  font-weight: 400;
-  line-height: 1.6; }
+  font-weight: 400; }
 
 /*+------------------------------------------------------------+
  |       -HEADERS ELÁSTICOS        
@@ -1643,7 +1570,6 @@ select {
 p {
   font-family: "Open Sans";
   font-weight: 400;
-  line-height: 1.6;
   margin: 0;
   font-size: 14px; }
   p.b {
@@ -1683,8 +1609,7 @@ mark {
  +-------------------------------------------------------------------------------------------+*/
 .fluid-h1 {
   font-family: "Open Sans";
-  font-weight: 400;
-  line-height: 1.6; }
+  font-weight: 400; }
   .fluid-h1 {
     font-size: 36px; }
     @media screen and (min-width: 319px) {
@@ -1761,8 +1686,7 @@ mark {
 
 .fluid-h7 {
   font-family: "Open Sans";
-  font-weight: 400;
-  line-height: 1.6; }
+  font-weight: 400; }
   .fluid-h7 {
     font-size: 12px; }
     @media screen and (min-width: 319px) {
@@ -1779,7 +1703,6 @@ mark {
 .text-12-r {
   font-family: "Open Sans";
   font-weight: 400;
-  line-height: 1.6;
   font-size: 12px;
   line-height: 1.5; }
 
@@ -1798,7 +1721,6 @@ mark {
 .text-14-r {
   font-family: "Open Sans";
   font-weight: 400;
-  line-height: 1.6;
   font-size: 14px;
   line-height: 1.5; }
 
@@ -1817,7 +1739,6 @@ mark {
 .text-16-r {
   font-family: "Open Sans";
   font-weight: 400;
-  line-height: 1.6;
   font-size: 16px;
   line-height: 1.5; }
 
@@ -1836,7 +1757,6 @@ mark {
 .text-18-r {
   font-family: "Open Sans";
   font-weight: 400;
-  line-height: 1.6;
   font-size: 18px;
   line-height: 1.5; }
 
@@ -1855,7 +1775,6 @@ mark {
 .text-20-r {
   font-family: "Open Sans";
   font-weight: 400;
-  line-height: 1.6;
   font-size: 20px;
   line-height: 1.5; }
 
@@ -1874,7 +1793,6 @@ mark {
 .text-24-r {
   font-family: "Open Sans";
   font-weight: 400;
-  line-height: 1.6;
   font-size: 24px;
   line-height: 1.5; }
 
@@ -1890,7 +1808,6 @@ mark {
   font-size: 24px;
   line-height: 1.5; }
 
-/* map-key*/
 @media (min-width: 1px) {
   .h1 {
     font-size: 32px;
@@ -1956,14 +1873,12 @@ mark {
     font-size: 14px;
     line-height: 1.5;
     font-family: "Open Sans";
-    font-weight: 400;
-    line-height: 1.6; }
+    font-weight: 400; }
   .display6 {
     font-size: 12px;
     line-height: 1.5;
     font-family: "Open Sans";
-    font-weight: 400;
-    line-height: 1.6; }
+    font-weight: 400; }
   .display7 {
     font-size: 14px;
     line-height: 1.5;
@@ -1973,21 +1888,18 @@ mark {
     font-size: 12px;
     line-height: 1.4;
     font-family: "Open Sans";
-    font-weight: 400;
-    line-height: 1.6; }
+    font-weight: 400; }
   .p2 {
     font-size: 14px;
     line-height: 1.4;
     font-family: "Open Sans";
-    font-weight: 400;
-    line-height: 1.6; }
+    font-weight: 400; }
   .p4 {
     font-size: 14px;
     line-height: 1.4;
     font-family: "Open Sans";
     font-weight: 600; } }
 
-/* map-key*/
 @media (min-width: 786px) {
   .h1 {
     font-size: 32px;
@@ -2053,14 +1965,12 @@ mark {
     font-size: 14px;
     line-height: 1.5;
     font-family: "Open Sans";
-    font-weight: 400;
-    line-height: 1.6; }
+    font-weight: 400; }
   .display6 {
     font-size: 12px;
     line-height: 1.5;
     font-family: "Open Sans";
-    font-weight: 400;
-    line-height: 1.6; }
+    font-weight: 400; }
   .display7 {
     font-size: 14px;
     line-height: 1.5;
@@ -2070,21 +1980,18 @@ mark {
     font-size: 12px;
     line-height: 1.4;
     font-family: "Open Sans";
-    font-weight: 400;
-    line-height: 1.6; }
+    font-weight: 400; }
   .p2 {
     font-size: 14px;
     line-height: 1.4;
     font-family: "Open Sans";
-    font-weight: 400;
-    line-height: 1.6; }
+    font-weight: 400; }
   .p4 {
     font-size: 14px;
     line-height: 1.4;
     font-family: "Open Sans";
     font-weight: 600; } }
 
-/* map-key*/
 @media (min-width: 992px) {
   .h1 {
     font-size: 32px;
@@ -2150,14 +2057,12 @@ mark {
     font-size: 14px;
     line-height: 1.5;
     font-family: "Open Sans";
-    font-weight: 400;
-    line-height: 1.6; }
+    font-weight: 400; }
   .display6 {
     font-size: 12px;
     line-height: 1.5;
     font-family: "Open Sans";
-    font-weight: 400;
-    line-height: 1.6; }
+    font-weight: 400; }
   .display7 {
     font-size: 14px;
     line-height: 1.5;
@@ -2167,21 +2072,18 @@ mark {
     font-size: 12px;
     line-height: 1.4;
     font-family: "Open Sans";
-    font-weight: 400;
-    line-height: 1.6; }
+    font-weight: 400; }
   .p2 {
     font-size: 16px;
     line-height: 1.4;
     font-family: "Open Sans";
-    font-weight: 400;
-    line-height: 1.6; }
+    font-weight: 400; }
   .p4 {
     font-size: 16px;
     line-height: 1.4;
     font-family: "Open Sans";
     font-weight: 600; } }
 
-/* map-key*/
 @media (min-width: 1280px) {
   .h1 {
     font-size: 32px;
@@ -2247,14 +2149,12 @@ mark {
     font-size: 14px;
     line-height: 1.5;
     font-family: "Open Sans";
-    font-weight: 400;
-    line-height: 1.6; }
+    font-weight: 400; }
   .display6 {
     font-size: 12px;
     line-height: 1.5;
     font-family: "Open Sans";
-    font-weight: 400;
-    line-height: 1.6; }
+    font-weight: 400; }
   .display7 {
     font-size: 14px;
     line-height: 1.5;
@@ -2264,21 +2164,18 @@ mark {
     font-size: 12px;
     line-height: 1.4;
     font-family: "Open Sans";
-    font-weight: 400;
-    line-height: 1.6; }
+    font-weight: 400; }
   .p2 {
     font-size: 16px;
     line-height: 1.4;
     font-family: "Open Sans";
-    font-weight: 400;
-    line-height: 1.6; }
+    font-weight: 400; }
   .p4 {
     font-size: 16px;
     line-height: 1.4;
     font-family: "Open Sans";
     font-weight: 600; } }
 
-/* map-key*/
 @media (min-width: 1500px) {
   .h1 {
     font-size: 40px;
@@ -2344,14 +2241,12 @@ mark {
     font-size: 18px;
     line-height: 1.5;
     font-family: "Open Sans";
-    font-weight: 400;
-    line-height: 1.6; }
+    font-weight: 400; }
   .display6 {
     font-size: 18px;
     line-height: 1.5;
     font-family: "Open Sans";
-    font-weight: 400;
-    line-height: 1.6; }
+    font-weight: 400; }
   .display7 {
     font-size: 18px;
     line-height: 1.5;
@@ -2361,14 +2256,12 @@ mark {
     font-size: 14px;
     line-height: 1.4;
     font-family: "Open Sans";
-    font-weight: 400;
-    line-height: 1.6; }
+    font-weight: 400; }
   .p2 {
     font-size: 18px;
     line-height: 1.4;
     font-family: "Open Sans";
-    font-weight: 400;
-    line-height: 1.6; }
+    font-weight: 400; }
   .p4 {
     font-size: 18px;
     line-height: 1.4;
@@ -2649,6 +2542,9 @@ hr {
     min-width: 200px;
     margin: 0 5px; }
 
+.btn-group-container {
+  display: flex; }
+
 .checkbox-item {
   display: inline-block;
   text-align: center;
@@ -2924,8 +2820,7 @@ label {
     width: 150px;
     text-align: center;
     font-family: "Open Sans";
-    font-weight: 400;
-    line-height: 1.6; }
+    font-weight: 400; }
   .guide-font .guide-title {
     padding-left: 200px; }
   .guide-font:last-child {
@@ -3126,8 +3021,7 @@ a:hover {
   text-decoration: none;
   position: relative;
   font-family: "Open Sans";
-  font-weight: 400;
-  line-height: 1.6; }
+  font-weight: 400; }
   .link2:hover {
     opacity: .6; }
     .link2:hover::after {
@@ -3139,7 +3033,6 @@ a:hover {
 .link3::before {
   font-family: "Open Sans";
   font-weight: 400;
-  line-height: 1.6;
   font-size: 14px;
   text-align: center;
   display: inline-block;
@@ -3151,17 +3044,14 @@ a:hover {
 
 .link3::before {
   position: absolute;
-  top: 0;
-  left: 0;
-  letter-spacing: -.28px;
   padding: 0;
   content: attr(data-text);
   opacity: 0;
   font-family: "Open Sans";
   font-weight: 600; }
 
-.link3:hover {
-  opacity: 0; }
+.link3:hover, .link3.hover {
+  opacity: 0.9; }
 
 .link3:hover::before {
   opacity: 1; }
@@ -3169,7 +3059,6 @@ a:hover {
 .link4 {
   font-family: "Open Sans";
   font-weight: 400;
-  line-height: 1.6;
   position: relative;
   display: inline-block;
   border: 0;
@@ -3617,7 +3506,6 @@ ZEN:
       flex-grow: 0.15;
       font-family: "Open Sans";
       font-weight: 400;
-      line-height: 1.6;
       font-size: 16px;
       line-height: 1.2;
       letter-spacing: 0.5px;
