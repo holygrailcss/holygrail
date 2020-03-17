@@ -1,6 +1,6 @@
 {
     "name": "holygrailcss",
-    "version": "1.2.5",
+    "version": "1.2.6",
     "description": "Css and Scss framework webmaker",
     "main": "index.js",
     "directories": {
