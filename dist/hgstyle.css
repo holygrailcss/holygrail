@@ -92,7 +92,6 @@
  |       -FLUID TEXT 
  +------------------------------------------------------------+*/
 /*+------------------------------------------------------------+
-/*+------------------------------------------------------------+
  |       -RATIO 
  +------------------------------------------------------------+*/
 /*+------------------------------------------------------------+
@@ -2393,18 +2392,23 @@ ZEN:
     background-color: transparent;
     border: 1px solid white; }
   .hg .btn-group {
-    position: relative; }
+    position: relative;
+    display: flex; }
+    .hg .btn-group > :not(:first-child):not(:last-child) {
+      border-radius: 0;
+      margin-left: -1px; }
     .hg .btn-group [class^="btn--"],
     .hg .btn-group [class*=" btn--"] {
       position: relative;
       border-radius: 0;
       float: left;
-      margin-left: -1px; }
+      margin-right: 0; }
       .hg .btn-group [class^="btn--"]:first-child,
       .hg .btn-group [class*=" btn--"]:first-child {
         margin-left: 0; }
       .hg .btn-group [class^="btn--"]:last-child,
       .hg .btn-group [class*=" btn--"]:last-child {
+        margin-left: -1px;
         outline: none; }
   .hg .btn-group-inline {
     text-align: center;

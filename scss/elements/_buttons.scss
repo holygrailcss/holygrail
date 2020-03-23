@@ -4,7 +4,6 @@
 /*
  * Definimos los botones y sus variantes
  */
- 
 /**
  * .btn es la clase principal para definir un botón  es el tipo
  */
@@ -24,8 +23,6 @@
     padding: $padding-global * 2;
     background-color: #fff;
     border: 1px solid #ccc;
-
-
     /**
  	* Nadie quiere un botón con texto subrayado cuando hacemos hover.
  	*/
@@ -33,15 +30,14 @@
         text-decoration: none;
         opacity: .6;
     }
-
     &:active,
     &:focus {
         outline: none;
     }
-
-    &:visited {outline: none;}
+    &:visited {
+        outline: none;
+    }
 }
-
 /*+------------------------------------------------------------+
  |       -TAMAÑOS    
  +------------------------------------------------------------+*/
@@ -51,36 +47,28 @@ $btn-text-medium:14px;
 $btn-text-large:14px;
 $btn-text-xlarge:16px;
 $btn-text-full:16px;
-
 .btn--mini {
     padding-right: $padding-global * 3;
     padding-left: $padding-global * 3;
     font-size: $btn-text-mini;
 }
-
 .btn--small {
     padding-right: $padding-global * 5;
     padding-left: $padding-global * 5;
     font-size: $btn-text-small;
 }
-
 .btn--medium {
     padding-right: $padding-global * 2;
     padding-left: $padding-global * 2;
     font-size: $btn-text-medium;
-
 }
-
 .btn--large {
-
     min-width: 288px;
     max-width: 400px;
     padding-right: $padding-global * 7;
     padding-left: $padding-global * 7;
     font-size: $btn-text-large;
-
 }
-
 .btn--xlarge {
     padding-right: $padding-global * 8;
     padding-left: $padding-global * 8;
@@ -96,17 +84,13 @@ $btn-text-full:16px;
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-    
 }
-
 .btn--full {
     width: 100%;
     padding-right: $padding-global * 8;
     padding-left: $padding-global * 8;
     font-size: $btn-text-full;
-
 }
-
 /*+------------------------------------------------------------+
  |       -MODIFICADORES DE TAMAÑO    
  +------------------------------------------------------------+*/
@@ -122,7 +106,6 @@ $btn-text-full:16px;
     white-space: nowrap;
     cursor: pointer;
     padding: $padding-btn / 2;
-
     /**
  	* Nadie quiere un botón con texto subrayado cuando
  	* hacemos hover.
@@ -131,20 +114,18 @@ $btn-text-full:16px;
         text-decoration: none;
         opacity: .6;
     }
-
     &:active,
     &:focus {
         outline: none;
     }
-
-    &:visited {  outline: none;}
+    &:visited {
+        outline: none;
+    }
 }
-
 .btn-block {
     display: block;
     width: 100%;
 }
-
 .link-btn {
     height: 42px;
     width: 100%;
@@ -159,7 +140,6 @@ $btn-text-full:16px;
     color: #fff;
     transition: all 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
-
 /*+------------------------------------------------------------+
  |       -TIPOS DE BOTONES    
  +------------------------------------------------------------+*/
@@ -171,27 +151,23 @@ $btn-text-full:16px;
     color: #fff;
     background-color: $primary;
     border: 1px solid $primary;
-    &:hover{
+    &:hover {
         opacity: .7;
         color: #fff;
         background-color: $primary;
         border: 1px solid $primary;
-
     }
 }
-
 .btn-phantom {
     color: black;
     background-color: transparent;
     border: 1px solid black;
 }
-
 .btn-phantom-invert {
     color: white;
     background-color: transparent;
     border: 1px solid white;
 }
-
 /*+------------------------------------------------------------+
  |       -GRUPOS DE BOTONES    
  +------------------------------------------------------------+*/
@@ -202,27 +178,30 @@ $btn-text-full:16px;
  */
 .btn-group {
     position: relative;
-
+    display: flex;
+    &>:not(:first-child):not(:last-child) {
+        border-radius: 0;
+        margin-left: -1px;
+    }
     [class^="btn--"],
     [class*=" btn--"] {
         position: relative;
         border-radius: 0;
         float: left;
-        margin-left: -1px;
-
+        margin-right: 0;
         &:first-child {
             margin-left: 0;
         }
-
-        &:last-child {outline:none;}
+        &:last-child {
+            margin-left: -1px;
+            outline: none;
+        }
     }
 }
-
 .btn-group-inline {
     text-align: center;
     max-width: 480px;
     margin: 0 auto;
-
     .btn {
         display: inline-block;
         width: auto;
@@ -230,9 +209,6 @@ $btn-text-full:16px;
         margin: 0 5px;
     }
 }
-
 .btn-group-container {
     display: flex;
-    
-
-  }
+}
