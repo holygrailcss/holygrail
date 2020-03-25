@@ -115,7 +115,7 @@
 		padding-top: ($height / $width) * 100% ;
 	}
 
-	>.content {
+	 .content {
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -184,25 +184,25 @@
 
 
 @mixin types($breakpoints, $headers, $cssattr) {
-	@for $i from 1 through length($breakpoints) {
-
-		@media (min-width: nth(map-values($breakpoints), $i)) {
-
-			@each $name,
-			$fsize in $headers {
-				$fontsize: nth($fsize, $i);
-				$fontheight: nth($fsize, 6);
-				$fontweight: nth($fsize, 7);
-
-				.#{$name} {
-					#{$cssattr }: $fontsize;
-					line-height: $fontheight;
-					@include fonters($fontweight);
-				}
-			}
-		}
-	}
+    @for $i from 1 through length($breakpoints) {
+        @media (min-width: nth(map-values($breakpoints), $i)) {
+            @each $name,
+            $fsize in $headers {
+                $fontsize: nth($fsize, $i);
+                $fontheight: nth($fsize, 6);
+                $fontweight: nth($fsize, 7);
+                .#{$name} {
+                    @if(nth(map-values($breakpoints), $i)==1px) {
+                        @include fonters($fontweight);
+                    }
+                    #{$cssattr }: $fontsize;
+                    line-height: $fontheight;
+                }
+            }
+        }
+    }
 }
+
 
 @mixin typesFixers($headersFixers, $cssattr) {
 	@for $i from 1 through 1 {

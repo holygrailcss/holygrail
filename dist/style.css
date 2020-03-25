@@ -1525,12 +1525,8 @@ a {
 /*+------------------------------------------------------------+
  |       -HTML REMS        
  +------------------------------------------------------------+*/
-body,
-button,
-input,
-select,
-textarea {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+body {
+  font-family: "Open Sans"; }
 
 pre,
 code,
@@ -1809,463 +1805,319 @@ mark {
 
 @media (min-width: 1px) {
   .h1 {
-    font-size: 32px;
-    line-height: 1.2;
     font-family: "Open Sans";
-    font-weight: 600; }
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.2; }
   .h2 {
+    font-family: "Open Sans";
+    font-weight: 600;
     font-size: 24px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h3 {
+    font-family: "Open Sans";
+    font-weight: 600;
     font-size: 18px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h4, .card .title {
-    font-size: 16px;
-    line-height: 1.2;
     font-family: "Open Sans";
-    font-weight: 600; }
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.2; }
   .h5 {
-    font-size: 14px;
-    line-height: 1.2;
     font-family: "Open Sans";
-    font-weight: 600; }
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.2; }
   .h6, .card .subtitle {
-    font-size: 12px;
-    line-height: 1.2;
     font-family: "Open Sans";
-    font-weight: 600; }
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.2; }
   .h7 {
+    font-family: "Open Sans";
+    font-weight: 600;
     font-size: 10px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h8 {
+    font-family: "Open Sans";
+    font-weight: 600;
     font-size: 8px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .display1 {
+    font-family: "Open Sans";
+    font-weight: 700;
     font-size: 32px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 700; }
+    line-height: 1.2; }
   .display2 {
+    font-family: "Open Sans";
+    font-weight: 700;
     font-size: 20px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 700; }
+    line-height: 1.2; }
   .display3 {
+    font-family: "Open Sans";
+    font-weight: 600;
     font-size: 16px;
-    line-height: 1.5;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.5; }
   .display4 {
-    font-size: 14px;
-    line-height: 1.5;
     font-family: "Open Sans";
-    font-weight: 600; }
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.5; }
   .display5 {
-    font-size: 14px;
-    line-height: 1.5;
     font-family: "Open Sans";
-    font-weight: 400; }
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5; }
   .display6 {
-    font-size: 12px;
-    line-height: 1.5;
     font-family: "Open Sans";
-    font-weight: 400; }
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5; }
   .display7 {
-    font-size: 14px;
-    line-height: 1.5;
     font-family: "Open Sans";
-    font-weight: 600; }
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.5; }
   .p1 {
+    font-family: "Open Sans";
+    font-weight: 400;
     font-size: 12px;
-    line-height: 1.4;
-    font-family: "Open Sans";
-    font-weight: 400; }
+    line-height: 1.4; }
   .p2 {
-    font-size: 14px;
-    line-height: 1.4;
     font-family: "Open Sans";
-    font-weight: 400; }
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4; }
   .p4 {
-    font-size: 14px;
-    line-height: 1.4;
     font-family: "Open Sans";
-    font-weight: 600; } }
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.4; } }
 
 @media (min-width: 786px) {
   .h1 {
     font-size: 32px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h2 {
     font-size: 24px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h3 {
     font-size: 18px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h4, .card .title {
     font-size: 16px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h5 {
     font-size: 14px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h6, .card .subtitle {
     font-size: 12px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h7 {
     font-size: 10px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h8 {
     font-size: 8px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .display1 {
     font-size: 32px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 700; }
+    line-height: 1.2; }
   .display2 {
     font-size: 20px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 700; }
+    line-height: 1.2; }
   .display3 {
     font-size: 16px;
-    line-height: 1.5;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.5; }
   .display4 {
     font-size: 14px;
-    line-height: 1.5;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.5; }
   .display5 {
     font-size: 14px;
-    line-height: 1.5;
-    font-family: "Open Sans";
-    font-weight: 400; }
+    line-height: 1.5; }
   .display6 {
     font-size: 12px;
-    line-height: 1.5;
-    font-family: "Open Sans";
-    font-weight: 400; }
+    line-height: 1.5; }
   .display7 {
     font-size: 14px;
-    line-height: 1.5;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.5; }
   .p1 {
     font-size: 12px;
-    line-height: 1.4;
-    font-family: "Open Sans";
-    font-weight: 400; }
+    line-height: 1.4; }
   .p2 {
     font-size: 14px;
-    line-height: 1.4;
-    font-family: "Open Sans";
-    font-weight: 400; }
+    line-height: 1.4; }
   .p4 {
     font-size: 14px;
-    line-height: 1.4;
-    font-family: "Open Sans";
-    font-weight: 600; } }
+    line-height: 1.4; } }
 
 @media (min-width: 992px) {
   .h1 {
     font-size: 32px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h2 {
     font-size: 24px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h3 {
     font-size: 18px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h4, .card .title {
     font-size: 16px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h5 {
     font-size: 14px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h6, .card .subtitle {
     font-size: 12px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h7 {
     font-size: 10px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h8 {
     font-size: 8px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .display1 {
     font-size: 32px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 700; }
+    line-height: 1.2; }
   .display2 {
     font-size: 20px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 700; }
+    line-height: 1.2; }
   .display3 {
     font-size: 16px;
-    line-height: 1.5;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.5; }
   .display4 {
     font-size: 14px;
-    line-height: 1.5;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.5; }
   .display5 {
     font-size: 14px;
-    line-height: 1.5;
-    font-family: "Open Sans";
-    font-weight: 400; }
+    line-height: 1.5; }
   .display6 {
     font-size: 12px;
-    line-height: 1.5;
-    font-family: "Open Sans";
-    font-weight: 400; }
+    line-height: 1.5; }
   .display7 {
     font-size: 14px;
-    line-height: 1.5;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.5; }
   .p1 {
     font-size: 12px;
-    line-height: 1.4;
-    font-family: "Open Sans";
-    font-weight: 400; }
+    line-height: 1.4; }
   .p2 {
     font-size: 16px;
-    line-height: 1.4;
-    font-family: "Open Sans";
-    font-weight: 400; }
+    line-height: 1.4; }
   .p4 {
     font-size: 16px;
-    line-height: 1.4;
-    font-family: "Open Sans";
-    font-weight: 600; } }
+    line-height: 1.4; } }
 
 @media (min-width: 1280px) {
   .h1 {
     font-size: 32px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h2 {
     font-size: 24px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h3 {
     font-size: 18px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h4, .card .title {
     font-size: 16px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h5 {
     font-size: 14px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h6, .card .subtitle {
     font-size: 12px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h7 {
     font-size: 10px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h8 {
     font-size: 8px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .display1 {
     font-size: 32px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 700; }
+    line-height: 1.2; }
   .display2 {
     font-size: 20px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 700; }
+    line-height: 1.2; }
   .display3 {
     font-size: 16px;
-    line-height: 1.5;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.5; }
   .display4 {
     font-size: 14px;
-    line-height: 1.5;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.5; }
   .display5 {
     font-size: 14px;
-    line-height: 1.5;
-    font-family: "Open Sans";
-    font-weight: 400; }
+    line-height: 1.5; }
   .display6 {
     font-size: 12px;
-    line-height: 1.5;
-    font-family: "Open Sans";
-    font-weight: 400; }
+    line-height: 1.5; }
   .display7 {
     font-size: 14px;
-    line-height: 1.5;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.5; }
   .p1 {
     font-size: 12px;
-    line-height: 1.4;
-    font-family: "Open Sans";
-    font-weight: 400; }
+    line-height: 1.4; }
   .p2 {
     font-size: 16px;
-    line-height: 1.4;
-    font-family: "Open Sans";
-    font-weight: 400; }
+    line-height: 1.4; }
   .p4 {
     font-size: 16px;
-    line-height: 1.4;
-    font-family: "Open Sans";
-    font-weight: 600; } }
+    line-height: 1.4; } }
 
 @media (min-width: 1500px) {
   .h1 {
     font-size: 40px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h2 {
     font-size: 32px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h3 {
     font-size: 24px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h4, .card .title {
     font-size: 18px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h5 {
     font-size: 16px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h6, .card .subtitle {
     font-size: 14px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h7 {
     font-size: 12px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .h8 {
     font-size: 10px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.2; }
   .display1 {
     font-size: 48px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 700; }
+    line-height: 1.2; }
   .display2 {
     font-size: 40px;
-    line-height: 1.2;
-    font-family: "Open Sans";
-    font-weight: 700; }
+    line-height: 1.2; }
   .display3 {
     font-size: 24px;
-    line-height: 1.5;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.5; }
   .display4 {
     font-size: 24px;
-    line-height: 1.5;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.5; }
   .display5 {
     font-size: 18px;
-    line-height: 1.5;
-    font-family: "Open Sans";
-    font-weight: 400; }
+    line-height: 1.5; }
   .display6 {
     font-size: 18px;
-    line-height: 1.5;
-    font-family: "Open Sans";
-    font-weight: 400; }
+    line-height: 1.5; }
   .display7 {
     font-size: 18px;
-    line-height: 1.5;
-    font-family: "Open Sans";
-    font-weight: 600; }
+    line-height: 1.5; }
   .p1 {
     font-size: 14px;
-    line-height: 1.4;
-    font-family: "Open Sans";
-    font-weight: 400; }
+    line-height: 1.4; }
   .p2 {
     font-size: 18px;
-    line-height: 1.4;
-    font-family: "Open Sans";
-    font-weight: 400; }
+    line-height: 1.4; }
   .p4 {
     font-size: 18px;
-    line-height: 1.4;
-    font-family: "Open Sans";
-    font-weight: 600; } }
+    line-height: 1.4; } }
 
 /*------------------------------------*\
     $ELEMENTS COMPONENTES
@@ -2376,8 +2228,9 @@ hr {
   white-space: nowrap;
   cursor: pointer;
   padding: 16px;
-  background-color: #fff;
-  border: 1px solid #ccc;
+  color: #fff;
+  background-color: #000;
+  border: 1px solid #000;
   /**
  	* Nadie quiere un botón con texto subrayado cuando hacemos hover.
  	*/ }
@@ -2850,7 +2703,7 @@ input::-webkit-input-placeholder {
     display: block;
     width: 100%;
     margin-bottom: 0;
-    line-height: 1.5;
+    line-height: 1.3;
     color: #495057;
     border: 1px solid transparent;
     border-radius: .25rem;
@@ -2943,7 +2796,7 @@ input::-webkit-input-placeholder {
     outline: 0; }
   .select label {
     position: absolute;
-    top: 17px;
+    top: 19px;
     left: 16px;
     z-index: 1; }
   .select::after {
