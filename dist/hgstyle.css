@@ -406,6 +406,11 @@ ZEN:
         /* 1200px*/
         width: 80%;
         max-width: 1280px; } }
+    @media (min-width: 1500px) {
+      .hg .container {
+        /* 1200px*/
+        width: 80%;
+        max-width: 1500px; } }
   .hg .container-fluid {
     padding-right: 8px;
     padding-left: 8px;
@@ -882,7 +887,7 @@ ZEN:
       content: "";
       width: 100%;
       padding-top: 56.25%; }
-    .hg .rat-16-9 > .content {
+    .hg .rat-16-9 .content {
       position: absolute;
       top: 0;
       left: 0;
@@ -896,7 +901,7 @@ ZEN:
       content: "";
       width: 100%;
       padding-top: 42.85714%; }
-    .hg .rat-21-9 > .content {
+    .hg .rat-21-9 .content {
       position: absolute;
       top: 0;
       left: 0;
@@ -910,7 +915,7 @@ ZEN:
       content: "";
       width: 100%;
       padding-top: 100%; }
-    .hg .rat-1-1 > .content {
+    .hg .rat-1-1 .content {
       position: absolute;
       top: 0;
       left: 0;
@@ -924,7 +929,7 @@ ZEN:
       content: "";
       width: 100%;
       padding-top: 50%; }
-    .hg .rat-2-1 > .content {
+    .hg .rat-2-1 .content {
       position: absolute;
       top: 0;
       left: 0;
@@ -938,7 +943,7 @@ ZEN:
       content: "";
       width: 100%;
       padding-top: 133.25%; }
-    .hg .rat-2-3 > .content {
+    .hg .rat-2-3 .content {
       position: absolute;
       top: 0;
       left: 0;
@@ -952,7 +957,7 @@ ZEN:
       content: "";
       width: 100%;
       padding-top: 66.66667%; }
-    .hg .rat-3-2 > .content {
+    .hg .rat-3-2 .content {
       position: absolute;
       top: 0;
       left: 0;
@@ -966,7 +971,7 @@ ZEN:
       content: "";
       width: 100%;
       padding-top: 133.33333%; }
-    .hg .rat-3-4 > .content {
+    .hg .rat-3-4 .content {
       position: absolute;
       top: 0;
       left: 0;
@@ -980,7 +985,7 @@ ZEN:
       content: "";
       width: 100%;
       padding-top: 50%; }
-    .hg .rat-4-2 > .content {
+    .hg .rat-4-2 .content {
       position: absolute;
       top: 0;
       left: 0;
@@ -994,7 +999,7 @@ ZEN:
       content: "";
       width: 100%;
       padding-top: 75%; }
-    .hg .rat-4-3 > .content {
+    .hg .rat-4-3 .content {
       position: absolute;
       top: 0;
       left: 0;
@@ -1008,7 +1013,7 @@ ZEN:
       content: "";
       width: 100%;
       padding-top: 133.25%; }
-    .hg .rat-main > .content {
+    .hg .rat-main .content {
       position: absolute;
       top: 0;
       left: 0;
@@ -1295,6 +1300,8 @@ ZEN:
     .hg .p-50 {
       padding: 50px; } }
   @media (min-width: 1px) {
+    .hg .py-16 {
+      padding: 10px 0; }
     .hg .py-20 {
       padding: 10px 0; }
     .hg .py-30 {
@@ -1304,6 +1311,8 @@ ZEN:
     .hg .py-60 {
       padding: 24px 16px; } }
   @media (min-width: 786px) {
+    .hg .py-16 {
+      padding: 16px 0; }
     .hg .py-20 {
       padding: 20px 0; }
     .hg .py-30 {
@@ -1313,6 +1322,8 @@ ZEN:
     .hg .py-60 {
       padding: 24px 16px; } }
   @media (min-width: 992px) {
+    .hg .py-16 {
+      padding: 16px 0; }
     .hg .py-20 {
       padding: 20px 0; }
     .hg .py-30 {
@@ -1322,6 +1333,8 @@ ZEN:
     .hg .py-60 {
       padding: 24px 16px; } }
   @media (min-width: 1280px) {
+    .hg .py-16 {
+      padding: 16px 0; }
     .hg .py-20 {
       padding: 20px 0; }
     .hg .py-30 {
@@ -1331,6 +1344,8 @@ ZEN:
     .hg .py-60 {
       padding: 60px 60px; } }
   @media (min-width: 1px) {
+    .hg .px-16 {
+      padding: 0 8px; }
     .hg .px-20 {
       padding: 0 10px; }
     .hg .px-30 {
@@ -1338,6 +1353,8 @@ ZEN:
     .hg .px-50 {
       padding: 0 20px; } }
   @media (min-width: 786px) {
+    .hg .px-16 {
+      padding: 0 16px; }
     .hg .px-20 {
       padding: 0 20px; }
     .hg .px-30 {
@@ -1345,6 +1362,8 @@ ZEN:
     .hg .px-50 {
       padding: 0 30px; } }
   @media (min-width: 992px) {
+    .hg .px-16 {
+      padding: 0 16px; }
     .hg .px-20 {
       padding: 0 20px; }
     .hg .px-30 {
@@ -1352,6 +1371,8 @@ ZEN:
     .hg .px-50 {
       padding: 0 40px; } }
   @media (min-width: 1280px) {
+    .hg .px-16 {
+      padding: 0 16px; }
     .hg .px-20 {
       padding: 0 20px; }
     .hg .px-30 {
@@ -1361,6 +1382,8 @@ ZEN:
   @media (min-width: 1px) {
     .hg .pt-10 {
       padding-top: 10px; }
+    .hg .pt-16 {
+      padding-top: 8px; }
     .hg .pt-20 {
       padding-top: 10px; }
     .hg .pt-30 {
@@ -1370,6 +1393,8 @@ ZEN:
   @media (min-width: 786px) {
     .hg .pt-10 {
       padding-top: 10px; }
+    .hg .pt-16 {
+      padding-top: 16px; }
     .hg .pt-20 {
       padding-top: 20px; }
     .hg .pt-30 {
@@ -1379,6 +1404,8 @@ ZEN:
   @media (min-width: 992px) {
     .hg .pt-10 {
       padding-top: 10px; }
+    .hg .pt-16 {
+      padding-top: 16px; }
     .hg .pt-20 {
       padding-top: 20px; }
     .hg .pt-30 {
@@ -1388,6 +1415,8 @@ ZEN:
   @media (min-width: 1280px) {
     .hg .pt-10 {
       padding-top: 10px; }
+    .hg .pt-16 {
+      padding-top: 16px; }
     .hg .pt-20 {
       padding-top: 20px; }
     .hg .pt-30 {
@@ -1397,6 +1426,8 @@ ZEN:
   @media (min-width: 1px) {
     .hg .pl-10 {
       padding-left: 10px; }
+    .hg .pl-16 {
+      padding-left: 8px; }
     .hg .pl-20 {
       padding-left: 10px; }
     .hg .pl-30 {
@@ -1406,6 +1437,8 @@ ZEN:
   @media (min-width: 786px) {
     .hg .pl-10 {
       padding-left: 10px; }
+    .hg .pl-16 {
+      padding-left: 16 px; }
     .hg .pl-20 {
       padding-left: 20px; }
     .hg .pl-30 {
@@ -1415,6 +1448,8 @@ ZEN:
   @media (min-width: 992px) {
     .hg .pl-10 {
       padding-left: 10px; }
+    .hg .pl-16 {
+      padding-left: 16 px; }
     .hg .pl-20 {
       padding-left: 20px; }
     .hg .pl-30 {
@@ -1424,6 +1459,8 @@ ZEN:
   @media (min-width: 1280px) {
     .hg .pl-10 {
       padding-left: 10px; }
+    .hg .pl-16 {
+      padding-left: 16 px; }
     .hg .pl-20 {
       padding-left: 20px; }
     .hg .pl-30 {
@@ -1433,6 +1470,8 @@ ZEN:
   @media (min-width: 1px) {
     .hg .pb-10 {
       padding-bottom: 10px; }
+    .hg .pb-16 {
+      padding-bottom: 8px; }
     .hg .pb-20 {
       padding-bottom: 10px; }
     .hg .pb-30 {
@@ -1442,6 +1481,8 @@ ZEN:
   @media (min-width: 786px) {
     .hg .pb-10 {
       padding-bottom: 10px; }
+    .hg .pb-16 {
+      padding-bottom: 16px; }
     .hg .pb-20 {
       padding-bottom: 20px; }
     .hg .pb-30 {
@@ -1451,6 +1492,8 @@ ZEN:
   @media (min-width: 992px) {
     .hg .pb-10 {
       padding-bottom: 10px; }
+    .hg .pb-16 {
+      padding-bottom: 16px; }
     .hg .pb-20 {
       padding-bottom: 20px; }
     .hg .pb-30 {
@@ -1460,6 +1503,8 @@ ZEN:
   @media (min-width: 1280px) {
     .hg .pb-10 {
       padding-bottom: 10px; }
+    .hg .pb-16 {
+      padding-bottom: 16px; }
     .hg .pb-20 {
       padding-bottom: 20px; }
     .hg .pb-30 {
@@ -1469,6 +1514,8 @@ ZEN:
   @media (min-width: 1px) {
     .hg .pr-10 {
       padding-right: 10px; }
+    .hg .pr-16 {
+      padding-right: 8px; }
     .hg .pr-20 {
       padding-right: 10px; }
     .hg .pr-30 {
@@ -1478,6 +1525,8 @@ ZEN:
   @media (min-width: 786px) {
     .hg .pr-10 {
       padding-right: 10px; }
+    .hg .pr-16 {
+      padding-right: 16px; }
     .hg .pr-20 {
       padding-right: 20px; }
     .hg .pr-30 {
@@ -1487,6 +1536,8 @@ ZEN:
   @media (min-width: 992px) {
     .hg .pr-10 {
       padding-right: 10px; }
+    .hg .pr-16 {
+      padding-right: 16px; }
     .hg .pr-20 {
       padding-right: 20px; }
     .hg .pr-30 {
@@ -1496,6 +1547,8 @@ ZEN:
   @media (min-width: 1280px) {
     .hg .pr-10 {
       padding-right: 10px; }
+    .hg .pr-16 {
+      padding-right: 16px; }
     .hg .pr-20 {
       padding-right: 20px; }
     .hg .pr-30 {
@@ -1565,84 +1618,161 @@ ZEN:
     font-family: "Open Sans";
     font-weight: 400; }
     .hg .fluid-h1 {
-      font-size: 36px; }
+      font-size: 36px;
+      line-height: 1;
+      color: 319px;
+      color: 1280px;
+      color: 36px;
+      color: 64px;
+      color: "px";
+      color: "px";
+      color: "px";
+      color: "px"; }
       @media screen and (min-width: 319px) {
         .hg .fluid-h1 {
-          font-size: calc(36px + 28 * ((100vw - 319px) / 961)); } }
+          font-size: calc(36px + 28 * ((100vw - 319px) / 961));
+          line-height: 1; } }
       @media screen and (min-width: 1280px) {
         .hg .fluid-h1 {
-          font-size: 64px; } }
+          font-size: 64px;
+          line-height: 1; } }
   .hg .fluid-h2 {
     line-height: 1.2;
     font-family: "Open Sans";
     font-weight: 700; }
     .hg .fluid-h2 {
-      font-size: 24px; }
+      font-size: 24px;
+      line-height: 1;
+      color: 319px;
+      color: 1280px;
+      color: 24px;
+      color: 48px;
+      color: "px";
+      color: "px";
+      color: "px";
+      color: "px"; }
       @media screen and (min-width: 319px) {
         .hg .fluid-h2 {
-          font-size: calc(24px + 24 * ((100vw - 319px) / 961)); } }
+          font-size: calc(24px + 24 * ((100vw - 319px) / 961));
+          line-height: 1; } }
       @media screen and (min-width: 1280px) {
         .hg .fluid-h2 {
-          font-size: 48px; } }
+          font-size: 48px;
+          line-height: 1; } }
   .hg .fluid-h3 {
     line-height: 1.2;
     font-family: "Open Sans";
     font-weight: 300; }
     .hg .fluid-h3 {
-      font-size: 18px; }
+      font-size: 18px;
+      line-height: 1;
+      color: 319px;
+      color: 1280px;
+      color: 18px;
+      color: 24px;
+      color: "px";
+      color: "px";
+      color: "px";
+      color: "px"; }
       @media screen and (min-width: 319px) {
         .hg .fluid-h3 {
-          font-size: calc(18px + 6 * ((100vw - 319px) / 961)); } }
+          font-size: calc(18px + 6 * ((100vw - 319px) / 961));
+          line-height: 1; } }
       @media screen and (min-width: 1280px) {
         .hg .fluid-h3 {
-          font-size: 24px; } }
+          font-size: 24px;
+          line-height: 1; } }
   .hg .fluid-h4 {
     line-height: 1.2;
     font-family: "Open Sans";
     font-weight: 700; }
     .hg .fluid-h4 {
-      font-size: 16px; }
+      font-size: 16px;
+      line-height: 1;
+      color: 319px;
+      color: 1280px;
+      color: 16px;
+      color: 22px;
+      color: "px";
+      color: "px";
+      color: "px";
+      color: "px"; }
       @media screen and (min-width: 319px) {
         .hg .fluid-h4 {
-          font-size: calc(16px + 6 * ((100vw - 319px) / 961)); } }
+          font-size: calc(16px + 6 * ((100vw - 319px) / 961));
+          line-height: 1; } }
       @media screen and (min-width: 1280px) {
         .hg .fluid-h4 {
-          font-size: 22px; } }
+          font-size: 22px;
+          line-height: 1; } }
   .hg .fluid-h5 {
     line-height: 1.2;
     font-family: "Open Sans";
     font-weight: 600; }
     .hg .fluid-h5 {
-      font-size: 14px; }
+      font-size: 14px;
+      line-height: 1;
+      color: 319px;
+      color: 1280px;
+      color: 14px;
+      color: 20px;
+      color: "px";
+      color: "px";
+      color: "px";
+      color: "px"; }
       @media screen and (min-width: 319px) {
         .hg .fluid-h5 {
-          font-size: calc(14px + 6 * ((100vw - 319px) / 961)); } }
+          font-size: calc(14px + 6 * ((100vw - 319px) / 961));
+          line-height: 1; } }
       @media screen and (min-width: 1280px) {
         .hg .fluid-h5 {
-          font-size: 20px; } }
+          font-size: 20px;
+          line-height: 1; } }
   .hg .fluid-h6 {
     font-size: calc(1em + 0.25vw);
     font-family: "Open Sans";
     font-weight: 300; }
     .hg .fluid-h6 {
-      font-size: 14px; }
+      font-size: 14px;
+      line-height: 1;
+      color: 319px;
+      color: 1280px;
+      color: 14px;
+      color: 18px;
+      color: "px";
+      color: "px";
+      color: "px";
+      color: "px"; }
       @media screen and (min-width: 319px) {
         .hg .fluid-h6 {
-          font-size: calc(14px + 4 * ((100vw - 319px) / 961)); } }
+          font-size: calc(14px + 4 * ((100vw - 319px) / 961));
+          line-height: 1; } }
       @media screen and (min-width: 1280px) {
         .hg .fluid-h6 {
-          font-size: 18px; } }
+          font-size: 18px;
+          line-height: 1; } }
   .hg .fluid-h7 {
     font-family: "Open Sans";
     font-weight: 400; }
     .hg .fluid-h7 {
-      font-size: 12px; }
+      font-size: 12px;
+      line-height: 1;
+      color: 319px;
+      color: 1280px;
+      color: 12px;
+      color: 18px;
+      color: "px";
+      color: "px";
+      color: "px";
+      color: "px"; }
       @media screen and (min-width: 319px) {
         .hg .fluid-h7 {
-          font-size: calc(12px + 6 * ((100vw - 319px) / 961)); } }
+          font-size: calc(12px + 6 * ((100vw - 319px) / 961));
+          line-height: 1; } }
       @media screen and (min-width: 1280px) {
         .hg .fluid-h7 {
-          font-size: 18px; } }
+          font-size: 18px;
+          line-height: 1; } }
   .hg .secondary {
     font-family: "Times new roman" !important;
     font-weight: 100; }
@@ -2047,6 +2177,258 @@ ZEN:
     .hg .p4 {
       font-size: 18px;
       line-height: 1.4; } }
+  .hg .fluid-12-r {
+    font-family: "Open Sans";
+    font-weight: 400; }
+    .hg .fluid-12-r {
+      font-size: 12px;
+      line-height: 0.9; }
+      @media screen and (min-width: 319px) {
+        .hg .fluid-12-r {
+          font-size: calc(12px + 0 * ((100vw - 319px) / 1181));
+          line-height: 0.9; } }
+      @media screen and (min-width: 1500px) {
+        .hg .fluid-12-r {
+          font-size: 12px;
+          line-height: 0.9; } }
+  .hg .fluid-12-m {
+    font-family: "Open Sans";
+    font-weight: 400; }
+    .hg .fluid-12-m {
+      font-size: 12px;
+      line-height: 0.9; }
+      @media screen and (min-width: 319px) {
+        .hg .fluid-12-m {
+          font-size: calc(12px + 0 * ((100vw - 319px) / 1181));
+          line-height: 0.9; } }
+      @media screen and (min-width: 1500px) {
+        .hg .fluid-12-m {
+          font-size: 12px;
+          line-height: 0.9; } }
+  .hg .fluid-12-b {
+    font-family: "Open Sans";
+    font-weight: 700; }
+    .hg .fluid-12-b {
+      font-size: 12px;
+      line-height: 0.9; }
+      @media screen and (min-width: 319px) {
+        .hg .fluid-12-b {
+          font-size: calc(12px + 0 * ((100vw - 319px) / 1181));
+          line-height: 0.9; } }
+      @media screen and (min-width: 1500px) {
+        .hg .fluid-12-b {
+          font-size: 12px;
+          line-height: 0.9; } }
+  .hg .fluid-14-r {
+    font-family: "Open Sans";
+    font-weight: 400; }
+    .hg .fluid-14-r {
+      font-size: 14px;
+      line-height: 0.9; }
+      @media screen and (min-width: 319px) {
+        .hg .fluid-14-r {
+          font-size: calc(14px + -2 * ((100vw - 319px) / 1181));
+          line-height: 0.9; } }
+      @media screen and (min-width: 1500px) {
+        .hg .fluid-14-r {
+          font-size: 12px;
+          line-height: 0.9; } }
+  .hg .fluid-14-m {
+    font-family: "Open Sans";
+    font-weight: 400; }
+    .hg .fluid-14-m {
+      font-size: 14px;
+      line-height: 0.9; }
+      @media screen and (min-width: 319px) {
+        .hg .fluid-14-m {
+          font-size: calc(14px + -2 * ((100vw - 319px) / 1181));
+          line-height: 0.9; } }
+      @media screen and (min-width: 1500px) {
+        .hg .fluid-14-m {
+          font-size: 12px;
+          line-height: 0.9; } }
+  .hg .fluid-14-b {
+    font-family: "Open Sans";
+    font-weight: 700; }
+    .hg .fluid-14-b {
+      font-size: 14px;
+      line-height: 0.9; }
+      @media screen and (min-width: 319px) {
+        .hg .fluid-14-b {
+          font-size: calc(14px + -2 * ((100vw - 319px) / 1181));
+          line-height: 0.9; } }
+      @media screen and (min-width: 1500px) {
+        .hg .fluid-14-b {
+          font-size: 12px;
+          line-height: 0.9; } }
+  .hg .fluid-16-r {
+    font-family: "Open Sans";
+    font-weight: 400; }
+    .hg .fluid-16-r {
+      font-size: 16px;
+      line-height: 0.9; }
+      @media screen and (min-width: 319px) {
+        .hg .fluid-16-r {
+          font-size: calc(16px + -4 * ((100vw - 319px) / 1181));
+          line-height: 0.9; } }
+      @media screen and (min-width: 1500px) {
+        .hg .fluid-16-r {
+          font-size: 12px;
+          line-height: 0.9; } }
+  .hg .fluid-16-m {
+    font-family: "Open Sans";
+    font-weight: 400; }
+    .hg .fluid-16-m {
+      font-size: 16px;
+      line-height: 0.9; }
+      @media screen and (min-width: 319px) {
+        .hg .fluid-16-m {
+          font-size: calc(16px + -4 * ((100vw - 319px) / 1181));
+          line-height: 0.9; } }
+      @media screen and (min-width: 1500px) {
+        .hg .fluid-16-m {
+          font-size: 12px;
+          line-height: 0.9; } }
+  .hg .fluid-16-b {
+    font-family: "Open Sans";
+    font-weight: 700; }
+    .hg .fluid-16-b {
+      font-size: 16px;
+      line-height: 0.9; }
+      @media screen and (min-width: 319px) {
+        .hg .fluid-16-b {
+          font-size: calc(16px + -4 * ((100vw - 319px) / 1181));
+          line-height: 0.9; } }
+      @media screen and (min-width: 1500px) {
+        .hg .fluid-16-b {
+          font-size: 12px;
+          line-height: 0.9; } }
+  .hg .fluid-18-r {
+    font-family: "Open Sans";
+    font-weight: 400; }
+    .hg .fluid-18-r {
+      font-size: 18px;
+      line-height: 0.9; }
+      @media screen and (min-width: 319px) {
+        .hg .fluid-18-r {
+          font-size: calc(18px + -6 * ((100vw - 319px) / 1181));
+          line-height: 0.9; } }
+      @media screen and (min-width: 1500px) {
+        .hg .fluid-18-r {
+          font-size: 12px;
+          line-height: 0.9; } }
+  .hg .fluid-18-m {
+    font-family: "Open Sans";
+    font-weight: 400; }
+    .hg .fluid-18-m {
+      font-size: 18px;
+      line-height: 0.9; }
+      @media screen and (min-width: 319px) {
+        .hg .fluid-18-m {
+          font-size: calc(18px + -6 * ((100vw - 319px) / 1181));
+          line-height: 0.9; } }
+      @media screen and (min-width: 1500px) {
+        .hg .fluid-18-m {
+          font-size: 12px;
+          line-height: 0.9; } }
+  .hg .fluid-18-b {
+    font-family: "Open Sans";
+    font-weight: 700; }
+    .hg .fluid-18-b {
+      font-size: 18px;
+      line-height: 0.9; }
+      @media screen and (min-width: 319px) {
+        .hg .fluid-18-b {
+          font-size: calc(18px + -6 * ((100vw - 319px) / 1181));
+          line-height: 0.9; } }
+      @media screen and (min-width: 1500px) {
+        .hg .fluid-18-b {
+          font-size: 12px;
+          line-height: 0.9; } }
+  .hg .fluid-20-r {
+    font-family: "Open Sans";
+    font-weight: 400; }
+    .hg .fluid-20-r {
+      font-size: 20px;
+      line-height: 0.9; }
+      @media screen and (min-width: 319px) {
+        .hg .fluid-20-r {
+          font-size: calc(20px + -8 * ((100vw - 319px) / 1181));
+          line-height: 0.9; } }
+      @media screen and (min-width: 1500px) {
+        .hg .fluid-20-r {
+          font-size: 12px;
+          line-height: 0.9; } }
+  .hg .fluid-20-m {
+    font-family: "Open Sans";
+    font-weight: 400; }
+    .hg .fluid-20-m {
+      font-size: 20px;
+      line-height: 0.9; }
+      @media screen and (min-width: 319px) {
+        .hg .fluid-20-m {
+          font-size: calc(20px + -8 * ((100vw - 319px) / 1181));
+          line-height: 0.9; } }
+      @media screen and (min-width: 1500px) {
+        .hg .fluid-20-m {
+          font-size: 12px;
+          line-height: 0.9; } }
+  .hg .fluid-20-b {
+    font-family: "Open Sans";
+    font-weight: 700; }
+    .hg .fluid-20-b {
+      font-size: 20px;
+      line-height: 0.9; }
+      @media screen and (min-width: 319px) {
+        .hg .fluid-20-b {
+          font-size: calc(20px + -8 * ((100vw - 319px) / 1181));
+          line-height: 0.9; } }
+      @media screen and (min-width: 1500px) {
+        .hg .fluid-20-b {
+          font-size: 12px;
+          line-height: 0.9; } }
+  .hg .fluid-50-r {
+    font-family: "Open Sans";
+    font-weight: 400; }
+    .hg .fluid-50-r {
+      font-size: 30px;
+      line-height: 0.9; }
+      @media screen and (min-width: 319px) {
+        .hg .fluid-50-r {
+          font-size: calc(30px + 50 * ((100vw - 319px) / 1181));
+          line-height: 0.9; } }
+      @media screen and (min-width: 1500px) {
+        .hg .fluid-50-r {
+          font-size: 80px;
+          line-height: 0.9; } }
+  .hg .fluid-50-m {
+    font-family: "Open Sans";
+    font-weight: 400; }
+    .hg .fluid-50-m {
+      font-size: 30px;
+      line-height: 0.9; }
+      @media screen and (min-width: 319px) {
+        .hg .fluid-50-m {
+          font-size: calc(30px + 50 * ((100vw - 319px) / 1181));
+          line-height: 0.9; } }
+      @media screen and (min-width: 1500px) {
+        .hg .fluid-50-m {
+          font-size: 80px;
+          line-height: 0.9; } }
+  .hg .fluid-50-b {
+    font-family: "Open Sans";
+    font-weight: 700; }
+    .hg .fluid-50-b {
+      font-size: 30px;
+      line-height: 0.9; }
+      @media screen and (min-width: 319px) {
+        .hg .fluid-50-b {
+          font-size: calc(30px + 50 * ((100vw - 319px) / 1181));
+          line-height: 0.9; } }
+      @media screen and (min-width: 1500px) {
+        .hg .fluid-50-b {
+          font-size: 80px;
+          line-height: 0.9; } }
   .hg .arrow-cover {
     height: auto;
     padding: 30px;
@@ -3023,7 +3405,8 @@ ZEN:
     display: flex;
     flex-flow: row wrap; }
     .hg .row1 .box-single,
-    .hg .row1 .box-double {
+    .hg .row1 .box-double,
+    .hg .row1 .box-super {
       box-sizing: border-box;
       display: block;
       flex-basis: 0;

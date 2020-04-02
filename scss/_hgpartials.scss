@@ -20,17 +20,21 @@
 \*------------------------------------*/
 /* hg en el parent para afectar a su interior*/
 
+
+@import "base/types";
+@import "base/spacing";
+
+
 .hg{  
 @import "base/alignment";
-
 
 @import "base/grid";
 @import "base/height";
 @import "base/icons";
 @import "base/media";
 @import "base/ratios";
-@import "base/spacing";
-@import "base/types";
+
+
 
 
 

@@ -23,6 +23,10 @@ html, body, div, span, select, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline;
   background: transparent; }
 
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .card .title, .h5, .h6, .card .subtitle {
+  margin: 0;
+  padding: 0; }
+
 article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
   display: block; }
 
@@ -289,6 +293,11 @@ a {
       /* 1200px*/
       width: 80%;
       max-width: 1280px; } }
+  @media (min-width: 1500px) {
+    .container {
+      /* 1200px*/
+      width: 80%;
+      max-width: 1500px; } }
 
 .container-fluid {
   padding-right: 8px;
@@ -828,7 +837,7 @@ a {
     content: "";
     width: 100%;
     padding-top: 56.25%; }
-  .rat-16-9 > .content {
+  .rat-16-9 .content {
     position: absolute;
     top: 0;
     left: 0;
@@ -843,7 +852,7 @@ a {
     content: "";
     width: 100%;
     padding-top: 42.85714%; }
-  .rat-21-9 > .content {
+  .rat-21-9 .content {
     position: absolute;
     top: 0;
     left: 0;
@@ -858,7 +867,7 @@ a {
     content: "";
     width: 100%;
     padding-top: 100%; }
-  .rat-1-1 > .content {
+  .rat-1-1 .content {
     position: absolute;
     top: 0;
     left: 0;
@@ -873,7 +882,7 @@ a {
     content: "";
     width: 100%;
     padding-top: 50%; }
-  .rat-2-1 > .content {
+  .rat-2-1 .content {
     position: absolute;
     top: 0;
     left: 0;
@@ -888,7 +897,7 @@ a {
     content: "";
     width: 100%;
     padding-top: 133.25%; }
-  .rat-2-3 > .content {
+  .rat-2-3 .content {
     position: absolute;
     top: 0;
     left: 0;
@@ -903,7 +912,7 @@ a {
     content: "";
     width: 100%;
     padding-top: 66.66667%; }
-  .rat-3-2 > .content {
+  .rat-3-2 .content {
     position: absolute;
     top: 0;
     left: 0;
@@ -918,7 +927,7 @@ a {
     content: "";
     width: 100%;
     padding-top: 133.33333%; }
-  .rat-3-4 > .content {
+  .rat-3-4 .content {
     position: absolute;
     top: 0;
     left: 0;
@@ -933,7 +942,7 @@ a {
     content: "";
     width: 100%;
     padding-top: 50%; }
-  .rat-4-2 > .content {
+  .rat-4-2 .content {
     position: absolute;
     top: 0;
     left: 0;
@@ -948,7 +957,7 @@ a {
     content: "";
     width: 100%;
     padding-top: 75%; }
-  .rat-4-3 > .content {
+  .rat-4-3 .content {
     position: absolute;
     top: 0;
     left: 0;
@@ -963,7 +972,7 @@ a {
     content: "";
     width: 100%;
     padding-top: 133.25%; }
-  .rat-main > .content {
+  .rat-main .content {
     position: absolute;
     top: 0;
     left: 0;
@@ -1291,6 +1300,8 @@ a {
     padding: 50px; } }
 
 @media (min-width: 1px) {
+  .py-16 {
+    padding: 10px 0; }
   .py-20 {
     padding: 10px 0; }
   .py-30 {
@@ -1301,6 +1312,8 @@ a {
     padding: 24px 16px; } }
 
 @media (min-width: 786px) {
+  .py-16 {
+    padding: 16px 0; }
   .py-20 {
     padding: 20px 0; }
   .py-30 {
@@ -1311,6 +1324,8 @@ a {
     padding: 24px 16px; } }
 
 @media (min-width: 992px) {
+  .py-16 {
+    padding: 16px 0; }
   .py-20 {
     padding: 20px 0; }
   .py-30 {
@@ -1321,6 +1336,8 @@ a {
     padding: 24px 16px; } }
 
 @media (min-width: 1280px) {
+  .py-16 {
+    padding: 16px 0; }
   .py-20 {
     padding: 20px 0; }
   .py-30 {
@@ -1331,6 +1348,8 @@ a {
     padding: 60px 60px; } }
 
 @media (min-width: 1px) {
+  .px-16 {
+    padding: 0 8px; }
   .px-20 {
     padding: 0 10px; }
   .px-30 {
@@ -1339,6 +1358,8 @@ a {
     padding: 0 20px; } }
 
 @media (min-width: 786px) {
+  .px-16 {
+    padding: 0 16px; }
   .px-20 {
     padding: 0 20px; }
   .px-30 {
@@ -1347,6 +1368,8 @@ a {
     padding: 0 30px; } }
 
 @media (min-width: 992px) {
+  .px-16 {
+    padding: 0 16px; }
   .px-20 {
     padding: 0 20px; }
   .px-30 {
@@ -1355,6 +1378,8 @@ a {
     padding: 0 40px; } }
 
 @media (min-width: 1280px) {
+  .px-16 {
+    padding: 0 16px; }
   .px-20 {
     padding: 0 20px; }
   .px-30 {
@@ -1365,6 +1390,8 @@ a {
 @media (min-width: 1px) {
   .pt-10 {
     padding-top: 10px; }
+  .pt-16 {
+    padding-top: 8px; }
   .pt-20 {
     padding-top: 10px; }
   .pt-30 {
@@ -1375,6 +1402,8 @@ a {
 @media (min-width: 786px) {
   .pt-10 {
     padding-top: 10px; }
+  .pt-16 {
+    padding-top: 16px; }
   .pt-20 {
     padding-top: 20px; }
   .pt-30 {
@@ -1385,6 +1414,8 @@ a {
 @media (min-width: 992px) {
   .pt-10 {
     padding-top: 10px; }
+  .pt-16 {
+    padding-top: 16px; }
   .pt-20 {
     padding-top: 20px; }
   .pt-30 {
@@ -1395,6 +1426,8 @@ a {
 @media (min-width: 1280px) {
   .pt-10 {
     padding-top: 10px; }
+  .pt-16 {
+    padding-top: 16px; }
   .pt-20 {
     padding-top: 20px; }
   .pt-30 {
@@ -1405,6 +1438,8 @@ a {
 @media (min-width: 1px) {
   .pl-10 {
     padding-left: 10px; }
+  .pl-16 {
+    padding-left: 8px; }
   .pl-20 {
     padding-left: 10px; }
   .pl-30 {
@@ -1415,6 +1450,8 @@ a {
 @media (min-width: 786px) {
   .pl-10 {
     padding-left: 10px; }
+  .pl-16 {
+    padding-left: 16 px; }
   .pl-20 {
     padding-left: 20px; }
   .pl-30 {
@@ -1425,6 +1462,8 @@ a {
 @media (min-width: 992px) {
   .pl-10 {
     padding-left: 10px; }
+  .pl-16 {
+    padding-left: 16 px; }
   .pl-20 {
     padding-left: 20px; }
   .pl-30 {
@@ -1435,6 +1474,8 @@ a {
 @media (min-width: 1280px) {
   .pl-10 {
     padding-left: 10px; }
+  .pl-16 {
+    padding-left: 16 px; }
   .pl-20 {
     padding-left: 20px; }
   .pl-30 {
@@ -1445,6 +1486,8 @@ a {
 @media (min-width: 1px) {
   .pb-10 {
     padding-bottom: 10px; }
+  .pb-16 {
+    padding-bottom: 8px; }
   .pb-20 {
     padding-bottom: 10px; }
   .pb-30 {
@@ -1455,6 +1498,8 @@ a {
 @media (min-width: 786px) {
   .pb-10 {
     padding-bottom: 10px; }
+  .pb-16 {
+    padding-bottom: 16px; }
   .pb-20 {
     padding-bottom: 20px; }
   .pb-30 {
@@ -1465,6 +1510,8 @@ a {
 @media (min-width: 992px) {
   .pb-10 {
     padding-bottom: 10px; }
+  .pb-16 {
+    padding-bottom: 16px; }
   .pb-20 {
     padding-bottom: 20px; }
   .pb-30 {
@@ -1475,6 +1522,8 @@ a {
 @media (min-width: 1280px) {
   .pb-10 {
     padding-bottom: 10px; }
+  .pb-16 {
+    padding-bottom: 16px; }
   .pb-20 {
     padding-bottom: 20px; }
   .pb-30 {
@@ -1485,6 +1534,8 @@ a {
 @media (min-width: 1px) {
   .pr-10 {
     padding-right: 10px; }
+  .pr-16 {
+    padding-right: 8px; }
   .pr-20 {
     padding-right: 10px; }
   .pr-30 {
@@ -1495,6 +1546,8 @@ a {
 @media (min-width: 786px) {
   .pr-10 {
     padding-right: 10px; }
+  .pr-16 {
+    padding-right: 16px; }
   .pr-20 {
     padding-right: 20px; }
   .pr-30 {
@@ -1505,6 +1558,8 @@ a {
 @media (min-width: 992px) {
   .pr-10 {
     padding-right: 10px; }
+  .pr-16 {
+    padding-right: 16px; }
   .pr-20 {
     padding-right: 20px; }
   .pr-30 {
@@ -1515,6 +1570,8 @@ a {
 @media (min-width: 1280px) {
   .pr-10 {
     padding-right: 10px; }
+  .pr-16 {
+    padding-right: 16px; }
   .pr-20 {
     padding-right: 20px; }
   .pr-30 {
@@ -1606,90 +1663,167 @@ mark {
   font-family: "Open Sans";
   font-weight: 400; }
   .fluid-h1 {
-    font-size: 36px; }
+    font-size: 36px;
+    line-height: 1;
+    color: 319px;
+    color: 1280px;
+    color: 36px;
+    color: 64px;
+    color: "px";
+    color: "px";
+    color: "px";
+    color: "px"; }
     @media screen and (min-width: 319px) {
       .fluid-h1 {
-        font-size: calc(36px + 28 * ((100vw - 319px) / 961)); } }
+        font-size: calc(36px + 28 * ((100vw - 319px) / 961));
+        line-height: 1; } }
     @media screen and (min-width: 1280px) {
       .fluid-h1 {
-        font-size: 64px; } }
+        font-size: 64px;
+        line-height: 1; } }
 
 .fluid-h2 {
   line-height: 1.2;
   font-family: "Open Sans";
   font-weight: 700; }
   .fluid-h2 {
-    font-size: 24px; }
+    font-size: 24px;
+    line-height: 1;
+    color: 319px;
+    color: 1280px;
+    color: 24px;
+    color: 48px;
+    color: "px";
+    color: "px";
+    color: "px";
+    color: "px"; }
     @media screen and (min-width: 319px) {
       .fluid-h2 {
-        font-size: calc(24px + 24 * ((100vw - 319px) / 961)); } }
+        font-size: calc(24px + 24 * ((100vw - 319px) / 961));
+        line-height: 1; } }
     @media screen and (min-width: 1280px) {
       .fluid-h2 {
-        font-size: 48px; } }
+        font-size: 48px;
+        line-height: 1; } }
 
 .fluid-h3 {
   line-height: 1.2;
   font-family: "Open Sans";
   font-weight: 300; }
   .fluid-h3 {
-    font-size: 18px; }
+    font-size: 18px;
+    line-height: 1;
+    color: 319px;
+    color: 1280px;
+    color: 18px;
+    color: 24px;
+    color: "px";
+    color: "px";
+    color: "px";
+    color: "px"; }
     @media screen and (min-width: 319px) {
       .fluid-h3 {
-        font-size: calc(18px + 6 * ((100vw - 319px) / 961)); } }
+        font-size: calc(18px + 6 * ((100vw - 319px) / 961));
+        line-height: 1; } }
     @media screen and (min-width: 1280px) {
       .fluid-h3 {
-        font-size: 24px; } }
+        font-size: 24px;
+        line-height: 1; } }
 
 .fluid-h4 {
   line-height: 1.2;
   font-family: "Open Sans";
   font-weight: 700; }
   .fluid-h4 {
-    font-size: 16px; }
+    font-size: 16px;
+    line-height: 1;
+    color: 319px;
+    color: 1280px;
+    color: 16px;
+    color: 22px;
+    color: "px";
+    color: "px";
+    color: "px";
+    color: "px"; }
     @media screen and (min-width: 319px) {
       .fluid-h4 {
-        font-size: calc(16px + 6 * ((100vw - 319px) / 961)); } }
+        font-size: calc(16px + 6 * ((100vw - 319px) / 961));
+        line-height: 1; } }
     @media screen and (min-width: 1280px) {
       .fluid-h4 {
-        font-size: 22px; } }
+        font-size: 22px;
+        line-height: 1; } }
 
 .fluid-h5 {
   line-height: 1.2;
   font-family: "Open Sans";
   font-weight: 600; }
   .fluid-h5 {
-    font-size: 14px; }
+    font-size: 14px;
+    line-height: 1;
+    color: 319px;
+    color: 1280px;
+    color: 14px;
+    color: 20px;
+    color: "px";
+    color: "px";
+    color: "px";
+    color: "px"; }
     @media screen and (min-width: 319px) {
       .fluid-h5 {
-        font-size: calc(14px + 6 * ((100vw - 319px) / 961)); } }
+        font-size: calc(14px + 6 * ((100vw - 319px) / 961));
+        line-height: 1; } }
     @media screen and (min-width: 1280px) {
       .fluid-h5 {
-        font-size: 20px; } }
+        font-size: 20px;
+        line-height: 1; } }
 
 .fluid-h6 {
   font-size: calc(1em + 0.25vw);
   font-family: "Open Sans";
   font-weight: 300; }
   .fluid-h6 {
-    font-size: 14px; }
+    font-size: 14px;
+    line-height: 1;
+    color: 319px;
+    color: 1280px;
+    color: 14px;
+    color: 18px;
+    color: "px";
+    color: "px";
+    color: "px";
+    color: "px"; }
     @media screen and (min-width: 319px) {
       .fluid-h6 {
-        font-size: calc(14px + 4 * ((100vw - 319px) / 961)); } }
+        font-size: calc(14px + 4 * ((100vw - 319px) / 961));
+        line-height: 1; } }
     @media screen and (min-width: 1280px) {
       .fluid-h6 {
-        font-size: 18px; } }
+        font-size: 18px;
+        line-height: 1; } }
 
 .fluid-h7 {
   font-family: "Open Sans";
   font-weight: 400; }
   .fluid-h7 {
-    font-size: 12px; }
+    font-size: 12px;
+    line-height: 1;
+    color: 319px;
+    color: 1280px;
+    color: 12px;
+    color: 18px;
+    color: "px";
+    color: "px";
+    color: "px";
+    color: "px"; }
     @media screen and (min-width: 319px) {
       .fluid-h7 {
-        font-size: calc(12px + 6 * ((100vw - 319px) / 961)); } }
+        font-size: calc(12px + 6 * ((100vw - 319px) / 961));
+        line-height: 1; } }
     @media screen and (min-width: 1280px) {
       .fluid-h7 {
-        font-size: 18px; } }
+        font-size: 18px;
+        line-height: 1; } }
 
 .secondary {
   font-family: "Times new roman" !important;
@@ -2118,6 +2252,276 @@ mark {
   .p4 {
     font-size: 18px;
     line-height: 1.4; } }
+
+.fluid-12-r {
+  font-family: "Open Sans";
+  font-weight: 400; }
+  .fluid-12-r {
+    font-size: 12px;
+    line-height: 0.9; }
+    @media screen and (min-width: 319px) {
+      .fluid-12-r {
+        font-size: calc(12px + 0 * ((100vw - 319px) / 1181));
+        line-height: 0.9; } }
+    @media screen and (min-width: 1500px) {
+      .fluid-12-r {
+        font-size: 12px;
+        line-height: 0.9; } }
+
+.fluid-12-m {
+  font-family: "Open Sans";
+  font-weight: 400; }
+  .fluid-12-m {
+    font-size: 12px;
+    line-height: 0.9; }
+    @media screen and (min-width: 319px) {
+      .fluid-12-m {
+        font-size: calc(12px + 0 * ((100vw - 319px) / 1181));
+        line-height: 0.9; } }
+    @media screen and (min-width: 1500px) {
+      .fluid-12-m {
+        font-size: 12px;
+        line-height: 0.9; } }
+
+.fluid-12-b {
+  font-family: "Open Sans";
+  font-weight: 700; }
+  .fluid-12-b {
+    font-size: 12px;
+    line-height: 0.9; }
+    @media screen and (min-width: 319px) {
+      .fluid-12-b {
+        font-size: calc(12px + 0 * ((100vw - 319px) / 1181));
+        line-height: 0.9; } }
+    @media screen and (min-width: 1500px) {
+      .fluid-12-b {
+        font-size: 12px;
+        line-height: 0.9; } }
+
+.fluid-14-r {
+  font-family: "Open Sans";
+  font-weight: 400; }
+  .fluid-14-r {
+    font-size: 14px;
+    line-height: 0.9; }
+    @media screen and (min-width: 319px) {
+      .fluid-14-r {
+        font-size: calc(14px + -2 * ((100vw - 319px) / 1181));
+        line-height: 0.9; } }
+    @media screen and (min-width: 1500px) {
+      .fluid-14-r {
+        font-size: 12px;
+        line-height: 0.9; } }
+
+.fluid-14-m {
+  font-family: "Open Sans";
+  font-weight: 400; }
+  .fluid-14-m {
+    font-size: 14px;
+    line-height: 0.9; }
+    @media screen and (min-width: 319px) {
+      .fluid-14-m {
+        font-size: calc(14px + -2 * ((100vw - 319px) / 1181));
+        line-height: 0.9; } }
+    @media screen and (min-width: 1500px) {
+      .fluid-14-m {
+        font-size: 12px;
+        line-height: 0.9; } }
+
+.fluid-14-b {
+  font-family: "Open Sans";
+  font-weight: 700; }
+  .fluid-14-b {
+    font-size: 14px;
+    line-height: 0.9; }
+    @media screen and (min-width: 319px) {
+      .fluid-14-b {
+        font-size: calc(14px + -2 * ((100vw - 319px) / 1181));
+        line-height: 0.9; } }
+    @media screen and (min-width: 1500px) {
+      .fluid-14-b {
+        font-size: 12px;
+        line-height: 0.9; } }
+
+.fluid-16-r {
+  font-family: "Open Sans";
+  font-weight: 400; }
+  .fluid-16-r {
+    font-size: 16px;
+    line-height: 0.9; }
+    @media screen and (min-width: 319px) {
+      .fluid-16-r {
+        font-size: calc(16px + -4 * ((100vw - 319px) / 1181));
+        line-height: 0.9; } }
+    @media screen and (min-width: 1500px) {
+      .fluid-16-r {
+        font-size: 12px;
+        line-height: 0.9; } }
+
+.fluid-16-m {
+  font-family: "Open Sans";
+  font-weight: 400; }
+  .fluid-16-m {
+    font-size: 16px;
+    line-height: 0.9; }
+    @media screen and (min-width: 319px) {
+      .fluid-16-m {
+        font-size: calc(16px + -4 * ((100vw - 319px) / 1181));
+        line-height: 0.9; } }
+    @media screen and (min-width: 1500px) {
+      .fluid-16-m {
+        font-size: 12px;
+        line-height: 0.9; } }
+
+.fluid-16-b {
+  font-family: "Open Sans";
+  font-weight: 700; }
+  .fluid-16-b {
+    font-size: 16px;
+    line-height: 0.9; }
+    @media screen and (min-width: 319px) {
+      .fluid-16-b {
+        font-size: calc(16px + -4 * ((100vw - 319px) / 1181));
+        line-height: 0.9; } }
+    @media screen and (min-width: 1500px) {
+      .fluid-16-b {
+        font-size: 12px;
+        line-height: 0.9; } }
+
+.fluid-18-r {
+  font-family: "Open Sans";
+  font-weight: 400; }
+  .fluid-18-r {
+    font-size: 18px;
+    line-height: 0.9; }
+    @media screen and (min-width: 319px) {
+      .fluid-18-r {
+        font-size: calc(18px + -6 * ((100vw - 319px) / 1181));
+        line-height: 0.9; } }
+    @media screen and (min-width: 1500px) {
+      .fluid-18-r {
+        font-size: 12px;
+        line-height: 0.9; } }
+
+.fluid-18-m {
+  font-family: "Open Sans";
+  font-weight: 400; }
+  .fluid-18-m {
+    font-size: 18px;
+    line-height: 0.9; }
+    @media screen and (min-width: 319px) {
+      .fluid-18-m {
+        font-size: calc(18px + -6 * ((100vw - 319px) / 1181));
+        line-height: 0.9; } }
+    @media screen and (min-width: 1500px) {
+      .fluid-18-m {
+        font-size: 12px;
+        line-height: 0.9; } }
+
+.fluid-18-b {
+  font-family: "Open Sans";
+  font-weight: 700; }
+  .fluid-18-b {
+    font-size: 18px;
+    line-height: 0.9; }
+    @media screen and (min-width: 319px) {
+      .fluid-18-b {
+        font-size: calc(18px + -6 * ((100vw - 319px) / 1181));
+        line-height: 0.9; } }
+    @media screen and (min-width: 1500px) {
+      .fluid-18-b {
+        font-size: 12px;
+        line-height: 0.9; } }
+
+.fluid-20-r {
+  font-family: "Open Sans";
+  font-weight: 400; }
+  .fluid-20-r {
+    font-size: 20px;
+    line-height: 0.9; }
+    @media screen and (min-width: 319px) {
+      .fluid-20-r {
+        font-size: calc(20px + -8 * ((100vw - 319px) / 1181));
+        line-height: 0.9; } }
+    @media screen and (min-width: 1500px) {
+      .fluid-20-r {
+        font-size: 12px;
+        line-height: 0.9; } }
+
+.fluid-20-m {
+  font-family: "Open Sans";
+  font-weight: 400; }
+  .fluid-20-m {
+    font-size: 20px;
+    line-height: 0.9; }
+    @media screen and (min-width: 319px) {
+      .fluid-20-m {
+        font-size: calc(20px + -8 * ((100vw - 319px) / 1181));
+        line-height: 0.9; } }
+    @media screen and (min-width: 1500px) {
+      .fluid-20-m {
+        font-size: 12px;
+        line-height: 0.9; } }
+
+.fluid-20-b {
+  font-family: "Open Sans";
+  font-weight: 700; }
+  .fluid-20-b {
+    font-size: 20px;
+    line-height: 0.9; }
+    @media screen and (min-width: 319px) {
+      .fluid-20-b {
+        font-size: calc(20px + -8 * ((100vw - 319px) / 1181));
+        line-height: 0.9; } }
+    @media screen and (min-width: 1500px) {
+      .fluid-20-b {
+        font-size: 12px;
+        line-height: 0.9; } }
+
+.fluid-50-r {
+  font-family: "Open Sans";
+  font-weight: 400; }
+  .fluid-50-r {
+    font-size: 30px;
+    line-height: 0.9; }
+    @media screen and (min-width: 319px) {
+      .fluid-50-r {
+        font-size: calc(30px + 50 * ((100vw - 319px) / 1181));
+        line-height: 0.9; } }
+    @media screen and (min-width: 1500px) {
+      .fluid-50-r {
+        font-size: 80px;
+        line-height: 0.9; } }
+
+.fluid-50-m {
+  font-family: "Open Sans";
+  font-weight: 400; }
+  .fluid-50-m {
+    font-size: 30px;
+    line-height: 0.9; }
+    @media screen and (min-width: 319px) {
+      .fluid-50-m {
+        font-size: calc(30px + 50 * ((100vw - 319px) / 1181));
+        line-height: 0.9; } }
+    @media screen and (min-width: 1500px) {
+      .fluid-50-m {
+        font-size: 80px;
+        line-height: 0.9; } }
+
+.fluid-50-b {
+  font-family: "Open Sans";
+  font-weight: 700; }
+  .fluid-50-b {
+    font-size: 30px;
+    line-height: 0.9; }
+    @media screen and (min-width: 319px) {
+      .fluid-50-b {
+        font-size: calc(30px + 50 * ((100vw - 319px) / 1181));
+        line-height: 0.9; } }
+    @media screen and (min-width: 1500px) {
+      .fluid-50-b {
+        font-size: 80px;
+        line-height: 0.9; } }
 
 /*------------------------------------*\
     $ELEMENTS COMPONENTES

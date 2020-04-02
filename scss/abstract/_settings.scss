@@ -132,6 +132,8 @@ $transition:278ms!default;
 
 $min-width:319px!default;
 
+$min-vw:319px!default;
+$max-vw:1500px!default;
 
 
 /* Types.scss */
@@ -174,6 +176,15 @@ $headersFixers: (/*name :  fontsize, lineheight */
    
    
 
+$headersFluids: (/*name :  fontsize, lineheight */
+   12 : (12px, 12px, .9),
+   14 : (14px, 12px,.9),
+   16 : (16px, 12px,.9),
+   18 : (18px, 12px,.9),
+   20 : (20px, 12px,.9),
+   50 : (30px, 80px,.9),
+
+   ) !default;
 /*+------------------------------------------------------------+
 |       -spacing  
 +------------------------------------------------------------+*/
@@ -243,15 +254,18 @@ $padding: /* name : padding  top*/
  
 $py: "padding";
 $padding-y: /* name : padding  arriba y abajo*/
-(py-20: (10px 0, 20px 0, 20px 0, 20px 0),
- py-30: (10px 0, 30px 0, 30px 0, 30px 0),
- py-50: (20px 0, 30px 0, 40px 0, 50px 0),
- py-60: (24px 16px,24px 16px, 24px 16px, 60px 60px))!default;
+
+(py-16: (10px 0, 16px 0, 16px 0, 16px 0),
+    py-20: (10px 0, 20px 0, 20px 0, 20px 0),
+    py-30: (10px 0, 30px 0, 30px 0, 30px 0),
+    py-50: (20px 0, 30px 0, 40px 0, 50px 0),
+    py-60: (24px 16px, 24px 16px, 24px 16px, 60px 60px)) !default;
  
  
 $px: "padding";
 $padding-x: /* name : padding  arriba y abajo*/
-(px-20: (0 10px, 0 20px, 0 20px, 0 20px),
+(px-16: (0 8px, 0 16px, 0 16px, 0 16px),
+ px-20: (0 10px, 0 20px, 0 20px, 0 20px),
  px-30: (0 10px, 0 30px, 0 30px, 0 30px),
  px-50: (0 20px, 0 30px, 0 40px, 0 50px))!default;
  
@@ -259,6 +273,7 @@ $padding-x: /* name : padding  arriba y abajo*/
 $pt: "padding-top";
 $padding-top: /* name : padding  top*/
 (pt-10: (10px, 10px, 10px, 10px),
+ pt-16 : (8px, 16px, 16px, 16px),
  pt-20: (10px, 20px, 20px, 20px),
  pt-30: (10px, 30px, 30px, 30px),
  pt-50: (20px, 50px, 50px, 50px))!default;
@@ -267,6 +282,7 @@ $padding-top: /* name : padding  top*/
 $pb: "padding-bottom";
 $padding-bottom: /* name : padding  bottom*/
 (pb-10: (10px, 10px, 10px, 10px),
+ pb-16: (8px, 16px, 16px, 16px),
  pb-20: (10px, 20px, 20px, 20px),
  pb-30: (10px, 30px, 30px, 30px),
  pb-50: (20px, 50px, 50px, 50px))!default;
@@ -275,6 +291,7 @@ $padding-bottom: /* name : padding  bottom*/
 $pl: "padding-left";
 $padding-left: /* name : padding  bottom*/
 (pl-10: (10px, 10px, 10px, 10px),
+pl-16 : (8px, 16 px, 16 px, 16 px),
  pl-20: (10px, 20px, 20px, 20px),
  pl-30: (10px, 30px, 30px, 30px),
  pl-50: (20px, 50px, 50px, 50px))!default;
@@ -283,6 +300,7 @@ $padding-left: /* name : padding  bottom*/
 $pr: "padding-right";
 $padding-right: /* name : padding  bottom*/
 (pr-10: (10px, 10px, 10px, 10px),
+ pr-16: (8px, 16px, 16px, 16px),
  pr-20: (10px, 20px, 20px, 20px),
  pr-30: (10px, 30px, 30px, 30px),
  pr-50: (20px, 50px, 50px, 50px))!default;

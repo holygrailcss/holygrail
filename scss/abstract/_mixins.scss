@@ -77,7 +77,7 @@
 	@return $value / ($value * 0 + 1);
 }
 
-@mixin fluid-text($min-vw, $max-vw, $min-font-size, $max-font-size) {
+@mixin fluid-text($min-vw, $max-vw, $min-font-size, $max-font-size,$fluid-line-height) {
 	$u1: unit($min-vw);
 	$u2: unit($max-vw);
 	$u3: unit($min-font-size);
@@ -86,19 +86,101 @@
 	@if $u1==$u2 and $u1==$u3 and $u1==$u4 {
 		& {
 			font-size: $min-font-size;
+			line-height: $fluid-line-height;
+
+			color:$min-vw;
+			color:$max-vw;
+			color:$min-font-size;
+			color:$max-font-size;
+
+
+
+			color:$u1;
+			color:$u2;
+			color:$u3;
+			color:$u4;
 
 			@media screen and (min-width: $min-vw) {
 				font-size: calc(#{$min-font-size} + #{unity($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{unity($max-vw - $min-vw)}));
+			line-height: $fluid-line-height;
 			}
 
 			@media screen and (min-width: $max-vw) {
 				font-size: $max-font-size;
+				line-height: $fluid-line-height;
 			}
 		}
 	}
 }
 
 
+@mixin typesFluids($headersFluids) {
+	@for $i from 1 through 1 {
+	  @each $name,
+	  $fsize in $headersFluids {
+		$u1: unit($min-vw);
+		$u2: unit($max-vw);
+		$min-font-size: nth($fsize, $i);
+		$max-font-size: nth($fsize, 2);
+		$fluid-line-height: nth($fsize, 3);
+		$u3: unit($min-font-size);
+		$u4: unit($max-font-size);
+		$u5: nth($fsize, 3);
+		.fluid-#{$name}-r {
+		  @include font-regular();
+		  @if $u1==$u2 and $u1==$u3 and $u1==$u4 {
+			& {
+			  font-size: $min-font-size;
+			  line-height: $u5;
+			  @media screen and (min-width: $min-vw) {
+				font-size: calc(#{$min-font-size} + #{unity($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{unity($max-vw - $min-vw)}));
+				line-height: $fluid-line-height;
+			  }
+			  @media screen and (min-width: $max-vw) {
+				font-size: $max-font-size;
+				line-height: $fluid-line-height;
+			  }
+			}
+		  }
+		}
+		.fluid-#{$name}-m {
+		  @include font-regular();
+		  @if $u1==$u2 and $u1==$u3 and $u1==$u4 {
+			& {
+			  font-size: $min-font-size;
+			  line-height: $u5;
+			  @media screen and (min-width: $min-vw) {
+				font-size: calc(#{$min-font-size} + #{unity($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{unity($max-vw - $min-vw)}));
+				line-height: $fluid-line-height;
+			  }
+			  @media screen and (min-width: $max-vw) {
+				font-size: $max-font-size;
+				line-height: $fluid-line-height;
+			  }
+			}
+		  }
+		}
+		.fluid-#{$name}-b {
+		  @include font-bold();
+		  @if $u1==$u2 and $u1==$u3 and $u1==$u4 {
+			& {
+			  font-size: $min-font-size;
+			  line-height: $u5;
+			  @media screen and (min-width: $min-vw) {
+				font-size: calc(#{$min-font-size} + #{unity($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{unity($max-vw - $min-vw)}));
+				line-height: $fluid-line-height;
+			  }
+			  @media screen and (min-width: $max-vw) {
+				font-size: $max-font-size;
+				line-height: $fluid-line-height;
+			  }
+			}
+		  }
+		}
+	  }
+	}
+  }
+  
 
 /*+------------------------------------------------------------+
  |       -RATIO 
@@ -202,6 +284,10 @@
         }
     }
 }
+
+
+
+
 
 
 @mixin typesFixers($headersFixers, $cssattr) {
