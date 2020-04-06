@@ -7,45 +7,34 @@
   }
 }
 .link1 {
-  font-size: 16px;
-
-  @include font-bold();
-  transition: color 250ms linear;
-  text-decoration: none;
+  display: inline;
   position: relative;
-  &:hover {
-   /* color: $linkHover; */
-    &::after {
-      -webkit-transform: scaleX(1);
-      -ms-transform: scaleX(1);
-      transform: scaleX(1)
-    }
-  }
-  &:focus {
-    outline: none;
+  text-align: center;
+  outline: none;
+  padding: 4px 0;
 
-    text-decoration: none;
-  }
+  text-align: center;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1.2px;
+  background: transparent;
+  border: none;
+  color: #fff;
 
-  &:focus:hover {
-
+  &:after {
+      content: '';
+      background-color: $primary;
+      width: 100%;
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      height: 1px;
   }
-  
-  &:-moz-focusring {
-    outline: none !important;
-    background: none;
-  }
-  &::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: -4px;
-    left: 0;
-    background: $primary;
-    transform: scaleX(0);
-    transition: transform $transition;
-    transition: transform $transition, -webkit-transform $transition;
+  .has-light & {
+      color: white;
+      &:after {
+          background-color: white;
+      }
   }
 }
 .link2 {
@@ -114,6 +103,49 @@
 
   }
 
+}
+
+.link5 {
+  font-size: 16px;
+
+  @include font-bold();
+  transition: color 250ms linear;
+  text-decoration: none;
+  position: relative;
+  &:hover {
+   /* color: $linkHover; */
+    &::after {
+      -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+      transform: scaleX(1)
+    }
+  }
+  &:focus {
+    outline: none;
+
+    text-decoration: none;
+  }
+
+  &:focus:hover {
+
+  }
+  
+  &:-moz-focusring {
+    outline: none !important;
+    background: none;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background: $primary;
+    transform: scaleX(0);
+    transition: transform $transition;
+    transition: transform $transition, -webkit-transform $transition;
+  }
 }
 
 

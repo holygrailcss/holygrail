@@ -1,10 +1,17 @@
 .card9 {
-    .card9-img {
-        position: relative;
-    }
+    position: relative;
+    height: 100%;
+    overflow: hidden;
     .color-wrap {
         position: relative;
         padding: 8px 0;
+    }
+    .card9-image {
+        position: relative;
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
     }
     .card9-add {
         z-index: 1000;
@@ -14,6 +21,8 @@
         bottom: 16px;
         left: 16px;
         right: 16px;
+        transition: opacity 275ms ease;
+        opacity: 0;
     }
     .card9-sizes {
         padding: 0;
@@ -21,7 +30,6 @@
         &:last-child {
             border-right: 1px solid #E3E3E3;
         }
-
         button {
             @include font-medium();
             border: none;
@@ -40,11 +48,94 @@
                 cursor: pointer;
             }
         }
-
     }
-
+    .card9-wrap-details {
+        height: 144px;
+        position: absolute;
+        bottom: 1px;
+        left: 0;
+        z-index: 3;
+        width: 100%;
+        padding: 0 8px;
+        background-color: #fff;
+        @media (min-width:$break-lg) {
+            padding: 0;
+        }
+    }
+    .card9-video {
+        position: absolute;
+        z-index: 2;
+        width: 100%;
+        left: 0;
+        height: 100%;
+        top: 0px;
+        opacity: 1;
+        -webkit-transition: opacity 0.25s ease;
+        transition: opacity 0.25s ease;
+    }
+    .js-card9-inner {
+        margin-bottom: 144px;
+        .content {
+            background: #eaeaea;
+        }
+    }
+    .card9-slider {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        pointer-events: none;
+        transition: all .3s ease;
+        opacity: 0;
+        .ma-swiper-button-next,
+        .ma-swiper-button-prev {
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;
+            position: absolute;
+            top: calc(50% - 80px);
+            z-index: 30000;
+            text-align: center;
+            opacity: 0;
+            transition-delay: 0s;
+            transition: all .3s ease;
+        }
+        .ma-swiper-button-next {
+            padding: 7px 4px 4px 7px;
+            right: 16px;
+            &:hover {
+                transition-delay: 0s;
+                background: rgba(255, 255, 255, 0.5);
+            }
+        }
+        .ma-swiper-button-prev {
+            padding: 7px 7px 4px 4px;
+            left: 16px;
+            &:hover {
+                transition-delay: 0s;
+                background: rgba(255, 255, 255, 0.5);
+            }
+        }
+    }
 }
 
+.is-active .card9-add {
+    opacity: 1;
+}
+
+//aparece la caja cuando
+.card9-add {
+    #lookbook & {
+        left: 0px;
+        width: 100%;
+    }
+    .is-active & {
+        opacity: 1;
+    }
+}
 
 .product-tag {
     @include font-bold;

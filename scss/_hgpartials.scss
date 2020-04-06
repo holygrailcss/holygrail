@@ -20,6 +20,7 @@
 \*------------------------------------*/
 /* hg en el parent para afectar a su interior*/
 
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { margin: 0; padding: 0; }
 
 @import "base/types";
 @import "base/spacing";
@@ -27,7 +28,7 @@
 
 .hg{  
 @import "base/alignment";
-
+@import "base/helpers";
 @import "base/grid";
 @import "base/height";
 @import "base/icons";

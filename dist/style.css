@@ -293,8 +293,33 @@ a {
       /* 1200px*/
       width: 80%;
       max-width: 1280px; } }
+
+.container-full {
+  padding-right: 8px;
+  padding-left: 8px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  max-width: 800px; }
+  @media (min-width: 786px) {
+    .container-full {
+      /*600px*/
+      padding-right: 8px;
+      padding-left: 8px;
+      width: 90%;
+      max-width: 786px; } }
+  @media (min-width: 992px) {
+    .container-full {
+      /* 992px*/
+      width: 80%;
+      max-width: 992px; } }
+  @media (min-width: 1280px) {
+    .container-full {
+      /* 1200px*/
+      width: 80%;
+      max-width: 1280px; } }
   @media (min-width: 1500px) {
-    .container {
+    .container-full {
       /* 1200px*/
       width: 80%;
       max-width: 1500px; } }
@@ -2522,6 +2547,14 @@ mark {
       .fluid-50-b {
         font-size: 80px;
         line-height: 0.9; } }
+
+.has-ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  vertical-align: top;
+  width: 100%;
+  margin: 0 0 7px; }
 
 /*------------------------------------*\
     $ELEMENTS COMPONENTES

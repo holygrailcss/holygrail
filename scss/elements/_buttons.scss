@@ -7,6 +7,7 @@
 /**
  * .btn es la clase principal para definir un botón  es el tipo
  */
+
 .btn {
     position: relative;
     display: inline-block;
@@ -21,7 +22,7 @@
     white-space: nowrap;
     cursor: pointer;
     padding: $padding-global * 2;
-    color:#fff;
+    color: #fff;
     background-color: #000;
     border: 1px solid #000;
     /**
@@ -29,7 +30,7 @@
  	*/
     &:hover {
         text-decoration: none;
-        opacity: .6;
+        opacity: .5;
     }
     &:active,
     &:focus {
@@ -38,6 +39,15 @@
     &:visited {
         outline: none;
     }
+
+    .has-light & {
+        color: white;
+        border-color: white;
+        &:after {
+            background-color: white;
+        }
+    }
+
 }
 /*+------------------------------------------------------------+
  |       -TAMAÑOS    
@@ -49,6 +59,8 @@ $btn-text-large:14px;
 $btn-text-xlarge:16px;
 $btn-text-full:16px;
 .btn--mini {
+    padding-top: $padding-global * 1;
+    padding-bottom: $padding-global * 1;
     padding-right: $padding-global * 3;
     padding-left: $padding-global * 3;
     font-size: $btn-text-mini;
@@ -123,23 +135,42 @@ $btn-text-full:16px;
         outline: none;
     }
 }
+
+.btn-link {
+    display: inline;
+    position: relative;
+    text-align: center;
+    outline: none;
+    padding: 4px 0;
+
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1.2px;
+    background: transparent;
+    border: none;
+    color: #fff;
+
+    &:after {
+        content: '';
+        background-color: $primary;
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        height: 1px;
+    }
+    .has-light & {
+        color: white;
+        &:after {
+            background-color: white;
+        }
+    }
+}
+
 .btn-block {
     display: block;
     width: 100%;
-}
-.link-btn {
-    height: 42px;
-    width: 100%;
-    line-height: 42px;
-    text-align: center;
-    outline: none;
-    text-align: center;
-    cursor: pointer;
-    font-size: 14px;
-    background: $primary;
-    border: none;
-    color: #fff;
-    transition: all 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 /*+------------------------------------------------------------+
  |       -TIPOS DE BOTONES    
@@ -152,12 +183,7 @@ $btn-text-full:16px;
     color: #fff;
     background-color: $primary;
     border: 1px solid $primary;
-    &:hover {
-        opacity: .7;
-        color: #fff;
-        background-color: $primary;
-        border: 1px solid $primary;
-    }
+
 }
 .btn-phantom {
     color: black;
@@ -177,6 +203,8 @@ $btn-text-full:16px;
  * en grupos horizontales.
  *
  */
+
+ 
 .btn-group {
     position: relative;
     display: flex;
