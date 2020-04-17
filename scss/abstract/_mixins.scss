@@ -3,275 +3,253 @@
  +------------------------------------------------------------+*/
 /* .background-alpha(VALUE VALUE);*/
 @mixin background-alpha($color: $color-white, $alpha: 1) {
-	background-color: hsla(hue($color), saturation($color), lightness($color), $alpha);
+    background-color: hsla(hue($color), saturation($color), lightness($color), $alpha);
 }
-
 /* .userselect(VALUE) (all, element, none, text) */
 @mixin user-select($select) {
-	-webkit-user-select: $select;
-	-moz-user-select: $select;
-	-o-user-select: $select;
-	user-select: $select;
+    -webkit-user-select: $select;
+    -moz-user-select: $select;
+    -o-user-select: $select;
+    user-select: $select;
 }
-
 /*+------------------------------------------------------------+
  |       -MIXINS FONTS
  +------------------------------------------------------------+*/
-
-
- @mixin font-light() {
-	font-family: $font-family-light;
-	font-weight:$font-weight-light;
-
-  }
-  @mixin font-regular() {
-	  font-family: $font-family-regular;
-	font-weight:$font-weight-regular;
-
-  }
-  @mixin font-medium() {
-	font-family: $font-family-medium;
-	font-weight:$font-weight-medium;
-
-  }
-  @mixin font-bold() {
-	font-family: $font-family-bold;
-	font-weight:$font-weight-bold;
-
-  }
-
-  
-
-@mixin fonters($param) {
-	@if($param=="regular") {
-		@include font-regular();
-	}
-
-	@else if($param=="medium") {
-		@include font-medium();
-	}
-
-	@else if($param=="bold") {
-		@include font-bold();
-	}
-
-	@else if($param=="light") {
-		@include font-light();
-	}
+@mixin font-light() {
+    font-family: $font-family-light;
+    font-weight: $font-weight-light;
 }
-
-
-
-
+@mixin font-regular() {
+    font-family: $font-family-regular;
+    font-weight: $font-weight-regular;
+}
+@mixin font-medium() {
+    font-family: $font-family-medium;
+    font-weight: $font-weight-medium;
+}
+@mixin font-bold() {
+    font-family: $font-family-bold;
+    font-weight: $font-weight-bold;
+}
+@mixin font-second-regular() {
+    font-family: $font-family-secondary;
+    font-weight: $font-weight-secondary-regular;
+}
+@mixin font-second-medium() {
+    font-family: $font-family-secondary;
+    font-weight: $font-weight-secondary-medium
+}
+@mixin font-second-bold() {
+    font-family: $font-family-secondary;
+    font-weight: $font-weight-secondary-bold;
+}
+@mixin fonters($param) {
+    @if($param=="regular") {
+        @include font-regular();
+    }
+    @else if($param=="medium") {
+        @include font-medium();
+    }
+    @else if($param=="bold") {
+        @include font-bold();
+    }
+    @else if($param=="light") {
+        @include font-light();
+    }
+    @else if($param=="2-regular") {
+        @include font-second-regular();
+    }
+    @else if($param=="2-medium") {
+        @include font-second-medium();
+    }
+    @else if($param=="2-bold") {
+        @include font-second-bold();
+    }
+}
 /*+------------------------------------------------------------+
  |       -COLORES RANDOM
  +------------------------------------------------------------+*/
 @mixin random-bgr() {
-	background: rgb(random(255), random(255), random(255));
+    background: rgb(random(255), random(255), random(255));
 }
-
 /*+------------------------------------------------------------+
  |       -FLUID TEXT 
  +------------------------------------------------------------+*/
 @function unity($value) {
-	@return $value / ($value * 0 + 1);
+    @return $value / ($value * 0 + 1);
 }
-
-@mixin fluid-text($min-vw, $max-vw, $min-font-size, $max-font-size,$fluid-line-height) {
-	$u1: unit($min-vw);
-	$u2: unit($max-vw);
-	$u3: unit($min-font-size);
-	$u4: unit($max-font-size);
-
-	@if $u1==$u2 and $u1==$u3 and $u1==$u4 {
-		& {
-			font-size: $min-font-size;
-			line-height: $fluid-line-height;
-
-			color:$min-vw;
-			color:$max-vw;
-			color:$min-font-size;
-			color:$max-font-size;
-
-
-
-			color:$u1;
-			color:$u2;
-			color:$u3;
-			color:$u4;
-
-			@media screen and (min-width: $min-vw) {
-				font-size: calc(#{$min-font-size} + #{unity($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{unity($max-vw - $min-vw)}));
-			line-height: $fluid-line-height;
-			}
-
-			@media screen and (min-width: $max-vw) {
-				font-size: $max-font-size;
-				line-height: $fluid-line-height;
-			}
-		}
-	}
+@mixin fluid-text($min-vw, $max-vw, $min-font-size, $max-font-size, $fluid-line-height) {
+    $u1: unit($min-vw);
+    $u2: unit($max-vw);
+    $u3: unit($min-font-size);
+    $u4: unit($max-font-size);
+    @if $u1==$u2 and $u1==$u3 and $u1==$u4 {
+        & {
+            font-size: $min-font-size;
+            line-height: $fluid-line-height;
+            color: $min-vw;
+            color: $max-vw;
+            color: $min-font-size;
+            color: $max-font-size;
+            color: $u1;
+            color: $u2;
+            color: $u3;
+            color: $u4;
+            @media screen and (min-width: $min-vw) {
+                font-size: calc(#{$min-font-size} + #{unity($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{unity($max-vw - $min-vw)}));
+                line-height: $fluid-line-height;
+            }
+            @media screen and (min-width: $max-vw) {
+                font-size: $max-font-size;
+                line-height: $fluid-line-height;
+            }
+        }
+    }
 }
-
-
 @mixin typesFluids($headersFluids) {
-	@for $i from 1 through 1 {
-	  @each $name,
-	  $fsize in $headersFluids {
-		$u1: unit($min-vw);
-		$u2: unit($max-vw);
-		$min-font-size: nth($fsize, $i);
-		$max-font-size: nth($fsize, 2);
-		$fluid-line-height: nth($fsize, 3);
-		$u3: unit($min-font-size);
-		$u4: unit($max-font-size);
-		$u5: nth($fsize, 3);
-		.fluid-#{$name}-r {
-		  @include font-regular();
-		  @if $u1==$u2 and $u1==$u3 and $u1==$u4 {
-			& {
-			  font-size: $min-font-size;
-			  line-height: $u5;
-			  @media screen and (min-width: $min-vw) {
-				font-size: calc(#{$min-font-size} + #{unity($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{unity($max-vw - $min-vw)}));
-				line-height: $fluid-line-height;
-			  }
-			  @media screen and (min-width: $max-vw) {
-				font-size: $max-font-size;
-				line-height: $fluid-line-height;
-			  }
-			}
-		  }
-		}
-		.fluid-#{$name}-m {
-		  @include font-regular();
-		  @if $u1==$u2 and $u1==$u3 and $u1==$u4 {
-			& {
-			  font-size: $min-font-size;
-			  line-height: $u5;
-			  @media screen and (min-width: $min-vw) {
-				font-size: calc(#{$min-font-size} + #{unity($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{unity($max-vw - $min-vw)}));
-				line-height: $fluid-line-height;
-			  }
-			  @media screen and (min-width: $max-vw) {
-				font-size: $max-font-size;
-				line-height: $fluid-line-height;
-			  }
-			}
-		  }
-		}
-		.fluid-#{$name}-b {
-		  @include font-bold();
-		  @if $u1==$u2 and $u1==$u3 and $u1==$u4 {
-			& {
-			  font-size: $min-font-size;
-			  line-height: $u5;
-			  @media screen and (min-width: $min-vw) {
-				font-size: calc(#{$min-font-size} + #{unity($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{unity($max-vw - $min-vw)}));
-				line-height: $fluid-line-height;
-			  }
-			  @media screen and (min-width: $max-vw) {
-				font-size: $max-font-size;
-				line-height: $fluid-line-height;
-			  }
-			}
-		  }
-		}
-	  }
-	}
-  }
-  
-
+    @for $i from 1 through 1 {
+        @each $name,
+        $fsize in $headersFluids {
+            $u1: unit($min-vw);
+            $u2: unit($max-vw);
+            $min-font-size: nth($fsize, $i);
+            $max-font-size: nth($fsize, 2);
+            $fluid-line-height: nth($fsize, 3);
+            $u3: unit($min-font-size);
+            $u4: unit($max-font-size);
+            $u5: nth($fsize, 3);
+            .fluid-#{$name}-r {
+                @include font-regular();
+                @if $u1==$u2 and $u1==$u3 and $u1==$u4 {
+                    & {
+                        font-size: $min-font-size;
+                        line-height: $u5;
+                        @media screen and (min-width: $min-vw) {
+                            font-size: calc(#{$min-font-size} + #{unity($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{unity($max-vw - $min-vw)}));
+                            line-height: $fluid-line-height;
+                        }
+                        @media screen and (min-width: $max-vw) {
+                            font-size: $max-font-size;
+                            line-height: $fluid-line-height;
+                        }
+                    }
+                }
+            }
+            .fluid-#{$name}-m {
+                @include font-regular();
+                @if $u1==$u2 and $u1==$u3 and $u1==$u4 {
+                    & {
+                        font-size: $min-font-size;
+                        line-height: $u5;
+                        @media screen and (min-width: $min-vw) {
+                            font-size: calc(#{$min-font-size} + #{unity($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{unity($max-vw - $min-vw)}));
+                            line-height: $fluid-line-height;
+                        }
+                        @media screen and (min-width: $max-vw) {
+                            font-size: $max-font-size;
+                            line-height: $fluid-line-height;
+                        }
+                    }
+                }
+            }
+            .fluid-#{$name}-b {
+                @include font-bold();
+                @if $u1==$u2 and $u1==$u3 and $u1==$u4 {
+                    & {
+                        font-size: $min-font-size;
+                        line-height: $u5;
+                        @media screen and (min-width: $min-vw) {
+                            font-size: calc(#{$min-font-size} + #{unity($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{unity($max-vw - $min-vw)}));
+                            line-height: $fluid-line-height;
+                        }
+                        @media screen and (min-width: $max-vw) {
+                            font-size: $max-font-size;
+                            line-height: $fluid-line-height;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 /*+------------------------------------------------------------+
  |       -RATIO 
  +------------------------------------------------------------+*/
-
 @mixin ratio($width, $height) {
-	position: relative;
-	overflow: hidden;
-
-	&:before {
-		display: block;
-		content: "";
-		width: 100%;
-		padding-top: ($height / $width) * 100% ;
-	}
-
-	 .content {
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-	}
-	.rat-content {
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-	}
+    position: relative;
+    overflow: hidden;
+    &:before {
+        display: block;
+        content: "";
+        width: 100%;
+        padding-top: ($height / $width) * 100%;
+    }
+    .content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .rat-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
 }
-
 /*+------------------------------------------------------------+
  |       -BLEED A SANGRE
  +------------------------------------------------------------+*/
 @mixin bleed($margin) {
-	.bleed-#{$margin} {
-		padding: 0 $margin/2+px 0 $margin/2+px;
-		overflow: hidden;
-
-		.container-fluid {
-			margin-left: -$margin/2+px;
-			margin-right: -$margin/2+px;
-			padding: 0 $margin/2+px 0 $margin/2+px;
-		}
-
-		.row {
-			margin-left: 0;
-			margin-right: 0;
-			box-sizing: border-box;
-			display: flex;
-			-webkit-box-flex: 0;
-			-ms-flex: 0 1 auto;
-			flex: 0 1 auto;
-			-webkit-box-orient: horizontal;
-			-webkit-box-direction: normal;
-			flex-direction: row;
-			-ms-flex-wrap: wrap;
-			flex-wrap: wrap;
-		}
-
-		[class*="col-"] {
-			padding: $margin/2+px;
-			box-sizing: border-box;
-		}
-	}
-
-	.single {
-		flex-basis: 50%;
-		max-width: 50%;
-	}
-
-	.double {
-		flex-basis: 100%;
-		max-width: 100%;
-	}
-
+    .bleed-#{$margin} {
+        padding: 0 $margin/2+px 0 $margin/2+px;
+        overflow: hidden;
+        .container-fluid {
+            margin-left: -$margin/2+px;
+            margin-right: -$margin/2+px;
+            padding: 0 $margin/2+px 0 $margin/2+px;
+        }
+        .row {
+            margin-left: 0;
+            margin-right: 0;
+            box-sizing: border-box;
+            display: flex;
+            -webkit-box-flex: 0;
+            -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            flex-direction: row;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        }
+        [class*="col-"],
+        .col {
+            padding: $margin/2+px;
+            box-sizing: border-box;
+        }
+    }
+    .single {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+    .double {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
     @media (min-width:$break-sm) {
-		.single {
-			flex-basis: 25%;
-			max-width: 25%;
-		}
-
-		.double {
-			flex-basis: 50%;
-			max-width: 50%;
-		}
-	}
+        .single {
+            flex-basis: 25%;
+            max-width: 25%;
+        }
+        .double {
+            flex-basis: 50%;
+            max-width: 50%;
+        }
+    }
 }
-
-
 @mixin types($breakpoints, $headers, $cssattr) {
     @for $i from 1 through length($breakpoints) {
         @media (min-width: nth(map-values($breakpoints), $i)) {
@@ -291,56 +269,41 @@
         }
     }
 }
-
-
-
-
-
-
 @mixin typesFixers($headersFixers, $cssattr) {
-	@for $i from 1 through 1 {
-
-		@each $name,
-		$fsize in $headersFixers {
-			$fontsize: nth($fsize, $i);
-			$fontheight: nth($fsize, 2);
-
-			.text-#{$name}-r {
-				@include fonters(regular);
-				#{$cssattr }: $fontsize;
-				line-height: $fontheight;
-			}
-
-			.text-#{$name}-m {
-				@include fonters(medium);
-				#{$cssattr }: $fontsize;
-				line-height: $fontheight;
-			}
-
-			.text-#{$name}-b {
-				@include fonters(bold);
-				#{$cssattr }: $fontsize;
-				line-height: $fontheight;
-			}
-		}
-	}
+    @for $i from 1 through 1 {
+        @each $name,
+        $fsize in $headersFixers {
+            $fontsize: nth($fsize, $i);
+            $fontheight: nth($fsize, 2);
+            .text-#{$name}-r {
+                @include fonters(regular);
+                #{$cssattr }: $fontsize;
+                line-height: $fontheight;
+            }
+            .text-#{$name}-m {
+                @include fonters(medium);
+                #{$cssattr }: $fontsize;
+                line-height: $fontheight;
+            }
+            .text-#{$name}-b {
+                @include fonters(bold);
+                #{$cssattr }: $fontsize;
+                line-height: $fontheight;
+            }
+        }
+    }
 }
-
 @for $i from 1 through length($breakpoints) {}
-
 @mixin space($breakpoints, $paddings, $cssattr) {
-	@for $i from 1 through $colBreakpoints {
-
-		@media (min-width: nth(map-values($breakpoints), $i)) {
-
-			@each $name,
-			$pad in $paddings {
-				$padding: nth($pad, $i);
-
-				.#{$name} {
-					#{$cssattr }: $padding;
-				}
-			}
-		}
-	}
+    @for $i from 1 through $colBreakpoints {
+        @media (min-width: nth(map-values($breakpoints), $i)) {
+            @each $name,
+            $pad in $paddings {
+                $padding: nth($pad, $i);
+                .#{$name} {
+                    #{$cssattr }: $padding;
+                }
+            }
+        }
+    }
 }

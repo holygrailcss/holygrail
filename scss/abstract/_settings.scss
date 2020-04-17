@@ -83,6 +83,9 @@ $primary:  #000 !default;
 
 
 $font-family-secondary:"Times new roman"!default;
+$font-weight-secondary-light:300!default;
+$font-weight-secondary-medium:400!default;
+$font-weight-secondary-light:700!default;
 
 
 /* BREAKPOINTS */
@@ -161,6 +164,9 @@ $max-vw:1500px!default;
            p1: (12px, 12px, 12px, 12px, 14px, 1.4, "regular"),
            p2: (14px, 14px, 16px, 16px, 18px, 1.4, "regular"),
            p4: (14px, 14px, 16px, 16px, 18px, 1.4, "medium" )) !default;
+
+        //  primary   font (regular, medium , bold) 
+        //  secondary font (2-regular, 2-medium , 2-bold) 
    
 
 /* TYPES FIJOS */

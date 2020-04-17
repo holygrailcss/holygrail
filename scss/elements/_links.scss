@@ -1,230 +1,236 @@
 /*+------------------------------------------------------------+
  |       -LINKS    
  +------------------------------------------------------------+*/
- a {
-  &:hover {
-   opacity: .9;
-  }
+a {
+    &:hover {
+        opacity: .9;
+    }
 }
 .link1 {
-  display: inline;
-  position: relative;
-  text-align: center;
-  outline: none;
-  padding: 4px 0;
-
-  text-align: center;
-  cursor: pointer;
-  font-size: 16px;
-  line-height: 1.2px;
-  background: transparent;
-  border: none;
-  color: #fff;
-
-  &:after {
-      content: '';
-      background-color: $primary;
-      width: 100%;
-      position: absolute;
-      bottom: 0px;
-      left: 0px;
-      height: 1px;
-  }
-  .has-light & {
-      color: white;
-      &:after {
-          background-color: white;
-      }
-  }
+    display: inline;
+    position: relative;
+    text-align: center;
+    outline: none;
+    padding: 4px 0;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1.2px;
+    background: transparent;
+    border: none;
+    &:after {
+        content: '';
+        background-color: $primary;
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        height: 1px;
+    }
 }
 .link2 {
-  font-size: 12px;
-  text-decoration: none;
-  position: relative;
-  @include font-regular();
-  &:hover {
-    opacity: .6;
-    &::after {
-      -webkit-transform: scaleX(1);
-      -ms-transform: scaleX(1);
-      transform: scaleX(1)
+    font-size: 12px;
+    text-decoration: none;
+    position: relative;
+    @include font-regular();
+    &:hover {
+        opacity: .6;
+        &::after {
+            -webkit-transform: scaleX(1);
+            -ms-transform: scaleX(1);
+            transform: scaleX(1)
+        }
     }
-  }
 }
 .link3,
 .link3::before {
-  @include font-regular();
-  font-size: 14px;
-  text-align: center;
-  display: inline-block;
-  position: relative;
-  top: 0;
-  left: 0;
-  transition: all .2s linear;
-  white-space: nowrap;
+    @include font-regular();
+    font-size: 14px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: 0;
+    transition: all .2s linear;
+    white-space: nowrap;
 }
 .link3::before {
-  position: absolute;
-  padding: 0;
-  content: attr(data-text);
-  opacity: 0;
-  @include font-medium();
+    position: absolute;
+    padding: 0;
+    content: attr(data-text);
+    opacity: 0;
+    @include font-medium();
 }
-.link3:hover ,.link3.hover {
-  opacity: 0.9;
+.link3:hover,
+.link3.hover {
+    opacity: 0.9;
 }
 .link3:hover::before {
-  opacity: 1;
+    opacity: 1;
 }
+
+
+
 .link4 {
-  @include font-regular();
-  position: relative;
-  display: inline-block;
-  border: 0;
-  transform: none;
-  transition: background-color 0.3s ease-in-out;
-  margin: 0px;
-  font-size: 16px;
-
-  line-height: 16px;
-  padding: 12px 0;
-  &:hover {
-    opacity: .5;
-  }
-  .link4-underline {
-    background: #000;
-    height: 1px;
-    width: 100%;
+    @include font-regular();
+    position: relative;
     display: inline-block;
-    position: absolute;
-    bottom: 12px;
-    left: 0;
-
-
-  }
-
-}
-
-.link5 {
-  font-size: 16px;
-
-  @include font-bold();
-  transition: color 250ms linear;
-  text-decoration: none;
-  position: relative;
-  &:hover {
-   /* color: $linkHover; */
-    &::after {
-      -webkit-transform: scaleX(1);
-      -ms-transform: scaleX(1);
-      transform: scaleX(1)
+    border: 0;
+    transform: none;
+    transition: background-color 0.3s ease-in-out;
+    margin: 0px;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 4px 0;
+    &:hover {
+        opacity: .5;
     }
-  }
-  &:focus {
-    outline: none;
-
-    text-decoration: none;
-  }
-
-  &:focus:hover {
-
-  }
-  
-  &:-moz-focusring {
-    outline: none !important;
-    background: none;
-  }
-  &::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: -4px;
-    left: 0;
-    background: $primary;
-    transform: scaleX(0);
-    transition: transform $transition;
-    transition: transform $transition, -webkit-transform $transition;
-  }
+    &:after {
+        content: '';
+        background-color: $primary;
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        height: 1px;
+    }
 }
-
-
+//El hg mata el & despues
+.link5 {
+    font-size: 16px;
+    @include font-bold();
+    transition: color 250ms linear;
+    text-decoration: none;
+    position: relative;
+    &:hover {
+        /* color: $linkHover; */
+        &::after {
+            -webkit-transform: scaleX(1);
+            -ms-transform: scaleX(1);
+            transform: scaleX(1)
+        }
+    }
+    &:focus {
+        outline: none;
+        text-decoration: none;
+    }
+    &:focus:hover {}
+    &:-moz-focusring {
+        outline: none !important;
+        background: none;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: -4px;
+        left: 0;
+        background: $primary;
+        transform: scaleX(0);
+        transition: transform $transition;
+        transition: transform $transition, -webkit-transform $transition;
+    }
+}
+.link6 {
+    @include font-bold;
+    position: relative;
+    display: inline-block;
+    padding: 4px 0;
+    margin: 20px 0;
+    border-bottom: 2px solid #000000;
+    color: black;
+    font-size: 16px;
+    line-height: 13px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
 .link-button-prev {
-  background: transparent !important;
-  position: relative;
-  width: 40px;
-  height: 40px;
-  z-index: 1;
-  cursor: pointer;
-  border-radius: 50%;
-  border: 1px solid #ccc;
+    background: transparent !important;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid #ccc;
 }
 .inner-button {
-  margin-top: -1px;
-  display: block;
-  width: 40px;
-  height: 40px;
-  color: white;
-  &::after {
-    border: 1px solid #000;
-    border-radius: 0px;
-    border-right: 0;
-    border-top: 0;
-    content: " ";
+    margin-top: -1px;
     display: block;
-    height: 10px;
-    margin-top: -8px;
-    pointer-events: none;
-    position: absolute;
-    top: 53%;
-    right: 16px;
-    transform: rotate(-135deg);
-    transform-origin: center;
-    width: 10px;
-  }
+    width: 40px;
+    height: 40px;
+    color: white;
+    &::after {
+        border: 1px solid #000;
+        border-radius: 0px;
+        border-right: 0;
+        border-top: 0;
+        content: " ";
+        display: block;
+        height: 10px;
+        margin-top: -8px;
+        pointer-events: none;
+        position: absolute;
+        top: 53%;
+        right: 16px;
+        transform: rotate(-135deg);
+        transform-origin: center;
+        width: 10px;
+    }
 }
-
-
-.link5 {
-  position: relative;
-  font-size: 16px;
-  line-height: 1.6;
-  text-decoration: none;
-  
-  &:after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 3;
-    width: 0;
-    height: 1px;
-    background: #000;
-    -webkit-animation: underline 1s 0.5s cubic-bezier(0.55, 0.085, 0, 0.99) forwards;
-    animation: underline 1s 0.5s cubic-bezier(0.55, 0.085, 0, 0.99) forwards;
-  }
-  
-  &:hover{
-    opacity: .5;
-  }
-  
+.link7 {
+    position: relative;
+    font-size: 16px;
+    line-height: 1.6;
+    text-decoration: none;
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 3;
+        width: 0;
+        height: 1px;
+        background: #000;
+        -webkit-animation: underline 1s 0.5s cubic-bezier(0.55, 0.085, 0, 0.99) forwards;
+        animation: underline 1s 0.5s cubic-bezier(0.55, 0.085, 0, 0.99) forwards;
+    }
+    &:hover {
+        opacity: .5;
+    }
 }
-
-
 
 
 .has-light {
-
-  .link5 {
-    color: #ffffff;
-    &:after {
-      background: #ffffff; }
-
+    .link1 {
+        color: white;
+        &:after {
+            background-color: white;
+        }
     }
-
-  .link4 {
-    .link4-underline {
-      background: #fff;
+    .link4 {
+        color: white;
+        &:after {
+            background-color: white;
+        }
     }
-  }
+    .link6 {
+        color: #ffffff;
+        border-bottom: 2px solid #ffffff;
+    }
+    .link7 {
+        color: #ffffff;
+        &:after {
+            background: #ffffff;
+        }
+    }
+    .link4 {
+        .link4-underline {
+            background: #fff;
+        }
+    }
 }

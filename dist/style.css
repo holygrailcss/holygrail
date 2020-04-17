@@ -358,6 +358,19 @@ a {
   width: 90%;
   max-width: 350px; }
 
+/* LAYOUT - BLOCK */
+.container-5 {
+  position: relative;
+  padding: 0 8px;
+  margin: 0 auto; }
+  @media (min-width: 786px) {
+    .container-5 {
+      max-width: 800px; } }
+  @media (min-width: 1280px) {
+    .container-5 {
+      max-width: 1600px;
+      padding: 0 58px; } }
+
 /*+------------------------------------------------------------+
    |       -ROW        
    +------------------------------------------------------------+*/
@@ -673,7 +686,8 @@ a {
     flex-direction: row;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
-  .bleed-0 [class*="col-"] {
+  .bleed-0 [class*="col-"],
+  .bleed-0 .col {
     padding: 0px;
     box-sizing: border-box; }
 
@@ -713,7 +727,8 @@ a {
     flex-direction: row;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
-  .bleed-4 [class*="col-"] {
+  .bleed-4 [class*="col-"],
+  .bleed-4 .col {
     padding: 2px;
     box-sizing: border-box; }
 
@@ -753,7 +768,8 @@ a {
     flex-direction: row;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
-  .bleed-8 [class*="col-"] {
+  .bleed-8 [class*="col-"],
+  .bleed-8 .col {
     padding: 4px;
     box-sizing: border-box; }
 
@@ -868,6 +884,12 @@ a {
     left: 0;
     right: 0;
     bottom: 0; }
+  .rat-16-9 .rat-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
 
 .rat-21-9 {
   position: relative;
@@ -878,6 +900,12 @@ a {
     width: 100%;
     padding-top: 42.85714%; }
   .rat-21-9 .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+  .rat-21-9 .rat-content {
     position: absolute;
     top: 0;
     left: 0;
@@ -898,6 +926,12 @@ a {
     left: 0;
     right: 0;
     bottom: 0; }
+  .rat-1-1 .rat-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
 
 .rat-2-1 {
   position: relative;
@@ -908,6 +942,12 @@ a {
     width: 100%;
     padding-top: 50%; }
   .rat-2-1 .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+  .rat-2-1 .rat-content {
     position: absolute;
     top: 0;
     left: 0;
@@ -928,6 +968,12 @@ a {
     left: 0;
     right: 0;
     bottom: 0; }
+  .rat-2-3 .rat-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
 
 .rat-3-2 {
   position: relative;
@@ -938,6 +984,12 @@ a {
     width: 100%;
     padding-top: 66.66667%; }
   .rat-3-2 .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+  .rat-3-2 .rat-content {
     position: absolute;
     top: 0;
     left: 0;
@@ -958,6 +1010,12 @@ a {
     left: 0;
     right: 0;
     bottom: 0; }
+  .rat-3-4 .rat-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
 
 .rat-4-2 {
   position: relative;
@@ -968,6 +1026,12 @@ a {
     width: 100%;
     padding-top: 50%; }
   .rat-4-2 .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+  .rat-4-2 .rat-content {
     position: absolute;
     top: 0;
     left: 0;
@@ -988,6 +1052,12 @@ a {
     left: 0;
     right: 0;
     bottom: 0; }
+  .rat-4-3 .rat-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
 
 .rat-main {
   position: relative;
@@ -1003,9 +1073,15 @@ a {
     left: 0;
     right: 0;
     bottom: 0; }
+  .rat-main .rat-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
 
 /*+------------------------------------------------------------+
- |       -MARGINS  
+ |       - MARGINS  
  +------------------------------------------------------------+*/
 /*+------------------------------------------------------------+
   |      -MIXINS SPACE  
@@ -2673,16 +2749,23 @@ hr {
  	*/ }
   .btn:hover {
     text-decoration: none;
-    opacity: .6; }
+    opacity: .5; }
   .btn:active, .btn:focus {
     outline: none; }
   .btn:visited {
     outline: none; }
+  .has-light .btn {
+    color: white;
+    border-color: white; }
+    .has-light .btn:after {
+      background-color: white; }
 
 /*+------------------------------------------------------------+
  |       -TAMAÑOS    
  +------------------------------------------------------------+*/
 .btn--mini {
+  padding-top: 8px;
+  padding-bottom: 8px;
   padding-right: 24px;
   padding-left: 24px;
   font-size: 12px; }
@@ -2753,23 +2836,35 @@ hr {
   .btn-xs:visited {
     outline: none; }
 
+.btn-link {
+  display: inline;
+  position: relative;
+  text-align: center;
+  outline: none;
+  padding: 4px 0;
+  text-align: center;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1.2px;
+  background: transparent;
+  border: none;
+  color: #fff; }
+  .btn-link:after {
+    content: '';
+    background-color: #000;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 1px; }
+  .has-light .btn-link {
+    color: white; }
+    .has-light .btn-link:after {
+      background-color: white; }
+
 .btn-block {
   display: block;
   width: 100%; }
-
-.link-btn {
-  height: 42px;
-  width: 100%;
-  line-height: 42px;
-  text-align: center;
-  outline: none;
-  text-align: center;
-  cursor: pointer;
-  font-size: 14px;
-  background: #000;
-  border: none;
-  color: #fff;
-  transition: all 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955); }
 
 /*+------------------------------------------------------------+
  |       -TIPOS DE BOTONES    
@@ -2782,11 +2877,6 @@ hr {
   color: #fff;
   background-color: #000;
   border: 1px solid #000; }
-  .btn-primary:hover {
-    opacity: .7;
-    color: #fff;
-    background-color: #000;
-    border: 1px solid #000; }
 
 .btn-phantom {
   color: black;
@@ -3280,35 +3370,29 @@ a:hover {
   opacity: .9; }
 
 .link1 {
+  display: inline;
+  position: relative;
+  text-align: center;
+  outline: none;
+  padding: 4px 0;
+  text-align: center;
+  cursor: pointer;
   font-size: 16px;
-  font-family: "Open Sans";
-  font-weight: 700;
-  transition: color 250ms linear;
-  text-decoration: none;
-  position: relative; }
-  .link1:hover {
-    /* color: $linkHover; */ }
-    .link1:hover::after {
-      -webkit-transform: scaleX(1);
-      -ms-transform: scaleX(1);
-      transform: scaleX(1); }
-  .link1:focus {
-    outline: none;
-    text-decoration: none; }
-  .link1:-moz-focusring {
-    outline: none !important;
-    background: none; }
-  .link1::after {
-    content: "";
-    position: absolute;
+  line-height: 1.2px;
+  background: transparent;
+  border: none; }
+  .link1:after {
+    content: '';
+    background-color: #000;
     width: 100%;
-    height: 2px;
-    bottom: -4px;
-    left: 0;
-    background: #000;
-    transform: scaleX(0);
-    transition: transform 278ms;
-    transition: transform 278ms, -webkit-transform 278ms; }
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 1px; }
+  .has-light .link1 {
+    color: white; }
+    .has-light .link1:after {
+      background-color: white; }
 
 .link2 {
   font-size: 12px;
@@ -3361,17 +3445,57 @@ a:hover {
   margin: 0px;
   font-size: 16px;
   line-height: 16px;
-  padding: 12px 0; }
+  padding: 4px 0; }
   .link4:hover {
     opacity: .5; }
-  .link4 .link4-underline {
-    background: #000;
-    height: 1px;
+  .link4:after {
+    content: '';
+    background-color: #000;
     width: 100%;
-    display: inline-block;
     position: absolute;
-    bottom: 12px;
-    left: 0; }
+    bottom: 0px;
+    left: 0px;
+    height: 1px; }
+  .has-light .link4 {
+    color: white; }
+    .has-light .link4:after {
+      background-color: white; }
+
+.has-light .link4 {
+  color: white; }
+  .has-light .link4:after {
+    background-color: white; }
+
+.link5 {
+  font-size: 16px;
+  font-family: "Open Sans";
+  font-weight: 700;
+  transition: color 250ms linear;
+  text-decoration: none;
+  position: relative; }
+  .link5:hover {
+    /* color: $linkHover; */ }
+    .link5:hover::after {
+      -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+      transform: scaleX(1); }
+  .link5:focus {
+    outline: none;
+    text-decoration: none; }
+  .link5:-moz-focusring {
+    outline: none !important;
+    background: none; }
+  .link5::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background: #000;
+    transform: scaleX(0);
+    transition: transform 278ms;
+    transition: transform 278ms, -webkit-transform 278ms; }
 
 .link-button-prev {
   background: transparent !important;
@@ -3406,12 +3530,12 @@ a:hover {
     transform-origin: center;
     width: 10px; }
 
-.link5 {
+.link7 {
   position: relative;
   font-size: 16px;
   line-height: 1.6;
   text-decoration: none; }
-  .link5:after {
+  .link7:after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -3422,12 +3546,12 @@ a:hover {
     background: #000;
     -webkit-animation: underline 1s 0.5s cubic-bezier(0.55, 0.085, 0, 0.99) forwards;
     animation: underline 1s 0.5s cubic-bezier(0.55, 0.085, 0, 0.99) forwards; }
-  .link5:hover {
+  .link7:hover {
     opacity: .5; }
 
-.has-light .link5 {
+.has-light .link7 {
   color: #ffffff; }
-  .has-light .link5:after {
+  .has-light .link7:after {
     background: #ffffff; }
 
 .has-light .link4 .link4-underline {
@@ -3464,7 +3588,8 @@ ul.list-disc {
  |       -LISTA HORIZONTAL LIMPIA    
  +------------------------------------------------------------+*/
 ul.list-inline {
-  margin: 0px; }
+  margin: 0px;
+  padding: 0px; }
   ul.list-inline li {
     display: inline-block;
     padding: 0 8px;

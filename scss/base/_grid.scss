@@ -100,6 +100,22 @@
     width: 90%;
     max-width: $container-4;
   }
+
+
+/* join life style*/
+.container-5 {
+  position: relative;
+  padding: 0 8px;
+  margin: 0 auto;
+  @media (min-width:$break-sm) {
+    max-width: 800px;
+  }
+  @media (min-width:$break-lg) {
+    max-width: 1600px;
+    padding: 0 58px;
+  }
+}
+
   /*+------------------------------------------------------------+
    |       -ROW        
    +------------------------------------------------------------+*/

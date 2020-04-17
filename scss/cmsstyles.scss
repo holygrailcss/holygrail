@@ -1,0 +1,80 @@
+
+/* no usar col- nunca ya que hay un selector asi
+ */
+/*cargamos el tema por defecto con las fuentes y colores propios */
+@import url("https://use.typekit.net/puz7rnx.css");
+
+
+$font-family-primary: 'BasisGrotesque-Regular-Pro';
+
+$font-family-light: 'BasisGrotesque-Light-Pro';
+$font-family-regular: 'BasisGrotesque-Regular-Pro';
+$font-family-medium: 'BasisGrotesque-Medium-Pro';
+$font-family-bold: 'BasisGrotesque-Bold-Pro';
+
+$font-family-primary: 'BasisGrotesque-Regular-Pro';
+$font-weight-light: inherit;
+$font-weight-regular: inherit;
+$font-weight-medium: inherit;
+$font-weight-bold: inherit;
+
+
+$font-family-secondary: "miller-display";
+$font-weight-secondary-regular:300!default;
+$font-weight-secondary-medium:400!default;
+$font-weight-secondary-bold:700!default;
+
+
+
+
+$headers:/* name:mobile,768,992,1280,line-height,font */
+(h1: (32px, 32px, 32px, 32px, 40px, 1.2, "medium" ),
+ h2: (24px, 24px, 24px, 24px, 32px, 1.2, "medium" ),
+ h3: (18px, 18px, 18px, 18px, 24px, 1.2, "medium" ),
+ h4: (16px, 16px, 16px, 16px, 18px, 1.2, "medium" ),
+ h5: (14px, 14px, 14px, 14px, 16px, 1.2, "medium" ),
+ h6: (12px, 12px, 12px, 12px, 14px, 1.2, "medium" ),
+ h7: (10px, 10px, 10px, 10px, 12px, 1.2, "medium" ),
+ h8: (8px,   8px,  8px,  8px, 10px, 1.2, "medium" ),
+
+miller-h1: (32px, 32px, 32px, 32px, 40px, 1.2, "2-regular" ),
+miller-h2: (24px, 24px, 24px, 24px, 32px, 1.2, "2-regular" ),
+miller-h3: (18px, 18px, 18px, 18px, 24px, 1.2, "2-regular" ),
+miller-h4: (16px, 16px, 16px, 16px, 18px, 1.2, "2-regular" ),
+miller-h5: (14px, 14px, 14px, 14px, 16px, 1.2, "2-regular" ),
+miller-h6: (12px, 12px, 12px, 12px, 14px, 1.2, "2-regular" ),
+miller-h7: (10px, 10px, 10px, 10px, 12px, 1.2, "2-regular" ),
+miller-h8: (8px,   8px,  8px,  8px, 10px, 1.2, "2-regular" ),
+
+
+display1: (32px, 32px, 32px, 32px, 48px, 1.2, "bold"   ),/* PROMOTIONS BANNER */
+display2: (20px, 20px, 20px, 20px, 40px, 1.2, "bold"   ),/* SALES */
+display3: (16px, 16px, 16px, 16px, 24px, 1.5, "medium" ),/* BLACK FRIDAY */
+display4: (14px, 14px, 14px, 14px, 24px, 1.5, "medium" ),/* SALES */
+display5: (14px, 14px, 14px, 14px, 18px, 1.5, "regular"),/* BLACK FRIDAY */
+display6: (12px, 12px, 12px, 12px, 18px, 1.5, "regular"),/* SALES */
+display7: (14px, 14px, 14px, 14px, 18px, 1.5, "medium" ),/* SALES + BLACK FRIDAY */
+
+
+
+ p1: (12px, 12px, 12px, 12px, 14px, 1.4, "regular"),
+ p2: (14px, 14px, 16px, 16px, 18px, 1.4, "regular"),
+ p4: (14px, 14px, 16px, 16px, 18px, 1.4, "medium" )) ;
+
+
+
+@import "abstract/settings";
+@import "abstract/breakpoints";
+@import "abstract/fonts";
+@import "abstract/mixins";
+@import "abstract/animations";
+
+
+/*------------------------------------*\
+    $BASE
+\*------------------------------------*/
+/* hg en el parent para afectar a su interior*/
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { margin: 0; padding: 0; }
+
+@import "base/types";
