@@ -4,37 +4,37 @@
 
 
 .height-xs {
-    height: $height-xs;
+    min-height: $height-xs;
 }
 
 .height-sm {
-    height: $height-sm;
+    min-height: $height-sm;
 }
 
 .height-md {
-    height: $height-md;
+    min-height: $height-md;
 }
 
 .height-lg {
-    height: $height-lg;
+    min-height: $height-lg;
 }
 
 .height-xl {
-    height: $height-xl;
+    min-height: $height-xl;
 }
 
 .height-full {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .height-home {
 
-    height: calc(100vh - 80px);
+    min-height: calc(100vh - 80px);
 }
 .height-header {
   
   @media (min-width:$break-sm) {
-    height: calc(100vh - 80px);
+    min-height: calc(100vh - 80px);
   }
 }
 

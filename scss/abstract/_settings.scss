@@ -85,7 +85,7 @@ $primary:  #000 !default;
 $font-family-secondary:"Times new roman"!default;
 $font-weight-secondary-light:300!default;
 $font-weight-secondary-medium:400!default;
-$font-weight-secondary-light:700!default;
+$font-weight-secondary-bold:700!default;
 
 
 /* BREAKPOINTS */
@@ -146,24 +146,24 @@ $max-vw:1500px!default;
    $fs: "font-size";
    $lh: "line-height";
    $headers:/* name:mobile,768,992,1280,line-height,font */
-          (h1: (32px, 32px, 32px, 32px, 40px, 1.2, "medium" ),
-           h2: (24px, 24px, 24px, 24px, 32px, 1.2, "medium" ),
-           h3: (18px, 18px, 18px, 18px, 24px, 1.2, "medium" ),
-           h4: (16px, 16px, 16px, 16px, 18px, 1.2, "medium" ),
-           h5: (14px, 14px, 14px, 14px, 16px, 1.2, "medium" ),
-           h6: (12px, 12px, 12px, 12px, 14px, 1.2, "medium" ),
-           h7: (10px, 10px, 10px, 10px, 12px, 1.2, "medium" ),
-           h8: (8px,   8px,  8px,  8px, 10px, 1.2, "medium" ),
-     display1: (32px, 32px, 32px, 32px, 48px, 1.2, "bold"   ),/* PROMOTIONS BANNER */
-     display2: (20px, 20px, 20px, 20px, 40px, 1.2, "bold"   ),/* SALES */
-     display3: (16px, 16px, 16px, 16px, 24px, 1.5, "medium" ),/* BLACK FRIDAY */
-     display4: (14px, 14px, 14px, 14px, 24px, 1.5, "medium" ),/* SALES */
-     display5: (14px, 14px, 14px, 14px, 18px, 1.5, "regular"),/* BLACK FRIDAY */
-     display6: (12px, 12px, 12px, 12px, 18px, 1.5, "regular"),/* SALES */
-     display7: (14px, 14px, 14px, 14px, 18px, 1.5, "medium" ),/* SALES + BLACK FRIDAY */
-           p1: (12px, 12px, 12px, 12px, 14px, 1.4, "regular"),
-           p2: (14px, 14px, 16px, 16px, 18px, 1.4, "regular"),
-           p4: (14px, 14px, 16px, 16px, 18px, 1.4, "medium" )) !default;
+          (h1: (32px, 32px, 32px,  40px, 1.2, "medium" ),
+           h2: (24px, 24px, 24px,  32px, 1.2, "medium" ),
+           h3: (18px, 18px, 18px,  24px, 1.2, "medium" ),
+           h4: (16px, 16px, 16px,  18px, 1.2, "medium" ),
+           h5: (14px, 14px, 14px,  16px, 1.2, "medium" ),
+           h6: (12px, 12px, 12px,  14px, 1.2, "medium" ),
+           h7: (10px, 10px, 10px,  12px, 1.2, "medium" ),
+           h8: (8px,   8px,  8px,  10px, 1.2, "medium" ),
+     display1: (32px, 32px, 32px,  48px, 1.2, "bold"   ),/* PROMOTIONS BANNER */
+     display2: (20px, 20px, 20px,  40px, 1.2, "bold"   ),/* SALES */
+     display3: (16px, 16px, 16px,  24px, 1.5, "medium" ),/* BLACK FRIDAY */
+     display4: (14px, 14px, 14px,  24px, 1.5, "medium" ),/* SALES */
+     display5: (14px, 14px, 14px,  18px, 1.5, "regular"),/* BLACK FRIDAY */
+     display6: (12px, 12px, 12px,  18px, 1.5, "regular"),/* SALES */
+     display7: (14px, 14px, 14px,  18px, 1.5, "medium" ),/* SALES + BLACK FRIDAY */
+           p1: (12px, 12px, 12px,  14px, 1.4, "regular"),
+           p2: (14px, 14px, 16px,  18px, 1.4, "regular"),
+           p4: (14px, 14px, 16px,  18px, 1.4, "medium" )) !default;
 
         //  primary   font (regular, medium , bold) 
         //  secondary font (2-regular, 2-medium , 2-bold) 
@@ -234,12 +234,20 @@ $margin-top: /* name : margen bottom*/
    mr-30: (10px, 30px, 30px, 30px),
    mr-50: (20px, 50px, 50px, 50px))!default;
  
-$mb: "margin-bottom";
-$margin-bottom: /* name : margen bottom*/
-(mb-10: (10px, 10px, 10px, 10px),
- mb-20: (10px, 20px, 20px, 20px),
- mb-30: (10px, 30px, 30px, 30px),
- mb-50: (20px, 50px, 50px, 50px))!default;
+
+
+ $mb: "margin-bottom";
+$margin-bottom:
+/* name : margen bottom*/
+(mb-4: (4px, 4px, 4px, 4px),
+  mb-10: (10px, 10px, 10px, 10px),
+  mb-16: (10px, 10px, 16px, 16px),
+  mb-20: (10px, 20px, 20px, 20px),
+  mb-24: (20px, 20px, 24px, 24px),
+  mb-30: (10px, 30px, 30px, 30px),
+  mb-40: (20px, 40px, 40px, 40px),
+  mb-50: (20px, 50px, 50px, 50px)) !default;
+
  
 
 $ml: "margin-left";
@@ -297,7 +305,7 @@ $padding-bottom: /* name : padding  bottom*/
 $pl: "padding-left";
 $padding-left: /* name : padding  bottom*/
 (pl-10: (10px, 10px, 10px, 10px),
-pl-16 : (8px, 16 px, 16 px, 16 px),
+pl-16 : (8px, 16px, 16px, 16px),
  pl-20: (10px, 20px, 20px, 20px),
  pl-30: (10px, 30px, 30px, 30px),
  pl-50: (20px, 50px, 50px, 50px))!default;

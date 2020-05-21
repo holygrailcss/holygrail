@@ -22,3 +22,28 @@ hr {
   border-top: 1px solid #eaeaea;
   border-bottom: 1px solid transparent;
 }
+
+.only-mobile {
+  display: inline-block;
+  @media (min-width:$break-sm) {
+    display: inline-block;
+  }
+  @media (min-width:$break-md) {
+    display: none;
+  }
+  @media (min-width:$break-lg) {
+    display: none;
+  }
+}
+.only-desktop {
+  display: none;
+  @media (min-width:$break-sm) {
+    display: none;
+  }
+  @media (min-width:$break-md) {
+    display: inline-block;
+  }
+  @media (min-width:$break-lg) {
+    display: inline-block;
+  }
+}

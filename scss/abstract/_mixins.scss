@@ -256,8 +256,8 @@
             @each $name,
             $fsize in $headers {
                 $fontsize: nth($fsize, $i);
-                $fontheight: nth($fsize, 6);
-                $fontweight: nth($fsize, 7);
+                $fontheight: nth($fsize, 5);
+                $fontweight: nth($fsize, 6);
                 .#{$name} {
                     @if(nth(map-values($breakpoints), $i)==1px) {
                         @include fonters($fontweight);

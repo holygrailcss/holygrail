@@ -38,7 +38,9 @@ holygrailcss is constantly in development! Try it out now:
 npm install holygrailcss
 ```
 
+gulp style;
 
+gulp guide;
 
 
 ### CDN

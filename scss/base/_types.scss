@@ -98,47 +98,6 @@ mark {
  +-------------------------------------------------------------------------------------------+*/
  
 
-
-.fluid-h1 {
-  @include fluid-text($min_width, $break-lg, 36px, 64px, 1);
-  @include font-regular()
-}
-
-.fluid-h2 {
-  @include fluid-text($min_width, $break-lg, 24px, 48px, 1);
-  line-height: 1.2;
-  @include font-bold()
-}
-
-.fluid-h3 {
-  @include fluid-text($min_width, $break-lg, 18px, 24px, 1);
-  line-height: 1.2;
-  @include font-light()
-}
-
-.fluid-h4 {
-  @include fluid-text($min_width, $break-lg, 16px, 22px, 1);
-  line-height: 1.2;
-  @include font-bold()
-}
-
-.fluid-h5 {
-  @include fluid-text($min_width, $break-lg, 14px, 20px, 1);
-  line-height: 1.2;
-  @include font-medium()
-}
-
-.fluid-h6 {
-  @include fluid-text($min_width, $break-lg, 14px, 18px, 1);
-  font-size: calc(1em + 0.25vw);
-  @include font-light()
-}
-
-.fluid-h7 {
-  @include fluid-text($min_width, $break-lg, 12px, 18px, 1);
-  @include font-regular()
-}
-
 .secondary{
   font-family:$font-family-secondary !important;
   font-weight: 100;
@@ -151,3 +110,9 @@ mark {
 @include types($breakpoints, $headers, $fs);
 
 @include typesFluids($headersFluids) ;
+
+.text-light{@include font-light();}
+.text-regular{@include font-regular();}
+.text-medium{ @include font-medium();}
+.text-bold{ @include font-bold();}
+

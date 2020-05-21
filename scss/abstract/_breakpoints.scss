@@ -8,15 +8,14 @@
     xs: 1px,
     sm: 786px,
     md: 992px,
-    lg: 1280px,
-    xl: 1500px);
+    lg: 1280px);
 
-$colBreakpoints: length($breakpoints) - 1;
+$colBreakpoints: length($breakpoints) ;
 
 $break-xs:nth(map-values($breakpoints), 1) !default;
 $break-sm:nth(map-values($breakpoints), 2) !default;
 $break-md:nth(map-values($breakpoints), 3) !default;
 $break-lg:nth(map-values($breakpoints), 4) !default;
-$break-xl:nth(map-values($breakpoints), 5) !default;
 
 $min-width:319px !default;
+$break-xl:1500px !default;
