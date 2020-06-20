@@ -23,6 +23,8 @@
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { margin: 0; padding: 0; }
 
 @import "base/types";
+@import "elements/buttons";
+
 
 .hg{  
 @import "base/alignment";
@@ -42,7 +44,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { margin: 0; padding: 0; }
 \*------------------------------------*/
 
 @import "elements/animated";
-@import "elements/buttons";
+
 @import "elements/checkbox";
 @import "elements/form";
 @import "elements/links";

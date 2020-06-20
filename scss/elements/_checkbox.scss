@@ -59,8 +59,8 @@
     [type="checkbox"]:not(:checked)+label .icon,
     [type="checkbox"]:checked+label .icon {
         position: absolute;
-        top: 8px;
-        left: 6px;
+        top: 4px;
+        left: 4px;
         color: #000;
         -webkit-transition: all .2s;
         transition: all .2s;
@@ -99,8 +99,8 @@
     [type="checkbox"]:checked+label:before {
         position: absolute;
         content: '';
-        width: 60px;
-        height: 24px;
+        width: 62px;
+        height: 26px;
         border-radius: 30px;
         left: 0;
         border: none;

@@ -136,7 +136,7 @@ $btn-text-full:16px;
     }
 }
 
-.btn-link {
+.btn-underline {
     display: inline;
     position: relative;
     text-align: center;
@@ -149,7 +149,7 @@ $btn-text-full:16px;
     line-height: 1.2px;
     background: transparent;
     border: none;
-    color: #fff;
+    color:  $primary;
 
     &:after {
         content: '';
@@ -160,10 +160,52 @@ $btn-text-full:16px;
         left: 0px;
         height: 1px;
     }
+
+
+    &:hover,
+    &:focus,
+    &.focus {
+    opacity: .7;
+        background-color: transparent;
+        color:  $primary;
+        text-decoration: none;
+        cursor: pointer;
+
+        &:after{
+            opacity: 0;
+        }
+    }
+    &:active,
+    &.active {
+        &:focus,
+        &.focus {
+            outline: 0;
+        }
+        outline: 0;
+        background-image: none;
+        box-shadow: none;
+        opacity: .5;
+    }
+
+    &:disabled,
+    &.disabled {
+
+        opacity: .2;
+    }
+
+
+
+
     .has-light & {
         color: white;
         &:after {
             background-color: white;
+        }
+        &:hover,
+        &:focus,
+        &.focus {
+            background-color: transparent;
+            color: white;
         }
     }
 }

@@ -35,10 +35,10 @@ label {
 
   justify-content: flex-start;
   line-height: 1.5;
-  padding-bottom: 16px;
+  padding-bottom: 14px;
   padding-left: 16px;
   padding-right: 16px;
-  padding-top: 16px;
+  padding-top: 14px;
   position: relative;
   vertical-align: top;
   font-size:12px;
@@ -189,10 +189,9 @@ label {
 }
 
 input::-webkit-input-placeholder {
-    font-size: 9px;
-    text-transform: uppercase;
+
     color: #AAA;
-    transform: translate3d(0, -4px, 0)
+    transform: translate3d(0, 0, 0)
 }
 
 
@@ -260,7 +259,7 @@ input::-webkit-input-placeholder {
     left: 12px;
     width: 24px;
     height: 24px;
-    background: #eaeaea;
+
   }
   
   .icon-pre {

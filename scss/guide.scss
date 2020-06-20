@@ -5,10 +5,12 @@
 
 
 
-@import "partials";
-
-
-
+@import "abstract/reset";
+@import "abstract/settings";
+@import "abstract/fonts";
+@import "abstract/breakpoints";
+@import "abstract/mixins";
+@import "abstract/animations";
 
 $primary-guide:#121F2A !default;
 $secondary-guide:#6759bb !default;
