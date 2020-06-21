@@ -1244,7 +1244,8 @@ $value in $colorsGuide {
         :before {
             color: #fff;
             position: absolute;
-            bottom: -40px;
+            z-index: 1;
+            top: 0px;
             font-size: 14px;
             left: 0px;
             content: "#{$color0}";
