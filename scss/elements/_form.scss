@@ -61,6 +61,17 @@ label {
     font-size: 14px;
   }
 }
+.input-line{
+  border-top: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+
+  background-color: transparent;
+  padding-left: 0;
+  border-bottom: 1px solid #000;
+
+}
+
 
 
 .textarea {
@@ -154,6 +165,17 @@ label {
         border: 1px solid green;
         color: green;
     }
+
+    .input-line {
+      border-top: 1px solid transparent;
+      border-left: 1px solid transparent;
+      border-right: 1px solid transparent;
+      border-bottom: 1px solid green;
+      color: green;
+    }
+    
+
+
 }
 
 .disabled-input {

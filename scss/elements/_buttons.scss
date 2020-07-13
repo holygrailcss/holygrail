@@ -23,8 +23,7 @@
     cursor: pointer;
     padding: $padding-global * 2;
     color: #fff;
-    background-color: #000;
-    border: 1px solid #000;
+
     /**
  	* Nadie quiere un botón con texto subrayado cuando hacemos hover.
  	*/
@@ -47,7 +46,6 @@
             background-color: white;
         }
     }
-
 }
 /*+------------------------------------------------------------+
  |       -TAMAÑOS    
@@ -237,6 +235,24 @@ $btn-text-full:16px;
     background-color: transparent;
     border: 1px solid white;
 }
+
+.has-light{
+
+    .btn-primary {
+        color: $primary;
+        background-color: #fff;
+        border: 1px solid #fff;
+    
+    }
+    .btn-phantom {
+        color: #fff;
+        background-color: transparent;
+        border: 1px solid #fff;
+    }
+
+
+
+}
 /*+------------------------------------------------------------+
  |       -GRUPOS DE BOTONES    
  +------------------------------------------------------------+*/
@@ -283,3 +299,14 @@ $btn-text-full:16px;
 .btn-group-container {
     display: flex;
 }
+.btn-default {
+    background-color: #000;
+    border: 1px solid #000;
+
+    &:focus, &.focus, &:hover, &:active, &.active {
+        color: #fff;
+        background-color: #848686;
+        border-color: #848686;
+    }
+}
+
