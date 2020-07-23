@@ -75,19 +75,3 @@ The documentation resides in the [guide](guide) directory, and is built with the
 
 Browse the [online documentation here.](https://holygrailcss.github.io/)
 
-## Related projects
-
-| Project                                                                              | Description                                                                            |
-|--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-                                            |
-
-
-
-
-## Copyright and license
-
-Code copyright 2019 Manuel Ruiz . Code released under [the MIT license](https://github.com/manuelruizredondo/holygrail/blob/master/LICENSE).
-
-[npm-link]: https://www.npmjs.com/package/holygrailcss
-[awesome-link]:  https://github.com/awesome-css-group/awesome-css
-[awesome-badge]: https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg

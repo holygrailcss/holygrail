@@ -55,7 +55,7 @@ $btn-text-small:14px;
 $btn-text-medium:14px;
 $btn-text-large:14px;
 $btn-text-xlarge:16px;
-$btn-text-full:16px;
+$btn-text-full:14px;
 .btn--mini {
     padding-top: $padding-global * 1;
     padding-bottom: $padding-global * 1;
@@ -98,8 +98,8 @@ $btn-text-full:16px;
 }
 .btn--full {
     width: 100%;
-    padding-right: $padding-global * 8;
-    padding-left: $padding-global * 8;
+    padding-right: $padding-global * 4;
+    padding-left: $padding-global * 4;
     font-size: $btn-text-full;
 }
 /*+------------------------------------------------------------+

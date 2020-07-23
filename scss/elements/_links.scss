@@ -79,9 +79,9 @@ a {
     transform: none;
     transition: background-color 0.3s ease-in-out;
     margin: 0px;
-    font-size: 16px;
-    line-height: 16px;
-    padding: 4px 0;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 2px 0;
     &:hover {
         opacity: .5;
     }
@@ -95,6 +95,16 @@ a {
         height: 1px;
     }
 }
+
+.ico {
+    margin-left: 24px;
+    svg {
+      position: absolute;
+      left: -24px;
+      bottom: 2px;
+    }
+  }
+
 //El hg mata el & despues
 .link5 {
     font-size: 16px;
