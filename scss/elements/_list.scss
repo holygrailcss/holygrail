@@ -124,6 +124,7 @@ ul.list-mini {
             }
         }
         &:after {
+            content: "";
             width: 2px;
             height: 2px;
         }

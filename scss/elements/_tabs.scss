@@ -149,4 +149,29 @@
             }
         }
     }
-    
+
+.tabs-gray {
+    width: 100%;
+    border: none;
+    position: relative;
+    width: 100%;
+    background-color: #F5F5F5;
+    ul{
+  border: none;
+    }
+    li {
+        display: block;
+        margin: 0;
+        width: 100%;
+    }
+    a,span{
+      @include font-medium;
+      color:#757575;
+      border-color:#F5F5F5 ;
+      position: relative;
+      &:hover {
+        color: #000;
+        cursor: pointer;
+      }
+    }
+  }

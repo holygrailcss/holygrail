@@ -161,8 +161,11 @@ label {
         padding-right: 16px;
         padding: 12px;
     }
-     svg {
-      padding: 12px;
+}
+.form-text-svg{
+  padding: 12px;
+  svg{
+    display: inline-block;
   }
 }
 
