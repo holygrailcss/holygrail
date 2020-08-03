@@ -111,6 +111,7 @@ ul.list-mini {
         line-height: 1;
         float: left;
         clear: both;
+        list-style: none;
         &.is-missing {
             &:after {
                 content: "";
