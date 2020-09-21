@@ -214,6 +214,35 @@ a {
     }
 }
 
+.link8{
+    @include font-medium;
+        font-weight: inherit;
+        position: relative;
+        display: inline-block;
+        border: 0;
+        transform: none;
+        transition: background-color .3s ease-in-out;
+        margin: 0;
+        font-size: 14px;
+        line-height: 1.2;
+        padding: 2px 0;
+        text-decoration: underline;
+    }
+
+
+.link9 {
+	font-weight: 600;
+	position: relative;
+	display: inline-block;
+	border: 0;
+	transform: none;
+	margin: 0px;
+	font-size: 14px;
+	line-height: 14px;
+	padding:  0;
+}
+
+
 
 .has-light {
     .link1 {
@@ -243,4 +272,10 @@ a {
             background: #fff;
         }
     }
+
+    .link8{
+        color: #ffffff;
+        }
+
+
 }

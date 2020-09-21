@@ -466,3 +466,12 @@ input::-webkit-input-placeholder {
       }
     }
   }
+
+  .form-text-svg{
+    padding: 12px;
+    height: 100%;
+    svg{
+      display: inline-block;
+    }
+  }
+  

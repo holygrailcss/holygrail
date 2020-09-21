@@ -103,30 +103,59 @@ ul.h-size-selector {
  |       -LISTA DE PASSWORD CHECK    
  +------------------------------------------------------------+*/
 
-ul.list-mini {
-    margin: 8px 0;
-    >li {
-        position: relative;
-        padding: 4px 8px;
-        line-height: 1;
-        float: left;
-        clear: both;
-        list-style: none;
-        &.is-missing {
-            &:after {
-                content: "";
-                width: 100%;
-                height: 1px;
-                background-color: #000;
-                border-radius: 0;
-                margin-top: -1px;
-                transform: none;
-            }
-        }
-        &:after {
-            content: "";
-            width: 2px;
-            height: 2px;
-        }
-    }
+ ul.list-mini {
+  margin: 8px 0;
+  >li {
+      position: relative;
+      padding: 4px 8px;
+      line-height: 1;
+      float: left;
+      clear: both;
+      list-style: none;
+      &.is-missing {
+          &:after {
+              content: "";
+              width: 100%;
+              height: 1px;
+              background-color: #000;
+              border-radius: 0;
+              margin-top: -1px;
+              transform: none;
+          }
+      }
+      &:after {
+        content: "";
+        width: 2px;
+        height: 2px;
+        background-color: black;
+        position: absolute;
+        left: 0;
+        bottom: 10px;
+      }
+  }
+}
+
+.list-table{
+  display: table;
+  width: 100%;
+
+
+}
+.list-box{
+  display: table-cell;
+  width: 50%;
+  box-sizing: border-box;
+  border: 1px solid rgb(133, 133, 133);
+  transition: all .2s ease;
+opacity: .5;
+
+  &.is-active,&:hover{
+    border: 1px solid black;
+    opacity: 1;
+    cursor: pointer;
+  }
+  
+}
+.list-box:last-child{
+left: -1px;
 }
