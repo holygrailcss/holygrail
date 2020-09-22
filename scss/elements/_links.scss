@@ -6,6 +6,17 @@ a {
         opacity: .9;
     }
 }
+
+.ico {
+    margin-left: 24px;
+    svg {
+      position: absolute;
+      left: -24px;
+      bottom: 2px;
+    }
+  }
+
+
 .link1 {
     display: inline;
     position: relative;
@@ -96,16 +107,6 @@ a {
     }
 }
 
-.ico {
-    margin-left: 24px;
-    svg {
-      position: absolute;
-      left: -24px;
-      bottom: 2px;
-    }
-  }
-
-//El hg mata el & despues
 .link5 {
     font-size: 16px;
     @include font-bold();
@@ -142,6 +143,7 @@ a {
         transition: transform $transition, -webkit-transform $transition;
     }
 }
+
 .link6 {
     @include font-bold;
     position: relative;
@@ -158,40 +160,7 @@ a {
     cursor: pointer;
     text-transform: uppercase;
 }
-.link-button-prev {
-    background: transparent !important;
-    position: relative;
-    width: 40px;
-    height: 40px;
-    z-index: 1;
-    cursor: pointer;
-    border-radius: 50%;
-    border: 1px solid #ccc;
-}
-.inner-button {
-    margin-top: -1px;
-    display: block;
-    width: 40px;
-    height: 40px;
-    color: white;
-    &::after {
-        border: 1px solid #000;
-        border-radius: 0px;
-        border-right: 0;
-        border-top: 0;
-        content: " ";
-        display: block;
-        height: 10px;
-        margin-top: -8px;
-        pointer-events: none;
-        position: absolute;
-        top: 53%;
-        right: 16px;
-        transform: rotate(-135deg);
-        transform-origin: center;
-        width: 10px;
-    }
-}
+
 .link7 {
     position: relative;
     font-size: 16px;
@@ -229,7 +198,6 @@ a {
         text-decoration: underline;
     }
 
-
 .link9 {
 	font-weight: 600;
 	position: relative;
@@ -242,7 +210,40 @@ a {
 	padding:  0;
 }
 
-
+.link-button-prev {
+    background: transparent !important;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+.inner-button {
+    margin-top: -1px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    color: white;
+    &::after {
+        border: 1px solid #000;
+        border-radius: 0px;
+        border-right: 0;
+        border-top: 0;
+        content: " ";
+        display: block;
+        height: 10px;
+        margin-top: -8px;
+        pointer-events: none;
+        position: absolute;
+        top: 53%;
+        right: 16px;
+        transform: rotate(-135deg);
+        transform-origin: center;
+        width: 10px;
+    }
+}
 
 .has-light {
     .link1 {
@@ -256,6 +257,15 @@ a {
         &:after {
             background-color: white;
         }
+        .link4-underline {
+            background: #fff;
+        }
+    }
+    .link5 {
+        color: #ffffff;
+        &:after {
+            background: #ffffff;
+        }
     }
     .link6 {
         color: #ffffff;
@@ -267,15 +277,13 @@ a {
             background: #ffffff;
         }
     }
-    .link4 {
-        .link4-underline {
-            background: #fff;
-        }
-    }
-
     .link8{
         color: #ffffff;
         }
-
-
+    .link9 {
+        color: #ffffff;
+        &:after {
+            background: #ffffff;
+        }
+    }
 }

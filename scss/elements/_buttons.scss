@@ -102,7 +102,7 @@ $btn-text-full:14px;
     font-size: $btn-text-full;
 }
 /*+------------------------------------------------------------+
- |       -MODIFICADORES DE TAMAÑO    
+ |       -TIPOS DE BOTONES    
  +------------------------------------------------------------+*/
 .btn-xs {
     position: relative;
@@ -206,11 +206,24 @@ $btn-text-full:14px;
         }
     }
 }
-
 .btn-block {
     display: block;
     width: 100%;
 }
+.btn-blue{
+    background-color: #3B5998;
+    border:1px solid #3B5998;
+  }
+.btn-default {
+background-color: #000;
+border: 1px solid #000;
+&:focus, &.focus, &:hover, &:active, &.active {
+    color: #fff;
+    background-color: #848686;
+    border-color: #848686;
+}
+}
+
 /*+------------------------------------------------------------+
  |       -TIPOS DE BOTONES    
  +------------------------------------------------------------+*/
@@ -234,7 +247,6 @@ $btn-text-full:14px;
     background-color: transparent;
     border: 1px solid white;
 }
-
 .has-light{
 
     .btn-primary {
@@ -298,19 +310,6 @@ $btn-text-full:14px;
 .btn-group-container {
     display: flex;
 }
-.btn-default {
-    background-color: #000;
-    border: 1px solid #000;
 
-    &:focus, &.focus, &:hover, &:active, &.active {
-        color: #fff;
-        background-color: #848686;
-        border-color: #848686;
-    }
-}
 
-.btn-blue{
-    background-color: #3B5998;
-    border:1px solid #3B5998;
-  }
 

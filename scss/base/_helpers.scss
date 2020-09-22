@@ -113,3 +113,19 @@ background-color: orange;
 background-color: green;
   }
 }
+
+.sm\:hidden {
+  @media (max-width: $break-sm) {
+    display: none!important;
+  }
+}
+.md\:hidden {
+  @media (max-width: $break-md) {
+    display: none!important;
+  }
+}
+.lg\:hidden {
+  @media (max-width: $break-lg) {
+    display: none!important;
+  }
+}
