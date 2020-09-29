@@ -55,6 +55,9 @@ $btn-text-medium:14px;
 $btn-text-large:14px;
 $btn-text-xlarge:16px;
 $btn-text-full:14px;
+
+
+
 .btn--mini {
     padding-top: $padding-global * 1;
     padding-bottom: $padding-global * 1;
@@ -214,15 +217,7 @@ $btn-text-full:14px;
     background-color: #3B5998;
     border:1px solid #3B5998;
   }
-.btn-default {
-background-color: #000;
-border: 1px solid #000;
-&:focus, &.focus, &:hover, &:active, &.active {
-    color: #fff;
-    background-color: #848686;
-    border-color: #848686;
-}
-}
+
 
 /*+------------------------------------------------------------+
  |       -TIPOS DE BOTONES    
@@ -247,6 +242,16 @@ border: 1px solid #000;
     background-color: transparent;
     border: 1px solid white;
 }
+.btn-default {
+    background-color: #000;
+    border: 1px solid #000;
+    &:focus, &.focus, &:hover, &:active, &.active {
+        color: #fff;
+        background-color: #848686;
+        border-color: #848686;
+    }
+    }
+
 .has-light{
 
     .btn-primary {
