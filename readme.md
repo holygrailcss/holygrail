@@ -38,6 +38,7 @@ holygrailcss is constantly in development! Try it out now:
 npm install holygrailcss
 ```
 
+Probar el holygrail antes de subir
 gulp style;
 
 gulp guide;

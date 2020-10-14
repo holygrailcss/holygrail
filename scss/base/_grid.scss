@@ -116,13 +116,9 @@
 
 .container-6{
   margin:0 auto;
+  padding: 0 $padding-global;
   width: 100%;
-  @media (min-width: $break-md) {
-    max-width: 285px;
-  }
-  @media (min-width: $break-lg) {
-    max-width: 395px;
-  }
+  max-width: 395px;
 }
 
   /*+------------------------------------------------------------+

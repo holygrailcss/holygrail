@@ -12,6 +12,10 @@ input:focus {
 .form {
     width: 100%;
 }
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+  background-color: transparent;
+  opacity: 1;
+}
 
 select {
     background-color: #fff;
@@ -72,7 +76,13 @@ label {
 
 }
 
-
+.input-notouch{
+  @include font-medium();
+  pointer-events: none;
+  border-color: transparent;
+  padding: 24px 0;
+  height: auto;
+}
 
 .textarea {
     height: 100px;
