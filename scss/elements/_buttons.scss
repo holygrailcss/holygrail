@@ -28,7 +28,7 @@
  	*/
     &:hover {
         text-decoration: none;
-        opacity: .5;
+        opacity: 0.5;
     }
     &:active,
     &:focus {
@@ -49,14 +49,12 @@
 /*+------------------------------------------------------------+
  |       -TAMAÑOS    
  +------------------------------------------------------------+*/
-$btn-text-mini:12px;
-$btn-text-small:14px;
-$btn-text-medium:14px;
-$btn-text-large:14px;
-$btn-text-xlarge:16px;
-$btn-text-full:14px;
-
-
+$btn-text-mini: 12px;
+$btn-text-small: 14px;
+$btn-text-medium: 14px;
+$btn-text-large: 14px;
+$btn-text-xlarge: 16px;
+$btn-text-full: 14px;
 
 .btn--mini {
     padding-top: $padding-global * 1;
@@ -126,7 +124,7 @@ $btn-text-full:14px;
  	*/
     &:hover {
         text-decoration: none;
-        opacity: .6;
+        opacity: 0.6;
     }
     &:active,
     &:focus {
@@ -150,10 +148,10 @@ $btn-text-full:14px;
     line-height: 1.2px;
     background: transparent;
     border: none;
-    color:  $primary;
+    color: $primary;
 
     &:after {
-        content: '';
+        content: "";
         background-color: $primary;
         width: 100%;
         position: absolute;
@@ -162,17 +160,16 @@ $btn-text-full:14px;
         height: 1px;
     }
 
-
     &:hover,
     &:focus,
     &.focus {
-    opacity: .7;
+        opacity: 0.7;
         background-color: transparent;
-        color:  $primary;
+        color: $primary;
         text-decoration: none;
         cursor: pointer;
 
-        &:after{
+        &:after {
             opacity: 0;
         }
     }
@@ -185,17 +182,13 @@ $btn-text-full:14px;
         outline: 0;
         background-image: none;
         box-shadow: none;
-        opacity: .5;
+        opacity: 0.5;
     }
 
     &:disabled,
     &.disabled {
-
-        opacity: .2;
+        opacity: 0.2;
     }
-
-
-
 
     .has-light & {
         color: white;
@@ -214,11 +207,10 @@ $btn-text-full:14px;
     display: block;
     width: 100%;
 }
-.btn-blue{
-    background-color: #3B5998;
-    border:1px solid #3B5998;
-  }
-
+.btn-blue {
+    background-color: #3b5998;
+    border: 1px solid #3b5998;
+}
 
 /*+------------------------------------------------------------+
  |       -TIPOS DE BOTONES    
@@ -231,12 +223,19 @@ $btn-text-full:14px;
     color: #fff;
     background-color: $primary;
     border: 1px solid $primary;
+    svg {
+        g{
+            fill: #ffffff;
+            stroke: #ffffff;
 
+        }
+
+    }
 }
 .btn-phantom {
-    color: black;
+    color: $primary;
     background-color: transparent;
-    border: 1px solid black;
+    border: 1px solid $primary;
 }
 .btn-phantom-invert {
     color: white;
@@ -246,29 +245,37 @@ $btn-text-full:14px;
 .btn-default {
     background-color: #000;
     border: 1px solid #000;
-    &:focus, &.focus, &:hover, &:active, &.active {
+    &:focus,
+    &.focus,
+    &:hover,
+    &:active,
+    &.active {
         color: #fff;
         background-color: #848686;
         border-color: #848686;
     }
-    }
+}
 
-.has-light{
+.btn-link {
+    border: none;
+    text-align: left;
+    text-decoration: none;
+    color: #000;
+    background-color: transparent;
+    padding: 0;
+}
 
+.has-light {
     .btn-primary {
         color: $primary;
         background-color: #fff;
         border: 1px solid #fff;
-    
     }
     .btn-phantom {
         color: #fff;
         background-color: transparent;
         border: 1px solid #fff;
     }
-
-
-
 }
 /*+------------------------------------------------------------+
  |       -GRUPOS DE BOTONES    
@@ -279,11 +286,10 @@ $btn-text-full:14px;
  *
  */
 
- 
 .btn-group {
     position: relative;
     display: flex;
-    &>:not(:first-child):not(:last-child) {
+    & > :not(:first-child):not(:last-child) {
         border-radius: 0;
         margin-left: -1px;
     }
@@ -316,6 +322,4 @@ $btn-text-full:14px;
 .btn-group-container {
     display: flex;
 }
-
-
 

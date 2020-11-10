@@ -2,40 +2,85 @@
 /*+------------------------------------------------------------+
  |-COLORS
  +------------------------------------------------------------+*/
-$colorsGuide: (Black : (#000000, "RGB : 0 0 0"),
- secondary-color : (#F5F5F5, "RGB : 0 0 0"),
- gray-90: (#171717, "RGB : 0 0 9"),
- gray-80: (#2E2E2E, "RGB : 0 0 18"),
- gray-70: (#464646, "RGB : 0 0 27"),
- gray-60: (#5D5D5D, "RGB : 0 0 36"),
- gray-50: (#757575, "RGB : 0 0 46"),
- gray-40: (#909090, "RGB : 0 0 56"),
- gray-30: (#ACACAC, "RGB : 0 0 67"),
- gray-20: (#C7C7C7, "RGB : 0 0 78"),
- gray-10: (#E3E3E3, "RGB : 0 0 89"),
- white-smoke:(#F5F5F5, "RGB : 0 0 96"),
- White : (#ffffff, "RGB : 0 0 0"),
-
- quartory-color : (#E6F5FF, "RGB : 0 0 0"),
- cinco-color : (#B5E6C8, "RGB : 0 0 0"),
- six-color : (#FEF7C1, "RGB : 0 0 0"),
- siete-color : (#FADFC1, "RGB : 0 0 0"),
- ocho-color : (#FCD8CD, "RGB : 0 0 0"),
- Error : (#FD675E, "RGB : 0 0 0"),
- Sales : (#FA3B2C, "RGB : 0 0 0"),
- Sales-Variant : (#E43628, "RGB : 228 54 40"))!default;
 
 
+$colorsGuide: (
+  black: #000000,
+  secondary-color: #f5f5f5,
+  gray-90: #171717,
+  gray-80: #2e2e2e,
+  gray-70: #464646,
+  gray-60: #5d5d5d,
+  gray-50: #757575,
+  gray-40: #909090,
+  gray-30: #acacac,
+  gray-20: #c7c7c7,
+  gray-10: #e3e3e3,
+  makumba: #999999,
+  white-smoke: #f5f5f5,
+  White: #ffffff,
+  link: #c7c7c7,
+  linkHover: #999,
+
+
+  primary: #000,
+  color-1: #e6f5ff,
+  color-2: #b5e6c8,
+  color-3: #fef7c1,
+  color-4: #fadfc1,
+  color-5: #fcd8cd,
+
+   error: #fd675e,
+   sales: #fa3b2c,
+   Sales-Variant: #e43628,
+   error-primary:#D0021B ,
+
+
+   primary-guide:#121F2A,
+   secondary-guide:#6759bb,
+   ternary-guide:#6759bb,
+  )!default;
+
+  @function color($color) {
+   @return map-get($colorsGuide, $color);
+ }
+ 
+
+
+
+
+ $black : nth($colorsGuide, 1) !default;
+ $white : nth($colorsGuide, 2) !default;
+
+ $gray-90: nth($colorsGuide, 3) !default;
+ $gray-80: nth($colorsGuide, 4) !default;
+ $gray-70: nth($colorsGuide, 5) !default;
+ $gray-60: nth($colorsGuide, 6) !default;
+ $gray-50: nth($colorsGuide, 7) !default;
+ $gray-40: nth($colorsGuide, 8) !default;
+ $gray-30: nth($colorsGuide, 9) !default;
+ $gray-20: nth($colorsGuide, 10) !default;
+ $gray-10:   nth($colorsGuide, 11) !default;
+ $white-smoke:nth($colorsGuide, 12) !default;
+
+ $color-1:   nth($colorsGuide, 13) !default;
+ $color-2 :  nth($colorsGuide, 14) !default;
+ $color-3  : nth($colorsGuide, 15) !default;
+ $color-4  : nth($colorsGuide, 16) !default;
+ $color-5  : nth($colorsGuide, 17) !default;
+ $color-6 :  nth($colorsGuide, 18) !default;
+ $color-7 :  nth($colorsGuide, 19) !default;
+ $color-8 :  nth($colorsGuide, 20) !default;
+ $color-9 :  nth($colorsGuide, 21) !default;
+ $color-10 : nth($colorsGuide, 22) !default;
+ $color-11 : nth($colorsGuide, 23) !default;
+
+ $primary:#000 !default;
+ $error: #fd675e!default;
 
 $primary-guide:#121F2A !default;
 $secondary-guide:#6759bb !default;
 $ternary-guide:#6759bb !default;
-
-$error-primary:#FD675E !default;
-$link:    rgb(207, 236, 240) !default;
-$linkHover:#999 !default;
-$black:    rgb(3, 2, 2) !default;
-$primary:  #000 !default;
 
    
 
@@ -146,7 +191,7 @@ $headersFixers: (/*name :  fontsize, lineheight */
    
 
 $headersFluids: (/*name :  fontsize, lineheight */
-   12 : (12px, 12px, .9),
+   12 : (1px, 2px, .3),
    14 : (14px, 12px,.9),
    16 : (16px, 12px,.9),
    18 : (18px, 12px,.9),
@@ -154,6 +199,23 @@ $headersFluids: (/*name :  fontsize, lineheight */
    50 : (30px, 80px,.9),
 
    ) !default;
+
+
+
+
+
+   $heights: (/*name :  fontsize, lineheight */
+   height-xs : (80px),
+   height-sm  : (100px),
+   height-md  : (350px),
+   height-lg  : (400px),
+   height-xl  : (450px),
+   height-full  : (100vh),
+   height-home  : (calc(100vh - 80px))
+
+   ) !default;
+
+
 /*+------------------------------------------------------------+
 |       -spacing  
 +------------------------------------------------------------+*/

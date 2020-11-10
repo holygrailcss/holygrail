@@ -1,6 +1,6 @@
 {
     "name": "holygrailcss",
-    "version": "1.6.14",
+    "version": "1.6.26",
     "description": "Css and Scss framework webmaker",
     "main": "index.js",
     "directories": {
@@ -29,6 +29,7 @@
     "homepage": "https://github.com/holygrailcss/holygrail#readme",
     "dependencies": {},
     "devDependencies": {
+        "browser-sync": "^2.26.7",
         "autoprefixer": "^9.8.5",
         "cssnano": "^4.1.10",
         "gulp": "^4.0.2",

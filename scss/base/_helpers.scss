@@ -26,8 +26,9 @@ hr {
   border-left: 1px solid transparent;
 }
 
-
-
+.bg-line {
+  border-bottom:1px solid #E3E3E3;
+}
 .only-mobile {
   display: inline-block;
   @media (min-width:$break-sm) {
@@ -90,27 +91,27 @@ hr {
   }
 }
 .hg-status-a{
-  color: red;
+  color: #CA0B00;
   &:before{
-background-color: red;
+background-color: #CA0B00;
   }
 }
 .hg-status-b{
-  color: blue;
+  color: #4C526E;
   &:before{
-background-color: blue;
+background-color: #4C526E;
   }
 }
 .hg-status-c{
-  color: orange;
+  color: #944300;
   &:before{
-background-color: orange;
+background-color: #944300;
   }
 }
 .hg-status-d{
-  color: green;
+  color: #5D8074;
   &:before{
-background-color: green;
+background-color: #5D8074;
   }
 }
 

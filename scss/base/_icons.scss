@@ -1,9 +1,16 @@
-.ico-big{
+.ico-big {
     width: 48px;
     height: 48px;
     padding: 10px;
-    border: 1px solid #E3E3E3;
+    border: 1px solid #e3e3e3;
     box-sizing: border-box;
     border-radius: 50%;
-  }
-  
+}
+
+.ico {
+    svg {
+        display: inline-block;
+        margin-right: 4px;
+        vertical-align: middle;
+    }
+}

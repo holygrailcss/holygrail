@@ -1,5 +1,5 @@
-$input-padding-x : 14px;
-$input-padding-y : 14px;
+$input-padding-x: 14px;
+$input-padding-y: 14px;
 
 /*+------------------------------------------------------------+
  |       -INPUTS    
@@ -12,9 +12,11 @@ input:focus {
 .form {
     width: 100%;
 }
-.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
-  background-color: transparent;
-  opacity: 1;
+.form-control[disabled],
+.form-control[readonly],
+fieldset[disabled] .form-control {
+    background-color: transparent;
+    opacity: 1;
 }
 
 select {
@@ -25,30 +27,30 @@ select {
 }
 
 label {
-  font-size: 14px;
-  padding-bottom: $padding-global;
+    font-size: 14px;
+    padding-bottom: $padding-global;
 }
 
 .input,
 .select select {
-  -webkit-appearance: none;
-  align-items: center;
-  border: 1px solid transparent;
-  box-shadow: none;
-  display: inline-flex;
+    -webkit-appearance: none;
+    align-items: center;
+    border: 1px solid transparent;
+    box-shadow: none;
+    display: inline-flex;
 
-  justify-content: flex-start;
-  line-height: 1.5;
-  padding-bottom: 14px;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 14px;
-  position: relative;
-  vertical-align: top;
-  font-size:12px;
+    justify-content: flex-start;
+    line-height: 1.5;
+    padding-bottom: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 14px;
+    position: relative;
+    vertical-align: top;
+    font-size: 12px;
 
-  height: 48px;
-  box-sizing: border-box;
+    height: 48px;
+    box-sizing: border-box;
 }
 
 .input,
@@ -62,26 +64,25 @@ label {
     font-size: 16px;
     line-height: 1;
     @media (min-width: $break-sm) {
-    font-size: 14px;
-  }
+        font-size: 14px;
+    }
 }
-.input-line{
-  border-top: 1px solid transparent;
-  border-left: 1px solid transparent;
-  border-right: 1px solid transparent;
+.input-line {
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
 
-  background-color: transparent;
-  padding-left: 0;
-  border-bottom: 1px solid #000;
-
+    background-color: transparent;
+    padding-left: 0;
+    border-bottom: 1px solid #000;
 }
 
-.input-notouch{
-  @include font-medium();
-  pointer-events: none;
-  border-color: transparent;
-  padding: 24px 0;
-  height: auto;
+.input-notouch {
+    @include font-medium();
+    pointer-events: none;
+    border-color: transparent;
+    padding: 24px 0;
+    height: auto;
 }
 
 .textarea {
@@ -106,10 +107,10 @@ label {
     text-align: center;
     justify-content: flex-start;
     line-height: 1.5;
-    padding-bottom: calc(.375em - 1px);
-    padding-left: calc(.625em - 1px);
-    padding-right: calc(.625em - 1px);
-    padding-top: calc(.375em - 1px);
+    padding-bottom: calc(0.375em - 1px);
+    padding-left: calc(0.625em - 1px);
+    padding-right: calc(0.625em - 1px);
+    padding-top: calc(0.375em - 1px);
     position: relative;
     vertical-align: top;
 }
@@ -142,16 +143,15 @@ label {
 }
 
 .help {
-  position: absolute;
-  font-size: 12px;
-  margin-top: 4px;
-
+    position: absolute;
+    font-size: 12px;
+    margin-top: 4px;
 }
-.info-text{
-  color: #757575;
-  margin-top: 4px;
-  width: 100%;
-  float: left;
+.info-text {
+    color: #757575;
+    margin-top: 4px;
+    width: 100%;
+    float: left;
 }
 
 .form-text {
@@ -172,25 +172,45 @@ label {
         padding: 12px;
     }
 }
-.form-text-svg{
-  padding: 12px;
-  svg{
-    display: inline-block;
-  }
+.form-text-svg {
+    svg {
+        display: inline-block;
+        padding: 16px;
+        box-sizing: initial;
+    }
 }
 
+.ico-pre-svg {
+    right: auto;
+    left: 16px;
+    position: absolute;
+    top: 0;
+    box-sizing: border-box;
+    display: table;
+    padding: 16px;
+}
+
+.ico-post-svg {
+    right: 16px;
+    left: auto;
+    position: absolute;
+    top: 0;
+    box-sizing: border-box;
+    display: table;
+    padding: 16px;
+}
 
 .is-error {
-  .input,label,.help{
-         color: $error-primary!important;
-  }
+    .input,
+    label,
+    .help {
+        color: $error !important;
+    }
 
-  .input {
-      border: 1px solid $error-primary;
-
-  }
+    .input {
+        border: 1px solid $error;
+    }
 }
-
 
 .ok-input {
     label {
@@ -203,19 +223,16 @@ label {
     }
 
     .input-line {
-      border-top: 1px solid transparent;
-      border-left: 1px solid transparent;
-      border-right: 1px solid transparent;
-      border-bottom: 1px solid green;
-      color: green;
+        border-top: 1px solid transparent;
+        border-left: 1px solid transparent;
+        border-right: 1px solid transparent;
+        border-bottom: 1px solid green;
+        color: green;
     }
-    
-
-
 }
 
 .disabled-input {
-    opacity: .4;
+    opacity: 0.4;
 }
 
 .guide-font {
@@ -247,35 +264,31 @@ label {
 }
 
 input::-webkit-input-placeholder {
-
-    color: #AAA;
-    transform: translate3d(0, 0, 0)
+    color: #aaa;
+    transform: translate3d(0, 0, 0);
 }
-
-
-
-
 
 .form-input-label {
     position: relative;
     margin-bottom: 24px;
-    &>input,
-    &>label {
+    & > input,
+    & > label {
         padding: 14px 16px;
     }
-    &>label {
+    & > label {
         box-sizing: border-box;
         position: absolute;
         top: 0px;
         left: 0;
         display: block;
         width: 100%;
+
         margin-bottom: 0;
-        line-height: 1.3;
+        line-height: 1.1;
         color: #757575;
         border: 1px solid transparent;
-        border-radius: .25rem;
-        transition: all .1s ease-in-out;
+        border-radius: 0.25rem;
+        transition: all 0.1s ease-in-out;
     }
     & input::-webkit-input-placeholder {
         color: transparent;
@@ -291,86 +304,40 @@ input::-webkit-input-placeholder {
     }
     & input:not(:placeholder-shown) {
         padding-top: calc(#{$input-padding-y} + #{$input-padding-y} * (2 / 3));
-        padding-bottom: calc(#{$input-padding-y} / 3);
+        padding-bottom: calc(#{$input-padding-y} / 3 + 3px);
     }
-    & input:not(:placeholder-shown)~label {
-        padding-top: calc(#{$input-padding-y} / 3);
-        padding-bottom: calc(#{$input-padding-y} / 3);
+    & input:not(:placeholder-shown) ~ label {
+        padding-top: calc(#{$input-padding-y} / 3 + 1px );
+        padding-bottom: calc(#{$input-padding-y} / 3 );
         font-size: 12px;
         color: #777;
     }
 }
 
-.form-input-pass{
-
-}
-
-.form-icon {
-    position: absolute;
-    top: 12px;
-    left: 12px;
-    width: 24px;
-    height: 24px;
-}
-.icon-pre {
-    &>input,
-    &>label {
-        padding-left: 56px;
-    }
-    &.btn {
-        padding-left: 56px;
-        .form-icon {
-            top: 12px;
-            left: 12px;
-        }
-    }
-}
-.icon-post {
-    &>input,
-    &>label {
-        padding-right: 56px;
-    }
-    .form-icon {
-        right: 16px;
-        left: auto;
-    }
-    &.btn {
-        padding-right: 56px;
-        .form-icon {
-            top: 12px;
-            right: 12px;
-            left: auto;
-        }
-    }
-}
-  
-  /*+------------------------------------------------------------+
+/*+------------------------------------------------------------+
    |       -FALLBACK PARA EDGE    
    +------------------------------------------------------------+*/
 
-  
-  @supports (-ms-ime-align: auto) {
-      .form-input-label>label {
-          display: none;
-      }
-      .form-input-label input:-ms-input-placeholder {
-          color: #777;
-      }
-  }
-  @media all and (-ms-high-contrast: none),
-  (-ms-high-contrast: active) {
-      .form-input-label>label {
-          display: none;
-      }
-      .form-input-label input:-ms-input-placeholder {
-          color: #777 !important;
-      }
-  }
+@supports (-ms-ime-align: auto) {
+    .form-input-label > label {
+        display: none;
+    }
+    .form-input-label input:-ms-input-placeholder {
+        color: #777;
+    }
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .form-input-label > label {
+        display: none;
+    }
+    .form-input-label input:-ms-input-placeholder {
+        color: #777 !important;
+    }
+}
 
-  /*+------------------------------------------------------------+
+/*+------------------------------------------------------------+
  |       -SELECT  
  +------------------------------------------------------------+*/
-
 
 .select {
     display: inline-block;
@@ -385,103 +352,209 @@ input::-webkit-input-placeholder {
     justify-content: flex-start;
     position: relative;
     vertical-align: top;
-  
+
     select {
-      cursor: pointer;
-      display: block;
-      max-width: 100%;
-      outline: 0;
+        cursor: pointer;
+        display: block;
+        max-width: 100%;
+        outline: 0;
     }
     label {
-      position: absolute;
-      top: 19px;
-      left: 16px;
-      z-index: 1;
+        position: absolute;
+        top: 19px;
+        left: 16px;
+        z-index: 1;
     }
-  
+
     &::after {
-      border: 1px solid #000;
-      border-radius: 0px;
-      border-right: 0;
-      border-top: 0;
-      content: " ";
-      display: block;
-      height: 8px;
-      margin-top: -8px;
-      pointer-events: none;
-      position: absolute;
-      top: 50%;
-      right: 20px;
-      transform: rotate(-45deg);
-      transform-origin: center;
-      width: 8px;
+        border: 1px solid #000;
+        border-radius: 0px;
+        border-right: 0;
+        border-top: 0;
+        content: " ";
+        display: block;
+        height: 8px;
+        margin-top: -8px;
+        pointer-events: none;
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: rotate(-45deg);
+        transform-origin: center;
+        width: 8px;
     }
-  
+
     &:not(.is-multiple) {
-      height: 56px;
+        height: 56px;
     }
-  
+
     &:not(.is-multiple):not(.is-loading)::after {
-      border-color: #000;
+        border-color: #000;
     }
-  
+
     select::-ms-expand {
-      display: none
+        display: none;
     }
-  
+
     select[disabled]:hover,
     fieldset[disabled] select:hover {
-      border-color: #f5f5f5
+        border-color: #f5f5f5;
     }
-  
+
     select:not([multiple]) {
-      padding-right: 45px;
+        padding-right: 45px;
     }
-  
+
     select[multiple] {
-      height: auto;
-      padding: 0;
+        height: auto;
+        padding: 0;
     }
-  
+
     select[multiple] option {
-      padding: 0 40px
+        padding: 0 40px;
     }
-  
+
     &:not(.is-multiple):not(.is-loading):hover::after {
-      border-color: #363636
+        border-color: #363636;
     }
-  
+
     &.select-label {
-      select {
-        padding-left: 100px
-      }
+        select {
+            padding-left: 100px;
+        }
     }
-  }
-  
+}
 
-  .hg-form {
+.hg-form {
     .row {
-      padding-right: 0;
-  
-      [class*="col-"] {
-        
-        padding-right:0;
-        &:first-child {
-          padding-right: 0;
-        }
-  
-        &:last-child {
-          padding-right: $padding-global;
-        }
-      }
-    }
-  }
+        padding-right: 0;
 
-  .form-text-svg{
-    padding: 12px;
-    height: 100%;
-    svg{
-      display: inline-block;
+        [class*="col-"] {
+            padding-right: 0;
+            &:first-child {
+                padding-right: 0;
+            }
+
+            &:last-child {
+                padding-right: $padding-global;
+            }
+        }
     }
-  }
-  
+}
+
+$checkbox-svg-pd: 20px;
+$checkbox-svg-brad: 20px;
+.checkbox-svg {
+    svg {
+        margin: 0 auto;
+        width: 50px;
+    }
+}
+
+//display flex
+.checkbox-svg-label {
+    background: #ffffff;
+    border: 1px solid #4bcac5;
+    border-radius: $checkbox-svg-brad;
+    filter: grayscale(100%);
+    display: flex;
+    width: 100%;
+    padding: $checkbox-svg-pd;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+    opacity: 0.5;
+    min-height: 200px;
+}
+.checkbox-svg [type="radio"] {
+    position: absolute;
+    left: -9999px;
+}
+.checkbox-svg-ico {
+    position: absolute;
+    box-sizing: border-box;
+    width: 24px;
+    height: 24px;
+    top: $checkbox-svg-pd;
+    right: $checkbox-svg-pd;
+    left: auto;
+    border: 1px solid #4bcac5;
+    background-color: #4bcac5;
+    outline: 0;
+    vertical-align: top;
+    margin: 0;
+    border-radius: 50%;
+    opacity: 1;
+}
+.ico-radio {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border-radius: 50%;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.checkbox-svg [type="radio"]:checked,
+.checkbox-svg :hover {
+    & + .checkbox-svg-label {
+        opacity: 1;
+        cursor: pointer;
+        filter: grayscale(0);
+        box-shadow: 6px 6px 17px 0 rgba(74, 111, 110, 0.27);
+    }
+    & + label .ico-radio {
+        opacity: 1;
+        transform: scale(1);
+    }
+    label .checkbox-svg-ico {
+        opacity: 1;
+    }
+    & + label .ico-radio {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.checkbox-svg [type="radio"]:not(:checked) + label .ico-radio {
+    opacity: 0;
+    transform: scale(0);
+}
+
+$padding-btn: 14px;
+$svg-size: 16px;
+
+.form-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: $padding-btn;
+    svg {
+        width: $svg-size;
+        height: $svg-size;
+    }
+}
+.icon-pre {
+    &.btn,
+    & > input,
+    & > label {
+        padding-left: $padding-btn * 2 + $svg-size;
+    }
+    .form-icon {
+        top: 0;
+        left: 0;
+    }
+}
+.icon-post {
+    &.btn,
+    & > input,
+    & > label {
+      padding-right: $padding-btn * 2 + $svg-size;
+    }
+    .form-icon {
+        padding: $padding-btn;
+        top: 0;
+        right: 0;
+        left: auto;
+    }
+}
