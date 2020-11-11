@@ -113,8 +113,8 @@
     [type="checkbox"]:checked+label:before {
         position: absolute;
         content: '';
-        width: 62px;
-        height: 26px;
+        width: 60px;
+        height: 24px;
         border-radius: 30px;
         left: 0;
         border: none;
@@ -156,9 +156,8 @@
     [type="checkbox"]:checked+label .checkbox-circle {
         position: absolute;
         top: 3px;
-        left: 4px;
+        left: 6px;
         color: #000;
-        -webkit-transition: all .2s;
         transition: all .2s;
     }
     [type="checkbox"]:not(:checked)+label .checkbox-circle {

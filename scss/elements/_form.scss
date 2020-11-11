@@ -48,6 +48,7 @@ label {
     position: relative;
     vertical-align: top;
     font-size: 12px;
+    border-radius: 0;
 
     height: 48px;
     box-sizing: border-box;
@@ -180,24 +181,24 @@ label {
     }
 }
 
-.ico-pre-svg {
+.ico-pre {
     right: auto;
-    left: 16px;
+    left: 0;
     position: absolute;
     top: 0;
     box-sizing: border-box;
     display: table;
-    padding: 16px;
+    margin: 16px;
 }
 
-.ico-post-svg {
-    right: 16px;
+.ico-post {
+    right: 0;
     left: auto;
     position: absolute;
     top: 0;
     box-sizing: border-box;
     display: table;
-    padding: 16px;
+    margin: 16px;
 }
 
 .is-error {
@@ -209,6 +210,12 @@ label {
 
     .input {
         border: 1px solid $error;
+    }
+
+    svg{
+        g{
+            stroke: $error !important;
+        }
     }
 }
 
@@ -274,6 +281,7 @@ input::-webkit-input-placeholder {
     & > input,
     & > label {
         padding: 14px 16px;
+        font-weight: bold;
     }
     & > label {
         box-sizing: border-box;
@@ -282,13 +290,15 @@ input::-webkit-input-placeholder {
         left: 0;
         display: block;
         width: 100%;
-
+        font-weight: normal;
+        margin-top: 1px;
         margin-bottom: 0;
         line-height: 1.1;
         color: #757575;
         border: 1px solid transparent;
         border-radius: 0.25rem;
         transition: all 0.1s ease-in-out;
+        pointer-events: none;
     }
     & input::-webkit-input-placeholder {
         color: transparent;
@@ -534,7 +544,7 @@ $svg-size: 16px;
         height: $svg-size;
     }
 }
-.icon-pre {
+.has-ico-pre {
     &.btn,
     & > input,
     & > label {
@@ -545,7 +555,7 @@ $svg-size: 16px;
         left: 0;
     }
 }
-.icon-post {
+.has-ico-post {
     &.btn,
     & > input,
     & > label {

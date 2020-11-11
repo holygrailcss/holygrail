@@ -63,15 +63,15 @@ $btn-text-full: 14px;
     padding-left: $padding-global * 3;
     font-size: $btn-text-mini;
 }
-.btn--small {
+.btn--medium {
     padding-right: $padding-global * 5;
     padding-left: $padding-global * 5;
-    font-size: $btn-text-small;
+    font-size: $btn-text-medium;
 }
-.btn--medium {
+.btn--small {
     padding-right: $padding-global * 2;
     padding-left: $padding-global * 2;
-    font-size: $btn-text-medium;
+    font-size: $btn-text-small;
 }
 .btn--large {
     min-width: 288px;
@@ -226,6 +226,9 @@ $btn-text-full: 14px;
     svg {
         g{
             fill: #ffffff;
+            stroke: #ffffff;
+        }
+        circle{
             stroke: #ffffff;
 
         }

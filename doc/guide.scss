@@ -540,7 +540,7 @@ $variabletotals: length($variable-list);
   background-color: black;
   position: fixed;
   height: 100vh;
-  width: 50px;
+  width: 60px;
 }
 .site-navigation {
   display: none;
@@ -581,6 +581,14 @@ $headersFluidsGuide: (
 
 
 .guide {
+
+  .guide-minilogo {
+    width: 30px;
+    height: 60px;
+    padding: 17px;
+    float: left;
+
+  }
   .holy-bg {
     background-image: url(../../assets/images/holygrail_big.png);
     background-repeat: no-repeat;
@@ -678,11 +686,19 @@ $headersFluidsGuide: (
     text-transform: uppercase;
   }
   .guide-text {
-    padding-left: 10px;
+  text-align: center;
+  width: 100%;
     color: #B7C1C8;
     font-size: 10px;
     font-family: 'Muli', sans-serif !important;
     text-transform: uppercase;
+    padding: 10px 0px;
+    float: left;
+    span{
+      width: 100%;
+      clear: both;
+      float: left;
+    }
   }
   .row {
     position: relative;
@@ -1399,6 +1415,8 @@ $headersFluidsGuide: (
   }
 }
 
-
+pre[class*="language-"]{
+  margin:20px 0;
+}
 
 
