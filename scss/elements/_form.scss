@@ -28,7 +28,7 @@ select {
 
 label {
     font-size: 14px;
-    padding-bottom: $padding-global;
+
 }
 
 .input,
@@ -280,8 +280,8 @@ input::-webkit-input-placeholder {
     margin-bottom: 24px;
     & > input,
     & > label {
-        padding: 14px 16px;
-        font-weight: bold;
+        padding: 15px 16px;
+        font-weight: normal;
     }
     & > label {
         box-sizing: border-box;
@@ -295,7 +295,7 @@ input::-webkit-input-placeholder {
         margin-bottom: 0;
         line-height: 1.1;
         color: #757575;
-        border: 1px solid transparent;
+
         border-radius: 0.25rem;
         transition: all 0.1s ease-in-out;
         pointer-events: none;
