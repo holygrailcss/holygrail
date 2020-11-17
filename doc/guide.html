@@ -3616,6 +3616,47 @@
                                             </div>
                                         </div>
                                     </div>
+<pre><code class="language-markup">
+    &lt;div class=&quot;form-input-label&quot;&gt;
+    &lt;input type=&quot;email&quot; id=&quot;uno&quot; class=&quot;input&quot; placeholder=&quot;Email address&quot;
+        required=&quot;&quot; /&gt;
+    &lt;!-- autofocus=&quot;&quot;  si es necesario--&gt;
+    &lt;label for=&quot;uno&quot;&gt;Email address&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-input-label has-ico-pre&quot;&gt;
+    &lt;input type=&quot;email&quot; id=&quot;dos&quot; class=&quot;input&quot; placeholder=&quot;Email address&quot;
+        required=&quot;&quot; /&gt;
+    &lt;label for=&quot;dos&quot;&gt;Email dos&lt;/label&gt;
+    &lt;svg class=&quot;ico-pre&quot; width=&quot;16px&quot; height=&quot;16px&quot; viewBox=&quot;0 0 16 16&quot;&gt;
+        &lt;g transform=&quot;translate(0, 0)&quot;&gt;
+            &lt;circle fill=&quot;none&quot; stroke=&quot;#000000&quot; cx=&quot;8&quot; cy=&quot;8&quot; r=&quot;6&quot;&gt;
+            &lt;/circle&gt;
+        &lt;/g&gt;
+    &lt;/svg&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-input-label has-ico-post&quot;&gt;
+    &lt;input type=&quot;email&quot; id=&quot;tres&quot; class=&quot;input&quot; placeholder=&quot;Email address&quot;
+        required=&quot;&quot; /&gt;
+    &lt;label for=&quot;tres&quot;&gt;Email tres&lt;/label&gt;
+    &lt;svg class=&quot;ico-post&quot; width=&quot;16px&quot; height=&quot;16px&quot; viewBox=&quot;0 0 16 16&quot;&gt;
+        &lt;g transform=&quot;translate(0, 0)&quot;&gt;
+            &lt;circle fill=&quot;none&quot; stroke=&quot;#000000&quot; cx=&quot;8&quot; cy=&quot;8&quot; r=&quot;6&quot;&gt;
+            &lt;/circle&gt;
+        &lt;/g&gt;
+    &lt;/svg&gt;
+&lt;/div&gt;
+    
+    
+</code></pre>
+
+.form-input-label>input.input+label   <br>
+
+.form-input-label.has-ico-pre>input.input+label+svg.ico-pre  <br>
+
+.form-input-label.has-ico-post>input.input+label+svg.ico-post
+
+
+
                                 </div>
                             </div>
                         </div>

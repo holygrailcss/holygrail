@@ -130,3 +130,27 @@ background-color: #5D8074;
     display: none!important;
   }
 }
+
+//xs:mb-20
+
+.xs\:text-center { @media (max-width: $break-sm) { text-align: center; } }
+.sm\:text-center { @media (max-width: $break-md) { text-align: center; } }
+.md\:text-center { @media (max-width: $break-lg) { text-align: center; } }
+.lg\:text-center { @media (min-width: $break-lg) { text-align: center; } }
+
+
+.xs\:text-left { @media (max-width: $break-sm) { text-align: left; } }
+.sm\:text-left { @media (max-width: $break-md) { text-align: left; } }
+.md\:text-left { @media (max-width: $break-lg) { text-align: left; } }
+.lg\:text-left { @media (min-width: $break-lg) { text-align: left; } }
+
+.xs\:text-right { @media (max-width: $break-sm) { text-align: right; } }
+.sm\:text-right { @media (max-width: $break-md) { text-align: right; } }
+.md\:text-right { @media (max-width: $break-lg) { text-align: right; } }
+.lg\:text-right { @media (min-width: $break-lg) { text-align: right; } }
+
+.xs\:text-right { @media (max-width: $break-sm) { text-align: right; } }
+.sm\:text-right { @media (max-width: $break-md) { text-align: right; } }
+.md\:text-right { @media (max-width: $break-lg) { text-align: right; } }
+.lg\:text-right { @media (min-width: $break-lg) { text-align: right; } }
+
