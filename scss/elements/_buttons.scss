@@ -7,7 +7,6 @@
 /**
  * .btn es la clase principal para definir un botón  es el tipo
  */
-
 .btn {
     position: relative;
     display: inline-block;
@@ -16,13 +15,11 @@
     vertical-align: middle;
     box-sizing: border-box;
     font-size: 14px;
-    margin-right: $padding-global;
     vertical-align: middle;
     border: none;
     white-space: nowrap;
     cursor: pointer;
     padding: $padding-global * 2;
-
     /**
  	* Nadie quiere un botón con texto subrayado cuando hacemos hover.
  	*/
@@ -37,7 +34,6 @@
     &:visited {
         outline: none;
     }
-
     .has-light & {
         color: white;
         border-color: white;
@@ -46,6 +42,7 @@
         }
     }
 }
+
 /*+------------------------------------------------------------+
  |       -TAMAÑOS    
  +------------------------------------------------------------+*/
@@ -55,7 +52,6 @@ $btn-text-medium: 14px;
 $btn-text-large: 14px;
 $btn-text-xlarge: 16px;
 $btn-text-full: 14px;
-
 .btn--mini {
     padding-top: $padding-global * 1;
     padding-bottom: $padding-global * 1;
@@ -118,10 +114,7 @@ $btn-text-full: 14px;
     white-space: nowrap;
     cursor: pointer;
     padding: $padding-btn / 2;
-    /**
- 	* Nadie quiere un botón con texto subrayado cuando
- 	* hacemos hover.
- 	*/
+
     &:hover {
         text-decoration: none;
         opacity: 0.6;
@@ -134,14 +127,12 @@ $btn-text-full: 14px;
         outline: none;
     }
 }
-
 .btn-underline {
     display: inline;
     position: relative;
     text-align: center;
     outline: none;
     padding: 4px 0;
-
     text-align: center;
     cursor: pointer;
     font-size: 16px;
@@ -149,7 +140,6 @@ $btn-text-full: 14px;
     background: transparent;
     border: none;
     color: $primary;
-
     &:after {
         content: "";
         background-color: $primary;
@@ -159,7 +149,6 @@ $btn-text-full: 14px;
         left: 0px;
         height: 1px;
     }
-
     &:hover,
     &:focus,
     &.focus {
@@ -168,7 +157,6 @@ $btn-text-full: 14px;
         color: $primary;
         text-decoration: none;
         cursor: pointer;
-
         &:after {
             opacity: 0;
         }
@@ -184,12 +172,10 @@ $btn-text-full: 14px;
         box-shadow: none;
         opacity: 0.5;
     }
-
     &:disabled,
     &.disabled {
         opacity: 0.2;
     }
-
     .has-light & {
         color: white;
         &:after {
@@ -209,9 +195,9 @@ $btn-text-full: 14px;
 }
 .btn-blue {
     background-color: #3b5998;
+    color: #fff;
     border: 1px solid #3b5998;
 }
-
 /*+------------------------------------------------------------+
  |       -TIPOS DE BOTONES    
  +------------------------------------------------------------+*/
@@ -230,24 +216,38 @@ $btn-text-full: 14px;
         }
         circle{
             stroke: #ffffff;
-
         }
-
     }
 }
+
 .btn-phantom {
-    color: $primary;
-    background-color: transparent;
-    border: 1px solid $primary;
-}
-.btn-phantom-invert {
     color: white;
     background-color: transparent;
-    border: 1px solid white;
+    border: 1px solid #ffffff;
+}
+
+.btn-text {
+    background-color: transparent;
+    border-color: transparent;
+    color: $primary;
+}
+.btn-invert {
+    color: #000;
+    background-color: transparent;
+    border: 1px solid #000;
+    &:focus,
+    &.focus,
+    &:hover,
+    &:active,
+    &.active {
+ opacity: .6;
+
+    }
 }
 .btn-default {
     background-color: #000;
     border: 1px solid #000;
+    color: #fff;
     &:focus,
     &.focus,
     &:hover,
@@ -258,7 +258,6 @@ $btn-text-full: 14px;
         border-color: #848686;
     }
 }
-
 .btn-link {
     border: none;
     text-align: left;
@@ -266,6 +265,31 @@ $btn-text-full: 14px;
     color: #000;
     background-color: transparent;
     padding: 0;
+}
+
+.btn-trans{
+    color: #FFFFFF;
+    background: rgba(226, 226, 226, 0.6);
+    font-size: 14px;
+    line-height: 1.2;
+    border: 0 solid #FFFFFF;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: calc(16px + 2px);
+    padding-bottom: 14px;
+    padding-right: 48px;
+    padding-left: 48px;
+    display: flex;
+    align-items: center;
+    svg{
+        stroke  :#fff;
+    }
+    &:hover, 
+    &:focus, 
+    &.focus {
+        color: #fff;
+        text-decoration: none;
+    }
 }
 
 .has-light {
@@ -280,6 +304,11 @@ $btn-text-full: 14px;
         border: 1px solid #fff;
     }
 }
+
+
+
+
+
 /*+------------------------------------------------------------+
  |       -GRUPOS DE BOTONES    
  +------------------------------------------------------------+*/
@@ -288,6 +317,18 @@ $btn-text-full: 14px;
  * en grupos horizontales.
  *
  */
+
+.btns{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+ .btns .btn:not(:last-child) {
+    margin-right:  $padding-global;
+}
+
 
 .btn-group {
     position: relative;
@@ -325,4 +366,3 @@ $btn-text-full: 14px;
 .btn-group-container {
     display: flex;
 }
-

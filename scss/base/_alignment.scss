@@ -99,7 +99,9 @@
   text-align: center;
 }
 .d-inline {
-  width: 100%;
+  display: inline-block;
+}
+.d-inlineb {
   display: inline-block;
 }
 .sticky-bottom {

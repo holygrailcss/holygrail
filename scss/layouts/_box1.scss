@@ -1,0 +1,102 @@
+.card {
+
+    width: 100%;
+
+    .title {
+        @extend .h4;
+    }
+
+    .subtitle {
+        @extend .h6;
+    }
+
+}
+
+/**
+ .card>img.pb-20[src="https://via.placeholder.com/600x800.png?text=Logo+text" alt="{altimagen}"]+.title{title}+.subtitle{subtitle}
+**/
+
+
+.card1 {
+    border: 1px solid #eaeaea;
+    align-items: stretch;
+    height: calc(100% - 20px);
+    padding-bottom: 30px;
+    position: relative;
+
+
+}
+
+.img-bg {
+
+    background-position: top left;
+    padding-bottom: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media (min-width: $break-sm) {
+        padding-bottom: 0;
+        height: 100%;
+
+    }
+
+}
+
+
+.text-box {
+    $text-box-img: 80px;
+
+    .text-box-img {
+        display: inline-block;
+        width: $text-box-img - $padding-global;
+        height: $text-box-img - $padding-global;
+        margin: 5px $padding-global 0 0;
+        vertical-align: top;
+        box-sizing: border-box;
+
+    }
+
+    .text-box-inner {
+        box-sizing: border-box;
+        width: calc(100% - #{$text-box-img} - 5px);
+        display: inline-block;
+    }
+}
+
+.card-video {
+    position: relative;
+
+    .card-video-play {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        left: 50%;
+        margin-left: -50px;
+        top: 50%;
+        margin-top: -50px;
+        padding-top: 25px;
+        border-radius: 50%;
+        text-align: center;
+        color: white;
+        border: 5px solid white;
+        box-sizing: border-box;
+        font-size: 22px;
+        font-weight: 100;
+        transition: all .3s ease;
+
+        &:hover {
+            opacity: .6;
+            cursor: pointer;
+        }
+    }
+}
+
+
+
+
+
+/*como son formados????*/
+
+
+
+

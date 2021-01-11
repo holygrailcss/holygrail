@@ -81,9 +81,7 @@ a {
 }
 
 
-
 .link4 {
-    @include font-regular();
     position: relative;
     display: inline-block;
     border: 0;
@@ -93,6 +91,7 @@ a {
     font-size: 14px;
     line-height: 14px;
     padding: 2px 0;
+    cursor: pointer;
     &:hover {
         opacity: .5;
     }

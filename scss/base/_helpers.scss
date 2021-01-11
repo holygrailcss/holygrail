@@ -154,3 +154,4 @@ background-color: #5D8074;
 .md\:text-right { @media (max-width: $break-lg) { text-align: right; } }
 .lg\:text-right { @media (min-width: $break-lg) { text-align: right; } }
 
+.mdmax\:mb-20 { @media (max-width: $break-md) { margin-bottom: 24px;} }
