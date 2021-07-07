@@ -1,0 +1,47 @@
+.box3{
+    position: relative;
+    width: 100%;
+    min-height: 58px;
+    box-sizing: border-box;
+    display: flex;
+    .box3-img{
+      margin-right: 16px;
+    }
+    .box3-middle{
+      width: 100px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    .box3-price{ 
+      display: flex;
+      flex-direction: column;
+      min-width: 60px;
+
+    }
+
+    .box3-right{ 
+      display: flex;
+      flex-direction: column;
+      min-width: 60px;
+
+    }
+    .box3-content{
+      width: 100%;
+    }
+    .box3-img{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .box3-top{
+      padding-top: 2px;
+      padding-left: 16px;
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+      align-content: flex-end;
+      justify-content: flex-start;
+    }
+  }
+  

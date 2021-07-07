@@ -42,6 +42,7 @@ Probar el holygrail antes de subir
 gulp style;
 
 gulp guide;
+gulp start;
 
 
 ### CDN

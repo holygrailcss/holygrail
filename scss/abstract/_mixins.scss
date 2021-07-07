@@ -31,17 +31,15 @@
     font-family: $font-family-bold;
     font-weight: $font-weight-bold;
 }
-@mixin font-second-regular() {
-    font-family: $font-family-secondary;
-    font-weight: $font-weight-secondary-regular;
+@mixin font-2-regular() {
+    font-family: $font-family-2-regular;
 }
-@mixin font-second-medium() {
-    font-family: $font-family-secondary;
-    font-weight: $font-weight-secondary-medium
+@mixin font-2-medium() {
+    font-family: $font-family-2-medium;
 }
-@mixin font-second-bold() {
-    font-family: $font-family-secondary;
-    font-weight: $font-weight-secondary-bold;
+@mixin font-2-bold() {
+    font-family: $font-family-2-bold;
+
 }
 @mixin fonters($param) {
     @if($param=="regular") {
@@ -56,16 +54,56 @@
     @else if($param=="light") {
         @include font-light();
     }
-    @else if($param=="2-regular") {
-        @include font-second-regular();
+    @else if($param=="regular2") {
+        @include font-2-regular();
     }
-    @else if($param=="2-medium") {
-        @include font-second-medium();
+    @else if($param=="medium2") {
+        @include font-2-medium();
     }
-    @else if($param=="2-bold") {
-        @include font-second-bold();
+    @else if($param=="bold2") {
+        @include font-2-bold();
     }
 }
+
+
+
+
+@mixin typesFixers($headersFixers, $cssattr) {
+    @for $i from 1 through 1 {
+        @each $name,
+        $fsize in $headersFixers {
+            $fontsize: nth($fsize, $i);
+            $fontheight: nth($fsize, 2);
+            .text-#{$name}-r {
+                @include fonters(regular);
+                #{$cssattr }: $fontsize;
+                line-height: $fontheight;
+            }
+            .text-#{$name}-m {
+                @include fonters(medium);
+                #{$cssattr }: $fontsize;
+                line-height: $fontheight;
+            }
+            .text-#{$name}-b {
+                @include fonters(bold);
+                #{$cssattr }: $fontsize;
+                line-height: $fontheight;
+            }
+            .text-#{$name}-2r {
+                @include fonters('regular2');
+                #{$cssattr }: $fontsize;
+                line-height: $fontheight;
+            }
+            .text-#{$name}-2b {
+                @include fonters('bold2');
+                #{$cssattr }: $fontsize;
+                line-height: $fontheight;
+            }
+        }
+    }
+}
+
+
 /*+------------------------------------------------------------+
  |       -COLORES RANDOM
  +------------------------------------------------------------+*/
@@ -118,6 +156,28 @@
             $u3: unit($min-font-size);
             $u4: unit($max-font-size);
             $u5: nth($fsize, 3);
+
+
+
+            .fluid-#{$name}-l {
+                @include font-light();
+                @if $u1==$u2 and $u1==$u3 and $u1==$u4 {
+                    & {
+                        font-size: $min-font-size;
+                        line-height: $u5;
+                        @media screen and (min-width: $min-vw) {
+                            font-size: calc(#{$min-font-size} + #{unity($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{unity($max-vw - $min-vw)}));
+                            line-height: $fluid-line-height;
+                        }
+                        @media screen and (min-width: $max-vw) {
+                            font-size: $max-font-size;
+                            line-height: $fluid-line-height;
+                        }
+                    }
+                }
+            }
+
+
             .fluid-#{$name}-r {
                 @include font-regular();
                 @if $u1==$u2 and $u1==$u3 and $u1==$u4 {
@@ -152,6 +212,7 @@
                     }
                 }
             }
+
             .fluid-#{$name}-b {
                 @include font-bold();
                 @if $u1==$u2 and $u1==$u3 and $u1==$u4 {
@@ -169,6 +230,8 @@
                     }
                 }
             }
+
+
         }
     }
 }
@@ -211,7 +274,7 @@
             margin-right: -$margin/2+px;
             padding: 0 $margin/2+px 0 $margin/2+px;
         }
-        .row {
+        >.row {
             margin-left: 0;
             margin-right: 0;
             box-sizing: border-box;
@@ -225,8 +288,8 @@
             -ms-flex-wrap: wrap;
             flex-wrap: wrap;
         }
-        [class*="col-"],
-        .col {
+        >[class*="col-"],
+        >.col {
             padding: $margin/2+px;
             box-sizing: border-box;
         }
@@ -269,30 +332,7 @@
         }
     }
 }
-@mixin typesFixers($headersFixers, $cssattr) {
-    @for $i from 1 through 1 {
-        @each $name,
-        $fsize in $headersFixers {
-            $fontsize: nth($fsize, $i);
-            $fontheight: nth($fsize, 2);
-            .text-#{$name}-r {
-                @include fonters(regular);
-                #{$cssattr }: $fontsize;
-                line-height: $fontheight;
-            }
-            .text-#{$name}-m {
-                @include fonters(medium);
-                #{$cssattr }: $fontsize;
-                line-height: $fontheight;
-            }
-            .text-#{$name}-b {
-                @include fonters(bold);
-                #{$cssattr }: $fontsize;
-                line-height: $fontheight;
-            }
-        }
-    }
-}
+
 @for $i from 1 through length($breakpoints) {}
 @mixin space($breakpoints, $paddings, $cssattr) {
     @for $i from 1 through $colBreakpoints {

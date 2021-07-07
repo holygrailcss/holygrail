@@ -75,6 +75,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { margin: 0; padding: 0; }
 @import "layouts/row2";
 @import "layouts/row3";
 @import "layouts/row6";
+@import "layouts/feel";
+@import "layouts/header_account";
 
 
 @import "layouts/text1";
@@ -92,6 +94,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { margin: 0; padding: 0; }
 @import "layouts/card9";
 
 @import "layouts/box1";
+@import "layouts/box3";
 
 @import "layouts/hgbread.scss";
 @import "layouts/hglocation.scss";

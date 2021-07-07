@@ -119,6 +119,10 @@ $container-2: 700px!default;/* maxwidth del container2*/
 $container-3: 900px!default;/* maxwidth del container3*/
 $container-4: 356px!default;/* maxwidth del container4*/
 $container-5: 400px!default;/* maxwidth del container5*/
+$container-6: 442px!default;/* maxwidth del container6*/
+$container-7: 595px!default;/* maxwidth del container7*/
+$container-8: 395px!default;/* maxwidth del container8*/
+
 
 $transition:278ms;
 
@@ -306,7 +310,8 @@ $padding-x: /* name : padding  arriba y abajo*/
 (px-16: (0 8px, 0 16px, 0 16px, 0 16px),
  px-20: (0 10px, 0 20px, 0 20px, 0 20px),
  px-30: (0 10px, 0 30px, 0 30px, 0 30px),
- px-50: (0 20px, 0 30px, 0 40px, 0 50px))!default;
+ px-48: (0 48px, 0 48px, 0 48px, 0 48px),
+ px-50: (0 50px, 0 50px, 0 50px, 0 50px))!default;
  
  
 $pt: "padding-top";
@@ -315,7 +320,7 @@ $padding-top: /* name : padding  top*/
  pt-16: (8px, 16px, 16px, 16px),
  pt-20: (10px, 20px, 20px, 20px),
  pt-30: (10px, 30px, 30px, 30px),
- pt-50: (20px, 50px, 50px, 50px))!default;
+ pt-50: (50px, 50px, 50px, 50px))!default;
  
  
 $pb: "padding-bottom";
@@ -324,7 +329,7 @@ $padding-bottom: /* name : padding  bottom*/
  pb-16: (8px, 16px, 16px, 16px),
  pb-20: (10px, 20px, 20px, 20px),
  pb-30: (10px, 30px, 30px, 30px),
- pb-50: (20px, 50px, 50px, 50px))!default;
+ pb-50: (50px, 50px, 50px, 50px))!default;
  
  
 $pl: "padding-left";

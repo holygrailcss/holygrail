@@ -1,6 +1,7 @@
 .hg-bread {
-    background-color: #F5F5F5;
-    padding: 12px 0;
+    background-color: #fff;
+    padding: 0;
+    border-bottom: 1px solid #E3E3E3;
     .hg-bread-inner {
       display: table;
       text-align: center;
@@ -10,7 +11,10 @@
       display: inline-table;
       vertical-align: middle;
       text-align: center;
-      padding: 0 20px;
+      border-bottom: 2px solid #fff;
+      padding: 14px;
+      min-width: 100px;
+      text-transform: uppercase;
     }
     .hg-bread-num {
       background-color: #000;
@@ -20,9 +24,9 @@
       color: #fff;
       font-size: 10px;
       line-height: 1;
-      border-radius: 50px;
+      border-radius: 70px;
       overflow: hidden;
-      margin: 0 auto 10px;
+      margin: 0 auto 12px;
       padding: 4px;
     }
     .hg-bread-line {
@@ -34,7 +38,13 @@
         background-color: black;
       }
     }
+    .hg-bread-title{
+      line-height: 1;
+    }
     .is-inactive {
       opacity: .4;
+    }
+      .is-active   {
+      border-bottom: 2px solid black;
     }
   }

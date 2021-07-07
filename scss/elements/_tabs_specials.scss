@@ -64,8 +64,8 @@
   }
   .checkbox-radio.checkbox-box [type="radio"]:checked + label .ico-radio,
   .checkbox-radio.checkbox-box [type="radio"]:not(:checked) + label .ico-radio {
-    top: 7px;
-    left: 7px;
+    top: 6px;
+    left: 6px;
   }
   .checkbox-radio.checkbox-box [type="radio"]:checked + label:before,
   .checkbox-radio.checkbox-box [type="radio"]:not(:checked) + label:before {

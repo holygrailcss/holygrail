@@ -31,28 +31,18 @@ hr {
 }
 .only-mobile {
   display: inline-block;
+
   @media (min-width:$break-sm) {
-    display: inline-block;
-  }
-  @media (min-width:$break-md) {
     display: none;
   }
-  @media (min-width:$break-lg) {
-    display: none;
-  }
+
 }
 .only-desktop {
-  display: none;
-  @media (min-width:$break-sm) {
-    display: none;
-  }
-  @media (min-width:$break-md) {
-    display: inline-block;
-  }
-  @media (min-width:$break-lg) {
-    display: inline-block;
+  @media (max-width:$break-sm - 1) {
+      display: none !important;
   }
 }
+
 
 .c-gray{
   color:#909090
@@ -115,6 +105,8 @@ background-color: #5D8074;
   }
 }
 
+//visible a partir de sm
+
 .sm\:hidden {
   @media (max-width: $break-sm) {
     display: none!important;
@@ -131,27 +123,146 @@ background-color: #5D8074;
   }
 }
 
+.xl\:hidden {
+  @media (max-width: $break-xl) {
+    display: none!important;
+  }
+}
+
+
+//visible hasta sm
+
+.sm\:visible {
+  @media (min-width: $break-sm) {
+    display: none!important;
+  }
+}
+.md\:visible {
+  @media (min-width: $break-md) {
+    display: none!important;
+  }
+}
+.lg\:visible {
+  @media (min-width: $break-lg) {
+    display: none!important;
+  }
+}
+
+.xl\:visible {
+  @media (min-width: $break-xl) {
+    display: none!important;
+  }
+}
+
 //xs:mb-20
 
-.xs\:text-center { @media (max-width: $break-sm) { text-align: center; } }
-.sm\:text-center { @media (max-width: $break-md) { text-align: center; } }
-.md\:text-center { @media (max-width: $break-lg) { text-align: center; } }
-.lg\:text-center { @media (min-width: $break-lg) { text-align: center; } }
-
-
-.xs\:text-left { @media (max-width: $break-sm) { text-align: left; } }
-.sm\:text-left { @media (max-width: $break-md) { text-align: left; } }
-.md\:text-left { @media (max-width: $break-lg) { text-align: left; } }
-.lg\:text-left { @media (min-width: $break-lg) { text-align: left; } }
-
-.xs\:text-right { @media (max-width: $break-sm) { text-align: right; } }
-.sm\:text-right { @media (max-width: $break-md) { text-align: right; } }
-.md\:text-right { @media (max-width: $break-lg) { text-align: right; } }
-.lg\:text-right { @media (min-width: $break-lg) { text-align: right; } }
-
-.xs\:text-right { @media (max-width: $break-sm) { text-align: right; } }
-.sm\:text-right { @media (max-width: $break-md) { text-align: right; } }
-.md\:text-right { @media (max-width: $break-lg) { text-align: right; } }
-.lg\:text-right { @media (min-width: $break-lg) { text-align: right; } }
-
 .mdmax\:mb-20 { @media (max-width: $break-md) { margin-bottom: 24px;} }
+
+
+
+.align-center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+.align-middle {
+	display: flex;
+	align-content: center;
+	flex-wrap: wrap;
+}
+.sm\:order-last {
+	@media (min-width: $break-sm) {
+		order: 3;
+	}
+}
+.md\:order-last {
+	@media (min-width: $break-md) {
+		order: 3;
+	}
+}
+.lg\:order-last {
+	@media (min-width: $break-lg) {
+		order: 3;
+	}
+}
+
+
+
+.sm\:reverse {
+	@media screen and (max-width: $break-sm) {
+		-webkit-flex-wrap: wrap-reverse;
+		-ms-flex-wrap: wrap-reverse;
+		flex-wrap: wrap-reverse;
+	}
+}
+.md\:reverse {
+	@media screen and (max-width: $break-md) {
+		-webkit-flex-wrap: wrap-reverse;
+		-ms-flex-wrap: wrap-reverse;
+		flex-wrap: wrap-reverse;
+	}
+}
+.lg\:reverse {
+	@media screen and (max-width: $break-lg) {
+		-webkit-flex-wrap: wrap-reverse;
+		-ms-flex-wrap: wrap-reverse;
+		flex-wrap: wrap-reverse;
+	}
+}
+
+.block-right {
+	margin-left: auto;
+}
+.block-left {
+	margin-right: auto;
+}
+
+
+
+.md\:px-48 {
+	@media screen and (max-width: $break-md) {
+    padding-left: 48px;
+    padding-right: 48px;
+	}
+}
+
+
+.text-12-l{
+  font-family: $font-family-light;
+  font-size: 12px;
+}
+
+strong{
+  font-family: $font-family-bold;
+}
+
+.border-1{
+  border: 1px solid #E3E3E3;
+}
+
+.border-t{
+  border-top: 1px solid #E3E3E3;
+}
+
+.border-b{
+  border-bottom: 1px solid #E3E3E3;
+}
+.border-l{
+  border-left: 1px solid #E3E3E3;
+}
+.border-r{
+  border-right: 1px solid #E3E3E3;
+}
+.flex-vcenter{
+	display: flex;
+	align-items: center;
+  
+  [type=checkbox]:checked+label .icon, 
+  [type=checkbox]:not(:checked)+label .icon {
+    position: absolute;
+    top: 50%;
+    margin-top: -9px;
+}
+}

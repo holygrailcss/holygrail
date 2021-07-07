@@ -118,7 +118,7 @@
   margin:0 auto;
   padding: 0 $padding-global;
   width: 100%;
-  max-width: 395px;
+  max-width: $container-6;
 }
 
 .container-7{
@@ -136,6 +136,14 @@
   @media (min-width:$break-lg) {
     max-width: 595px;
   }
+}
+
+
+.container-8{
+  margin:0 auto;
+  padding: 0 $padding-global;
+  width: 100%;
+  max-width: $container-8;
 }
 
   /*+------------------------------------------------------------+
@@ -166,7 +174,6 @@
       @for $c from 1 through $totalCols {
         .col-#{nth(map-keys($breakpoints), $i)}-#{$c} {
           -webkit-box-flex: 0;
-          -ms-flex: 0 0 percentage($c / $totalCols);
           flex: 0 0 percentage($c / $totalCols);
           max-width: percentage($c / $totalCols);
         }
