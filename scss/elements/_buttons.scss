@@ -19,7 +19,7 @@
     border: none;
     white-space: nowrap;
     cursor: pointer;
-    padding:  $padding-global * 2 + 1px $padding-global * 2 $padding-global * 2 - 1px;
+    padding:  15px 16px 13px;
     @include font-medium();
     /**
  	* Nadie quiere un botón con texto subrayado cuando hacemos hover.
@@ -235,12 +235,19 @@ $btn-text-full: 14px;
     color: #000;
     background-color: transparent;
     border: 1px solid #000;
+
+
+
     &:focus,
     &.focus,
     &:hover,
     &:active,
     &.active {
  opacity: .6;
+
+    svg{
+        path{fill:white}
+    }
 
     }
 }

@@ -6,12 +6,13 @@ $border-gray: #eaeaea;
     align-content: center;
     flex-wrap: nowrap;
 	justify-content: flex-start;
-
-	height:256px ;
+	margin: 0 -8px;
 	@media (min-width: $break-md) {
-
+		min-height: 256px;
+		margin: 0 ;
     }
 }  
+
 .h-center {
 	margin: 0 auto;
 	text-align: center;
@@ -36,7 +37,7 @@ $border-gray: #eaeaea;
 	width: 24px;
 	height: 24px;
     transition: all ease .2s;
-	transform: rotate(45deg);
+	transform: rotate(-45deg);
 	svg {
 		padding: 4px;
 		width: 100%;
@@ -50,11 +51,16 @@ $border-gray: #eaeaea;
        background-color: #fafafa;
        cursor: pointer;
     .feel-close{
-        transform: rotate(0deg);
+		transform: rotate(136deg);
     }
    }
    @media (min-width: $break-md) {
-	padding: 48px 24px;
+	padding: 48px ;
+    }
+}
+.is-opened{
+    .feel-close{
+        transform: rotate(0);
     }
 }
 .feel-bar {
@@ -116,8 +122,7 @@ $border-gray: #eaeaea;
 .feel-minibox-info{
     width: 100%;
     .feel-minibox-info{
-        width: 100%;
-
+    width: 100%;
     height: 0;
     display: block;
     transition: 1s ease all;
@@ -132,7 +137,7 @@ $border-gray: #eaeaea;
             display: block;
             transition: .3s ease all;
             opacity: 1;
-            height: 70vh;
+			height: 90vh;
             z-index: 20;
             background: #fafafa;
 			@media (min-width: 992px) {
@@ -153,6 +158,51 @@ $border-gray: #eaeaea;
         }
     }
 }
+
+
+
+.feel-minibox-info{
+	width: 100%;
+	.feel-minibox-img{
+		height: 256px;
+		@media (min-width: $break-sm) {
+		height: 369px;
+		}
+	}
+	.feel-minibox-wrap{
+		padding: 32px 24px;
+		@media (min-width: $break-md) {
+			padding: 64px 56px;
+		}
+	}
+}
+
+
+.feel-minibox-txt {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-ms-flex-line-pack: center;
+	align-content: center;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	height: calc(100% - 256px);
+	@media (min-width: $break-sm) {
+		height: calc(100% - 256px);
+		}
+		@media (min-width: $break-md) {
+			height: 100%;
+			}
+}
+
+
 .b-light {
 	border-bottom: 1px solid $border-gray;
 }

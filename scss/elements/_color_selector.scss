@@ -1,0 +1,112 @@
+/*+------------------------------------------------------------+
+ |       -COLOR SELECTOR  
+ +------------------------------------------------------------+*/
+
+
+
+.color-wrap {
+    display: inline-block;
+    padding: 8px 0;
+    position: relative;
+    vertical-align: middle;
+
+    .name {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    button {
+        background-color: transparent;
+        border: 0;
+        cursor: pointer;
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        padding: 0;
+        left: 0;
+        line-height: 16px;
+        margin-right: 6px;
+        opacity: 1;
+        padding: 0;
+        position: relative;
+        text-align: center;
+        top: 0;
+        vertical-align: middle;
+
+        &:hover .color-selector::before,
+        &.is-active .color-selector::before {
+            transform: scale(1);
+        }
+
+        .color-selector {
+            border-radius: 50%;
+            box-sizing: border-box;
+            display: inline-block;
+            height: 100%;
+            margin: 0;
+            margin-top: 0;
+            position: relative;
+            top: 0;
+            width: 100%;
+
+            &::before {
+                border: 1px solid #d8d8d8;
+                border-radius: 50%;
+                content: '';
+                height: 100%;
+                left: 0;
+                position: absolute;
+                top: 0;
+                transform: scale(0);
+                transition: all ease 275ms;
+                width: 100%;
+            }
+
+            img,
+            .color-plain {
+                border: 1px solid #d8d8d8;
+                border-radius: 50%;
+                height: 10px;
+                left: 50%;
+                margin-left: -5px;
+                margin-top: 0;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 10px;
+            }
+
+            span {
+                border: 1px solid #eaeaea;
+                border-radius: 50%;
+                height: 12px;
+                left: 50%;
+                margin-left: -6px;
+                margin-top: 0;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 12px;
+            }
+
+            &:hover::before,
+            .is-active {
+                transform: scale(1);
+            }
+        }
+    }
+
+    .color-more {
+        display: inline-block;
+        margin-left: 5px;
+
+        span {
+            border-bottom: 1px dotted $gray-30;
+        }
+    }
+
+    /*casuisticas*/
+
+
+}
+
