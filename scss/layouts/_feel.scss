@@ -163,12 +163,7 @@ $border-gray: #eaeaea;
 
 .feel-minibox-info{
 	width: 100%;
-	.feel-minibox-img{
-		height: 256px;
-		@media (min-width: $break-sm) {
-		height: 369px;
-		}
-	}
+
 	.feel-minibox-wrap{
 		padding: 32px 24px;
 		@media (min-width: $break-md) {
@@ -193,13 +188,6 @@ $border-gray: #eaeaea;
 	-webkit-box-pack: start;
 	-ms-flex-pack: start;
 	justify-content: flex-start;
-	height: calc(100% - 256px);
-	@media (min-width: $break-sm) {
-		height: calc(100% - 256px);
-		}
-		@media (min-width: $break-md) {
-			height: 100%;
-			}
 }
 
 
