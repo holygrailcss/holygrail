@@ -6,14 +6,16 @@
       display: table;
       text-align: center;
       margin: 0 auto;
+      max-width: 390px;
+      width: 100%;
     }
     .hg-bread-item {
       display: inline-table;
+      margin-bottom: -1px;
       vertical-align: middle;
       text-align: center;
-      border-bottom: 2px solid #fff;
       padding: 14px;
-      min-width: 100px;
+      width: 33.33333%;
       text-transform: uppercase;
     }
     .hg-bread-num {
@@ -22,12 +24,11 @@
       width: 17px;
       height: 17px;
       color: #fff;
-      font-size: 10px;
       line-height: 1;
-      border-radius: 70px;
+      border-radius: 50%;
       overflow: hidden;
       margin: 0 auto 12px;
-      padding: 4px;
+      padding: 3px;
     }
     .hg-bread-line {
       display: inline-table;
@@ -44,7 +45,5 @@
     .is-inactive {
       opacity: .4;
     }
-      .is-active   {
-      border-bottom: 2px solid black;
-    }
+
   }

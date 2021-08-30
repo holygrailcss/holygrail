@@ -39,10 +39,15 @@ npm install holygrailcss
 ```
 
 Probar el holygrail antes de subir
-gulp style;
 
-gulp guide;
-gulp start;
+
+
+
+npm test
+npm start
+npm build-sass
+
+  
 
 
 ### CDN

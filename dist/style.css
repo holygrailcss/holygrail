@@ -85,18 +85,6 @@ a {
  |       -MIXINS FONTS
  +------------------------------------------------------------+*/
 /*+------------------------------------------------------------+
- |       -COLORES RANDOM
- +------------------------------------------------------------+*/
-/*+------------------------------------------------------------+
- |       -FLUID TEXT 
- +------------------------------------------------------------+*/
-/*+------------------------------------------------------------+
- |       -RATIO 
- +------------------------------------------------------------+*/
-/*+------------------------------------------------------------+
- |       -BLEED A SANGRE
- +------------------------------------------------------------+*/
-/*+------------------------------------------------------------+
  |       -ANIMATIONS    
  +------------------------------------------------------------+*/
 @keyframes underline {
@@ -160,6 +148,10 @@ a {
 
 .text-justify {
   text-align: justify;
+}
+
+.text-nowrap {
+  white-space: nowrap;
 }
 
 .pt-20 {
@@ -581,6 +573,22 @@ a {
   padding: 0 8px;
   width: 100%;
   max-width: 395px;
+}
+
+.container-body {
+  padding: 16px;
+}
+
+@media (min-width: 768px) {
+  .container-body {
+    padding: 24px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container-body {
+    padding: 32px;
+  }
 }
 
 /*+------------------------------------------------------------+
@@ -1080,12 +1088,12 @@ a {
   }
 }
 
-.hg-form .row [class*=col-xs-12],
-.hg-form .row [class*=col-xs-12]:first-child {
+.hg-form .row [class*="col-xs-12"],
+.hg-form .row [class*="col-xs-12"]:first-child {
   padding-right: 8px;
 }
 
-.hg-form .row [class*=col-xs-12]:last-child {
+.hg-form .row [class*="col-xs-12"]:last-child {
   padding-right: 8px;
 }
 
@@ -1678,7 +1686,7 @@ a {
     margin-top: 10px;
   }
   .mt-50 {
-    margin-top: 20px;
+    margin-top: 50px;
   }
 }
 
@@ -3689,6 +3697,26 @@ mark {
   font-weight: 700;
 }
 
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-transform-none {
+  text-transform: none;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
 .has-ellipsis {
   text-overflow: ellipsis;
   overflow: hidden;
@@ -3752,6 +3780,22 @@ hr {
 
 .bg-light {
   background-color: #f5f5f5;
+}
+
+.bg-clear {
+  background-color: #ffffff;
+}
+
+.bg-cream {
+  background-color: #f8f7f5;
+}
+
+.h-50 {
+  height: 50px;
+}
+
+.w-100 {
+  width: 100%;
 }
 
 .ico-r svg {
@@ -4036,6 +4080,64 @@ strong {
   }
 }
 
+.text-faded {
+  opacity: 0.5;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* total width */
+.scrollbar::-webkit-scrollbar {
+  background-color: #fff;
+  width: 16px;
+}
+
+/* background of the scrollbar except button or resizer */
+.ov-custom::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+.ov-custom::-webkit-scrollbar-track:hover {
+  background-color: #f4f4f4;
+}
+
+/* scrollbar itself */
+.ov-custom::-webkit-scrollbar-thumb {
+  background-color: #babac0;
+  border-radius: 16px;
+  border: 5px solid #fff;
+}
+
+.ov-custom::-webkit-scrollbar-thumb:hover {
+  background-color: #a0a0a5;
+  border: 4px solid #f4f4f4;
+}
+
+/* set button(top and bottom of the scrollbar) */
+.ov-custom::-webkit-scrollbar-button {
+  display: none;
+}
+
 /*------------------------------------*\
     $ELEMENTS COMPONENTES
 \*------------------------------------*/
@@ -4205,6 +4307,8 @@ hr {
   padding-right: 40px;
   padding-left: 40px;
   font-size: 14px;
+  max-width: 272px;
+  width: 100%;
 }
 
 .btn--small {
@@ -4967,14 +5071,13 @@ hr {
 .check-center.checkbox-radio [type=radio]:not(:checked) + label:before {
   position: absolute;
   top: 50%;
-  left: 16px;
+  left: unset;
   transform: translateY(-50%);
 }
 
 .check-center.checkbox-radio [type=radio]:checked + label .ico-radio,
 .check-center.checkbox-radio [type=radio]:not(:checked) + label .ico-radio {
   top: 50%;
-  left: 23px;
   margin-top: -5px;
 }
 
@@ -5262,7 +5365,7 @@ label {
   top: 1px;
   box-sizing: border-box;
   display: table;
-  margin: 15px;
+  margin: 12px 16px;
 }
 
 .is-error .input,
@@ -5335,6 +5438,7 @@ input::-webkit-input-placeholder {
 }
 
 .form-input-label {
+  font-family: Arial, sans-serif;
   position: relative;
   margin-bottom: 24px;
 }
@@ -7256,7 +7360,8 @@ ZEN:
 }
 
 .card9 .card9-wrap-details {
-  height: 144px;
+  position: relative;
+  min-height: 126px;
   position: absolute;
   bottom: 1px;
   left: 0;
@@ -7269,6 +7374,7 @@ ZEN:
 @media (min-width: 1280px) {
   .card9 .card9-wrap-details {
     padding: 0;
+    min-height: 144px;
   }
 }
 
@@ -7285,7 +7391,7 @@ ZEN:
 }
 
 .card9 .js-card9-inner {
-  margin-bottom: 144px;
+  margin-bottom: 0;
 }
 
 .card9 .js-card9-inner .content {
@@ -7337,6 +7443,20 @@ ZEN:
 .card9 .card9-slider .ma-swiper-button-prev:hover {
   transition-delay: 0s;
   background: rgba(255, 255, 255, 0.5);
+}
+
+.card9-wrap {
+  width: 100%;
+  height: 100%;
+}
+
+.card9-wrap .rat-content .btn-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card9-wrap .rat-content:hover .card9-add {
+  opacity: 1;
 }
 
 .is-active .card9-add {
@@ -7673,16 +7793,6 @@ ZEN:
   width: 100%;
 }
 
-.feel-minibox-info .feel-minibox-img {
-  height: 256px;
-}
-
-@media (min-width: 768px) {
-  .feel-minibox-info .feel-minibox-img {
-    height: 369px;
-  }
-}
-
 .feel-minibox-info .feel-minibox-wrap {
   padding: 32px 24px;
 }
@@ -7708,19 +7818,6 @@ ZEN:
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  height: calc(100% - 256px);
-}
-
-@media (min-width: 768px) {
-  .feel-minibox-txt {
-    height: calc(100% - 256px);
-  }
-}
-
-@media (min-width: 992px) {
-  .feel-minibox-txt {
-    height: 100%;
-  }
 }
 
 .b-light {
@@ -7992,15 +8089,17 @@ ZEN:
   display: table;
   text-align: center;
   margin: 0 auto;
+  max-width: 390px;
+  width: 100%;
 }
 
 .hg-bread .hg-bread-item {
   display: inline-table;
+  margin-bottom: -1px;
   vertical-align: middle;
   text-align: center;
-  border-bottom: 2px solid #fff;
   padding: 14px;
-  min-width: 100px;
+  width: 33.33333%;
   text-transform: uppercase;
 }
 
@@ -8010,12 +8109,11 @@ ZEN:
   width: 17px;
   height: 17px;
   color: #fff;
-  font-size: 10px;
   line-height: 1;
-  border-radius: 70px;
+  border-radius: 50%;
   overflow: hidden;
   margin: 0 auto 12px;
-  padding: 4px;
+  padding: 3px;
 }
 
 .hg-bread .hg-bread-line {
@@ -8035,10 +8133,6 @@ ZEN:
 
 .hg-bread .is-inactive {
   opacity: .4;
-}
-
-.hg-bread .is-active {
-  border-bottom: 2px solid black;
 }
 
 .footer-bottom {

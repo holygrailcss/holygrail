@@ -27,7 +27,10 @@
 
     }
     .box3-content{
-      width: 100%;
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      justify-content: center;
     }
     .box3-img{
       display: flex;

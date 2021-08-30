@@ -241,6 +241,7 @@ input::-webkit-input-placeholder {
     transform: translate3d(0, 0, 0);
 }
 .form-input-label {
+    font-family: $font-family-form;
     position: relative;
     margin-bottom: 24px;
     & > input,

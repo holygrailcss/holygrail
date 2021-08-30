@@ -364,6 +364,20 @@ transform: translateY(-50%);
     border: 1px solid black;
     }
 }
+
+
+.check-bleed{
+  &.checkbox-radio [type=radio]:checked + label:before,
+  &.checkbox-radio [type=radio]:not(:checked) + label:before {
+       left: 0px;
+   }
+   &.checkbox-radio [type=radio]:checked + label .ico-radio, 
+   &.checkbox-radio [type=radio]:not(:checked) + label .ico-radio {
+       left: 7px;
+   }
+}
+
+
 .check-top{
   &.checkbox-radio [type=radio]:checked+label:before,
   &.checkbox-radio [type=radio]:not(:checked)+label:before {

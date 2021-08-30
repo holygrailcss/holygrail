@@ -65,9 +65,6 @@
     }
 }
 
-
-
-
 @mixin typesFixers($headersFixers, $cssattr) {
     @for $i from 1 through 1 {
         @each $name,
@@ -103,16 +100,10 @@
     }
 }
 
-
-/*+------------------------------------------------------------+
- |       -COLORES RANDOM
- +------------------------------------------------------------+*/
 @mixin random-bgr() {
     background: rgb(random(255), random(255), random(255));
 }
-/*+------------------------------------------------------------+
- |       -FLUID TEXT 
- +------------------------------------------------------------+*/
+
 @function unity($value) {
     @return $value / ($value * 0 + 1);
 }
@@ -235,9 +226,7 @@
         }
     }
 }
-/*+------------------------------------------------------------+
- |       -RATIO 
- +------------------------------------------------------------+*/
+
 @mixin ratio($width, $height) {
     position: relative;
     overflow: hidden;
@@ -262,9 +251,7 @@
         bottom: 0;
     }
 }
-/*+------------------------------------------------------------+
- |       -BLEED A SANGRE
- +------------------------------------------------------------+*/
+
 @mixin bleed($margin) {
     .bleed-#{$margin} {
         padding: 0 $margin/2+px 0 $margin/2+px;
@@ -347,3 +334,364 @@
         }
     }
 }
+
+
+
+@mixin button-variant($color, $background, $border) {
+    color: $color;
+    background-color: $background;
+    border-color: $border;
+    &:focus,
+    &.focus {
+      color: $color;
+      background-color: darken($background, 10%);
+          border-color: darken($border, 25%);
+    }
+    &:hover {
+      color: $color;
+      background-color: darken($background, 10%);
+          border-color: darken($border, 12%);
+    }
+    &:active,
+    &.active,
+    .open > &.dropdown-toggle {
+      color: $color;
+      background-color: darken($background, 10%);
+          border-color: darken($border, 12%);
+  
+      &:hover,
+      &:focus,
+      &.focus {
+        color: $color;
+        background-color: darken($background, 17%);
+            border-color: darken($border, 25%);
+      }
+    }
+    &:active,
+    &.active,
+    .open > &.dropdown-toggle {
+      background-image: none;
+    }
+    &.disabled,
+    &[disabled],
+    fieldset[disabled] & {
+      &:hover,
+      &:focus,
+      &.focus {
+        background-color: $background;
+            border-color: $border;
+      }
+    }
+    .badge {
+      color: $background;
+      background-color: $color;
+    }
+  }
+  
+  // Button sizes
+  @mixin button-size($padding-vertical, $padding-horizontal, $font-size, $line-height, $border-radius) {
+      padding: $padding-vertical $padding-horizontal;
+      font-size: $font-size;
+      line-height: $line-height;
+      border-radius: $border-radius;
+  }
+  
+  @mixin box-shadow($shadow...) {
+      -webkit-box-shadow: $shadow; // iOS <4.3 & Android <4.1
+      -moz-box-shadow: $shadow; 
+      box-shadow: $shadow;
+  }
+  
+  // Box sizing
+  @mixin box-sizing($boxmodel) {
+      -webkit-box-sizing: $boxmodel;
+      -moz-box-sizing: $boxmodel;
+      box-sizing: $boxmodel;
+  }
+  
+  // CSS3 Content Columns
+  @mixin content-columns($column-count, $column-gap: $grid-gutter-width) {
+      -webkit-column-count: $column-count;
+      -moz-column-count: $column-count;
+      column-count: $column-count;
+      -webkit-column-gap: $column-gap;
+      -moz-column-gap: $column-gap;
+      column-gap: $column-gap;
+  }
+  
+  // WebKit-style focus
+  @mixin tab-focus() {
+      // Default
+      border-color:transparent;
+      outline: thin dotted;
+      box-shadow: none;
+      outline-offset: -2px;
+  }
+
+
+// User select
+// For selecting text on the page
+@mixin user-select($select) {
+    -webkit-user-select: $select;
+    -moz-user-select: $select;
+    -ms-user-select: $select; // IE10+
+    user-select: $select;
+}
+
+// Calc
+// @include calc($property, $expression);
+@mixin calc($property, $expression) {
+    #{$property}: -moz-calc(#{$expression});
+    #{$property}: -webkit-calc(#{$expression});
+    #{$property}: calc(#{$expression});
+}
+
+// Ellipsis
+@mixin ellipsis() {
+    text-overflow: ellipsis;
+    overflow: hidden;
+	white-space: nowrap;
+}
+
+// Appearance
+@mixin appearance() {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+
+// ==========  Mixins para los Media Queries  ==========
+
+@mixin media($consulta) {
+	//Oficialmente los puntos de corte son mobile 350, 768, 1024, 1980
+
+   $media-max-xs:  "(max-width : 480px)"; // Desde el minimo
+   $media-max-sm:  "(max-width : 767px)"; // Desde el minimo
+   $media-max-md:  "(max-width : 991px)"; // Desde el minimo
+   $media-max-lg:  "(max-width : 1279px)"; // Desde el minimo
+
+
+	
+    $media-xxs:  "(min-width : 300px)"; // Desde el minimo
+    $media-xs:   "(min-width : 480px)"; // Telefonos
+    $media-sm:   "(min-width: 768px)";  // Tablets
+    $media-md:   "(min-width: 992px)";  // Escritorios
+    $media-md-2: "(min-width: 1025px)"; // Escritorios superiores a ipads
+    $media-lg:   "(min-width: 1280px)"; // Resoluciones grandes
+    $media-xl:   "(min-width: 1500px)"; // Resoluciones pantallas grandes
+    $media-xxl:  "(min-width: 1600px)"; // Resoluciones pantallas + grandes
+    $portrait:   "(min-width: 768px) and (max-width: 991px)";   // Ajustes Resoluciones Medianas para dispositivos en portrait
+    $landscape:  "(min-width: 992px) and (max-width: 1279px)";  // Ajustes Resoluciones Medianas para dispositivos en landscape
+    $landscape-2:"(min-width: 1280px) and (max-width: 1560px)"; // Ajustes Resoluciones Medianas para dispositivos en landscape xxl
+    
+    
+    
+    
+    @if $consulta==xxs {
+        @media #{$media-xxs} {
+            @content;
+        }
+    }
+
+    @else if $consulta==max-xs {
+        @media #{$media-max-xs} {
+            @content;
+        }
+    }
+
+    @else if $consulta==max-sm {
+        @media #{$media-max-sm} {
+            @content;
+        }
+    }
+
+    @else if $consulta==max-md {
+        @media #{$media-max-md} {
+            @content;
+        }
+    }
+
+    @else if $consulta==max-lg {
+        @media #{$media-max-lg} {
+            @content;
+        }
+    }
+
+    @else if $consulta==xs {
+        @media #{$media-xs} {
+            @content;
+        }
+    }
+
+    @else if $consulta==sm {
+        @media #{$media-sm} {
+            @content;
+        }
+    }
+
+    @else if $consulta==md {
+        @media #{$media-md} {
+            @content;
+        }
+    }
+
+    @else if $consulta==md-2 {
+        @media #{$media-md-2} {
+            @content;
+        }
+    }
+
+    @else if $consulta==lg {
+        @media #{$media-lg} {
+            @content;
+        }
+    }
+
+    @else if $consulta==xl {
+        @media #{$media-xl} {
+            @content;
+        }
+    }
+
+    @else if $consulta==xxl {
+        @media #{$media-xxl} {
+            @content;
+        }
+    }
+
+    @else if $consulta==portrait {
+        @media #{$portrait} {
+            @content;
+        }
+    }
+
+    @else if $consulta==land {
+        @media #{$landscape} {
+            @content;
+        }
+    }
+
+    @else if $consulta==land-2 {
+        @media #{$landscape-2} {
+            @content;
+        }
+    }
+
+
+    @else if $consulta == retina {
+        @media
+          only screen and (-webkit-min-device-pixel-ratio: 2),
+          only screen and (   min--moz-device-pixel-ratio: 2),
+          only screen and (     -o-min-device-pixel-ratio: 2/1),
+          only screen and (        min-device-pixel-ratio: 2),
+          only screen and (                min-resolution: 192dpi),
+          only screen and (                min-resolution: 2dppx) {
+            @content;
+        }
+    }
+
+}
+
+
+@function calculateRem($size) {
+    $remSize: $size / 16px;
+    @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+    font-size: $size;
+    font-size: calculateRem($size);
+}
+
+
+
+@mixin opacity($opacity) {
+    opacity: $opacity;
+    $opacity-ie: $opacity * 100;
+    filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+
+
+
+// ========== Tratar el sprite ==========
+
+$spritegrid:32;
+$spriteWidth:600;
+$spriteHeight:400;
+
+
+// sprite-bg( 5, 10, false)
+
+@mixin sprite-bg($x:0, $y:$x, $hover:true, $sizeBig:false) { 
+    $i:0; 
+    background-image:url("../images/itx-sprite.png");
+    background-position-x: ($x * -1px); 
+    background-position-y: ($y * -1px); 
+    background-repeat:no-repeat;
+    @include media(retina) {
+        background-image:url("../images/itx-sprite_2x.png");
+        background-size: ($spriteWidth * 1px) ($spriteHeight * 1px);
+    }
+    @if $hover { 
+        &:hover, 
+        &:focus { 
+            background-position-x: ($x * -1px);
+            background-position-y: ((($spritegrid * -1px)) + $y);
+        } 
+    }
+    @if $sizeBig { 
+       background-position-x: ($x * -1px);
+       background-position-y: (((($spritegrid * 2) * -1px)) + ($y * 2));
+    }    
+}
+
+
+// placeholder inputs 
+
+@mixin placeholder() {
+	&::-webkit-input-placeholder {@content;}
+	&:-moz-placeholder           {@content;}
+	&::-moz-placeholder          {@content;}
+	&:-ms-input-placeholder      {@content;}
+}
+
+
+// transitions
+
+@mixin transition($transition, $time, $timing: ease) {
+	-moz-transition:    $transition $time $timing;
+    -o-transition:      $transition $time $timing;
+    -webkit-transition: $transition $time $timing;
+    transition:         $transition $time $timing;
+}
+
+// ==========  Posicionamiento  ==========
+@mixin absolute-vertical-center() {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@mixin absolute-vertical-bottom() {
+    position: absolute;
+    bottom: 10%;
+}
+
+
+// RGBA fallback
+// @include rgba(background-color, black, 0.5, white);
+@mixin rgba($property, $background: black, $opacity: 0.75, $mix: white) {
+    #{$property}: mix($background, $mix, $opacity * 100%);
+    #{$property}: rgba($background, $opacity);
+}
+
+//Preserve unicode escape on compilation for non messing up with some servers
+//http://stackoverflow.com/questions/30421570/sass-unicode-escape-is-not-preserved-in-css-file
+@function unicode($str) {
+  @return unquote("\"")+unquote(str-insert($str, "\\", 1))+unquote("\"")
+};
+
+
+  

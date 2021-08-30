@@ -1,3 +1,19 @@
+// Transformation
+.text-lowercase {
+    text-transform: lowercase;
+}
+.text-uppercase {
+    text-transform: uppercase;
+}
+.text-capitalize {
+    text-transform: capitalize;
+}
+.text-transform-none {
+    text-transform: none;
+}
+.text-underline {
+    text-decoration: underline;
+}
 .has-ellipsis {
     text-overflow: ellipsis;
     overflow: hidden;
@@ -17,7 +33,6 @@
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
-
 hr {
     width: 100%;
     border-top: 1px solid #eaeaea;
@@ -25,13 +40,11 @@ hr {
     border-right: 1px solid transparent;
     border-left: 1px solid transparent;
 }
-
 .bg-line {
     border-bottom: 1px solid #e3e3e3;
 }
 .only-mobile {
     display: inline-block;
-
     @media (min-width: $break-sm) {
         display: none;
     }
@@ -41,11 +54,9 @@ hr {
         display: none !important;
     }
 }
-
 .c-gray {
     color: #909090;
 }
-
 .second-color {
     color: #757575;
 }
@@ -58,14 +69,21 @@ hr {
 .bg-clear {
     background-color: #ffffff;
 }
-
+.bg-cream {
+    background-color: #f8f7f5;
+}
+.h-50 {
+    height: 50px;
+}
+.w-100 {
+    width: 100%;
+}
 .ico-r svg {
     position: relative;
     left: 8px;
     display: inline-block;
     vertical-align: text-top;
 }
-
 .hg-status {
     position: relative;
     padding-left: 16px;
@@ -105,7 +123,6 @@ hr {
     }
 }
 //visible a partir de sm
-
 .sm\:hidden {
     @media (max-width: $break-sm) {
         display: none !important;
@@ -121,15 +138,12 @@ hr {
         display: none !important;
     }
 }
-
 .xl\:hidden {
     @media (max-width: $break-xl) {
         display: none !important;
     }
 }
-
 //visible hasta sm
-
 .sm\:visible {
     @media (min-width: $break-sm) {
         display: none !important;
@@ -145,21 +159,17 @@ hr {
         display: none !important;
     }
 }
-
 .xl\:visible {
     @media (min-width: $break-xl) {
         display: none !important;
     }
 }
-
 //xs:mb-20
-
 .mdmax\:mb-20 {
     @media (max-width: $break-md) {
         margin-bottom: 24px;
     }
 }
-
 .align-center {
     display: flex;
     flex-direction: column;
@@ -187,7 +197,6 @@ hr {
         order: 3;
     }
 }
-
 .sm\:reverse {
     @media screen and (max-width: $break-sm) {
         -webkit-flex-wrap: wrap-reverse;
@@ -209,38 +218,31 @@ hr {
         flex-wrap: wrap-reverse;
     }
 }
-
 .block-right {
     margin-left: auto;
 }
 .block-left {
     margin-right: auto;
 }
-
 .md\:px-48 {
     @media screen and (max-width: $break-md) {
         padding-left: 48px;
         padding-right: 48px;
     }
 }
-
 .text-12-l {
     font-family: $font-family-light;
     font-size: 12px;
 }
-
 strong {
     font-family: $font-family-bold;
 }
-
 .border-1 {
     border: 1px solid #e3e3e3;
 }
-
 .border-t {
     border-top: 1px solid #e3e3e3;
 }
-
 .border-b {
     border-bottom: 1px solid #e3e3e3;
 }
@@ -253,7 +255,6 @@ strong {
 .flex-vcenter {
     display: flex;
     align-items: center;
-
     [type="checkbox"]:checked + label .icon,
     [type="checkbox"]:not(:checked) + label .icon {
         position: absolute;
@@ -289,7 +290,6 @@ strong {
     overflow: auto;
     -webkit-overflow-scrolling: touch;
 }
-
 .p-view\:sm {
     @media (max-width: $break-sm) {
         background-color: #ffffff;
@@ -300,4 +300,52 @@ strong {
         left: 0;
         bottom: 0;
     }
+}
+.text-faded {
+    opacity: 0.5;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+/* total width */
+.scrollbar::-webkit-scrollbar {
+    background-color: #fff;
+    width: 16px;
+}
+/* background of the scrollbar except button or resizer */
+.ov-custom::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+.ov-custom::-webkit-scrollbar-track:hover {
+    background-color: #f4f4f4;
+}
+/* scrollbar itself */
+.ov-custom::-webkit-scrollbar-thumb {
+    background-color: #babac0;
+    border-radius: 16px;
+    border: 5px solid #fff;
+}
+.ov-custom::-webkit-scrollbar-thumb:hover {
+    background-color: #a0a0a5;
+    border: 4px solid #f4f4f4;
+}
+/* set button(top and bottom of the scrollbar) */
+.ov-custom::-webkit-scrollbar-button {
+    display: none;
 }
