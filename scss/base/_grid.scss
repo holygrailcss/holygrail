@@ -132,6 +132,16 @@
     width: 100%;
     max-width: $container-8;
 }
+
+.container-9 {
+    margin: 0 auto;
+    padding: 0 $padding-global*2;
+    width: 100%;
+    max-width: $container-9;
+    @media (min-width: $break-sm) {
+        padding: 0 $padding-global;
+    }
+}
 .container-body {
     padding: 16px;
     @media (min-width: $break-sm) {
