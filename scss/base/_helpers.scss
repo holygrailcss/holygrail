@@ -165,6 +165,12 @@ hr {
     }
 }
 //xs:mb-20
+.mdmax\:mb-16 {
+    @media (max-width: $break-md) {
+        margin-bottom: 16px;
+    }
+}
+
 .mdmax\:mb-20 {
     @media (max-width: $break-md) {
         margin-bottom: 24px;
@@ -196,6 +202,12 @@ hr {
     @media (min-width: $break-lg) {
         order: 3;
     }
+}
+
+.reverse {
+        -webkit-flex-wrap: wrap-reverse;
+        -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
 }
 .sm\:reverse {
     @media screen and (max-width: $break-sm) {
@@ -348,4 +360,22 @@ strong {
 /* set button(top and bottom of the scrollbar) */
 .ov-custom::-webkit-scrollbar-button {
     display: none;
+}
+
+
+.svg-iflex {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin: 4px;
+}
+.svg-inline {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 4px;
+}
+
+.p-wrap{
+    position: relative;
+    width: 100%;
 }
