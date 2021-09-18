@@ -570,3 +570,30 @@ $svg-size: 16px;
 		right: 4px;
 	}
 }
+
+
+.input-line-v2 {
+	position: relative;
+	display: flex;
+	padding-right: 64px;
+	.input,
+	.input:focus {
+		@include font-bold();
+		padding-left: 0;
+		padding-bottom: 4px;
+		padding-right: 0;
+		padding-top: 12px;
+		height: auto;
+		border: none;
+		border-bottom: 1px solid black;
+	}
+	.input::-webkit-input-placeholder {
+		@include font-regular();
+		text-overflow: inherit;
+		line-height: initial;
+		white-space: pre;
+		overflow-wrap: normal;
+		-webkit-user-modify: read-only !important;
+		overflow: hidden;
+	}
+}

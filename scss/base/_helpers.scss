@@ -176,6 +176,35 @@ hr {
         margin-bottom: 24px;
     }
 }
+
+.mdmax\:mb-42 {
+    @media (max-width: $break-md) {
+        margin-bottom: 42px;
+    }
+}
+
+
+
+
+.smmax\:mb-16 {
+    @media (max-width: $break-sm) {
+        margin-bottom: 16px;
+    }
+}
+
+.smmax\:mb-20 {
+    @media (max-width: $break-sm) {
+        margin-bottom: 24px;
+    }
+}
+
+.smmax\:mb-42 {
+    @media (max-width: $break-sm) {
+        margin-bottom: 42px;
+    }
+}
+
+
 .align-center {
     display: flex;
     flex-direction: column;

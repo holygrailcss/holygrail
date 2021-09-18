@@ -3939,6 +3939,30 @@ hr {
   }
 }
 
+@media (max-width: 992px) {
+  .mdmax\:mb-42 {
+    margin-bottom: 42px;
+  }
+}
+
+@media (max-width: 768px) {
+  .smmax\:mb-16 {
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .smmax\:mb-20 {
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .smmax\:mb-42 {
+    margin-bottom: 42px;
+  }
+}
+
 .align-center {
   display: flex;
   flex-direction: column;
@@ -3969,6 +3993,12 @@ hr {
   .lg\:order-last {
     order: 3;
   }
+}
+
+.reverse {
+  -webkit-flex-wrap: wrap-reverse;
+  -ms-flex-wrap: wrap-reverse;
+  flex-wrap: wrap-reverse;
 }
 
 @media screen and (max-width: 768px) {
@@ -4399,8 +4429,8 @@ hr {
 
 .btn--full {
   width: 100%;
-  padding-right: 32px;
-  padding-left: 32px;
+  padding-right: 16px;
+  padding-left: 16px;
   font-size: 14px;
 }
 
@@ -4410,6 +4440,10 @@ hr {
   padding-left: 8px;
   font-size: 14px;
   padding: 17px 16px 15px;
+}
+
+.btn--round {
+  border-radius: 50px;
 }
 
 /*+------------------------------------------------------------+
@@ -5877,6 +5911,36 @@ input::-webkit-input-placeholder {
   width: 10px;
   height: 10px;
   right: 4px;
+}
+
+.input-line-v2 {
+  position: relative;
+  display: flex;
+  padding-right: 64px;
+}
+
+.input-line-v2 .input,
+.input-line-v2 .input:focus {
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  padding-left: 0;
+  padding-bottom: 4px;
+  padding-right: 0;
+  padding-top: 12px;
+  height: auto;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.input-line-v2 .input::-webkit-input-placeholder {
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  text-overflow: inherit;
+  line-height: initial;
+  white-space: pre;
+  overflow-wrap: normal;
+  -webkit-user-modify: read-only !important;
+  overflow: hidden;
 }
 
 /*+------------------------------------------------------------+
