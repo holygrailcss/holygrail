@@ -176,7 +176,12 @@ label {
     top: 1px;
     box-sizing: border-box;
     display: table;
-    margin: 12px 16px;
+    margin: 15px;
+    opacity: 0.3;
+    cursor: pointer;
+    &:hover {
+        opacity: 1;
+    }
 }
 .is-error {
     .input,
@@ -246,7 +251,8 @@ input::-webkit-input-placeholder {
     margin-bottom: 24px;
     & > input,
     & > label {
-        padding: 15px 16px;
+        font-family: $font-family-form;
+        padding: 16px;
         font-weight: normal;
     }
     & > label {
@@ -287,6 +293,22 @@ input::-webkit-input-placeholder {
         font-size: 12px;
         color: #777;
     }
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover, 
+    input:-webkit-autofill:focus,
+    textarea:-webkit-autofill,
+    textarea:-webkit-autofill:hover,
+    textarea:-webkit-autofill:focus,
+    select:-webkit-autofill,
+    select:-webkit-autofill:hover,
+    select:-webkit-autofill:focus {
+      border: 1px solid #eaeaea;
+      -webkit-text-fill-color: black;
+      -webkit-box-shadow: 0 0 0px 1000px #f4f4f4 inset;
+      transition: background-color 5000s ease-in-out 0s;
+    }
+
 }
 /*+------------------------------------------------------------+
    |       -FALLBACK PARA EDGE    
@@ -475,6 +497,7 @@ $checkbox-svg-brad: 20px;
     opacity: 0;
     transform: scale(0);
 }
+
 $padding-btn: 14px;
 $svg-size: 16px;
 .form-icon {
@@ -485,6 +508,14 @@ $svg-size: 16px;
     svg {
         width: $svg-size;
         height: $svg-size;
+    }
+}
+
+.btn.btn-link.has-ico-pre {
+    padding-left: 18px;
+    .ico-pre {
+        margin: 0;
+        top: -1px;
     }
 }
 .has-ico-pre {

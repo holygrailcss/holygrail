@@ -5,7 +5,7 @@
 > Personalizable en 5 minutos
 
 > Crossbrowser
-
+header-account is-cart
 > Validado por el w3c
 
 
@@ -16,7 +16,7 @@
 HolygrailCss is a **modern CSS framework** based on [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes).
 
 
-[![npm](https://res.cloudinary.com/manuel-ruiz/image/upload/c_thumb,w_300,g_face/v1576145416/holygrailcss/logoholy.svg)][npm-link]
+[![npm](https://res.cloudinary.com/manuel-ruiz/image/upload/v1576145416/holygrail/logoholy.svg)][npm-link]
 [![](https://data.jsdelivr.com/v1/package/npm/holygrailcss/badge)](https://www.jsdelivr.com/package/npm/holygrailcss)
 [![Awesome][awesome-badge]][awesome-link]
 

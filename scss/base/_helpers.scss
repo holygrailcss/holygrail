@@ -403,8 +403,46 @@ strong {
     vertical-align: middle;
     margin: 4px;
 }
+.vert-end {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
 
 .p-wrap{
     position: relative;
     width: 100%;
+}
+
+
+.ttu,
+.btn,
+.h1,.h2,.h3,.h4,.h5,.h6,.h7,
+.ma-header-right{
+    text-transform: uppercase;
+}
+
+//Todos los idiomas que no tienen uppercase porque son Capital sensitive, lo dejamos en minúsculas
+
+[lang^="de"], //aleman
+[lang^="zh"], //chino
+[lang^="zo"],
+[lang^="eu"],//euskera
+[lang^="el"],//griego
+[lang^="tr"],// turco
+[lang^="ru"], //ruso
+[lang^="sr"], //serbio
+[lang^="uk"], //ukraniano
+[lang^="bg"], //bulgaro
+[lang^="ar"],//arab emirates, egipto ,jordania, israel ,qatar , bahrain ,arabia saudi
+[lang^="nl"] //holandes
+{
+
+    .ttu,
+    .btn, 
+    .h1,.h2,.h3,.h4,.h5,.h6,.h7,
+    .ma-header-right{
+        text-transform: none;
+    }
+
 }

@@ -1,38 +1,149 @@
-
 /*+------------------------------------------------------------+
  |       -RATIOS    ancho x alto    
  +------------------------------------------------------------+*/
- 
- .rat-16-9 {
-  @include ratio(16, 9);
+.rat-16-9 {
+    @include ratio(16, 9);
 }
 .rat-21-9 {
-  @include ratio(21, 9);
+    @include ratio(21, 9);
 }
 .rat-1-1 {
-  @include ratio(1, 1);
+    @include ratio(1, 1);
 }
 .rat-2-1 {
-  @include ratio(2, 1);
+    @include ratio(2, 1);
 }
 .rat-2-3 {
-  @include ratio(800, 1066);
+    @include ratio(800, 1066);
 }
-.rat-3-2{
-  @include ratio(3, 2);
+.rat-3-2 {
+    @include ratio(3, 2);
 }
-.rat-3-4{
-  @include ratio(3, 4);
+.rat-3-4 {
+    @include ratio(3, 4);
 }
-.rat-4-2{
-  @include ratio(4, 2);
+.rat-4-2 {
+    @include ratio(4, 2);
 }
-.rat-4-3{
-  @include ratio(4, 3);
+.rat-4-3 {
+    @include ratio(4, 3);
 }
-
-.rat-main{
-  @include ratio(800, 1066);
-  
+.rat-main {
+    @include ratio(800, 1066);
 }
-
+.sk-load {
+    position: relative;
+    &:before {
+        display: block;
+        content: "";
+        width: 100%;
+        padding-top: 126%;
+        background-color: #fff;
+    }
+    &::marker {
+        display: none;
+        content: "";
+    }
+}
+.sk-load1 {
+    position: relative;
+    &:before {
+        display: block;
+        content: "";
+        width: 100%;
+        padding-top: calc(133.25% + 126px);
+        background-color: #fff;
+        @media (min-width: 992px) {
+            padding-top: calc(133.25% + 144px);
+        }
+    }
+    &::marker {
+        display: none;
+        content: "";
+    }
+}
+.sk-load2 {
+    position: relative;
+    &:before {
+        display: block;
+        content: "";
+        width: 100%;
+        padding-top: calc(133.25% + 126px);
+        background-color: #fff;
+        @media (min-width: 992px) {
+            padding-top: calc(133.25% + 144px);
+        }
+    }
+    &::marker {
+        display: none;
+        content: "";
+    }
+}
+.sk-load3 {
+    position: relative;
+    &:before {
+        display: block;
+        content: "";
+        width: 100%;
+        padding-top: 133.25%;
+        background-color: #fff;
+    }
+    &::marker {
+        display: none;
+        content: "";
+    }
+}
+.sk-load4 {
+    position: relative;
+    &:before {
+        display: block;
+        content: "";
+        width: 100%;
+        padding-top: 80%;
+        background-color: #eaeaea;
+    }
+    .card9-link {
+        position: absolute;
+        width: calc(100% - 16px);
+        top: 8px;
+        left: 8px;
+    }
+    &::marker {
+        display: none;
+        content: "";
+    }
+}
+.sk-load5 {
+    position: relative;
+    &:before {
+        display: block;
+        content: "";
+        width: 100%;
+        padding-top: calc(66.66667% + 126px);
+        background-color: #fff;
+        @media (min-width: 768px) {
+            padding-top: calc(66.66667% + 144px);
+        }
+    }
+    &::marker {
+        display: none;
+        content: "";
+    }
+}
+.sk-load6 {
+    position: relative;
+    &:before {
+        display: block;
+        content: "";
+        width: 100%;
+        padding-top: 133.25%;
+        background-color: #fff;
+        @media (min-width: 992px) {
+            padding-top: 133.25%;
+        }
+    }
+    &::marker {
+        display: none;
+        content: "";
+    }
+}

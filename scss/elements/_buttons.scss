@@ -317,6 +317,22 @@ $btn-text-full: 14px;
     }
 }
 
+.btn-circle {
+	right: 0;
+	position: absolute;
+	display: flex;
+	width: 40px;
+	max-width: initial;
+	height: 40px;
+	border: 1px solid black;
+	border-radius: 50px;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+	background-color: transparent;
+}
+
 .has-light {
     .btn-primary {
         color: $primary;
