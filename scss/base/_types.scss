@@ -18,7 +18,7 @@ samp {
   @include font-regular();
 
   @media all and (max-width: $break-sm - 1) {
-    overflow-x: hidden;
+
   }
 
   @media all and (min-width: $break-xs) {

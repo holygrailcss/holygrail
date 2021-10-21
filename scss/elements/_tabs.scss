@@ -164,7 +164,6 @@
     display: inline-block;
     ul {
         border: none;
-        border-radius: 20px;
         background-color: #ffffff;
         padding: 0 14px;
         display: inline-flex;
@@ -199,19 +198,13 @@
         font-family: $font-family-bold;
     }
     &.tabs-map {
-        position: absolute;
-        z-index: 10;
-        top: 128px;
-        width: calc(100% - 40px);
-        max-width: 450px;
-        left: 50%;
-        transform: translateX(-50%);
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-items: flex-end;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-end;
         ul {
-            border: 1px solid #eee;
+            border: 1px solid #eaeaea;
         }
     }
 }

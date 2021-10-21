@@ -10,12 +10,23 @@
     md: 992px,
     lg: 1280px)!default;
 
+    $breakpointscols: (
+        xs: 1px,
+        sm: 768px,
+        md: 992px,
+        lg: 1280px,
+        xl: 1500px)!default;
+
+
 $colBreakpoints: length($breakpoints) !default;
+$colBreakpointscols: length($breakpointscols) !default;
 
 $break-xs:nth(map-values($breakpoints), 1) !default;
 $break-sm:nth(map-values($breakpoints), 2) !default;
 $break-md:nth(map-values($breakpoints), 3) !default;
 $break-lg:nth(map-values($breakpoints), 4) !default;
 
+$break-xl:nth(map-values($breakpointscols), 5) !default;
+
 $min-width:319px !default;
-$break-xl:1500px !default;
+

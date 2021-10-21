@@ -19,7 +19,7 @@
     border: none;
     white-space: nowrap;
     cursor: pointer;
-    padding:  15px 16px 13px;
+    padding: 16px 8px;
     @include font-medium();
     /**
  	* Nadie quiere un botón con texto subrayado cuando hacemos hover.
@@ -105,6 +105,7 @@ $btn-text-full: 14px;
     padding-right: $padding-global * 2;
     padding-left: $padding-global * 2;
     font-size: $btn-text-full;
+    height: 48px;
 }
 
 .btn--input {
@@ -269,6 +270,27 @@ $btn-text-full: 14px;
 
     }
 }
+
+.btn-invert-light {
+    color: #000;
+    background-color: transparent;
+    border: 1px solid #e3e3e3;
+
+
+
+    &:focus,
+    &.focus,
+    &:hover,
+    &:active,
+    &.active {
+ opacity: .6;
+
+    svg{
+        path{fill:white}
+    }
+
+    }
+}
 .btn-default {
     background-color: #000;
     border: 1px solid #000;
@@ -416,9 +438,10 @@ $btn-text-full: 14px;
     height: 48px;
     display: flex;
     flex-wrap: nowrap;
-    flex-direction: row;
+    flex-direction: column;
     align-content: center;
     justify-content: center;
+    align-items: center;
     span {
       position: absolute;
       transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1),

@@ -52,6 +52,24 @@ ul.list-inline {
   }
 }
 
+/*+------------------------------------------------------------+
+ |       -LISTA HORIZONTAL LIMPIA    
+ +------------------------------------------------------------+*/
+
+ ul.list-inline-clear {
+  margin: 0px;
+  padding: 0px;
+  li {
+    display: inline-block;
+    margin: 0;
+
+    &:after {
+      display: none
+    }
+  }
+}
+
+
 
 /*+------------------------------------------------------------+
  |       -LISTA VERTICAL LIMPIA    
