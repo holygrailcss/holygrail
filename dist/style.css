@@ -5838,6 +5838,7 @@ label {
   padding-left: 40px;
   background: rgba(0, 0, 0, 0.05);
   border-radius: 5px;
+  border: none;
 }
 
 .checkbox-text {
@@ -6056,7 +6057,7 @@ input::-webkit-input-placeholder {
 .form-input-label select:-webkit-autofill:focus {
   border: 1px solid #eaeaea;
   -webkit-text-fill-color: black;
-  -webkit-box-shadow: 0 0 0px 1000px #f4f4f4 inset;
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
   transition: background-color 5000s ease-in-out 0s;
 }
 
