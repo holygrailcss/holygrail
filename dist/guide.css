@@ -6457,6 +6457,22 @@ input::-webkit-input-placeholder {
   padding-left: 100px;
 }
 
+.select.select-box {
+  height: auto;
+}
+
+.select.select-box select {
+  background-color: #eaeaea;
+  min-width: 24px;
+  width: 100%;
+  height: 24px;
+  padding: 0px 8px;
+  font-size: 14px;
+  border-radius: 2px;
+  border: none;
+  text-align: center;
+}
+
 .hg-form .row {
   padding-right: 0;
 }
