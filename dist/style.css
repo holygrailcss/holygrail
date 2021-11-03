@@ -7217,6 +7217,29 @@ ul.list-mini > li:after {
   transform: rotate(45deg);
 }
 
+.tooltip-sm {
+  right: 8px;
+  background-color: #ffffff;
+  border: 1px solid #e3e3e3;
+  position: absolute;
+  width: 100%;
+  max-width: 327px;
+  z-index: 10;
+}
+
+.tooltip-sm::after {
+  top: -6px;
+  right: 18px;
+  content: "";
+  position: absolute;
+  border-top: 1px solid #e3e3e3;
+  border-left: 1px solid #e3e3e3;
+  width: 10px;
+  height: 10px;
+  background: white;
+  transform: rotate(45deg);
+}
+
 .ico-round {
   width: 56px;
   height: 56px;
