@@ -425,6 +425,9 @@ input::-webkit-input-placeholder {
 			border: none;
 			text-align: center;
 		}
+        &::after{
+			display: none;
+		}
 	}
 }
 .hg-form {
