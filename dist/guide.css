@@ -7527,6 +7527,11 @@ ul.list-mini > li:after {
   transition: .6s;
 }
 
+.is-rtl .form-input-label.datalist svg, .is-rtl .form-input-label.datalist svg-icon {
+  right: auto;
+  left: 16px;
+}
+
 .ico-round {
   width: 56px;
   height: 56px;
