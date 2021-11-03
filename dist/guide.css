@@ -6473,6 +6473,10 @@ input::-webkit-input-placeholder {
   text-align: center;
 }
 
+.select.select-box::after {
+  display: none;
+}
+
 .hg-form .row {
   padding-right: 0;
 }
@@ -7502,6 +7506,25 @@ ul.list-mini > li:after {
   height: 10px;
   background: white;
   transform: rotate(45deg);
+}
+
+.form-input-label.datalist input::-webkit-calendar-picker-indicator {
+  display: none;
+  opacity: 0;
+}
+
+.form-input-label.datalist input:focus + svg,
+.form-input-label.datalist input:focus + svg-icon {
+  transform: rotate(-180deg);
+  transition: .6s;
+}
+
+.form-input-label.datalist svg, .form-input-label.datalist svg-icon {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  transform: rotate(0deg);
+  transition: .6s;
 }
 
 .ico-round {

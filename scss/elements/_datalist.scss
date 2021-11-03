@@ -1,0 +1,22 @@
+.form-input-label{
+	&.datalist{
+		input{
+			&::-webkit-calendar-picker-indicator {
+				display: none;
+				opacity: 0;
+			}
+			&:focus + svg,
+            &:focus + svg-icon{
+				transform: rotate(-180deg);
+				transition: .6s;
+			}
+		}
+		svg, svg-icon{
+			position: absolute;
+			top: 16px;
+			right: 16px;
+			transform: rotate(0deg);
+			transition: .6s;
+		}
+	}
+}
