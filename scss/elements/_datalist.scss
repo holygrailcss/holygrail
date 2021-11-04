@@ -20,3 +20,14 @@
 		}
 	}
 }
+
+.is-rtl{
+	.form-input-label{
+		&.datalist{
+			svg, svg-icon{
+				right: auto;
+				left: 16px;
+			}
+		}
+	}
+}
