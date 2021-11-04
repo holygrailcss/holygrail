@@ -4080,6 +4080,24 @@ mark {
   font-weight: 700;
 }
 
+/*+------------------------------------------------------------+
+ |       -TACHADO        
+ +------------------------------------------------------------+*/
+.is-through {
+  position: relative;
+  width: max-content;
+}
+
+.is-through::after {
+  content: "";
+  background-color: #000;
+  width: 100%;
+  position: absolute;
+  bottom: 50%;
+  left: 0;
+  height: 1px;
+}
+
 .text-lowercase {
   text-transform: lowercase;
 }
@@ -6846,36 +6864,33 @@ a:hover {
   height: 1px;
 }
 
-.link5 {
-  font-size: 16px;
-  font-family: Arial, sans-serif;
-  font-weight: 700;
+.link5, u {
   transition: color 250ms linear;
   text-decoration: none;
   position: relative;
 }
 
-.link5:hover {
+.link5:hover, u:hover {
   opacity: 0.6;
 }
 
-.link5:hover::after {
+.link5:hover::after, u:hover::after {
   -webkit-transform: scaleX(1);
   -ms-transform: scaleX(1);
   transform: scaleX(1);
 }
 
-.link5:focus {
+.link5:focus, u:focus {
   outline: none;
   text-decoration: none;
 }
 
-.link5:-moz-focusring {
+.link5:-moz-focusring, u:-moz-focusring {
   outline: none !important;
   background: none;
 }
 
-.link5::after {
+.link5::after, u::after {
   content: "";
   position: absolute;
   width: 100%;
