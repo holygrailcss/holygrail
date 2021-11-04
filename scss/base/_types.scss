@@ -116,3 +116,20 @@ mark {
 .text-medium{ @include font-medium();}
 .text-bold{ @include font-bold();}
 
+/*+------------------------------------------------------------+
+ |       -TACHADO        
+ +------------------------------------------------------------+*/
+
+ .is-through{
+	position: relative;
+	width: max-content;
+	&::after{
+	content: "";
+    background-color: #000;
+    width: 100%;
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    height: 1px;
+	}
+}
