@@ -673,4 +673,19 @@ $svg-size: 16px;
 			}
 		}
 	}
+
+    .form-input-label {
+        &.icon-right {
+            .form-text {
+                right: auto;
+                left: 0;
+            }
+        }
+        &.has-ico-post {
+            svg-icon {
+                position: absolute;
+                right: 0px;
+            }
+        }
+    }
 }

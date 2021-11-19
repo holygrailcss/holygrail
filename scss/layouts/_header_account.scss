@@ -139,3 +139,19 @@
 		}
 	}
 }
+
+/*+------------------------------------------------------------+
+ |       -Soporte para lenguajes árabes  
+ +------------------------------------------------------------+*/
+
+.is-rtl{
+	.header-account-back {
+        left: auto;
+        right: 0;
+        svg-icon {
+            svg {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
