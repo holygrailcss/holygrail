@@ -46,11 +46,6 @@ img {
   -ms-interpolation-mode: bicubic;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
 /*+------------------------------------------------------------+
  |-COLORS
  +------------------------------------------------------------+*/
@@ -413,6 +408,13 @@ a {
   .lg\:min-text-right {
     text-align: right;
   }
+}
+
+/*+------------------------------------------------------------+
+ |       -Soporte para lenguajes árabes  
+ +------------------------------------------------------------+*/
+.is-rtl .text-right {
+  text-align: left;
 }
 
 /*+------------------------------------------------------------+
@@ -2777,6 +2779,11 @@ p.b {
   font-family: Arial, sans-serif;
   font-weight: 600;
   color: #000;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
 }
 
 .h1 span,
@@ -5722,6 +5729,74 @@ hr {
 }
 
 /*+------------------------------------------------------------+
+ |       -Soporte para lenguajes árabes  
+ +------------------------------------------------------------+*/
+.is-rtl .checkbox-item [type="checkbox"]:not(:checked),
+.is-rtl .checkbox-item [type="checkbox"]:checked {
+  left: 0;
+  right: -9999px;
+}
+
+.is-rtl .checkbox-item [type="checkbox"]:not(:checked) + label:before,
+.is-rtl .checkbox-item [type="checkbox"]:checked + label:before {
+  left: auto;
+  right: 0px;
+  margin: 0 0 0 10px;
+}
+
+.is-rtl .checkbox-item [type="checkbox"]:not(:checked) + label span.theta,
+.is-rtl .checkbox-item [type="checkbox"]:checked + label span.theta {
+  padding-left: 0px;
+  padding-right: 40px;
+}
+
+.is-rtl .checkbox-item .ma-wrapper-terms-inner {
+  margin-left: 0px;
+  margin-right: 40px;
+}
+
+.is-rtl .checkbox-item .ma-wrapper-terms-inner span,
+.is-rtl .checkbox-item .ma-wrapper-terms-inner span.legal-text {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.is-rtl .check-bleed.checkbox-radio [type=radio]:checked + label .ico-radio,
+.is-rtl .check-bleed.checkbox-radio [type=radio]:not(:checked) + label .ico-radio {
+  left: 0px;
+  right: 17px;
+}
+
+.is-rtl .check-bleed.checkbox-radio [type=radio]:checked + label:before,
+.is-rtl .check-bleed.checkbox-radio [type=radio]:not(:checked) + label:before {
+  left: auto;
+  right: 0;
+}
+
+.is-rtl .check-center.checkbox-radio [type=radio]:checked + label:before,
+.is-rtl .check-center.checkbox-radio [type=radio]:not(:checked) + label:before {
+  left: auto;
+  right: 0;
+}
+
+.is-rtl .check-center.checkbox-radio [type=radio]:checked + label .ico-radio,
+.is-rtl .check-center.checkbox-radio [type=radio]:not(:checked) + label .ico-radio {
+  left: 0px;
+  right: 17px;
+}
+
+.is-rtl .check-center .box3-content {
+  padding-left: 0px;
+  padding-right: calc(24px + 16px);
+}
+
+.is-rtl .checkbox-radio [type="radio"]:not(:checked),
+.is-rtl .checkbox-radio [type="radio"]:checked {
+  left: 0;
+  right: -9999px;
+}
+
+/*+------------------------------------------------------------+
  |       -INPUTS    
  +------------------------------------------------------------+*/
 input:focus {
@@ -6464,6 +6539,16 @@ input::-webkit-input-placeholder {
 .is-rtl .select.select-box::after {
   left: 6px;
   right: auto;
+}
+
+.is-rtl .form-input-label.icon-right .form-text {
+  right: auto;
+  left: 0;
+}
+
+.is-rtl .form-input-label.has-ico-post svg-icon {
+  position: absolute;
+  right: 0px;
 }
 
 /*+------------------------------------------------------------+
@@ -7227,6 +7312,18 @@ ul.list-mini > li:after {
 
 .tabs-mini.tabs-map ul {
   border: 1px solid #eaeaea;
+}
+
+/*+------------------------------------------------------------+
+ |       -Soporte para lenguajes árabes  
+ +------------------------------------------------------------+*/
+.is-rtl .tabs-mini {
+  float: left;
+}
+
+.is-rtl .tabs-mini li:first-child a:after {
+  left: 0;
+  right: auto;
 }
 
 .tooltip-sm {
@@ -8878,6 +8975,18 @@ ZEN:
   .is-cart .header-cart {
     transform: translateY(72px);
   }
+}
+
+/*+------------------------------------------------------------+
+ |       -Soporte para lenguajes árabes  
+ +------------------------------------------------------------+*/
+.is-rtl .header-account-back {
+  left: auto;
+  right: 0;
+}
+
+.is-rtl .header-account-back svg-icon svg {
+  transform: rotate(180deg);
 }
 
 .hg-bread {
