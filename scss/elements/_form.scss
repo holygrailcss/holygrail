@@ -65,7 +65,7 @@ label {
     border-right: 1px solid transparent;
     background-color: transparent;
     padding-left: 0;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid $primary;
 }
 .input-notouch {
     @include font-medium();
@@ -365,7 +365,7 @@ input::-webkit-input-placeholder {
         z-index: 1;
     }
     &::after {
-        border: 1px solid #000;
+        border: 1px solid $primary;
         border-radius: 0px;
         border-right: 0;
         border-top: 0;
@@ -385,7 +385,7 @@ input::-webkit-input-placeholder {
         height: 56px;
     }
     &:not(.is-multiple):not(.is-loading)::after {
-        border-color: #000;
+        border-color: $primary;
     }
     select::-ms-expand {
         display: none;
@@ -611,7 +611,7 @@ $svg-size: 16px;
 	select,
 	.textarea {
 		background-color: #fff;
-		border-color: #000;
+		border-color: $primary;
 		color: #363636;
 		max-width: 100%;
 		width: 100%;

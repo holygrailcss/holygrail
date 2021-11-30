@@ -59,6 +59,9 @@ p {
     color: $primary;
   }
 }
+a {
+  color: $primary;
+  text-decoration: none; }
 
 .h1,
 .h2,
@@ -125,7 +128,7 @@ mark {
 	width: max-content;
 	&::after{
 	content: "";
-    background-color: #000;
+    background-color: $primary;
     width: 100%;
     position: absolute;
     bottom: 50%;

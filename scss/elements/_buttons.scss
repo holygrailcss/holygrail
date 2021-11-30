@@ -251,9 +251,9 @@ $btn-text-full: 14px;
     color: $primary;
 }
 .btn-invert {
-    color: #000;
+    color: $primary;
     background-color: transparent;
-    border: 1px solid #000;
+    border: 1px solid $primary;
 
 
 
@@ -272,7 +272,7 @@ $btn-text-full: 14px;
 }
 
 .btn-invert-light {
-    color: #000;
+    color: $primary;
     background-color: transparent;
     border: 1px solid #e3e3e3;
 
@@ -292,8 +292,8 @@ $btn-text-full: 14px;
     }
 }
 .btn-default {
-    background-color: #000;
-    border: 1px solid #000;
+    background-color: $primary;
+    border: 1px solid $primary;
     color: #fff;
     &:focus,
     &.focus,
@@ -309,7 +309,7 @@ $btn-text-full: 14px;
     border: none;
     text-align: left;
     text-decoration: none;
-    color: #000;
+    color: $primary;
     background-color: transparent;
     padding: 0;
 }
@@ -470,8 +470,8 @@ $btn-text-full: 14px;
   .no-focus {
     &:focus {
       color: #fff;
-      background-color: #000;
-      border-color: #000;
+      background-color: $primary;
+      border-color: $primary;
     }
   }
   .btn-loading svg {

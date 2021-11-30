@@ -79,7 +79,7 @@
         position: absolute;
         top: 5px;
         left: 5px;
-        color: #000;
+        color:$primary;
         -webkit-transition: all .2s;
         transition: all .2s;
     }
@@ -117,7 +117,7 @@
         border-radius: 30px;
         left: 0;
         border: none;
-        border: 1px solid #000;
+        border: 1px solid $primary;
         outline: 0;
         display: inline-block;
         vertical-align: top;
@@ -156,7 +156,7 @@
         position: absolute;
         top: 3px;
         left: 6px;
-        color: #000;
+        color: $primary;
         transition: all .2s;
     }
     [type="checkbox"]:not(:checked)+label .checkbox-circle {

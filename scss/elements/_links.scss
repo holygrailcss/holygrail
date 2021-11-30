@@ -159,7 +159,7 @@ a {
     display: inline-block;
     padding: 4px 0;
     margin: 20px 0;
-    border-bottom: 2px solid #000000;
+    border-bottom: 2px solid $primary;
     color: black;
     font-size: 16px;
     line-height: 13px;
@@ -186,7 +186,7 @@ a {
         z-index: 3;
         width: 0;
         height: 1px;
-        background: #000;
+        background: $primary;
         -webkit-animation: underline 1s 0.5s cubic-bezier(0.55, 0.085, 0, 0.99) forwards;
         animation: underline 1s 0.5s cubic-bezier(0.55, 0.085, 0, 0.99) forwards;
     }
@@ -245,7 +245,7 @@ a {
     height: 40px;
     color: white;
     &::after {
-        border: 1px solid #000;
+        border: 1px solid $primary;
         border-radius: 0px;
         border-right: 0;
         border-top: 0;

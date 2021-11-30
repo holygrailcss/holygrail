@@ -43,7 +43,7 @@
             display: inline-block;
             -webkit-appearance: initial;
             &:hover {
-                background-color: #000;
+                background-color: $primary;
                 color: #fff;
                 cursor: pointer;
             }
@@ -159,7 +159,7 @@
 .product-tag {
     @include font-bold;
     font-size: 14px;
-    color: #000000;
+    color: $primary;
     letter-spacing: 0;
     line-height: 16px;
 }
