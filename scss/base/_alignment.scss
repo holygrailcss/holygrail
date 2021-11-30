@@ -154,3 +154,12 @@
 .md\:min-text-right { @media (min-width: $break-md) { text-align: right; } }
 .lg\:min-text-right { @media (min-width: $break-lg) { text-align: right; } }
 
+/*+------------------------------------------------------------+
+ |       -Soporte para lenguajes árabes  
+ +------------------------------------------------------------+*/
+
+ .is-rtl{
+  .text-right {
+   text-align: left;
+  }
+ }
