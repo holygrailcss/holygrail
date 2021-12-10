@@ -124,22 +124,22 @@ hr {
 }
 //visible a partir de sm
 .sm\:hidden {
-    @media (max-width: $break-sm - 1) {
+    @media (max-width: calc(#{$break-sm} - 1px ) ) {
         display: none !important;
     }
 }
 .md\:hidden {
-    @media (max-width: $break-md -1) {
+    @media (max-width: calc(#{$break-md} - 1px )) {
         display: none !important;
     }
 }
 .lg\:hidden {
-    @media (max-width: $break-lg - 1) {
+    @media (max-width: calc(#{$break-lg} - 1px )) {
         display: none !important;
     }
 }
 .xl\:hidden {
-    @media (max-width: $break-xl - 1) {
+    @media (max-width: calc(#{$break-xl} - 1px )) {
         display: none !important;
     }
 }

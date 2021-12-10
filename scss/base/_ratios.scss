@@ -28,6 +28,9 @@
 .rat-4-3 {
     @include ratio(4, 3);
 }
+.rat-strech {
+    @include ratio(275, 445);
+}
 .rat-main {
     @include ratio(800, 1066);
 }
@@ -104,9 +107,9 @@
     }
     .card9-link {
         position: absolute;
-        width: calc(100% - 16px);
-        top: 8px;
-        left: 8px;
+        width: 100%;
+        top: 0;
+        left: 0;
     }
     &::marker {
         display: none;

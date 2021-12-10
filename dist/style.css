@@ -1703,9 +1703,9 @@ img {
 
 .sk-load4 .card9-link {
   position: absolute;
-  width: calc(100% - 16px);
-  top: 8px;
-  left: 8px;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
 .sk-load4::marker {
@@ -4129,25 +4129,25 @@ hr {
   background-color: #5d8074;
 }
 
-@media (max-width: 767px) {
+@media (max-width: calc(768px - 1px)) {
   .sm\:hidden {
     display: none !important;
   }
 }
 
-@media (max-width: 992px -1) {
+@media (max-width: calc(992px - 1px)) {
   .md\:hidden {
     display: none !important;
   }
 }
 
-@media (max-width: 1279px) {
+@media (max-width: calc(1280px - 1px)) {
   .lg\:hidden {
     display: none !important;
   }
 }
 
-@media (max-width: 1499px) {
+@media (max-width: calc(1500px - 1px)) {
   .xl\:hidden {
     display: none !important;
   }
