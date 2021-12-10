@@ -17,6 +17,13 @@
 			transform: rotate(0deg);
 			transition: .6s;
 		}
+		.validation-error-messages{
+			svg{
+				position: relative;
+				top: auto;
+				right: auto;
+			}
+		}
 	}
 }
 
@@ -26,6 +33,11 @@
 			svg{
 				right: auto;
 				left: 16px;
+			}
+			.validation-error-messages{
+				svg{
+					left: auto;
+				}
 			}
 		}
 	}
