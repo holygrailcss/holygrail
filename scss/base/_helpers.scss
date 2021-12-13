@@ -332,7 +332,7 @@ strong {
     -webkit-overflow-scrolling: touch;
 }
 .p-view\:sm {
-    @media (max-width: $break-sm - 1) {
+    @media  ( max-width: calc(#{$break-sm} - 1px) ) {
         background-color: #ffffff;
         position: absolute;
         width: 100%;
