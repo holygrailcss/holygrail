@@ -405,25 +405,25 @@ img {
   width: 100%;
 }
 
-@media (max-width: 767px) {
+@media (max-width: calc(768px - 1px)) {
   .xs\:text-center {
     text-align: center;
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: calc(992px - 1px)) {
   .sm\:text-center {
     text-align: center;
   }
 }
 
-@media (max-width: 1279px) {
+@media (max-width: calc(1280px - 1px)) {
   .md\:text-center {
     text-align: center;
   }
 }
 
-@media (max-width: 1499px) {
+@media (max-width: calc(1500px - 1px)) {
   .lg\:text-center {
     text-align: center;
   }
@@ -447,25 +447,25 @@ img {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: calc(768px - 1px)) {
   .xs\:text-left {
     text-align: left;
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: calc(992px - 1px)) {
   .sm\:text-left {
     text-align: left;
   }
 }
 
-@media (max-width: 1279px) {
+@media (max-width: calc(1280px - 1px)) {
   .md\:text-left {
     text-align: left;
   }
 }
 
-@media (max-width: 1499px) {
+@media (max-width: calc(1500px - 1px)) {
   .lg\:text-left {
     text-align: left;
   }
@@ -489,25 +489,25 @@ img {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: calc(768px - 1px)) {
   .xs\:text-right {
     text-align: right;
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: calc(992px - 1px)) {
   .sm\:text-right {
     text-align: right;
   }
 }
 
-@media (max-width: 1279px) {
+@media (max-width: calc(1280px - 1px)) {
   .md\:text-right {
     text-align: right;
   }
 }
 
-@media (max-width: 1499px) {
+@media (max-width: calc(1500px - 1px)) {
   .lg\:text-right {
     text-align: right;
   }
@@ -1695,6 +1695,34 @@ img {
 }
 
 .rat-4-3 .rat-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.rat-strech {
+  position: relative;
+  overflow: hidden;
+}
+
+.rat-strech:before {
+  display: block;
+  content: "";
+  width: 100%;
+  padding-top: 161.81818%;
+}
+
+.rat-strech .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.rat-strech .rat-content {
   position: absolute;
   top: 0;
   left: 0;
@@ -4507,7 +4535,7 @@ strong {
   -webkit-overflow-scrolling: touch;
 }
 
-@media (max-width: 767px) {
+@media (max-width: calc(768px - 1px)) {
   .p-view\:sm {
     background-color: #ffffff;
     position: absolute;
@@ -6030,6 +6058,12 @@ hr {
 .is-rtl .checkbox-item [type="checkbox"]:checked + label span.theta {
   padding-left: 0px;
   padding-right: 40px;
+}
+
+.is-rtl .checkbox-item [type="checkbox"]:not(:checked) + label .icon,
+.is-rtl .checkbox-item [type="checkbox"]:checked + label .icon {
+  right: 5px;
+  left: auto;
 }
 
 .is-rtl .checkbox-item .ma-wrapper-terms-inner {
@@ -7649,9 +7683,19 @@ ul.list-mini > li:after {
   transition: .6s;
 }
 
+.form-input-label.datalist .validation-error-messages svg {
+  position: relative;
+  top: auto;
+  right: auto;
+}
+
 .is-rtl .form-input-label.datalist svg {
   right: auto;
   left: 16px;
+}
+
+.is-rtl .form-input-label.datalist .validation-error-messages svg {
+  left: auto;
 }
 
 .ico-round {
