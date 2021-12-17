@@ -433,6 +433,20 @@ input::-webkit-input-placeholder {
 			margin-top: -3px;
 		}
 	}
+    &.select-flat {
+        width: 100%;
+        label {
+            z-index: 0;
+            left: 0;
+        }
+
+        select {
+            border: none;
+            padding-left: 0px;
+            background: none;
+            padding-right: 40px;
+        }
+    }
 }
 .hg-form {
     .row {
@@ -672,6 +686,19 @@ $svg-size: 16px;
 				right: auto;
 			}
 		}
+        &.select-flat {
+            label {
+                left: auto;
+            }
+            select {
+                padding-right: 0;
+            }
+
+            &::after {
+                left: 20px;
+                right: auto;
+            }
+        }
 	}
 
     .form-input-label {
