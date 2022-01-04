@@ -156,10 +156,123 @@
     }
 }
 
+.hg a.card9-link:hover{
+    opacity: 1;
+}
+
+.card9-link{
+    .img-poster{
+        cursor: pointer;
+        object-fit: cover;
+        height: 100%;
+        img{
+            object-fit: cover;
+            height: 100%;
+        }
+    }
+}
+
+.card9-wrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transition: all 1s ease;
+    opacity: 0;
+}
+
+.card9-bottom {
+    display: flex;
+    flex-direction: column;
+    .card9-wrap {
+        margin-left: 33%;
+    }
+    .card9-wrap-details {
+        position: relative;
+    }
+    .js-card9-inner {
+        margin-bottom: 0;
+        width: 50%;
+    }
+    }
+    .card9-left {
+        @media (max-width: 767px) {
+            .card9-wrap {
+                margin-left: 0;
+            }
+            .card9-wrap-details {
+                margin-left: 0;
+            }
+        }
+        .card9 {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+        .card9-view-details {
+            width: 50%;
+        }
+        .card9-wrap-details {
+            position: relative;
+            margin-left: 8px;
+        }
+        .js-card9-inner {
+            width: 50%;
+            margin-bottom: 0;
+        }
+    }
+    .card9-right {
+        .card9-wrap {
+            margin-right: 33%;
+        }
+        .card9 {
+            display: flex;
+            flex-direction: row-reverse;
+            width: 100%;
+        }
+        .card9-view-details {
+            width: 50%;
+        }
+        .card9-wrap-details {
+            text-align: right;
+            position: relative;
+            padding-right: 8px;
+        }
+        .js-card9-inner {
+            width: 50%;
+            margin-bottom: 0;
+        }
+    }
+
+
+
 .product-tag {
     @include font-bold;
     font-size: 14px;
     color: $primary;
     letter-spacing: 0;
     line-height: 16px;
+}
+
+
+.grid-swiper-wrap{
+    margin-left: -16px;
+    margin-right: -16px;
+    cursor: grab;
+    @media (min-width: 1028px) {
+        margin-left: -40px;
+         margin-right: -40px;
+    }
+    .card9-view-details{
+        position:relative;
+    }
+     .card9-wrap-details{
+         position:relative;
+    }
+    .rat-3-4:before {
+        display: block;
+        content: "";
+        width: 100%;
+        padding-top: calc(133.33333% );
+    }
 }

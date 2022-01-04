@@ -125,30 +125,30 @@
 
 //Responsive alignement
 
-.xs\:text-center { @media (max-width: calc(#{$break-sm} - 1px)) { text-align: center; } }
-.sm\:text-center { @media (max-width: calc(#{$break-md} - 1px)) { text-align: center; } }
-.md\:text-center { @media (max-width: calc(#{$break-lg} - 1px)) { text-align: center; } }
-.lg\:text-center { @media (max-width: calc(#{$break-xl} - 1px)) { text-align: center; } }
+.xs\:text-center { @media (max-width: #{$break-sm - 1} ) { text-align: center; } }
+.sm\:text-center { @media (max-width: #{$break-md - 1}) { text-align: center; } }
+.md\:text-center { @media (max-width: #{$break-lg - 1}) { text-align: center; } }
+.lg\:text-center { @media (max-width: #{$break-xl - 1}) { text-align: center; } }
 
 .sm\:min-text-center { @media (min-width: $break-md) { text-align: center; } }
 .md\:min-text-center { @media (min-width: $break-md) { text-align: center; } }
 .lg\:min-text-center { @media (min-width: $break-lg) { text-align: center; } }
 
 
-.xs\:text-left { @media (max-width: calc(#{$break-sm} - 1px)) { text-align: left; } }
-.sm\:text-left { @media (max-width: calc(#{$break-md} - 1px)) { text-align: left; } }
-.md\:text-left { @media (max-width: calc(#{$break-lg} - 1px)) { text-align: left; } }
-.lg\:text-left { @media (max-width: calc(#{$break-xl} - 1px)) { text-align: left; } }
+.xs\:text-left { @media (max-width: #{$break-sm - 1} )  { text-align: left; } }
+.sm\:text-left { @media (max-width: #{$break-md - 1} )  { text-align: left; } }
+.md\:text-left { @media (max-width: #{$break-lg - 1} )  { text-align: left; } }
+.lg\:text-left { @media (max-width: #{$break-xl - 1} )  { text-align: left; } }
 
 .sm\:min-text-left { @media (min-width: $break-md) { text-align: left; } }
 .md\:min-text-left { @media (min-width: $break-md) { text-align: left; } }
 .lg\:min-text-left { @media (min-width: $break-lg) { text-align: left; } }
 
 
-.xs\:text-right { @media (max-width: calc(#{$break-sm} - 1px)) { text-align: right; } }
-.sm\:text-right { @media (max-width: calc(#{$break-md} - 1px)) { text-align: right; } }
-.md\:text-right { @media (max-width: calc(#{$break-lg} - 1px)) { text-align: right; } }
-.lg\:text-right { @media (max-width: calc(#{$break-xl} - 1px)) { text-align: right; } }
+.xs\:text-right { @media (max-width: #{$break-sm - 1} ){ text-align: right; } }
+.sm\:text-right { @media (max-width: #{$break-md - 1} ) { text-align: right; } }
+.md\:text-right { @media (max-width: #{$break-lg - 1} ){ text-align: right; } }
+.lg\:text-right { @media (max-width: #{$break-xl - 1} ) { text-align: right; } }
 
 .sm\:min-text-right { @media (min-width: $break-md) { text-align: right; } }
 .md\:min-text-right { @media (min-width: $break-md) { text-align: right; } }

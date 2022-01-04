@@ -50,7 +50,7 @@ hr {
     }
 }
 .only-desktop {
-    @media (max-width: $break-sm - 1) {
+    @media (max-width: #{$break-sm - 1} ) {
         display: none !important;
     }
 }
@@ -124,22 +124,22 @@ hr {
 }
 //visible a partir de sm
 .sm\:hidden {
-    @media (max-width: calc(#{$break-sm} - 1px ) ) {
+    @media (max-width: #{$break-sm - 1} ) {
         display: none !important;
     }
 }
 .md\:hidden {
-    @media (max-width: calc(#{$break-md} - 1px )) {
+    @media (max-width: #{$break-md - 1} ) {
         display: none !important;
     }
 }
 .lg\:hidden {
-    @media (max-width: calc(#{$break-lg} - 1px )) {
+    @media (max-width: #{$break-lg - 1} ) {
         display: none !important;
     }
 }
 .xl\:hidden {
-    @media (max-width: calc(#{$break-xl} - 1px )) {
+    @media (max-width: #{$break-xl - 1} ) {
         display: none !important;
     }
 }
@@ -166,19 +166,19 @@ hr {
 }
 //xs:mb-20
 .mdmax\:mb-16 {
-    @media (max-width: $break-md - 1) {
+    @media (max-width: #{$break-md - 1} ){
         margin-bottom: 16px;
     }
 }
 
 .mdmax\:mb-20 {
-    @media (max-width: $break-md - 1) {
+    @media (max-width: #{$break-md - 1} ){
         margin-bottom: 24px;
     }
 }
 
 .mdmax\:mb-42 {
-    @media (max-width: $break-md - 1) {
+    @media (max-width: #{$break-md - 1} ){
         margin-bottom: 42px;
     }
 }
@@ -187,19 +187,19 @@ hr {
 
 
 .smmax\:mb-16 {
-    @media (max-width: $break-sm - 1) {
+    @media (max-width: #{$break-sm - 1} ) {
         margin-bottom: 16px;
     }
 }
 
 .smmax\:mb-20 {
-    @media (max-width: $break-sm - 1) {
+    @media (max-width: #{$break-sm - 1} ) {
         margin-bottom: 24px;
     }
 }
 
 .smmax\:mb-42 {
-    @media (max-width: $break-sm - 1) {
+    @media (max-width: #{$break-sm - 1} ) {
         margin-bottom: 42px;
     }
 }
@@ -239,21 +239,21 @@ hr {
         flex-wrap: wrap-reverse;
 }
 .sm\:reverse {
-    @media screen and (max-width: $break-sm - 1) {
+    @media (max-width: #{$break-sm - 1} ) {
         -webkit-flex-wrap: wrap-reverse;
         -ms-flex-wrap: wrap-reverse;
         flex-wrap: wrap-reverse;
     }
 }
 .md\:reverse {
-    @media screen and (max-width: $break-md - 1) {
+    @media (max-width: #{$break-md - 1} ) {
         -webkit-flex-wrap: wrap-reverse;
         -ms-flex-wrap: wrap-reverse;
         flex-wrap: wrap-reverse;
     }
 }
 .lg\:reverse {
-    @media screen and (max-width: $break-lg - 1) {
+    @media (max-width: #{$break-lg - 1} ) {
         -webkit-flex-wrap: wrap-reverse;
         -ms-flex-wrap: wrap-reverse;
         flex-wrap: wrap-reverse;
@@ -266,7 +266,7 @@ hr {
     margin-right: auto;
 }
 .md\:px-48 {
-    @media screen and (max-width: $break-md - 1) {
+    @media (max-width: #{$break-md - 1} ) {
         padding-left: 48px;
         padding-right: 48px;
     }
@@ -331,8 +331,18 @@ strong {
     overflow: auto;
     -webkit-overflow-scrolling: touch;
 }
+.p-view {
+    background-color: #ffffff;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
 .p-view\:sm {
-    @media  ( max-width: calc(#{$break-sm} - 1px) ) {
+    @media (max-width: #{$break-sm - 1} ){
         background-color: #ffffff;
         position: absolute;
         width: 100%;
@@ -445,4 +455,21 @@ strong {
         text-transform: none;
     }
 
+}
+
+.product-fadein {
+    animation-delay: 1s;
+    animation-duration: 3s;
+    animation-name: fadein;
+}
+.video-wrap {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+
+}
+
+.charging {
+    position: relative;
+    height: 100%;
 }
