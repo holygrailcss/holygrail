@@ -145,6 +145,7 @@
             padding-top: 133.25%;
         }
     }
+    &.hidden-image:before{padding-top: 126px;  }
     &::marker {
         display: none;
         content: "";
