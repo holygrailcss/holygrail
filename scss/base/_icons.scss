@@ -14,3 +14,12 @@
         vertical-align: middle;
     }
 }
+
+// soporte para invertir iconos con el componente svg-icon
+svg-icon {
+    &.c-invert {
+        svg {
+            filter: invert(1);
+        }
+    }
+}
