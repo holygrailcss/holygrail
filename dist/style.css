@@ -1725,7 +1725,7 @@ img {
   display: block;
   content: "";
   width: 100%;
-  padding-top: 80%;
+  padding-top: 75.5%;
   background-color: #eaeaea;
 }
 
@@ -1780,6 +1780,10 @@ img {
   .sk-load6:before {
     padding-top: 133.25%;
   }
+}
+
+.sk-load6.hidden-image:before {
+  padding-top: 126px;
 }
 
 .sk-load6::marker {
@@ -4695,6 +4699,10 @@ strong {
 .charging {
   position: relative;
   height: 100%;
+}
+
+.arrow-right {
+  float: right;
 }
 
 /*------------------------------------*\
@@ -8450,12 +8458,12 @@ ZEN:
 
 .card9-link .img-poster {
   cursor: pointer;
-  object-fit: cover;
+  object-fit: contain;
   height: 100%;
 }
 
 .card9-link .img-poster img {
-  object-fit: cover;
+  object-fit: contain;
   height: 100%;
 }
 
@@ -8555,7 +8563,7 @@ ZEN:
   cursor: grab;
 }
 
-@media (min-width: 1028px) {
+@media (min-width: 1280px) {
   .grid-swiper-wrap {
     margin-left: -40px;
     margin-right: -40px;

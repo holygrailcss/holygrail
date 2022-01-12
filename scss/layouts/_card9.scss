@@ -163,10 +163,10 @@
 .card9-link{
     .img-poster{
         cursor: pointer;
-        object-fit: cover;
+        object-fit: contain;
         height: 100%;
         img{
-            object-fit: cover;
+            object-fit: contain;
             height: 100%;
         }
     }
