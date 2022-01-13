@@ -1295,6 +1295,10 @@ img {
   vertical-align: middle;
 }
 
+svg-icon.c-invert svg {
+  filter: invert(1);
+}
+
 /*+------------------------------------------------------------+
  |       -BACKGROUNDS        
  +------------------------------------------------------------+*/
@@ -7800,6 +7804,15 @@ ul.list-clear li.list-box:last-child {
 
 .color-wrap .color-more span {
   border-bottom: 1px dotted gray-30 #acacac;
+}
+
+.modalx-transparent {
+  pointer-events: none;
+  background: transparent;
+}
+
+.modalx-transparent .modalx {
+  pointer-events: none;
 }
 
 /*
