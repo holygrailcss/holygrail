@@ -256,13 +256,9 @@
 
 
 .grid-swiper-wrap{
-    margin-left: -16px;
-    margin-right: -16px;
+
     cursor: grab;
-    @media (min-width: 1280px) {
-        margin-left: -40px;
-         margin-right: -40px;
-    }
+
     .card9-view-details{
         position:relative;
     }

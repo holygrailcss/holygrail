@@ -153,6 +153,48 @@ a {
     }
 }
 
+.link5-2{
+  @include font-bold();
+  transition: color 250ms linear;
+  text-decoration: none;
+  position: relative;
+  &:focus {
+    outline: none;
+    text-decoration: none;
+  }
+  &:-moz-focusring {
+    outline: none !important;
+    background: none;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    bottom: -4px;
+    left: 0;
+    background: $primary;
+    transition: 0.6s;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: -4px;
+    left: 0;
+    background: $primary;
+    opacity: 0.3;
+  }
+  &:hover {
+    opacity: 1;
+    &::after {
+      width: 100%;
+      transition: 0.6s;
+    }
+  }
+}
+
 .link6 {
     @include font-bold;
     position: relative;
