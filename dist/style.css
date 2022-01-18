@@ -7864,6 +7864,10 @@ ul.list-clear li.list-box:last-child {
   pointer-events: none;
 }
 
+.modalx-transparent.modalx-backdrop .modalx-content {
+  border: 1px solid #eaeaea;
+}
+
 /*
 @import "elements/tables";
 @import "elements/dropbox";
