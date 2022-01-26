@@ -425,10 +425,7 @@ strong {
 }
 
 
-.ttu,
-.btn,
-.h1,.h2,.h3,.h4,.h5,.h6,.h7,
-.ma-header-right{
+.ttu{
     text-transform: uppercase;
 }
 
@@ -448,10 +445,7 @@ strong {
 [lang^="nl"] //holandes
 {
 
-    .ttu,
-    .btn, 
-    .h1,.h2,.h3,.h4,.h5,.h6,.h7,
-    .ma-header-right{
+    .ttu{
         text-transform: none;
     }
 
