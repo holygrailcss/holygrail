@@ -9,6 +9,9 @@
 				transform: rotate(-180deg);
 				transition: .6s;
 			}
+            &:disabled + svg{
+                opacity: .2;
+            }
 		}
 		svg{
 			position: absolute;
