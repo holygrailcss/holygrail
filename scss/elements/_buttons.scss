@@ -20,7 +20,7 @@
     white-space: nowrap;
     cursor: pointer;
     padding: 16px 8px;
-    @include font-medium();
+    @include font-regular();
     /**
  	* Nadie quiere un botón con texto subrayado cuando hacemos hover.
  	*/
@@ -244,6 +244,28 @@ $btn-text-full: 14px;
     background-color: transparent;
     border: 1px solid #ffffff;
 }
+
+
+
+.btn-phantom {
+    color: white;
+    background-color:transparent;
+    border-color:  white;
+    &:focus,
+    &.focus,
+    &:hover,
+    &:active,
+    &.active {
+        color: white;
+        opacity:0.6;
+    }
+
+
+}
+
+
+
+
 
 .btn-text {
     background-color: transparent;
