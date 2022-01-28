@@ -523,11 +523,12 @@ left: 0;
     &.checkbox-radio [type=radio]:not(:checked)+label:before {
         left: auto;
         right: 0;
+        margin: 0px;
     }
     &.checkbox-radio [type=radio]:checked+label .ico-radio,
     &.checkbox-radio [type=radio]:not(:checked)+label .ico-radio{
         left: 0px;
-        right: 17px;
+        right: 7px;
     }
     .box3-content{
         padding-left: 0px;
