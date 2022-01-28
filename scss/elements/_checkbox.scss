@@ -29,7 +29,7 @@
     [type="checkbox"]:not(:checked)+label,
     [type="checkbox"]:checked+label {
         position: relative;
-        padding-left: 0;
+        padding-left: 40px;
         cursor: pointer;
         font-weight: normal;
         font-size: 12px;
@@ -54,12 +54,19 @@
     }
     [type="checkbox"]:not(:checked)+label span,
     [type="checkbox"]:checked+label span {
-        display: inline-block;
+        display: initial;
         vertical-align: top;
         margin: 5px 0 0;
         line-height: 16px;
-        padding-left: 40px;
         min-height: 20px;
+        &::after{
+          content: " ";
+       }
+    }
+    [type="checkbox"]:not(:checked)+label a,
+    [type="checkbox"]:checked+label a {
+        text-decoration: underline;
+        margin-right: 4px;
     }
     [type="checkbox"]:not(:checked),
     [type="checkbox"]:checked {
