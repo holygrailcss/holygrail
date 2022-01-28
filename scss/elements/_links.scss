@@ -29,8 +29,6 @@ a {
     padding: 4px 0;
     text-align: center;
     cursor: pointer;
-    font-size: 16px;
-    line-height: 1.2px;
     background: transparent;
     border: none;
     &:after {
@@ -47,7 +45,6 @@ a {
     }
 }
 .link2 {
-    font-size: 12px;
     text-decoration: none;
     position: relative;
     @include font-regular();
@@ -63,7 +60,6 @@ a {
 .link3,
 .link3::before {
     @include font-regular();
-    font-size: 14px;
     text-align: center;
     display: inline-block;
     position: relative;
@@ -98,8 +94,6 @@ a {
     transform: none;
     transition: background-color 0.3s ease-in-out;
     margin: 0px;
-    font-size: 14px;
-    line-height: 14px;
     padding: 2px 0;
     cursor: pointer;
     &:hover {
@@ -203,9 +197,6 @@ a {
     margin: 20px 0;
     border-bottom: 2px solid $primary;
     color: black;
-    font-size: 16px;
-    line-height: 13px;
-    letter-spacing: 0.5px;
     text-align: left;
     text-decoration: none;
     cursor: pointer;
@@ -217,8 +208,6 @@ a {
 
 .link7 {
     position: relative;
-    font-size: 16px;
-    line-height: 1.6;
     text-decoration: none;
     &:after {
         content: '';

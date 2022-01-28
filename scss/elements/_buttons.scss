@@ -440,6 +440,15 @@ $btn-text-full: 14px;
             outline: none;
         }
     }
+    .btn{
+        border-radius: 0;
+        &:first-child(){
+            border-radius: 8px 0 0 8px;        
+        }
+        &:last-child(){
+            border-radius: 0 8px 8px 0;        
+        }
+    }
 }
 .btn-group-inline {
     text-align: center;
@@ -517,3 +526,16 @@ $btn-text-full: 14px;
       transform: rotate(360deg);
     }
   }
+
+.is-rtl{
+  .btn-group{
+    .btn{
+      &:first-child(){
+        border-radius: 0 8px 8px 0;
+      }
+      &:last-child(){
+        border-radius: 8px 0 0 8px;
+      }
+    }
+  }
+}

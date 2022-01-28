@@ -62,11 +62,10 @@ holygrailCss is a **CSS** and **SCSS** framework. As such, the sole output is a 
 
 You can either use that file, "out of the box", or download the Sass source files to customize the [variables](https://holygrail.io/documentation/overview/variables/).
 
-There is **no** JavaScript included. People generally want to use their own JS implementation (and usually already have one). holygrailcss can be considered "environment agnostic": it's just the style layer on top of the logic.
+
 
 ## Browser Support
 
-holygrailcss uses [autoprefixer](https://github.com/postcss/autoprefixer) to make (most) Flexbox features compatible with earlier browser versions. According to [Can I use](https://caniuse.com/#feat=flexbox), holygrailcss is compatible with **recent** versions of:
 
 * Chrome
 * Edge
@@ -82,3 +81,7 @@ The documentation resides in the [guide](guide) directory, and is built with the
 
 Browse the [online documentation here.](https://holygrailcss.github.io/)
 
+
+## updates importantes
+
+botones ahora son mediums, si no hay medium heredará otra fuente.
