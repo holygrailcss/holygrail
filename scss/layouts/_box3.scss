@@ -10,8 +10,9 @@
     .box3-middle{
       width: 100px;
       display: flex;
-      justify-content: flex-end;
-      align-items: center;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
     }
     .box3-price{ 
       display: flex;
