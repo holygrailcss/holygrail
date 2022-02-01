@@ -98,6 +98,22 @@
         opacity: 1;
         transform: scale(1);
     }
+
+    &.color-filter{
+      [type="checkbox"]:not(:checked) + label,
+      [type="checkbox"]:checked + label{
+          padding-left: 32px;
+      }
+      .color-wrap{
+          button{
+              margin-right: 0px;
+          }
+      }
+      [type="checkbox"]:not(:checked) + label span,
+      [type="checkbox"]:checked + label span{
+          padding-left: 24px;
+      }
+  }
 }
 .checkbox-item-2 {
     display: inline-block;
