@@ -150,7 +150,7 @@
 .md\:text-right { @media (max-width: #{$break-lg - 1} ){ text-align: right; } }
 .lg\:text-right { @media (max-width: #{$break-xl - 1} ) { text-align: right; } }
 
-.sm\:min-text-right { @media (min-width: $break-md) { text-align: right; } }
+.sm\:min-text-right { @media (min-width: $break-sm) { text-align: right; } }
 .md\:min-text-right { @media (min-width: $break-md) { text-align: right; } }
 .lg\:min-text-right { @media (min-width: $break-lg) { text-align: right; } }
 
