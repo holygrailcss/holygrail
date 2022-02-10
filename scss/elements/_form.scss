@@ -239,7 +239,7 @@ label {
         line-height: 1;
         width: 150px;
         text-align: center;
-        @include font-regular();
+        @include font-medium();
     }
     .guide-title {
         padding-left: 200px;

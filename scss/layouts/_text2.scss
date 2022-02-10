@@ -11,7 +11,7 @@
 
         [class*="h"] {
             flex-grow: 0.15;
-            @include font-regular();
+            @include font-medium();
             font-size: 16px;
             line-height: 1.2;
             letter-spacing: 0.5px;

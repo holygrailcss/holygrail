@@ -47,7 +47,7 @@ a {
 .link2 {
     text-decoration: none;
     position: relative;
-    @include font-regular();
+    @include font-medium();
     &:hover {
         opacity: $opacity-links;
         &::after {
@@ -59,7 +59,7 @@ a {
 }
 .link3,
 .link3::before {
-    @include font-regular();
+    @include font-medium();
     text-align: center;
     display: inline-block;
     position: relative;

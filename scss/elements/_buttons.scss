@@ -20,7 +20,7 @@
     white-space: nowrap;
     cursor: pointer;
     padding: 16px 8px;
-    @include font-regular();
+    @include font-medium();
     /**
  	* Nadie quiere un botón con texto subrayado cuando hacemos hover.
  	*/

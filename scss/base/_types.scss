@@ -15,7 +15,7 @@ samp {
 
  html {
   font-size: 1rem;
-  @include font-regular();
+  @include font-medium();
 
   @media (max-width: #{$break-md - 1} ){
 
@@ -43,14 +43,14 @@ samp {
 
 
 select {
-  @include font-regular();
+  @include font-medium();
 }
 
 /*+------------------------------------------------------------+
  |       -HEADERS ELÁSTICOS        
  +------------------------------------------------------------+*/
 p {
-  @include font-regular();
+  @include font-medium();
   margin: 0;
   font-size: 14px;
 
