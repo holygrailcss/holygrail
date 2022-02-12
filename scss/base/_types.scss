@@ -15,7 +15,7 @@ samp {
 
  html {
   font-size: 1rem;
-  @include font-medium();
+  @include font-regular();
 
   @media (max-width: #{$break-md - 1} ){
 

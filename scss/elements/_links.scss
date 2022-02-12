@@ -29,7 +29,7 @@ a {
     padding: 4px 0;
     text-align: center;
     cursor: pointer;
-    background: transparent;
+    background: transparent!important;
     border: none;
     &:after {
         content: '';
