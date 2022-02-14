@@ -229,12 +229,5 @@
 @include bleed(0);
 @include bleed(4);
 @include bleed(8);
-.hg-form {
-    .row [class*="col-xs-12"],
-    .row [class*="col-xs-12"]:first-child {
-        padding-right: 8px;
-    }
-    .row [class*="col-xs-12"]:last-child {
-        padding-right: 8px;
-    }
-}
+
+

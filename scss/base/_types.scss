@@ -14,28 +14,10 @@ samp {
 
 
  html {
-  font-size: 1rem;
+
   @include font-regular();
 
-  @media (max-width: #{$break-md - 1} ){
 
-  }
-
-  @media all and (min-width: $break-xs) {
-    font-size: calc(1rem + 0.5vw);
-  }
-
-  @media all and (min-width: $break-sm) {
-    font-size: calc(1rem + 0.2vw);
-  }
-
-  @media all and (min-width: $break-md) {
-    font-size: calc(1rem + 0.3vw);
-  }
-
-  @media all and (min-width: $break-lg) {
-    font-size: calc(1rem + 0.4vw);
-  }
 }
 
 
@@ -84,15 +66,6 @@ mark {
 /*+------------------------------------------------------------+
  |       -LINKS        
  +------------------------------------------------------------+*/
-.text-1 {
-  font-size: 16px;
-}
-
-.text-2 {
-  font-size: 18px;
-  line-height: 1.6;
-}
-
 
 
 

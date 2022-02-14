@@ -35,13 +35,7 @@
     &:visited {
         outline: none;
     }
-    .has-light & {
-        color: white;
-        border-color: white;
-        &:after {
-            background-color: white;
-        }
-    }
+
     &:disabled,
     &.disabled {
         opacity: 0.2;
@@ -64,6 +58,11 @@ $btn-text-full: 14px;
     padding-left: $padding-global * 3;
     font-size: $btn-text-mini;
 }
+.btn--small {
+    padding-right: $padding-global * 2;
+    padding-left: $padding-global * 2;
+    font-size: $btn-text-small;
+}
 .btn--medium {
     padding-right: $padding-global * 5;
     padding-left: $padding-global * 5;
@@ -71,11 +70,7 @@ $btn-text-full: 14px;
     max-width: 272px;
     width: 100%;
 }
-.btn--small {
-    padding-right: $padding-global * 2;
-    padding-left: $padding-global * 2;
-    font-size: $btn-text-small;
-}
+
 .btn--large {
     min-width: 200px;
     max-width: 400px;
@@ -108,13 +103,6 @@ $btn-text-full: 14px;
     height: 48px;
 }
 
-.btn--input {
-    width: 100%;
-    padding-right: $padding-global;
-    padding-left: $padding-global;
-    font-size:  $btn-text-full;
-    padding: 17px 16px 15px;
-}
 .btn--round {
 	border-radius: 50px;
 }
@@ -239,18 +227,11 @@ $btn-text-full: 14px;
     }
 }
 
-.btn-phantom {
-    color: white;
-    background-color: transparent;
-    border: 1px solid #ffffff;
-}
-
-
 
 .btn-phantom {
     color: white;
     background-color:transparent;
-    border-color:  white;
+    border: 1px solid #ffffff;
     &:focus,
     &.focus,
     &:hover,
@@ -262,8 +243,6 @@ $btn-text-full: 14px;
 
 
 }
-
-
 
 
 
@@ -375,19 +354,6 @@ $btn-text-full: 14px;
 	align-items: center;
 	padding: 0;
 	background-color: transparent;
-}
-
-.has-light {
-    .btn-primary {
-        color: $primary;
-        background-color: #fff;
-        border: 1px solid #fff;
-    }
-    .btn-phantom {
-        color: #fff;
-        background-color: transparent;
-        border: 1px solid #fff;
-    }
 }
 
 
@@ -527,6 +493,13 @@ $btn-text-full: 14px;
     }
   }
 
+
+
+/*+------------------------------------------------------------+
+ |       -RTL BOTONES   
+ +------------------------------------------------------------+*/
+
+
 .is-rtl{
   .btn-group{
     .btn{
@@ -538,4 +511,30 @@ $btn-text-full: 14px;
       }
     }
   }
+}
+
+
+
+/*+------------------------------------------------------------+
+ |       -INVERSIÓN DE COLOR DE BOTONES   
+ +------------------------------------------------------------+*/
+
+.has-light {
+    .btn-primary {
+        color: $primary;
+        background-color: #fff;
+        border: 1px solid #fff;
+    }
+    .btn-phantom {
+        color: #fff;
+        background-color: transparent;
+        border: 1px solid #fff;
+    }
+    .btn{
+            color: white;
+            border-color: white;
+            &:after {
+                background-color: white;
+            }
+    }
 }

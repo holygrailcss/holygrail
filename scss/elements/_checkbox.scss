@@ -1,6 +1,5 @@
 .checkbox-item {
    text-align: center;
-
     .ico-check {
         width: 22px;
         height: 22px;
@@ -98,7 +97,6 @@
         opacity: 1;
         transform: scale(1);
     }
-
     &.color-filter{
       [type="checkbox"]:not(:checked) + label,
       [type="checkbox"]:checked + label{
@@ -270,90 +268,35 @@
       padding-bottom: 0;
     }
   }
-  $checkbox-svg-pd: 20px;
-$checkbox-svg-brad: 20px;
-.checkbox-svg {
-  svg {
-    margin: 0 auto;
-    width: 50px ;
-  }
+
+.checkbox-item{
+	&.is-error{
+		color:#fa3b2c;
+    [type=checkbox]:checked+label:before, 
+    [type=checkbox]:not(:checked)+label:before {
+		border: 1px solid #fa3b2c;
+	}
+	}
 }
-//display flex
-.checkbox-svg-label {
-  background: #ffffff;
-  border: 1px solid #4bcac5;
-  border-radius: $checkbox-svg-brad;
-  filter: grayscale(100%);
-  display: flex;
-  width: 100%;
-  padding: $checkbox-svg-pd;
-  box-sizing: border-box;
-  transition: all 0.2s ease;
-  opacity: 0.5;
-  min-height: 200px;
-  .ico-radio {
-    position: absolute;
-    top: 7px;
-    left: 7px;
-    width: 8px;
-    height: 8px;
-    background-color: white;
-    border-radius: 50%;
-    -webkit-transition: all 0.2s;
-    transition: all 0.2s;
-  }
+.checkbox-item-text{
+  min-height: 42px;
+	span{
+		position: absolute;
+		margin-left: 40px;
+		min-height: 48px;
+	}
 }
-.checkbox-svg [type="radio"] {
-  position: absolute;
-  left: -9999px;
+.checkbox-item-box{
+ 	position: relative;
+    width: 25px;
+    height: 25px;
 }
-.checkbox-svg-ico {
-  position: absolute;
-  box-sizing: border-box;
-  width: 24px;
-  height: 24px;
-  top: $checkbox-svg-pd;
-  right: $checkbox-svg-pd;
-  left: auto;
-  border: 1px solid #4bcac5;
-  background-color: #4bcac5;
-  outline: 0;
-  vertical-align: top;
-  margin: 0;
-  border-radius: 50%;
-  opacity: 1;
-}
-.checkbox-svg [type="radio"]:checked,
-.checkbox-svg :hover {
-  & + .checkbox-svg-label {
-    opacity: 1;
-    cursor: pointer;
-    filter: grayscale(0);
-    box-shadow: 6px 6px 17px 0 rgba(74, 111, 110, 0.27);
-  }
-  & + label .ico-radio {
-    opacity: 1;
-    transform: scale(1);
-  }
-  label .checkbox-svg-ico {
-    opacity: 1;
-  }
-  & + label .ico-radio {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-.checkbox-svg [type="radio"]:not(:checked) + label .ico-radio {
-  opacity: 0;
-  transform: scale(0);
-}
+
 
 
 input[type='radio']:focus + label::before {
-  
   //sombra accesibilidad box-shadow: 0 0px 4px #6d6b6b;
 }
-
 .check-no{
   &.checkbox-radio [type=radio]:checked+label:before,
   &.checkbox-radio [type=radio]:not(:checked)+label:before {
@@ -387,8 +330,6 @@ transform: translateY(-50%);
     border: 1px solid black;
     }
 }
-
-
 .check-bleed{
   &.checkbox-radio [type=radio]:checked + label:before,
   &.checkbox-radio [type=radio]:not(:checked) + label:before {
@@ -399,8 +340,6 @@ transform: translateY(-50%);
        left: 7px;
    }
 }
-
-
 .check-top{
   &.checkbox-radio [type=radio]:checked+label:before,
   &.checkbox-radio [type=radio]:not(:checked)+label:before {
@@ -441,7 +380,6 @@ left: 0;
     border: 1px solid black;
     }
 }
-
 .is-active{
   &.checkbox-radio .border-1  {
     border: 1px solid black;
@@ -451,46 +389,15 @@ left: 0;
       transform: scale(1);
   }
 }
-
-.checkbox-item{
-	&.is-error{
-		color:#fa3b2c;
-
-    [type=checkbox]:checked+label:before, 
-    [type=checkbox]:not(:checked)+label:before {
-		border: 1px solid #fa3b2c;
-	}
-	}
-
-}
-
-.checkbox-item-text{
-  min-height: 42px;
-	span{
-		position: absolute;
-		margin-left: 40px;
-		min-height: 48px;
-	}
-}
-
-.checkbox-item-box{
- 	position: relative;
-    width: 25px;
-    height: 25px;
-}
-
 /*+------------------------------------------------------------+
  |       -Soporte para lenguajes árabes  
  +------------------------------------------------------------+*/
-
 .is-rtl{
-
   .checkbox-item{
     [type="checkbox"]:not(:checked),
     [type="checkbox"]:checked {
         left: 0;
         right: -9999px;
-
     }
     [type="checkbox"]:not(:checked)+label:before,
     [type="checkbox"]:checked+label:before{
@@ -520,7 +427,6 @@ left: 0;
         }
     }  
   }
-
   .check-bleed{
     &.checkbox-radio [type=radio]:checked + label .ico-radio, 
     &.checkbox-radio [type=radio]:not(:checked) + label .ico-radio {
@@ -533,7 +439,6 @@ left: 0;
         right: 0;
      }
   }
-
   .check-center{
     &.checkbox-radio [type=radio]:checked+label:before,
     &.checkbox-radio [type=radio]:not(:checked)+label:before {
@@ -551,7 +456,6 @@ left: 0;
         padding-right: calc(24px + 16px);
     }
   }
-
   .checkbox-radio{
     [type="radio"]:not(:checked),
     [type="radio"]:checked{
