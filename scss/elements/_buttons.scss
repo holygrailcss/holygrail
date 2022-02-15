@@ -374,9 +374,9 @@ $btn-text-full: 14px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-.btn{
-    margin-right:  $padding-global;
-}
+    .btn{
+        margin-right:  $padding-global;
+    }
 
 }
 

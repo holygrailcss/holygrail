@@ -13,11 +13,13 @@ samp {
 }
 
 
- html {
-
-  @include font-regular();
-
-
+body {
+  @include font-regular;
+  -webkit-overflow-scrolling: touch;
+  font-variant-ligatures: no-common-ligatures !important;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 
