@@ -41,13 +41,10 @@ npm install holygrailcss
 Probar el holygrail antes de subir
 
 
+npm run docs
+npm run build
 
 
-npm test
-npm start
-npm build-sass
-
-  
 
 
 ### CDN

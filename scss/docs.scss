@@ -1,15 +1,15 @@
 /* no usar col- nunca ya que hay un selector asi
  */
 /*cargamos el tema por defecto con las fuentes y colores propios */
-@import "../scss/abstract/reset";
-@import "../scss/abstract/setup";
-@import "../scss/abstract/fonts";
-@import "../scss/abstract/breakpoints";
-@import "../scss/abstract/mixins";
-@import "../scss/abstract/animations";
+@import "abstract/reset";
+@import "abstract/setup";
+@import "abstract/fonts";
+@import "abstract/breakpoints";
+@import "abstract/mixins";
+@import "abstract/animations";
 
 
-@import "../scss/partials";
+@import "partials";
 
 
 
@@ -389,6 +389,8 @@ $variabletotals: length($variable-list);
     .item-3 { &:after { content: "#{$typeFluid3}"; } }
   }
 }
+.item-0:after {     @include font-bold();}
+
 
 .filas {
   background-color: white;
@@ -409,15 +411,15 @@ $variabletotals: length($variable-list);
     width: 100%;
     position: relative;
     font-size: 14px;
-    text-align: center;
+    text-align: left;
 
 
     &:after {
    
       width: 100%;
       height: 100%;
-      border: 1px solid #eaeaea;
-      padding: 10px 0;
+      border-bottom: 1px solid #eaeaea;
+      padding: 4px 0;
       float: left;
     }
     &:empty {
@@ -590,7 +592,6 @@ $headersFluidsGuide: (
 
   }
   .holy-bg {
-    background-image: url(../../assets/images/holygrail_big.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
@@ -861,12 +862,12 @@ $headersFluidsGuide: (
     vertical-align: middle;
     font-size: 15px;
     padding: 5px 5px;
-    height: 15px;
-    width: 15px;
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
     text-align: center;
-    line-height: 1;
-    background-color: $primary-guide;
+    line-height: 2;
+    background-color: #121F2A;
     color: #fff;
   }
   table {
@@ -938,13 +939,13 @@ $headersFluidsGuide: (
   .table-flex {
     text-align: center;
     p {
-      font-size: 12px;
+      font-size: 10px;
       font-family: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace !important;
       color: $primary-guide !important;
       text-align: center;
       width: 100%;
       background-color: #efe5ef;
-      margin: 20px 0 0 0;
+ 
     }
     th {
       width: 20%;
@@ -1257,6 +1258,8 @@ $headersFluidsGuide: (
     width: 100px;
     color: #757171;
     font-size: 10px;
+    float: left;
+    margin: 11px;
   }
   .guide-bg {
     overflow: hidden;
@@ -1420,3 +1423,29 @@ pre[class*="language-"]{
 }
 
 
+.next{
+  font-size: 9px;
+  background: #ff4900;
+  color: white;
+  padding: 4px;
+  display: INLINE-BLOCK;
+  font-weight: bold;
+  border-radius: 4px;
+  transform: translateY(-10px);
+}
+
+
+.doc-table{
+  td{
+    padding: 8px;
+  }
+}
+
+.mini-box{
+  span{
+    @include font-bold();
+
+    display: block;
+    font-size: 14px;
+  }
+}
