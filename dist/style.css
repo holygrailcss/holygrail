@@ -209,7 +209,9 @@ img {
 }
 
 .align-middle {
-  align-items: center;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
 }
 
 .align-bottom {
@@ -260,6 +262,14 @@ img {
 
 .d-inline {
   display: inline-block;
+}
+
+.align-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .sticky-bottom {
@@ -3938,6 +3948,52 @@ mark {
   height: 1px;
 }
 
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.c-gray {
+  color: #909090;
+}
+
+.second-color {
+  color: #757575;
+}
+
+.is-info {
+  color: #3964db;
+}
+
+.bg-light {
+  background-color: #f5f5f5;
+}
+
+.bg-clear {
+  background-color: #ffffff;
+}
+
+.bg-cream {
+  background-color: #f8f7f5;
+}
+
+.bg-line {
+  border-bottom: 1px solid #e3e3e3;
+}
+
 .text-lowercase {
   text-transform: lowercase;
 }
@@ -3985,10 +4041,6 @@ hr {
   border-bottom: 1px solid transparent;
 }
 
-.bg-line {
-  border-bottom: 1px solid #e3e3e3;
-}
-
 .only-mobile {
   display: inline-block;
 }
@@ -4003,38 +4055,6 @@ hr {
   .only-desktop {
     display: none !important;
   }
-}
-
-.c-gray {
-  color: #909090;
-}
-
-.second-color {
-  color: #757575;
-}
-
-.is-info {
-  color: #3964db;
-}
-
-.bg-light {
-  background-color: #f5f5f5;
-}
-
-.bg-clear {
-  background-color: #ffffff;
-}
-
-.bg-cream {
-  background-color: #f8f7f5;
-}
-
-.h-50 {
-  height: 50px;
-}
-
-.w-100 {
-  width: 100%;
 }
 
 .ico-r svg {
@@ -4174,20 +4194,6 @@ hr {
   .smmax\:mb-42 {
     margin-bottom: 42px;
   }
-}
-
-.align-center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.align-middle {
-  display: flex;
-  align-content: center;
-  flex-wrap: wrap;
 }
 
 @media (min-width: 768px) {
@@ -4338,11 +4344,6 @@ strong {
   }
 }
 
-.ov-scroll {
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
-}
-
 .p-view {
   background-color: #ffffff;
   position: absolute;
@@ -4373,31 +4374,17 @@ strong {
   cursor: pointer;
 }
 
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+/* scrollbar custom */
+.ov-scroll {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
-@keyframes fadeout {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-
-/* total width */
 .scrollbar::-webkit-scrollbar {
   background-color: #fff;
   width: 16px;
 }
 
-/* background of the scrollbar except button or resizer */
 .ov-custom::-webkit-scrollbar-track {
   background-color: #fff;
 }
@@ -4406,7 +4393,6 @@ strong {
   background-color: #f4f4f4;
 }
 
-/* scrollbar itself */
 .ov-custom::-webkit-scrollbar-thumb {
   background-color: #babac0;
   border-radius: 16px;
@@ -4418,7 +4404,6 @@ strong {
   border: 4px solid #f4f4f4;
 }
 
-/* set button(top and bottom of the scrollbar) */
 .ov-custom::-webkit-scrollbar-button {
   display: none;
 }
@@ -4434,17 +4419,6 @@ strong {
   display: inline-block;
   vertical-align: middle;
   margin: 4px;
-}
-
-.vert-end {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-.p-wrap {
-  position: relative;
-  width: 100%;
 }
 
 .ttu {
@@ -4472,10 +4446,21 @@ strong {
   animation-name: fadein;
 }
 
+.vert-end {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
 .video-wrap {
   height: 100%;
   display: flex;
   align-items: flex-end;
+}
+
+.p-wrap {
+  position: relative;
+  width: 100%;
 }
 
 .charging {
@@ -4485,6 +4470,14 @@ strong {
 
 .arrow-right {
   float: right;
+}
+
+.h-50 {
+  height: 50px;
+}
+
+.w-100 {
+  width: 100%;
 }
 
 /*------------------------------------*\

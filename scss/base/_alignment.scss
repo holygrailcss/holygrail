@@ -59,8 +59,11 @@
 .align-top {
   align-items: flex-start;
 }
+
 .align-middle {
-  align-items: center;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
 }
 .align-bottom {
   align-items: flex-end;
@@ -103,6 +106,14 @@
 .d-inline {
   display: inline-block;
 }
+.align-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 
 .sticky-bottom {
   width: 100%;

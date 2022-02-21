@@ -1,36 +1,46 @@
 {
-    "name": "holygrailcss",
-    "version": "1.8.5",
-    "description": "Css and Scss framework webmaker",
-    "main": "index.js",
-    "directories": {
-        "doc": "docs"
-    },
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "build-sass": "node-sass --output-style expanded --source-map true scss/style.scss dist/style.css  &&  node-sass --output-style expanded --source-map true doc/guide.scss dist/guide.css   ",
-        "start": "npm run build-sass -- --watch"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/holygrailcss/holygrail.git"
-    },
-    "keywords": [
-        "holygrail",
-        "css",
-        "sass"
-    ],
-    "author": "manuel ruiz",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/holygrailcss/holygrail/issues"
-    },
-    "homepage": "https://github.com/holygrailcss/holygrail#readme",
-    "devDependencies": {
-        "autoprefixer": "^9.8.6",
-        "clean-css-cli": "^4.3.0",
-        "node-sass": "^4.14.1",
-        "postcss-cli": "^7.1.2",
-        "rimraf": "^3.0.2"
-    }
+  "name": "holygrailcss",
+  "version": "1.8.5",
+  "description": "A minimal, responsive, style-agnostic CSS framework.",
+  "main": "scss/style.scss",
+  "directories": {
+    "lib": "scss"
+  },
+  "scripts": {
+
+    "docs": "node-sass scss/docs.scss doc/docs.css --output-style expanded && node-sass scss/docs.scss doc/docs.min.css --output-style compressed",
+    "build": "node-sass scss/style.scss dist/style.css --output-style expanded && node-sass scss/style.scss dist/style.min.css --output-style compressed",
+
+
+    "build-sass": "node-sass --output-style expanded --source-map true scss/style.scss dist/style.css  &&  node-sass --output-style expanded --source-map true scss/docs.scss doc/docs.css   ",
+    "start": "npm run build-sass -- --watch"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/holygrailcss/holygrail.git"
+  },
+  "devDependencies": {
+    "file-saver": "^1.3.8",
+    "jszip": "^3.1.5",
+    "node-sass": "^4.9.2",
+    "sass.js": "^0.10.10"
+  },
+  "keywords": [
+    "css",
+    "sass",
+    "minimal",
+    "responsive",
+    "style-agnostic",
+    "framework",
+    "toolkit",
+    "holygrailcss"
+  ],
+  "author": "Manuel Ruiz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Chalarangelo/mini.css/issues",
+    "email": "manuelruizredondo@gmail.com"
+  },
+  "homepage": "http://holygrailcss.org"
 }
