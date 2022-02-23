@@ -193,6 +193,7 @@ label {
 .is-error {
     .input,
     label,
+    textarea::placeholder,
     .help {
         color: $error !important;
     }
