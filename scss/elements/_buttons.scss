@@ -40,6 +40,28 @@
     &.disabled {
         opacity: 0.2;
     }
+
+    &.btn-separate{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px;
+    
+        svg{
+          margin-left: 8px;
+        }
+    
+        &.btn-primary,
+        &.btn-blue{
+          svg{
+            filter: invert(1);
+          }
+        }
+        &.btn--mini,
+        &.btn--small{
+          width: max-content;
+        }
+      }
 }
 
 /*+------------------------------------------------------------+
@@ -265,9 +287,9 @@ $btn-text-full: 14px;
     &.active {
  opacity: .6;
 
-    svg{
-        path{fill:white}
-    }
+    // svg{
+    //     path{fill:white}
+    // }
 
     }
 }
@@ -501,6 +523,15 @@ $btn-text-full: 14px;
 
 
 .is-rtl{
+  .btn{
+    &.btn-separated{
+      svg{
+        margin-left: 0px;
+        margin-right: 8px;
+      }
+    }
+  }
+
   .btn-group{
     .btn{
       &:first-child(){

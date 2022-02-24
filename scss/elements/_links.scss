@@ -209,6 +209,7 @@ a {
 .link7 {
     position: relative;
     text-decoration: none;
+    cursor: pointer;
     &:after {
         content: '';
         position: absolute;

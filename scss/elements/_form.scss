@@ -440,7 +440,7 @@ input::-webkit-input-placeholder {
 		}
 	}
     &.select-flat {
-        width: 100%;
+        width: max-content;
         label {
             z-index: 0;
             left: 0;
@@ -451,6 +451,10 @@ input::-webkit-input-placeholder {
             padding-left: 0px;
             background: none;
             padding-right: 40px;
+        }
+        
+        &::after{
+            right: 0;
         }
     }
 }
@@ -657,7 +661,7 @@ $svg-size: 16px;
 	padding-right: 64px;
 	.input,
 	.input:focus {
-		@include font-bold();
+		@include font-medium();
 		padding-left: 0;
 		padding-bottom: 4px;
 		padding-right: 0;
