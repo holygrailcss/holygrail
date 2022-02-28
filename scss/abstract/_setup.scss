@@ -231,126 +231,148 @@ $headersFluids: (/*name :  fontsize, lineheight */
 
 $mg: "margin";
 $margin: /* name : margen total mobile, tablet, desktop, longdesktop*/
-(m-20: (10px, 20px, 20px, 20px),
- m-30: (10px, 30px, 30px, 30px),
- m-50: (20px, 50px, 50px, 50px))!default;
- 
- 
+(
+m-8: (8px, 8px, 8px, 8px),
+m-16: (16px, 16px, 16px, 16px),
+m-24: (24px, 24px, 24px, 24px),
+m-32: (32px, 32px, 32px, 32px),
+m-40: (40px, 40px, 40px, 40px),
+m-48: (48px, 48px, 48px, 48px)
+)!default;
 $mx: "margin"; 
 $margin-x: /* name : margen bottom   */
-(mx-10: (0 10px, 0 10px, 0 10px, 0 10px),
- mx-20: (0 10px, 0 20px, 0 20px, 0 20px),
- mx-30: (0 10px, 0 30px, 0 30px, 0 30px),
- mx-50: (0 20px, 0 50px, 0 50px, 0 50px))!default;
- 
- 
+(
+mx-8:  (0 8px, 0 8px, 0 8px, 0 8px),
+mx-16: (0 16px, 0 16px, 0 16px, 0 16px),
+mx-24: (0 24px, 0 24px, 0 24px, 0 24px),
+mx-32: (0 10px, 0 32px, 0 32px, 0 32px),
+mx-40: (0 10px, 0 40px, 0 40px, 0 40px),
+mx-48: (0 48px, 0 48px, 0 48px, 0 48px)
+)!default;
 $my: "margin"; 
 $margin-y: /* name : margen bottom*/
-(my-10: (10px 0, 10px 0, 10px 0, 10px 0),
- my-20: (10px 0, 20px 0, 20px 0, 20px 0),
- my-30: (10px 0, 30p 0x, 30p 0, 30px 0),
- my-50: (20px 0, 50px 0, 50px 0, 50px 0))!default;
- 
- 
-   
+(
+my-8: (8px 0, 8px 0, 8px 0, 8px 0),
+my-16: (16px 0, 16px 0, 16px 0, 16px 0),
+my-24: (24px 0, 24px 0, 24px 0, 24px 0),
+my-32: (32px 0, 32px 0, 32px 0, 32px 0),
+my-48: (20px 0, 48px 0, 48px 0, 48px 0)
+)!default;
 $mt: "margin-top";
 $margin-top: /* name : margen bottom*/
-(mt-10: (10px, 10px, 10px, 10px),
- mt-20: (10px, 20px, 20px, 20px),
- mt-30: (10px, 30px, 30px, 30px),
- mt-50: (50px, 50px, 50px, 50px))!default;
- 
- 
- $mr: "margin-right";
- $margin-right: /* name : margen bottom*/
- (mr-10: (10px, 10px, 10px, 10px),
-   mr-20: (10px, 20px, 20px, 20px),
-   mr-30: (10px, 30px, 30px, 30px),
-   mr-50: (20px, 50px, 50px, 50px))!default;
- 
-
-
- $mb: "margin-bottom";
-$margin-bottom:
-/* name : margen bottom*/
-(mb-4: (4px, 4px, 4px, 4px),
-  mb-10: (10px, 10px, 10px, 10px),
-  mb-16: (10px, 10px, 16px, 16px),
-  mb-20: (10px, 20px, 20px, 20px),
-  mb-24: (20px, 20px, 24px, 24px),
-  mb-30: (10px, 30px, 30px, 30px),
-  mb-40: (20px, 40px, 40px, 40px),
-  mb-50: (20px, 50px, 50px, 50px)) !default;
-
- 
-
+(
+mt-8:  (8px, 8px, 8px, 8px),
+mt-16: (16px, 16px, 16px, 16px),
+mt-24: (24px, 24px, 24px, 24px),
+mt-32: (32px, 32px, 32px, 32px),
+mt-40: (42px, 42px, 42px, 42px),
+mt-48: (48px, 48px, 48px, 48px)
+)!default;
+$mr: "margin-right";
+$margin-right: /* name : margen bottom*/
+(
+mr-8:  (8px, 8px, 8px, 8px),
+mr-16: (16px, 16px, 16px, 16px),
+mr-24: (24px, 24px, 24px, 24px),
+mr-32: (32px, 32px, 32px, 32px),
+mr-40: (42px, 42px, 42px, 42px),
+mr-48: (48px, 48px, 48px, 48px)
+)!default;
+$mb: "margin-bottom";
+$margin-bottom: /* name : margen bottom*/
+(
+mb-8: (8px, 8px, 8px, 8px),
+mb-16: (16px, 16px, 16px, 16px),
+mb-24: (24px, 24px, 24px, 24px),
+mb-32: (32px, 32px, 32px, 32px),
+mb-40: (40px, 40px, 40px, 40px),
+mb-48: (48px, 48px, 48px, 48px) ,
+mb-100: (100px, 100px, 100px, 100px) 
+)!default;
 $ml: "margin-left";
 $margin-left: /* name : margen bottom*/
-(ml-10: (10px, 10px, 10px, 10px),
- ml-20: (10px, 20px, 20px, 20px),
- ml-30: (10px, 30px, 30px, 30px),
- ml-50: (20px, 50px, 50px, 50px))!default;
- 
-
+(
+ml-8: (8px, 8px, 8px, 8px),
+ml-16: (16px, 16px, 16px, 16px),
+ml-24: (24px, 24px, 24px, 24px),
+ml-32: (32px, 32px, 32px, 32px),
+ml-40: (42px, 42px, 42px, 42px),
+ml-48: (48px, 48px, 48px, 48px)
+)!default;
 $p: "padding"; 
 $padding: /* name : padding  top*/
-(p-10: (10px, 10px, 10px, 10px),
- p-20: (10px, 20px, 20px, 20px),
- p-30: (10px, 30px, 30px, 30px),
- p-50: (20px, 50px, 50px, 50px))!default;
- 
- 
+(
+p-body: (16px, 16px, 40px, 40px),
+p-4: (4px, 4px, 4px, 4px),
+p-8: (8px, 8px, 8px, 8px), 
+p-16: (16px, 16px, 16px, 16px),
+p-20: (20px, 20px, 20px, 20px),
+p-30: (10px, 30px, 30px, 30px),
+p-40: (40px, 40px, 40px, 40px),
+p-48: (20px, 50px, 50px, 50px)
+)!default;
 $py: "padding";
 $padding-y: /* name : padding  arriba y abajo*/
-
-(py-16: (10px 0, 16px 0, 16px 0, 16px 0),
-    py-20: (10px 0, 20px 0, 20px 0, 20px 0),
-    py-30: (10px 0, 30px 0, 30px 0, 30px 0),
-    py-50: (20px 0, 30px 0, 40px 0, 50px 0),
-    py-60: (24px 16px, 24px 16px, 24px 16px, 60px 60px)) !default;
- 
- 
+(
+py-8: (8px 0, 8px 0, 8px 0, 8px 0),  
+py-12: (12px 0, 12px 0, 12px 0, 12px 0),  
+py-16: (16px 0, 16px 0, 16px 0, 16px 0),  
+py-24: (10px 0, 24px 0, 24px 0, 24px 0),
+py-32: (32px 0, 32px 0, 32px 0, 32px 0),
+py-48: (20px 0, 30px 0, 40px 0, 48px 0),
+py-60: (24px 16px,24px 16px, 24px 16px, 60px 60px)
+)!default;
 $px: "padding";
 $padding-x: /* name : padding  arriba y abajo*/
-(px-16: (0 8px, 0 16px, 0 16px, 0 16px),
- px-20: (0 10px, 0 20px, 0 20px, 0 20px),
- px-30: (0 10px, 0 30px, 0 30px, 0 30px),
- px-48: (0 48px, 0 48px, 0 48px, 0 48px),
- px-50: (0 50px, 0 50px, 0 50px, 0 50px))!default;
- 
- 
+(
+px-8: (0 8px, 0 8px, 0 8px, 0 8px),
+px-16: (0 16px, 0 16px, 0 16px, 0 16px),
+px-24: (0 24px, 0 24px, 0 24px, 0 24px),
+px-32: (0 32px, 0 32px, 0 32px, 0 32px),
+px-40: (0 40px, 0 40px, 0 40px, 0 40px),
+px-48: (0 48px, 0 48px, 0 48px, 0 48px)
+)!default;
 $pt: "padding-top";
 $padding-top: /* name : padding  top*/
-(pt-10: (10px, 10px, 10px, 10px),
- pt-16: (8px, 16px, 16px, 16px),
- pt-20: (10px, 20px, 20px, 20px),
- pt-30: (10px, 30px, 30px, 30px),
- pt-50: (50px, 50px, 50px, 50px))!default;
- 
- 
+(
+pt-8:  (8px, 8px, 8px, 8px),
+pt-16: (16px, 16px, 16px, 16px),
+pt-24: (24px, 24px, 24px, 24px),
+pt-32: (32px, 32px, 32px, 32px),
+pt-40: (40px, 40px, 40px, 40px),
+pt-48: (20px, 48px, 48px, 48px),
+pt-64: (64px, 64px, 64px, 64px)
+)!default;
 $pb: "padding-bottom";
 $padding-bottom: /* name : padding  bottom*/
-(pb-10: (10px, 10px, 10px, 10px),
- pb-16: (8px, 16px, 16px, 16px),
- pb-20: (10px, 20px, 20px, 20px),
- pb-30: (10px, 30px, 30px, 30px),
- pb-50: (50px, 50px, 50px, 50px))!default;
- 
- 
+(
+pb-8: (8px, 8px, 8px, 8px),
+pb-16: (20px, 20px, 20px, 20px),
+pb-24: (24px, 24px, 24px, 24px),
+pb-32: (32px, 32px, 32px, 32px),
+pb-40: (40px, 40px, 40px, 40px),
+pb-48: (48px, 48px, 48px, 48px),
+pb-64: (64px, 64px, 64px, 64px)
+)!default;
 $pl: "padding-left";
 $padding-left: /* name : padding  bottom*/
-(pl-10: (10px, 10px, 10px, 10px),
-pl-16 : (8px, 16px, 16px, 16px),
- pl-20: (10px, 20px, 20px, 20px),
- pl-30: (10px, 30px, 30px, 30px),
- pl-50: (20px, 50px, 50px, 50px))!default;
- 
- 
+(
+pl-body: (16px, 16px, 40px, 40px),
+pl-8: (8px, 8px, 8px, 8px),
+pl-16: (16px, 16px, 16px, 16px),
+pl-24: (24px, 24px, 24px, 24px),
+pl-32: (32px, 32px, 32px, 32px),
+pl-40: (16px, 42px, 42px, 42px),
+pl-48: (48px, 48px, 48px, 48px)
+)!default;
 $pr: "padding-right";
 $padding-right: /* name : padding  bottom*/
-(pr-10: (10px, 10px, 10px, 10px),
- pr-16: (8px, 16px, 16px, 16px),
- pr-20: (10px, 20px, 20px, 20px),
- pr-30: (10px, 30px, 30px, 30px),
- pr-50: (20px, 50px, 50px, 50px))!default;
- 
+(
+pr-body: (16px, 16px, 40px, 40px),
+pr-8: (8px, 8px, 8px, 8px),
+pr-16: (16px, 16px, 16px, 16px),
+pr-24: (24px, 24px, 24px, 24px),
+pr-32: (32px, 32px, 32px, 32px),
+pr-40: (16px, 42px, 42px, 42px),
+pr-48: (48px, 48px, 48px, 48px)
+)!default;
