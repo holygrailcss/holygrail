@@ -36,7 +36,7 @@
     outline:5px solid yellow;
 }  
 .container-2{
-border: 1px solid green;
+border: 1px solid #5d8074;
 }
  /*+------------------------------------------------------------+
  |       -ALT OBLIGATORIO -- PENALIZAMOS SIN NO HAY ALT
@@ -226,7 +226,7 @@ input[type="button"], big, tt
 			position: absolute;
 			@include random-bgr();
 			opacity: .7;
-			color: #fff;
+			color: #ffffff;
 			border-radius: 50%;
 			padding: 3px;
 			left: 0;

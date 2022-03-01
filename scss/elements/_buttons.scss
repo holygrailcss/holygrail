@@ -206,15 +206,15 @@ $btn-text-full: 14px;
         opacity: 0.2;
     }
     .has-light & {
-        color: white;
+        color: #ffffff;
         &:after {
-            background-color: white;
+            background-color: #ffffff;
         }
         &:hover,
         &:focus,
         &.focus {
             background-color: transparent;
-            color: white;
+            color: #ffffff;
         }
     }
 }
@@ -224,7 +224,7 @@ $btn-text-full: 14px;
 }
 .btn-blue {
     background-color: #3b5998;
-    color: #fff;
+    color: #ffffff;
     border: 1px solid #3b5998;
 }
 /*+------------------------------------------------------------+
@@ -235,7 +235,7 @@ $btn-text-full: 14px;
  *
  */
 .btn-primary {
-    color: #fff;
+    color: #ffffff;
     background-color: $primary;
     border: 1px solid $primary;
     svg {
@@ -251,7 +251,7 @@ $btn-text-full: 14px;
 
 
 .btn-phantom {
-    color: white;
+    color: #ffffff;
     background-color:transparent;
     border: 1px solid #ffffff;
     &:focus,
@@ -259,7 +259,7 @@ $btn-text-full: 14px;
     &:hover,
     &:active,
     &.active {
-        color: white;
+        color: #ffffff;
         opacity:0.6;
     }
 
@@ -288,7 +288,7 @@ $btn-text-full: 14px;
  opacity: .6;
 
     // svg{
-    //     path{fill:white}
+    //     path{fill:#ffffff}
     // }
 
     }
@@ -309,7 +309,7 @@ $btn-text-full: 14px;
  opacity: .6;
 
     svg{
-        path{fill:white}
+        path{fill:#ffffff}
     }
 
     }
@@ -317,13 +317,13 @@ $btn-text-full: 14px;
 .btn-default {
     background-color: $primary;
     border: 1px solid $primary;
-    color: #fff;
+    color: #ffffff;
     &:focus,
     &.focus,
     &:hover,
     &:active,
     &.active {
-        color: #fff;
+        color: #ffffff;
         background-color: #848686;
         border-color: #848686;
     }
@@ -352,12 +352,12 @@ $btn-text-full: 14px;
     display: flex;
     align-items: center;
     svg{
-        stroke  :#fff;
+        stroke  :#ffffff;
     }
     &:hover, 
     &:focus, 
     &.focus {
-        color: #fff;
+        color: #ffffff;
         text-decoration: none;
     }
 }
@@ -369,7 +369,7 @@ $btn-text-full: 14px;
 	width: 40px;
 	max-width: initial;
 	height: 40px;
-	border: 1px solid black;
+	border: 1px solid #000000;
 	border-radius: 50px;
 	align-content: center;
 	justify-content: center;
@@ -488,7 +488,7 @@ $btn-text-full: 14px;
   }
   .no-focus {
     &:focus {
-      color: #fff;
+      color: #ffffff;
       background-color: $primary;
       border-color: $primary;
     }
@@ -553,19 +553,19 @@ $btn-text-full: 14px;
 .has-light {
     .btn-primary {
         color: $primary;
-        background-color: #fff;
-        border: 1px solid #fff;
+        background-color: #ffffff;
+        border: 1px solid #ffffff;
     }
     .btn-phantom {
-        color: #fff;
+        color: #ffffff;
         background-color: transparent;
-        border: 1px solid #fff;
+        border: 1px solid #ffffff;
     }
     .btn{
-            color: white;
-            border-color: white;
+            color: #ffffff;
+            border-color: #ffffff;
             &:after {
-                background-color: white;
+                background-color: #ffffff;
             }
     }
 }

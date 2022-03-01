@@ -5,7 +5,7 @@ $input-padding-y: 14px;
  +------------------------------------------------------------+*/
 input:focus {
     outline: none;
-    border: 1px solid black;
+    border: 1px solid #000000;
 }
 .form {
     width: 100%;
@@ -17,7 +17,7 @@ fieldset[disabled] .form-control {
     opacity: 1;
 }
 select {
-    background-color: #fff;
+    background-color: #ffffff;
     border-color: #dbdbdb;
     border-radius: 0;
     color: #363636;
@@ -48,7 +48,7 @@ label {
 .input,
 .textarea,
 .select select {
-    background-color: #fff;
+    background-color: #ffffff;
     border-color: #dbdbdb;
     color: #363636;
     max-width: 100%;
@@ -137,7 +137,7 @@ label {
     margin-top: 4px;
 }
 .info-text {
-    color: #757575;
+    color: #808284;
     margin-top: 4px;
     width: 100%;
     float: left;
@@ -208,18 +208,18 @@ label {
 }
 .ok-input {
     label {
-        color: green;
+        color: #5d8074;
     }
     .input {
-        border: 1px solid green;
-        color: green;
+        border: 1px solid #5d8074;
+        color: #5d8074;
     }
     .input-line {
         border-top: 1px solid transparent;
         border-left: 1px solid transparent;
         border-right: 1px solid transparent;
-        border-bottom: 1px solid green;
-        color: green;
+        border-bottom: 1px solid #5d8074;
+        color: #5d8074;
     }
 }
 .disabled-input {
@@ -274,7 +274,7 @@ input::-webkit-input-placeholder {
         margin-top: 1px;
         margin-bottom: 0;
         line-height: 1.1;
-        color: #757575;
+        color: #808284;
         border-radius: 0.25rem;
         transition: all 0.1s ease-in-out;
         pointer-events: none;
@@ -317,7 +317,7 @@ input::-webkit-input-placeholder {
     select:-webkit-autofill:hover,
     select:-webkit-autofill:focus {
       border: 1px solid #eaeaea;
-      -webkit-text-fill-color: black;
+      -webkit-text-fill-color: #000000;
       -webkit-box-shadow: 0 0 0px 1000px #fff inset;
       transition: background-color 5000s ease-in-out 0s;
     }
@@ -520,7 +520,7 @@ $checkbox-svg-brad: 20px;
     left: 7px;
     width: 8px;
     height: 8px;
-    background-color: white;
+    background-color: #ffffff;
     border-radius: 50%;
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
@@ -634,7 +634,7 @@ $svg-size: 16px;
 	.input,
 	select,
 	.textarea {
-		background-color: #fff;
+		background-color: #ffffff;
 		border-color: $primary;
 		color: #363636;
 		max-width: 100%;
@@ -668,7 +668,7 @@ $svg-size: 16px;
 		padding-top: 12px;
 		height: auto;
 		border: none;
-		border-bottom: 1px solid black;
+		border-bottom: 1px solid #000000;
 	}
 	.input::-webkit-input-placeholder {
 		@include font-regular();

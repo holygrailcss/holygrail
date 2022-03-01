@@ -33,7 +33,7 @@
         button {
             @include font-medium();
             border: none;
-            background-color: #fff;
+            background-color: #ffffff;
             border-top: 1px solid #E3E3E3;
             border-bottom: 1px solid #E3E3E3;
             border-left: 1px solid #E3E3E3;
@@ -44,7 +44,7 @@
             -webkit-appearance: initial;
             &:hover {
                 background-color: $primary;
-                color: #fff;
+                color: #ffffff;
                 cursor: pointer;
             }
         }
@@ -57,7 +57,7 @@
         left: 0;
         z-index: 3;
         width: 100%;
-        background-color: #fff;
+        background-color: #ffffff;
         @media (min-width:$break-lg) {
             padding: 0;
             min-height: 144px;
@@ -98,7 +98,7 @@
             width: 30px;
             position: absolute;
             top: calc(50% - 80px);
-            z-index: 30000;
+            z-index: 3000;
             text-align: center;
             opacity: 0;
             transition-delay: 0s;

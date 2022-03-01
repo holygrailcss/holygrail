@@ -196,7 +196,7 @@ a {
     padding: 4px 0;
     margin: 20px 0;
     border-bottom: 2px solid $primary;
-    color: black;
+    color: #000000;
     text-align: left;
     text-decoration: none;
     cursor: pointer;
@@ -275,7 +275,7 @@ a {
     display: block;
     width: 40px;
     height: 40px;
-    color: white;
+    color: #ffffff;
     &::after {
         border: 1px solid $primary;
         border-radius: 0px;
@@ -297,18 +297,18 @@ a {
 
 .has-light {
     .link1 {
-        color: white;
+        color: #ffffff;
         &:after {
-            background-color: white;
+            background-color: #ffffff;
         }
     }
     .link4 {
-        color: white;
+        color: #ffffff;
         &:after {
-            background-color: white;
+            background-color: #ffffff;
         }
         .link4-underline {
-            background: #fff;
+            background: #ffffff;
         }
     }
     .link5 {

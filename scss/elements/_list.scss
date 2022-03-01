@@ -145,7 +145,7 @@ ul.h-size-selector {
         content: "";
         width: 2px;
         height: 2px;
-        background-color: black;
+        background-color: #000000;
         position: absolute;
         left: 0;
         bottom: 10px;
@@ -167,7 +167,7 @@ ul.h-size-selector {
   left: -1px;
 
   &.is-active,&:hover{
-    border: 1px solid black;
+    border: 1px solid #000000;
     opacity: 1;
     cursor: pointer;
   }

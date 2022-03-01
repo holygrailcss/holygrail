@@ -10,7 +10,7 @@
         position: absolute;
         content: '';
         height: 1px;
-        background-color: black;
+        background-color: #000000;
         width: 16px;
         transform: rotate(136deg);
         left: 4px;
@@ -23,7 +23,7 @@
         height: 1px;
         top: 10px;
         transform: rotate(50deg);
-        background-color: black;
+        background-color: #000000;
       }
     [type="checkbox"]:not(:checked)+label,
     [type="checkbox"]:checked+label {
@@ -167,7 +167,7 @@
         line-height: normal;
     }
     .checkbox-circle {
-        background: black;
+        background: #000000;
         width: 20px;
         height: 20px;
         border-radius: 50%;
@@ -251,7 +251,7 @@
       left: 7px;
       width: 10px;
       height: 10px;
-      background-color: black;
+      background-color: #000000;
       border-radius: 50%;
       -webkit-transition: all .2s;
       transition: all .2s;
@@ -306,7 +306,7 @@ input[type='radio']:focus + label::before {
    display: none;
 }
 &.checkbox-radio [type=radio]:checked+label .border-1  {
-border: 1px solid black;
+border: 1px solid #000000;
 }
 }
 .check-center{
@@ -327,7 +327,7 @@ transform: translateY(-50%);
     padding-left:calc(24px + 16px) ;
   }
   &.checkbox-radio [type=radio]:checked+label .border-1  {
-    border: 1px solid black;
+    border: 1px solid #000000;
     }
 }
 .check-bleed{
@@ -357,7 +357,7 @@ left: 16px;
     padding-left:calc(24px + 16px) ;
   }
   &.checkbox-radio [type=radio]:checked+label .border-1  {
-    border: 1px solid black;
+    border: 1px solid #000000;
     }
 }
 .check-clear{
@@ -377,12 +377,12 @@ left: 0;
     padding-left:calc(24px + 16px) ;
   }
   &.checkbox-radio [type=radio]:checked+label .border-1  {
-    border: 1px solid black;
+    border: 1px solid #000000;
     }
 }
 .is-active{
   &.checkbox-radio .border-1  {
-    border: 1px solid black;
+    border: 1px solid #000000;
     }
     &.checkbox-radio [type=radio]+label .ico-radio {
       opacity: 1;

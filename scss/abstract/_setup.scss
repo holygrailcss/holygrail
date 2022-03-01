@@ -11,7 +11,7 @@ $colorsGuide: (
   gray-80: #2e2e2e,
   gray-70: #464646,
   gray-60: #5d5d5d,
-  gray-50: #757575,
+  gray-50: #808284,
   gray-40: #909090,
   gray-30: #acacac,
   gray-20: #c7c7c7,
@@ -36,7 +36,7 @@ $colorsGuide: (
    error-primary:#D0021B ,
 
 
-   primary-guide:#121F2A,
+   primary-guide:#363636,
    secondary-guide:#6759bb,
    ternary-guide:#6759bb,
   )!default;
@@ -75,10 +75,10 @@ $colorsGuide: (
  $color-10 : nth($colorsGuide, 22) !default;
  $color-11 : nth($colorsGuide, 23) !default;
 
- $primary:#000 !default;
+ $primary:#000000!default;
  $error: #fd675e!default;
 
-$primary-guide:#121F2A !default;
+$primary-guide:#363636 !default;
 $secondary-guide:#6759bb !default;
 $ternary-guide:#6759bb !default;
 
