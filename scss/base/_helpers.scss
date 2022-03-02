@@ -101,6 +101,17 @@ hr {
     display: inline-block;
     vertical-align: text-top;
 }
+
+.ico{
+    &.ico-l{
+        display: flex;
+        align-items: center;
+        svg-icon{
+            margin-right: 16px;
+        }
+    }
+}
+
 .hg-status {
     position: relative;
     padding-left: 16px;

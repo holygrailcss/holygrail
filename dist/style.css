@@ -4375,6 +4375,15 @@ hr {
   vertical-align: text-top;
 }
 
+.ico.ico-l {
+  display: flex;
+  align-items: center;
+}
+
+.ico.ico-l svg-icon {
+  margin-right: 16px;
+}
+
 .hg-status {
   position: relative;
   padding-left: 16px;
@@ -7563,6 +7572,14 @@ ul.list-mini > li:after {
   transform: rotate(45deg);
 }
 
+.form-input-label .validation-error-messages {
+  color: #f54637;
+}
+
+.form-input-label .validation-error-messages svg path {
+  fill: #f54637;
+}
+
 .form-input-label.datalist input:focus + svg {
   transform: rotate(-180deg);
   transition: 0.6s;
@@ -7582,10 +7599,18 @@ ul.list-mini > li:after {
   transition: 0.6s;
 }
 
+.form-input-label.datalist .validation-error-messages {
+  color: #f54637;
+}
+
 .form-input-label.datalist .validation-error-messages svg {
   position: relative;
   top: auto;
   right: auto;
+}
+
+.form-input-label.datalist .validation-error-messages svg path {
+  fill: #f54637;
 }
 
 .is-rtl .form-input-label.datalist svg {
@@ -8559,13 +8584,17 @@ ZEN:
   height: 100%;
 }
 
+.card9-wrap .rat-content .card9-add {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
 .card9-wrap .rat-content .btn-group {
   display: flex;
   flex-wrap: wrap;
 }
 
 .card9-wrap .rat-content:hover .card9-add {
-  opacity: 1;
+  background-color: white;
 }
 
 .is-active .card9-add {
@@ -9395,3 +9424,5 @@ ZEN:
   padding: 16px 0;
   border-top: 1px solid #eaeaea;
 }
+
+/*# sourceMappingURL=style.css.map */
