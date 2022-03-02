@@ -6011,6 +6011,12 @@ label {
   }
 }
 
+.input.validation-error,
+.textarea.validation-error,
+.select select.validation-error {
+  border-color: red;
+}
+
 .input-line {
   border-top: 1px solid transparent;
   border-left: 1px solid transparent;
@@ -7583,6 +7589,10 @@ ul.list-mini > li:after {
 .form-input-label.datalist input:focus + svg {
   transform: rotate(-180deg);
   transition: 0.6s;
+}
+
+.form-input-label.datalist input.validation-error + svg path {
+  fill: red;
 }
 
 .form-input-label.datalist input::-webkit-list-button,

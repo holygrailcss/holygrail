@@ -58,6 +58,9 @@ label {
     @media (min-width: $break-sm) {
         font-size: 14px;
     }
+    &.validation-error{
+        border-color: red;
+    }
 }
 .input-line {
     border-top: 1px solid transparent;
