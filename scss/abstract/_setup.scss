@@ -23,17 +23,17 @@ $colorsGuide: (
   linkHover: #999,
 
 
-  primary: #000,
+  primary: #000000,
   color-1: #e6f5ff,
   color-2: #b5e6c8,
   color-3: #fef7c1,
   color-4: #fadfc1,
   color-5: #fcd8cd,
 
-   error: #fd675e,
-   sales: #fa3b2c,
+   error: #F54637,
+   sales: #F54637,
    Sales-Variant: #e43628,
-   error-primary:#D0021B ,
+   error-primary:#F54637 ,
 
 
    primary-guide:#363636,
@@ -287,7 +287,8 @@ mb-24: (24px, 24px, 24px, 24px),
 mb-32: (32px, 32px, 32px, 32px),
 mb-40: (40px, 40px, 40px, 40px),
 mb-48: (48px, 48px, 48px, 48px) ,
-mb-100: (100px, 100px, 100px, 100px) 
+mb-100: (100px, 100px, 100px, 100px),
+mbr-20-40: (20px, 40px, 40px, 40px) 
 )!default;
 $ml: "margin-left";
 $margin-left: /* name : margen bottom*/
@@ -303,6 +304,7 @@ $p: "padding";
 $padding: /* name : padding  top*/
 (
 p-body: (16px, 16px, 40px, 40px),
+p-0: (0px, 0px, 0px, 0px),
 p-4: (4px, 4px, 4px, 4px),
 p-8: (8px, 8px, 8px, 8px), 
 p-16: (16px, 16px, 16px, 16px),
@@ -314,8 +316,7 @@ p-48: (20px, 50px, 50px, 50px)
 $py: "padding";
 $padding-y: /* name : padding  arriba y abajo*/
 (
-py-8: (8px 0, 8px 0, 8px 0, 8px 0),  
-py-12: (12px 0, 12px 0, 12px 0, 12px 0),  
+py-8: (8px 0, 8px 0, 8px 0, 8px 0),
 py-16: (16px 0, 16px 0, 16px 0, 16px 0),  
 py-24: (10px 0, 24px 0, 24px 0, 24px 0),
 py-32: (32px 0, 32px 0, 32px 0, 32px 0),
@@ -358,6 +359,7 @@ $pl: "padding-left";
 $padding-left: /* name : padding  bottom*/
 (
 pl-body: (16px, 16px, 40px, 40px),
+pl-0: (0px, 0px, 0px, 0px),
 pl-8: (8px, 8px, 8px, 8px),
 pl-16: (16px, 16px, 16px, 16px),
 pl-24: (24px, 24px, 24px, 24px),

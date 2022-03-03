@@ -271,10 +271,10 @@
 
 .checkbox-item{
 	&.is-error{
-		color:#fa3b2c;
+		color:#F54637;
     [type=checkbox]:checked+label:before, 
     [type=checkbox]:not(:checked)+label:before {
-		border: 1px solid #fa3b2c;
+		border: 1px solid #F54637;
 	}
 	}
 }

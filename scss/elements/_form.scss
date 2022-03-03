@@ -20,7 +20,7 @@ select {
     background-color: #ffffff;
     border-color: #dbdbdb;
     border-radius: 0;
-    color: #363636;
+    color: #000000;
 }
 label {
     font-size: 14px;
@@ -50,7 +50,7 @@ label {
 .select select {
     background-color: #ffffff;
     border-color: #dbdbdb;
-    color: #363636;
+    color: #000000;
     max-width: 100%;
     width: 100%;
     font-size: 16px;
@@ -84,7 +84,7 @@ label {
 }
 .inputmini {
     border-color: #ccc;
-    color: #363636;
+    color: #000000;
     max-width: 100%;
     width: 58px;
     font-size: 14px;
@@ -140,7 +140,7 @@ label {
     margin-top: 4px;
 }
 .info-text {
-    color: #808284;
+    color: #8E8E8E;
     margin-top: 4px;
     width: 100%;
     float: left;
@@ -211,18 +211,18 @@ label {
 }
 .ok-input {
     label {
-        color: #5d8074;
+        color: #8E8E8E;
     }
     .input {
-        border: 1px solid #5d8074;
-        color: #5d8074;
+        border: 1px solid #8E8E8E;
+        color: #8E8E8E;
     }
     .input-line {
         border-top: 1px solid transparent;
         border-left: 1px solid transparent;
         border-right: 1px solid transparent;
-        border-bottom: 1px solid #5d8074;
-        color: #5d8074;
+        border-bottom: 1px solid #8E8E8E;
+        color: #8E8E8E;
     }
 }
 .disabled-input {
@@ -253,7 +253,7 @@ label {
     }
 }
 input::-webkit-input-placeholder {
-    color: #aaa;
+    color: #E3E3E3;
     transform: translate3d(0, 0, 0);
 }
 .form-input-label {
@@ -277,7 +277,7 @@ input::-webkit-input-placeholder {
         margin-top: 1px;
         margin-bottom: 0;
         line-height: 1.1;
-        color: #808284;
+        color: #8E8E8E;
         border-radius: 0.25rem;
         transition: all 0.1s ease-in-out;
         pointer-events: none;
@@ -302,7 +302,7 @@ input::-webkit-input-placeholder {
         padding-top: calc(#{$input-padding-y} / 3 + 1px);
         padding-bottom: calc(#{$input-padding-y} / 3);
         font-size: 12px;
-        color: #777;
+        color: #8E8E8E;
     }
     & input::-webkit-list-button,
     & input::-webkit-calendar-picker-indicator{
@@ -321,7 +321,7 @@ input::-webkit-input-placeholder {
     select:-webkit-autofill:focus {
       border: 1px solid #eaeaea;
       -webkit-text-fill-color: #000000;
-      -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+      -webkit-box-shadow: 0 0 0px 1000px #ffffff inset;
       transition: background-color 5000s ease-in-out 0s;
     }
 
@@ -334,7 +334,7 @@ input::-webkit-input-placeholder {
         display: none;
     }
     .form-input-label input:-ms-input-placeholder {
-        color: #777;
+        color: #8E8E8E;
     }
 }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -342,7 +342,7 @@ input::-webkit-input-placeholder {
         display: none;
     }
     .form-input-label input:-ms-input-placeholder {
-        color: #777 !important;
+        color: #8E8E8E !important;
     }
 }
 /*+------------------------------------------------------------+
@@ -414,7 +414,7 @@ input::-webkit-input-placeholder {
         padding: 0 40px;
     }
     &:not(.is-multiple):not(.is-loading):hover::after {
-        border-color: #363636;
+        border-color: #000000;
     }
     &.select-label {
         select {
@@ -639,7 +639,7 @@ $svg-size: 16px;
 	.textarea {
 		background-color: #ffffff;
 		border-color: $primary;
-		color: #363636;
+		color: #000000;
 		max-width: 100%;
 		width: 100%;
 		font-size: 14px;
