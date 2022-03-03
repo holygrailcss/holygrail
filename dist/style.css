@@ -8605,6 +8605,7 @@ ZEN:
 
 .card9-wrap .rat-content:hover .card9-add {
   background-color: white;
+  opacity: 1;
 }
 
 .is-active .card9-add {
