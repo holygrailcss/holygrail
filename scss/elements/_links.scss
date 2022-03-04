@@ -268,14 +268,14 @@ a {
     z-index: 1;
     cursor: pointer;
     border-radius: 50%;
-    border: 1px solid #ccc;
+    border: 1px solid #E3E3E3;
 }
 .inner-button {
     margin-top: -1px;
     display: block;
     width: 40px;
     height: 40px;
-    color: #ffffff;
+    color: #FFFFFF;
     &::after {
         border: 1px solid $primary;
         border-radius: 0px;
@@ -297,43 +297,43 @@ a {
 
 .has-light {
     .link1 {
-        color: #ffffff;
+        color: #FFFFFF;
         &:after {
-            background-color: #ffffff;
+            background-color: #FFFFFF;
         }
     }
     .link4 {
-        color: #ffffff;
+        color: #FFFFFF;
         &:after {
-            background-color: #ffffff;
+            background-color: #FFFFFF;
         }
         .link4-underline {
-            background: #ffffff;
+            background: #FFFFFF;
         }
     }
     .link5 {
-        color: #ffffff;
+        color: #FFFFFF;
         &:after {
-            background: #ffffff;
+            background: #FFFFFF;
         }
     }
     .link6 {
-        color: #ffffff;
-        border-bottom: 2px solid #ffffff;
+        color: #FFFFFF;
+        border-bottom: 2px solid #FFFFFF;
     }
     .link7 {
-        color: #ffffff;
+        color: #FFFFFF;
         &:after {
-            background: #ffffff;
+            background: #FFFFFF;
         }
     }
     .link8{
-        color: #ffffff;
+        color: #FFFFFF;
         }
     .link9 {
-        color: #ffffff;
+        color: #FFFFFF;
         &:after {
-            background: #ffffff;
+            background: #FFFFFF;
         }
     }
 }

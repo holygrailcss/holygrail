@@ -206,15 +206,15 @@ $btn-text-full: 14px;
         opacity: 0.2;
     }
     .has-light & {
-        color: #ffffff;
+        color: #FFFFFF;
         &:after {
-            background-color: #ffffff;
+            background-color: #FFFFFF;
         }
         &:hover,
         &:focus,
         &.focus {
             background-color: transparent;
-            color: #ffffff;
+            color: #FFFFFF;
         }
     }
 }
@@ -224,7 +224,7 @@ $btn-text-full: 14px;
 }
 .btn-blue {
     background-color: #3b5998;
-    color: #ffffff;
+    color: #FFFFFF;
     border: 1px solid #3b5998;
 }
 /*+------------------------------------------------------------+
@@ -235,31 +235,31 @@ $btn-text-full: 14px;
  *
  */
 .btn-primary {
-    color: #ffffff;
+    color: #FFFFFF;
     background-color: $primary;
     border: 1px solid $primary;
     svg {
         g{
-            fill: #ffffff;
-            stroke: #ffffff;
+            fill: #FFFFFF;
+            stroke: #FFFFFF;
         }
         circle{
-            stroke: #ffffff;
+            stroke: #FFFFFF;
         }
     }
 }
 
 
 .btn-phantom {
-    color: #ffffff;
+    color: #FFFFFF;
     background-color:transparent;
-    border: 1px solid #ffffff;
+    border: 1px solid #FFFFFF;
     &:focus,
     &.focus,
     &:hover,
     &:active,
     &.active {
-        color: #ffffff;
+        color: #FFFFFF;
         opacity:0.6;
     }
 
@@ -288,7 +288,7 @@ $btn-text-full: 14px;
  opacity: .6;
 
     // svg{
-    //     path{fill:#ffffff}
+    //     path{fill:#FFFFFF}
     // }
 
     }
@@ -309,7 +309,7 @@ $btn-text-full: 14px;
  opacity: .6;
 
     svg{
-        path{fill:#ffffff}
+        path{fill:#FFFFFF}
     }
 
     }
@@ -317,15 +317,15 @@ $btn-text-full: 14px;
 .btn-default {
     background-color: $primary;
     border: 1px solid $primary;
-    color: #ffffff;
+    color: #FFFFFF;
     &:focus,
     &.focus,
     &:hover,
     &:active,
     &.active {
-        color: #ffffff;
-        background-color: #848686;
-        border-color: #848686;
+        color: #FFFFFF;
+        background-color: #8E8E8E;
+        border-color: #8E8E8E;
     }
 }
 .btn-link {
@@ -352,12 +352,12 @@ $btn-text-full: 14px;
     display: flex;
     align-items: center;
     svg{
-        stroke  :#ffffff;
+        stroke  :#FFFFFF;
     }
     &:hover, 
     &:focus, 
     &.focus {
-        color: #ffffff;
+        color: #FFFFFF;
         text-decoration: none;
     }
 }
@@ -488,7 +488,7 @@ $btn-text-full: 14px;
   }
   .no-focus {
     &:focus {
-      color: #ffffff;
+      color: #FFFFFF;
       background-color: $primary;
       border-color: $primary;
     }
@@ -553,19 +553,19 @@ $btn-text-full: 14px;
 .has-light {
     .btn-primary {
         color: $primary;
-        background-color: #ffffff;
-        border: 1px solid #ffffff;
+        background-color: #FFFFFF;
+        border: 1px solid #FFFFFF;
     }
     .btn-phantom {
-        color: #ffffff;
+        color: #FFFFFF;
         background-color: transparent;
-        border: 1px solid #ffffff;
+        border: 1px solid #FFFFFF;
     }
     .btn{
-            color: #ffffff;
-            border-color: #ffffff;
+            color: #FFFFFF;
+            border-color: #FFFFFF;
             &:after {
-                background-color: #ffffff;
+                background-color: #FFFFFF;
             }
     }
 }

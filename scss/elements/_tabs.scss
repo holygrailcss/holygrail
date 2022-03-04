@@ -21,7 +21,7 @@
     }
     ul {
         align-items: center;
-        border-bottom-color: #dbdbdb;
+        border-bottom-color: #E3E3E3;
         border-bottom-style: solid;
         border-bottom-width: 1px;
         display: flex;
@@ -53,7 +53,7 @@
     }
     a {
         align-items: center;
-        border-bottom-color: #dbdbdb;
+        border-bottom-color: #E3E3E3;
         border-bottom-style: solid;
         border-bottom-width: 1px;
         color: $primary;
@@ -73,7 +73,7 @@
     }
     span {
         align-items: center;
-        border-bottom-color: #dbdbdb;
+        border-bottom-color: #E3E3E3;
         border-bottom-style: solid;
         border-bottom-width: 1px;
         color: $primary;
@@ -134,7 +134,7 @@
     border: none;
     position: relative;
     width: 100%;
-    background-color: #f5f5f5;
+    background-color: #F0F0F0;
     ul {
         border: none;
     }
@@ -147,7 +147,7 @@
     span {
         @include font-medium;
         color: #8E8E8E;
-        border-color: #f5f5f5;
+        border-color: #F0F0F0;
         position: relative;
         &:hover {
             color: $primary;
@@ -164,7 +164,7 @@
     display: inline-block;
     ul {
         border: none;
-        background-color: #ffffff;
+        background-color: #FFFFFF;
         padding: 0 14px;
         display: inline-flex;
         font-family: $font-family-regular;
@@ -184,7 +184,7 @@
         right: 0;
         width: 1px;
         height: 20px;
-        background-color: #ccc;
+        background-color: #E3E3E3;
     }
     li a:hover {
         border: none;
@@ -204,7 +204,7 @@
     flex-wrap: nowrap;
     align-items: flex-end;
         ul {
-            border: 1px solid #eaeaea;
+            border: 1px solid #E3E3E3;
         }
     }
 }

@@ -681,8 +681,8 @@ $spriteHeight:400;
 
 
 // RGBA fallback
-// @include rgba(background-color, black, 0.5, white);
-@mixin rgba($property, $background: black, $opacity: 0.75, $mix: white) {
+// @include rgba(background-color, #000000, 0.5, white);
+@mixin rgba($property, $background: #000000, $opacity: 0.75, $mix: white) {
     #{$property}: mix($background, $mix, $opacity * 100%);
     #{$property}: rgba($background, $opacity);
 }

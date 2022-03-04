@@ -1,4 +1,4 @@
-$border-gray: #eaeaea;
+$border-gray: #E3E3E3;
 
 .box-intro-feel {
     display: flex;
@@ -18,7 +18,7 @@ $border-gray: #eaeaea;
 	text-align: center;
 }
 .qr-box {
-	background: #ffffff;
+	background: #FFFFFF;
 	width: 100%;
 	max-width: 150px;
 	color: #8E8E8E;
@@ -48,7 +48,7 @@ $border-gray: #eaeaea;
 	padding:  24px;
     transition: all ease .2s;
    &:hover {
-       background-color: #fafafa;
+       background-color: #F0F0F0;
        cursor: pointer;
     .feel-close{
 		transform: rotate(136deg);
@@ -139,7 +139,7 @@ $border-gray: #eaeaea;
             opacity: 1;
 			height: 90vh;
             z-index: 20;
-            background: #fafafa;
+            background: #F0F0F0;
 			@media (min-width: 992px) {
 				height: 369px;
 			}
@@ -153,7 +153,7 @@ $border-gray: #eaeaea;
             opacity: 1;
             height: 0;
             z-index: 20;
-            background: #fafafa;
+            background: #F0F0F0;
        
         }
     }
@@ -210,7 +210,7 @@ $border-gray: #eaeaea;
 .feel-slide{
     padding: 8px;
     width: 300px;
-    background-color: #eaeaea;
+    background-color: #E3E3E3;
     margin-right: 8px;
 float: left;
 }
@@ -250,10 +250,10 @@ float: left;
     padding:24px; 
 }
 .bg-feel{
-	background-color: #F8F7F5;
+	background-color: #F0F0F0;
 }
 .bg-white{
-	background-color: #ffffff;
+	background-color: #FFFFFF;
 }
 .container-slider-native{
     overflow: auto;

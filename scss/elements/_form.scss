@@ -17,8 +17,8 @@ fieldset[disabled] .form-control {
     opacity: 1;
 }
 select {
-    background-color: #ffffff;
-    border-color: #dbdbdb;
+    background-color: #FFFFFF;
+    border-color: #E3E3E3;
     border-radius: 0;
     color: #000000;
 }
@@ -48,8 +48,8 @@ label {
 .input,
 .textarea,
 .select select {
-    background-color: #ffffff;
-    border-color: #dbdbdb;
+    background-color: #FFFFFF;
+    border-color: #E3E3E3;
     color: #000000;
     max-width: 100%;
     width: 100%;
@@ -73,7 +73,7 @@ label {
 .input-notouch {
     @include font-medium();
     pointer-events: none;
-    border-color: #eaeaea;
+    border-color: #E3E3E3;
     padding: 24px 0;
     height: auto;
 }
@@ -83,13 +83,13 @@ label {
     box-sizing: border-box;
 }
 .inputmini {
-    border-color: #ccc;
+    border-color: #E3E3E3;
     color: #000000;
     max-width: 100%;
     width: 58px;
     font-size: 14px;
     align-items: center;
-    border: 1px solid #ccc;
+    border: 1px solid #E3E3E3;
     box-shadow: none;
     display: inline-flex;
     height: 34px;
@@ -232,7 +232,7 @@ label {
     position: relative;
     height: 30px;
     width: 100%;
-    border: solid #eaeaea;
+    border: solid #E3E3E3;
     border-width: 1px 1px 0px 1px;
     padding: 10px;
     span {
@@ -249,7 +249,7 @@ label {
         padding-left: 200px;
     }
     &:last-child {
-        border-bottom: 1px solid #eaeaea;
+        border-bottom: 1px solid #E3E3E3;
     }
 }
 input::-webkit-input-placeholder {
@@ -319,9 +319,9 @@ input::-webkit-input-placeholder {
     select:-webkit-autofill,
     select:-webkit-autofill:hover,
     select:-webkit-autofill:focus {
-      border: 1px solid #eaeaea;
+      border: 1px solid #E3E3E3;
       -webkit-text-fill-color: #000000;
-      -webkit-box-shadow: 0 0 0px 1000px #ffffff inset;
+      -webkit-box-shadow: 0 0 0px 1000px #FFFFFF inset;
       transition: background-color 5000s ease-in-out 0s;
     }
 
@@ -401,7 +401,7 @@ input::-webkit-input-placeholder {
     }
     select[disabled]:hover,
     fieldset[disabled] select:hover {
-        border-color: #f5f5f5;
+        border-color: #F0F0F0;
     }
     select:not([multiple]) {
         padding-right: 45px;
@@ -424,7 +424,7 @@ input::-webkit-input-placeholder {
     &.select-box{
 		height: auto;
 		select{
-			background-color: #eaeaea;
+			background-color: #E3E3E3;
 			min-width: 24px;
 			width: 100%;
 			height: 24px;
@@ -474,83 +474,6 @@ input::-webkit-input-placeholder {
             }
         }
     }
-}
-$checkbox-svg-pd: 20px;
-$checkbox-svg-brad: 20px;
-.checkbox-svg {
-    svg {
-        margin: 0 auto;
-        width: 50px;
-    }
-}
-//display flex
-.checkbox-svg-label {
-    background: #ffffff;
-    border: 1px solid #4bcac5;
-    border-radius: $checkbox-svg-brad;
-    filter: grayscale(100%);
-    display: flex;
-    width: 100%;
-    padding: $checkbox-svg-pd;
-    box-sizing: border-box;
-    transition: all 0.2s ease;
-    opacity: 0.5;
-    min-height: 200px;
-}
-.checkbox-svg [type="radio"] {
-    position: absolute;
-    left: -9999px;
-}
-.checkbox-svg-ico {
-    position: absolute;
-    box-sizing: border-box;
-    width: 24px;
-    height: 24px;
-    top: $checkbox-svg-pd;
-    right: $checkbox-svg-pd;
-    left: auto;
-    border: 1px solid #4bcac5;
-    background-color: #4bcac5;
-    outline: 0;
-    vertical-align: top;
-    margin: 0;
-    border-radius: 50%;
-    opacity: 1;
-}
-.ico-radio {
-    position: absolute;
-    top: 7px;
-    left: 7px;
-    width: 8px;
-    height: 8px;
-    background-color: #ffffff;
-    border-radius: 50%;
-    -webkit-transition: all 0.2s;
-    transition: all 0.2s;
-}
-.checkbox-svg [type="radio"]:checked,
-.checkbox-svg :hover {
-    & + .checkbox-svg-label {
-        opacity: 1;
-        cursor: pointer;
-        filter: grayscale(0);
-        box-shadow: 6px 6px 17px 0 rgba(74, 111, 110, 0.27);
-    }
-    & + label .ico-radio {
-        opacity: 1;
-        transform: scale(1);
-    }
-    label .checkbox-svg-ico {
-        opacity: 1;
-    }
-    & + label .ico-radio {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-.checkbox-svg [type="radio"]:not(:checked) + label .ico-radio {
-    opacity: 0;
-    transform: scale(0);
 }
 
 $padding-btn: 14px;
@@ -637,7 +560,7 @@ $svg-size: 16px;
 	.input,
 	select,
 	.textarea {
-		background-color: #ffffff;
+		background-color: #FFFFFF;
 		border-color: $primary;
 		color: #000000;
 		max-width: 100%;
