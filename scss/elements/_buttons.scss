@@ -10,6 +10,7 @@
 .btn {
     position: relative;
     display: inline-block;
+    border-radius: 8px;
     line-height: 1;
     text-align: center;
     vertical-align: middle;
@@ -162,7 +163,7 @@ $btn-text-full: 14px;
     position: relative;
     text-align: center;
     outline: none;
-    padding: 4px 0;
+    padding: 0;
     text-align: center;
     cursor: pointer;
     line-height: 1;
