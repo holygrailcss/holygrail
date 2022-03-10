@@ -21,7 +21,7 @@
     }
     ul {
         align-items: center;
-        border-bottom-color: #E3E3E3;
+        border-bottom-color: $gray-10;
         border-bottom-style: solid;
         border-bottom-width: 1px;
         display: flex;
@@ -53,7 +53,7 @@
     }
     a {
         align-items: center;
-        border-bottom-color: #E3E3E3;
+        border-bottom-color: $gray-10;
         border-bottom-style: solid;
         border-bottom-width: 1px;
         color: $primary;
@@ -73,7 +73,7 @@
     }
     span {
         align-items: center;
-        border-bottom-color: #E3E3E3;
+        border-bottom-color: $gray-10;
         border-bottom-style: solid;
         border-bottom-width: 1px;
         color: $primary;
@@ -108,7 +108,7 @@
                 &:after {
                     content: "";
                     width: 100%;
-                    background: #000000;
+                    background: $primary;
                     height: 2px;
                     position: absolute;
                     bottom: -4px;
@@ -120,7 +120,7 @@
             &:after {
                 content: "";
                 width: 100%;
-                background: #000000;
+                background: $primary;
                 height: 2px;
                 position: absolute;
                 bottom: -4px;
@@ -134,7 +134,7 @@
     border: none;
     position: relative;
     width: 100%;
-    background-color: #F0F0F0;
+    background-color: $white-smoke;
     ul {
         border: none;
     }
@@ -146,8 +146,8 @@
     a,
     span {
         @include font-medium;
-        color: #8E8E8E;
-        border-color: #F0F0F0;
+        color: $dark-grey;
+        border-color: $white-smoke;
         position: relative;
         &:hover {
             color: $primary;
@@ -164,7 +164,7 @@
     display: inline-block;
     ul {
         border: none;
-        background-color: #FFFFFF;
+        background-color: $color-1;
         padding: 0 14px;
         display: inline-flex;
         font-family: $font-family-regular;
@@ -184,7 +184,7 @@
         right: 0;
         width: 1px;
         height: 20px;
-        background-color: #E3E3E3;
+        background-color: $gray-10;
     }
     li a:hover {
         border: none;
@@ -204,7 +204,7 @@
     flex-wrap: nowrap;
     align-items: flex-end;
         ul {
-            border: 1px solid #E3E3E3;
+            border: 1px solid $gray-10;
         }
     }
 }

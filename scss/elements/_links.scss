@@ -196,7 +196,7 @@ a {
     padding: 4px 0;
     margin: 20px 0;
     border-bottom: 2px solid $primary;
-    color: #000000;
+    color: $primary;
     text-align: left;
     text-decoration: none;
     cursor: pointer;
@@ -268,14 +268,14 @@ a {
     z-index: 1;
     cursor: pointer;
     border-radius: 50%;
-    border: 1px solid #E3E3E3;
+    border: 1px solid $gray-10;
 }
 .inner-button {
     margin-top: -1px;
     display: block;
     width: 40px;
     height: 40px;
-    color: #FFFFFF;
+    color: $color-1;
     &::after {
         border: 1px solid $primary;
         border-radius: 0px;
@@ -297,43 +297,43 @@ a {
 
 .has-light {
     .link1 {
-        color: #FFFFFF;
+        color: $color-1;
         &:after {
-            background-color: #FFFFFF;
+            background-color: $color-1;
         }
     }
     .link4 {
-        color: #FFFFFF;
+        color: $color-1;
         &:after {
-            background-color: #FFFFFF;
+            background-color: $color-1;
         }
         .link4-underline {
-            background: #FFFFFF;
+            background: $color-1;
         }
     }
     .link5 {
-        color: #FFFFFF;
+        color: $color-1;
         &:after {
-            background: #FFFFFF;
+            background: $color-1;
         }
     }
     .link6 {
-        color: #FFFFFF;
-        border-bottom: 2px solid #FFFFFF;
+        color: $color-1;
+        border-bottom: 2px solid $color-1;
     }
     .link7 {
-        color: #FFFFFF;
+        color: $color-1;
         &:after {
-            background: #FFFFFF;
+            background: $color-1;
         }
     }
     .link8{
-        color: #FFFFFF;
+        color: $color-1;
         }
     .link9 {
-        color: #FFFFFF;
+        color: $color-1;
         &:after {
-            background: #FFFFFF;
+            background: $color-1;
         }
     }
 }

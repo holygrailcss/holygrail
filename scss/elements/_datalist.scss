@@ -1,9 +1,9 @@
 .form-input-label {
     .validation-error-messages {
-        color: #f54637;
+        color: $error;
         svg {
             path{
-                fill: #f54637;
+                fill: $error;
             }
         }
     }
@@ -30,13 +30,13 @@
             transition: 0.6s;
         }
         .validation-error-messages {
-            color: #f54637;
+            color: $error;
             svg {
                 position: relative;
                 top: auto;
                 right: auto;
                 path{
-                    fill: #f54637;
+                    fill: $error;
                 }
             }
         }

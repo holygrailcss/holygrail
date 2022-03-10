@@ -32,7 +32,7 @@ $colorsGuide: (
 
    error: #F54637,
    sales: #F54637,
-   Sales-Variant: #e43628,
+   Sales-Variant: #F54637,
    error-primary:#F54637 ,
 
 
@@ -76,7 +76,8 @@ $colorsGuide: (
  $color-11 : nth($colorsGuide, 23) !default;
 
  $primary:#000000!default;
- $error: #fd675e!default;
+ $dark-grey: #8E8E8E;
+ $error: #F54637!default;
 
 $primary-guide:#363636 !default;
 $secondary-guide:#6759bb !default;

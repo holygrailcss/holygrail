@@ -15,13 +15,13 @@
             font-size: 16px;
             line-height: 1.2;
             letter-spacing: 0.5px;
-            color: #8E8E8E;
+            color: $dark-grey;
             margin-top: 5px;
         }
 
         div {
             height: 2px;
-            background: #E3E3E3;
+            background: $gray-10;
             flex-grow: 1;
         }
 
