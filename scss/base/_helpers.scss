@@ -17,10 +17,10 @@
 
 
 .c-gray {
-    color: $dark-grey;
+    color: $c-dark-grey;
 }
 .second-color {
-    color: $dark-grey;
+    color: $c-dark-grey;
 }
 .is-info {
     color: #1A32A4;
@@ -31,7 +31,7 @@
     background-color: $white-smoke;
 }
 .bg-clear {
-    background-color: $color-1;
+    background-color: $c-white;
 }
 .bg-cream {
     background-color: $white-smoke;
@@ -78,7 +78,7 @@
 }
 hr {
     width: 100%;
-    border-top: 1px solid $gray-10;
+    border-top: 1px solid $c-middle-grey;
     border-bottom: 1px solid transparent;
 }
 .only-mobile {
@@ -127,9 +127,9 @@ hr {
     }
 }
 .hg-status-a {
-    color: $error;
+    color: $c-error;
     &:before {
-        background-color: $error;
+        background-color: $c-error;
     }
 }
 .hg-status-b {
@@ -139,15 +139,15 @@ hr {
     }
 }
 .hg-status-c {
-    color: $error;
+    color: $c-error;
     &:before {
-        background-color: $error;
+        background-color: $c-error;
     }
 }
 .hg-status-d {
-    color: $dark-grey;
+    color: $c-dark-grey;
     &:before {
-        background-color: $dark-grey;
+        background-color: $c-dark-grey;
     }
 }
 //visible a partir de sm
@@ -334,7 +334,7 @@ strong {
 }
 
 .p-view {
-    background-color: $color-1;
+    background-color: $c-white;
     position: absolute;
     width: 100%;
     top: 0;
@@ -344,7 +344,7 @@ strong {
 }
 .p-view\:sm {
     @media (max-width: #{$break-sm - 1} ){
-        background-color: $color-1;
+        background-color: $c-white;
         position: absolute;
         width: 100%;
         top: 0;
@@ -367,23 +367,23 @@ strong {
     -webkit-overflow-scrolling: touch;
 }
 .scrollbar::-webkit-scrollbar {
-    background-color: $color-1;
+    background-color: $c-white;
     width: 16px;
 }
 .ov-custom{
     &::-webkit-scrollbar-track {
-        background-color: $color-1;
+        background-color: $c-white;
     }
     &::-webkit-scrollbar-track:hover {
         background-color: $white-smoke;
     }
     &::-webkit-scrollbar-thumb {
-        background-color: $dark-grey;
+        background-color: $c-dark-grey;
         border-radius: 16px;
-        border: 5px solid $color-1;
+        border: 5px solid $c-white;
     }
     &::-webkit-scrollbar-thumb:hover {
-        background-color: $dark-grey;
+        background-color: $c-dark-grey;
         border: 4px solid $white-smoke;
     }
     &::-webkit-scrollbar-button {

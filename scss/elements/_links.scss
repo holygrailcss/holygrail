@@ -33,7 +33,7 @@ a {
     border: none;
     &:after {
         content: '';
-        background-color: $primary;
+        background-color: $c-black;
         width: 100%;
         position: absolute;
         bottom: 0px;
@@ -101,7 +101,7 @@ a {
     }
     &:after {
         content: '';
-        background-color: $primary;
+        background-color: $c-black;
         width: 100%;
         position: absolute;
         bottom: 0px;
@@ -140,7 +140,7 @@ a {
         height: 2px;
         bottom: -4px;
         left: 0;
-        background: $primary;
+        background: $c-black;
         transform: scaleX(0);
         transition: transform $transition;
         transition: transform $transition, -webkit-transform $transition;
@@ -167,7 +167,7 @@ a {
     height: 1px;
     bottom: -4px;
     left: 0;
-    background: $primary;
+    background: $c-black;
     transition: 0.6s;
   }
   &::before {
@@ -177,7 +177,7 @@ a {
     height: 1px;
     bottom: -4px;
     left: 0;
-    background: $primary;
+    background: $c-black;
     opacity: 0.3;
   }
   &:hover {
@@ -195,8 +195,8 @@ a {
     display: inline-block;
     padding: 4px 0;
     margin: 20px 0;
-    border-bottom: 2px solid $primary;
-    color: $primary;
+    border-bottom: 2px solid $c-black;
+    color: $c-black;
     text-align: left;
     text-decoration: none;
     cursor: pointer;
@@ -218,7 +218,7 @@ a {
         z-index: 3;
         width: 0;
         height: 1px;
-        background: $primary;
+        background: $c-black;
         -webkit-animation: underline 1s 0.5s cubic-bezier(0.55, 0.085, 0, 0.99) forwards;
         animation: underline 1s 0.5s cubic-bezier(0.55, 0.085, 0, 0.99) forwards;
     }
@@ -268,16 +268,16 @@ a {
     z-index: 1;
     cursor: pointer;
     border-radius: 50%;
-    border: 1px solid $gray-10;
+    border: 1px solid $c-middle-grey;
 }
 .inner-button {
     margin-top: -1px;
     display: block;
     width: 40px;
     height: 40px;
-    color: $color-1;
+    color: $c-white;
     &::after {
-        border: 1px solid $primary;
+        border: 1px solid $c-black;
         border-radius: 0px;
         border-right: 0;
         border-top: 0;
@@ -297,43 +297,43 @@ a {
 
 .has-light {
     .link1 {
-        color: $color-1;
+        color: $c-white;
         &:after {
-            background-color: $color-1;
+            background-color: $c-white;
         }
     }
     .link4 {
-        color: $color-1;
+        color: $c-white;
         &:after {
-            background-color: $color-1;
+            background-color: $c-white;
         }
         .link4-underline {
-            background: $color-1;
+            background: $c-white;
         }
     }
     .link5 {
-        color: $color-1;
+        color: $c-white;
         &:after {
-            background: $color-1;
+            background: $c-white;
         }
     }
     .link6 {
-        color: $color-1;
-        border-bottom: 2px solid $color-1;
+        color: $c-white;
+        border-bottom: 2px solid $c-white;
     }
     .link7 {
-        color: $color-1;
+        color: $c-white;
         &:after {
-            background: $color-1;
+            background: $c-white;
         }
     }
     .link8{
-        color: $color-1;
+        color: $c-white;
         }
     .link9 {
-        color: $color-1;
+        color: $c-white;
         &:after {
-            background: $color-1;
+            background: $c-white;
         }
     }
 }

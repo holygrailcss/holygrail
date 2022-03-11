@@ -28,23 +28,23 @@
         padding: 0;
         display: inline-flex;
         &:last-child {
-            border-right: 1px solid $gray-10;
+            border-right: 1px solid $c-middle-grey;
         }
         button {
             @include font-medium();
             border: none;
-            background-color: $color-1;
-            border-top: 1px solid $gray-10;
-            border-bottom: 1px solid $gray-10;
-            border-left: 1px solid $gray-10;
+            background-color: $c-white;
+            border-top: 1px solid $c-middle-grey;
+            border-bottom: 1px solid $c-middle-grey;
+            border-left: 1px solid $c-middle-grey;
             border-right: none;
             padding: 10px 0;
             min-width: 48px;
             display: inline-block;
             -webkit-appearance: initial;
             &:hover {
-                background-color: $primary;
-                color: $color-1;
+                background-color: $c-black;
+                color: $c-white;
                 cursor: pointer;
             }
         }
@@ -57,7 +57,7 @@
         left: 0;
         z-index: 3;
         width: 100%;
-        background-color: $color-1;
+        background-color: $c-white;
         @media (min-width:$break-md) {
             padding: 0;
             min-height: 144px;
@@ -77,7 +77,7 @@
     .js-card9-inner {
         margin-bottom: 0;
         .content {
-            background: $gray-10;
+            background: $c-middle-grey;
         }
     }
     .card9-slider {
@@ -252,7 +252,7 @@
 .product-tag {
     @include font-2-medium;
     font-size: 14px;
-    color: $primary;
+    color: $c-black;
     letter-spacing: 0;
     line-height: 16px;
 }

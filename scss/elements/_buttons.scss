@@ -169,10 +169,10 @@ $btn-text-full: 14px;
     line-height: 1;
     background: transparent;
     border: none;
-    color: $primary;
+    color: $c-black;
     &:after {
         content: "";
-        background-color: $primary;
+        background-color: $c-black;
         width: 100%;
         position: absolute;
         bottom: 0px;
@@ -184,7 +184,7 @@ $btn-text-full: 14px;
     &.focus {
         opacity: 0.6;
         background-color: transparent;
-        color: $primary;
+        color: $c-black;
         text-decoration: none;
         cursor: pointer;
         &:after {
@@ -207,15 +207,15 @@ $btn-text-full: 14px;
         opacity: 0.2;
     }
     .has-light & {
-        color: $color-1;
+        color: $c-white;
         &:after {
-            background-color: $color-1;
+            background-color: $c-white;
         }
         &:hover,
         &:focus,
         &.focus {
             background-color: transparent;
-            color: $color-1;
+            color: $c-white;
         }
     }
 }
@@ -225,7 +225,7 @@ $btn-text-full: 14px;
 }
 .btn-blue {
     background-color: #3b5998;
-    color: $color-1;
+    color: $c-white;
     border: 1px solid #3b5998;
 }
 /*+------------------------------------------------------------+
@@ -236,31 +236,31 @@ $btn-text-full: 14px;
  *
  */
 .btn-primary {
-    color: $color-1;
-    background-color: $primary;
-    border: 1px solid $primary;
+    color: $c-white;
+    background-color: $c-black;
+    border: 1px solid $c-black;
     svg {
         g{
-            fill: $color-1;
-            stroke: $color-1;
+            fill: $c-white;
+            stroke: $c-white;
         }
         circle{
-            stroke: $color-1;
+            stroke: $c-white;
         }
     }
 }
 
 
 .btn-phantom {
-    color: $color-1;
+    color: $c-white;
     background-color:transparent;
-    border: 1px solid $color-1;
+    border: 1px solid $c-white;
     &:focus,
     &.focus,
     &:hover,
     &:active,
     &.active {
-        color: $color-1;
+        color: $c-white;
         opacity:0.6;
     }
 
@@ -272,12 +272,12 @@ $btn-text-full: 14px;
 .btn-text {
     background-color: transparent;
     border-color: transparent;
-    color: $primary;
+    color: $c-black;
 }
 .btn-invert {
-    color: $primary;
+    color: $c-black;
     background-color: transparent;
-    border: 1px solid $primary;
+    border: 1px solid $c-black;
 
 
 
@@ -291,7 +291,7 @@ $btn-text-full: 14px;
 }
 
 .btn-invert-light {
-    color: $primary;
+    color: $c-black;
     background-color: transparent;
     border: 1px solid #e3e3e3;
 
@@ -305,40 +305,40 @@ $btn-text-full: 14px;
  opacity: .6;
 
     svg{
-        path{fill:$color-1}
+        path{fill:$c-white}
     }
 
     }
 }
 .btn-default {
-    background-color: $primary;
-    border: 1px solid $primary;
-    color: $color-1;
+    background-color: $c-black;
+    border: 1px solid $c-black;
+    color: $c-white;
     &:focus,
     &.focus,
     &:hover,
     &:active,
     &.active {
-        color: $color-1;
-        background-color: $dark-grey;
-        border-color: $dark-grey;
+        color: $c-white;
+        background-color: $c-dark-grey;
+        border-color: $c-dark-grey;
     }
 }
 .btn-link {
     border: none;
     text-align: left;
     text-decoration: none;
-    color: $primary;
+    color: $c-black;
     background-color: transparent;
     padding: 0;
 }
 
 .btn-trans{
-    color: $color-1;
+    color: $c-white;
     background: rgba(226, 226, 226, 0.6);
     font-size: 14px;
     line-height: 1.2;
-    border: 0 solid $color-1;
+    border: 0 solid $c-white;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding-top: calc(16px + 2px);
@@ -348,12 +348,12 @@ $btn-text-full: 14px;
     display: flex;
     align-items: center;
     svg{
-        stroke  :$color-1;
+        stroke  :$c-white;
     }
     &:hover, 
     &:focus, 
     &.focus {
-        color: $color-1;
+        color: $c-white;
         text-decoration: none;
     }
 }
@@ -365,7 +365,7 @@ $btn-text-full: 14px;
 	width: 40px;
 	max-width: initial;
 	height: 40px;
-	border: 1px solid $primary;
+	border: 1px solid $c-black;
 	border-radius: 50px;
 	align-content: center;
 	justify-content: center;
@@ -484,9 +484,9 @@ $btn-text-full: 14px;
   }
   .no-focus {
     &:focus {
-      color: $color-1;
-      background-color: $primary;
-      border-color: $primary;
+      color: $c-white;
+      background-color: $c-black;
+      border-color: $c-black;
     }
   }
   .btn-loading svg {
@@ -548,20 +548,20 @@ $btn-text-full: 14px;
 
 .has-light {
     .btn-primary {
-        color: $primary;
-        background-color: $color-1;
-        border: 1px solid $color-1;
+        color: $c-black;
+        background-color: $c-white;
+        border: 1px solid $c-white;
     }
     .btn-phantom {
-        color: $color-1;
+        color: $c-white;
         background-color: transparent;
-        border: 1px solid $color-1;
+        border: 1px solid $c-white;
     }
     .btn{
-            color: $color-1;
-            border-color: $color-1;
+            color: $c-white;
+            border-color: $c-white;
             &:after {
-                background-color: $color-1;
+                background-color: $c-white;
             }
     }
 }

@@ -1,7 +1,7 @@
 .hg-bread {
-    background-color: $color-1;
+    background-color: $c-white;
     padding: 0;
-    border-bottom: 1px solid $gray-10;
+    border-bottom: 1px solid $c-middle-grey;
     .hg-bread-inner {
       display: table;
       text-align: center;
@@ -31,7 +31,7 @@
       div {
         width: 42px;
         height: 1px;
-        background-color: $primary;
+        background-color: $c-black;
       }
     }
     .hg-bread-title{

@@ -16,9 +16,9 @@
     justify-content: space-between;
 	align-items: center;
 	overflow: hidden;
-	background-color: $color-1;
+	background-color: $c-white;
     z-index: 1002;
-    border-bottom: 1px solid $gray-10;
+    border-bottom: 1px solid $c-middle-grey;
 	@media (min-width: 768px) {
 		height: 72px;
 		padding: 0 20px;
@@ -107,8 +107,8 @@
     left: 0px;
 	right: 0px;
     bottom: 0;
-	background-color: $color-1 ;
-	border-bottom: 1px solid $gray-10;
+	background-color: $c-white ;
+	border-bottom: 1px solid $c-middle-grey;
 }
 
 

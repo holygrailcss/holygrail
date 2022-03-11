@@ -41,7 +41,7 @@
         content: "";
         width: 100%;
         padding-top: 126%;
-        background-color: $color-1;
+        background-color: $c-white;
     }
     &::marker {
         display: none;
@@ -55,7 +55,7 @@
         content: "";
         width: 100%;
         padding-top: calc(133.25% + 126px);
-        background-color: $color-1;
+        background-color: $c-white;
         @media (min-width: 992px) {
             padding-top: calc(133.25% + 144px);
         }
@@ -72,7 +72,7 @@
         content: "";
         width: 100%;
         padding-top: calc(133.25% + 126px);
-        background-color: $color-1;
+        background-color: $c-white;
         @media (min-width: 992px) {
             padding-top: calc(133.25% + 144px);
         }
@@ -89,7 +89,7 @@
         content: "";
         width: 100%;
         padding-top: 133.25%;
-        background-color: $color-1;
+        background-color: $c-white;
     }
     &::marker {
         display: none;
@@ -123,7 +123,7 @@
         content: "";
         width: 100%;
         padding-top: calc(66.66667% + 126px);
-        background-color: $color-1;
+        background-color: $c-white;
         @media (min-width: 768px) {
             padding-top: calc(66.66667% + 144px);
         }
@@ -140,7 +140,7 @@
         content: "";
         width: 100%;
         padding-top: 133.25%;
-        background-color: $color-1;
+        background-color: $c-white;
         @media (min-width: 992px) {
             padding-top: 133.25%;
         }

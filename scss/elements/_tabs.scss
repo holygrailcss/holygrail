@@ -21,7 +21,7 @@
     }
     ul {
         align-items: center;
-        border-bottom-color: $gray-10;
+        border-bottom-color: $c-middle-grey;
         border-bottom-style: solid;
         border-bottom-width: 1px;
         display: flex;
@@ -36,16 +36,16 @@
         display: block;
         margin: 0;
         &.is-active a {
-            border-bottom-color: $primary;
+            border-bottom-color: $c-black;
             border-bottom-width: 2px;
             padding-bottom: $padding-global * 2 - 0;
-            color: $primary;
+            color: $c-black;
         }
         &.is-active span {
-            border-bottom-color: $primary;
+            border-bottom-color: $c-black;
             border-bottom-width: 2px;
             padding-bottom: $padding-global * 2 - 0;
-            color: $primary;
+            color: $c-black;
         }
         &:after {
             display: none;
@@ -53,10 +53,10 @@
     }
     a {
         align-items: center;
-        border-bottom-color: $gray-10;
+        border-bottom-color: $c-middle-grey;
         border-bottom-style: solid;
         border-bottom-width: 1px;
-        color: $primary;
+        color: $c-black;
         display: flex;
         justify-content: center;
         margin-bottom: -1px;
@@ -64,19 +64,19 @@
         vertical-align: top;
         padding-bottom: $padding-global * 2 + 1;
         &:hover {
-            border-bottom-color: $primary;
+            border-bottom-color: $c-black;
             border-bottom-width: 2px;
             padding-bottom: $padding-global * 2 - 0;
-            color: $primary;
+            color: $c-black;
             cursor: pointer;
         }
     }
     span {
         align-items: center;
-        border-bottom-color: $gray-10;
+        border-bottom-color: $c-middle-grey;
         border-bottom-style: solid;
         border-bottom-width: 1px;
-        color: $primary;
+        color: $c-black;
         display: flex;
         justify-content: center;
         margin-bottom: -1px;
@@ -84,10 +84,10 @@
         vertical-align: top;
         padding-bottom: $padding-global * 2 + 1;
         &:hover {
-            border-bottom-color: $primary;
+            border-bottom-color: $c-black;
             border-bottom-width: 2px;
             padding-bottom: $padding-global * 2 - 0;
-            color: $primary;
+            color: $c-black;
             cursor: pointer;
         }
     }
@@ -108,7 +108,7 @@
                 &:after {
                     content: "";
                     width: 100%;
-                    background: $primary;
+                    background: $c-black;
                     height: 2px;
                     position: absolute;
                     bottom: -4px;
@@ -120,7 +120,7 @@
             &:after {
                 content: "";
                 width: 100%;
-                background: $primary;
+                background: $c-black;
                 height: 2px;
                 position: absolute;
                 bottom: -4px;
@@ -146,11 +146,11 @@
     a,
     span {
         @include font-medium;
-        color: $dark-grey;
+        color: $c-dark-grey;
         border-color: $white-smoke;
         position: relative;
         &:hover {
-            color: $primary;
+            color: $c-black;
             cursor: pointer;
         }
     }
@@ -164,7 +164,7 @@
     display: inline-block;
     ul {
         border: none;
-        background-color: $color-1;
+        background-color: $c-white;
         padding: 0 14px;
         display: inline-flex;
         font-family: $font-family-regular;
@@ -176,7 +176,7 @@
         opacity: 0.5;
         border: none;
         padding: 6px 8px 8px;
-        color: $primary;
+        color: $c-black;
     }
     li:first-child a:after {
         content: "";
@@ -184,7 +184,7 @@
         right: 0;
         width: 1px;
         height: 20px;
-        background-color: $gray-10;
+        background-color: $c-middle-grey;
     }
     li a:hover {
         border: none;
@@ -204,7 +204,7 @@
     flex-wrap: nowrap;
     align-items: flex-end;
         ul {
-            border: 1px solid $gray-10;
+            border: 1px solid $c-middle-grey;
         }
     }
 }

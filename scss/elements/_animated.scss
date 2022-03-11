@@ -4,7 +4,7 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    color: $primary;
+    color: $c-black;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -63,7 +63,7 @@
         width: 12px;
         height: 12px;
         border-radius: 50%;
-        background: $primary;
+        background: $c-black;
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
     }
@@ -76,7 +76,7 @@
         width: 1px;
         height: 0;
         border-radius: 2px;
-        background: $primary;
+        background: $c-black;
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
         -webkit-animation: stretch 1s 1.5s cubic-bezier(0.55, 0.085, 0, 0.99) forwards;
@@ -90,16 +90,16 @@
 
 .has-light {
     .arrow-cover {
-        color: $color-1;
+        color: $c-white;
     }
 
     .line-scrolldown {
         &:before {
-            background: $color-1;
+            background: $c-white;
         }
 
         &::after {
-            background: $color-1;
+            background: $c-white;
         }
     }
 }
