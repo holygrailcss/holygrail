@@ -4453,7 +4453,7 @@ mark {
 }
 
 .bg-line {
-  border-bottom: 1px solid #e3e3e3;
+  border-bottom: 1px solid #E3E3E3;
 }
 
 .text-lowercase {
@@ -4560,11 +4560,11 @@ hr {
 }
 
 .hg-status-b {
-  color: #3b5998;
+  color: #1A32A4;
 }
 
 .hg-status-b:before {
-  background-color: #3b5998;
+  background-color: #1A32A4;
 }
 
 .hg-status-c {
@@ -4740,23 +4740,23 @@ strong {
 }
 
 .border-1 {
-  border: 1px solid #e3e3e3;
+  border: 1px solid #E3E3E3;
 }
 
 .border-t {
-  border-top: 1px solid #e3e3e3;
+  border-top: 1px solid #E3E3E3;
 }
 
 .border-b {
-  border-bottom: 1px solid #e3e3e3;
+  border-bottom: 1px solid #E3E3E3;
 }
 
 .border-l {
-  border-left: 1px solid #e3e3e3;
+  border-left: 1px solid #E3E3E3;
 }
 
 .border-r {
-  border-right: 1px solid #e3e3e3;
+  border-right: 1px solid #E3E3E3;
 }
 
 .flex-vcenter {
@@ -4960,7 +4960,7 @@ strong {
   position: absolute;
   bottom: 0;
   right: 0;
-  color: #292929;
+  color: #000000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5017,7 +5017,7 @@ strong {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: #292929;
+  background: #000000;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
@@ -5030,7 +5030,7 @@ strong {
   width: 1px;
   height: 0;
   border-radius: 2px;
-  background: #292929;
+  background: #000000;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   -webkit-animation: stretch 1s 1.5s cubic-bezier(0.55, 0.085, 0, 0.99) forwards;
@@ -5219,12 +5219,12 @@ strong {
   line-height: 1;
   background: transparent;
   border: none;
-  color: #292929;
+  color: #000000;
 }
 
 .btn-underline:after {
   content: "";
-  background-color: #292929;
+  background-color: #000000;
   width: 100%;
   position: absolute;
   bottom: 0px;
@@ -5235,7 +5235,7 @@ strong {
 .btn-underline:hover, .btn-underline:focus, .btn-underline.focus {
   opacity: 0.6;
   background-color: transparent;
-  color: #292929;
+  color: #000000;
   text-decoration: none;
   cursor: pointer;
 }
@@ -5278,9 +5278,9 @@ strong {
 }
 
 .btn-blue {
-  background-color: #3b5998;
+  background-color: #1A32A4;
   color: #FFFFFF;
-  border: 1px solid #3b5998;
+  border: 1px solid #1A32A4;
 }
 
 /*+------------------------------------------------------------+
@@ -5292,8 +5292,8 @@ strong {
  */
 .btn-primary {
   color: #FFFFFF;
-  background-color: #292929;
-  border: 1px solid #292929;
+  background-color: #000000;
+  border: 1px solid #000000;
 }
 
 .btn-primary svg g {
@@ -5319,13 +5319,13 @@ strong {
 .btn-text {
   background-color: transparent;
   border-color: transparent;
-  color: #292929;
+  color: #000000;
 }
 
 .btn-invert {
-  color: #292929;
+  color: #000000;
   background-color: transparent;
-  border: 1px solid #292929;
+  border: 1px solid #000000;
 }
 
 .btn-invert:focus, .btn-invert.focus, .btn-invert:hover, .btn-invert:active, .btn-invert.active {
@@ -5333,7 +5333,7 @@ strong {
 }
 
 .btn-invert-light {
-  color: #292929;
+  color: #000000;
   background-color: transparent;
   border: 1px solid #e3e3e3;
 }
@@ -5347,8 +5347,8 @@ strong {
 }
 
 .btn-default {
-  background-color: #292929;
-  border: 1px solid #292929;
+  background-color: #000000;
+  border: 1px solid #000000;
   color: #FFFFFF;
 }
 
@@ -5362,7 +5362,7 @@ strong {
   border: none;
   text-align: left;
   text-decoration: none;
-  color: #292929;
+  color: #000000;
   background-color: transparent;
   padding: 0;
 }
@@ -5399,7 +5399,7 @@ strong {
   width: 40px;
   max-width: initial;
   height: 40px;
-  border: 1px solid #292929;
+  border: 1px solid #000000;
   border-radius: 50px;
   align-content: center;
   justify-content: center;
@@ -5525,8 +5525,8 @@ strong {
 
 .no-focus:focus {
   color: #FFFFFF;
-  background-color: #292929;
-  border-color: #292929;
+  background-color: #000000;
+  border-color: #000000;
 }
 
 .btn-loading svg {
@@ -5609,7 +5609,7 @@ strong {
   position: absolute;
   content: '';
   height: 1px;
-  background-color: #292929;
+  background-color: #000000;
   width: 16px;
   transform: rotate(136deg);
   left: 4px;
@@ -5623,7 +5623,7 @@ strong {
   height: 1px;
   top: 10px;
   transform: rotate(50deg);
-  background-color: #292929;
+  background-color: #000000;
 }
 
 .checkbox-item [type="checkbox"]:not(:checked) + label,
@@ -5694,7 +5694,7 @@ strong {
   position: absolute;
   top: 5px;
   left: 5px;
-  color: #292929;
+  color: #000000;
   -webkit-transition: all .2s;
   transition: all .2s;
 }
@@ -5751,7 +5751,7 @@ strong {
   border-radius: 30px;
   left: 0;
   border: none;
-  border: 1px solid #292929;
+  border: 1px solid #000000;
   outline: 0;
   display: inline-block;
   vertical-align: top;
@@ -5784,7 +5784,7 @@ strong {
 }
 
 .checkbox-item-2 .checkbox-circle {
-  background: #292929;
+  background: #000000;
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -5795,7 +5795,7 @@ strong {
   position: absolute;
   top: 3px;
   left: 6px;
-  color: #292929;
+  color: #000000;
   transition: all .2s;
 }
 
@@ -5835,7 +5835,7 @@ strong {
   height: 24px;
   left: 0;
   border: none;
-  border: 1px solid #a3a0a0;
+  border: 1px solid #8E8E8E;
   outline: 0;
   display: inline-block;
   vertical-align: top;
@@ -5875,7 +5875,7 @@ strong {
   left: 7px;
   width: 10px;
   height: 10px;
-  background-color: #292929;
+  background-color: #000000;
   border-radius: 50%;
   -webkit-transition: all .2s;
   transition: all .2s;
@@ -5930,7 +5930,7 @@ strong {
 }
 
 .check-no.checkbox-radio [type=radio]:checked + label .border-1 {
-  border: 1px solid #292929;
+  border: 1px solid #000000;
 }
 
 .check-center.checkbox-radio [type=radio]:checked + label:before,
@@ -5953,7 +5953,7 @@ strong {
 }
 
 .check-center.checkbox-radio [type=radio]:checked + label .border-1 {
-  border: 1px solid #292929;
+  border: 1px solid #000000;
 }
 
 .check-bleed.checkbox-radio [type=radio]:checked + label:before,
@@ -5984,7 +5984,7 @@ strong {
 }
 
 .check-top.checkbox-radio [type=radio]:checked + label .border-1 {
-  border: 1px solid #292929;
+  border: 1px solid #000000;
 }
 
 .check-clear.checkbox-radio [type=radio]:checked + label:before,
@@ -6005,11 +6005,11 @@ strong {
 }
 
 .check-clear.checkbox-radio [type=radio]:checked + label .border-1 {
-  border: 1px solid #292929;
+  border: 1px solid #000000;
 }
 
 .is-active.checkbox-radio .border-1 {
-  border: 1px solid #292929;
+  border: 1px solid #000000;
 }
 
 .is-active.checkbox-radio [type=radio] + label .ico-radio {
@@ -6098,7 +6098,7 @@ strong {
  +------------------------------------------------------------+*/
 input:focus {
   outline: none;
-  border: 1px solid #292929;
+  border: 1px solid #000000;
 }
 
 .form {
@@ -6116,7 +6116,7 @@ select {
   background-color: #FFFFFF;
   border-color: #E3E3E3;
   border-radius: 0;
-  color: #292929;
+  color: #000000;
 }
 
 label {
@@ -6149,7 +6149,7 @@ label {
 .select select {
   background-color: #FFFFFF;
   border-color: #E3E3E3;
-  color: #292929;
+  color: #000000;
   max-width: 100%;
   width: 100%;
   font-size: 16px;
@@ -6167,7 +6167,7 @@ label {
 .input.validation-error,
 .textarea.validation-error,
 .select select.validation-error {
-  border-color: red;
+  border-color: #F54637;
 }
 
 .input-line {
@@ -6176,7 +6176,7 @@ label {
   border-right: 1px solid transparent;
   background-color: transparent;
   padding-left: 0;
-  border-bottom: 1px solid #292929;
+  border-bottom: 1px solid #000000;
 }
 
 .input-notouch {
@@ -6196,7 +6196,7 @@ label {
 
 .inputmini {
   border-color: #E3E3E3;
-  color: #292929;
+  color: #000000;
   max-width: 100%;
   width: 58px;
   font-size: 14px;
@@ -6459,7 +6459,7 @@ input::-webkit-input-placeholder {
 .form-input-label select:-webkit-autofill:hover,
 .form-input-label select:-webkit-autofill:focus {
   border: 1px solid #E3E3E3;
-  -webkit-text-fill-color: #292929;
+  -webkit-text-fill-color: #000000;
   -webkit-box-shadow: 0 0 0px 1000px #FFFFFF inset;
   transition: background-color 5000s ease-in-out 0s;
 }
@@ -6518,7 +6518,7 @@ input::-webkit-input-placeholder {
 }
 
 .select::after {
-  border: 1px solid #292929;
+  border: 1px solid #000000;
   border-radius: 0px;
   border-right: 0;
   border-top: 0;
@@ -6540,7 +6540,7 @@ input::-webkit-input-placeholder {
 }
 
 .select:not(.is-multiple):not(.is-loading)::after {
-  border-color: #292929;
+  border-color: #000000;
 }
 
 .select select::-ms-expand {
@@ -6566,7 +6566,7 @@ input::-webkit-input-placeholder {
 }
 
 .select:not(.is-multiple):not(.is-loading):hover::after {
-  border-color: #292929;
+  border-color: #000000;
 }
 
 .select.select-label select {
@@ -6727,8 +6727,8 @@ input::-webkit-input-placeholder {
 .select-line select,
 .select-line .textarea {
   background-color: #FFFFFF;
-  border-color: #292929;
-  color: #292929;
+  border-color: #000000;
+  color: #000000;
   max-width: 100%;
   width: 100%;
   font-size: 14px;
@@ -6762,7 +6762,7 @@ input::-webkit-input-placeholder {
   padding-top: 12px;
   height: auto;
   border: none;
-  border-bottom: 1px solid #292929;
+  border-bottom: 1px solid #000000;
 }
 
 .input-line-v2 .input::-webkit-input-placeholder {
@@ -6842,7 +6842,7 @@ a:hover {
 
 .link1:after {
   content: '';
-  background-color: #292929;
+  background-color: #000000;
   width: 100%;
   position: absolute;
   bottom: 0px;
@@ -6924,7 +6924,7 @@ a:hover {
 
 .link4:after {
   content: '';
-  background-color: #292929;
+  background-color: #000000;
   width: 100%;
   position: absolute;
   bottom: 0px;
@@ -6965,7 +6965,7 @@ a:hover {
   height: 2px;
   bottom: -4px;
   left: 0;
-  background: #292929;
+  background: #000000;
   transform: scaleX(0);
   transition: transform 278ms;
   transition: transform 278ms, -webkit-transform 278ms;
@@ -6996,7 +6996,7 @@ a:hover {
   height: 1px;
   bottom: -4px;
   left: 0;
-  background: #292929;
+  background: #000000;
   transition: 0.6s;
 }
 
@@ -7007,7 +7007,7 @@ a:hover {
   height: 1px;
   bottom: -4px;
   left: 0;
-  background: #292929;
+  background: #000000;
   opacity: 0.3;
 }
 
@@ -7027,8 +7027,8 @@ a:hover {
   display: inline-block;
   padding: 4px 0;
   margin: 20px 0;
-  border-bottom: 2px solid #292929;
-  color: #292929;
+  border-bottom: 2px solid #000000;
+  color: #000000;
   text-align: left;
   text-decoration: none;
   cursor: pointer;
@@ -7053,7 +7053,7 @@ a:hover {
   z-index: 3;
   width: 0;
   height: 1px;
-  background: #292929;
+  background: #000000;
   -webkit-animation: underline 1s 0.5s cubic-bezier(0.55, 0.085, 0, 0.99) forwards;
   animation: underline 1s 0.5s cubic-bezier(0.55, 0.085, 0, 0.99) forwards;
 }
@@ -7118,7 +7118,7 @@ a:hover {
 }
 
 .inner-button::after {
-  border: 1px solid #292929;
+  border: 1px solid #000000;
   border-radius: 0px;
   border-right: 0;
   border-top: 0;
@@ -7203,7 +7203,7 @@ ul.list-disc li {
 }
 
 ul.list-disc li:after {
-  background-color: #292929;
+  background-color: #000000;
   content: '';
   border-radius: 50%;
   width: 4px;
@@ -7322,7 +7322,7 @@ ul.list-mini > li.is-missing:after {
   content: "";
   width: 100%;
   height: 1px;
-  background-color: #292929;
+  background-color: #000000;
   border-radius: 0;
   margin-top: -1px;
   transform: none;
@@ -7332,7 +7332,7 @@ ul.list-mini > li:after {
   content: "";
   width: 2px;
   height: 2px;
-  background-color: #292929;
+  background-color: #000000;
   position: absolute;
   left: 0;
   bottom: 10px;
@@ -7346,14 +7346,14 @@ ul.list-mini > li:after {
 .list-box {
   display: table-cell;
   box-sizing: border-box;
-  border: 1px solid #858585;
+  border: 1px solid #8E8E8E;
   transition: all .2s ease;
   opacity: .5;
   left: -1px;
 }
 
 .list-box.is-active, .list-box:hover {
-  border: 1px solid #292929;
+  border: 1px solid #000000;
   opacity: 1;
   cursor: pointer;
 }
@@ -7799,7 +7799,7 @@ ul.list-clear li.list-box:last-child {
 }
 
 .list-box.is-active, .list-box:hover {
-  border: 1px solid #292929;
+  border: 1px solid #000000;
   opacity: 1;
   cursor: pointer;
 }
@@ -8569,7 +8569,7 @@ ZEN:
 }
 
 .card9 .card9-sizes button:hover {
-  background-color: #292929;
+  background-color: #000000;
   color: #FFFFFF;
   cursor: pointer;
 }
@@ -8790,7 +8790,7 @@ ZEN:
 .product-tag {
   font-family: monospace, sans-serif;
   font-size: 14px;
-  color: #292929;
+  color: #000000;
   letter-spacing: 0;
   line-height: 16px;
 }
@@ -9490,7 +9490,7 @@ ZEN:
 .hg-bread .hg-bread-line div {
   width: 42px;
   height: 1px;
-  background-color: #292929;
+  background-color: #000000;
 }
 
 .hg-bread .hg-bread-title {
