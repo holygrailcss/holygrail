@@ -43,7 +43,7 @@
             display: inline-block;
             -webkit-appearance: initial;
             &:hover {
-                background-color: $c-black;
+                background-color: $primary;
                 color: $c-white;
                 cursor: pointer;
             }
@@ -252,7 +252,7 @@
 .product-tag {
     @include font-2-medium;
     font-size: 14px;
-    color: $c-black;
+    color: $primary;
     letter-spacing: 0;
     line-height: 16px;
 }

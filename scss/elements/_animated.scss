@@ -4,7 +4,7 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    color: $c-black;
+    color: $primary;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -63,7 +63,7 @@
         width: 12px;
         height: 12px;
         border-radius: 50%;
-        background: $c-black;
+        background: $primary;
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
     }
@@ -76,7 +76,7 @@
         width: 1px;
         height: 0;
         border-radius: 2px;
-        background: $c-black;
+        background: $primary;
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
         -webkit-animation: stretch 1s 1.5s cubic-bezier(0.55, 0.085, 0, 0.99) forwards;

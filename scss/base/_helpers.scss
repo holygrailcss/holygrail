@@ -23,7 +23,7 @@
     color: $c-dark-grey;
 }
 .is-info {
-    color: #1A32A4;
+    color: $c-info;
 }
 
 
@@ -37,7 +37,7 @@
     background-color: $white-smoke;
 }
 .bg-line {
-    border-bottom: 1px solid #e3e3e3;
+    border-bottom: 1px solid $c-middle-grey;
 }
 
 
@@ -133,9 +133,9 @@ hr {
     }
 }
 .hg-status-b {
-    color: #3b5998;
+    color: $c-info;
     &:before {
-        background-color: #3b5998;
+        background-color: $c-info;
     }
 }
 .hg-status-c {
@@ -284,19 +284,19 @@ strong {
     font-family: $font-family-bold;
 }
 .border-1 {
-    border: 1px solid #e3e3e3;
+    border: 1px solid $c-middle-grey;
 }
 .border-t {
-    border-top: 1px solid #e3e3e3;
+    border-top: 1px solid $c-middle-grey;
 }
 .border-b {
-    border-bottom: 1px solid #e3e3e3;
+    border-bottom: 1px solid $c-middle-grey;
 }
 .border-l {
-    border-left: 1px solid #e3e3e3;
+    border-left: 1px solid $c-middle-grey;
 }
 .border-r {
-    border-right: 1px solid #e3e3e3;
+    border-right: 1px solid $c-middle-grey;
 }
 .flex-vcenter {
     display: flex;

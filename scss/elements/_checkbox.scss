@@ -10,7 +10,7 @@
         position: absolute;
         content: '';
         height: 1px;
-        background-color: $c-black;
+        background-color: $primary;
         width: 16px;
         transform: rotate(136deg);
         left: 4px;
@@ -23,7 +23,7 @@
         height: 1px;
         top: 10px;
         transform: rotate(50deg);
-        background-color: $c-black;
+        background-color: $primary;
       }
     [type="checkbox"]:not(:checked)+label,
     [type="checkbox"]:checked+label {
@@ -85,7 +85,7 @@
         position: absolute;
         top: 5px;
         left: 5px;
-        color:$c-black;
+        color:$primary;
         -webkit-transition: all .2s;
         transition: all .2s;
     }
@@ -138,7 +138,7 @@
         border-radius: 30px;
         left: 0;
         border: none;
-        border: 1px solid $c-black;
+        border: 1px solid $primary;
         outline: 0;
         display: inline-block;
         vertical-align: top;
@@ -167,7 +167,7 @@
         line-height: normal;
     }
     .checkbox-circle {
-        background: $c-black;
+        background: $primary;
         width: 20px;
         height: 20px;
         border-radius: 50%;
@@ -177,7 +177,7 @@
         position: absolute;
         top: 3px;
         left: 6px;
-        color: $c-black;
+        color: $primary;
         transition: all .2s;
     }
     [type="checkbox"]:not(:checked)+label .checkbox-circle {
@@ -215,7 +215,7 @@
       height: 24px;
       left: 0;
       border: none;
-      border: 1px solid #a3a0a0;
+      border: 1px solid $c-dark-grey;
       outline: 0;
       display: inline-block;
       vertical-align: top;
@@ -251,7 +251,7 @@
       left: 7px;
       width: 10px;
       height: 10px;
-      background-color: $c-black;
+      background-color: $primary;
       border-radius: 50%;
       -webkit-transition: all .2s;
       transition: all .2s;
@@ -306,7 +306,7 @@ input[type='radio']:focus + label::before {
    display: none;
 }
 &.checkbox-radio [type=radio]:checked+label .border-1  {
-border: 1px solid $c-black;
+border: 1px solid $primary;
 }
 }
 .check-center{
@@ -327,7 +327,7 @@ transform: translateY(-50%);
     padding-left:calc(24px + 16px) ;
   }
   &.checkbox-radio [type=radio]:checked+label .border-1  {
-    border: 1px solid $c-black;
+    border: 1px solid $primary;
     }
 }
 .check-bleed{
@@ -357,7 +357,7 @@ left: 16px;
     padding-left:calc(24px + 16px) ;
   }
   &.checkbox-radio [type=radio]:checked+label .border-1  {
-    border: 1px solid $c-black;
+    border: 1px solid $primary;
     }
 }
 .check-clear{
@@ -377,12 +377,12 @@ left: 0;
     padding-left:calc(24px + 16px) ;
   }
   &.checkbox-radio [type=radio]:checked+label .border-1  {
-    border: 1px solid $c-black;
+    border: 1px solid $primary;
     }
 }
 .is-active{
   &.checkbox-radio .border-1  {
-    border: 1px solid $c-black;
+    border: 1px solid $primary;
     }
     &.checkbox-radio [type=radio]+label .ico-radio {
       opacity: 1;

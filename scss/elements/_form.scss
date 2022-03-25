@@ -5,7 +5,7 @@ $input-padding-y: 14px;
  +------------------------------------------------------------+*/
 input:focus {
     outline: none;
-    border: 1px solid $c-black;
+    border: 1px solid $primary;
 }
 .form {
     width: 100%;
@@ -20,7 +20,7 @@ select {
     background-color: $c-white;
     border-color: $c-middle-grey;
     border-radius: 0;
-    color: $c-black;
+    color: $primary;
 }
 label {
     font-size: 14px;
@@ -50,7 +50,7 @@ label {
 .select select {
     background-color: $c-white;
     border-color: $c-middle-grey;
-    color: $c-black;
+    color: $primary;
     max-width: 100%;
     width: 100%;
     font-size: 16px;
@@ -59,7 +59,7 @@ label {
         font-size: 14px;
     }
     &.validation-error{
-        border-color: red;
+        border-color: $c-error;
     }
 }
 .input-line {
@@ -68,7 +68,7 @@ label {
     border-right: 1px solid transparent;
     background-color: transparent;
     padding-left: 0;
-    border-bottom: 1px solid $c-black;
+    border-bottom: 1px solid $primary;
 }
 .input-notouch {
     @include font-medium();
@@ -84,7 +84,7 @@ label {
 }
 .inputmini {
     border-color: $c-middle-grey;
-    color: $c-black;
+    color: $primary;
     max-width: 100%;
     width: 58px;
     font-size: 14px;
@@ -320,7 +320,7 @@ input::-webkit-input-placeholder {
     select:-webkit-autofill:hover,
     select:-webkit-autofill:focus {
       border: 1px solid $c-middle-grey;
-      -webkit-text-fill-color: $c-black;
+      -webkit-text-fill-color: $primary;
       -webkit-box-shadow: 0 0 0px 1000px $c-white inset;
       transition: background-color 5000s ease-in-out 0s;
     }
@@ -374,7 +374,7 @@ input::-webkit-input-placeholder {
         z-index: 1;
     }
     &::after {
-        border: 1px solid $c-black;
+        border: 1px solid $primary;
         border-radius: 0px;
         border-right: 0;
         border-top: 0;
@@ -394,7 +394,7 @@ input::-webkit-input-placeholder {
         height: 56px;
     }
     &:not(.is-multiple):not(.is-loading)::after {
-        border-color: $c-black;
+        border-color: $primary;
     }
     select::-ms-expand {
         display: none;
@@ -414,7 +414,7 @@ input::-webkit-input-placeholder {
         padding: 0 40px;
     }
     &:not(.is-multiple):not(.is-loading):hover::after {
-        border-color: $c-black;
+        border-color: $primary;
     }
     &.select-label {
         select {
@@ -561,8 +561,8 @@ $svg-size: 16px;
 	select,
 	.textarea {
 		background-color: $c-white;
-		border-color: $c-black;
-		color: $c-black;
+		border-color: $primary;
+		color: $primary;
 		max-width: 100%;
 		width: 100%;
 		font-size: 14px;
@@ -594,7 +594,7 @@ $svg-size: 16px;
 		padding-top: 12px;
 		height: auto;
 		border: none;
-		border-bottom: 1px solid $c-black;
+		border-bottom: 1px solid $primary;
 	}
 	.input::-webkit-input-placeholder {
 		@include font-regular();

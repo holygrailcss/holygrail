@@ -169,10 +169,10 @@ $btn-text-full: 14px;
     line-height: 1;
     background: transparent;
     border: none;
-    color: $c-black;
+    color: $primary;
     &:after {
         content: "";
-        background-color: $c-black;
+        background-color: $primary;
         width: 100%;
         position: absolute;
         bottom: 0px;
@@ -184,7 +184,7 @@ $btn-text-full: 14px;
     &.focus {
         opacity: 0.6;
         background-color: transparent;
-        color: $c-black;
+        color: $primary;
         text-decoration: none;
         cursor: pointer;
         &:after {
@@ -224,9 +224,9 @@ $btn-text-full: 14px;
     width: 100%;
 }
 .btn-blue {
-    background-color: #3b5998;
+    background-color: $c-info;
     color: $c-white;
-    border: 1px solid #3b5998;
+    border: 1px solid $c-info;
 }
 /*+------------------------------------------------------------+
  |       -TIPOS DE BOTONES    
@@ -237,8 +237,8 @@ $btn-text-full: 14px;
  */
 .btn-primary {
     color: $c-white;
-    background-color: $c-black;
-    border: 1px solid $c-black;
+    background-color: $primary;
+    border: 1px solid $primary;
     svg {
         g{
             fill: $c-white;
@@ -272,12 +272,12 @@ $btn-text-full: 14px;
 .btn-text {
     background-color: transparent;
     border-color: transparent;
-    color: $c-black;
+    color: $primary;
 }
 .btn-invert {
-    color: $c-black;
+    color: $primary;
     background-color: transparent;
-    border: 1px solid $c-black;
+    border: 1px solid $primary;
 
 
 
@@ -291,7 +291,7 @@ $btn-text-full: 14px;
 }
 
 .btn-invert-light {
-    color: $c-black;
+    color: $primary;
     background-color: transparent;
     border: 1px solid #e3e3e3;
 
@@ -311,8 +311,8 @@ $btn-text-full: 14px;
     }
 }
 .btn-default {
-    background-color: $c-black;
-    border: 1px solid $c-black;
+    background-color: $primary;
+    border: 1px solid $primary;
     color: $c-white;
     &:focus,
     &.focus,
@@ -328,7 +328,7 @@ $btn-text-full: 14px;
     border: none;
     text-align: left;
     text-decoration: none;
-    color: $c-black;
+    color: $primary;
     background-color: transparent;
     padding: 0;
 }
@@ -365,7 +365,7 @@ $btn-text-full: 14px;
 	width: 40px;
 	max-width: initial;
 	height: 40px;
-	border: 1px solid $c-black;
+	border: 1px solid $primary;
 	border-radius: 50px;
 	align-content: center;
 	justify-content: center;
@@ -485,8 +485,8 @@ $btn-text-full: 14px;
   .no-focus {
     &:focus {
       color: $c-white;
-      background-color: $c-black;
-      border-color: $c-black;
+      background-color: $primary;
+      border-color: $primary;
     }
   }
   .btn-loading svg {
