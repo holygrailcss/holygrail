@@ -5446,12 +5446,6 @@ strong {
 /*+------------------------------------------------------------+
  |       -INVERSIÓN DE COLOR DE BOTONES   
  +------------------------------------------------------------+*/
-.has-light .btn-primary {
-  color: #292929;
-  background-color: #FFFFFF;
-  border: 1px solid #FFFFFF;
-}
-
 .has-light .btn-phantom {
   color: #FFFFFF;
   background-color: transparent;
@@ -5461,6 +5455,12 @@ strong {
 .has-light .btn {
   color: #FFFFFF;
   border-color: #FFFFFF;
+}
+
+.has-light .btn.btn-primary {
+  color: #292929;
+  background-color: #FFFFFF;
+  border: 1px solid #FFFFFF;
 }
 
 .has-light .btn:after {
@@ -6204,20 +6204,20 @@ label {
 }
 
 .ok-input label {
-  color: #8E8E8E;
+  color: #76AE4A;
 }
 
 .ok-input .input {
-  border: 1px solid #8E8E8E;
-  color: #8E8E8E;
+  border: 1px solid #76AE4A;
+  color: #76AE4A;
 }
 
 .ok-input .input-line {
   border-top: 1px solid transparent;
   border-left: 1px solid transparent;
   border-right: 1px solid transparent;
-  border-bottom: 1px solid #8E8E8E;
-  color: #8E8E8E;
+  border-bottom: 1px solid #76AE4A;
+  color: #76AE4A;
 }
 
 .disabled-input {

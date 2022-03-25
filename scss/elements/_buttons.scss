@@ -547,17 +547,18 @@ $btn-text-full: 14px;
  +------------------------------------------------------------+*/
 
 .has-light {
-    .btn-primary {
-        color: $c-black;
-        background-color: $c-white;
-        border: 1px solid $c-white;
-    }
+    
     .btn-phantom {
         color: $c-white;
         background-color: transparent;
         border: 1px solid $c-white;
     }
     .btn{
+        &.btn-primary {
+            color: $c-black;
+            background-color: $c-white;
+            border: 1px solid $c-white;
+        }
             color: $c-white;
             border-color: $c-white;
             &:after {

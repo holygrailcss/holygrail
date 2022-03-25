@@ -211,18 +211,18 @@ label {
 }
 .ok-input {
     label {
-        color: $c-dark-grey;
+        color: $c-success;
     }
     .input {
-        border: 1px solid $c-dark-grey;
-        color: $c-dark-grey;
+        border: 1px solid $c-success;
+        color: $c-success;
     }
     .input-line {
         border-top: 1px solid transparent;
         border-left: 1px solid transparent;
         border-right: 1px solid transparent;
-        border-bottom: 1px solid $c-dark-grey;
-        color: $c-dark-grey;
+        border-bottom: 1px solid $c-success;
+        color: $c-success;
     }
 }
 .disabled-input {
