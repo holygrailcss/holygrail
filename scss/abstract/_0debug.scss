@@ -1,8 +1,6 @@
 /*+------------------------------------------------------------+
  |       -DEBUG       
  +------------------------------------------------------------+*/
- 
- 
 /**
  * Activa esta hoja de estilos para detectar visualmente cualquier
  * anidación impropia o marcado potencialmente inválido.
@@ -18,31 +16,25 @@
  /*+------------------------------------------------------------+
  |       - PASO 1 : COLORES POR DIV        
  +------------------------------------------------------------+*/
- 
- 
+ //debug-div
 @mixin random-bgr(){
     background: rgb(random(255), random(255), random(255));
   }
+
+
+@mixin debug-divs(){
     @for $i from 1 through 500{
-      div:nth-child(#{$i}){  	    @include random-bgr();
-     }
-    }
-/*+------------------------------------------------------------+
- |       -ELEMENTOS VACIOS ?         
- +------------------------------------------------------------+*/
- 
- 
-:empty{
-    outline:5px solid yellow;
-}  
-.container-2{
-border: 1px solid #5d8074;
+        div:nth-child(#{$i}){  	    @include random-bgr();
+        }
+        }
 }
- /*+------------------------------------------------------------+
- |       -ALT OBLIGATORIO -- PENALIZAMOS SIN NO HAY ALT
+/*+------------------------------------------------------------+
+ |       -ELEMENTOS VACIOS ?   debug-empty
  +------------------------------------------------------------+*/
- 
- 
+ /*+------------------------------------------------------------+
+ |       -ALT OBLIGATORIO -- PENALIZAMOS SIN NO HAY ALT   debug-img
+ +------------------------------------------------------------+*/
+ @mixin debug-imgs(){
 img{
     outline:5px solid red;
 }
@@ -52,38 +44,29 @@ img[alt]{
 img[alt=""]{
     outline:5px solid yellow;
 }
+}
  /*+------------------------------------------------------------+
- |       -LINKS CON TITLE OBLIGATORIO  
+ |       -LINKS CON TITLE OBLIGATORIO    debug-links
  +------------------------------------------------------------+*/
- 
- 
+ @mixin debug-links(){
 a{
     outline:5px solid yellow;
 }
 a[title]{
     outline:none;
 }
-/*+------------------------------------------------------------+
- |       -HREF CON CONTENIDO DUDOSO    
- +------------------------------------------------------------+*/
- 
- 
 a[href="#"],
 a[href*="javascript"]{
     outline:5px solid yellow;
 }
-/*+------------------------------------------------------------+
- |       -TARGET, MEJOR CON CONTENIDO      
- +------------------------------------------------------------+*/
- 
 a[target]{
     outline:5px solid yellow;
+}
 }
 /*+------------------------------------------------------------+
  |       -UL SOLO ANIDA LISTAS      
  +------------------------------------------------------------+*/
- 
- 
+ @mixin debug-forms(){
 ul,
 ol{
     > *:not(li){
@@ -93,8 +76,6 @@ ol{
 /*+------------------------------------------------------------+
  |       -TABLAS BIEN TABULADAS        
  +------------------------------------------------------------+*/
- 
- 
 /**
  * Deberíamos asignar un atributo 'scope' a los th
  * http://bit.ly/1aHBDgW
@@ -135,8 +116,6 @@ form[action]{
  |       -TEXTAREA    : REQUIEREN , -ROWS ,-COLS ,
  |       -SUBMIT      : REQUIERE  , VALUE  
  +------------------------------------------------------------+*/
- 
- 
 textarea,
 input{
     outline:5px solid red;
@@ -153,41 +132,36 @@ input[type=submit]{
 input[type=submit][value]{
     outline:none;
 }
-/*+------------------------------------------------------------+
- |       -ESTILOS EN LINEA, EVITAR EN LA MEDIDA DE LO POSIBLE
- +------------------------------------------------------------+*/
- 
- 
-[style]{
-        outline:5px solid yellow;
 }
 /*+------------------------------------------------------------+
  |       -IDS SOLO PARA PROGRAMAR JS
  +------------------------------------------------------------+*/
- 
- 
+ @mixin debug-fine(){
+     /*+------------------------------------------------------------+
+ |       -ESTILOS EN LINEA, EVITAR EN LA MEDIDA DE LO POSIBLE
+ +------------------------------------------------------------+*/
+[style]{
+        outline:5px solid yellow;
+}
+:empty{
+    outline:5px solid yellow;
+}  
 [id]{
         outline:5px solid yellow;
 }
 /*+------------------------------------------------------------+
  |       -ELEMENTOS VACIOS     
  +------------------------------------------------------------+*/
- 
- 
 div:empty, span:empty, li:empty, p:empty, td:empty, th:empty
 { margin: 5px; border: 5px dotted yellow !important; }
 /*+------------------------------------------------------------+
  |       -ATRIBUTOS VACIOS        
  +------------------------------------------------------------+*/
- 
- 
 *[alt=""], *[title=""], *[class=""], *[id=""], a[href=""], a[href="#"]
 { border: 5px solid yellow !important; }
 /*+------------------------------------------------------------+
  |       -ATRIBUTOS DEPRECADOS        
  +------------------------------------------------------------+*/
- 
- 
 applet, basefont, center, dir, font, isindex, menu, s, strike, u
 { border: 5px dotted red !important; }
 *[background], *[bgcolor], *[clear], *[color], *[compact], *[noshade], *[nowrap], *[size], *[start],
@@ -200,23 +174,25 @@ ul[type], ol[type], li[type]
 /*+------------------------------------------------------------+
  |       -PROPUESTA A LOS ELEMENTOS DEPRECADOS      
  +------------------------------------------------------------+*/
- 
- 
 input[type="button"], big, tt
 { border: 5px dotted #33FF00 !important; }
 /*+------------------------------------------------------------+
  |       -PROPUESTA A LOS ATRIBUTOS DEPRECADOS      
  +------------------------------------------------------------+*/
- 
- 
 *[border], a[target], table[cellpadding], table[cellspacing], *[name]
 { border: 5px solid #33FF00 !important; }
-
-
-
+}
+@mixin debug-all(){
+    @include debug-divs();
+    @include debug-links();
+    @include debug-forms();
+    @include debug-fine();
+    @include debug-headers();
+}
 /*+------------------------------------------------------------+
  |       -Coloreamos los headers
  +------------------------------------------------------------+*/
+ @mixin debug-headers(){
 @for $i from 1 through 8 {
 	.h#{$i} {
 		position: relative;
@@ -235,4 +211,5 @@ input[type="button"], big, tt
 			font-weight: bold;
 		}
 	}
+}
 }

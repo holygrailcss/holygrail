@@ -47,6 +47,42 @@ img {
 }
 
 /*+------------------------------------------------------------+
+ |       -DEBUG       
+ +------------------------------------------------------------+*/
+/**
+ * Activa esta hoja de estilos para detectar visualmente cualquier
+ * anidación impropia o marcado potencialmente inválido.
+ *
+ * Rojo           ==      Definitivamente un error
+ * Amarillo       ==      a revisar
+ * Ninguno        ==      debería estar bien
+ *
+ * Este método de validación no es más que una guía, no te bases en el
+ * para validar tu marcado
+ *
+ */
+/*+------------------------------------------------------------+
+ |       - PASO 1 : COLORES POR DIV        
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -ELEMENTOS VACIOS ?   debug-empty
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -ALT OBLIGATORIO -- PENALIZAMOS SIN NO HAY ALT   debug-img
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -LINKS CON TITLE OBLIGATORIO    debug-links
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -UL SOLO ANIDA LISTAS      
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -IDS SOLO PARA PROGRAMAR JS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -Coloreamos los headers
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
  |-COLORS
  +------------------------------------------------------------+*/
 /*+------------------------------------------------------------+
@@ -4739,13 +4775,10 @@ strong {
 
 .ov-custom::-webkit-scrollbar-thumb {
   background-color: #8E8E8E;
-  border-radius: 16px;
-  border: 5px solid #FFFFFF;
 }
 
 .ov-custom::-webkit-scrollbar-thumb:hover {
   background-color: #8E8E8E;
-  border: 4px solid #F0F0F0;
 }
 
 .ov-custom::-webkit-scrollbar-button {
@@ -4934,6 +4967,7 @@ strong {
 .btn {
   position: relative;
   display: inline-block;
+  border-radius: 8px;
   line-height: 1;
   text-align: center;
   vertical-align: middle;
@@ -5085,7 +5119,7 @@ strong {
   position: relative;
   text-align: center;
   outline: none;
-  padding: 4px 0;
+  padding: 0;
   text-align: center;
   cursor: pointer;
   line-height: 1;
@@ -9377,5 +9411,3 @@ ZEN:
   padding: 16px 0;
   border-top: 1px solid #E3E3E3;
 }
-
-/*# sourceMappingURL=style.css.map */
