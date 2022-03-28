@@ -4,7 +4,7 @@ $tooltipdist: 18px;
 
 .tooltip-sm {
   right: 8px;
-  background-color:#FFFFFF;
+  background-color:$c-white;
   border: 1px solid $tooltipColor;
   position: absolute;
   width: 100%;
@@ -20,7 +20,7 @@ $tooltipdist: 18px;
     border-left: 1px solid $tooltipColor;
     width: $tooltipArrow;
     height: $tooltipArrow;
-    background: #FFFFFF;
+    background: $c-white;
     transform: rotate(45deg);
   }
 }

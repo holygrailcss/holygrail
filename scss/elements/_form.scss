@@ -5,7 +5,7 @@ $input-padding-y: 14px;
  +------------------------------------------------------------+*/
 input:focus {
     outline: none;
-    border: 1px solid #000000;
+    border: 1px solid $primary;
 }
 .form {
     width: 100%;
@@ -17,10 +17,10 @@ fieldset[disabled] .form-control {
     opacity: 1;
 }
 select {
-    background-color: #FFFFFF;
-    border-color: #E3E3E3;
+    background-color: $c-white;
+    border-color: $c-middle-grey;
     border-radius: 0;
-    color: #000000;
+    color: $primary;
 }
 label {
     font-size: 14px;
@@ -48,9 +48,9 @@ label {
 .input,
 .textarea,
 .select select {
-    background-color: #FFFFFF;
-    border-color: #E3E3E3;
-    color: #000000;
+    background-color: $c-white;
+    border-color: $c-middle-grey;
+    color: $primary;
     max-width: 100%;
     width: 100%;
     font-size: 16px;
@@ -59,7 +59,7 @@ label {
         font-size: 14px;
     }
     &.validation-error{
-        border-color: red;
+        border-color: $c-error;
     }
 }
 .input-line {
@@ -73,7 +73,7 @@ label {
 .input-notouch {
     @include font-medium();
     pointer-events: none;
-    border-color: #E3E3E3;
+    border-color: $c-middle-grey;
     padding: 24px 0;
     height: auto;
 }
@@ -83,13 +83,13 @@ label {
     box-sizing: border-box;
 }
 .inputmini {
-    border-color: #E3E3E3;
-    color: #000000;
+    border-color: $c-middle-grey;
+    color: $primary;
     max-width: 100%;
     width: 58px;
     font-size: 14px;
     align-items: center;
-    border: 1px solid #E3E3E3;
+    border: 1px solid $c-middle-grey;
     box-shadow: none;
     display: inline-flex;
     height: 34px;
@@ -140,7 +140,7 @@ label {
     margin-top: 4px;
 }
 .info-text {
-    color: #8E8E8E;
+    color: $c-dark-grey;
     margin-top: 4px;
     width: 100%;
     float: left;
@@ -198,31 +198,31 @@ label {
     label,
     textarea::placeholder,
     .help {
-        color: $error !important;
+        color: $c-error !important;
     }
     .input {
-        border: 1px solid $error;
+        border: 1px solid $c-error;
     }
     svg {
         g {
-            stroke: $error !important;
+            stroke: $c-error !important;
         }
     }
 }
 .ok-input {
     label {
-        color: #8E8E8E;
+        color: $c-success;
     }
     .input {
-        border: 1px solid #8E8E8E;
-        color: #8E8E8E;
+        border: 1px solid $c-success;
+        color: $c-success;
     }
     .input-line {
         border-top: 1px solid transparent;
         border-left: 1px solid transparent;
         border-right: 1px solid transparent;
-        border-bottom: 1px solid #8E8E8E;
-        color: #8E8E8E;
+        border-bottom: 1px solid $c-success;
+        color: $c-success;
     }
 }
 .disabled-input {
@@ -232,7 +232,7 @@ label {
     position: relative;
     height: 30px;
     width: 100%;
-    border: solid #E3E3E3;
+    border: solid $c-middle-grey;
     border-width: 1px 1px 0px 1px;
     padding: 10px;
     span {
@@ -249,11 +249,11 @@ label {
         padding-left: 200px;
     }
     &:last-child {
-        border-bottom: 1px solid #E3E3E3;
+        border-bottom: 1px solid $c-middle-grey;
     }
 }
 input::-webkit-input-placeholder {
-    color: #E3E3E3;
+    color: $c-middle-grey;
     transform: translate3d(0, 0, 0);
 }
 .form-input-label {
@@ -277,7 +277,7 @@ input::-webkit-input-placeholder {
         margin-top: 1px;
         margin-bottom: 0;
         line-height: 1.1;
-        color: #8E8E8E;
+        color: $c-dark-grey;
         border-radius: 0.25rem;
         transition: all 0.1s ease-in-out;
         pointer-events: none;
@@ -302,7 +302,7 @@ input::-webkit-input-placeholder {
         padding-top: calc(#{$input-padding-y} / 3 + 1px);
         padding-bottom: calc(#{$input-padding-y} / 3);
         font-size: 12px;
-        color: #8E8E8E;
+        color: $c-dark-grey;
     }
     & input::-webkit-list-button,
     & input::-webkit-calendar-picker-indicator{
@@ -319,9 +319,9 @@ input::-webkit-input-placeholder {
     select:-webkit-autofill,
     select:-webkit-autofill:hover,
     select:-webkit-autofill:focus {
-      border: 1px solid #E3E3E3;
-      -webkit-text-fill-color: #000000;
-      -webkit-box-shadow: 0 0 0px 1000px #FFFFFF inset;
+      border: 1px solid $c-middle-grey;
+      -webkit-text-fill-color: $primary;
+      -webkit-box-shadow: 0 0 0px 1000px $c-white inset;
       transition: background-color 5000s ease-in-out 0s;
     }
 
@@ -334,7 +334,7 @@ input::-webkit-input-placeholder {
         display: none;
     }
     .form-input-label input:-ms-input-placeholder {
-        color: #8E8E8E;
+        color: $c-dark-grey;
     }
 }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -342,7 +342,7 @@ input::-webkit-input-placeholder {
         display: none;
     }
     .form-input-label input:-ms-input-placeholder {
-        color: #8E8E8E !important;
+        color: $c-dark-grey !important;
     }
 }
 /*+------------------------------------------------------------+
@@ -401,7 +401,7 @@ input::-webkit-input-placeholder {
     }
     select[disabled]:hover,
     fieldset[disabled] select:hover {
-        border-color: #F0F0F0;
+        border-color: $white-smoke;
     }
     select:not([multiple]) {
         padding-right: 45px;
@@ -414,7 +414,7 @@ input::-webkit-input-placeholder {
         padding: 0 40px;
     }
     &:not(.is-multiple):not(.is-loading):hover::after {
-        border-color: #000000;
+        border-color: $primary;
     }
     &.select-label {
         select {
@@ -424,7 +424,7 @@ input::-webkit-input-placeholder {
     &.select-box{
 		height: auto;
 		select{
-			background-color: #E3E3E3;
+			background-color: $c-middle-grey;
 			min-width: 24px;
 			width: 100%;
 			height: 24px;
@@ -560,9 +560,9 @@ $svg-size: 16px;
 	.input,
 	select,
 	.textarea {
-		background-color: #FFFFFF;
+		background-color: $c-white;
 		border-color: $primary;
-		color: #000000;
+		color: $primary;
 		max-width: 100%;
 		width: 100%;
 		font-size: 14px;
@@ -594,7 +594,7 @@ $svg-size: 16px;
 		padding-top: 12px;
 		height: auto;
 		border: none;
-		border-bottom: 1px solid #000000;
+		border-bottom: 1px solid $primary;
 	}
 	.input::-webkit-input-placeholder {
 		@include font-regular();

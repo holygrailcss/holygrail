@@ -207,15 +207,15 @@ $btn-text-full: 14px;
         opacity: 0.2;
     }
     .has-light & {
-        color: #FFFFFF;
+        color: $c-white;
         &:after {
-            background-color: #FFFFFF;
+            background-color: $c-white;
         }
         &:hover,
         &:focus,
         &.focus {
             background-color: transparent;
-            color: #FFFFFF;
+            color: $c-white;
         }
     }
 }
@@ -224,9 +224,9 @@ $btn-text-full: 14px;
     width: 100%;
 }
 .btn-blue {
-    background-color: #3b5998;
-    color: #FFFFFF;
-    border: 1px solid #3b5998;
+    background-color: $c-info;
+    color: $c-white;
+    border: 1px solid $c-info;
 }
 /*+------------------------------------------------------------+
  |       -TIPOS DE BOTONES    
@@ -236,31 +236,31 @@ $btn-text-full: 14px;
  *
  */
 .btn-primary {
-    color: #FFFFFF;
+    color: $c-white;
     background-color: $primary;
     border: 1px solid $primary;
     svg {
         g{
-            fill: #FFFFFF;
-            stroke: #FFFFFF;
+            fill: $c-white;
+            stroke: $c-white;
         }
         circle{
-            stroke: #FFFFFF;
+            stroke: $c-white;
         }
     }
 }
 
 
 .btn-phantom {
-    color: #FFFFFF;
+    color: $c-white;
     background-color:transparent;
-    border: 1px solid #FFFFFF;
+    border: 1px solid $c-white;
     &:focus,
     &.focus,
     &:hover,
     &:active,
     &.active {
-        color: #FFFFFF;
+        color: $c-white;
         opacity:0.6;
     }
 
@@ -286,12 +286,7 @@ $btn-text-full: 14px;
     &:hover,
     &:active,
     &.active {
- opacity: .6;
-
-    // svg{
-    //     path{fill:#FFFFFF}
-    // }
-
+     opacity: .6;
     }
 }
 
@@ -310,7 +305,7 @@ $btn-text-full: 14px;
  opacity: .6;
 
     svg{
-        path{fill:#FFFFFF}
+        path{fill:$c-white}
     }
 
     }
@@ -318,15 +313,15 @@ $btn-text-full: 14px;
 .btn-default {
     background-color: $primary;
     border: 1px solid $primary;
-    color: #FFFFFF;
+    color: $c-white;
     &:focus,
     &.focus,
     &:hover,
     &:active,
     &.active {
-        color: #FFFFFF;
-        background-color: #8E8E8E;
-        border-color: #8E8E8E;
+        color: $c-white;
+        background-color: $c-dark-grey;
+        border-color: $c-dark-grey;
     }
 }
 .btn-link {
@@ -339,11 +334,11 @@ $btn-text-full: 14px;
 }
 
 .btn-trans{
-    color: #FFFFFF;
+    color: $c-white;
     background: rgba(226, 226, 226, 0.6);
     font-size: 14px;
     line-height: 1.2;
-    border: 0 solid #FFFFFF;
+    border: 0 solid $c-white;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding-top: calc(16px + 2px);
@@ -353,12 +348,12 @@ $btn-text-full: 14px;
     display: flex;
     align-items: center;
     svg{
-        stroke  :#FFFFFF;
+        stroke  :$c-white;
     }
     &:hover, 
     &:focus, 
     &.focus {
-        color: #FFFFFF;
+        color: $c-white;
         text-decoration: none;
     }
 }
@@ -370,7 +365,7 @@ $btn-text-full: 14px;
 	width: 40px;
 	max-width: initial;
 	height: 40px;
-	border: 1px solid #000000;
+	border: 1px solid $primary;
 	border-radius: 50px;
 	align-content: center;
 	justify-content: center;
@@ -489,7 +484,7 @@ $btn-text-full: 14px;
   }
   .no-focus {
     &:focus {
-      color: #FFFFFF;
+      color: $c-white;
       background-color: $primary;
       border-color: $primary;
     }
@@ -552,21 +547,22 @@ $btn-text-full: 14px;
  +------------------------------------------------------------+*/
 
 .has-light {
-    .btn-primary {
-        color: $primary;
-        background-color: #FFFFFF;
-        border: 1px solid #FFFFFF;
-    }
+    
     .btn-phantom {
-        color: #FFFFFF;
+        color: $c-white;
         background-color: transparent;
-        border: 1px solid #FFFFFF;
+        border: 1px solid $c-white;
     }
     .btn{
-            color: #FFFFFF;
-            border-color: #FFFFFF;
+        &.btn-primary {
+            color: $c-black;
+            background-color: $c-white;
+            border: 1px solid $c-white;
+        }
+            color: $c-white;
+            border-color: $c-white;
             &:after {
-                background-color: #FFFFFF;
+                background-color: $c-white;
             }
     }
 }

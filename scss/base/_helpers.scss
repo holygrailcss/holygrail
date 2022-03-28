@@ -17,27 +17,27 @@
 
 
 .c-gray {
-    color: #8E8E8E;
+    color: $c-dark-grey;
 }
 .second-color {
-    color: #8E8E8E;
+    color: $c-dark-grey;
 }
 .is-info {
-    color: #1A32A4;
+    color: $c-info;
 }
 
 
 .bg-light {
-    background-color: #F0F0F0;
+    background-color: $white-smoke;
 }
 .bg-clear {
-    background-color: #FFFFFF;
+    background-color: $c-white;
 }
 .bg-cream {
-    background-color: #F0F0F0;
+    background-color: $white-smoke;
 }
 .bg-line {
-    border-bottom: 1px solid #e3e3e3;
+    border-bottom: 1px solid $c-middle-grey;
 }
 
 
@@ -78,7 +78,7 @@
 }
 hr {
     width: 100%;
-    border-top: 1px solid #E3E3E3;
+    border-top: 1px solid $c-middle-grey;
     border-bottom: 1px solid transparent;
 }
 .only-mobile {
@@ -127,27 +127,27 @@ hr {
     }
 }
 .hg-status-a {
-    color: #F54637;
+    color: $c-error;
     &:before {
-        background-color: #F54637;
+        background-color: $c-error;
     }
 }
 .hg-status-b {
-    color: #3b5998;
+    color: $c-info;
     &:before {
-        background-color: #3b5998;
+        background-color: $c-info;
     }
 }
 .hg-status-c {
-    color: #F54637;
+    color: $c-error;
     &:before {
-        background-color: #F54637;
+        background-color: $c-error;
     }
 }
 .hg-status-d {
-    color: #8E8E8E;
+    color: $c-dark-grey;
     &:before {
-        background-color: #8E8E8E;
+        background-color: $c-dark-grey;
     }
 }
 //visible a partir de sm
@@ -284,19 +284,19 @@ strong {
     font-family: $font-family-bold;
 }
 .border-1 {
-    border: 1px solid #e3e3e3;
+    border: 1px solid $c-middle-grey;
 }
 .border-t {
-    border-top: 1px solid #e3e3e3;
+    border-top: 1px solid $c-middle-grey;
 }
 .border-b {
-    border-bottom: 1px solid #e3e3e3;
+    border-bottom: 1px solid $c-middle-grey;
 }
 .border-l {
-    border-left: 1px solid #e3e3e3;
+    border-left: 1px solid $c-middle-grey;
 }
 .border-r {
-    border-right: 1px solid #e3e3e3;
+    border-right: 1px solid $c-middle-grey;
 }
 .flex-vcenter {
     display: flex;
@@ -334,7 +334,7 @@ strong {
 }
 
 .p-view {
-    background-color: #FFFFFF;
+    background-color: $c-white;
     position: absolute;
     width: 100%;
     top: 0;
@@ -344,7 +344,7 @@ strong {
 }
 .p-view\:sm {
     @media (max-width: #{$break-sm - 1} ){
-        background-color: #FFFFFF;
+        background-color: $c-white;
         position: absolute;
         width: 100%;
         top: 0;
@@ -367,23 +367,24 @@ strong {
     -webkit-overflow-scrolling: touch;
 }
 .scrollbar::-webkit-scrollbar {
-    background-color: #FFFFFF;
+    background-color: $c-white;
     width: 16px;
 }
 .ov-custom{
     &::-webkit-scrollbar-track {
-        background-color: #FFFFFF;
+        background-color: $c-white;
     }
     &::-webkit-scrollbar-track:hover {
-        background-color: #F0F0F0;
+        background-color: $white-smoke;
     }
     &::-webkit-scrollbar-thumb {
-        background-color: #8E8E8E;
-
-
+        background-color: $c-dark-grey;
+        border-radius: 16px;
+        border: 5px solid $c-white;
     }
     &::-webkit-scrollbar-thumb:hover {
-        background-color: #8E8E8E;
+        background-color: $c-dark-grey;
+        border: 4px solid $white-smoke;
     }
     &::-webkit-scrollbar-button {
         display: none;

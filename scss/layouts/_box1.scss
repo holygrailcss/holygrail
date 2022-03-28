@@ -18,7 +18,7 @@
 
 
 .card1 {
-    border: 1px solid #E3E3E3;
+    border: 1px solid $c-middle-grey;
     align-items: stretch;
     height: calc(100% - 20px);
     padding-bottom: 30px;
@@ -77,8 +77,8 @@
         padding-top: 25px;
         border-radius: 50%;
         text-align: center;
-        color: #FFFFFF;
-        border: 5px solid #FFFFFF;
+        color: $c-white;
+        border: 5px solid $c-white;
         box-sizing: border-box;
         font-size: 22px;
         font-weight: 100;

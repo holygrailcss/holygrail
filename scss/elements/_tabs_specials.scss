@@ -89,7 +89,7 @@
     left: -1px;
     &.is-active,
     &:hover {
-      border: 1px solid #000000;
+      border: 1px solid $primary;
       opacity: 1;
       cursor: pointer;
     }
