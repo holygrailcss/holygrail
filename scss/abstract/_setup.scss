@@ -59,8 +59,8 @@ $c-green:#76AE4A !default;
 $c-yellow:#FFC700 !default;
 // fin massimodutti color MD 2022
 
-$c-success: $c-green !default;
-$c-alert: $c-yellow !default;
+$c-success:#76AE4A !default;
+$c-alert: #FFC700 !default;
 
 
  $black : nth($colorsGuide, 1) !default;
@@ -89,7 +89,7 @@ $c-alert: $c-yellow !default;
  $color-10 : nth($colorsGuide, 22) !default;
  $color-11 : nth($colorsGuide, 23) !default;
 
- $primary:$c-black !default;
+ $primary: #292929!default;
  $dark-grey: #8E8E8E !default;
  $error: #F54637!default;
 
@@ -199,7 +199,7 @@ $max-vw:1500px!default;
            p4: (14px, 14px, 16px,  18px, 1.4, "medium" )) !default;
 
         //  primary   font (regular, medium , bold) 
-        //  secondary font (2-regular, 2-medium , 2-bold) 
+        //  secondary font (regular2, medium2 , bold2) 
    
 
 /* TYPES FIJOS */
