@@ -73,6 +73,9 @@ img {
  |       -BREAKPOINTS
  +------------------------------------------------------------+*/
 /*+------------------------------------------------------------+
+ |       -BREAKPOINTS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
  |       -MIXINS
  +------------------------------------------------------------+*/
 /* .background-alpha(VALUE VALUE);*/
@@ -237,6 +240,9 @@ img {
  |       -BREAKPOINTS
  +------------------------------------------------------------+*/
 /*+------------------------------------------------------------+
+ |       -BREAKPOINTS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
  |       -MIXINS
  +------------------------------------------------------------+*/
 /* .background-alpha(VALUE VALUE);*/
@@ -291,6 +297,90 @@ img {
     $BASE
 \*------------------------------------*/
 /* Nuestra base esencial*/
+/*+------------------------------------------------------------+
+ |-COLORS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -IMPORT FONTS
+ +------------------------------------------------------------+*/
+/* BREAKPOINTS */
+/*+------------------------------------------------------------+
+  |       -FASE 2 : PERSONALIZA TU HOLYGRAIL
+  +------------------------------------------------------------+*/
+/*  breakpoints  */
+/*  grid  */
+/* maxwidth del container */
+/* maxwidth del container2*/
+/* maxwidth del container3*/
+/* maxwidth del container4*/
+/* maxwidth del container5*/
+/* maxwidth del container6*/
+/* maxwidth del container7*/
+/* maxwidth del container8*/
+/* maxwidth del container8*/
+/*  alturas minimas  */
+/*  animaciones  */
+/* ALTURA MINIMA */
+/* Types.scss */
+/* Types responsive  xs sm md lg xl line-height font-weight */
+/* TYPES FIJOS */
+/*+------------------------------------------------------------+
+|       -spacing  
++------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -ANIMATIONS    
+ +------------------------------------------------------------+*/
+@keyframes underline {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes stretch {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 80px;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+}
+
+/*+------------------------------------------------------------+
+ |       -BREAKPOINTS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -MIXINS
+ +------------------------------------------------------------+*/
+/* .background-alpha(VALUE VALUE);*/
+/* .userselect(VALUE) (all, element, none, text) */
+/*+------------------------------------------------------------+
+ |       -MIXINS FONTS
+ +------------------------------------------------------------+*/
 /*+------------------------------------------------------------+
  |       -HELPERS DE TEXTO , ALINEACIONES        
  +------------------------------------------------------------+*/
@@ -576,6 +666,90 @@ img {
   text-align: left;
 }
 
+/*+------------------------------------------------------------+
+ |-COLORS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -IMPORT FONTS
+ +------------------------------------------------------------+*/
+/* BREAKPOINTS */
+/*+------------------------------------------------------------+
+  |       -FASE 2 : PERSONALIZA TU HOLYGRAIL
+  +------------------------------------------------------------+*/
+/*  breakpoints  */
+/*  grid  */
+/* maxwidth del container */
+/* maxwidth del container2*/
+/* maxwidth del container3*/
+/* maxwidth del container4*/
+/* maxwidth del container5*/
+/* maxwidth del container6*/
+/* maxwidth del container7*/
+/* maxwidth del container8*/
+/* maxwidth del container8*/
+/*  alturas minimas  */
+/*  animaciones  */
+/* ALTURA MINIMA */
+/* Types.scss */
+/* Types responsive  xs sm md lg xl line-height font-weight */
+/* TYPES FIJOS */
+/*+------------------------------------------------------------+
+|       -spacing  
++------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -ANIMATIONS    
+ +------------------------------------------------------------+*/
+@keyframes underline {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes stretch {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 80px;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+}
+
+/*+------------------------------------------------------------+
+ |       -BREAKPOINTS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -MIXINS
+ +------------------------------------------------------------+*/
+/* .background-alpha(VALUE VALUE);*/
+/* .userselect(VALUE) (all, element, none, text) */
+/*+------------------------------------------------------------+
+ |       -MIXINS FONTS
+ +------------------------------------------------------------+*/
 /*+------------------------------------------------------------+
  |       -CONTAINERS        
  +------------------------------------------------------------+*/
@@ -1194,14 +1368,14 @@ img {
 }
 
 .bleed-0 {
-  padding: 0 0px 0 0px;
+  padding: 0 calc(0/2+px) 0 calc(0/2+px);
   overflow: hidden;
 }
 
 .bleed-0 .container-fluid {
-  margin-left: 0px;
-  margin-right: 0px;
-  padding: 0 0px 0 0px;
+  margin-left: 0/2px;
+  margin-right: calc(0/2+px);
+  padding: 0 calc(0/2+px) 0 calc(0/2+px);
 }
 
 .bleed-0 > .row {
@@ -1247,14 +1421,14 @@ img {
 }
 
 .bleed-4 {
-  padding: 0 2px 0 2px;
+  padding: 0 calc(-4/2+px) 0 calc(-4/2+px);
   overflow: hidden;
 }
 
 .bleed-4 .container-fluid {
-  margin-left: -2px;
-  margin-right: -2px;
-  padding: 0 2px 0 2px;
+  margin-left: -4/2px;
+  margin-right: calc(-4/2+px);
+  padding: 0 calc(-4/2+px) 0 calc(-4/2+px);
 }
 
 .bleed-4 > .row {
@@ -1300,14 +1474,14 @@ img {
 }
 
 .bleed-8 {
-  padding: 0 4px 0 4px;
+  padding: 0 calc(-8/2+px) 0 calc(-8/2+px);
   overflow: hidden;
 }
 
 .bleed-8 .container-fluid {
-  margin-left: -4px;
-  margin-right: -4px;
-  padding: 0 4px 0 4px;
+  margin-left: -8/2px;
+  margin-right: calc(-8/2+px);
+  padding: 0 calc(-8/2+px) 0 calc(-8/2+px);
 }
 
 .bleed-8 > .row {
@@ -1352,6 +1526,90 @@ img {
   }
 }
 
+/*+------------------------------------------------------------+
+ |-COLORS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -IMPORT FONTS
+ +------------------------------------------------------------+*/
+/* BREAKPOINTS */
+/*+------------------------------------------------------------+
+  |       -FASE 2 : PERSONALIZA TU HOLYGRAIL
+  +------------------------------------------------------------+*/
+/*  breakpoints  */
+/*  grid  */
+/* maxwidth del container */
+/* maxwidth del container2*/
+/* maxwidth del container3*/
+/* maxwidth del container4*/
+/* maxwidth del container5*/
+/* maxwidth del container6*/
+/* maxwidth del container7*/
+/* maxwidth del container8*/
+/* maxwidth del container8*/
+/*  alturas minimas  */
+/*  animaciones  */
+/* ALTURA MINIMA */
+/* Types.scss */
+/* Types responsive  xs sm md lg xl line-height font-weight */
+/* TYPES FIJOS */
+/*+------------------------------------------------------------+
+|       -spacing  
++------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -ANIMATIONS    
+ +------------------------------------------------------------+*/
+@keyframes underline {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes stretch {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 80px;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+}
+
+/*+------------------------------------------------------------+
+ |       -BREAKPOINTS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -MIXINS
+ +------------------------------------------------------------+*/
+/* .background-alpha(VALUE VALUE);*/
+/* .userselect(VALUE) (all, element, none, text) */
+/*+------------------------------------------------------------+
+ |       -MIXINS FONTS
+ +------------------------------------------------------------+*/
 /*+------------------------------------------------------------+
  |       -Alturas
  +------------------------------------------------------------+*/
@@ -1420,6 +1678,90 @@ img {
   }
 }
 
+/*+------------------------------------------------------------+
+ |-COLORS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -IMPORT FONTS
+ +------------------------------------------------------------+*/
+/* BREAKPOINTS */
+/*+------------------------------------------------------------+
+  |       -FASE 2 : PERSONALIZA TU HOLYGRAIL
+  +------------------------------------------------------------+*/
+/*  breakpoints  */
+/*  grid  */
+/* maxwidth del container */
+/* maxwidth del container2*/
+/* maxwidth del container3*/
+/* maxwidth del container4*/
+/* maxwidth del container5*/
+/* maxwidth del container6*/
+/* maxwidth del container7*/
+/* maxwidth del container8*/
+/* maxwidth del container8*/
+/*  alturas minimas  */
+/*  animaciones  */
+/* ALTURA MINIMA */
+/* Types.scss */
+/* Types responsive  xs sm md lg xl line-height font-weight */
+/* TYPES FIJOS */
+/*+------------------------------------------------------------+
+|       -spacing  
++------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -ANIMATIONS    
+ +------------------------------------------------------------+*/
+@keyframes underline {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes stretch {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 80px;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+}
+
+/*+------------------------------------------------------------+
+ |       -BREAKPOINTS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -MIXINS
+ +------------------------------------------------------------+*/
+/* .background-alpha(VALUE VALUE);*/
+/* .userselect(VALUE) (all, element, none, text) */
+/*+------------------------------------------------------------+
+ |       -MIXINS FONTS
+ +------------------------------------------------------------+*/
 .ico-big {
   width: 48px;
   height: 48px;
@@ -1440,6 +1782,90 @@ svg-icon.c-invert svg {
 }
 
 /*+------------------------------------------------------------+
+ |-COLORS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -IMPORT FONTS
+ +------------------------------------------------------------+*/
+/* BREAKPOINTS */
+/*+------------------------------------------------------------+
+  |       -FASE 2 : PERSONALIZA TU HOLYGRAIL
+  +------------------------------------------------------------+*/
+/*  breakpoints  */
+/*  grid  */
+/* maxwidth del container */
+/* maxwidth del container2*/
+/* maxwidth del container3*/
+/* maxwidth del container4*/
+/* maxwidth del container5*/
+/* maxwidth del container6*/
+/* maxwidth del container7*/
+/* maxwidth del container8*/
+/* maxwidth del container8*/
+/*  alturas minimas  */
+/*  animaciones  */
+/* ALTURA MINIMA */
+/* Types.scss */
+/* Types responsive  xs sm md lg xl line-height font-weight */
+/* TYPES FIJOS */
+/*+------------------------------------------------------------+
+|       -spacing  
++------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -ANIMATIONS    
+ +------------------------------------------------------------+*/
+@keyframes underline {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes stretch {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 80px;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+}
+
+/*+------------------------------------------------------------+
+ |       -BREAKPOINTS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -MIXINS
+ +------------------------------------------------------------+*/
+/* .background-alpha(VALUE VALUE);*/
+/* .userselect(VALUE) (all, element, none, text) */
+/*+------------------------------------------------------------+
+ |       -MIXINS FONTS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
  |       -BACKGROUNDS        
  +------------------------------------------------------------+*/
 .bg-cover {
@@ -1456,6 +1882,90 @@ svg-icon.c-invert svg {
   color: #FFFFFF;
 }
 
+/*+------------------------------------------------------------+
+ |-COLORS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -IMPORT FONTS
+ +------------------------------------------------------------+*/
+/* BREAKPOINTS */
+/*+------------------------------------------------------------+
+  |       -FASE 2 : PERSONALIZA TU HOLYGRAIL
+  +------------------------------------------------------------+*/
+/*  breakpoints  */
+/*  grid  */
+/* maxwidth del container */
+/* maxwidth del container2*/
+/* maxwidth del container3*/
+/* maxwidth del container4*/
+/* maxwidth del container5*/
+/* maxwidth del container6*/
+/* maxwidth del container7*/
+/* maxwidth del container8*/
+/* maxwidth del container8*/
+/*  alturas minimas  */
+/*  animaciones  */
+/* ALTURA MINIMA */
+/* Types.scss */
+/* Types responsive  xs sm md lg xl line-height font-weight */
+/* TYPES FIJOS */
+/*+------------------------------------------------------------+
+|       -spacing  
++------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -ANIMATIONS    
+ +------------------------------------------------------------+*/
+@keyframes underline {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes stretch {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 80px;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+}
+
+/*+------------------------------------------------------------+
+ |       -BREAKPOINTS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -MIXINS
+ +------------------------------------------------------------+*/
+/* .background-alpha(VALUE VALUE);*/
+/* .userselect(VALUE) (all, element, none, text) */
+/*+------------------------------------------------------------+
+ |       -MIXINS FONTS
+ +------------------------------------------------------------+*/
 /*+------------------------------------------------------------+
  |       -RATIOS    ancho x alto    
  +------------------------------------------------------------+*/
@@ -1920,6 +2430,90 @@ svg-icon.c-invert svg {
   content: "";
 }
 
+/*+------------------------------------------------------------+
+ |-COLORS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -IMPORT FONTS
+ +------------------------------------------------------------+*/
+/* BREAKPOINTS */
+/*+------------------------------------------------------------+
+  |       -FASE 2 : PERSONALIZA TU HOLYGRAIL
+  +------------------------------------------------------------+*/
+/*  breakpoints  */
+/*  grid  */
+/* maxwidth del container */
+/* maxwidth del container2*/
+/* maxwidth del container3*/
+/* maxwidth del container4*/
+/* maxwidth del container5*/
+/* maxwidth del container6*/
+/* maxwidth del container7*/
+/* maxwidth del container8*/
+/* maxwidth del container8*/
+/*  alturas minimas  */
+/*  animaciones  */
+/* ALTURA MINIMA */
+/* Types.scss */
+/* Types responsive  xs sm md lg xl line-height font-weight */
+/* TYPES FIJOS */
+/*+------------------------------------------------------------+
+|       -spacing  
++------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -ANIMATIONS    
+ +------------------------------------------------------------+*/
+@keyframes underline {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes stretch {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 80px;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+}
+
+/*+------------------------------------------------------------+
+ |       -BREAKPOINTS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -MIXINS
+ +------------------------------------------------------------+*/
+/* .background-alpha(VALUE VALUE);*/
+/* .userselect(VALUE) (all, element, none, text) */
+/*+------------------------------------------------------------+
+ |       -MIXINS FONTS
+ +------------------------------------------------------------+*/
 /*+------------------------------------------------------------+
  |       - MARGINS  
  +------------------------------------------------------------+*/
@@ -3213,6 +3807,90 @@ svg-icon.c-invert svg {
 }
 
 /*+------------------------------------------------------------+
+ |-COLORS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -IMPORT FONTS
+ +------------------------------------------------------------+*/
+/* BREAKPOINTS */
+/*+------------------------------------------------------------+
+  |       -FASE 2 : PERSONALIZA TU HOLYGRAIL
+  +------------------------------------------------------------+*/
+/*  breakpoints  */
+/*  grid  */
+/* maxwidth del container */
+/* maxwidth del container2*/
+/* maxwidth del container3*/
+/* maxwidth del container4*/
+/* maxwidth del container5*/
+/* maxwidth del container6*/
+/* maxwidth del container7*/
+/* maxwidth del container8*/
+/* maxwidth del container8*/
+/*  alturas minimas  */
+/*  animaciones  */
+/* ALTURA MINIMA */
+/* Types.scss */
+/* Types responsive  xs sm md lg xl line-height font-weight */
+/* TYPES FIJOS */
+/*+------------------------------------------------------------+
+|       -spacing  
++------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -ANIMATIONS    
+ +------------------------------------------------------------+*/
+@keyframes underline {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes stretch {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 80px;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+}
+
+/*+------------------------------------------------------------+
+ |       -BREAKPOINTS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -MIXINS
+ +------------------------------------------------------------+*/
+/* .background-alpha(VALUE VALUE);*/
+/* .userselect(VALUE) (all, element, none, text) */
+/*+------------------------------------------------------------+
+ |       -MIXINS FONTS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
  |       -HTML REMS        
  +------------------------------------------------------------+*/
 body {
@@ -4446,6 +5124,90 @@ mark {
   height: 1px;
 }
 
+/*+------------------------------------------------------------+
+ |-COLORS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -IMPORT FONTS
+ +------------------------------------------------------------+*/
+/* BREAKPOINTS */
+/*+------------------------------------------------------------+
+  |       -FASE 2 : PERSONALIZA TU HOLYGRAIL
+  +------------------------------------------------------------+*/
+/*  breakpoints  */
+/*  grid  */
+/* maxwidth del container */
+/* maxwidth del container2*/
+/* maxwidth del container3*/
+/* maxwidth del container4*/
+/* maxwidth del container5*/
+/* maxwidth del container6*/
+/* maxwidth del container7*/
+/* maxwidth del container8*/
+/* maxwidth del container8*/
+/*  alturas minimas  */
+/*  animaciones  */
+/* ALTURA MINIMA */
+/* Types.scss */
+/* Types responsive  xs sm md lg xl line-height font-weight */
+/* TYPES FIJOS */
+/*+------------------------------------------------------------+
+|       -spacing  
++------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -ANIMATIONS    
+ +------------------------------------------------------------+*/
+@keyframes underline {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes stretch {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 80px;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+}
+
+/*+------------------------------------------------------------+
+ |       -BREAKPOINTS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -MIXINS
+ +------------------------------------------------------------+*/
+/* .background-alpha(VALUE VALUE);*/
+/* .userselect(VALUE) (all, element, none, text) */
+/*+------------------------------------------------------------+
+ |       -MIXINS FONTS
+ +------------------------------------------------------------+*/
 @keyframes fadein {
   from {
     opacity: 0;
@@ -4990,6 +5752,90 @@ strong {
 /*------------------------------------*\
     $ELEMENTS COMPONENTES
 \*------------------------------------*/
+/*+------------------------------------------------------------+
+ |-COLORS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -IMPORT FONTS
+ +------------------------------------------------------------+*/
+/* BREAKPOINTS */
+/*+------------------------------------------------------------+
+  |       -FASE 2 : PERSONALIZA TU HOLYGRAIL
+  +------------------------------------------------------------+*/
+/*  breakpoints  */
+/*  grid  */
+/* maxwidth del container */
+/* maxwidth del container2*/
+/* maxwidth del container3*/
+/* maxwidth del container4*/
+/* maxwidth del container5*/
+/* maxwidth del container6*/
+/* maxwidth del container7*/
+/* maxwidth del container8*/
+/* maxwidth del container8*/
+/*  alturas minimas  */
+/*  animaciones  */
+/* ALTURA MINIMA */
+/* Types.scss */
+/* Types responsive  xs sm md lg xl line-height font-weight */
+/* TYPES FIJOS */
+/*+------------------------------------------------------------+
+|       -spacing  
++------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -ANIMATIONS    
+ +------------------------------------------------------------+*/
+@keyframes underline {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes stretch {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 80px;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+}
+
+/*+------------------------------------------------------------+
+ |       -BREAKPOINTS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -MIXINS
+ +------------------------------------------------------------+*/
+/* .background-alpha(VALUE VALUE);*/
+/* .userselect(VALUE) (all, element, none, text) */
+/*+------------------------------------------------------------+
+ |       -MIXINS FONTS
+ +------------------------------------------------------------+*/
 .arrow-cover {
   height: auto;
   padding: 30px;
@@ -5085,6 +5931,90 @@ strong {
   background: #FFFFFF;
 }
 
+/*+------------------------------------------------------------+
+ |-COLORS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -IMPORT FONTS
+ +------------------------------------------------------------+*/
+/* BREAKPOINTS */
+/*+------------------------------------------------------------+
+  |       -FASE 2 : PERSONALIZA TU HOLYGRAIL
+  +------------------------------------------------------------+*/
+/*  breakpoints  */
+/*  grid  */
+/* maxwidth del container */
+/* maxwidth del container2*/
+/* maxwidth del container3*/
+/* maxwidth del container4*/
+/* maxwidth del container5*/
+/* maxwidth del container6*/
+/* maxwidth del container7*/
+/* maxwidth del container8*/
+/* maxwidth del container8*/
+/*  alturas minimas  */
+/*  animaciones  */
+/* ALTURA MINIMA */
+/* Types.scss */
+/* Types responsive  xs sm md lg xl line-height font-weight */
+/* TYPES FIJOS */
+/*+------------------------------------------------------------+
+|       -spacing  
++------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -ANIMATIONS    
+ +------------------------------------------------------------+*/
+@keyframes underline {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes stretch {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 80px;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+}
+
+/*+------------------------------------------------------------+
+ |       -BREAKPOINTS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -MIXINS
+ +------------------------------------------------------------+*/
+/* .background-alpha(VALUE VALUE);*/
+/* .userselect(VALUE) (all, element, none, text) */
+/*+------------------------------------------------------------+
+ |       -MIXINS FONTS
+ +------------------------------------------------------------+*/
 /*+------------------------------------------------------------+
  |       -BOTONES    
  +------------------------------------------------------------+*/
@@ -5630,6 +6560,90 @@ strong {
   background-color: #FFFFFF;
 }
 
+/*+------------------------------------------------------------+
+ |-COLORS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -IMPORT FONTS
+ +------------------------------------------------------------+*/
+/* BREAKPOINTS */
+/*+------------------------------------------------------------+
+  |       -FASE 2 : PERSONALIZA TU HOLYGRAIL
+  +------------------------------------------------------------+*/
+/*  breakpoints  */
+/*  grid  */
+/* maxwidth del container */
+/* maxwidth del container2*/
+/* maxwidth del container3*/
+/* maxwidth del container4*/
+/* maxwidth del container5*/
+/* maxwidth del container6*/
+/* maxwidth del container7*/
+/* maxwidth del container8*/
+/* maxwidth del container8*/
+/*  alturas minimas  */
+/*  animaciones  */
+/* ALTURA MINIMA */
+/* Types.scss */
+/* Types responsive  xs sm md lg xl line-height font-weight */
+/* TYPES FIJOS */
+/*+------------------------------------------------------------+
+|       -spacing  
++------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -ANIMATIONS    
+ +------------------------------------------------------------+*/
+@keyframes underline {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes stretch {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 80px;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+}
+
+/*+------------------------------------------------------------+
+ |       -BREAKPOINTS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -MIXINS
+ +------------------------------------------------------------+*/
+/* .background-alpha(VALUE VALUE);*/
+/* .userselect(VALUE) (all, element, none, text) */
+/*+------------------------------------------------------------+
+ |       -MIXINS FONTS
+ +------------------------------------------------------------+*/
 .checkbox-item {
   text-align: center;
 }
@@ -6129,6 +7143,90 @@ strong {
   right: -9999px;
 }
 
+/*+------------------------------------------------------------+
+ |-COLORS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -IMPORT FONTS
+ +------------------------------------------------------------+*/
+/* BREAKPOINTS */
+/*+------------------------------------------------------------+
+  |       -FASE 2 : PERSONALIZA TU HOLYGRAIL
+  +------------------------------------------------------------+*/
+/*  breakpoints  */
+/*  grid  */
+/* maxwidth del container */
+/* maxwidth del container2*/
+/* maxwidth del container3*/
+/* maxwidth del container4*/
+/* maxwidth del container5*/
+/* maxwidth del container6*/
+/* maxwidth del container7*/
+/* maxwidth del container8*/
+/* maxwidth del container8*/
+/*  alturas minimas  */
+/*  animaciones  */
+/* ALTURA MINIMA */
+/* Types.scss */
+/* Types responsive  xs sm md lg xl line-height font-weight */
+/* TYPES FIJOS */
+/*+------------------------------------------------------------+
+|       -spacing  
++------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -ANIMATIONS    
+ +------------------------------------------------------------+*/
+@keyframes underline {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes stretch {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 80px;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+}
+
+/*+------------------------------------------------------------+
+ |       -BREAKPOINTS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -MIXINS
+ +------------------------------------------------------------+*/
+/* .background-alpha(VALUE VALUE);*/
+/* .userselect(VALUE) (all, element, none, text) */
+/*+------------------------------------------------------------+
+ |       -MIXINS FONTS
+ +------------------------------------------------------------+*/
 /*+------------------------------------------------------------+
  |       -INPUTS    
  +------------------------------------------------------------+*/
@@ -6848,6 +7946,90 @@ input::-webkit-input-placeholder {
 }
 
 /*+------------------------------------------------------------+
+ |-COLORS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -IMPORT FONTS
+ +------------------------------------------------------------+*/
+/* BREAKPOINTS */
+/*+------------------------------------------------------------+
+  |       -FASE 2 : PERSONALIZA TU HOLYGRAIL
+  +------------------------------------------------------------+*/
+/*  breakpoints  */
+/*  grid  */
+/* maxwidth del container */
+/* maxwidth del container2*/
+/* maxwidth del container3*/
+/* maxwidth del container4*/
+/* maxwidth del container5*/
+/* maxwidth del container6*/
+/* maxwidth del container7*/
+/* maxwidth del container8*/
+/* maxwidth del container8*/
+/*  alturas minimas  */
+/*  animaciones  */
+/* ALTURA MINIMA */
+/* Types.scss */
+/* Types responsive  xs sm md lg xl line-height font-weight */
+/* TYPES FIJOS */
+/*+------------------------------------------------------------+
+|       -spacing  
++------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -ANIMATIONS    
+ +------------------------------------------------------------+*/
+@keyframes underline {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes stretch {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 80px;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+}
+
+/*+------------------------------------------------------------+
+ |       -BREAKPOINTS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -MIXINS
+ +------------------------------------------------------------+*/
+/* .background-alpha(VALUE VALUE);*/
+/* .userselect(VALUE) (all, element, none, text) */
+/*+------------------------------------------------------------+
+ |       -MIXINS FONTS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
  |       -LINKS    
  +------------------------------------------------------------+*/
 a:hover {
@@ -7225,6 +8407,90 @@ a:hover {
 }
 
 /*+------------------------------------------------------------+
+ |-COLORS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -IMPORT FONTS
+ +------------------------------------------------------------+*/
+/* BREAKPOINTS */
+/*+------------------------------------------------------------+
+  |       -FASE 2 : PERSONALIZA TU HOLYGRAIL
+  +------------------------------------------------------------+*/
+/*  breakpoints  */
+/*  grid  */
+/* maxwidth del container */
+/* maxwidth del container2*/
+/* maxwidth del container3*/
+/* maxwidth del container4*/
+/* maxwidth del container5*/
+/* maxwidth del container6*/
+/* maxwidth del container7*/
+/* maxwidth del container8*/
+/* maxwidth del container8*/
+/*  alturas minimas  */
+/*  animaciones  */
+/* ALTURA MINIMA */
+/* Types.scss */
+/* Types responsive  xs sm md lg xl line-height font-weight */
+/* TYPES FIJOS */
+/*+------------------------------------------------------------+
+|       -spacing  
++------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -ANIMATIONS    
+ +------------------------------------------------------------+*/
+@keyframes underline {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes stretch {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 80px;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+}
+
+/*+------------------------------------------------------------+
+ |       -BREAKPOINTS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -MIXINS
+ +------------------------------------------------------------+*/
+/* .background-alpha(VALUE VALUE);*/
+/* .userselect(VALUE) (all, element, none, text) */
+/*+------------------------------------------------------------+
+ |       -MIXINS FONTS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
  |       -LISTA CON BULLET    
  +------------------------------------------------------------+*/
 ul.list-disc {
@@ -7407,6 +8673,90 @@ ul.list-mini > li:after {
   left: -2px;
 }
 
+/*+------------------------------------------------------------+
+ |-COLORS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -IMPORT FONTS
+ +------------------------------------------------------------+*/
+/* BREAKPOINTS */
+/*+------------------------------------------------------------+
+  |       -FASE 2 : PERSONALIZA TU HOLYGRAIL
+  +------------------------------------------------------------+*/
+/*  breakpoints  */
+/*  grid  */
+/* maxwidth del container */
+/* maxwidth del container2*/
+/* maxwidth del container3*/
+/* maxwidth del container4*/
+/* maxwidth del container5*/
+/* maxwidth del container6*/
+/* maxwidth del container7*/
+/* maxwidth del container8*/
+/* maxwidth del container8*/
+/*  alturas minimas  */
+/*  animaciones  */
+/* ALTURA MINIMA */
+/* Types.scss */
+/* Types responsive  xs sm md lg xl line-height font-weight */
+/* TYPES FIJOS */
+/*+------------------------------------------------------------+
+|       -spacing  
++------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -ANIMATIONS    
+ +------------------------------------------------------------+*/
+@keyframes underline {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes stretch {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 80px;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+}
+
+/*+------------------------------------------------------------+
+ |       -BREAKPOINTS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -MIXINS
+ +------------------------------------------------------------+*/
+/* .background-alpha(VALUE VALUE);*/
+/* .userselect(VALUE) (all, element, none, text) */
+/*+------------------------------------------------------------+
+ |       -MIXINS FONTS
+ +------------------------------------------------------------+*/
 /*+------------------------------------------------------------+
  |       -TABS  
  +------------------------------------------------------------+*/
@@ -7661,6 +9011,90 @@ ul.list-mini > li:after {
   right: auto;
 }
 
+/*+------------------------------------------------------------+
+ |-COLORS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -IMPORT FONTS
+ +------------------------------------------------------------+*/
+/* BREAKPOINTS */
+/*+------------------------------------------------------------+
+  |       -FASE 2 : PERSONALIZA TU HOLYGRAIL
+  +------------------------------------------------------------+*/
+/*  breakpoints  */
+/*  grid  */
+/* maxwidth del container */
+/* maxwidth del container2*/
+/* maxwidth del container3*/
+/* maxwidth del container4*/
+/* maxwidth del container5*/
+/* maxwidth del container6*/
+/* maxwidth del container7*/
+/* maxwidth del container8*/
+/* maxwidth del container8*/
+/*  alturas minimas  */
+/*  animaciones  */
+/* ALTURA MINIMA */
+/* Types.scss */
+/* Types responsive  xs sm md lg xl line-height font-weight */
+/* TYPES FIJOS */
+/*+------------------------------------------------------------+
+|       -spacing  
++------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -ANIMATIONS    
+ +------------------------------------------------------------+*/
+@keyframes underline {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes stretch {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 80px;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+}
+
+/*+------------------------------------------------------------+
+ |       -BREAKPOINTS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -MIXINS
+ +------------------------------------------------------------+*/
+/* .background-alpha(VALUE VALUE);*/
+/* .userselect(VALUE) (all, element, none, text) */
+/*+------------------------------------------------------------+
+ |       -MIXINS FONTS
+ +------------------------------------------------------------+*/
 .tooltip-sm {
   right: 8px;
   background-color: #FFFFFF;
@@ -7684,6 +9118,90 @@ ul.list-mini > li:after {
   transform: rotate(45deg);
 }
 
+/*+------------------------------------------------------------+
+ |-COLORS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -IMPORT FONTS
+ +------------------------------------------------------------+*/
+/* BREAKPOINTS */
+/*+------------------------------------------------------------+
+  |       -FASE 2 : PERSONALIZA TU HOLYGRAIL
+  +------------------------------------------------------------+*/
+/*  breakpoints  */
+/*  grid  */
+/* maxwidth del container */
+/* maxwidth del container2*/
+/* maxwidth del container3*/
+/* maxwidth del container4*/
+/* maxwidth del container5*/
+/* maxwidth del container6*/
+/* maxwidth del container7*/
+/* maxwidth del container8*/
+/* maxwidth del container8*/
+/*  alturas minimas  */
+/*  animaciones  */
+/* ALTURA MINIMA */
+/* Types.scss */
+/* Types responsive  xs sm md lg xl line-height font-weight */
+/* TYPES FIJOS */
+/*+------------------------------------------------------------+
+|       -spacing  
++------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -ANIMATIONS    
+ +------------------------------------------------------------+*/
+@keyframes underline {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes stretch {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 80px;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+}
+
+/*+------------------------------------------------------------+
+ |       -BREAKPOINTS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -MIXINS
+ +------------------------------------------------------------+*/
+/* .background-alpha(VALUE VALUE);*/
+/* .userselect(VALUE) (all, element, none, text) */
+/*+------------------------------------------------------------+
+ |       -MIXINS FONTS
+ +------------------------------------------------------------+*/
 .form-input-label .validation-error-messages {
   color: #F54637;
 }
@@ -7738,6 +9256,90 @@ ul.list-mini > li:after {
   left: auto;
 }
 
+/*+------------------------------------------------------------+
+ |-COLORS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -IMPORT FONTS
+ +------------------------------------------------------------+*/
+/* BREAKPOINTS */
+/*+------------------------------------------------------------+
+  |       -FASE 2 : PERSONALIZA TU HOLYGRAIL
+  +------------------------------------------------------------+*/
+/*  breakpoints  */
+/*  grid  */
+/* maxwidth del container */
+/* maxwidth del container2*/
+/* maxwidth del container3*/
+/* maxwidth del container4*/
+/* maxwidth del container5*/
+/* maxwidth del container6*/
+/* maxwidth del container7*/
+/* maxwidth del container8*/
+/* maxwidth del container8*/
+/*  alturas minimas  */
+/*  animaciones  */
+/* ALTURA MINIMA */
+/* Types.scss */
+/* Types responsive  xs sm md lg xl line-height font-weight */
+/* TYPES FIJOS */
+/*+------------------------------------------------------------+
+|       -spacing  
++------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -ANIMATIONS    
+ +------------------------------------------------------------+*/
+@keyframes underline {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes stretch {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 80px;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+}
+
+/*+------------------------------------------------------------+
+ |       -BREAKPOINTS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -MIXINS
+ +------------------------------------------------------------+*/
+/* .background-alpha(VALUE VALUE);*/
+/* .userselect(VALUE) (all, element, none, text) */
+/*+------------------------------------------------------------+
+ |       -MIXINS FONTS
+ +------------------------------------------------------------+*/
 .ico-round {
   width: 56px;
   height: 56px;
@@ -7955,6 +9557,90 @@ ul.list-clear li.list-box:last-child {
 }
 
 /*+------------------------------------------------------------+
+ |-COLORS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -IMPORT FONTS
+ +------------------------------------------------------------+*/
+/* BREAKPOINTS */
+/*+------------------------------------------------------------+
+  |       -FASE 2 : PERSONALIZA TU HOLYGRAIL
+  +------------------------------------------------------------+*/
+/*  breakpoints  */
+/*  grid  */
+/* maxwidth del container */
+/* maxwidth del container2*/
+/* maxwidth del container3*/
+/* maxwidth del container4*/
+/* maxwidth del container5*/
+/* maxwidth del container6*/
+/* maxwidth del container7*/
+/* maxwidth del container8*/
+/* maxwidth del container8*/
+/*  alturas minimas  */
+/*  animaciones  */
+/* ALTURA MINIMA */
+/* Types.scss */
+/* Types responsive  xs sm md lg xl line-height font-weight */
+/* TYPES FIJOS */
+/*+------------------------------------------------------------+
+|       -spacing  
++------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -ANIMATIONS    
+ +------------------------------------------------------------+*/
+@keyframes underline {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes stretch {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 80px;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+}
+
+/*+------------------------------------------------------------+
+ |       -BREAKPOINTS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -MIXINS
+ +------------------------------------------------------------+*/
+/* .background-alpha(VALUE VALUE);*/
+/* .userselect(VALUE) (all, element, none, text) */
+/*+------------------------------------------------------------+
+ |       -MIXINS FONTS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
  |       -COLOR SELECTOR  
  +------------------------------------------------------------+*/
 .color-wrap {
@@ -8060,6 +9746,90 @@ ul.list-clear li.list-box:last-child {
   border-bottom: 1px dotted gray-30 #acacac;
 }
 
+/*+------------------------------------------------------------+
+ |-COLORS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -IMPORT FONTS
+ +------------------------------------------------------------+*/
+/* BREAKPOINTS */
+/*+------------------------------------------------------------+
+  |       -FASE 2 : PERSONALIZA TU HOLYGRAIL
+  +------------------------------------------------------------+*/
+/*  breakpoints  */
+/*  grid  */
+/* maxwidth del container */
+/* maxwidth del container2*/
+/* maxwidth del container3*/
+/* maxwidth del container4*/
+/* maxwidth del container5*/
+/* maxwidth del container6*/
+/* maxwidth del container7*/
+/* maxwidth del container8*/
+/* maxwidth del container8*/
+/*  alturas minimas  */
+/*  animaciones  */
+/* ALTURA MINIMA */
+/* Types.scss */
+/* Types responsive  xs sm md lg xl line-height font-weight */
+/* TYPES FIJOS */
+/*+------------------------------------------------------------+
+|       -spacing  
++------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -ANIMATIONS    
+ +------------------------------------------------------------+*/
+@keyframes underline {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes stretch {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 80px;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+}
+
+/*+------------------------------------------------------------+
+ |       -BREAKPOINTS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -MIXINS
+ +------------------------------------------------------------+*/
+/* .background-alpha(VALUE VALUE);*/
+/* .userselect(VALUE) (all, element, none, text) */
+/*+------------------------------------------------------------+
+ |       -MIXINS FONTS
+ +------------------------------------------------------------+*/
 .modalx-transparent.modalx-backdrop {
   pointer-events: none;
   background: transparent;
@@ -8083,6 +9853,90 @@ ul.list-clear li.list-box:last-child {
 /*------------------------------------*\
     $LAYOUTS, Conjuntos de elementos
 \*------------------------------------*/
+/*+------------------------------------------------------------+
+ |-COLORS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -IMPORT FONTS
+ +------------------------------------------------------------+*/
+/* BREAKPOINTS */
+/*+------------------------------------------------------------+
+  |       -FASE 2 : PERSONALIZA TU HOLYGRAIL
+  +------------------------------------------------------------+*/
+/*  breakpoints  */
+/*  grid  */
+/* maxwidth del container */
+/* maxwidth del container2*/
+/* maxwidth del container3*/
+/* maxwidth del container4*/
+/* maxwidth del container5*/
+/* maxwidth del container6*/
+/* maxwidth del container7*/
+/* maxwidth del container8*/
+/* maxwidth del container8*/
+/*  alturas minimas  */
+/*  animaciones  */
+/* ALTURA MINIMA */
+/* Types.scss */
+/* Types responsive  xs sm md lg xl line-height font-weight */
+/* TYPES FIJOS */
+/*+------------------------------------------------------------+
+|       -spacing  
++------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -ANIMATIONS    
+ +------------------------------------------------------------+*/
+@keyframes underline {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes stretch {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 80px;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+}
+
+/*+------------------------------------------------------------+
+ |       -BREAKPOINTS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -MIXINS
+ +------------------------------------------------------------+*/
+/* .background-alpha(VALUE VALUE);*/
+/* .userselect(VALUE) (all, element, none, text) */
+/*+------------------------------------------------------------+
+ |       -MIXINS FONTS
+ +------------------------------------------------------------+*/
 .cover1 .cover1-content {
   position: absolute;
 }
@@ -8110,6 +9964,90 @@ ul.list-clear li.list-box:last-child {
   width: 200px;
 }
 
+/*+------------------------------------------------------------+
+ |-COLORS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -IMPORT FONTS
+ +------------------------------------------------------------+*/
+/* BREAKPOINTS */
+/*+------------------------------------------------------------+
+  |       -FASE 2 : PERSONALIZA TU HOLYGRAIL
+  +------------------------------------------------------------+*/
+/*  breakpoints  */
+/*  grid  */
+/* maxwidth del container */
+/* maxwidth del container2*/
+/* maxwidth del container3*/
+/* maxwidth del container4*/
+/* maxwidth del container5*/
+/* maxwidth del container6*/
+/* maxwidth del container7*/
+/* maxwidth del container8*/
+/* maxwidth del container8*/
+/*  alturas minimas  */
+/*  animaciones  */
+/* ALTURA MINIMA */
+/* Types.scss */
+/* Types responsive  xs sm md lg xl line-height font-weight */
+/* TYPES FIJOS */
+/*+------------------------------------------------------------+
+|       -spacing  
++------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -ANIMATIONS    
+ +------------------------------------------------------------+*/
+@keyframes underline {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes stretch {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 80px;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+}
+
+/*+------------------------------------------------------------+
+ |       -BREAKPOINTS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -MIXINS
+ +------------------------------------------------------------+*/
+/* .background-alpha(VALUE VALUE);*/
+/* .userselect(VALUE) (all, element, none, text) */
+/*+------------------------------------------------------------+
+ |       -MIXINS FONTS
+ +------------------------------------------------------------+*/
 .cover2 h1 {
   position: absolute;
   z-index: 2;
@@ -8127,6 +10065,90 @@ ul.list-clear li.list-box:last-child {
   width: 100%;
 }
 
+/*+------------------------------------------------------------+
+ |-COLORS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -IMPORT FONTS
+ +------------------------------------------------------------+*/
+/* BREAKPOINTS */
+/*+------------------------------------------------------------+
+  |       -FASE 2 : PERSONALIZA TU HOLYGRAIL
+  +------------------------------------------------------------+*/
+/*  breakpoints  */
+/*  grid  */
+/* maxwidth del container */
+/* maxwidth del container2*/
+/* maxwidth del container3*/
+/* maxwidth del container4*/
+/* maxwidth del container5*/
+/* maxwidth del container6*/
+/* maxwidth del container7*/
+/* maxwidth del container8*/
+/* maxwidth del container8*/
+/*  alturas minimas  */
+/*  animaciones  */
+/* ALTURA MINIMA */
+/* Types.scss */
+/* Types responsive  xs sm md lg xl line-height font-weight */
+/* TYPES FIJOS */
+/*+------------------------------------------------------------+
+|       -spacing  
++------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -ANIMATIONS    
+ +------------------------------------------------------------+*/
+@keyframes underline {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes stretch {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 80px;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+}
+
+/*+------------------------------------------------------------+
+ |       -BREAKPOINTS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -MIXINS
+ +------------------------------------------------------------+*/
+/* .background-alpha(VALUE VALUE);*/
+/* .userselect(VALUE) (all, element, none, text) */
+/*+------------------------------------------------------------+
+ |       -MIXINS FONTS
+ +------------------------------------------------------------+*/
 .cover3 {
   width: 50%;
   float: left;
@@ -8142,6 +10164,90 @@ ul.list-clear li.list-box:last-child {
   width: 100%;
 }
 
+/*+------------------------------------------------------------+
+ |-COLORS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -IMPORT FONTS
+ +------------------------------------------------------------+*/
+/* BREAKPOINTS */
+/*+------------------------------------------------------------+
+  |       -FASE 2 : PERSONALIZA TU HOLYGRAIL
+  +------------------------------------------------------------+*/
+/*  breakpoints  */
+/*  grid  */
+/* maxwidth del container */
+/* maxwidth del container2*/
+/* maxwidth del container3*/
+/* maxwidth del container4*/
+/* maxwidth del container5*/
+/* maxwidth del container6*/
+/* maxwidth del container7*/
+/* maxwidth del container8*/
+/* maxwidth del container8*/
+/*  alturas minimas  */
+/*  animaciones  */
+/* ALTURA MINIMA */
+/* Types.scss */
+/* Types responsive  xs sm md lg xl line-height font-weight */
+/* TYPES FIJOS */
+/*+------------------------------------------------------------+
+|       -spacing  
++------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -ANIMATIONS    
+ +------------------------------------------------------------+*/
+@keyframes underline {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes stretch {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 80px;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+}
+
+/*+------------------------------------------------------------+
+ |       -BREAKPOINTS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -MIXINS
+ +------------------------------------------------------------+*/
+/* .background-alpha(VALUE VALUE);*/
+/* .userselect(VALUE) (all, element, none, text) */
+/*+------------------------------------------------------------+
+ |       -MIXINS FONTS
+ +------------------------------------------------------------+*/
 .cover4 {
   width: 100%;
 }
@@ -8158,6 +10264,90 @@ ul.list-clear li.list-box:last-child {
   object-fit: cover;
 }
 
+/*+------------------------------------------------------------+
+ |-COLORS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -IMPORT FONTS
+ +------------------------------------------------------------+*/
+/* BREAKPOINTS */
+/*+------------------------------------------------------------+
+  |       -FASE 2 : PERSONALIZA TU HOLYGRAIL
+  +------------------------------------------------------------+*/
+/*  breakpoints  */
+/*  grid  */
+/* maxwidth del container */
+/* maxwidth del container2*/
+/* maxwidth del container3*/
+/* maxwidth del container4*/
+/* maxwidth del container5*/
+/* maxwidth del container6*/
+/* maxwidth del container7*/
+/* maxwidth del container8*/
+/* maxwidth del container8*/
+/*  alturas minimas  */
+/*  animaciones  */
+/* ALTURA MINIMA */
+/* Types.scss */
+/* Types responsive  xs sm md lg xl line-height font-weight */
+/* TYPES FIJOS */
+/*+------------------------------------------------------------+
+|       -spacing  
++------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -ANIMATIONS    
+ +------------------------------------------------------------+*/
+@keyframes underline {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes stretch {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 80px;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+}
+
+/*+------------------------------------------------------------+
+ |       -BREAKPOINTS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -MIXINS
+ +------------------------------------------------------------+*/
+/* .background-alpha(VALUE VALUE);*/
+/* .userselect(VALUE) (all, element, none, text) */
+/*+------------------------------------------------------------+
+ |       -MIXINS FONTS
+ +------------------------------------------------------------+*/
 .cover5 {
   width: 100%;
 }
@@ -8175,6 +10365,90 @@ ul.list-clear li.list-box:last-child {
 }
 
 /* .cover5>.cover5-img+.cover5-text>.h2{lorem} */
+/*+------------------------------------------------------------+
+ |-COLORS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -IMPORT FONTS
+ +------------------------------------------------------------+*/
+/* BREAKPOINTS */
+/*+------------------------------------------------------------+
+  |       -FASE 2 : PERSONALIZA TU HOLYGRAIL
+  +------------------------------------------------------------+*/
+/*  breakpoints  */
+/*  grid  */
+/* maxwidth del container */
+/* maxwidth del container2*/
+/* maxwidth del container3*/
+/* maxwidth del container4*/
+/* maxwidth del container5*/
+/* maxwidth del container6*/
+/* maxwidth del container7*/
+/* maxwidth del container8*/
+/* maxwidth del container8*/
+/*  alturas minimas  */
+/*  animaciones  */
+/* ALTURA MINIMA */
+/* Types.scss */
+/* Types responsive  xs sm md lg xl line-height font-weight */
+/* TYPES FIJOS */
+/*+------------------------------------------------------------+
+|       -spacing  
++------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -ANIMATIONS    
+ +------------------------------------------------------------+*/
+@keyframes underline {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes stretch {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 80px;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+}
+
+/*+------------------------------------------------------------+
+ |       -BREAKPOINTS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -MIXINS
+ +------------------------------------------------------------+*/
+/* .background-alpha(VALUE VALUE);*/
+/* .userselect(VALUE) (all, element, none, text) */
+/*+------------------------------------------------------------+
+ |       -MIXINS FONTS
+ +------------------------------------------------------------+*/
 .row-2 {
   box-sizing: border-box;
   display: flex;
@@ -8223,6 +10497,90 @@ ul.list-clear li.list-box:last-child {
 /**
  section>.container>.row-6>.col>.h5+p.p1
 **/
+/*+------------------------------------------------------------+
+ |-COLORS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -IMPORT FONTS
+ +------------------------------------------------------------+*/
+/* BREAKPOINTS */
+/*+------------------------------------------------------------+
+  |       -FASE 2 : PERSONALIZA TU HOLYGRAIL
+  +------------------------------------------------------------+*/
+/*  breakpoints  */
+/*  grid  */
+/* maxwidth del container */
+/* maxwidth del container2*/
+/* maxwidth del container3*/
+/* maxwidth del container4*/
+/* maxwidth del container5*/
+/* maxwidth del container6*/
+/* maxwidth del container7*/
+/* maxwidth del container8*/
+/* maxwidth del container8*/
+/*  alturas minimas  */
+/*  animaciones  */
+/* ALTURA MINIMA */
+/* Types.scss */
+/* Types responsive  xs sm md lg xl line-height font-weight */
+/* TYPES FIJOS */
+/*+------------------------------------------------------------+
+|       -spacing  
++------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -ANIMATIONS    
+ +------------------------------------------------------------+*/
+@keyframes underline {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes stretch {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 80px;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+}
+
+/*+------------------------------------------------------------+
+ |       -BREAKPOINTS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -MIXINS
+ +------------------------------------------------------------+*/
+/* .background-alpha(VALUE VALUE);*/
+/* .userselect(VALUE) (all, element, none, text) */
+/*+------------------------------------------------------------+
+ |       -MIXINS FONTS
+ +------------------------------------------------------------+*/
 .row-3 {
   box-sizing: border-box;
   display: flex;
@@ -8255,6 +10613,90 @@ ul.list-clear li.list-box:last-child {
 /**
  section>.container>.row-6>.col>.h5+p.p1
 **/
+/*+------------------------------------------------------------+
+ |-COLORS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -IMPORT FONTS
+ +------------------------------------------------------------+*/
+/* BREAKPOINTS */
+/*+------------------------------------------------------------+
+  |       -FASE 2 : PERSONALIZA TU HOLYGRAIL
+  +------------------------------------------------------------+*/
+/*  breakpoints  */
+/*  grid  */
+/* maxwidth del container */
+/* maxwidth del container2*/
+/* maxwidth del container3*/
+/* maxwidth del container4*/
+/* maxwidth del container5*/
+/* maxwidth del container6*/
+/* maxwidth del container7*/
+/* maxwidth del container8*/
+/* maxwidth del container8*/
+/*  alturas minimas  */
+/*  animaciones  */
+/* ALTURA MINIMA */
+/* Types.scss */
+/* Types responsive  xs sm md lg xl line-height font-weight */
+/* TYPES FIJOS */
+/*+------------------------------------------------------------+
+|       -spacing  
++------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -ANIMATIONS    
+ +------------------------------------------------------------+*/
+@keyframes underline {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes stretch {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 80px;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+}
+
+/*+------------------------------------------------------------+
+ |       -BREAKPOINTS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -MIXINS
+ +------------------------------------------------------------+*/
+/* .background-alpha(VALUE VALUE);*/
+/* .userselect(VALUE) (all, element, none, text) */
+/*+------------------------------------------------------------+
+ |       -MIXINS FONTS
+ +------------------------------------------------------------+*/
 .row6 {
   display: -webkit-box;
   display: flex;
@@ -8293,6 +10735,90 @@ ul.list-clear li.list-box:last-child {
 
  section>.container>.row-6>.col>.h5+p.p1
 **/
+/*+------------------------------------------------------------+
+ |-COLORS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -IMPORT FONTS
+ +------------------------------------------------------------+*/
+/* BREAKPOINTS */
+/*+------------------------------------------------------------+
+  |       -FASE 2 : PERSONALIZA TU HOLYGRAIL
+  +------------------------------------------------------------+*/
+/*  breakpoints  */
+/*  grid  */
+/* maxwidth del container */
+/* maxwidth del container2*/
+/* maxwidth del container3*/
+/* maxwidth del container4*/
+/* maxwidth del container5*/
+/* maxwidth del container6*/
+/* maxwidth del container7*/
+/* maxwidth del container8*/
+/* maxwidth del container8*/
+/*  alturas minimas  */
+/*  animaciones  */
+/* ALTURA MINIMA */
+/* Types.scss */
+/* Types responsive  xs sm md lg xl line-height font-weight */
+/* TYPES FIJOS */
+/*+------------------------------------------------------------+
+|       -spacing  
++------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -ANIMATIONS    
+ +------------------------------------------------------------+*/
+@keyframes underline {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes stretch {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 80px;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+}
+
+/*+------------------------------------------------------------+
+ |       -BREAKPOINTS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -MIXINS
+ +------------------------------------------------------------+*/
+/* .background-alpha(VALUE VALUE);*/
+/* .userselect(VALUE) (all, element, none, text) */
+/*+------------------------------------------------------------+
+ |       -MIXINS FONTS
+ +------------------------------------------------------------+*/
 .text-1 {
   width: 100%;
 }
@@ -8304,6 +10830,90 @@ ZEN:
 .text-1.align-vertical.height-md>.text-1-content.text-center>h2.h2{titular}
 
 */
+/*+------------------------------------------------------------+
+ |-COLORS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -IMPORT FONTS
+ +------------------------------------------------------------+*/
+/* BREAKPOINTS */
+/*+------------------------------------------------------------+
+  |       -FASE 2 : PERSONALIZA TU HOLYGRAIL
+  +------------------------------------------------------------+*/
+/*  breakpoints  */
+/*  grid  */
+/* maxwidth del container */
+/* maxwidth del container2*/
+/* maxwidth del container3*/
+/* maxwidth del container4*/
+/* maxwidth del container5*/
+/* maxwidth del container6*/
+/* maxwidth del container7*/
+/* maxwidth del container8*/
+/* maxwidth del container8*/
+/*  alturas minimas  */
+/*  animaciones  */
+/* ALTURA MINIMA */
+/* Types.scss */
+/* Types responsive  xs sm md lg xl line-height font-weight */
+/* TYPES FIJOS */
+/*+------------------------------------------------------------+
+|       -spacing  
++------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -ANIMATIONS    
+ +------------------------------------------------------------+*/
+@keyframes underline {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes stretch {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 80px;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+}
+
+/*+------------------------------------------------------------+
+ |       -BREAKPOINTS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -MIXINS
+ +------------------------------------------------------------+*/
+/* .background-alpha(VALUE VALUE);*/
+/* .userselect(VALUE) (all, element, none, text) */
+/*+------------------------------------------------------------+
+ |       -MIXINS FONTS
+ +------------------------------------------------------------+*/
 .text-2 {
   width: 100%;
   position: relative;
@@ -8340,6 +10950,90 @@ ZEN:
 .text-2>.text-2-content>div+h3.h3{titulo}+div
 
 */
+/*+------------------------------------------------------------+
+ |-COLORS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -IMPORT FONTS
+ +------------------------------------------------------------+*/
+/* BREAKPOINTS */
+/*+------------------------------------------------------------+
+  |       -FASE 2 : PERSONALIZA TU HOLYGRAIL
+  +------------------------------------------------------------+*/
+/*  breakpoints  */
+/*  grid  */
+/* maxwidth del container */
+/* maxwidth del container2*/
+/* maxwidth del container3*/
+/* maxwidth del container4*/
+/* maxwidth del container5*/
+/* maxwidth del container6*/
+/* maxwidth del container7*/
+/* maxwidth del container8*/
+/* maxwidth del container8*/
+/*  alturas minimas  */
+/*  animaciones  */
+/* ALTURA MINIMA */
+/* Types.scss */
+/* Types responsive  xs sm md lg xl line-height font-weight */
+/* TYPES FIJOS */
+/*+------------------------------------------------------------+
+|       -spacing  
++------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -ANIMATIONS    
+ +------------------------------------------------------------+*/
+@keyframes underline {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes stretch {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 80px;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+}
+
+/*+------------------------------------------------------------+
+ |       -BREAKPOINTS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -MIXINS
+ +------------------------------------------------------------+*/
+/* .background-alpha(VALUE VALUE);*/
+/* .userselect(VALUE) (all, element, none, text) */
+/*+------------------------------------------------------------+
+ |       -MIXINS FONTS
+ +------------------------------------------------------------+*/
 /*
 TITULO: caja básica con elementos de titulos y parrafos 
 
@@ -8980,6 +11674,90 @@ ZEN:
   justify-content: flex-start;
 }
 
+/*+------------------------------------------------------------+
+ |-COLORS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -IMPORT FONTS
+ +------------------------------------------------------------+*/
+/* BREAKPOINTS */
+/*+------------------------------------------------------------+
+  |       -FASE 2 : PERSONALIZA TU HOLYGRAIL
+  +------------------------------------------------------------+*/
+/*  breakpoints  */
+/*  grid  */
+/* maxwidth del container */
+/* maxwidth del container2*/
+/* maxwidth del container3*/
+/* maxwidth del container4*/
+/* maxwidth del container5*/
+/* maxwidth del container6*/
+/* maxwidth del container7*/
+/* maxwidth del container8*/
+/* maxwidth del container8*/
+/*  alturas minimas  */
+/*  animaciones  */
+/* ALTURA MINIMA */
+/* Types.scss */
+/* Types responsive  xs sm md lg xl line-height font-weight */
+/* TYPES FIJOS */
+/*+------------------------------------------------------------+
+|       -spacing  
++------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -ANIMATIONS    
+ +------------------------------------------------------------+*/
+@keyframes underline {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes stretch {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 80px;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+}
+
+/*+------------------------------------------------------------+
+ |       -BREAKPOINTS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -MIXINS
+ +------------------------------------------------------------+*/
+/* .background-alpha(VALUE VALUE);*/
+/* .userselect(VALUE) (all, element, none, text) */
+/*+------------------------------------------------------------+
+ |       -MIXINS FONTS
+ +------------------------------------------------------------+*/
 .box-intro-feel {
   display: flex;
   flex-direction: column;
@@ -9320,6 +12098,90 @@ ZEN:
   }
 }
 
+/*+------------------------------------------------------------+
+ |-COLORS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -IMPORT FONTS
+ +------------------------------------------------------------+*/
+/* BREAKPOINTS */
+/*+------------------------------------------------------------+
+  |       -FASE 2 : PERSONALIZA TU HOLYGRAIL
+  +------------------------------------------------------------+*/
+/*  breakpoints  */
+/*  grid  */
+/* maxwidth del container */
+/* maxwidth del container2*/
+/* maxwidth del container3*/
+/* maxwidth del container4*/
+/* maxwidth del container5*/
+/* maxwidth del container6*/
+/* maxwidth del container7*/
+/* maxwidth del container8*/
+/* maxwidth del container8*/
+/*  alturas minimas  */
+/*  animaciones  */
+/* ALTURA MINIMA */
+/* Types.scss */
+/* Types responsive  xs sm md lg xl line-height font-weight */
+/* TYPES FIJOS */
+/*+------------------------------------------------------------+
+|       -spacing  
++------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -ANIMATIONS    
+ +------------------------------------------------------------+*/
+@keyframes underline {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes stretch {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 80px;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+}
+
+/*+------------------------------------------------------------+
+ |       -BREAKPOINTS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -MIXINS
+ +------------------------------------------------------------+*/
+/* .background-alpha(VALUE VALUE);*/
+/* .userselect(VALUE) (all, element, none, text) */
+/*+------------------------------------------------------------+
+ |       -MIXINS FONTS
+ +------------------------------------------------------------+*/
 @media (max-width: 768px) {
   .header-account-logo {
     display: none;
@@ -9487,6 +12349,90 @@ ZEN:
   transform: rotate(180deg);
 }
 
+/*+------------------------------------------------------------+
+ |-COLORS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -IMPORT FONTS
+ +------------------------------------------------------------+*/
+/* BREAKPOINTS */
+/*+------------------------------------------------------------+
+  |       -FASE 2 : PERSONALIZA TU HOLYGRAIL
+  +------------------------------------------------------------+*/
+/*  breakpoints  */
+/*  grid  */
+/* maxwidth del container */
+/* maxwidth del container2*/
+/* maxwidth del container3*/
+/* maxwidth del container4*/
+/* maxwidth del container5*/
+/* maxwidth del container6*/
+/* maxwidth del container7*/
+/* maxwidth del container8*/
+/* maxwidth del container8*/
+/*  alturas minimas  */
+/*  animaciones  */
+/* ALTURA MINIMA */
+/* Types.scss */
+/* Types responsive  xs sm md lg xl line-height font-weight */
+/* TYPES FIJOS */
+/*+------------------------------------------------------------+
+|       -spacing  
++------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -ANIMATIONS    
+ +------------------------------------------------------------+*/
+@keyframes underline {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes stretch {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 80px;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+}
+
+/*+------------------------------------------------------------+
+ |       -BREAKPOINTS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -MIXINS
+ +------------------------------------------------------------+*/
+/* .background-alpha(VALUE VALUE);*/
+/* .userselect(VALUE) (all, element, none, text) */
+/*+------------------------------------------------------------+
+ |       -MIXINS FONTS
+ +------------------------------------------------------------+*/
 .hg-bread {
   background-color: #FFFFFF;
   padding: 0;
@@ -9537,6 +12483,90 @@ ZEN:
   opacity: .4;
 }
 
+/*+------------------------------------------------------------+
+ |-COLORS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -IMPORT FONTS
+ +------------------------------------------------------------+*/
+/* BREAKPOINTS */
+/*+------------------------------------------------------------+
+  |       -FASE 2 : PERSONALIZA TU HOLYGRAIL
+  +------------------------------------------------------------+*/
+/*  breakpoints  */
+/*  grid  */
+/* maxwidth del container */
+/* maxwidth del container2*/
+/* maxwidth del container3*/
+/* maxwidth del container4*/
+/* maxwidth del container5*/
+/* maxwidth del container6*/
+/* maxwidth del container7*/
+/* maxwidth del container8*/
+/* maxwidth del container8*/
+/*  alturas minimas  */
+/*  animaciones  */
+/* ALTURA MINIMA */
+/* Types.scss */
+/* Types responsive  xs sm md lg xl line-height font-weight */
+/* TYPES FIJOS */
+/*+------------------------------------------------------------+
+|       -spacing  
++------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -ANIMATIONS    
+ +------------------------------------------------------------+*/
+@keyframes underline {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes stretch {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 80px;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+}
+
+/*+------------------------------------------------------------+
+ |       -BREAKPOINTS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -MIXINS
+ +------------------------------------------------------------+*/
+/* .background-alpha(VALUE VALUE);*/
+/* .userselect(VALUE) (all, element, none, text) */
+/*+------------------------------------------------------------+
+ |       -MIXINS FONTS
+ +------------------------------------------------------------+*/
 .footer-bottom {
   padding: 16px 0;
   border-top: 1px solid #E3E3E3;
@@ -16745,3 +19775,5 @@ pre[class*="language-"] {
   display: block;
   font-size: 14px;
 }
+
+/*# sourceMappingURL=docs.css.map */

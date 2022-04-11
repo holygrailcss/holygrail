@@ -1,14 +1,7 @@
+@import "../abstract/all";
 .card {
 
     width: 100%;
-
-    .title {
-        @extend .h4;
-    }
-
-    .subtitle {
-        @extend .h6;
-    }
 
 }
 
