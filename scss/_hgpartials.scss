@@ -28,33 +28,50 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { margin: 0; padding: 0; }
 
 
 .hg{  
+
+
+/*------------------------------------*\
+    $ABSTRACT
+\*------------------------------------*/
+@import "abstract/reset";
+@import "abstract/0debug";
+@import "abstract/setup";
+@import "abstract/fonts";
+@import "abstract/breakpoints";
+@import "abstract/mixins";
+@import "abstract/animations";
+
+/*------------------------------------*\
+    $BASE
+\*------------------------------------*/
+/* Nuestra base esencial*/
+
 @import "base/alignment";
-@import "base/helpers";
 @import "base/grid";
 @import "base/height";
 @import "base/icons";
 @import "base/media";
 @import "base/ratios";
-
-
-
+@import "base/spacing";
+@import "base/types";
+@import "base/helpers";
 
 
 /*------------------------------------*\
     $ELEMENTS COMPONENTES
 \*------------------------------------*/
-
 @import "elements/animated";
-
+@import "elements/buttons";
 @import "elements/checkbox";
 @import "elements/form";
 @import "elements/links";
 @import "elements/list";
 @import "elements/tabs";
-@import "elements/datalist";
 @import "elements/tooltip";
+@import "elements/datalist";
 @import "elements/tabs_specials";
 @import "elements/color_selector";
+@import "elements/modal";
 
 /*
 @import "elements/tables";
@@ -69,39 +86,29 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { margin: 0; padding: 0; }
 \*------------------------------------*/
 
 @import "layouts/logo";
-@import "layouts/cover1";
-@import "layouts/cover2";
-@import "layouts/cover3";
-@import "layouts/cover4";
-@import "layouts/cover5";
 
 @import "layouts/row1";
-@import "layouts/row2";
-@import "layouts/row3";
-@import "layouts/row6";
-@import "layouts/feel";
-@import "layouts/header_account";
 
-
-@import "layouts/text1";
-@import "layouts/text2";
-@import "layouts/text3";
 
 @import "layouts/card";
-@import "layouts/card2";
-@import "layouts/card3";
-@import "layouts/card4";
-@import "layouts/card5";
-@import "layouts/card6";
-@import "layouts/card7";
-@import "layouts/card8";
 @import "layouts/card9";
 
 @import "layouts/box1";
 @import "layouts/box3";
 
+@import "layouts/feel";
+@import "layouts/header_account";
+
+
+
 @import "layouts/hgbread.scss";
 @import "layouts/hglocation.scss";
+
+
+
+
+
+@import "layouts/footer";
 
 
 }

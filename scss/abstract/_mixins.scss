@@ -1,5 +1,4 @@
 @import "breakpoints";
-
 /*+------------------------------------------------------------+
  |       -MIXINS
  +------------------------------------------------------------+*/
@@ -256,12 +255,12 @@
 
 @mixin bleed($margin) {
     .bleed-#{$margin} {
-        padding: 0 calc(#{-$margin}/2+px ) 0 calc(#{-$margin}/2+px );
+        padding: 0 $margin/2+px 0 $margin/2+px;
         overflow: hidden;
         .container-fluid {
-            margin-left:  #{-$margin}/2+px ;
-            margin-right: calc(#{-$margin}/2+px );
-            padding: 0 calc(#{-$margin}/2+px ) 0 calc(#{-$margin}/2+px );
+            margin-left: -$margin/2+px;
+            margin-right: -$margin/2+px;
+            padding: 0 $margin/2+px 0 $margin/2+px;
         }
         >.row {
             margin-left: 0;
