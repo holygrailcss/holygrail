@@ -6313,7 +6313,7 @@ strong {
 .btn-invert-light {
   color: #292929;
   background-color: transparent;
-  border: 1px solid #e3e3e3;
+  border: 1px solid #E3E3E3;
 }
 
 .btn-invert-light:focus, .btn-invert-light.focus, .btn-invert-light:hover, .btn-invert-light:active, .btn-invert-light.active {
@@ -6532,6 +6532,38 @@ strong {
   }
 }
 
+.btn-social-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 16px;
+  font-size: 16px;
+  position: relative;
+}
+
+.btn-social-login svg {
+  margin-right: 8px;
+}
+
+.btn-social-login.btn-facebook {
+  border: #4267B2 solid 1px;
+  background: #4267B2;
+}
+
+.btn-social-login.btn-outline-login {
+  border: #E3E3E3 solid 1px;
+}
+
+.btn-social-login.disabled {
+  filter: invert(1);
+  background: #FFFFFF;
+  color: #292929;
+}
+
+.btn-social-login.disabled svg path {
+  fill: #292929;
+}
+
 /*+------------------------------------------------------------+
  |       -RTL BOTONES   
  +------------------------------------------------------------+*/
@@ -6546,6 +6578,11 @@ strong {
 
 .is-rtl .btn-group .btn:last-child {
   border-radius: 8px 0 0 8px;
+}
+
+.is-rtl .btn-social-login svg {
+  margin-right: 0px;
+  margin-left: 8px;
 }
 
 /*+------------------------------------------------------------+
@@ -18945,5 +18982,3 @@ pre[class*="language-"] {
   display: block;
   font-size: 14px;
 }
-
-/*# sourceMappingURL=docs.css.map */

@@ -294,7 +294,7 @@ $btn-text-full: 14px;
 .btn-invert-light {
     color: $primary;
     background-color: transparent;
-    border: 1px solid #e3e3e3;
+    border: 1px solid $c-middle-grey;
 
 
 
@@ -519,24 +519,24 @@ $btn-text-full: 14px;
     line-height: 16px;
     font-size: 16px;
     position: relative;
-    border-radius: 2px;
-    font-family: HelveticaNeueLTPro-Roman, Helvetica Neue, Helvetica, Arial\, Lucida Grande,
-      sans-serif;
-    font-weight: 600;
-    text-transform: capitalize;
     svg {
       margin-right: 8px;
     }
+
+    &.btn-facebook {
+      border: $c-facebook solid 1px;
+      background: $c-facebook;
+    }
     &.btn-outline-login {
-      border: #e3e3e3 solid 1px;
+      border: $c-middle-grey solid 1px;
     }
     &.disabled {
       filter: invert(1);
-      background: white;
-      color: black;
+      background: $c-white;
+      color: $c-black;
       svg {
         path {
-          fill: black;
+          fill: $c-black;
         }
       }
     }
