@@ -512,6 +512,35 @@ $btn-text-full: 14px;
     }
   }
 
+  .btn-social-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 16px;
+    font-size: 16px;
+    position: relative;
+    border-radius: 2px;
+    font-family: HelveticaNeueLTPro-Roman, Helvetica Neue, Helvetica, Arial\, Lucida Grande,
+      sans-serif;
+    font-weight: 600;
+    text-transform: capitalize;
+    svg {
+      margin-right: 8px;
+    }
+    &.btn-outline-login {
+      border: #e3e3e3 solid 1px;
+    }
+    &.disabled {
+      filter: invert(1);
+      background: white;
+      color: black;
+      svg {
+        path {
+          fill: black;
+        }
+      }
+    }
+  }
 
 
 /*+------------------------------------------------------------+
@@ -537,6 +566,13 @@ $btn-text-full: 14px;
       &:last-child(){
         border-radius: 8px 0 0 8px;
       }
+    }
+  }
+
+  .btn-social-login {
+    svg {
+      margin-right: 0px;
+      margin-left: 8px;
     }
   }
 }
