@@ -5942,6 +5942,7 @@ strong {
 
 .btn:disabled, .btn.disabled {
   opacity: 0.2;
+  cursor: default;
 }
 
 .btn.btn-separate {
@@ -6105,6 +6106,7 @@ strong {
 
 .btn-underline:disabled, .btn-underline.disabled {
   opacity: 0.2;
+  cursor: default;
 }
 
 .has-light .btn-underline {
@@ -6429,6 +6431,7 @@ strong {
   filter: invert(1);
   background: #FFFFFF;
   color: #292929;
+  cursor: default;
 }
 
 .btn-social-login.disabled svg path {
@@ -11625,3 +11628,5 @@ ul.list-clear li.list-box:last-child {
   padding: 16px 0;
   border-top: 1px solid #E3E3E3;
 }
+
+/*# sourceMappingURL=style.css.map */

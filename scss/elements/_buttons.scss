@@ -41,6 +41,7 @@
     &:disabled,
     &.disabled {
         opacity: 0.2;
+        cursor: default;
     }
 
     &.btn-separate{
@@ -206,6 +207,7 @@ $btn-text-full: 14px;
     &:disabled,
     &.disabled {
         opacity: 0.2;
+        cursor: default;
     }
     .has-light & {
         color: $c-white;
@@ -535,6 +537,7 @@ $btn-text-full: 14px;
       filter: invert(1);
       background: $c-white;
       color: $c-black;
+      cursor: default;
       svg {
         path {
           fill: $c-black;

@@ -6072,6 +6072,7 @@ strong {
 
 .btn:disabled, .btn.disabled {
   opacity: 0.2;
+  cursor: default;
 }
 
 .btn.btn-separate {
@@ -6235,6 +6236,7 @@ strong {
 
 .btn-underline:disabled, .btn-underline.disabled {
   opacity: 0.2;
+  cursor: default;
 }
 
 .has-light .btn-underline {
@@ -6559,6 +6561,7 @@ strong {
   filter: invert(1);
   background: #FFFFFF;
   color: #292929;
+  cursor: default;
 }
 
 .btn-social-login.disabled svg path {
