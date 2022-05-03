@@ -7735,6 +7735,18 @@ input::-webkit-input-placeholder {
   left: auto;
 }
 
+.has-ico-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 48px;
+}
+
+.has-ico-center svg {
+  margin-top: -1px;
+  margin-right: 4px;
+}
+
 .input-subtext {
   position: absolute;
   width: 100%;
@@ -11628,5 +11640,3 @@ ul.list-clear li.list-box:last-child {
   padding: 16px 0;
   border-top: 1px solid #E3E3E3;
 }
-
-/*# sourceMappingURL=style.css.map */
