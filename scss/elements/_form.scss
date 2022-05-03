@@ -521,6 +521,21 @@ $svg-size: 16px;
         left: auto;
     }
 }
+
+
+.has-ico-center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 48px;
+    svg{
+        margin-top: -1px;
+        margin-right: 4px;
+    }
+}
+
+
+
 .input-subtext {
     position: absolute;
     width: 100%;
