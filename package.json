@@ -1,6 +1,6 @@
 {
   "name": "holygrailcss",
-  "version": "1.8.40",
+  "version": "1.8.42",
   "description": "A minimal, responsive, style-agnostic CSS framework.",
   "main": "scss/style.scss",
   "directories": {
