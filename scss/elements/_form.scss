@@ -533,6 +533,13 @@ $svg-size: 16px;
         margin-top: -1px;
         margin-right: 4px;
     }
+    div{
+        svg{
+            margin-top: 0;
+            margin-right: 4px;
+        }
+
+    }
 }
 
 
