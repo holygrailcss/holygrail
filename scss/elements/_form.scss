@@ -650,6 +650,11 @@ $svg-size: 16px;
                 position: absolute;
                 right: 0px;
             }
+            .validation-error-messages{
+                svg-icon{
+                    position: relative;
+                }
+            }
         }
     }
 }
