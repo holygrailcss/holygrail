@@ -6349,7 +6349,7 @@ strong {
   align-items: center;
 }
 
-.btn-anim span, .btn-anim div {
+.btn-anim span {
   position: absolute;
   transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
@@ -7745,6 +7745,11 @@ input::-webkit-input-placeholder {
 
 .has-ico-center svg {
   margin-top: -1px;
+  margin-right: 4px;
+}
+
+.has-ico-center div svg {
+  margin-top: 0;
   margin-right: 4px;
 }
 
@@ -10337,9 +10342,15 @@ ul.list-clear li.list-box:last-child {
   height: 100%;
 }
 
-.card9-link .img-poster img {
+.card9-link .img-poster ∫
+img {
   object-fit: contain;
   height: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
 }
 
 .card9-wrap {
@@ -11645,5 +11656,3 @@ ul.list-clear li.list-box:last-child {
   padding: 16px 0;
   border-top: 1px solid #E3E3E3;
 }
-
-/*# sourceMappingURL=style.css.map */

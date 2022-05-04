@@ -1,3 +1,5 @@
+@import "../abstract/_all.scss";
+
 .card9 {
     position: relative;
     height: 100%;
@@ -166,10 +168,15 @@
     .img-poster{
         cursor: pointer;
         object-fit: contain;
-        height: 100%;
+        height: 100%;∫
         img{
             object-fit: contain;
             height: 100%;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -o-user-select: none;
+            user-select: none;
         }
     }
 }
