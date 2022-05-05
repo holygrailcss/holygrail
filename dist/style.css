@@ -5119,7 +5119,7 @@ mark {
 }
 
 .bg-light {
-  background-color: makumba #999999;
+  background-color: #F0F0F0;
 }
 
 .bg-clear {
@@ -5127,7 +5127,7 @@ mark {
 }
 
 .bg-cream {
-  background-color: makumba #999999;
+  background-color: #F0F0F0;
 }
 
 .bg-line {
@@ -5541,7 +5541,7 @@ strong {
 }
 
 .ov-custom::-webkit-scrollbar-track:hover {
-  background-color: makumba #999999;
+  background-color: #F0F0F0;
 }
 
 .ov-custom::-webkit-scrollbar-thumb {
@@ -5552,7 +5552,7 @@ strong {
 
 .ov-custom::-webkit-scrollbar-thumb:hover {
   background-color: #8E8E8E;
-  border: 4px solid makumba #999999;
+  border: 4px solid #F0F0F0;
 }
 
 .ov-custom::-webkit-scrollbar-button {
@@ -7606,7 +7606,7 @@ input::-webkit-input-placeholder {
 
 .select select[disabled]:hover,
 .select fieldset[disabled] select:hover {
-  border-color: makumba #999999;
+  border-color: #F0F0F0;
 }
 
 .select select:not([multiple]) {
@@ -8853,7 +8853,7 @@ ul.list-mini > li:after {
   border: none;
   position: relative;
   width: 100%;
-  background-color: makumba #999999;
+  background-color: #F0F0F0;
 }
 
 .tabs-gray ul {
@@ -8871,7 +8871,7 @@ ul.list-mini > li:after {
   font-family: Arial, sans-serif;
   font-weight: 600;
   color: #8E8E8E;
-  border-color: makumba #999999;
+  border-color: #F0F0F0;
   position: relative;
 }
 
@@ -10155,6 +10155,90 @@ ul.list-clear li.list-box:last-child {
 }
 
 /*como son formados????*/
+/*+------------------------------------------------------------+
+ |-COLORS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -IMPORT FONTS
+ +------------------------------------------------------------+*/
+/* BREAKPOINTS */
+/*+------------------------------------------------------------+
+  |       -FASE 2 : PERSONALIZA TU HOLYGRAIL
+  +------------------------------------------------------------+*/
+/*  breakpoints  */
+/*  grid  */
+/* maxwidth del container */
+/* maxwidth del container2*/
+/* maxwidth del container3*/
+/* maxwidth del container4*/
+/* maxwidth del container5*/
+/* maxwidth del container6*/
+/* maxwidth del container7*/
+/* maxwidth del container8*/
+/* maxwidth del container8*/
+/*  alturas minimas  */
+/*  animaciones  */
+/* ALTURA MINIMA */
+/* Types.scss */
+/* Types responsive  xs sm md lg xl line-height font-weight */
+/* TYPES FIJOS */
+/*+------------------------------------------------------------+
+|       -spacing  
++------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -ANIMATIONS    
+ +------------------------------------------------------------+*/
+@keyframes underline {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes stretch {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 80px;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+}
+
+/*+------------------------------------------------------------+
+ |       -BREAKPOINTS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -MIXINS
+ +------------------------------------------------------------+*/
+/* .background-alpha(VALUE VALUE);*/
+/* .userselect(VALUE) (all, element, none, text) */
+/*+------------------------------------------------------------+
+ |       -MIXINS FONTS
+ +------------------------------------------------------------+*/
 .card9 {
   position: relative;
   height: 100%;
@@ -10904,7 +10988,7 @@ img {
 }
 
 .feel-minibox:hover {
-  background-color: makumba #999999;
+  background-color: #F0F0F0;
   cursor: pointer;
 }
 
@@ -11009,7 +11093,7 @@ img {
   opacity: 1;
   height: 90vh;
   z-index: 20;
-  background: makumba #999999;
+  background: #F0F0F0;
 }
 
 @media (min-width: 992px) {
@@ -11024,7 +11108,7 @@ img {
   opacity: 1;
   height: 0;
   z-index: 20;
-  background: makumba #999999;
+  background: #F0F0F0;
 }
 
 .feel-minibox-info {
@@ -11140,7 +11224,7 @@ img {
 }
 
 .bg-feel {
-  background-color: makumba #999999;
+  background-color: #F0F0F0;
 }
 
 .bg-white {
