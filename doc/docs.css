@@ -6094,6 +6094,12 @@ strong {
   width: max-content;
 }
 
+.btn.has-ico-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /*+------------------------------------------------------------+
  |       -TAMAÑOS    
  +------------------------------------------------------------+*/
@@ -10970,6 +10976,10 @@ ul.list-clear li.list-box:last-child {
   flex-direction: column;
   align-content: flex-end;
   justify-content: flex-start;
+}
+
+.box3:hover {
+  cursor: pointer;
 }
 
 /*+------------------------------------------------------------+
