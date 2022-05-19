@@ -49,6 +49,7 @@ a {
     text-decoration: none;
     position: relative;
     @include font-medium();
+    cursor: pointer;
     &:hover {
         opacity: $opacity-links;
         &::after {
@@ -68,6 +69,7 @@ a {
     left: 0;
     transition: all .2s linear;
     white-space: nowrap;
+    cursor: pointer;
     &:hover{
         opacity: $opacity-links;
     }
@@ -115,6 +117,7 @@ a {
     transition: color 250ms linear;
     text-decoration: none;
     position: relative;
+    cursor: pointer;
     &:hover {
   
             opacity: $opacity-links;
@@ -153,6 +156,7 @@ a {
   transition: color 250ms linear;
   text-decoration: none;
   position: relative;
+  cursor: pointer;
   &:focus {
     outline: none;
     text-decoration: none;
@@ -241,6 +245,7 @@ a {
         line-height: 1.2;
         padding: 2px 0;
         text-decoration: underline;
+        cursor: pointer;
         &:hover{
             opacity: $opacity-links;
         }
@@ -256,6 +261,7 @@ a {
 	font-size: 14px;
 	line-height: 14px;
 	padding:  0;
+    cursor: pointer;
     &:hover{
         opacity: $opacity-links;
     }
