@@ -411,6 +411,10 @@ img {
   display: flex;
 }
 
+.is-inlineflex {
+  display: inline-flex;
+}
+
 .flex-column {
   flex-direction: column;
 }
@@ -6057,7 +6061,7 @@ strong {
  	*/
 }
 
-.btn:hover {
+.btn:hover, .btn.hover {
   text-decoration: none;
   opacity: 0.6;
 }
@@ -6180,7 +6184,7 @@ strong {
   padding: 8px;
 }
 
-.btn-xs:hover {
+.btn-xs:hover, .btn-xs.hover {
   text-decoration: none;
   opacity: 0.6;
 }
@@ -6217,7 +6221,8 @@ strong {
   height: 1px;
 }
 
-.btn-underline:hover, .btn-underline:focus, .btn-underline.focus {
+.btn-underline:hover,
+.btn-underline.hover .btn-underline:focus, .btn-underline.focus {
   opacity: 0.6;
   background-color: transparent;
   color: #292929;
@@ -6225,7 +6230,8 @@ strong {
   cursor: pointer;
 }
 
-.btn-underline:hover:after, .btn-underline:focus:after, .btn-underline.focus:after {
+.btn-underline:hover:after,
+.btn-underline.hover .btn-underline:focus:after, .btn-underline.focus:after {
   opacity: 0;
 }
 
@@ -6253,7 +6259,7 @@ strong {
   background-color: #FFFFFF;
 }
 
-.has-light .btn-underline:hover, .has-light .btn-underline:focus, .has-light .btn-underline.focus {
+.has-light .btn-underline:hover, .has-light .btn-underline.hover, .has-light .btn-underline:focus, .has-light .btn-underline.focus {
   background-color: transparent;
   color: #FFFFFF;
 }
@@ -6297,7 +6303,7 @@ strong {
   border: 1px solid #FFFFFF;
 }
 
-.btn-phantom:focus, .btn-phantom.focus, .btn-phantom:hover, .btn-phantom:active, .btn-phantom.active {
+.btn-phantom:focus, .btn-phantom.focus, .btn-phantom:hover, .btn-phantom.hover, .btn-phantom:active, .btn-phantom.active {
   color: #FFFFFF;
   opacity: 0.6;
 }
@@ -6314,7 +6320,7 @@ strong {
   border: 1px solid #292929;
 }
 
-.btn-invert:focus, .btn-invert.focus, .btn-invert:hover, .btn-invert:active, .btn-invert.active {
+.btn-invert:focus, .btn-invert.focus, .btn-invert:hover, .btn-invert.hover, .btn-invert:active, .btn-invert.active {
   opacity: .6;
 }
 
@@ -6338,7 +6344,7 @@ strong {
   color: #FFFFFF;
 }
 
-.btn-default:focus, .btn-default.focus, .btn-default:hover, .btn-default:active, .btn-default.active {
+.btn-default:focus, .btn-default.focus, .btn-default:hover, .btn-default.hover, .btn-default:active, .btn-default.active {
   color: #FFFFFF;
   background-color: #8E8E8E;
   border-color: #8E8E8E;
@@ -6373,7 +6379,7 @@ strong {
   stroke: #FFFFFF;
 }
 
-.btn-trans:hover, .btn-trans:focus, .btn-trans.focus {
+.btn-trans:hover, .btn-trans.hover, .btn-trans:focus, .btn-trans.focus {
   color: #FFFFFF;
   text-decoration: none;
 }
@@ -7378,7 +7384,6 @@ label {
   pointer-events: none;
   border-color: #E3E3E3;
   padding: 24px 0;
-  height: auto;
 }
 
 .textarea {

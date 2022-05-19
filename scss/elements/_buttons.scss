@@ -26,7 +26,8 @@
     /**
  	* Nadie quiere un botón con texto subrayado cuando hacemos hover.
  	*/
-    &:hover {
+    &:hover,
+    &.hover  {
         text-decoration: none;
         opacity: 0.6;
     }
@@ -154,7 +155,8 @@ $btn-text-full: 14px;
     cursor: pointer;
     padding: $padding-btn / 2;
 
-    &:hover {
+    &:hover,
+    &.hover  {
         text-decoration: none;
         opacity: 0.6;
     }
@@ -188,6 +190,7 @@ $btn-text-full: 14px;
         height: 1px;
     }
     &:hover,
+    &.hover 
     &:focus,
     &.focus {
         opacity: 0.6;
@@ -221,6 +224,7 @@ $btn-text-full: 14px;
             background-color: $c-white;
         }
         &:hover,
+        &.hover ,
         &:focus,
         &.focus {
             background-color: transparent;
@@ -267,6 +271,7 @@ $btn-text-full: 14px;
     &:focus,
     &.focus,
     &:hover,
+    &.hover ,
     &:active,
     &.active {
         color: $c-white;
@@ -293,6 +298,7 @@ $btn-text-full: 14px;
     &:focus,
     &.focus,
     &:hover,
+    &.hover ,
     &:active,
     &.active {
      opacity: .6;
@@ -326,6 +332,7 @@ $btn-text-full: 14px;
     &:focus,
     &.focus,
     &:hover,
+    &.hover ,
     &:active,
     &.active {
         color: $c-white;
@@ -360,6 +367,7 @@ $btn-text-full: 14px;
         stroke  :$c-white;
     }
     &:hover, 
+    &.hover ,
     &:focus, 
     &.focus {
         color: $c-white;
