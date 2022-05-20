@@ -8033,6 +8033,7 @@ a:hover {
   position: relative;
   font-family: Arial, sans-serif;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .link2:hover {
@@ -8056,6 +8057,7 @@ a:hover {
   left: 0;
   transition: all .2s linear;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .link3:hover,
@@ -8110,6 +8112,7 @@ a:hover {
   transition: color 250ms linear;
   text-decoration: none;
   position: relative;
+  cursor: pointer;
 }
 
 .link5:hover, u:hover {
@@ -8151,6 +8154,7 @@ a:hover {
   transition: color 250ms linear;
   text-decoration: none;
   position: relative;
+  cursor: pointer;
 }
 
 .link5-2:focus {
@@ -8250,6 +8254,7 @@ a:hover {
   line-height: 1.2;
   padding: 2px 0;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .link8:hover {
@@ -8266,6 +8271,7 @@ a:hover {
   font-size: 14px;
   line-height: 14px;
   padding: 0;
+  cursor: pointer;
 }
 
 .link9:hover {
