@@ -5366,11 +5366,11 @@ hr {
 }
 
 .hg-status-a {
-  color: #F54637;
+  color: #B40016;
 }
 
 .hg-status-a:before {
-  background-color: #F54637;
+  background-color: #B40016;
 }
 
 .hg-status-b {
@@ -5382,11 +5382,11 @@ hr {
 }
 
 .hg-status-c {
-  color: #F54637;
+  color: #B40016;
 }
 
 .hg-status-c:before {
-  background-color: #F54637;
+  background-color: #B40016;
 }
 
 .hg-status-d {
@@ -7011,12 +7011,12 @@ strong {
 }
 
 .checkbox-item.is-error {
-  color: #F54637;
+  color: #B40016;
 }
 
 .checkbox-item.is-error [type=checkbox]:checked + label:before,
 .checkbox-item.is-error [type=checkbox]:not(:checked) + label:before {
-  border: 1px solid #F54637;
+  border: 1px solid #B40016;
 }
 
 .checkbox-item-text {
@@ -7366,7 +7366,7 @@ label {
 .input.validation-error,
 .textarea.validation-error,
 .select select.validation-error {
-  border-color: #F54637;
+  border-color: #B40016;
 }
 
 .input-line {
@@ -7517,15 +7517,15 @@ label {
 .is-error label,
 .is-error textarea::placeholder,
 .is-error .help {
-  color: #F54637 !important;
+  color: #B40016 !important;
 }
 
 .is-error .input {
-  border: 1px solid #F54637;
+  border: 1px solid #B40016;
 }
 
 .is-error svg g {
-  stroke: #F54637 !important;
+  stroke: #B40016 !important;
 }
 
 .ok-input label {
@@ -8498,6 +8498,125 @@ a:hover {
   background: #FFFFFF;
 }
 
+.link-line {
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+  display: initial;
+  position: relative;
+  border: 0;
+  transform: none;
+  cursor: pointer;
+  background: initial;
+}
+
+.link-line:hover {
+  opacity: 0.6;
+}
+
+.link-line:after {
+  content: '';
+  background-color: #292929;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 1px;
+}
+
+.link-raw {
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+  display: initial;
+  position: relative;
+  border: 0;
+  transform: none;
+  cursor: pointer;
+  background: initial;
+  padding: 0;
+}
+
+.link-raw:hover {
+  opacity: 0.6;
+}
+
+.link-svg-pre {
+  padding-left: 20px;
+}
+
+.link-svg-pre svg-icon {
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  width: 16px;
+  height: 16px;
+}
+
+.link-svg-pre:after {
+  width: calc(100% - 20px);
+  left: 20px;
+}
+
+.link-svg-post {
+  padding-right: 20px;
+}
+
+.link-svg-post svg-icon {
+  position: absolute;
+  right: 0;
+  bottom: 4px;
+  width: 16px;
+  height: 16px;
+}
+
+.link-svg-post:after {
+  width: calc(100% - 20px);
+  right: 20px;
+}
+
+.has-light .link-raw {
+  color: white;
+}
+
+.has-light .link-raw svg-icon {
+  filter: invert(1);
+}
+
+.has-light .link-line {
+  color: white;
+}
+
+.has-light .link-line svg-icon {
+  filter: invert(1);
+}
+
+.has-light .link-line:after {
+  background-color: #fff;
+}
+
+.has-light .link-svg-post {
+  color: white;
+}
+
+.has-light .link-svg-post:after {
+  background-color: #fff;
+}
+
+.has-light .link-svg-post svg-icon {
+  filter: invert(1);
+}
+
+.has-light .link-svg-pre {
+  color: white;
+}
+
+.has-light .link-svg-pre:after {
+  background-color: #fff;
+}
+
+.has-light .link-svg-pre svg-icon {
+  filter: invert(1);
+}
+
 /*+------------------------------------------------------------+
  |-COLORS
  +------------------------------------------------------------+*/
@@ -9295,11 +9414,11 @@ ul.list-mini > li:after {
  |       -MIXINS FONTS
  +------------------------------------------------------------+*/
 .form-input-label .validation-error-messages {
-  color: #F54637;
+  color: #B40016;
 }
 
 .form-input-label .validation-error-messages svg path {
-  fill: #F54637;
+  fill: #B40016;
 }
 
 .form-input-label.datalist input:focus + svg {
@@ -9326,7 +9445,7 @@ ul.list-mini > li:after {
 }
 
 .form-input-label.datalist .validation-error-messages {
-  color: #F54637;
+  color: #B40016;
 }
 
 .form-input-label.datalist .validation-error-messages svg {
@@ -9336,7 +9455,7 @@ ul.list-mini > li:after {
 }
 
 .form-input-label.datalist .validation-error-messages svg path {
-  fill: #F54637;
+  fill: #B40016;
 }
 
 .is-rtl .form-input-label.datalist svg {
