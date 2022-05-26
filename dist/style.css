@@ -7015,15 +7015,15 @@ strong {
  |       -Elementos envueltos en el estado error en formularios
  +------------------------------------------------------------+*/
 .is-error .checkbox-item a {
-  color: #f54637;
+  color: #B40016;
 }
 
 .is-error .checkbox-item svg g {
-  fill: #f54637;
+  fill: #B40016;
 }
 
 .is-error .checkbox-item svg g polyline {
-  stroke: #f54637;
+  stroke: #B40016;
 }
 
 /*+------------------------------------------------------------+
@@ -11945,5 +11945,3 @@ img {
   padding: 16px 0;
   border-top: 1px solid #E3E3E3;
 }
-
-/*# sourceMappingURL=style.css.map */

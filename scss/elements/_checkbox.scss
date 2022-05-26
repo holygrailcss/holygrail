@@ -400,14 +400,14 @@ left: 0;
  .is-error {
   .checkbox-item {
     a {
-      color: #f54637;
+      color: $c-error;
     }
 
     svg {
       g {
-        fill: #f54637;
+        fill: $c-error;
         polyline{
-          stroke: #f54637;
+          stroke: $c-error;
         }
       }
     }
