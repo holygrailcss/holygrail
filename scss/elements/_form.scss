@@ -679,4 +679,11 @@ $svg-size: 16px;
             }
         }
     }
+
+    .form-input-prefix {
+        .input-prefix {
+            margin-right: 0px;
+            margin-left: 8px;
+        }
+    }
 }

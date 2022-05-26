@@ -1,6 +1,7 @@
 @import "../abstract/_all.scss";
 .checkbox-item {
    text-align: center;
+   position: relative;
     .ico-check {
         width: 22px;
         height: 22px;
@@ -193,6 +194,7 @@
     }
 }
 .checkbox-radio {
+  position: relative;
     [type="radio"]:not(:checked)+label,
     [type="radio"]:checked+label {
       position: relative;
@@ -271,6 +273,7 @@
   }
 
 .checkbox-item{
+  position: relative;
 	&.is-error{
 		color:$c-error;
     [type=checkbox]:checked+label:before, 
@@ -391,6 +394,28 @@ left: 0;
   }
 }
 /*+------------------------------------------------------------+
+ |       -Elementos envueltos en el estado error en formularios
+ +------------------------------------------------------------+*/
+
+ .is-error {
+  .checkbox-item {
+    a {
+      color: #f54637;
+    }
+
+    svg {
+      g {
+        fill: #f54637;
+        polyline{
+          stroke: #f54637;
+        }
+      }
+    }
+
+  }
+}
+
+/*+------------------------------------------------------------+
  |       -Soporte para lenguajes árabes  
  +------------------------------------------------------------+*/
 .is-rtl{
@@ -431,6 +456,17 @@ left: 0;
         }
     }  
   }
+
+  .checkbox-item [type=checkbox]:not(:checked),
+  .checkbox-item [type=checkbox]:checked {
+    position: absolute;
+  }
+
+  .checkbox-radio [type=radio]:not(:checked),
+  .checkbox-radio [type=radio]:checked {
+    position: absolute;
+  }
+
   .check-bleed{
     &.checkbox-radio [type=radio]:checked + label .ico-radio, 
     &.checkbox-radio [type=radio]:not(:checked) + label .ico-radio {
@@ -465,6 +501,13 @@ left: 0;
     [type="radio"]:checked{
         left: 0;
         right: -9999px;
+    }
+  }
+
+  .checkbox-item-text{
+    span{
+      margin-left: 0px;
+      margin-right: 40px;
     }
   }
 }

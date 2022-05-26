@@ -34,6 +34,16 @@ ul.list-disc {
   }
 }
 
+.is-rtl{
+  ul.list-disc {
+    li {
+      &:after {
+        right: 0px;
+      }
+    }
+  }
+}
+
 
 /*+------------------------------------------------------------+
  |       -LISTA HORIZONTAL LIMPIA    

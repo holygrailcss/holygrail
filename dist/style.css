@@ -6581,6 +6581,7 @@ strong {
  +------------------------------------------------------------+*/
 .checkbox-item {
   text-align: center;
+  position: relative;
 }
 
 .checkbox-item .ico-check {
@@ -6796,6 +6797,10 @@ strong {
   left: 38px;
 }
 
+.checkbox-radio {
+  position: relative;
+}
+
 .checkbox-radio [type="radio"]:not(:checked) + label,
 .checkbox-radio [type="radio"]:checked + label {
   position: relative;
@@ -6878,6 +6883,10 @@ strong {
 
 .checkbox-radio label {
   padding-bottom: 0;
+}
+
+.checkbox-item {
+  position: relative;
 }
 
 .checkbox-item.is-error {
@@ -7003,6 +7012,21 @@ strong {
 }
 
 /*+------------------------------------------------------------+
+ |       -Elementos envueltos en el estado error en formularios
+ +------------------------------------------------------------+*/
+.is-error .checkbox-item a {
+  color: #f54637;
+}
+
+.is-error .checkbox-item svg g {
+  fill: #f54637;
+}
+
+.is-error .checkbox-item svg g polyline {
+  stroke: #f54637;
+}
+
+/*+------------------------------------------------------------+
  |       -Soporte para lenguajes árabes  
  +------------------------------------------------------------+*/
 .is-rtl .checkbox-item [type="checkbox"]:not(:checked),
@@ -7042,6 +7066,16 @@ strong {
   padding-left: 0px;
 }
 
+.is-rtl .checkbox-item [type=checkbox]:not(:checked),
+.is-rtl .checkbox-item [type=checkbox]:checked {
+  position: absolute;
+}
+
+.is-rtl .checkbox-radio [type=radio]:not(:checked),
+.is-rtl .checkbox-radio [type=radio]:checked {
+  position: absolute;
+}
+
 .is-rtl .check-bleed.checkbox-radio [type=radio]:checked + label .ico-radio,
 .is-rtl .check-bleed.checkbox-radio [type=radio]:not(:checked) + label .ico-radio {
   left: 0px;
@@ -7076,6 +7110,11 @@ strong {
 .is-rtl .checkbox-radio [type="radio"]:checked {
   left: 0;
   right: -9999px;
+}
+
+.is-rtl .checkbox-item-text span {
+  margin-left: 0px;
+  margin-right: 40px;
 }
 
 /*+------------------------------------------------------------+
@@ -7901,6 +7940,11 @@ input::-webkit-input-placeholder {
   position: relative;
 }
 
+.is-rtl .form-input-prefix .input-prefix {
+  margin-right: 0px;
+  margin-left: 8px;
+}
+
 /*+------------------------------------------------------------+
  |-COLORS
  +------------------------------------------------------------+*/
@@ -8607,6 +8651,10 @@ ul.list-disc li a::after {
   bottom: 7px;
 }
 
+.is-rtl ul.list-disc li:after {
+  right: 0px;
+}
+
 /*+------------------------------------------------------------+
  |       -LISTA HORIZONTAL LIMPIA    
  +------------------------------------------------------------+*/
@@ -8944,6 +8992,18 @@ ul.list-mini > li:after {
 
 .tabs.is-center ul {
   justify-content: center;
+}
+
+.tabs.is-around ul {
+  justify-content: space-around;
+}
+
+.tabs.is-around ul li {
+  flex: 1;
+}
+
+.tabs.is-around ul li span {
+  border-bottom-width: 1px;
 }
 
 .tabs-list {
@@ -9825,6 +9885,11 @@ ul.list-clear li.list-box:last-child {
 
 .color-wrap .color-more span {
   border-bottom: 1px dotted gray-30 #acacac;
+}
+
+.is-rtl .color-wrap button {
+  margin-right: 0px;
+  margin-left: 8px;
 }
 
 /*+------------------------------------------------------------+
@@ -11880,3 +11945,5 @@ img {
   padding: 16px 0;
   border-top: 1px solid #E3E3E3;
 }
+
+/*# sourceMappingURL=style.css.map */
