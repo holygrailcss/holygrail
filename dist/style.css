@@ -6453,7 +6453,8 @@ strong {
 /*+------------------------------------------------------------+
  |       -RTL BOTONES   
  +------------------------------------------------------------+*/
-.is-rtl .btn.btn-separated svg {
+.is-rtl .btn.btn-separate svg-icon {
+  transform: scaleX(-1);
   margin-left: 0px;
   margin-right: 8px;
 }

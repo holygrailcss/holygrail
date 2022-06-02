@@ -568,8 +568,9 @@ $btn-text-full: 14px;
 
 .is-rtl{
   .btn{
-    &.btn-separated{
-      svg{
+    &.btn-separate{
+      svg-icon{
+        transform: scaleX(-1);
         margin-left: 0px;
         margin-right: 8px;
       }
