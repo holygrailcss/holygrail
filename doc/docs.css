@@ -8661,6 +8661,34 @@ a:hover {
   filter: invert(1);
 }
 
+.is-rtl .link-svg-pre {
+  padding-left: 0;
+  padding-right: 20px;
+}
+
+.is-rtl .link-svg-pre:after {
+  left: 0px;
+}
+
+.is-rtl .link-svg-pre svg-icon {
+  left: auto;
+  right: 0;
+}
+
+.is-rtl .link-svg-post {
+  padding-left: 20px;
+  padding-right: 0;
+}
+
+.is-rtl .link-svg-post:after {
+  right: 0px;
+}
+
+.is-rtl .link-svg-post svg-icon {
+  right: auto;
+  left: 0;
+}
+
 /*+------------------------------------------------------------+
  |-COLORS
  +------------------------------------------------------------+*/

@@ -445,3 +445,31 @@ a {
         }
     }
 }
+
+
+.is-rtl{
+    .link-svg-pre{
+      padding-left: 0;
+      padding-right: 20px;
+  
+      &:after {
+        left: 0px;
+    }
+    svg-icon{
+      left: auto;
+      right: 0;
+    }
+    }
+    .link-svg-post{
+      padding-left: 20px;
+      padding-right: 0;
+  
+      &:after {
+        right: 0px;
+    }
+    svg-icon{
+      right: auto;
+      left: 0;
+    }
+    }
+  }
