@@ -7970,7 +7970,7 @@ input::-webkit-input-placeholder {
   text-align: center;
 }
 
-.form-input-prefix .form-input-label {
+.form-input-prefix .form-input-label, .form-input-prefix .form-input-label-2 {
   display: inline-block;
   width: calc(100% - 60px);
 }
@@ -8074,6 +8074,152 @@ input::-webkit-input-placeholder {
 .is-rtl .form-input-prefix .input-prefix {
   margin-right: 0px;
   margin-left: 8px;
+}
+
+.form-input-label-2 {
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+.form-input-label-2 .validation-error-messages {
+  width: calc(100% - 40px);
+  min-height: 24px;
+}
+
+.form-input-label-2 .help {
+  position: relative;
+  line-height: 1.2;
+  font-size: 12px;
+  margin-top: 0;
+  padding-top: 4px;
+  margin-bottom: 4px;
+  width: calc(100% - 50px);
+}
+
+.form-input-label-2 .input-text {
+  color: #8e8e8e;
+  margin-top: 4px;
+  line-height: 1;
+}
+
+.form-input-label-2 .info-text {
+  position: absolute;
+  color: #8e8e8e;
+  margin-top: 0;
+  padding-top: 4px;
+  width: 100%;
+}
+
+.form-input-label-2 > input,
+.form-input-label-2 > label {
+  font-family: Arial, sans-serif;
+  padding: 16px;
+  font-weight: normal;
+}
+
+.form-input-label-2 > label {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  display: block;
+  width: 100%;
+  font-weight: normal;
+  margin-top: 1px;
+  margin-bottom: 0;
+  line-height: 1.1;
+  color: #8E8E8E;
+  border-radius: 0.25rem;
+  transition: all 0.1s ease-in-out;
+  pointer-events: none;
+}
+
+.form-input-label-2 input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.form-input-label-2 input:-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-input-label-2 input::-moz-placeholder {
+  color: transparent;
+}
+
+.form-input-label-2 input::placeholder {
+  color: transparent;
+}
+
+.form-input-label-2 input:not(:placeholder-shown) {
+  padding-top: calc(14px + 14px * (2 / 3));
+  padding-bottom: calc(14px / 3 + 3px);
+}
+
+.form-input-label-2 input:not(:placeholder-shown) ~ label {
+  padding-top: calc(14px / 3 + 1px);
+  padding-bottom: calc(14px / 3);
+  font-size: 12px;
+  color: #8E8E8E;
+}
+
+.form-input-label-2 input::-webkit-list-button,
+.form-input-label-2 input::-webkit-calendar-picker-indicator {
+  display: none;
+  opacity: 0;
+}
+
+.form-input-label-2 input:-webkit-autofill,
+.form-input-label-2 input:-webkit-autofill:hover,
+.form-input-label-2 input:-webkit-autofill:focus,
+.form-input-label-2 textarea:-webkit-autofill,
+.form-input-label-2 textarea:-webkit-autofill:hover,
+.form-input-label-2 textarea:-webkit-autofill:focus,
+.form-input-label-2 select:-webkit-autofill,
+.form-input-label-2 select:-webkit-autofill:hover,
+.form-input-label-2 select:-webkit-autofill:focus {
+  border: 1px solid #E3E3E3;
+  -webkit-text-fill-color: #292929;
+  -webkit-box-shadow: 0 0 0px 1000px #FFFFFF inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.is-rtl .form-input-label-2.icon-right .form-text {
+  right: auto;
+  left: 0;
+}
+
+.is-rtl .form-input-label-2.has-ico-post svg-icon {
+  position: absolute;
+  right: 0px;
+}
+
+.is-rtl .form-input-label-2.has-ico-post .validation-error-messages svg-icon {
+  position: relative;
+}
+
+.form-input-label-2.input-line .input {
+  border: none;
+}
+
+/*+------------------------------------------------------------+
+   |       -FALLBACK PARA EDGE    
+   +------------------------------------------------------------+*/
+@supports (-ms-ime-align: auto) {
+  .form-input-label-2 > label {
+    display: none;
+  }
+  .form-input-label-2 input:-ms-input-placeholder {
+    color: #8E8E8E;
+  }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .form-input-label-2 > label {
+    display: none;
+  }
+  .form-input-label-2 input:-ms-input-placeholder {
+    color: #8E8E8E !important;
+  }
 }
 
 /*+------------------------------------------------------------+
@@ -9502,30 +9648,31 @@ ul.list-mini > li:after {
 /*+------------------------------------------------------------+
  |       -MIXINS FONTS
  +------------------------------------------------------------+*/
-.form-input-label .validation-error-messages {
+.form-input-label .validation-error-messages, .form-input-label-2 .validation-error-messages {
   color: #B40016;
 }
 
-.form-input-label .validation-error-messages svg path {
+.form-input-label .validation-error-messages svg path, .form-input-label-2 .validation-error-messages svg path {
   fill: #B40016;
 }
 
-.form-input-label.datalist input:focus + svg {
+.form-input-label.datalist input:focus + svg, .form-input-label-2.datalist input:focus + svg {
   transform: rotate(-180deg);
   transition: 0.6s;
 }
 
-.form-input-label.datalist input.validation-error + svg path {
+.form-input-label.datalist input.validation-error + svg path, .form-input-label-2.datalist input.validation-error + svg path {
   fill: red;
 }
 
 .form-input-label.datalist input::-webkit-list-button,
-.form-input-label.datalist input::-webkit-calendar-picker-indicator {
+.form-input-label.datalist input::-webkit-calendar-picker-indicator, .form-input-label-2.datalist input::-webkit-list-button,
+.form-input-label-2.datalist input::-webkit-calendar-picker-indicator {
   display: none;
   opacity: 0;
 }
 
-.form-input-label.datalist svg {
+.form-input-label.datalist svg, .form-input-label-2.datalist svg {
   position: absolute;
   top: 16px;
   right: 16px;
@@ -9533,26 +9680,26 @@ ul.list-mini > li:after {
   transition: 0.6s;
 }
 
-.form-input-label.datalist .validation-error-messages {
+.form-input-label.datalist .validation-error-messages, .form-input-label-2.datalist .validation-error-messages {
   color: #B40016;
 }
 
-.form-input-label.datalist .validation-error-messages svg {
+.form-input-label.datalist .validation-error-messages svg, .form-input-label-2.datalist .validation-error-messages svg {
   position: relative;
   top: auto;
   right: auto;
 }
 
-.form-input-label.datalist .validation-error-messages svg path {
+.form-input-label.datalist .validation-error-messages svg path, .form-input-label-2.datalist .validation-error-messages svg path {
   fill: #B40016;
 }
 
-.is-rtl .form-input-label.datalist svg {
+.is-rtl .form-input-label.datalist svg, .is-rtl .form-input-label-2.datalist svg {
   right: auto;
   left: 16px;
 }
 
-.is-rtl .form-input-label.datalist .validation-error-messages svg {
+.is-rtl .form-input-label.datalist .validation-error-messages svg, .is-rtl .form-input-label-2.datalist .validation-error-messages svg {
   left: auto;
 }
 
