@@ -1,5 +1,5 @@
 @import "../abstract/_all.scss";
-.form-input-label {
+.form-input-label,.form-input-label-2 {
     .validation-error-messages {
         color: $c-error;
         svg {
@@ -45,7 +45,7 @@
 }
 
 .is-rtl {
-    .form-input-label {
+    .form-input-label,.form-input-label-2 {
         &.datalist {
             svg {
                 right: auto;
