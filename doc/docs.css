@@ -8094,6 +8094,10 @@ input::-webkit-input-placeholder {
   padding-top: 4px;
   margin-bottom: 4px;
   width: calc(100% - 50px);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .form-input-label-2 .input-text {
