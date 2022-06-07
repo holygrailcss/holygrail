@@ -8571,21 +8571,15 @@ a:hover {
   border: 0;
   transform: none;
   cursor: pointer;
-  background: initial;
+  width: calc(100%);
+  background-image: linear-gradient(transparent calc(100% - 1px), #292929 10px);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  transition: background-size .4s;
 }
 
 .link-line:hover {
   opacity: 0.6;
-}
-
-.link-line:after {
-  content: '';
-  background-color: #292929;
-  width: 100%;
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  height: 1px;
 }
 
 .link-raw {
@@ -8648,6 +8642,7 @@ a:hover {
 
 .has-light .link-line {
   color: white;
+  background-image: linear-gradient(transparent calc(100% - 1px), white 10px);
 }
 
 .has-light .link-line svg-icon {
