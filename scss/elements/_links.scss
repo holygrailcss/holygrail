@@ -352,6 +352,16 @@ button{
     }
 }
 
+
+
+
+
+
+button.link-line{
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .link-line {
     @include font-medium();
     display: initial;
@@ -359,40 +369,19 @@ button{
     border: 0;
     transform: none;
     cursor: pointer;
-    background: initial;
-
-    &:hover {
-        opacity: $opacity-links;
-    }
-    &:after {
-        content: '';
-        background-color: $primary;
-        width: 100%;
-        position: absolute;
-        bottom: 0px;
-        left: 0px;
-        height: 1px;
-    }
-}
-.link-multiline {
-    @include font-medium();
-    display: initial;
-    position: relative;
-    border: 0;
-    transform: none;
-    cursor: pointer;
-
-    width: calc(100%);
+    background-color: transparent;
     background-image: linear-gradient(transparent calc(100% - 1px), $primary 10px);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     transition: background-size .4s;
 
+
     &:hover {
         opacity: $opacity-links;
     }
 
 }
+
 .link-raw {
     @include font-medium();
     display: initial;
@@ -408,30 +397,60 @@ button{
 }
 .link-svg-pre{
     padding-left: 20px;
+    @include font-medium();
+    display: initial;
+    position: relative;
+    border: 0;
+    transform: none;
+    cursor: pointer;
+    background: initial;
     svg-icon{
-    position: absolute;
-    left: 0;
-    bottom: 4px;
-    width: 16px;
-    height: 16px;
+        position: absolute;
+        left: 0;
+        bottom: 4px;
+        width: 16px;
+        height: 16px;
+        }
+    &:hover {
+        opacity: $opacity-links;
     }
     &:after {
+        content: '';
+        background-color: $primary;
+        position: absolute;
+        bottom: 0px;
         width: calc(100% - 20px);
         left: 20px;
+        height: 1px;
     }
 }
 .link-svg-post{
     padding-right: 20px;
+    @include font-medium();
+    display: initial;
+    position: relative;
+    border: 0;
+    transform: none;
+    cursor: pointer;
+    background: initial;
     svg-icon{
-    position: absolute;
-    right: 0;
-    bottom: 4px;
-    width: 16px;
-    height: 16px;
+        position: absolute;
+        right: 0;
+        bottom: 4px;
+        width: 16px;
+        height: 16px;
+        }
+    &:hover {
+        opacity: $opacity-links;
     }
     &:after {
+        content: '';
+        background-color: $primary;
+        position: absolute;
+        bottom: 0px;
         width: calc(100% - 20px);
-        right: 20px;
+        left: 0;
+        height: 1px;
     }
 }
 .has-light{
@@ -443,6 +462,7 @@ button{
     }
     .link-line {
         color: white;
+        background-image: linear-gradient(transparent calc(100% - 1px), white 10px);
         svg-icon{
             filter: invert(1);
         }
@@ -465,6 +485,7 @@ button{
     }
     .link-svg-post{
         color: white;
+        background-image:none;
         &:after {
         background-color: #fff;
         }
@@ -474,6 +495,7 @@ button{
     }
     .link-svg-pre{
         color: white;
+        background-image:none;
         &:after {
         background-color: #fff;
         }
@@ -481,6 +503,8 @@ button{
             filter: invert(1);
         }
     }
+
+
 }
 
 

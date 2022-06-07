@@ -8693,6 +8693,16 @@ a:hover {
   background: #FFFFFF;
 }
 
+button.link-line {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+button.link-line {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .link-line {
   font-family: Arial, sans-serif;
   font-weight: 600;
@@ -8701,7 +8711,7 @@ a:hover {
   border: 0;
   transform: none;
   cursor: pointer;
-  width: calc(100%);
+  background-color: transparent;
   background-image: linear-gradient(transparent calc(100% - 1px), #292929 10px);
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -8730,6 +8740,14 @@ a:hover {
 
 .link-svg-pre {
   padding-left: 20px;
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+  display: initial;
+  position: relative;
+  border: 0;
+  transform: none;
+  cursor: pointer;
+  background: initial;
 }
 
 .link-svg-pre svg-icon {
@@ -8740,13 +8758,30 @@ a:hover {
   height: 16px;
 }
 
+.link-svg-pre:hover {
+  opacity: 0.6;
+}
+
 .link-svg-pre:after {
+  content: '';
+  background-color: #292929;
+  position: absolute;
+  bottom: 0px;
   width: calc(100% - 20px);
   left: 20px;
+  height: 1px;
 }
 
 .link-svg-post {
   padding-right: 20px;
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+  display: initial;
+  position: relative;
+  border: 0;
+  transform: none;
+  cursor: pointer;
+  background: initial;
 }
 
 .link-svg-post svg-icon {
@@ -8757,9 +8792,18 @@ a:hover {
   height: 16px;
 }
 
+.link-svg-post:hover {
+  opacity: 0.6;
+}
+
 .link-svg-post:after {
+  content: '';
+  background-color: #292929;
+  position: absolute;
+  bottom: 0px;
   width: calc(100% - 20px);
-  right: 20px;
+  left: 0;
+  height: 1px;
 }
 
 .has-light .link-raw {
@@ -8783,8 +8827,22 @@ a:hover {
   background-color: #fff;
 }
 
+.has-light .link-multiline {
+  color: white;
+  background-image: linear-gradient(transparent calc(100% - 1px), white 10px);
+}
+
+.has-light .link-multiline svg-icon {
+  filter: invert(1);
+}
+
+.has-light .link-multiline:after {
+  background-color: #fff;
+}
+
 .has-light .link-svg-post {
   color: white;
+  background-image: none;
 }
 
 .has-light .link-svg-post:after {
@@ -8797,6 +8855,7 @@ a:hover {
 
 .has-light .link-svg-pre {
   color: white;
+  background-image: none;
 }
 
 .has-light .link-svg-pre:after {
