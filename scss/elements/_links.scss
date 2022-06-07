@@ -345,9 +345,36 @@ a {
     }
 }
 
-
+button{
+    &.link-line {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
 
 .link-line {
+    @include font-medium();
+    display: initial;
+    position: relative;
+    border: 0;
+    transform: none;
+    cursor: pointer;
+    background: initial;
+
+    &:hover {
+        opacity: $opacity-links;
+    }
+    &:after {
+        content: '';
+        background-color: $primary;
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        height: 1px;
+    }
+}
+.link-multiline {
     @include font-medium();
     display: initial;
     position: relative;
@@ -415,6 +442,16 @@ a {
         }
     }
     .link-line {
+        color: white;
+        svg-icon{
+            filter: invert(1);
+        }
+
+        &:after {
+            background-color: #fff;
+            }
+    }
+    .link-multiline {
         color: white;
         background-image: linear-gradient(transparent calc(100% - 1px), white 10px);
 
