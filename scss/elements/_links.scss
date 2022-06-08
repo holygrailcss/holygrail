@@ -362,6 +362,7 @@ button.link-line{
     padding-right: 0;
 }
 
+
 .link-line {
     @include font-medium();
     display: initial;
@@ -453,6 +454,17 @@ button.link-line{
         height: 1px;
     }
 }
+
+button.link-line.link-svg-pre{
+    padding-left: 20px;
+    padding-right: 0;
+}
+button.link-line.link-svg-post{
+    padding-right: 20px;
+    padding-left: 0;
+}
+
+
 .has-light{
     .link-raw {
         color: white;
