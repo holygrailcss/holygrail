@@ -207,6 +207,9 @@ label {
         g {
             stroke: $c-error !important;
         }
+        path{
+            fill: $c-error !important;
+        }
     }
 }
 .ok-input {
@@ -689,7 +692,7 @@ $svg-size: 16px;
 }
 
 
-.form-input-label-2 {
+.form-input-label-2,.error-zone {
     font-family: $font-family-form;
     position: relative;
     .validation-error-messages {
