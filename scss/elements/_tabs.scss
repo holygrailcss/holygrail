@@ -16,12 +16,13 @@
 .tabs {
     .list-equal {
         display: flex;
+        align-items: flex-end;
         li {
             flex-grow: 1;
         }
     }
     ul {
-        align-items: center;
+        align-items: center;    
         border-bottom-color: $c-middle-grey;
         border-bottom-style: solid;
         border-bottom-width: 1px;
