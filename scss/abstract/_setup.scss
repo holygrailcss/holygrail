@@ -4,47 +4,6 @@
  +------------------------------------------------------------+*/
 
 
-$colorsGuide: (
-  black: #000000,
-  secondary-color: #F0F0F0,
-  gray-90: #171717,
-  gray-80: #2e2e2e,
-  gray-70: #464646,
-  gray-60: #5d5d5d,
-  gray-50: #808284,
-  gray-40: #909090,
-  gray-30: #acacac,
-  gray-20: #c7c7c7,
-  gray-10: #e3e3e3,
-  makumba: #999999,
-  white-smoke: #F0F0F0,
-  White: #FFFFFF,
-  link: #c7c7c7,
-  linkHover: #999,
-
-
-  primary: #000000,
-  color-1: #e6f5ff,
-  color-2: #b5e6c8,
-  color-3: #fef7c1,
-  color-4: #fadfc1,
-  color-5: #fcd8cd,
-
-   error: #F54637,
-   sales: #F54637,
-   Sales-Variant: #F54637,
-   error-primary:#F54637 ,
-
-
-   primary-guide:#363636,
-   secondary-guide:#6759bb,
-   ternary-guide:#6759bb,
-  )!default;
-
-  @function color($color) {
-   @return map-get($colorsGuide, $color);
- }
- 
 
 // massimodutti color MD 2022
 $c-white:#FFFFFF!default;
@@ -57,6 +16,7 @@ $c-error:#B40016 !default;
 $c-info:#1A32A4 !default;
 $c-green:#76AE4A !default;
 $c-yellow:#FFC700 !default;
+$c-feel:#fb9962 !default;
 // fin massimodutti color MD 2022
 
 $c-success:#76AE4A !default;
@@ -65,31 +25,23 @@ $c-alert: #FFC700 !default;
 $c-facebook: #4267B2;
 
 
- $black : nth($colorsGuide, 1) !default;
- $white : nth($colorsGuide, 2) !default;
+ $black : #292929 !default;
+ $white : #ffffff !default;
 
- $gray-90: nth($colorsGuide, 3) !default;
- $gray-80: nth($colorsGuide, 4) !default;
- $gray-70: nth($colorsGuide, 5) !default;
- $gray-60: nth($colorsGuide, 6) !default;
- $gray-50: nth($colorsGuide, 7) !default;
- $gray-40: nth($colorsGuide, 8) !default;
- $gray-30: nth($colorsGuide, 9) !default;
- $gray-20: nth($colorsGuide, 10) !default;
- $gray-10:   nth($colorsGuide, 11) !default;
+
  $white-smoke: #F0F0F0 !default;
 
- $color-1:   nth($colorsGuide, 13) !default;
- $color-2 :  nth($colorsGuide, 14) !default;
- $color-3  : nth($colorsGuide, 15) !default;
- $color-4  : nth($colorsGuide, 16) !default;
- $color-5  : nth($colorsGuide, 17) !default;
- $color-6 :  nth($colorsGuide, 18) !default;
- $color-7 :  nth($colorsGuide, 19) !default;
- $color-8 :  nth($colorsGuide, 20) !default;
- $color-9 :  nth($colorsGuide, 21) !default;
- $color-10 : nth($colorsGuide, 22) !default;
- $color-11 : nth($colorsGuide, 23) !default;
+ $color-1:   #ffffff !default;
+ $color-2 :   #ffffff !default;
+ $color-3  :  #ffffff !default;
+ $color-4  : #ffffff !default;
+ $color-5  : #ffffff !default;
+ $color-6 :   #ffffff !default;
+ $color-7 :   #ffffff !default;
+ $color-8 :   #ffffff !default;
+ $color-9 :   #ffffff !default;
+ $color-10 : #ffffff !default;
+ $color-11 : #ffffff !default;
 
  $primary: #292929!default;
  $dark-grey: #8E8E8E !default;
