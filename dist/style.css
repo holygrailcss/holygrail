@@ -7438,6 +7438,10 @@ label {
   stroke: #B40016 !important;
 }
 
+.is-error svg path {
+  fill: #B40016 !important;
+}
+
 .ok-input label {
   color: #76AE4A;
 }
@@ -9155,6 +9159,7 @@ ul.list-mini > li:after {
  */
 .tabs .list-equal {
   display: flex;
+  align-items: flex-end;
 }
 
 .tabs .list-equal li {
@@ -12199,3 +12204,5 @@ img {
   padding: 16px 0;
   border-top: 1px solid #E3E3E3;
 }
+
+/*# sourceMappingURL=style.css.map */

@@ -9289,6 +9289,7 @@ ul.list-mini > li:after {
  */
 .tabs .list-equal {
   display: flex;
+  align-items: flex-end;
 }
 
 .tabs .list-equal li {
