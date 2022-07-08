@@ -10143,7 +10143,7 @@ ul.list-clear li.list-box:last-child {
 }
 
 .color-wrap .color-more span {
-  border-bottom: 1px dotted gray-30 #acacac;
+  border-bottom: 1px dotted #8E8E8E;
 }
 
 .is-rtl .color-wrap button {
@@ -12204,5 +12204,3 @@ img {
   padding: 16px 0;
   border-top: 1px solid #E3E3E3;
 }
-
-/*# sourceMappingURL=style.css.map */
