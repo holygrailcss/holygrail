@@ -561,7 +561,8 @@ $btn-text-full: 14px;
   }
 
 
-  .btn-social{
+  .btn-social,
+  .btn-social.btn--full{
     height: 48px;
     cursor: pointer;
     font-weight: bold;

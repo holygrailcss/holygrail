@@ -6588,7 +6588,8 @@ strong {
   fill: #292929;
 }
 
-.btn-social {
+.btn-social,
+.btn-social.btn--full {
   height: 48px;
   cursor: pointer;
   font-weight: bold;
@@ -6604,7 +6605,8 @@ strong {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.168), 0px 0px 1px rgba(0, 0, 0, 0.084);
 }
 
-.btn-social svg-icon {
+.btn-social svg-icon,
+.btn-social.btn--full svg-icon {
   display: flex;
   align-content: center;
   justify-content: center;
@@ -6618,110 +6620,146 @@ strong {
   height: 46px;
 }
 
-.btn-social svg-icon div {
+.btn-social svg-icon div,
+.btn-social.btn--full svg-icon div {
   display: flex;
 }
 
-.btn-social:hover {
+.btn-social:hover,
+.btn-social.btn--full:hover {
   opacity: .6;
 }
 
-.btn-social:disabled, .btn-social[disabled], .btn-social.disabled {
+.btn-social:disabled, .btn-social[disabled], .btn-social.disabled,
+.btn-social.btn--full:disabled,
+.btn-social.btn--full[disabled],
+.btn-social.btn--full.disabled {
   background-color: #E3E3E3;
 }
 
-.btn-social:disabled svg-icon, .btn-social[disabled] svg-icon, .btn-social.disabled svg-icon {
+.btn-social:disabled svg-icon, .btn-social[disabled] svg-icon, .btn-social.disabled svg-icon,
+.btn-social.btn--full:disabled svg-icon,
+.btn-social.btn--full[disabled] svg-icon,
+.btn-social.btn--full.disabled svg-icon {
   background-color: transparent;
 }
 
-.btn-social:disabled svg-icon path, .btn-social[disabled] svg-icon path, .btn-social.disabled svg-icon path {
+.btn-social:disabled svg-icon path, .btn-social[disabled] svg-icon path, .btn-social.disabled svg-icon path,
+.btn-social.btn--full:disabled svg-icon path,
+.btn-social.btn--full[disabled] svg-icon path,
+.btn-social.btn--full.disabled svg-icon path {
   fill: #FFFFFF;
 }
 
-.btn-social.btn-google {
+.btn-social.btn-google,
+.btn-social.btn--full.btn-google {
   background-color: #4285f4;
   color: #FFFFFF;
   padding-left: 54px;
 }
 
-.btn-social.btn-google svg-icon {
+.btn-social.btn-google svg-icon,
+.btn-social.btn--full.btn-google svg-icon {
   background-color: #FFFFFF;
   border: 1px solid #4285F4;
 }
 
-.btn-social.btn-google:hover {
+.btn-social.btn-google:hover,
+.btn-social.btn--full.btn-google:hover {
   background-color: #3367D6;
   opacity: 1;
 }
 
-.btn-social.btn-google:disabled, .btn-social.btn-google[disabled], .btn-social.btn-google.disabled {
+.btn-social.btn-google:disabled, .btn-social.btn-google[disabled], .btn-social.btn-google.disabled,
+.btn-social.btn--full.btn-google:disabled,
+.btn-social.btn--full.btn-google[disabled],
+.btn-social.btn--full.btn-google.disabled {
   background-color: #E3E3E3;
 }
 
-.btn-social.btn-google:disabled svg-icon, .btn-social.btn-google[disabled] svg-icon, .btn-social.btn-google.disabled svg-icon {
+.btn-social.btn-google:disabled svg-icon, .btn-social.btn-google[disabled] svg-icon, .btn-social.btn-google.disabled svg-icon,
+.btn-social.btn--full.btn-google:disabled svg-icon,
+.btn-social.btn--full.btn-google[disabled] svg-icon,
+.btn-social.btn--full.btn-google.disabled svg-icon {
   border: 1px solid #F0F0F0;
   background-color: #FFFFFF;
 }
 
-.btn-social.btn-google:disabled svg-icon path, .btn-social.btn-google[disabled] svg-icon path, .btn-social.btn-google.disabled svg-icon path {
+.btn-social.btn-google:disabled svg-icon path, .btn-social.btn-google[disabled] svg-icon path, .btn-social.btn-google.disabled svg-icon path,
+.btn-social.btn--full.btn-google:disabled svg-icon path,
+.btn-social.btn--full.btn-google[disabled] svg-icon path,
+.btn-social.btn--full.btn-google.disabled svg-icon path {
   fill: #E3E3E3;
 }
 
-.btn-social.btn-facebook {
+.btn-social.btn-facebook,
+.btn-social.btn--full.btn-facebook {
   background-color: #1977F3;
   color: #FFFFFF;
 }
 
-.btn-social.btn-facebook svg-icon {
+.btn-social.btn-facebook svg-icon,
+.btn-social.btn--full.btn-facebook svg-icon {
   background-color: transparent;
 }
 
-.btn-social.btn-facebook svg-icon path {
+.btn-social.btn-facebook svg-icon path,
+.btn-social.btn--full.btn-facebook svg-icon path {
   fill: #FFFFFF;
 }
 
-.btn-social.btn-facebook:hover {
+.btn-social.btn-facebook:hover,
+.btn-social.btn--full.btn-facebook:hover {
   opacity: .6;
 }
 
-.btn-social.btn-apple {
+.btn-social.btn-apple,
+.btn-social.btn--full.btn-apple {
   background-color: #292929;
   color: #FFFFFF;
 }
 
-.btn-social.btn-apple svg-icon {
+.btn-social.btn-apple svg-icon,
+.btn-social.btn--full.btn-apple svg-icon {
   background-color: #292929;
 }
 
-.btn-social.btn-apple:hover {
+.btn-social.btn-apple:hover,
+.btn-social.btn--full.btn-apple:hover {
   opacity: .6;
 }
 
-.btn-social.btn-naver {
+.btn-social.btn-naver,
+.btn-social.btn--full.btn-naver {
   background-color: #03CF5D;
   color: #FFFFFF;
   padding-left: 80px;
 }
 
-.btn-social.btn-naver svg-icon {
+.btn-social.btn-naver svg-icon,
+.btn-social.btn--full.btn-naver svg-icon {
   width: 80px;
   background-color: #03CF5D;
 }
 
-.btn-social.btn-naver:hover {
+.btn-social.btn-naver:hover,
+.btn-social.btn--full.btn-naver:hover {
   opacity: .6;
 }
 
-.btn-social.btn-wechat {
+.btn-social.btn-wechat,
+.btn-social.btn--full.btn-wechat {
   background-color: #2DC100;
   color: #FFFFFF;
 }
 
-.btn-social.btn-wechat svg-icon {
+.btn-social.btn-wechat svg-icon,
+.btn-social.btn--full.btn-wechat svg-icon {
   background-color: #2DC100;
 }
 
-.btn-social.btn-wechat:hover {
+.btn-social.btn-wechat:hover,
+.btn-social.btn--full.btn-wechat:hover {
   opacity: .6;
 }
 
