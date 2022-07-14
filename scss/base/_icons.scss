@@ -4,7 +4,7 @@
     width: 48px;
     height: 48px;
     padding: 10px;
-    border: 1px solid #e3e3e3;
+    border: 1px solid $c-middle-grey;
     box-sizing: border-box;
     border-radius: 50%;
 }
@@ -17,11 +17,21 @@
     }
 }
 
-// soporte para invertir iconos con el componente svg-icon
+// soporte para estilos de color iconos con el componente svg-icon
+
 svg-icon {
-    &.c-invert {
-        svg {
-            filter: invert(1);
+    &.ico-white {
+        fill: $c-white;
+    }
+
+    &.ico-error {
+        path {
+            fill: $c-error;
+        }
+    }
+    &.ico-success {
+        path {
+            fill: $c-green;
         }
     }
 }
