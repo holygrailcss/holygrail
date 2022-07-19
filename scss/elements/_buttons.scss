@@ -561,6 +561,132 @@ $btn-text-full: 14px;
   }
 
 
+  .btn-social{
+    height: 48px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    display: flex;
+    padding: 9px;
+    flex-direction: row;
+    align-items: center;
+    color: $c-white;
+    position: relative;
+    padding-left: 48px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.168), 0px 0px 1px rgba(0, 0, 0, 0.084);
+  
+    svg-icon  {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        background-color: $c-white;
+        position: absolute;
+        top: 1px;
+        left: 1px;
+  
+        width: 46px;
+        height: 46px;
+        div{
+            display: flex;
+        }
+    }
+    &:hover{
+        opacity: .6;
+    }
+    &:disabled,
+    &[disabled],
+    &.disabled {
+        background-color: $c-middle-grey;
+        svg-icon {
+            background-color: transparent;
+            path {
+                fill: $c-white;
+            }
+        }
+    }
+  
+    &.btn-google {
+      background-color: #4285f4;
+      color: $c-white;
+      padding-left: 54px;
+      svg-icon {
+          background-color: $c-white;
+          border: 1px solid #4285F4;
+      }
+      &:hover {
+          background-color: #3367D6;
+          opacity: 1;
+      }
+      &:disabled,
+      &[disabled],
+      &.disabled {
+          background-color: $c-middle-grey;
+          svg-icon {
+              border: 1px solid #F0F0F0;
+              background-color: $c-white;
+              path {
+                  fill: $c-middle-grey;
+              }
+          }
+      }
+    }
+    
+    &.btn-facebook {
+      background-color: #1977F3;
+      color: $c-white;
+         svg-icon {
+          background-color: transparent;
+          path {
+              fill: $c-white;
+          }
+      }
+      &:hover {
+          opacity: .6;
+      }
+    }
+    
+    &.btn-apple{
+      background-color: $primary;
+      color: $c-white;
+      svg-icon  {
+          background-color: $primary;
+      }
+      &:hover{
+          opacity: .6;
+      }
+    }
+    
+    &.btn-naver{
+     
+      background-color: #03CF5D;
+      color: $c-white;
+      padding-left:80px;
+      svg-icon  {
+    
+          width: 80px;
+          background-color: #03CF5D;
+      }
+      &:hover{
+          opacity: .6;
+      }
+    }
+    
+    &.btn-wechat{
+     
+      background-color: #2DC100;
+      color: $c-white;
+      svg-icon  {
+          background-color: #2DC100;
+      }
+      &:hover{
+          opacity: .6;
+      }
+    }
+  }
+
 /*+------------------------------------------------------------+
  |       -RTL BOTONES   
  +------------------------------------------------------------+*/
@@ -592,6 +718,26 @@ $btn-text-full: 14px;
     svg {
       margin-right: 0px;
       margin-left: 8px;
+    }
+  }
+
+  .btn-social{
+    padding-right: 48px;
+    padding-left: 0px;
+  
+    svg-icon  {
+        right: 1px;
+        left: auto;
+    }
+  
+    &.btn-google {
+      padding-right: 54px;
+      padding-left: 0px;
+    }
+    
+    &.btn-naver{
+      padding-right: 80px;
+      padding-left: 0px;
     }
   }
 }

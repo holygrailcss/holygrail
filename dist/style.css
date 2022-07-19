@@ -1646,7 +1646,7 @@ img {
   width: 48px;
   height: 48px;
   padding: 10px;
-  border: 1px solid #e3e3e3;
+  border: 1px solid #E3E3E3;
   box-sizing: border-box;
   border-radius: 50%;
 }
@@ -1657,8 +1657,16 @@ img {
   vertical-align: middle;
 }
 
-svg-icon.c-invert svg {
-  filter: invert(1);
+svg-icon.ico-white {
+  fill: #FFFFFF;
+}
+
+svg-icon.ico-error path {
+  fill: #B40016;
+}
+
+svg-icon.ico-success path {
+  fill: #76AE4A;
 }
 
 /*+------------------------------------------------------------+
@@ -6450,6 +6458,143 @@ strong {
   fill: #292929;
 }
 
+.btn-social {
+  height: 48px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  display: flex;
+  padding: 9px;
+  flex-direction: row;
+  align-items: center;
+  color: #FFFFFF;
+  position: relative;
+  padding-left: 48px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.168), 0px 0px 1px rgba(0, 0, 0, 0.084);
+}
+
+.btn-social svg-icon {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 46px;
+  height: 46px;
+}
+
+.btn-social svg-icon div {
+  display: flex;
+}
+
+.btn-social:hover {
+  opacity: .6;
+}
+
+.btn-social:disabled, .btn-social[disabled], .btn-social.disabled {
+  background-color: #E3E3E3;
+}
+
+.btn-social:disabled svg-icon, .btn-social[disabled] svg-icon, .btn-social.disabled svg-icon {
+  background-color: transparent;
+}
+
+.btn-social:disabled svg-icon path, .btn-social[disabled] svg-icon path, .btn-social.disabled svg-icon path {
+  fill: #FFFFFF;
+}
+
+.btn-social.btn-google {
+  background-color: #4285f4;
+  color: #FFFFFF;
+  padding-left: 54px;
+}
+
+.btn-social.btn-google svg-icon {
+  background-color: #FFFFFF;
+  border: 1px solid #4285F4;
+}
+
+.btn-social.btn-google:hover {
+  background-color: #3367D6;
+  opacity: 1;
+}
+
+.btn-social.btn-google:disabled, .btn-social.btn-google[disabled], .btn-social.btn-google.disabled {
+  background-color: #E3E3E3;
+}
+
+.btn-social.btn-google:disabled svg-icon, .btn-social.btn-google[disabled] svg-icon, .btn-social.btn-google.disabled svg-icon {
+  border: 1px solid #F0F0F0;
+  background-color: #FFFFFF;
+}
+
+.btn-social.btn-google:disabled svg-icon path, .btn-social.btn-google[disabled] svg-icon path, .btn-social.btn-google.disabled svg-icon path {
+  fill: #E3E3E3;
+}
+
+.btn-social.btn-facebook {
+  background-color: #1977F3;
+  color: #FFFFFF;
+}
+
+.btn-social.btn-facebook svg-icon {
+  background-color: transparent;
+}
+
+.btn-social.btn-facebook svg-icon path {
+  fill: #FFFFFF;
+}
+
+.btn-social.btn-facebook:hover {
+  opacity: .6;
+}
+
+.btn-social.btn-apple {
+  background-color: #292929;
+  color: #FFFFFF;
+}
+
+.btn-social.btn-apple svg-icon {
+  background-color: #292929;
+}
+
+.btn-social.btn-apple:hover {
+  opacity: .6;
+}
+
+.btn-social.btn-naver {
+  background-color: #03CF5D;
+  color: #FFFFFF;
+  padding-left: 80px;
+}
+
+.btn-social.btn-naver svg-icon {
+  width: 80px;
+  background-color: #03CF5D;
+}
+
+.btn-social.btn-naver:hover {
+  opacity: .6;
+}
+
+.btn-social.btn-wechat {
+  background-color: #2DC100;
+  color: #FFFFFF;
+}
+
+.btn-social.btn-wechat svg-icon {
+  background-color: #2DC100;
+}
+
+.btn-social.btn-wechat:hover {
+  opacity: .6;
+}
+
 /*+------------------------------------------------------------+
  |       -RTL BOTONES   
  +------------------------------------------------------------+*/
@@ -6470,6 +6615,26 @@ strong {
 .is-rtl .btn-social-login svg {
   margin-right: 0px;
   margin-left: 8px;
+}
+
+.is-rtl .btn-social {
+  padding-right: 48px;
+  padding-left: 0px;
+}
+
+.is-rtl .btn-social svg-icon {
+  right: 1px;
+  left: auto;
+}
+
+.is-rtl .btn-social.btn-google {
+  padding-right: 54px;
+  padding-left: 0px;
+}
+
+.is-rtl .btn-social.btn-naver {
+  padding-right: 80px;
+  padding-left: 0px;
 }
 
 /*+------------------------------------------------------------+
