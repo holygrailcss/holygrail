@@ -21,7 +21,9 @@
 
 svg-icon {
     &.ico-white {
-        fill: $c-white;
+        path{
+            fill: $c-white;
+        }
     }
 
     &.ico-error {

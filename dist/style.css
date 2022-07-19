@@ -1657,7 +1657,7 @@ img {
   vertical-align: middle;
 }
 
-svg-icon.ico-white {
+svg-icon.ico-white path {
   fill: #FFFFFF;
 }
 
