@@ -114,3 +114,8 @@ mark {
     height: 1px;
 	}
 }
+.c-gray.is-through{
+  &::after{
+      background-color: $c-dark-grey;
+    }
+}
