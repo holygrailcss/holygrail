@@ -10,6 +10,9 @@
  .height-100{
   height: 100%;
 }
+.height-128{
+  min-height: 128px;
+}
 
 .height-xs {
     min-height: $height-xs;
@@ -18,6 +21,7 @@
 .height-sm {
     min-height: $height-sm;
 }
+
 
 .height-md {
     min-height: $height-md;
