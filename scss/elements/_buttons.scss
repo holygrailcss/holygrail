@@ -486,7 +486,20 @@ $btn-text-full: 14px;
       opacity: 0;
       transform: translateY(40px);
     }
+    &:disabled,
+    &[disabled],
+    &.disabled {
+        background-color: $c-middle-grey;
+        border-color: transparent;
+        opacity: 1;
+        svg{
+          path{
+            fill: rgba($primary, $alpha: .6);
+          }
+        }
+    }
   }
+
   .is-loading {
     &.btn-anim {
       .btn-submit {
@@ -513,18 +526,18 @@ $btn-text-full: 14px;
   }
   @-moz-keyframes spin {
     100% {
-      -moz-transform: rotate(360deg);
+      -moz-transform: rotate(-360deg);
     }
   }
   @-webkit-keyframes spin {
     100% {
-      -webkit-transform: rotate(360deg);
+      -webkit-transform: rotate(-360deg);
     }
   }
   @keyframes spin {
     100% {
-      -webkit-transform: rotate(360deg);
-      transform: rotate(360deg);
+      -webkit-transform: rotate(-360deg);
+      transform: rotate(-360deg);
     }
   }
 

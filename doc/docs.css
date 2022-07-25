@@ -1625,6 +1625,10 @@ img {
   height: 100%;
 }
 
+.height-128 {
+  min-height: 128px;
+}
+
 .height-xs {
   min-height: 80px;
 }
@@ -5146,6 +5150,10 @@ mark {
   height: 1px;
 }
 
+.c-gray.is-through::after {
+  background-color: #8E8E8E;
+}
+
 /*+------------------------------------------------------------+
  |-COLORS
  +------------------------------------------------------------+*/
@@ -6513,6 +6521,16 @@ strong {
   transform: translateY(40px);
 }
 
+.btn-anim:disabled, .btn-anim[disabled], .btn-anim.disabled {
+  background-color: #E3E3E3;
+  border-color: transparent;
+  opacity: 1;
+}
+
+.btn-anim:disabled svg path, .btn-anim[disabled] svg path, .btn-anim.disabled svg path {
+  fill: rgba(41, 41, 41, 0.6);
+}
+
 .is-loading.btn-anim .btn-submit {
   transform: translateY(-40px);
   opacity: 0;
@@ -6537,20 +6555,20 @@ strong {
 
 @-moz-keyframes spin {
   100% {
-    -moz-transform: rotate(360deg);
+    -moz-transform: rotate(-360deg);
   }
 }
 
 @-webkit-keyframes spin {
   100% {
-    -webkit-transform: rotate(360deg);
+    -webkit-transform: rotate(-360deg);
   }
 }
 
 @keyframes spin {
   100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
   }
 }
 
@@ -6981,6 +6999,7 @@ strong {
   margin: 5px 0 0;
   line-height: 16px;
   min-height: 20px;
+  padding-left: 0;
 }
 
 .checkbox-item [type="checkbox"]:not(:checked) + label span::after,
@@ -11602,6 +11621,10 @@ ul.list-clear li.list-box:last-child {
   display: flex;
   flex-direction: column;
   min-width: 60px;
+}
+
+.box3 .box3-price img {
+  max-width: 60px;
 }
 
 .box3 .box3-right {
