@@ -9846,6 +9846,138 @@ ul.list-mini > li:after {
 /*+------------------------------------------------------------+
  |       -MIXINS FONTS
  +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -tags    
+ +------------------------------------------------------------+*/
+.tag-warning {
+  background-color: #B40016;
+  color: #FFFFFF;
+  padding: 6px 6px 6px 6px;
+  line-height: 1;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.tag-info {
+  background-color: #1A32A4;
+  color: #FFFFFF;
+  padding: 6px 6px 6px 6px;
+  line-height: 1;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.tag-valid {
+  background-color: #76AE4A;
+  color: #FFFFFF;
+  padding: 6px 6px 6px 6px;
+  line-height: 1;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.tag-alert {
+  background-color: #FFC700;
+  color: #292929;
+  padding: 6px 6px 6px 6px;
+  line-height: 1;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.tag-feel {
+  background-color: #fb9962;
+  color: #292929;
+  padding: 6px 6px 6px 6px;
+  line-height: 1;
+  display: inline-block;
+  font-size: 14px;
+}
+
+/*+------------------------------------------------------------+
+ |-COLORS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -IMPORT FONTS
+ +------------------------------------------------------------+*/
+/* BREAKPOINTS */
+/*+------------------------------------------------------------+
+  |       -FASE 2 : PERSONALIZA TU HOLYGRAIL
+  +------------------------------------------------------------+*/
+/*  breakpoints  */
+/*  grid  */
+/* maxwidth del container */
+/* maxwidth del container2*/
+/* maxwidth del container3*/
+/* maxwidth del container4*/
+/* maxwidth del container5*/
+/* maxwidth del container6*/
+/* maxwidth del container7*/
+/* maxwidth del container8*/
+/* maxwidth del container8*/
+/*  alturas minimas  */
+/*  animaciones  */
+/* ALTURA MINIMA */
+/* Types.scss */
+/* Types responsive  xs sm md lg xl line-height font-weight */
+/* TYPES FIJOS */
+/*+------------------------------------------------------------+
+|       -spacing  
++------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -ANIMATIONS    
+ +------------------------------------------------------------+*/
+@keyframes underline {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes stretch {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 80px;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+}
+
+/*+------------------------------------------------------------+
+ |       -BREAKPOINTS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -MIXINS
+ +------------------------------------------------------------+*/
+/* .background-alpha(VALUE VALUE);*/
+/* .userselect(VALUE) (all, element, none, text) */
+/*+------------------------------------------------------------+
+ |       -MIXINS FONTS
+ +------------------------------------------------------------+*/
 .tooltip-sm {
   right: 8px;
   background-color: #FFFFFF;
