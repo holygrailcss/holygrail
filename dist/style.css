@@ -1661,7 +1661,11 @@ img {
   vertical-align: middle;
 }
 
-svg-icon.ico-white path {
+svg-icon.c-invert {
+  fill: #FFFFFF;
+}
+
+svg-icon.ico-white path, svg-icon.c-invert path {
   fill: #FFFFFF;
 }
 
@@ -1671,6 +1675,11 @@ svg-icon.ico-error path {
 
 svg-icon.ico-success path {
   fill: #76AE4A;
+}
+
+.has-light svg path {
+  fill: white;
+  stroke: none;
 }
 
 /*+------------------------------------------------------------+
@@ -5990,6 +5999,11 @@ strong {
   justify-content: center;
 }
 
+.btn.btn-clear {
+  padding: 8px;
+  background: none;
+}
+
 /*+------------------------------------------------------------+
  |       -TAMAÑOS    
  +------------------------------------------------------------+*/
@@ -7281,6 +7295,7 @@ strong {
 .is-rtl .checkbox-item [type="checkbox"]:checked + label .icon {
   right: 5px;
   left: auto;
+  top: 4px;
 }
 
 .is-rtl .checkbox-item .ma-wrapper-terms-inner span,
@@ -9630,6 +9645,147 @@ ul.list-mini > li:after {
 .is-rtl .tabs-mini li:first-child a:after {
   left: 0;
   right: auto;
+}
+
+/*+------------------------------------------------------------+
+ |-COLORS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -IMPORT FONTS
+ +------------------------------------------------------------+*/
+/* BREAKPOINTS */
+/*+------------------------------------------------------------+
+  |       -FASE 2 : PERSONALIZA TU HOLYGRAIL
+  +------------------------------------------------------------+*/
+/*  breakpoints  */
+/*  grid  */
+/* maxwidth del container */
+/* maxwidth del container2*/
+/* maxwidth del container3*/
+/* maxwidth del container4*/
+/* maxwidth del container5*/
+/* maxwidth del container6*/
+/* maxwidth del container7*/
+/* maxwidth del container8*/
+/* maxwidth del container8*/
+/*  alturas minimas  */
+/*  animaciones  */
+/* ALTURA MINIMA */
+/* Types.scss */
+/* Types responsive  xs sm md lg xl line-height font-weight */
+/* TYPES FIJOS */
+/*+------------------------------------------------------------+
+|       -spacing  
++------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -ANIMATIONS    
+ +------------------------------------------------------------+*/
+@keyframes underline {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes stretch {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 80px;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+}
+
+/*+------------------------------------------------------------+
+ |       -BREAKPOINTS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -MIXINS
+ +------------------------------------------------------------+*/
+/* .background-alpha(VALUE VALUE);*/
+/* .userselect(VALUE) (all, element, none, text) */
+/*+------------------------------------------------------------+
+ |       -MIXINS FONTS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -tags    
+ +------------------------------------------------------------+*/
+.tag-warning {
+  background-color: #B40016;
+  color: #FFFFFF;
+  padding: 6px 6px 6px 6px;
+  line-height: 1;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.tag-info {
+  background-color: #1A32A4;
+  color: #FFFFFF;
+  padding: 6px 6px 6px 6px;
+  line-height: 1;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.tag-valid {
+  background-color: #76AE4A;
+  color: #FFFFFF;
+  padding: 6px 6px 6px 6px;
+  line-height: 1;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.tag-alert {
+  background-color: #FFC700;
+  color: #292929;
+  padding: 6px 6px 6px 6px;
+  line-height: 1;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.tag-feel {
+  background-color: #fb9962;
+  color: #292929;
+  padding: 6px 6px 6px 6px;
+  line-height: 1;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.tag-limited {
+  background-color: #292929;
+  color: #FFFFFF;
+  padding: 6px 6px 6px 6px;
+  line-height: 1;
+  display: inline-block;
+  font-size: 14px;
 }
 
 /*+------------------------------------------------------------+

@@ -1785,7 +1785,11 @@ img {
   vertical-align: middle;
 }
 
-svg-icon.ico-white path {
+svg-icon.c-invert {
+  fill: #FFFFFF;
+}
+
+svg-icon.ico-white path, svg-icon.c-invert path {
   fill: #FFFFFF;
 }
 
@@ -1795,6 +1799,11 @@ svg-icon.ico-error path {
 
 svg-icon.ico-success path {
   fill: #76AE4A;
+}
+
+.has-light svg path {
+  fill: white;
+  stroke: none;
 }
 
 /*+------------------------------------------------------------+
@@ -6120,6 +6129,11 @@ strong {
   justify-content: center;
 }
 
+.btn.btn-clear {
+  padding: 8px;
+  background: none;
+}
+
 /*+------------------------------------------------------------+
  |       -TAMAÑOS    
  +------------------------------------------------------------+*/
@@ -7411,6 +7425,7 @@ strong {
 .is-rtl .checkbox-item [type="checkbox"]:checked + label .icon {
   right: 5px;
   left: auto;
+  top: 4px;
 }
 
 .is-rtl .checkbox-item .ma-wrapper-terms-inner span,
@@ -9888,6 +9903,15 @@ ul.list-mini > li:after {
 .tag-feel {
   background-color: #fb9962;
   color: #292929;
+  padding: 6px 6px 6px 6px;
+  line-height: 1;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.tag-limited {
+  background-color: #292929;
+  color: #FFFFFF;
   padding: 6px 6px 6px 6px;
   line-height: 1;
   display: inline-block;
