@@ -67,6 +67,38 @@
       align-items: center;
       justify-content: center;
     }
+
+    &.btn-clear {
+        padding: 8px;
+        background: none;
+    }
+
+    &.btn-world {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px;
+      border: none;
+      background-color: rgba(#292929 , .4);
+      color: #FFFFFF;
+      transition: all .4s ease-in-out;
+      
+      svg{
+        path{
+          fill:#ffffff;
+        }
+      }
+      span{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        
+      }
+      &:hover{
+        background-color: rgba(#292929 , .8);
+      }
+    }
+  
 }
 /*+------------------------------------------------------------+
  |       -TAMAÑOS    
@@ -681,6 +713,11 @@ $btn-text-full: 14px;
         margin-right: 8px;
       }
     }
+    &.btn-world {
+      svg{
+        transform:  rotateY(180deg);
+      }
+    } 
   }
   .btn-group{
     .btn{
@@ -714,6 +751,32 @@ $btn-text-full: 14px;
       padding-left: 0px;
     }
   }
+
+  .btn-world {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  border: none;
+  background-color: rgba(#292929 , .4);
+  color: #FFFFFF;
+  transition: all .4s ease-in-out;
+  
+  svg{
+    path{
+      fill:#ffffff;
+    }
+  }
+  span{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    
+  }
+  &:hover{
+    background-color: rgba(#292929 , .8);
+  }
+}
 }
 /*+------------------------------------------------------------+
  |       -INVERSIÓN DE COLOR DE BOTONES   

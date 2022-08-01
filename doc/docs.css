@@ -1785,7 +1785,11 @@ img {
   vertical-align: middle;
 }
 
-svg-icon.ico-white path {
+svg-icon.c-invert {
+  fill: #FFFFFF;
+}
+
+svg-icon.ico-white path, svg-icon.c-invert path {
   fill: #FFFFFF;
 }
 
@@ -1795,6 +1799,11 @@ svg-icon.ico-error path {
 
 svg-icon.ico-success path {
   fill: #76AE4A;
+}
+
+.has-light svg path {
+  fill: white;
+  stroke: none;
 }
 
 /*+------------------------------------------------------------+
@@ -6120,6 +6129,36 @@ strong {
   justify-content: center;
 }
 
+.btn.btn-clear {
+  padding: 8px;
+  background: none;
+}
+
+.btn.btn-world {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  border: none;
+  background-color: rgba(41, 41, 41, 0.4);
+  color: #FFFFFF;
+  transition: all .4s ease-in-out;
+}
+
+.btn.btn-world svg path {
+  fill: #ffffff;
+}
+
+.btn.btn-world span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn.btn-world:hover {
+  background-color: rgba(41, 41, 41, 0.8);
+}
+
 /*+------------------------------------------------------------+
  |       -TAMAÑOS    
  +------------------------------------------------------------+*/
@@ -6810,6 +6849,10 @@ strong {
   margin-right: 8px;
 }
 
+.is-rtl .btn.btn-world svg {
+  transform: rotateY(180deg);
+}
+
 .is-rtl .btn-group .btn:first-child {
   border-radius: 0 8px 8px 0;
 }
@@ -6841,6 +6884,31 @@ strong {
 .is-rtl .btn-social.btn-naver {
   padding-right: 80px;
   padding-left: 0px;
+}
+
+.is-rtl .btn-world {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  border: none;
+  background-color: rgba(41, 41, 41, 0.4);
+  color: #FFFFFF;
+  transition: all .4s ease-in-out;
+}
+
+.is-rtl .btn-world svg path {
+  fill: #ffffff;
+}
+
+.is-rtl .btn-world span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.is-rtl .btn-world:hover {
+  background-color: rgba(41, 41, 41, 0.8);
 }
 
 /*+------------------------------------------------------------+
@@ -7431,6 +7499,7 @@ strong {
 .is-rtl .checkbox-item [type="checkbox"]:checked + label .icon {
   right: 5px;
   left: auto;
+  top: 4px;
 }
 
 .is-rtl .checkbox-item .ma-wrapper-terms-inner span,

@@ -20,8 +20,13 @@
 // soporte para estilos de color iconos con el componente svg-icon
 
 svg-icon {
-    &.ico-white {
-        path{
+    &.c-invert {
+        fill: $c-white;
+    }
+
+    &.ico-white,
+    &.c-invert {
+        path {
             fill: $c-white;
         }
     }
@@ -31,9 +36,20 @@ svg-icon {
             fill: $c-error;
         }
     }
+
     &.ico-success {
         path {
             fill: $c-valid;
+        }
+    }
+}
+
+
+.has-light{
+    svg {
+        path {
+            fill: white;
+            stroke: none;
         }
     }
 }
