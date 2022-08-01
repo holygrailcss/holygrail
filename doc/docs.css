@@ -6313,6 +6313,26 @@ strong {
   stroke: #FFFFFF;
 }
 
+.btn-secondary {
+  color: #292929;
+  background-color: transparent;
+  border: 1px solid #292929;
+}
+
+.btn-secondary svg g {
+  fill: #292929;
+  stroke: #292929;
+}
+
+.btn-secondary svg circle {
+  stroke: #292929;
+}
+
+.btn-secondary:focus, .btn-secondary.focus, .btn-secondary:hover, .btn-secondary.hover, .btn-secondary:active, .btn-secondary.active {
+  color: #292929;
+  opacity: 0.6;
+}
+
 .btn-phantom {
   color: #FFFFFF;
   background-color: transparent;
@@ -9888,6 +9908,15 @@ ul.list-mini > li:after {
 .tag-feel {
   background-color: #fb9962;
   color: #292929;
+  padding: 6px 6px 6px 6px;
+  line-height: 1;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.tag-limited {
+  background-color: #292929;
+  color: #FFFFFF;
   padding: 6px 6px 6px 6px;
   line-height: 1;
   display: inline-block;
