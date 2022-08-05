@@ -6138,6 +6138,7 @@ strong {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 8px;
   padding: 16px;
   border: none;
   background-color: rgba(41, 41, 41, 0.4);
@@ -6150,9 +6151,13 @@ strong {
 }
 
 .btn.btn-world span {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  display: inline-block;
+  padding: 0 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex-grow: 1;
+  text-align: left;
 }
 
 .btn.btn-world:hover {
