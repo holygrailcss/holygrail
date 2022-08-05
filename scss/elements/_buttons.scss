@@ -82,28 +82,33 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      gap: 8px;
       padding: 16px;
       border: none;
-      background-color: rgba(#292929 , .4);
+      background-color: rgba(#292929, .4);
       color: #FFFFFF;
       transition: all .4s ease-in-out;
-      
-      svg{
-        path{
-          fill:#ffffff;
+  
+      svg {
+        path {
+          fill: #ffffff;
         }
       }
-      span{
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        
-      }
-      &:hover{
-        background-color: rgba(#292929 , .8);
-      }
-    }
   
+      span {
+        display: inline-block;
+        padding: 0 8px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        flex-grow: 1;
+        text-align: left;
+      }
+  
+      &:hover {
+        background-color: rgba(#292929, .8);
+      }
+    } 
 }
 
 /*+------------------------------------------------------------+
