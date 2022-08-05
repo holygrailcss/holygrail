@@ -38,23 +38,19 @@
     &:visited {
         outline: none;
     }
-
     &:disabled,
     &.disabled {
         opacity: 0.2;
         cursor: default;
     }
-
     &.btn-separate{
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 16px;
-    
         svg{
           margin-left: 8px;
         }
-    
         &.btn-primary,
         &.btn-blue{
           svg{
@@ -66,7 +62,6 @@
           width: max-content;
         }
     }
-    
     &.has-ico-center{
       display: flex;
       align-items: center;
@@ -110,7 +105,6 @@
       }
     } 
 }
-
 /*+------------------------------------------------------------+
  |       -TAMAÑOS    
  +------------------------------------------------------------+*/
@@ -139,7 +133,6 @@ $btn-text-full: 14px;
     max-width: 272px;
     width: 100%;
 }
-
 .btn--large {
     min-width: 200px;
     max-width: 400px;
@@ -171,11 +164,9 @@ $btn-text-full: 14px;
     font-size: $btn-text-full;
     height: 48px;
 }
-
 .btn--round {
 	border-radius: 50px;
 }
-
 /*+------------------------------------------------------------+
  |       -TIPOS DE BOTONES    
  +------------------------------------------------------------+*/
@@ -191,7 +182,6 @@ $btn-text-full: 14px;
     white-space: nowrap;
     cursor: pointer;
     padding: $padding-btn / 2;
-
     &:hover,
     &.hover  {
         text-decoration: none;
@@ -299,8 +289,29 @@ $btn-text-full: 14px;
         }
     }
 }
-
-
+.btn-secondary {
+  color: $c-primary;
+  background-color: transparent;
+  border: 1px solid $c-primary;
+  svg {
+      g{
+          fill: $c-primary;
+          stroke: $c-primary;
+      }
+      circle{
+          stroke: $c-primary;
+      }
+  }
+  &:focus,
+  &.focus,
+  &:hover,
+  &.hover ,
+  &:active,
+  &.active {
+      color: $c-primary;
+      opacity:0.6;
+  }
+}
 .btn-phantom {
     color: $c-white;
     background-color:transparent;
@@ -314,12 +325,7 @@ $btn-text-full: 14px;
         color: $c-white;
         opacity:0.6;
     }
-
-
 }
-
-
-
 .btn-text {
     background-color: transparent;
     border-color: transparent;
@@ -329,9 +335,6 @@ $btn-text-full: 14px;
     color: $primary;
     background-color: transparent;
     border: 1px solid $primary;
-
-
-
     &:focus,
     &.focus,
     &:hover,
@@ -341,25 +344,19 @@ $btn-text-full: 14px;
      opacity: .6;
     }
 }
-
 .btn-invert-light {
     color: $primary;
     background-color: transparent;
     border: 1px solid $c-middle-grey;
-
-
-
     &:focus,
     &.focus,
     &:hover,
     &:active,
     &.active {
  opacity: .6;
-
     svg{
         path{fill:$c-white}
     }
-
     }
 }
 .btn-default {
@@ -385,7 +382,6 @@ $btn-text-full: 14px;
     background-color: transparent;
     padding: 0;
 }
-
 .btn-trans{
     color: $c-white;
     background: rgba(226, 226, 226, 0.6);
@@ -411,7 +407,6 @@ $btn-text-full: 14px;
         text-decoration: none;
     }
 }
-
 .btn-circle {
 	right: 0;
 	position: absolute;
@@ -427,11 +422,6 @@ $btn-text-full: 14px;
 	padding: 0;
 	background-color: transparent;
 }
-
-
-
-
-
 /*+------------------------------------------------------------+
  |       -GRUPOS DE BOTONES    
  +------------------------------------------------------------+*/
@@ -440,7 +430,6 @@ $btn-text-full: 14px;
  * en grupos horizontales.
  *
  */
-
 .btns{
     align-items: center;
     display: flex;
@@ -449,14 +438,10 @@ $btn-text-full: 14px;
     .btn{
         margin-right:  $padding-global;
     }
-
 }
-
  .btns .btn:not(:last-child) {
     margin-right:  $padding-global;
 }
-
-
 .btn-group {
     position: relative;
     display: flex;
@@ -502,7 +487,6 @@ $btn-text-full: 14px;
 .btn-group-container {
     display: flex;
 }
-
 .btn-anim {
     height: 48px;
     display: flex;
@@ -536,7 +520,6 @@ $btn-text-full: 14px;
         }
     }
   }
-
   .is-loading {
     &.btn-anim {
       .btn-submit {
@@ -577,7 +560,6 @@ $btn-text-full: 14px;
       transform: rotate(-360deg);
     }
   }
-
   .btn-social-login {
     display: flex;
     align-items: center;
@@ -588,7 +570,6 @@ $btn-text-full: 14px;
     svg {
       margin-right: 8px;
     }
-
     &.btn-facebook {
       border: $c-facebook solid 1px;
       background: $c-facebook;
@@ -609,8 +590,6 @@ $btn-text-full: 14px;
       }
     }
   }
-
-
   .btn-social,
   .btn-social.btn--full{
     height: 48px;
@@ -626,7 +605,6 @@ $btn-text-full: 14px;
     position: relative;
     padding-left: 48px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.168), 0px 0px 1px rgba(0, 0, 0, 0.084);
-  
     svg-icon  {
         display: flex;
         align-content: center;
@@ -637,7 +615,6 @@ $btn-text-full: 14px;
         position: absolute;
         top: 1px;
         left: 1px;
-  
         width: 46px;
         height: 46px;
         div{
@@ -658,7 +635,6 @@ $btn-text-full: 14px;
             }
         }
     }
-  
     &.btn-google {
       background-color: #4285f4;
       color: $c-white;
@@ -684,7 +660,6 @@ $btn-text-full: 14px;
           }
       }
     }
-    
     &.btn-facebook {
       background-color: #1977F3;
       color: $c-white;
@@ -698,7 +673,6 @@ $btn-text-full: 14px;
           opacity: .6;
       }
     }
-    
     &.btn-apple{
       background-color: $primary;
       color: $c-white;
@@ -709,14 +683,11 @@ $btn-text-full: 14px;
           opacity: .6;
       }
     }
-    
     &.btn-naver{
-     
       background-color: #03CF5D;
       color: $c-white;
       padding-left:80px;
       svg-icon  {
-    
           width: 80px;
           background-color: #03CF5D;
       }
@@ -724,9 +695,7 @@ $btn-text-full: 14px;
           opacity: .6;
       }
     }
-    
     &.btn-wechat{
-     
       background-color: #2DC100;
       color: $c-white;
       svg-icon  {
@@ -737,12 +706,9 @@ $btn-text-full: 14px;
       }
     }
   }
-
 /*+------------------------------------------------------------+
  |       -RTL BOTONES   
  +------------------------------------------------------------+*/
-
-
 .is-rtl{
   .btn{
     &.btn-separate{
@@ -758,7 +724,6 @@ $btn-text-full: 14px;
       }
     } 
   }
-
   .btn-group{
     .btn{
       &:first-child(){
@@ -769,28 +734,23 @@ $btn-text-full: 14px;
       }
     }
   }
-
   .btn-social-login {
     svg {
       margin-right: 0px;
       margin-left: 8px;
     }
   }
-
   .btn-social{
     padding-right: 48px;
     padding-left: 0px;
-  
     svg-icon  {
         right: 1px;
         left: auto;
     }
-  
     &.btn-google {
       padding-right: 54px;
       padding-left: 0px;
     }
-    
     &.btn-naver{
       padding-right: 80px;
       padding-left: 0px;
@@ -823,15 +783,10 @@ $btn-text-full: 14px;
   }
 }
 }
-
-
-
 /*+------------------------------------------------------------+
  |       -INVERSIÓN DE COLOR DE BOTONES   
  +------------------------------------------------------------+*/
-
 .has-light {
-    
     .btn-phantom {
         color: $c-white;
         background-color: transparent;
