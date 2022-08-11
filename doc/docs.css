@@ -6137,6 +6137,7 @@ strong {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 8px;
   padding: 16px;
   border: none;
   background-color: rgba(41, 41, 41, 0.4);

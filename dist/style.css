@@ -6007,6 +6007,7 @@ strong {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 8px;
   padding: 16px;
   border: none;
   background-color: rgba(41, 41, 41, 0.4);
@@ -10600,14 +10601,13 @@ ul.list-clear li.list-box:last-child {
 }
 
 .color-wrap button .color-square:hover {
-  border: 1px solid #000000;
   border-radius: 0;
 }
 
 .color-wrap button .color-square img,
 .color-wrap button .color-square .color-plain {
   border: 1px solid #d8d8d8;
-  border-radius: 50%;
+  border-radius: 0;
 }
 
 .color-wrap button .color-square span {
