@@ -162,7 +162,7 @@ label {
         padding-right: 16px;
         padding: 12px;
     }
-}
+}  //ese padding es un error
 .form-text-svg {
     svg {
         display: inline-block;
@@ -174,7 +174,7 @@ label {
     right: auto;
     left: 0;
     position: absolute;
-    top: 1px;
+    top: -1px;
     box-sizing: border-box;
     display: table;
     margin: 15px;
@@ -183,7 +183,7 @@ label {
     right: 0;
     left: auto;
     position: absolute;
-    top: 1px;
+    top: -1px;
     box-sizing: border-box;
     display: table;
     margin: 15px;

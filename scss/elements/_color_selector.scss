@@ -95,6 +95,36 @@
                 transform: scale(1);
             }
         }
+
+
+
+
+        .color-square {
+            border-radius: 0;
+            &::before {
+                border: 1px solid #d8d8d8;
+                border-radius: 0;
+            }
+
+            &:hover {
+                border-radius: 0;
+            }
+
+            img,
+            .color-plain {
+                border: 1px solid #d8d8d8;
+                border-radius: 0;
+            }
+
+            span {
+                border-radius: 0;
+            }
+
+
+        }
+
+
+
     }
 
     .color-more {

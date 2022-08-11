@@ -38,16 +38,16 @@
         display: block;
         margin: 0;
         &.is-active a {
-            border-bottom-color: $c-black;
+            border-bottom-color: $c-primary;
             border-bottom-width: 2px;
             padding-bottom: $padding-global * 2 - 0;
-            color: $c-black;
+            color: $c-primary;
         }
         &.is-active span {
-            border-bottom-color: $c-black;
+            border-bottom-color: $c-primary;
             border-bottom-width: 2px;
             padding-bottom: $padding-global * 2 - 0;
-            color: $c-black;
+            color: $c-primary;
         }
         &:after {
             display: none;
@@ -58,7 +58,7 @@
         border-bottom-color: $c-middle-grey;
         border-bottom-style: solid;
         border-bottom-width: 1px;
-        color: $c-black;
+        color: $c-primary;
         display: flex;
         justify-content: center;
         margin-bottom: -1px;
@@ -66,10 +66,10 @@
         vertical-align: top;
         padding-bottom: $padding-global * 2 + 1;
         &:hover {
-            border-bottom-color: $c-black;
+            border-bottom-color: $c-primary;
             border-bottom-width: 2px;
             padding-bottom: $padding-global * 2 - 0;
-            color: $c-black;
+            color: $c-primary;
             cursor: pointer;
         }
     }
@@ -78,7 +78,7 @@
         border-bottom-color: $c-middle-grey;
         border-bottom-style: solid;
         border-bottom-width: 1px;
-        color: $c-black;
+        color: $c-primary;
         display: flex;
         justify-content: center;
         margin-bottom: -1px;
@@ -86,10 +86,10 @@
         vertical-align: top;
         padding-bottom: $padding-global * 2 + 1;
         &:hover {
-            border-bottom-color: $c-black;
+            border-bottom-color: $c-primary;
             border-bottom-width: 2px;
             padding-bottom: $padding-global * 2 - 0;
-            color: $c-black;
+            color: $c-primary;
             cursor: pointer;
         }
     }
@@ -123,7 +123,7 @@
                 &:after {
                     content: "";
                     width: 100%;
-                    background: $c-black;
+                    background: $c-primary;
                     height: 2px;
                     position: absolute;
                     bottom: -4px;
@@ -135,7 +135,7 @@
             &:after {
                 content: "";
                 width: 100%;
-                background: $c-black;
+                background: $c-primary;
                 height: 2px;
                 position: absolute;
                 bottom: -4px;
@@ -165,7 +165,7 @@
         border-color: $white-smoke;
         position: relative;
         &:hover {
-            color: $c-black;
+            color: $c-primary;
             cursor: pointer;
         }
     }
@@ -191,7 +191,7 @@
         opacity: 0.5;
         border: none;
         padding: 6px 8px 8px;
-        color: $c-black;
+        color: $c-primary;
     }
     li:first-child a:after {
         content: "";

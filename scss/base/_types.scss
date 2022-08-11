@@ -43,11 +43,11 @@ p {
 
   &.b {
     @include font-medium();
-    color: $c-black;
+    color: $c-primary;
   }
 }
 a {
-  color: $c-black;
+  color: $c-primary;
   text-decoration: none; }
 
 .h1,
@@ -58,13 +58,13 @@ a {
 .h6,
 .p1 {
   span {
-    color: $c-black;
+    color: $c-primary;
   }
 }
 
 b,
 mark {
-  color: $c-black;
+  color: $c-primary;
   @include font-bold()
 }
 
@@ -106,7 +106,7 @@ mark {
 	width: max-content;
 	&::after{
 	content: "";
-    background-color: $c-black;
+    background-color: $c-primary;
     width: 100%;
     position: absolute;
     bottom: 50%;

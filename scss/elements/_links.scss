@@ -521,7 +521,7 @@ button.link-line.link-svg-post{
 
 
 .is-rtl{
-    .link-svg-pre{
+    .link-svg-pre, button.link-line.link-svg-pre{
       padding-left: 0;
       padding-right: 20px;
   
@@ -533,7 +533,7 @@ button.link-line.link-svg-post{
       right: 0;
     }
     }
-    .link-svg-post{
+    .link-svg-post, button.link-line.link-svg-post{
       padding-left: 20px;
       padding-right: 0;
   
@@ -545,4 +545,7 @@ button.link-line.link-svg-post{
       left: 0;
     }
     }
+
+
+
   }

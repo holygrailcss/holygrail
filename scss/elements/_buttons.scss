@@ -27,7 +27,7 @@
  	* Nadie quiere un botón con texto subrayado cuando hacemos hover.
  	*/
     &:hover,
-    &.hover  {
+    &.hover {
         text-decoration: none;
         opacity: 0.6;
     }
@@ -43,29 +43,29 @@
         opacity: 0.2;
         cursor: default;
     }
-    &.btn-separate{
+    &.btn-separate {
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 16px;
-        svg{
-          margin-left: 8px;
+        svg {
+            margin-left: 8px;
         }
         &.btn-primary,
-        &.btn-blue{
-          svg{
-            filter: invert(1);
-          }
+        &.btn-blue {
+            svg {
+                filter: invert(1);
+            }
         }
         &.btn--mini,
-        &.btn--small{
-          width: max-content;
+        &.btn--small {
+            width: max-content;
         }
     }
-    &.has-ico-center{
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    &.has-ico-center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     &.btn-clear {
@@ -73,32 +73,41 @@
         background: none;
     }
 
+
     &.btn-world {
       display: flex;
       align-items: center;
       justify-content: space-between;
       padding: 16px;
       border: none;
-      background-color: rgba(#292929 , .4);
-      color: #FFFFFF;
-      transition: all .4s ease-in-out;
-      
-      svg{
-        path{
-          fill:#ffffff;
-        }
+      background-color: rgba($c-primary, 0.4);
+      color: $c-white;
+      transition: all 0.4s ease-in-out;
+      svg {
+          path {
+              fill: $c-white;
+          }
       }
-      span{
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        
+      &:hover {
+          background-color: rgba($c-primary, 0.8);
       }
-      &:hover{
-        background-color: rgba(#292929 , .8);
+
+      .btn-world-left {
+          padding-right: 8px;
       }
-    }
-  
+      .btn-world-center {
+          width: calc(100% - 40px);
+          padding-right: 8px;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+          vertical-align: top;
+          margin-top: -1px;
+      }
+  }
+
+
+
 }
 /*+------------------------------------------------------------+
  |       -TAMAÑOS    
@@ -160,7 +169,7 @@ $btn-text-full: 14px;
     height: 48px;
 }
 .btn--round {
-	border-radius: 50px;
+    border-radius: 50px;
 }
 /*+------------------------------------------------------------+
  |       -TIPOS DE BOTONES    
@@ -178,7 +187,7 @@ $btn-text-full: 14px;
     cursor: pointer;
     padding: $padding-btn / 2;
     &:hover,
-    &.hover  {
+    &.hover {
         text-decoration: none;
         opacity: 0.6;
     }
@@ -212,8 +221,7 @@ $btn-text-full: 14px;
         height: 1px;
     }
     &:hover,
-    &.hover 
-    &:focus,
+    &.hover &:focus,
     &.focus {
         opacity: 0.6;
         background-color: transparent;
@@ -246,7 +254,7 @@ $btn-text-full: 14px;
             background-color: $c-white;
         }
         &:hover,
-        &.hover ,
+        &.hover,
         &:focus,
         &.focus {
             background-color: transparent;
@@ -275,51 +283,65 @@ $btn-text-full: 14px;
     background-color: $primary;
     border: 1px solid $primary;
     svg {
-        g{
+        g {
             fill: $c-white;
             stroke: $c-white;
         }
-        circle{
+        circle {
             stroke: $c-white;
         }
     }
 }
 .btn-secondary {
-  color: $c-primary;
-  background-color: transparent;
-  border: 1px solid $c-primary;
-  svg {
-      g{
-          fill: $c-primary;
-          stroke: $c-primary;
-      }
-      circle{
-          stroke: $c-primary;
-      }
-  }
-  &:focus,
-  &.focus,
-  &:hover,
-  &.hover ,
-  &:active,
-  &.active {
-      color: $c-primary;
-      opacity:0.6;
-  }
+    color: $c-primary;
+    background-color: transparent;
+    border: 1px solid $c-primary;
+    svg {
+        g {
+            fill: $c-primary;
+            stroke: $c-primary;
+        }
+        circle {
+            stroke: $c-primary;
+        }
+    }
+    &:focus,
+    &.focus,
+    &:hover,
+    &.hover,
+    &:active,
+    &.active {
+        color: $c-primary;
+        opacity: 0.6;
+    }
 }
 .btn-phantom {
     color: $c-white;
-    background-color:transparent;
+    background-color: transparent;
     border: 1px solid $c-white;
     &:focus,
     &.focus,
     &:hover,
-    &.hover ,
+    &.hover,
     &:active,
     &.active {
         color: $c-white;
-        opacity:0.6;
+        opacity: 0.6;
     }
+}
+.btn-limited {
+  color: $c-white;
+  background-color: $c-limited;
+  border: 1px solid $c-limited;
+  svg {
+      g {
+          fill: $c-white;
+          stroke: $c-white;
+      }
+      circle {
+          stroke: $c-white;
+      }
+  }
 }
 .btn-text {
     background-color: transparent;
@@ -333,10 +355,10 @@ $btn-text-full: 14px;
     &:focus,
     &.focus,
     &:hover,
-    &.hover ,
+    &.hover,
     &:active,
     &.active {
-     opacity: .6;
+        opacity: 0.6;
     }
 }
 .btn-invert-light {
@@ -348,10 +370,12 @@ $btn-text-full: 14px;
     &:hover,
     &:active,
     &.active {
- opacity: .6;
-    svg{
-        path{fill:$c-white}
-    }
+        opacity: 0.6;
+        svg {
+            path {
+                fill: $c-white;
+            }
+        }
     }
 }
 .btn-default {
@@ -361,7 +385,7 @@ $btn-text-full: 14px;
     &:focus,
     &.focus,
     &:hover,
-    &.hover ,
+    &.hover,
     &:active,
     &.active {
         color: $c-white;
@@ -377,7 +401,7 @@ $btn-text-full: 14px;
     background-color: transparent;
     padding: 0;
 }
-.btn-trans{
+.btn-trans {
     color: $c-white;
     background: rgba(226, 226, 226, 0.6);
     font-size: 14px;
@@ -391,31 +415,31 @@ $btn-text-full: 14px;
     padding-left: 48px;
     display: flex;
     align-items: center;
-    svg{
-        stroke  :$c-white;
+    svg {
+        stroke: $c-white;
     }
-    &:hover, 
-    &.hover ,
-    &:focus, 
+    &:hover,
+    &.hover,
+    &:focus,
     &.focus {
         color: $c-white;
         text-decoration: none;
     }
 }
 .btn-circle {
-	right: 0;
-	position: absolute;
-	display: flex;
-	width: 40px;
-	max-width: initial;
-	height: 40px;
-	border: 1px solid $primary;
-	border-radius: 50px;
-	align-content: center;
-	justify-content: center;
-	align-items: center;
-	padding: 0;
-	background-color: transparent;
+    right: 0;
+    position: absolute;
+    display: flex;
+    width: 40px;
+    max-width: initial;
+    height: 40px;
+    border: 1px solid $primary;
+    border-radius: 50px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    background-color: transparent;
 }
 /*+------------------------------------------------------------+
  |       -GRUPOS DE BOTONES    
@@ -425,17 +449,17 @@ $btn-text-full: 14px;
  * en grupos horizontales.
  *
  */
-.btns{
+.btns {
     align-items: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    .btn{
-        margin-right:  $padding-global;
+    .btn {
+        margin-right: $padding-global;
     }
 }
- .btns .btn:not(:last-child) {
-    margin-right:  $padding-global;
+.btns .btn:not(:last-child) {
+    margin-right: $padding-global;
 }
 .btn-group {
     position: relative;
@@ -458,13 +482,13 @@ $btn-text-full: 14px;
             outline: none;
         }
     }
-    .btn{
+    .btn {
         border-radius: 0;
         &:first-child {
-            border-radius: 8px 0 0 8px;        
+            border-radius: 8px 0 0 8px;
         }
         &:last-child {
-            border-radius: 0 8px 8px 0;        
+            border-radius: 0 8px 8px 0;
         }
     }
 }
@@ -491,16 +515,16 @@ $btn-text-full: 14px;
     justify-content: center;
     align-items: center;
     span {
-      position: absolute;
-      transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1),
-        opacity 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+        position: absolute;
+        transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1),
+            opacity 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
     }
     .btn-submit {
-      transform: translateY(0px);
+        transform: translateY(0px);
     }
     .btn-loading {
-      opacity: 0;
-      transform: translateY(40px);
+        opacity: 0;
+        transform: translateY(40px);
     }
     &:disabled,
     &[disabled],
@@ -508,54 +532,54 @@ $btn-text-full: 14px;
         background-color: $c-middle-grey;
         border-color: transparent;
         opacity: 1;
-        svg{
-          path{
-            fill: rgba($primary, $alpha: .6);
-          }
+        svg {
+            path {
+                fill: rgba($primary, $alpha: 0.6);
+            }
         }
     }
-  }
-  .is-loading {
+}
+.is-loading {
     &.btn-anim {
-      .btn-submit {
-        transform: translateY(-40px);
-        opacity: 0;
-      }
-      .btn-loading {
-        opacity: 1;
-        transform: translateY(0px);
-      }
+        .btn-submit {
+            transform: translateY(-40px);
+            opacity: 0;
+        }
+        .btn-loading {
+            opacity: 1;
+            transform: translateY(0px);
+        }
     }
-  }
-  .no-focus {
+}
+.no-focus {
     &:focus {
-      color: $c-white;
-      background-color: $primary;
-      border-color: $primary;
+        color: $c-white;
+        background-color: $primary;
+        border-color: $primary;
     }
-  }
-  .btn-loading svg {
+}
+.btn-loading svg {
     -webkit-animation: spin 1.6s ease-in-out infinite;
     -moz-animation: spin 1.6s ease-in-out infinite;
     animation: spin 1.6s ease-in-out infinite;
-  }
-  @-moz-keyframes spin {
+}
+@-moz-keyframes spin {
     100% {
-      -moz-transform: rotate(-360deg);
+        -moz-transform: rotate(-360deg);
     }
-  }
-  @-webkit-keyframes spin {
+}
+@-webkit-keyframes spin {
     100% {
-      -webkit-transform: rotate(-360deg);
+        -webkit-transform: rotate(-360deg);
     }
-  }
-  @keyframes spin {
+}
+@keyframes spin {
     100% {
-      -webkit-transform: rotate(-360deg);
-      transform: rotate(-360deg);
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
     }
-  }
-  .btn-social-login {
+}
+.btn-social-login {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -563,30 +587,30 @@ $btn-text-full: 14px;
     font-size: 16px;
     position: relative;
     svg {
-      margin-right: 8px;
+        margin-right: 8px;
     }
     &.btn-facebook {
-      border: $c-facebook solid 1px;
-      background: $c-facebook;
-      color: $c-white;
+        border: $c-facebook solid 1px;
+        background: $c-facebook;
+        color: $c-white;
     }
     &.btn-outline-login {
-      border: $c-middle-grey solid 1px;
+        border: $c-middle-grey solid 1px;
     }
     &.disabled {
-      filter: invert(1);
-      background: $c-white;
-      color: $c-black;
-      cursor: default;
-      svg {
-        path {
-          fill: $c-black;
+        filter: invert(1);
+        background: $c-white;
+        color: $c-primary;
+        cursor: default;
+        svg {
+            path {
+                fill: $c-primary;
+            }
         }
-      }
     }
-  }
-  .btn-social,
-  .btn-social.btn--full{
+}
+.btn-social,
+.btn-social.btn--full {
     height: 48px;
     cursor: pointer;
     font-weight: bold;
@@ -599,8 +623,9 @@ $btn-text-full: 14px;
     color: $c-white;
     position: relative;
     padding-left: 48px;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.168), 0px 0px 1px rgba(0, 0, 0, 0.084);
-    svg-icon  {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.168),
+        0px 0px 1px rgba(0, 0, 0, 0.084);
+    svg-icon {
         display: flex;
         align-content: center;
         justify-content: center;
@@ -612,12 +637,12 @@ $btn-text-full: 14px;
         left: 1px;
         width: 46px;
         height: 46px;
-        div{
+        div {
             display: flex;
         }
     }
-    &:hover{
-        opacity: .6;
+    &:hover {
+        opacity: 0.6;
     }
     &:disabled,
     &[disabled],
@@ -631,152 +656,126 @@ $btn-text-full: 14px;
         }
     }
     &.btn-google {
-      background-color: #4285f4;
-      color: $c-white;
-      padding-left: 54px;
-      svg-icon {
-          background-color: $c-white;
-          border: 1px solid #4285F4;
-      }
-      &:hover {
-          background-color: #3367D6;
-          opacity: 1;
-      }
-      &:disabled,
-      &[disabled],
-      &.disabled {
-          background-color: $c-middle-grey;
-          svg-icon {
-              border: 1px solid #F0F0F0;
-              background-color: $c-white;
-              path {
-                  fill: $c-middle-grey;
-              }
-          }
-      }
+        background-color: #4285f4;
+        color: $c-white;
+        padding-left: 54px;
+        svg-icon {
+            background-color: $c-white;
+            border: 1px solid #4285f4;
+        }
+        &:hover {
+            background-color: #3367d6;
+            opacity: 1;
+        }
+        &:disabled,
+        &[disabled],
+        &.disabled {
+            background-color: $c-middle-grey;
+            svg-icon {
+                border: 1px solid #f0f0f0;
+                background-color: $c-white;
+                path {
+                    fill: $c-middle-grey;
+                }
+            }
+        }
     }
     &.btn-facebook {
-      background-color: #1977F3;
-      color: $c-white;
-         svg-icon {
-          background-color: transparent;
-          path {
-              fill: $c-white;
-          }
-      }
-      &:hover {
-          opacity: .6;
-      }
+        background-color: #1977f3;
+        color: $c-white;
+        svg-icon {
+            background-color: transparent;
+            path {
+                fill: $c-white;
+            }
+        }
+        &:hover {
+            opacity: 0.6;
+        }
     }
-    &.btn-apple{
-      background-color: $primary;
-      color: $c-white;
-      svg-icon  {
-          background-color: $primary;
-      }
-      &:hover{
-          opacity: .6;
-      }
+    &.btn-apple {
+        background-color: $primary;
+        color: $c-white;
+        svg-icon {
+            background-color: $primary;
+        }
+        &:hover {
+            opacity: 0.6;
+        }
     }
-    &.btn-naver{
-      background-color: #03CF5D;
-      color: $c-white;
-      padding-left:80px;
-      svg-icon  {
-          width: 80px;
-          background-color: #03CF5D;
-      }
-      &:hover{
-          opacity: .6;
-      }
+    &.btn-naver {
+        background-color: #03cf5d;
+        color: $c-white;
+        padding-left: 80px;
+        svg-icon {
+            width: 80px;
+            background-color: #03cf5d;
+        }
+        &:hover {
+            opacity: 0.6;
+        }
     }
-    &.btn-wechat{
-      background-color: #2DC100;
-      color: $c-white;
-      svg-icon  {
-          background-color: #2DC100;
-      }
-      &:hover{
-          opacity: .6;
-      }
+    &.btn-wechat {
+        background-color: #2dc100;
+        color: $c-white;
+        svg-icon {
+            background-color: #2dc100;
+        }
+        &:hover {
+            opacity: 0.6;
+        }
     }
-  }
+}
 /*+------------------------------------------------------------+
  |       -RTL BOTONES   
  +------------------------------------------------------------+*/
-.is-rtl{
-  .btn{
-    &.btn-separate{
-      svg-icon{
-        transform: scaleX(-1);
-        margin-left: 0px;
-        margin-right: 8px;
-      }
+.is-rtl {
+    .btn {
+        &.btn-separate {
+            svg-icon {
+                transform: scaleX(-1);
+                margin-left: 0px;
+                margin-right: 8px;
+            }
+        }
+        &.btn-world {
+            .btn-world-right {
+                transform: rotateY(180deg);
+            }
+        }
     }
-    &.btn-world {
-      svg{
-        transform:  rotateY(180deg);
-      }
-    } 
-  }
-  .btn-group{
-    .btn{
-      &:first-child(){
-        border-radius: 0 8px 8px 0;
-      }
-      &:last-child(){
-        border-radius: 8px 0 0 8px;
-      }
+    .btn-group {
+        .btn {
+            &:first-child() {
+                border-radius: 0 8px 8px 0;
+            }
+            &:last-child() {
+                border-radius: 8px 0 0 8px;
+            }
+        }
     }
-  }
-  .btn-social-login {
-    svg {
-      margin-right: 0px;
-      margin-left: 8px;
+    .btn-social-login {
+        svg {
+            margin-right: 0px;
+            margin-left: 8px;
+        }
     }
-  }
-  .btn-social{
-    padding-right: 48px;
-    padding-left: 0px;
-    svg-icon  {
-        right: 1px;
-        left: auto;
+    .btn-social {
+        padding-right: 48px;
+        padding-left: 0px;
+        svg-icon {
+            right: 1px;
+            left: auto;
+        }
+        &.btn-google {
+            padding-right: 54px;
+            padding-left: 0px;
+        }
+        &.btn-naver {
+            padding-right: 80px;
+            padding-left: 0px;
+        }
     }
-    &.btn-google {
-      padding-right: 54px;
-      padding-left: 0px;
-    }
-    &.btn-naver{
-      padding-right: 80px;
-      padding-left: 0px;
-    }
-  }
-
-  .btn-world {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 16px;
-  border: none;
-  background-color: rgba(#292929 , .4);
-  color: #FFFFFF;
-  transition: all .4s ease-in-out;
-  
-  svg{
-    path{
-      fill:#ffffff;
-    }
-  }
-  span{
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    
-  }
-  &:hover{
-    background-color: rgba(#292929 , .8);
-  }
-}
 }
 /*+------------------------------------------------------------+
  |       -INVERSIÓN DE COLOR DE BOTONES   
@@ -787,16 +786,20 @@ $btn-text-full: 14px;
         background-color: transparent;
         border: 1px solid $c-white;
     }
-    .btn{
+    .btn {
         &.btn-primary {
-            color: $c-black;
+            color: $c-primary;
             background-color: $c-white;
             border: 1px solid $c-white;
         }
-            color: $c-white;
-            border-color: $c-white;
-            &:after {
-                background-color: $c-white;
-            }
+        color: $c-white;
+        border-color: $c-white;
+        &:after {
+            background-color: $c-white;
+        }
     }
+}
+
+.btn--square {
+    border-radius: 0;
 }
