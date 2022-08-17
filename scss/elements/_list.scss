@@ -199,3 +199,54 @@ left: 0px;
     
 }
 
+
+
+// todo HG
+.list-button {
+  padding: 16px;
+  background: $c-white;
+  border-bottom: 1px solid $c-middle-grey;
+  cursor: pointer;
+  opacity: 1;
+
+  span{
+    font-size: 12px;
+  }
+
+  &:hover {
+    opacity: .6;
+  }
+
+  &.list-secundary {
+    background-color: $c-middle-grey;
+    padding-left: 42px;
+  }
+  &.list-tertiary {
+    background-color: $c-light-grey;
+    padding-left: 64px;
+  }
+
+  &.list-icons{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    span{
+      flex-grow: 1;
+    }
+  }
+}
+
+
+.is-rtl{
+  .list-button {
+    &.list-secundary {
+      padding-left: 16px;
+      padding-right: 42px;
+    }
+    &.list-tertiary {
+      padding-left: 16px;
+      padding-right: 64px;
+    }
+  }
+}

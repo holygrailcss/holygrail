@@ -9372,6 +9372,52 @@ ul.list-mini > li:after {
   left: -2px;
 }
 
+.list-button {
+  padding: 16px;
+  background: #FFFFFF;
+  border-bottom: 1px solid #E3E3E3;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.list-button span {
+  font-size: 12px;
+}
+
+.list-button:hover {
+  opacity: .6;
+}
+
+.list-button.list-secundary {
+  background-color: #E3E3E3;
+  padding-left: 42px;
+}
+
+.list-button.list-tertiary {
+  background-color: #F0F0F0;
+  padding-left: 64px;
+}
+
+.list-button.list-icons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.list-button.list-icons span {
+  flex-grow: 1;
+}
+
+.is-rtl .list-button.list-secundary {
+  padding-left: 16px;
+  padding-right: 42px;
+}
+
+.is-rtl .list-button.list-tertiary {
+  padding-left: 16px;
+  padding-right: 64px;
+}
+
 /*+------------------------------------------------------------+
  |-COLORS
  +------------------------------------------------------------+*/
