@@ -102,7 +102,8 @@
           text-overflow: ellipsis;
           overflow: hidden;
           white-space: nowrap;
-          vertical-align: top;
+          vertical-align: middle;
+          text-align: left;
           margin-top: -1px;
       }
   }
@@ -738,6 +739,9 @@ $btn-text-full: 14px;
             }
         }
         &.btn-world {
+            .btn-world-center{
+                text-align: right;
+            }
             .btn-world-right {
                 transform: rotateY(180deg);
             }

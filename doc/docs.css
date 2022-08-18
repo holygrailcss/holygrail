@@ -6163,7 +6163,8 @@ strong {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  vertical-align: top;
+  vertical-align: middle;
+  text-align: left;
   margin-top: -1px;
 }
 
@@ -6870,6 +6871,10 @@ strong {
   transform: scaleX(-1);
   margin-left: 0px;
   margin-right: 8px;
+}
+
+.is-rtl .btn.btn-world .btn-world-center {
+  text-align: right;
 }
 
 .is-rtl .btn.btn-world .btn-world-right {
