@@ -1,0 +1,64 @@
+@import "../abstract/_all.scss"; //deprecated no se usan 
+
+
+.marketing-spot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 16px;
+    border: 1px solid $primary;
+    margin-top: 16px;
+  
+    svg-icon {
+      margin-right: 8px;
+      z-index: -1;
+    }
+  }
+
+@mixin banner() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 24px 16px;
+    margin-top: 16px;
+    text-align: center
+}
+
+.banner-warning {
+    @include banner();
+    background-color: $c-warning;
+    color: $c-white;
+}
+.banner-info {
+    @include banner();
+    background-color: $c-info;
+    color: $c-white;
+}
+
+.banner-valid {
+    @include banner();
+    background-color: $c-valid;
+    color: $c-white;
+}
+
+.banner-alert {
+    @include banner();
+    background-color: $c-alert;
+    color: $c-black;
+}
+
+.banner-feel {
+    @include banner();
+    background-color: $c-feel;
+    color: $c-black;
+}
+
+.banner-limited {
+    @include banner();
+    background-color: $c-black;
+    color: $c-white;
+}

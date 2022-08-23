@@ -6055,6 +6055,184 @@ strong {
 /*+------------------------------------------------------------+
  |       -MIXINS FONTS
  +------------------------------------------------------------+*/
+.marketing-spot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 16px;
+  border: 1px solid #292929;
+  margin-top: 16px;
+}
+
+.marketing-spot svg-icon {
+  margin-right: 8px;
+  z-index: -1;
+}
+
+.banner-warning {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 24px 16px;
+  margin-top: 16px;
+  text-align: center;
+  background-color: #B40016;
+  color: #FFFFFF;
+}
+
+.banner-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 24px 16px;
+  margin-top: 16px;
+  text-align: center;
+  background-color: #1A32A4;
+  color: #FFFFFF;
+}
+
+.banner-valid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 24px 16px;
+  margin-top: 16px;
+  text-align: center;
+  background-color: #76AE4A;
+  color: #FFFFFF;
+}
+
+.banner-alert {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 24px 16px;
+  margin-top: 16px;
+  text-align: center;
+  background-color: #FFC700;
+  color: #000000;
+}
+
+.banner-feel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 24px 16px;
+  margin-top: 16px;
+  text-align: center;
+  background-color: #fb9962;
+  color: #000000;
+}
+
+.banner-limited {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 24px 16px;
+  margin-top: 16px;
+  text-align: center;
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+/*+------------------------------------------------------------+
+ |-COLORS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -IMPORT FONTS
+ +------------------------------------------------------------+*/
+/* BREAKPOINTS */
+/*+------------------------------------------------------------+
+  |       -FASE 2 : PERSONALIZA TU HOLYGRAIL
+  +------------------------------------------------------------+*/
+/*  breakpoints  */
+/*  grid  */
+/* maxwidth del container */
+/* maxwidth del container2*/
+/* maxwidth del container3*/
+/* maxwidth del container4*/
+/* maxwidth del container5*/
+/* maxwidth del container6*/
+/* maxwidth del container7*/
+/* maxwidth del container8*/
+/* maxwidth del container8*/
+/*  alturas minimas  */
+/*  animaciones  */
+/* ALTURA MINIMA */
+/* Types.scss */
+/* Types responsive  xs sm md lg xl line-height font-weight */
+/* TYPES FIJOS */
+/*+------------------------------------------------------------+
+|       -spacing  
++------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -ANIMATIONS    
+ +------------------------------------------------------------+*/
+@keyframes underline {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes stretch {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 80px;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+}
+
+/*+------------------------------------------------------------+
+ |       -BREAKPOINTS
+ +------------------------------------------------------------+*/
+/*+------------------------------------------------------------+
+ |       -MIXINS
+ +------------------------------------------------------------+*/
+/* .background-alpha(VALUE VALUE);*/
+/* .userselect(VALUE) (all, element, none, text) */
+/*+------------------------------------------------------------+
+ |       -MIXINS FONTS
+ +------------------------------------------------------------+*/
 /*+------------------------------------------------------------+
  |       -BOTONES    
  +------------------------------------------------------------+*/
