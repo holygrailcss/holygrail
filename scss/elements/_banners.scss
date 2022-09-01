@@ -48,13 +48,13 @@
 .banner-alert {
     @include banner();
     background-color: $c-alert;
-    color: $c-black;
+    color: $c-primary;
 }
 
 .banner-feel {
     @include banner();
     background-color: $c-feel;
-    color: $c-black;
+    color: $c-primary;
 }
 
 .banner-limited {

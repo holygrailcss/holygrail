@@ -86,16 +86,16 @@ $font-weight-secondary-bold:700!default;
  $padding-btn:   16px!default;
  $height-inputs: 48px!default;
 
-
-$container: 800px !default;/* maxwidth del container */
-$container-2: 700px!default;/* maxwidth del container2*/
-$container-3: 900px!default;/* maxwidth del container3*/
-$container-4: 356px!default;/* maxwidth del container4*/
-$container-5: 400px!default;/* maxwidth del container5*/
-$container-6: 442px!default;/* maxwidth del container6*/
-$container-7: 595px!default;/* maxwidth del container7*/
-$container-8: 395px!default;/* maxwidth del container8*/
-$container-9: 798px!default;/* maxwidth del container8*/
+/* maxwidth del container*/
+$container: 800px !default;
+$container-2: 700px!default;
+$container-3: 900px!default;
+$container-4: 356px!default;
+$container-5: 400px!default;
+$container-6: 442px!default;
+$container-7: 595px!default;
+$container-8: 395px!default;
+$container-9: 798px!default;
 
 
 $transition:278ms;
@@ -212,7 +212,7 @@ m-40: (40px, 40px, 40px, 40px),
 m-48: (48px, 48px, 48px, 48px)
 )!default;
 $mx: "margin"; 
-$margin-x: /* name : margen bottom   */
+$margin-x: 
 (
 mx-8:  (0 8px, 0 8px, 0 8px, 0 8px),
 mx-16: (0 16px, 0 16px, 0 16px, 0 16px),
@@ -222,7 +222,7 @@ mx-40: (0 10px, 0 40px, 0 40px, 0 40px),
 mx-48: (0 48px, 0 48px, 0 48px, 0 48px)
 )!default;
 $my: "margin"; 
-$margin-y: /* name : margen bottom*/
+$margin-y: 
 (
 my-8: (8px 0, 8px 0, 8px 0, 8px 0),
 my-16: (16px 0, 16px 0, 16px 0, 16px 0),
@@ -231,7 +231,7 @@ my-32: (32px 0, 32px 0, 32px 0, 32px 0),
 my-48: (20px 0, 48px 0, 48px 0, 48px 0)
 )!default;
 $mt: "margin-top";
-$margin-top: /* name : margen bottom*/
+$margin-top: 
 (
 mt-8:  (8px, 8px, 8px, 8px),
 mt-16: (16px, 16px, 16px, 16px),
@@ -241,7 +241,7 @@ mt-40: (42px, 42px, 42px, 42px),
 mt-48: (48px, 48px, 48px, 48px)
 )!default;
 $mr: "margin-right";
-$margin-right: /* name : margen bottom*/
+$margin-right: 
 (
 mr-8:  (8px, 8px, 8px, 8px),
 mr-16: (16px, 16px, 16px, 16px),
@@ -251,7 +251,7 @@ mr-40: (42px, 42px, 42px, 42px),
 mr-48: (48px, 48px, 48px, 48px)
 )!default;
 $mb: "margin-bottom";
-$margin-bottom: /* name : margen bottom*/
+$margin-bottom: 
 (
 mb-8: (8px, 8px, 8px, 8px),
 mb-16: (16px, 16px, 16px, 16px),
@@ -263,7 +263,7 @@ mb-100: (100px, 100px, 100px, 100px),
 mbr-20-40: (20px, 40px, 40px, 40px) 
 )!default;
 $ml: "margin-left";
-$margin-left: /* name : margen bottom*/
+$margin-left: 
 (
 ml-8: (8px, 8px, 8px, 8px),
 ml-16: (16px, 16px, 16px, 16px),
@@ -273,7 +273,7 @@ ml-40: (42px, 42px, 42px, 42px),
 ml-48: (48px, 48px, 48px, 48px)
 )!default;
 $p: "padding"; 
-$padding: /* name : padding  top*/
+$padding: 
 (
 p-body: (16px, 16px, 40px, 40px),
 p-0: (0px, 0px, 0px, 0px),
@@ -286,7 +286,7 @@ p-40: (40px, 40px, 40px, 40px),
 p-48: (20px, 50px, 50px, 50px)
 )!default;
 $py: "padding";
-$padding-y: /* name : padding  arriba y abajo*/
+$padding-y:
 (
 py-8: (8px 0, 8px 0, 8px 0, 8px 0),
 py-16: (16px 0, 16px 0, 16px 0, 16px 0),  
@@ -296,7 +296,7 @@ py-48: (20px 0, 30px 0, 40px 0, 48px 0),
 py-60: (24px 16px,24px 16px, 24px 16px, 60px 60px)
 )!default;
 $px: "padding";
-$padding-x: /* name : padding  arriba y abajo*/
+$padding-x:
 (
 px-8: (0 8px, 0 8px, 0 8px, 0 8px),
 px-16: (0 16px, 0 16px, 0 16px, 0 16px),
@@ -306,7 +306,7 @@ px-40: (0 40px, 0 40px, 0 40px, 0 40px),
 px-48: (0 48px, 0 48px, 0 48px, 0 48px)
 )!default;
 $pt: "padding-top";
-$padding-top: /* name : padding  top*/
+$padding-top:
 (
 pt-8:  (8px, 8px, 8px, 8px),
 pt-16: (16px, 16px, 16px, 16px),
@@ -317,7 +317,7 @@ pt-48: (20px, 48px, 48px, 48px),
 pt-64: (64px, 64px, 64px, 64px)
 )!default;
 $pb: "padding-bottom";
-$padding-bottom: /* name : padding  bottom*/
+$padding-bottom:
 (
 pb-8: (8px, 8px, 8px, 8px),
 pb-16: (20px, 20px, 20px, 20px),
@@ -328,7 +328,7 @@ pb-48: (48px, 48px, 48px, 48px),
 pb-64: (64px, 64px, 64px, 64px)
 )!default;
 $pl: "padding-left";
-$padding-left: /* name : padding  bottom*/
+$padding-left:
 (
 pl-body: (16px, 16px, 40px, 40px),
 pl-0: (0px, 0px, 0px, 0px),
@@ -340,7 +340,7 @@ pl-40: (16px, 42px, 42px, 42px),
 pl-48: (48px, 48px, 48px, 48px)
 )!default;
 $pr: "padding-right";
-$padding-right: /* name : padding  bottom*/
+$padding-right:
 (
 pr-body: (16px, 16px, 40px, 40px),
 pr-8: (8px, 8px, 8px, 8px),
