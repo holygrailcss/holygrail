@@ -1,9 +1,9 @@
 @import "../abstract/_all.scss";
 $input-padding-x: 14px;
 $input-padding-y: 14px;
-/*+------------------------------------------------------------+
- |       -INPUTS    
- +------------------------------------------------------------+*/
+
+//   -INPUTS    
+ 
 input:focus {
     outline: none;
     border: 1px solid $primary;
@@ -329,9 +329,9 @@ input::-webkit-input-placeholder {
     }
 
 }
-/*+------------------------------------------------------------+
-   |       -FALLBACK PARA EDGE    
-   +------------------------------------------------------------+*/
+
+  //   -FALLBACK PARA EDGE    
+   
 @supports (-ms-ime-align: auto) {
     .form-input-label > label {
         display: none;
@@ -348,9 +348,9 @@ input::-webkit-input-placeholder {
         color: $c-dark-grey !important;
     }
 }
-/*+------------------------------------------------------------+
- |       -SELECT  
- +------------------------------------------------------------+*/
+
+//   -SELECT  
+ 
 .select {
     display: inline-block;
     max-width: 100%;
@@ -633,9 +633,9 @@ $svg-size: 16px;
 	}
 }
 
-/*+------------------------------------------------------------+
- |       -Soporte para lenguajes árabes  
- +------------------------------------------------------------+*/
+
+//   -Soporte para lenguajes árabes  
+ 
 
  .is-rtl{
 	.select{
@@ -813,9 +813,9 @@ $svg-size: 16px;
     border: none;
 }
 
-/*+------------------------------------------------------------+
-   |       -FALLBACK PARA EDGE    
-   +------------------------------------------------------------+*/
+
+  //   -FALLBACK PARA EDGE    
+   
    @supports (-ms-ime-align: auto) {
     .form-input-label-2 > label {
         display: none;

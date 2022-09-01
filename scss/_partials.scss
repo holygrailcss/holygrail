@@ -1,12 +1,10 @@
-/*@import "abstract/0debug";  si queremos debugar la maqueta */
-/**
-* Base estilo inline    class="[col-sm-2]    [py-20m-20]    [h1 text-1 link-2] [text-center]"
+// @import "abstract/0debug";  si queremos debugar la maqueta 
 
-**/
+// Base estilo inline    class="[col-sm-2]    [py-20m-20]    [h1 text-1 link-2] [text-center]"
 
-/*------------------------------------*\
-    $ABSTRACT
-\*------------------------------------*/
+
+  //  $ABSTRACT
+
 @import "abstract/reset";
 @import "abstract/0debug";
 @import "abstract/setup";
@@ -15,10 +13,10 @@
 @import "abstract/mixins";
 @import "abstract/animations";
 
-/*------------------------------------*\
-    $BASE
-\*------------------------------------*/
-/* Nuestra base esencial*/
+
+   //  $BASE
+
+// Nuestra base esencial
 
 @import "base/alignment";
 @import "base/grid";
@@ -31,9 +29,9 @@
 @import "base/helpers";
 
 
-/*------------------------------------*\
-    $ELEMENTS COMPONENTES
-\*------------------------------------*/
+
+  //  $ELEMENTS COMPONENTES
+
 @import "elements/animated";
 @import "elements/banners";
 @import "elements/buttons";
@@ -49,17 +47,9 @@
 @import "elements/color_selector";
 @import "elements/modal";
 
-/*
-@import "elements/tables";
-@import "elements/dropbox";
-@import "elements/accordions";
-@import "elements/badge";
-@import "elements/tooltips";
-@import "elements/spinners";*/
 
-/*------------------------------------*\
-    $LAYOUTS, Conjuntos de elementos
-\*------------------------------------*/
+// $LAYOUTS, Conjuntos de elementos
+
 
 @import "layouts/logo";
 

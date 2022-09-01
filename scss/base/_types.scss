@@ -1,8 +1,8 @@
 @import "../abstract/_all.scss";
 
-/*+------------------------------------------------------------+
- |       -HTML REMS        
- +------------------------------------------------------------+*/
+
+//   -HTML REMS        
+ 
  body{
   font-family: $font-family-primary;
  }
@@ -33,9 +33,9 @@ select {
   @include font-medium();
 }
 
-/*+------------------------------------------------------------+
- |       -HEADERS ELÁSTICOS        
- +------------------------------------------------------------+*/
+
+//   -HEADERS ELÁSTICOS        
+ 
 p {
   @include font-medium();
   margin: 0;
@@ -68,15 +68,14 @@ mark {
   @include font-bold()
 }
 
-/*+------------------------------------------------------------+
- |       -LINKS        
- +------------------------------------------------------------+*/
+
+//   -LINKS        
+ 
 
 
 
-/*+-----------------------------------------------------------------------------------------+
- |       -FLUID TEXT   Desde min_width   hasta  break-lg  <--->  font-minima hasta font-maxima
- +-------------------------------------------------------------------------------------------+*/
+//   -FLUID TEXT   Desde min_width   hasta  break-lg  <--->  font-minima hasta font-maxima
+ 
  
 
 .secondary{
@@ -97,9 +96,9 @@ mark {
 .text-medium{ @include font-medium();}
 .text-bold{ @include font-bold();}
 
-/*+------------------------------------------------------------+
- |       -TACHADO        
- +------------------------------------------------------------+*/
+
+//   -TACHADO        
+ 
 
  .is-through{
 	position: relative;

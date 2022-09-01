@@ -1,21 +1,20 @@
-/*+------------------------------------------------------------+
- |       -DEBUG       
- +------------------------------------------------------------+*/
-/**
- * Activa esta hoja de estilos para detectar visualmente cualquier
- * anidación impropia o marcado potencialmente inválido.
- *
- * Rojo           ==      Definitivamente un error
- * Amarillo       ==      a revisar
- * Ninguno        ==      debería estar bien
- *
- * Este método de validación no es más que una guía, no te bases en el
- * para validar tu marcado
- *
- */
- /*+------------------------------------------------------------+
- |       - PASO 1 : COLORES POR DIV        
- +------------------------------------------------------------+*/
+
+// -DEBUG       
+ 
+
+// Activa esta hoja de estilos para detectar visualmente cualquier
+// anidación impropia o marcado potencialmente inválido.
+
+// Rojo           ==      Definitivamente un error
+// Amarillo       ==      a revisar
+// Ninguno        ==      debería estar bien
+
+// Este método de validación no es más que una guía, no te bases en el
+// para validar tu marcado
+
+ 
+// - PASO 1 : COLORES POR DIV        
+ 
  //debug-div
 @mixin random-bgr(){
     background: rgb(random(255), random(255), random(255));
@@ -28,12 +27,12 @@
         }
         }
 }
-/*+------------------------------------------------------------+
- |       -ELEMENTOS VACIOS ?   debug-empty
- +------------------------------------------------------------+*/
- /*+------------------------------------------------------------+
- |       -ALT OBLIGATORIO -- PENALIZAMOS SIN NO HAY ALT   debug-img
- +------------------------------------------------------------+*/
+
+// -ELEMENTOS VACIOS ?   debug-empty
+ 
+ 
+// -ALT OBLIGATORIO -- PENALIZAMOS SIN NO HAY ALT   debug-img
+ 
  @mixin debug-imgs(){
 img{
     outline:5px solid red;
@@ -45,9 +44,9 @@ img[alt=""]{
     outline:5px solid yellow;
 }
 }
- /*+------------------------------------------------------------+
- |       -LINKS CON TITLE OBLIGATORIO    debug-links
- +------------------------------------------------------------+*/
+ 
+// -LINKS CON TITLE OBLIGATORIO    debug-links
+ 
  @mixin debug-links(){
 a{
     outline:5px solid yellow;
@@ -63,9 +62,9 @@ a[target]{
     outline:5px solid yellow;
 }
 }
-/*+------------------------------------------------------------+
- |       -UL SOLO ANIDA LISTAS      
- +------------------------------------------------------------+*/
+
+// -UL SOLO ANIDA LISTAS      
+ 
  @mixin debug-forms(){
 ul,
 ol{
@@ -73,49 +72,49 @@ ol{
         outline:5px solid red;
     }
 }
-/*+------------------------------------------------------------+
- |       -TABLAS BIEN TABULADAS        
- +------------------------------------------------------------+*/
-/**
- * Deberíamos asignar un atributo 'scope' a los th
- * http://bit.ly/1aHBDgW
- */
+
+// -TABLAS BIEN TABULADAS        
+ 
+
+// Deberíamos asignar un atributo 'scope' a los th
+// http://bit.ly/1aHBDgW
+
 th{
     outline:5px solid yellow;
 }
 th[scope]{
     outline:none;
 }
-/**
- * los tr hijos de 'table' no son buenos, ¿necesitabas un 'thead' / 'tbody'?
- */
+
+// los tr hijos de 'table' no son buenos, ¿necesitabas un 'thead' / 'tbody'?
+
 table > tr{
     outline:5px solid yellow;
 }
-/**
- * `tfoot` debe estar *antes* de `tbody`.
- */
+
+// `tfoot` debe estar *antes* de `tbody`.
+
 tbody + tfoot{
     outline:5px solid yellow;
 }
-/**
- * Forms necesitan del atributo `action`
- */
+
+// Forms necesitan del atributo `action`
+
 form{
     outline:5px solid red;
 }
 form[action]{
     outline:none;
 }
-/**
- * Varios elementos de formularios requieren atributos. 'input' necsita de 'type'
- * 'textarea' necesita `rows' y 'cols' y 'submit' necesita del atributo 'value'.
- */
- /*+------------------------------------------------------------+
- |       -FORMULARIOS : REQUIEREN , -INPUT ,-TYPE  
- |       -TEXTAREA    : REQUIEREN , -ROWS ,-COLS ,
- |       -SUBMIT      : REQUIERE  , VALUE  
- +------------------------------------------------------------+*/
+
+//Varios elementos de formularios requieren atributos. 'input' necsita de 'type'
+//'textarea' necesita `rows' y 'cols' y 'submit' necesita del atributo 'value'.
+
+ 
+// -FORMULARIOS : REQUIEREN , -INPUT ,-TYPE  
+// -TEXTAREA    : REQUIEREN , -ROWS ,-COLS ,
+// -SUBMIT      : REQUIERE  , VALUE  
+ 
 textarea,
 input{
     outline:5px solid red;
@@ -133,13 +132,13 @@ input[type=submit][value]{
     outline:none;
 }
 }
-/*+------------------------------------------------------------+
- |       -IDS SOLO PARA PROGRAMAR JS
- +------------------------------------------------------------+*/
+
+// -IDS SOLO PARA PROGRAMAR JS
+ 
  @mixin debug-fine(){
-     /*+------------------------------------------------------------+
- |       -ESTILOS EN LINEA, EVITAR EN LA MEDIDA DE LO POSIBLE
- +------------------------------------------------------------+*/
+     
+// -ESTILOS EN LINEA, EVITAR EN LA MEDIDA DE LO POSIBLE
+ 
 [style]{
         outline:5px solid yellow;
 }
@@ -149,19 +148,19 @@ input[type=submit][value]{
 [id]{
         outline:5px solid yellow;
 }
-/*+------------------------------------------------------------+
- |       -ELEMENTOS VACIOS     
- +------------------------------------------------------------+*/
+
+// -ELEMENTOS VACIOS     
+ 
 div:empty, span:empty, li:empty, p:empty, td:empty, th:empty
 { margin: 5px; border: 5px dotted yellow !important; }
-/*+------------------------------------------------------------+
- |       -ATRIBUTOS VACIOS        
- +------------------------------------------------------------+*/
+
+// -ATRIBUTOS VACIOS        
+ 
 *[alt=""], *[title=""], *[class=""], *[id=""], a[href=""], a[href="#"]
 { border: 5px solid yellow !important; }
-/*+------------------------------------------------------------+
- |       -ATRIBUTOS DEPRECADOS        
- +------------------------------------------------------------+*/
+
+//  -ATRIBUTOS DEPRECADOS        
+ 
 applet, basefont, center, dir, font, isindex, menu, s, strike, u
 { border: 5px dotted red !important; }
 *[background], *[bgcolor], *[clear], *[color], *[compact], *[noshade], *[nowrap], *[size], *[start],
@@ -171,14 +170,14 @@ applet, basefont, center, dir, font, isindex, menu, s, strike, u
 *[height], *[width],
 ul[type], ol[type], li[type]
 { border: 5px solid red !important; }
-/*+------------------------------------------------------------+
- |       -PROPUESTA A LOS ELEMENTOS DEPRECADOS      
- +------------------------------------------------------------+*/
+
+//  -PROPUESTA A LOS ELEMENTOS DEPRECADOS      
+ 
 input[type="button"], big, tt
 { border: 5px dotted #33FF00 !important; }
-/*+------------------------------------------------------------+
- |       -PROPUESTA A LOS ATRIBUTOS DEPRECADOS      
- +------------------------------------------------------------+*/
+
+//  -PROPUESTA A LOS ATRIBUTOS DEPRECADOS      
+ 
 *[border], a[target], table[cellpadding], table[cellspacing], *[name]
 { border: 5px solid #33FF00 !important; }
 }
@@ -189,9 +188,9 @@ input[type="button"], big, tt
     @include debug-fine();
     @include debug-headers();
 }
-/*+------------------------------------------------------------+
- |       -Coloreamos los headers
- +------------------------------------------------------------+*/
+
+//  -Coloreamos los headers
+ 
  @mixin debug-headers(){
 @for $i from 1 through 8 {
 	.h#{$i} {

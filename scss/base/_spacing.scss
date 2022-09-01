@@ -1,14 +1,14 @@
 @import "../abstract/_all.scss";
 
-/*+------------------------------------------------------------+
- |       - MARGINS  
- +------------------------------------------------------------+*/
 
-/*+------------------------------------------------------------+
-  |      -MIXINS SPACE  
-  +------------------------------------------------------------+*/
+//   - MARGINS  
+ 
 
-    /* margin*/
+
+ //  -MIXINS SPACE  
+  
+
+    // margin
     @include space($breakpoints, $margin, $mg);
     @include space($breakpoints, $margin-y, $my);
     @include space($breakpoints, $margin-x, $mx);
@@ -16,7 +16,7 @@
     @include space($breakpoints, $margin-right, $mr);
     @include space($breakpoints, $margin-bottom, $mb);
     @include space($breakpoints, $margin-left, $ml);
-    /* padding*/
+   // padding
     @include space($breakpoints, $padding, $p);
     @include space($breakpoints, $padding-y, $py);
     @include space($breakpoints, $padding-x, $px);

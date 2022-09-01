@@ -1,13 +1,13 @@
 @import "../abstract/_all.scss";
-/*+------------------------------------------------------------+
- |       -BOTONES    
- +------------------------------------------------------------+*/
-/*
- * Definimos los botones y sus variantes
- */
-/**
- * .btn es la clase principal para definir un botón  es el tipo
- */
+
+//   -BOTONES    
+ 
+
+// Definimos los botones y sus variantes
+
+
+// .btn es la clase principal para definir un botón  es el tipo
+
 .btn {
     position: relative;
     display: inline-block;
@@ -23,9 +23,9 @@
     cursor: pointer;
     padding: 16px 8px;
     @include font-medium();
-    /**
- 	* Nadie quiere un botón con texto subrayado cuando hacemos hover.
- 	*/
+
+// Nadie quiere un botón con texto subrayado cuando hacemos hover.
+
     &:hover,
     &.hover {
         text-decoration: none;
@@ -109,9 +109,9 @@
   }
 
 }
-/*+------------------------------------------------------------+
- |       -TAMAÑOS    
- +------------------------------------------------------------+*/
+
+//   -TAMAÑOS    
+ 
 $btn-text-mini: 12px;
 $btn-text-small: 14px;
 $btn-text-medium: 14px;
@@ -171,9 +171,9 @@ $btn-text-full: 14px;
 .btn--round {
     border-radius: 50px;
 }
-/*+------------------------------------------------------------+
- |       -TIPOS DE BOTONES    
- +------------------------------------------------------------+*/
+
+//   -TIPOS DE BOTONES    
+ 
 .btn-xs {
     position: relative;
     display: inline-block;
@@ -271,13 +271,12 @@ $btn-text-full: 14px;
     color: $c-white;
     border: 1px solid $c-info;
 }
-/*+------------------------------------------------------------+
- |       -TIPOS DE BOTONES    
- +------------------------------------------------------------+*/
-/**
- * Variantes de los botones por tamaño.
- *
- */
+
+//   -TIPOS DE BOTONES    
+ 
+
+// Variantes de los botones por tamaño.
+
 .btn-primary {
     color: $c-white;
     background-color: $primary;
@@ -441,14 +440,13 @@ $btn-text-full: 14px;
     padding: 0;
     background-color: transparent;
 }
-/*+------------------------------------------------------------+
- |       -GRUPOS DE BOTONES    
- +------------------------------------------------------------+*/
-/**
- * Con esta clase podemos agrupar los botones
- * en grupos horizontales.
- *
- */
+
+//   -GRUPOS DE BOTONES    
+ 
+
+// Con esta clase podemos agrupar los botones
+// en grupos horizontales.
+
 .btns {
     align-items: center;
     display: flex;
@@ -726,9 +724,9 @@ $btn-text-full: 14px;
         }
     }
 }
-/*+------------------------------------------------------------+
- |       -RTL BOTONES   
- +------------------------------------------------------------+*/
+
+//   -RTL BOTONES   
+ 
 .is-rtl {
     .btn {
         &.btn-separate {
@@ -780,9 +778,9 @@ $btn-text-full: 14px;
         }
     }
 }
-/*+------------------------------------------------------------+
- |       -INVERSIÓN DE COLOR DE BOTONES   
- +------------------------------------------------------------+*/
+
+//   -INVERSIÓN DE COLOR DE BOTONES   
+ 
 .has-light {
     .btn-phantom {
         color: $c-white;

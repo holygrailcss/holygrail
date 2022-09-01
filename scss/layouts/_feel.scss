@@ -231,7 +231,7 @@ float: left;
 		margin-left: calc(((100vw - 80vw) / 2) - 8px);
 	}
 	@media (min-width: $break-lg) {
-		/* 1200px*/
+	
 		margin-left: calc((100vw - 1280px) / 2 - 8px);
 	}
 }
@@ -243,7 +243,7 @@ float: left;
 		margin-right: calc(((100vw - 80vw) / 2) - 8px);
 	}
 	@media (min-width: $break-lg) {
-		/* 1200px*/
+	
 		margin-right: calc(((100vw - 1280px) / 2) - 8px);
 	}
 }

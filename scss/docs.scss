@@ -1,6 +1,6 @@
-/* no usar col- nunca ya que hay un selector asi
- */
-/*cargamos el tema por defecto con las fuentes y colores propios */
+// no usar col- nunca ya que hay un selector asi
+
+// cargamos el tema por defecto con las fuentes y colores propios 
 @import "abstract/reset";
 @import "abstract/setup";
 @import "abstract/fonts";
@@ -16,7 +16,8 @@
 
 $variable-list: (
   break-xs: #{$break-xs},
-  /*Breakpoints*/ break-sm: #{$break-sm},
+  //Breakpoints
+   break-sm: #{$break-sm},
   break-md: #{$break-md},
   break-lg: #{$break-lg},
   break-xl: #{$break-xl},
@@ -43,7 +44,8 @@ $variable-list: (
   font-family-secondary: #{$font-family-secondary},
   font-secondary-weight-light: #{$font-weight-secondary-light},
   font-secondary-weight-medium: #{$font-weight-secondary-medium},
-  /* font-secondary-weight-bold: #{ $font-weight-secondary-bold}, */ xl: 1500px,
+  xl: 1500px
+  // font-secondary-weight-bold: #{ $font-weight-secondary-bold}
 );
 
 
@@ -135,10 +137,10 @@ $variabletotals: length($variable-list);
 
 
 
-/***creacion de las variables****/
+// creacion de las variables
 
 
-/* TIPOGRAFIAS */
+// TIPOGRAFIAS 
 
 
 .resize {
@@ -303,7 +305,7 @@ $variabletotals: length($variable-list);
   }
 }
 
-/**textos fluidos**/
+//textos fluidos
 
 
 
@@ -451,7 +453,7 @@ $variabletotals: length($variable-list);
 
 
 
-/* margin*/
+// margin
 @include tablas($margin, "marginbox", 2);
 @include tablas($margin-y, "marginbox-y", 2);
 @include tablas($margin-x, "marginbox-x", 2);
@@ -460,7 +462,7 @@ $variabletotals: length($variable-list);
 @include tablas($margin-bottom, "marginbox-bottom", 2);
 @include tablas($margin-left, "marginbox-left", 2);
 
-/* padding*/
+// padding
 @include tablas($padding, "paddingbox", 2);
 @include tablas($padding-y, "paddingbox-y", 2);
 @include tablas($padding-x, "paddingbox-x", 2);
@@ -502,9 +504,9 @@ $variabletotals: length($variable-list);
 
 
 
-/*------------------------------------*\
-    ESTILO PROPIO DE LA GUIA
-\*------------------------------------*/
+
+// ESTILO PROPIO DE LA GUIA
+
 
 
 
@@ -513,7 +515,7 @@ $variabletotals: length($variable-list);
 @import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
 //imagenes de fondo este es el theme de la web personalizable
 $headersFluidsGuide: (
-  /*name :  fontsize, lineheight */
+  // name :  fontsize, lineheight 
   12 : (12px, 12px, .9),
   14 : (14px, 12px, .9),
   16 : (16px, 12px, .9),

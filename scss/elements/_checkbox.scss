@@ -394,9 +394,9 @@ left: 0;
       transform: scale(1);
   }
 }
-/*+------------------------------------------------------------+
- |       -Elementos envueltos en el estado error en formularios
- +------------------------------------------------------------+*/
+
+//   -Elementos envueltos en el estado error en formularios
+ 
 
  .is-error {
   .checkbox-item {
@@ -416,9 +416,9 @@ left: 0;
   }
 }
 
-/*+------------------------------------------------------------+
- |       -Soporte para lenguajes árabes  
- +------------------------------------------------------------+*/
+
+//   -Soporte para lenguajes árabes  
+ 
 .is-rtl{
   .checkbox-item{
     [type="checkbox"]:not(:checked),

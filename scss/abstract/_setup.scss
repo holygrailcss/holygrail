@@ -1,7 +1,6 @@
 
-/*+------------------------------------------------------------+
- |-COLORS
- +------------------------------------------------------------+*/
+//COLORS
+
 
 
 
@@ -55,9 +54,7 @@ $ternary-guide:#6759bb !default;
 $btn-radius: 0!default;
 
 
-/*+------------------------------------------------------------+
- |       -IMPORT FONTS
- +------------------------------------------------------------+*/
+//   -IMPORT FONTS
 
 
 $font-family-secondary:"Times new roman"!default;
@@ -66,17 +63,12 @@ $font-weight-secondary-medium:400!default;
 $font-weight-secondary-bold:700!default;
 
 
-/* BREAKPOINTS */
+
+//  -FASE 2 : PERSONALIZA TU HOLYGRAIL
 
 
- /*+------------------------------------------------------------+
-  |       -FASE 2 : PERSONALIZA TU HOLYGRAIL
-  +------------------------------------------------------------+*/
 
-
-/*  breakpoints  */
-
-/*  grid  */
+// grid 
 
  $totalCols :      12!default;
  $padding-global: 8px!default;
@@ -86,7 +78,7 @@ $font-weight-secondary-bold:700!default;
  $padding-btn:   16px!default;
  $height-inputs: 48px!default;
 
-/* maxwidth del container*/
+// maxwidth del container
 $container: 800px !default;
 $container-2: 700px!default;
 $container-3: 900px!default;
@@ -103,7 +95,7 @@ $transition:278ms;
 
 
 
-/*  alturas minimas  */
+// alturas minimas  
 
 $height-xs:80px !default;
 $height-sm:100px !default;
@@ -113,13 +105,13 @@ $height-xl:450px !default;
 $height-full:100vh !default;
 $height-home:calc(100vh - 80px) !default;
 
-/*  animaciones  */
+//  animaciones  
 
 $transition:278ms!default;
 
 
 
-/* ALTURA MINIMA */
+// ALTURA MINIMA 
 
 $min-width:319px!default;
 
@@ -127,13 +119,12 @@ $min-vw:319px!default;
 $max-vw:1500px!default;
 
 
-/* Types.scss */
 
-/* Types responsive  xs sm md lg xl line-height font-weight */
+// Types responsive  xs sm md lg xl line-height font-weight 
 
    $fs: "font-size";
    $lh: "line-height";
-   $headers:/* name:mobile,768,992,1280,line-height,font */
+   $headers:// name:mobile,768,992,1280,line-height,font 
           (h1: (32px, 32px, 32px,  40px, 1.2, "medium" ),
            h2: (24px, 24px, 24px,  32px, 1.2, "medium" ),
            h3: (18px, 18px, 18px,  24px, 1.2, "medium" ),
@@ -142,13 +133,13 @@ $max-vw:1500px!default;
            h6: (12px, 12px, 12px,  14px, 1.2, "medium" ),
            h7: (10px, 10px, 10px,  12px, 1.2, "medium" ),
            h8: (8px,   8px,  8px,  10px, 1.2, "medium" ),
-     display1: (32px, 32px, 32px,  48px, 1.2, "bold"   ),/* PROMOTIONS BANNER */
-     display2: (20px, 20px, 20px,  40px, 1.2, "bold"   ),/* SALES */
-     display3: (16px, 16px, 16px,  24px, 1.5, "medium" ),/* BLACK FRIDAY */
-     display4: (14px, 14px, 14px,  24px, 1.5, "medium" ),/* SALES */
-     display5: (14px, 14px, 14px,  18px, 1.5, "regular"),/* BLACK FRIDAY */
-     display6: (12px, 12px, 12px,  18px, 1.5, "regular"),/* SALES */
-     display7: (14px, 14px, 14px,  18px, 1.5, "medium" ),/* SALES + BLACK FRIDAY */
+     display1: (32px, 32px, 32px,  48px, 1.2, "bold"   ),//  PROMOTIONS BANNER 
+     display2: (20px, 20px, 20px,  40px, 1.2, "bold"   ),//  SALES 
+     display3: (16px, 16px, 16px,  24px, 1.5, "medium" ),//  BLACK FRIDAY 
+     display4: (14px, 14px, 14px,  24px, 1.5, "medium" ),//  SALES 
+     display5: (14px, 14px, 14px,  18px, 1.5, "regular"),//  BLACK FRIDAY 
+     display6: (12px, 12px, 12px,  18px, 1.5, "regular"),//  SALES 
+     display7: (14px, 14px, 14px,  18px, 1.5, "medium" ),//  SALES + BLACK FRIDAY 
            p1: (12px, 12px, 12px,  14px, 1.4, "regular"),
            p2: (14px, 14px, 16px,  18px, 1.4, "regular"),
            p4: (14px, 14px, 16px,  18px, 1.4, "medium" )) !default;
@@ -157,9 +148,9 @@ $max-vw:1500px!default;
         //  secondary font (regular2, medium2 , bold2) 
    
 
-/* TYPES FIJOS */
+// TYPES FIJOS 
 
-$headersFixers: (/*name :  fontsize, lineheight */
+$headersFixers: ( //name :  fontsize, lineheight 
    12 : (12px, 1.5),
    14 : (14px, 1.5),
    16 : (16px, 1.5),
@@ -170,7 +161,7 @@ $headersFixers: (/*name :  fontsize, lineheight */
    
    
 
-$headersFluids: (/*name :  fontsize, lineheight */
+$headersFluids: (//name :  fontsize, lineheight 
    12 : (1px, 2px, .3),
    14 : (14px, 12px,.9),
    16 : (16px, 12px,.9),
@@ -184,7 +175,7 @@ $headersFluids: (/*name :  fontsize, lineheight */
 
 
 
-   $heights: (/*name :  fontsize, lineheight */
+   $heights: (//name :  fontsize, lineheight 
    height-xs : (80px),
    height-sm  : (100px),
    height-md  : (350px),
@@ -196,12 +187,10 @@ $headersFluids: (/*name :  fontsize, lineheight */
    ) !default;
 
 
-/*+------------------------------------------------------------+
-|       -spacing  
-+------------------------------------------------------------+*/
+//  -spacing  
 
 $mg: "margin";
-$margin: /* name : margen total mobile, tablet, desktop, longdesktop*/
+$margin: // name : margen total mobile, tablet, desktop, longdesktop
 (
 m-0: (0px, 0px, 0px, 0px),
 m-8: (8px, 8px, 8px, 8px),

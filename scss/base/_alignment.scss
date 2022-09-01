@@ -1,7 +1,7 @@
 @import "../abstract/_all.scss";
-/*+------------------------------------------------------------+
- |       -HELPERS DE TEXTO , ALINEACIONES        
- +------------------------------------------------------------+*/
+
+//   -HELPERS DE TEXTO , ALINEACIONES        
+ 
  .text-center {
   text-align: center;
 }
@@ -20,9 +20,9 @@
 
 
 
-/*+------------------------------------------------------------+
- |       -FLEXBOX    helpers
- +------------------------------------------------------------+*/
+
+//   -FLEXBOX    helpers
+ 
 .is-flex {
   display: flex;
 }
@@ -165,9 +165,9 @@
 .md\:min-text-right { @media (min-width: $break-md) { text-align: right; } }
 .lg\:min-text-right { @media (min-width: $break-lg) { text-align: right; } }
 
-/*+------------------------------------------------------------+
- |       -Soporte para lenguajes árabes  
- +------------------------------------------------------------+*/
+
+//   -Soporte para lenguajes árabes  
+ 
 
  .is-rtl{
   .text-right {

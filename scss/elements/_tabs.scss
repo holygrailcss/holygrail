@@ -1,18 +1,7 @@
 @import "../abstract/_all.scss";
-/*+------------------------------------------------------------+
- |       -TABS  
- +------------------------------------------------------------+*/
-/*
- * Definimos los botones y sus variantes
- <div class="tabs">
-  <ul>
-    <li class="is-active"><a>Pictures</a></li>
-    <li><a>Music</a></li>
-    <li><a>Videos</a></li>
-    <li><a>Documents</a></li>
-  </ul>
-</div>
- */
+
+//   -TABS  
+ 
 .tabs {
     .list-equal {
         display: flex;
@@ -224,9 +213,9 @@
     }
 }
 
-/*+------------------------------------------------------------+
- |       -Soporte para lenguajes árabes  
- +------------------------------------------------------------+*/
+
+//   -Soporte para lenguajes árabes  
+ 
 
 .is-rtl{
     .tabs-mini {

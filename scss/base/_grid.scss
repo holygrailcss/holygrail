@@ -1,8 +1,8 @@
 @import "../abstract/_all.scss";
 
-/*+------------------------------------------------------------+
- |       -CONTAINERS        
- +------------------------------------------------------------+*/
+
+//   -CONTAINERS        
+ 
 .container {
     padding-right: $padding-global;
     padding-left: $padding-global;
@@ -11,19 +11,19 @@
     position: relative;
     max-width: 800px;
     @media (min-width: $break-sm) {
-        /*600px*/
+ 
         padding-right: $padding-global;
         padding-left: $padding-global;
         width: 90%;
         max-width: nth(map-values($breakpoints), 2);
     }
     @media (min-width: $break-md) {
-        /* 992px*/
+  
         width: 80%;
         max-width: nth(map-values($breakpoints), 3);
     }
     @media (min-width: $break-lg) {
-        /* 1200px*/
+  
         width: 80%;
         max-width: nth(map-values($breakpoints), 4);
     }
@@ -36,19 +36,19 @@
     position: relative;
     max-width: 800px;
     @media (min-width: $break-sm) {
-        /*600px*/
+
         padding-right: $padding-global;
         padding-left: $padding-global;
         width: 90%;
         max-width: nth(map-values($breakpoints), 2);
     }
     @media (min-width: $break-md) {
-        /* 992px*/
+ 
         width: 80%;
         max-width: nth(map-values($breakpoints), 3);
     }
     @media (min-width: $break-lg) {
-        /* 1200px*/
+
         width: 80%;
         max-width: nth(map-values($breakpoints), 4);
     }
@@ -91,7 +91,7 @@
     width: 90%;
     max-width: $container-4;
 }
-/* join life style*/
+// join life style
 .container-5 {
     position: relative;
     padding: 0 $padding-global;
@@ -153,9 +153,9 @@
         padding: 32px;
     }
 }
-/*+------------------------------------------------------------+
-   |       -ROW        
-   +------------------------------------------------------------+*/
+
+  //   -ROW        
+   
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -168,9 +168,9 @@
         }
     }
 }
-/*+------------------------------------------------------------+
-   |       -COLS        
-   +------------------------------------------------------------+*/
+
+  //   -COLS        
+   
 @for $i from 1 through $colBreakpointscols {
     @media (min-width: nth(map-values($breakpointscols), $i)) {
         @for $c from 1 through $totalCols {
