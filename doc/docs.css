@@ -652,6 +652,7 @@ img {
 
 @media (min-width: 768px) {
   .container-7 {
+    max-width: 460px;
     padding-right: 8px;
     padding-left: 8px;
   }
@@ -4670,12 +4671,12 @@ mark {
   color: #1A32A4;
 }
 
-.bg-light {
-  background-color: #F0F0F0;
-}
-
 .bg-clear {
   background-color: #FFFFFF;
+}
+
+.bg-light {
+  background-color: #F0F0F0;
 }
 
 .bg-cream {
@@ -4684,6 +4685,58 @@ mark {
 
 .bg-line {
   border-bottom: 1px solid #E3E3E3;
+}
+
+.bg-dark-grey {
+  background-color: #8E8E8E;
+}
+
+.bg-middle-grey {
+  background-color: #E3E3E3;
+}
+
+.bg-light-grey {
+  background-color: #F0F0F0;
+}
+
+.bg-primary {
+  background-color: #292929;
+}
+
+.bg-error {
+  background-color: #B40016;
+}
+
+.bg-info {
+  background-color: #1A32A4;
+  color: #FFFFFF;
+}
+
+.bg-success {
+  background-color: #76AE4A;
+  color: #FFFFFF;
+}
+
+.bg-warning {
+  background-color: #B40016;
+}
+
+.bg-feel {
+  background-color: #fb9962;
+}
+
+.bg-dark {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.banner-zone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 16px;
 }
 
 .text-lowercase {
@@ -8718,6 +8771,16 @@ ul.list-mini > li:after {
 
 .list-button.list-icons span {
   flex-grow: 1;
+}
+
+.list-selection a {
+  padding: 8px;
+  background: #FFFFFF;
+}
+
+.list-selection a:hover, .list-selection .is-active {
+  padding: 8px;
+  background: #F0F0F0;
 }
 
 .is-rtl .list-button.list-secundary {

@@ -237,6 +237,19 @@ left: 0px;
   }
 }
 
+.list-selection{
+  a{
+    padding: 8px;
+    background: $c-white;
+  }
+
+  a:hover,.is-active{
+    padding: 8px;
+    background: $c-light-grey;
+  }
+
+}
+
 
 .is-rtl{
   .list-button {

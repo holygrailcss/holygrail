@@ -404,7 +404,7 @@ input::-webkit-input-placeholder {
     }
     select[disabled]:hover,
     fieldset[disabled] select:hover {
-        border-color: $white-smoke;
+        border-color: $c-light-grey;
     }
     select:not([multiple]) {
         padding-right: 45px;

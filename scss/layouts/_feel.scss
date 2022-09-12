@@ -49,7 +49,7 @@ $border-gray: $c-middle-grey;
 	padding:  24px;
     transition: all ease .2s;
    &:hover {
-       background-color: $white-smoke;
+       background-color: $c-light-grey;
        cursor: pointer;
     .feel-close{
 		transform: rotate(136deg);
@@ -140,7 +140,7 @@ $border-gray: $c-middle-grey;
             opacity: 1;
 			height: 90vh;
             z-index: 20;
-            background: $white-smoke;
+            background: $c-light-grey;
 			@media (min-width: 992px) {
 				height: 369px;
 			}
@@ -154,7 +154,7 @@ $border-gray: $c-middle-grey;
             opacity: 1;
             height: 0;
             z-index: 20;
-            background: $white-smoke;
+            background: $c-light-grey;
        
         }
     }
@@ -251,7 +251,7 @@ float: left;
     padding:24px; 
 }
 .bg-feel{
-	background-color: $white-smoke;
+	background-color: $c-light-grey;
 }
 .bg-white{
 	background-color: $c-white;

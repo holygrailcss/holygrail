@@ -138,7 +138,7 @@
     border: none;
     position: relative;
     width: 100%;
-    background-color: $white-smoke;
+    background-color: $c-light-grey;
     ul {
         border: none;
     }
@@ -151,7 +151,7 @@
     span {
         @include font-medium;
         color: $c-dark-grey;
-        border-color: $white-smoke;
+        border-color: $c-light-grey;
         position: relative;
         &:hover {
             color: $c-primary;

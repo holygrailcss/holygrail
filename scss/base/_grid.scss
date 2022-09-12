@@ -118,6 +118,7 @@
     width: 100%;
     max-width: 295px;
     @media (min-width: $break-sm) {
+        max-width: 460px;
         padding-right: $padding-global;
         padding-left: $padding-global;
     }
