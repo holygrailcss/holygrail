@@ -1,0 +1,19 @@
+
+@import "../abstract/_all.scss"; //deprecated no se usan 
+
+.progressbar{
+    width: 100%;
+    height: 8px;
+    border-radius: 8px;
+    background-color: $c-middle-grey;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow: hidden;
+    .progressbar-status{
+      width: 8px;
+      height: 8px;
+      border-radius: 8px;
+      background-color: $c-primary;
+    }
+  }

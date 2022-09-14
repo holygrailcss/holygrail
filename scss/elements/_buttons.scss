@@ -342,6 +342,39 @@ $btn-text-full: 14px;
       }
   }
 }
+
+.btn-feel {
+    color: $c-primary;
+    background-color: $c-feel;
+    // border: 1px solid $c-feel;
+    svg {
+        g {
+            fill: $c-primary;
+            stroke: $c-primary;
+        }
+        circle {
+            stroke: $c-primary;
+        }
+    }
+    &:focus,
+    &.focus,
+    &:hover,
+    &.hover,
+    &:active,
+    &.active {
+        color: $c-primary;
+        opacity: 1;
+        background-color: rgba($c-feel, .5);
+    }
+    &:disabled,
+    &.disabled {
+        opacity: 1;
+        background-color: $c-light-grey;
+        color: $c-dark-grey;
+        cursor: default;
+    }
+}
+
 .btn-text {
     background-color: transparent;
     border-color: transparent;
