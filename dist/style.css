@@ -4627,6 +4627,30 @@ mark {
   color: #1A32A4;
 }
 
+.c-error {
+  color: #B40016;
+}
+
+.c-info {
+  color: #1A32A4;
+}
+
+.c-valid {
+  color: #76AE4A;
+}
+
+.c-warning {
+  color: #FFC700;
+}
+
+.c-feel {
+  color: #fb9962;
+}
+
+.c-limited {
+  color: #000000;
+}
+
 .bg-clear {
   background-color: #FFFFFF;
 }
@@ -4674,7 +4698,7 @@ mark {
 }
 
 .bg-warning {
-  background-color: #B40016;
+  background-color: #FFC700;
 }
 
 .bg-alert {
@@ -5393,7 +5417,7 @@ strong {
   padding: 24px 16px;
   margin-top: 16px;
   text-align: center;
-  background-color: #B40016;
+  background-color: #FFC700;
   color: #FFFFFF;
 }
 
@@ -9169,7 +9193,7 @@ ul.list-mini > li:after {
 }
 
 .tag-warning {
-  background-color: #B40016;
+  background-color: #FFC700;
   color: #FFFFFF;
   padding: 6px 6px 6px 6px;
   line-height: 1;
