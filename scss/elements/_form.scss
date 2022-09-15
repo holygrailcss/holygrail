@@ -872,6 +872,11 @@ $svg-size: 16px;
       -webkit-box-shadow: 0 0 0px 1000px $c-primary inset;
 
     }
+     .input, .textarea, .select select {
+        background-color: transparent;
+        border-color: $c-white;
+        color: $c-white;
+    }
 }
 }
 
