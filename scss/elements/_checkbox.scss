@@ -529,5 +529,16 @@ left: 0;
      [type="checkbox"]:checked+label .icon {
          color:$c-white;
      }
+
+     svg {
+      g {
+        fill: $c-white;
+        polyline{
+          stroke: $c-white;
+        }
+      }
+    }
+
+
  }
 }
