@@ -6975,6 +6975,24 @@ strong {
   margin-right: 40px;
 }
 
+.has-light .checkbox-item .ico-check:after {
+  background-color: transparent;
+}
+
+.has-light .checkbox-item .ico-check:before {
+  background-color: #FFFFFF;
+}
+
+.has-light .checkbox-item [type="checkbox"]:not(:checked) + label:before,
+.has-light .checkbox-item [type="checkbox"]:checked + label:before {
+  border: 1px solid #FFFFFF;
+}
+
+.has-light .checkbox-item [type="checkbox"]:not(:checked) + label .icon,
+.has-light .checkbox-item [type="checkbox"]:checked + label .icon {
+  color: #FFFFFF;
+}
+
 @keyframes underline {
   0% {
     width: 0;
@@ -7906,6 +7924,44 @@ input::-webkit-input-placeholder {
   .form-input-label-2 input:-ms-input-placeholder {
     color: #8E8E8E !important;
   }
+}
+
+.has-light .form-input-label > label {
+  color: #FFFFFF;
+}
+
+.has-light .form-input-label input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.has-light .form-input-label input:-ms-input-placeholder {
+  color: transparent;
+}
+
+.has-light .form-input-label input::-moz-placeholder {
+  color: transparent;
+}
+
+.has-light .form-input-label input::placeholder {
+  color: transparent;
+}
+
+.has-light .form-input-label input:not(:placeholder-shown) ~ label {
+  color: #FFFFFF;
+}
+
+.has-light .form-input-label input:-webkit-autofill,
+.has-light .form-input-label input:-webkit-autofill:hover,
+.has-light .form-input-label input:-webkit-autofill:focus,
+.has-light .form-input-label textarea:-webkit-autofill,
+.has-light .form-input-label textarea:-webkit-autofill:hover,
+.has-light .form-input-label textarea:-webkit-autofill:focus,
+.has-light .form-input-label select:-webkit-autofill,
+.has-light .form-input-label select:-webkit-autofill:hover,
+.has-light .form-input-label select:-webkit-autofill:focus {
+  border: 1px solid #FFFFFF;
+  -webkit-text-fill-color: #FFFFFF;
+  -webkit-box-shadow: 0 0 0px 1000px #292929 inset;
 }
 
 @keyframes underline {

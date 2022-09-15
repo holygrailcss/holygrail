@@ -513,3 +513,21 @@ left: 0;
     }
   }
 }
+.has-light{
+  .checkbox-item {
+       .ico-check:after {
+         background-color: transparent;
+       }
+       .ico-check:before {
+         background-color: $c-white;
+       }
+     [type="checkbox"]:not(:checked)+label:before,
+     [type="checkbox"]:checked+label:before {
+         border: 1px solid $c-white;
+     }
+     [type="checkbox"]:not(:checked)+label .icon,
+     [type="checkbox"]:checked+label .icon {
+         color:$c-white;
+     }
+ }
+}
