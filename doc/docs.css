@@ -7073,6 +7073,14 @@ strong {
   color: #FFFFFF;
 }
 
+.has-light .checkbox-item svg g {
+  fill: #FFFFFF;
+}
+
+.has-light .checkbox-item svg g polyline {
+  stroke: #FFFFFF;
+}
+
 @keyframes underline {
   0% {
     width: 0;
@@ -8006,27 +8014,27 @@ input::-webkit-input-placeholder {
   }
 }
 
-.has-light .form-input-label > label {
+.has-light .form-input-label > label, .has-light .form-input-prefix > label {
   color: #FFFFFF;
 }
 
-.has-light .form-input-label input::-webkit-input-placeholder {
+.has-light .form-input-label input::-webkit-input-placeholder, .has-light .form-input-prefix input::-webkit-input-placeholder {
   color: transparent;
 }
 
-.has-light .form-input-label input:-ms-input-placeholder {
+.has-light .form-input-label input:-ms-input-placeholder, .has-light .form-input-prefix input:-ms-input-placeholder {
   color: transparent;
 }
 
-.has-light .form-input-label input::-moz-placeholder {
+.has-light .form-input-label input::-moz-placeholder, .has-light .form-input-prefix input::-moz-placeholder {
   color: transparent;
 }
 
-.has-light .form-input-label input::placeholder {
+.has-light .form-input-label input::placeholder, .has-light .form-input-prefix input::placeholder {
   color: transparent;
 }
 
-.has-light .form-input-label input:not(:placeholder-shown) ~ label {
+.has-light .form-input-label input:not(:placeholder-shown) ~ label, .has-light .form-input-prefix input:not(:placeholder-shown) ~ label {
   color: #FFFFFF;
 }
 
@@ -8038,10 +8046,24 @@ input::-webkit-input-placeholder {
 .has-light .form-input-label textarea:-webkit-autofill:focus,
 .has-light .form-input-label select:-webkit-autofill,
 .has-light .form-input-label select:-webkit-autofill:hover,
-.has-light .form-input-label select:-webkit-autofill:focus {
+.has-light .form-input-label select:-webkit-autofill:focus, .has-light .form-input-prefix input:-webkit-autofill,
+.has-light .form-input-prefix input:-webkit-autofill:hover,
+.has-light .form-input-prefix input:-webkit-autofill:focus,
+.has-light .form-input-prefix textarea:-webkit-autofill,
+.has-light .form-input-prefix textarea:-webkit-autofill:hover,
+.has-light .form-input-prefix textarea:-webkit-autofill:focus,
+.has-light .form-input-prefix select:-webkit-autofill,
+.has-light .form-input-prefix select:-webkit-autofill:hover,
+.has-light .form-input-prefix select:-webkit-autofill:focus {
   border: 1px solid #FFFFFF;
   -webkit-text-fill-color: #FFFFFF;
   -webkit-box-shadow: 0 0 0px 1000px #292929 inset;
+}
+
+.has-light .form-input-label .input, .has-light .form-input-label .textarea, .has-light .form-input-label .select select, .has-light .form-input-prefix .input, .has-light .form-input-prefix .textarea, .has-light .form-input-prefix .select select {
+  background-color: transparent;
+  border-color: #FFFFFF;
+  color: #FFFFFF;
 }
 
 @keyframes underline {

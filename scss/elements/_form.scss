@@ -839,7 +839,7 @@ $svg-size: 16px;
 
 
 .has-light{
-.form-input-label {
+.form-input-label,.form-input-prefix {
     & > label {
         color: $c-white;
     }
@@ -853,7 +853,7 @@ $svg-size: 16px;
         color: transparent;
     }
     & input::placeholder {
-        color: transparent;
+        color: $c-white;
     }
     & input:not(:placeholder-shown) ~ label {
         color: $c-white;
@@ -877,6 +877,13 @@ $svg-size: 16px;
         border-color: $c-white;
         color: $c-white;
     }
+
+    
+}
+
+.form-input-label-2 .info-text,
+ .error-zone .info-text {
+    color: $c-white;
 }
 }
 
