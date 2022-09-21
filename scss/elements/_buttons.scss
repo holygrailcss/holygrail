@@ -687,12 +687,12 @@ $btn-text-full: 14px;
         }
     }
     &.btn-google {
-        background-color: #4285f4;
+        background-color: $c-google;
         color: $c-white;
         padding-left: 54px;
         svg-icon {
             background-color: $c-white;
-            border: 1px solid #4285f4;
+            border: 1px solid $c-google;
         }
         &:hover {
             background-color: #3367d6;
@@ -735,22 +735,22 @@ $btn-text-full: 14px;
         }
     }
     &.btn-naver {
-        background-color: #03cf5d;
+        background-color: $c-naver;
         color: $c-white;
         padding-left: 80px;
         svg-icon {
             width: 80px;
-            background-color: #03cf5d;
+            background-color: $c-naver;
         }
         &:hover {
             opacity: 0.6;
         }
     }
     &.btn-wechat {
-        background-color: #2dc100;
+        background-color: $c-wechat;
         color: $c-white;
         svg-icon {
-            background-color: #2dc100;
+            background-color: $c-wechat;
         }
         &:hover {
             opacity: 0.6;

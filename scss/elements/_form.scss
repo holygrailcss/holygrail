@@ -853,7 +853,7 @@ $svg-size: 16px;
         color: transparent;
     }
     & input::placeholder {
-        color: $c-white;
+     
     }
     & input:not(:placeholder-shown) ~ label {
         color: $c-white;

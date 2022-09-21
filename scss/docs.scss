@@ -14,7 +14,39 @@
 
 
 
+$variable-colors: (
+  c-white: #{$c-white},
+  c-black: #{$c-black},
+   
+  c-dark-grey: #{$c-dark-grey},
+  c-middle-grey: #{$c-middle-grey},
+  c-light-grey: #{$c-light-grey},
+   
+  c-primary: #{$c-primary},
+  c-error: #{$c-error},
+ 
+  c-info: #{$c-info},
+  c-valid: #{$c-valid},
+  c-warning: #{$c-warning},
+  c-feel: #{$c-feel},
+  c-limited: #{$c-limited},
+   // fin massimodutti color MD 2022
+   
+  c-success: #{$c-success},
+  c-alert:  #{$c-alert},
+   
+  c-facebook:  #{$c-facebook}, 
+  c-google:  #{$c-google}, 
+  c-naver:  #{$c-naver}, 
+  c-wechat:  #{$c-wechat}
+   
+ 
+);
+
+
+
 $variable-list: (
+
   break-xs: #{$break-xs},
   //Breakpoints
    break-sm: #{$break-sm},
@@ -76,6 +108,8 @@ $variable-list: (
 
 $variabletotals: length($variable-list);
 @for $i from 1 through $variabletotals {
+
+
   .var-a-#{nth(map-keys($variable-list), $i)} {
     &:after {
       display: inline-block;
@@ -89,6 +123,19 @@ $variabletotals: length($variable-list);
     }
   }
 }
+
+
+
+$variablecolors: length($variable-colors);
+
+@for $i from 1 through $variablecolors {
+  .bg-#{nth(map-keys($variable-colors), $i)} {
+
+  background-color: #{nth(map-values($variable-colors), $i)};
+
+  }
+}
+
 
 .tag-color-wrap {
   .wrap-item {
@@ -592,8 +639,7 @@ $headersFluidsGuide: (
     color: #000000;
 
     margin-bottom: 20px;
-    padding: 30px 0;
-    border-bottom: 5px solid #000000;
+    padding: 100px 0 10px 0;
 
   }
   .site-main {
@@ -742,9 +788,8 @@ $headersFluidsGuide: (
     width: 100%;
     box-sizing: border-box;
   }
-  .list-inline li a {}
-  .guide-sidebar {}
-  .guide-contents {}
+
+  
   .guide-hover {
     text-decoration: none;
     opacity: .6;

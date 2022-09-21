@@ -3,8 +3,6 @@
 
 
 
-
-// massimodutti color MD 2022
 $c-white:#FFFFFF!default;
 $c-black:#000000!default;
 
@@ -14,37 +12,30 @@ $c-light-grey:#F0F0F0 !default;
 
 $c-primary:#292929!default;
 $c-error:#B40016 !default; //borrar en proyecto
+$c-warning:#B40016 !default; //se mantiene
 $c-info:#1A32A4 !default;
 $c-valid:#76AE4A !default;
-$c-warning:#FFC700 !default;
+$c-warning:#FFC700 !default; // pasa a ser alert
 $c-feel:#fb9962 !default;
 $c-limited:#000000 !default;
-// fin massimodutti color MD 2022
+
 
 $c-success:#76AE4A !default;
 $c-alert: #FFC700 !default;
 
 $c-facebook: #4267B2;
+$c-google: #4285f4;
+$c-naver: #03cf5d;
+$c-wechat: #2dc100;
 
 
 
- $white-smoke: #F0F0F0 !default; //eliminar
+$white-smoke: #F0F0F0 !default; //eliminar
 
- $color-1:   #ffffff !default;
- $color-2 :   #ffffff !default;
- $color-3  :  #ffffff !default;
- $color-4  : #ffffff !default;
- $color-5  : #ffffff !default;
- $color-6 :   #ffffff !default;
- $color-7 :   #ffffff !default;
- $color-8 :   #ffffff !default;
- $color-9 :   #ffffff !default;
- $color-10 : #ffffff !default;
- $color-11 : #ffffff !default;
 
- $primary: #292929!default;
+$primary: #292929!default;
 
- $error: #B40016!default;
+
 
 $primary-guide:#363636 !default;
 $secondary-guide:#6759bb !default;
@@ -167,6 +158,7 @@ $headersFluids: (//name :  fontsize, lineheight
    18 : (18px, 12px,.9),
    20 : (20px, 12px,.9),
    50 : (30px, 80px,.9),
+   100 : (30px, 100px,.9)
 
    ) !default;
 

@@ -4640,7 +4640,7 @@ mark {
 }
 
 .c-warning {
-  color: #FFC700;
+  color: #B40016;
 }
 
 .c-feel {
@@ -4698,7 +4698,7 @@ mark {
 }
 
 .bg-warning {
-  background-color: #FFC700;
+  background-color: #B40016;
 }
 
 .bg-alert {
@@ -5417,7 +5417,7 @@ strong {
   padding: 24px 16px;
   margin-top: 16px;
   text-align: center;
-  background-color: #FFC700;
+  background-color: #B40016;
   color: #FFFFFF;
 }
 
@@ -7950,10 +7950,6 @@ input::-webkit-input-placeholder {
   color: transparent;
 }
 
-.has-light .form-input-label input::placeholder, .has-light .form-input-prefix input::placeholder {
-  color: transparent;
-}
-
 .has-light .form-input-label input:not(:placeholder-shown) ~ label, .has-light .form-input-prefix input:not(:placeholder-shown) ~ label {
   color: #FFFFFF;
 }
@@ -7983,6 +7979,11 @@ input::-webkit-input-placeholder {
 .has-light .form-input-label .input, .has-light .form-input-label .textarea, .has-light .form-input-label .select select, .has-light .form-input-prefix .input, .has-light .form-input-prefix .textarea, .has-light .form-input-prefix .select select {
   background-color: transparent;
   border-color: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.has-light .form-input-label-2 .info-text,
+.has-light .error-zone .info-text {
   color: #FFFFFF;
 }
 
@@ -9271,7 +9272,7 @@ ul.list-mini > li:after {
 }
 
 .tag-warning {
-  background-color: #FFC700;
+  background-color: #B40016;
   color: #FFFFFF;
   padding: 6px 6px 6px 6px;
   line-height: 1;
