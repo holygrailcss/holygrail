@@ -2418,6 +2418,9 @@ svg-icon.ico-success path {
   .mbr-32 {
     margin-bottom: 24px;
   }
+  .mbr-64 {
+    margin-bottom: 32px;
+  }
   .mbr-128 {
     margin-bottom: 64px;
   }
@@ -2453,6 +2456,9 @@ svg-icon.ico-success path {
   }
   .mbr-32 {
     margin-bottom: 32px;
+  }
+  .mbr-64 {
+    margin-bottom: 64px;
   }
   .mbr-128 {
     margin-bottom: 128px;
@@ -2490,6 +2496,9 @@ svg-icon.ico-success path {
   .mbr-32 {
     margin-bottom: 32px;
   }
+  .mbr-64 {
+    margin-bottom: 64px;
+  }
   .mbr-128 {
     margin-bottom: 128px;
   }
@@ -2525,6 +2534,9 @@ svg-icon.ico-success path {
   }
   .mbr-32 {
     margin-bottom: 32px;
+  }
+  .mbr-64 {
+    margin-bottom: 64px;
   }
   .mbr-128 {
     margin-bottom: 128px;
@@ -4514,6 +4526,102 @@ mark {
 @media screen and (min-width: 1500px) {
   .fluid-50-b {
     font-size: 80px;
+    line-height: 0.9;
+  }
+}
+
+.fluid-100-l {
+  font-family: Arial, sans-serif;
+  font-weight: 300;
+}
+
+.fluid-100-l {
+  font-size: 30px;
+  line-height: 0.9;
+}
+
+@media screen and (min-width: 319px) {
+  .fluid-100-l {
+    font-size: calc(30px + 70 * ((100vw - 319px) / 1181));
+    line-height: 0.9;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .fluid-100-l {
+    font-size: 100px;
+    line-height: 0.9;
+  }
+}
+
+.fluid-100-r {
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+}
+
+.fluid-100-r {
+  font-size: 30px;
+  line-height: 0.9;
+}
+
+@media screen and (min-width: 319px) {
+  .fluid-100-r {
+    font-size: calc(30px + 70 * ((100vw - 319px) / 1181));
+    line-height: 0.9;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .fluid-100-r {
+    font-size: 100px;
+    line-height: 0.9;
+  }
+}
+
+.fluid-100-m {
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+}
+
+.fluid-100-m {
+  font-size: 30px;
+  line-height: 0.9;
+}
+
+@media screen and (min-width: 319px) {
+  .fluid-100-m {
+    font-size: calc(30px + 70 * ((100vw - 319px) / 1181));
+    line-height: 0.9;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .fluid-100-m {
+    font-size: 100px;
+    line-height: 0.9;
+  }
+}
+
+.fluid-100-b {
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+}
+
+.fluid-100-b {
+  font-size: 30px;
+  line-height: 0.9;
+}
+
+@media screen and (min-width: 319px) {
+  .fluid-100-b {
+    font-size: calc(30px + 70 * ((100vw - 319px) / 1181));
+    line-height: 0.9;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .fluid-100-b {
+    font-size: 100px;
     line-height: 0.9;
   }
 }
@@ -8701,8 +8809,8 @@ ul.list-inline {
 }
 
 ul.list-inline li {
-  display: inline-block;
-  padding: 0 8px;
+  display: inline-flex;
+  padding: 0 4px;
   margin: 0;
 }
 

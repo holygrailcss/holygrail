@@ -2492,6 +2492,9 @@ svg-icon.ico-success path {
   .mbr-32 {
     margin-bottom: 24px;
   }
+  .mbr-64 {
+    margin-bottom: 32px;
+  }
   .mbr-128 {
     margin-bottom: 64px;
   }
@@ -2527,6 +2530,9 @@ svg-icon.ico-success path {
   }
   .mbr-32 {
     margin-bottom: 32px;
+  }
+  .mbr-64 {
+    margin-bottom: 64px;
   }
   .mbr-128 {
     margin-bottom: 128px;
@@ -2564,6 +2570,9 @@ svg-icon.ico-success path {
   .mbr-32 {
     margin-bottom: 32px;
   }
+  .mbr-64 {
+    margin-bottom: 64px;
+  }
   .mbr-128 {
     margin-bottom: 128px;
   }
@@ -2599,6 +2608,9 @@ svg-icon.ico-success path {
   }
   .mbr-32 {
     margin-bottom: 32px;
+  }
+  .mbr-64 {
+    margin-bottom: 64px;
   }
   .mbr-128 {
     margin-bottom: 128px;
@@ -15174,7 +15186,7 @@ ul.list-clear li.list-box:last-child {
 }
 
 .marginbox-bottom .filas:nth-child(10) .item:after {
-  content: "mbr-128";
+  content: "mbr-64";
 }
 
 .marginbox-bottom .filas:nth-child(10) .item-0 {
@@ -15182,23 +15194,23 @@ ul.list-clear li.list-box:last-child {
 }
 
 .marginbox-bottom .filas:nth-child(10) .item-1:after {
-  content: "64px";
+  content: "32px";
 }
 
 .marginbox-bottom .filas:nth-child(10) .item-2:after {
-  content: "128px";
+  content: "64px";
 }
 
 .marginbox-bottom .filas:nth-child(10) .item-3:after {
-  content: "128px";
+  content: "64px";
 }
 
 .marginbox-bottom .filas:nth-child(10) .item-4:after {
-  content: "128px";
+  content: "64px";
 }
 
 .marginbox-bottom .filas:nth-child(11) .item:after {
-  content: "mbr-20-40";
+  content: "mbr-128";
 }
 
 .marginbox-bottom .filas:nth-child(11) .item-0 {
@@ -15206,18 +15218,42 @@ ul.list-clear li.list-box:last-child {
 }
 
 .marginbox-bottom .filas:nth-child(11) .item-1:after {
-  content: "20px";
+  content: "64px";
 }
 
 .marginbox-bottom .filas:nth-child(11) .item-2:after {
-  content: "40px";
+  content: "128px";
 }
 
 .marginbox-bottom .filas:nth-child(11) .item-3:after {
-  content: "40px";
+  content: "128px";
 }
 
 .marginbox-bottom .filas:nth-child(11) .item-4:after {
+  content: "128px";
+}
+
+.marginbox-bottom .filas:nth-child(12) .item:after {
+  content: "mbr-20-40";
+}
+
+.marginbox-bottom .filas:nth-child(12) .item-0 {
+  word-wrap: break-word;
+}
+
+.marginbox-bottom .filas:nth-child(12) .item-1:after {
+  content: "20px";
+}
+
+.marginbox-bottom .filas:nth-child(12) .item-2:after {
+  content: "40px";
+}
+
+.marginbox-bottom .filas:nth-child(12) .item-3:after {
+  content: "40px";
+}
+
+.marginbox-bottom .filas:nth-child(12) .item-4:after {
   content: "40px";
 }
 

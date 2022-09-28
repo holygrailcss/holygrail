@@ -212,3 +212,30 @@ input[type="button"], big, tt
 	}
 }
 }
+
+@mixin random-bgr() {
+    background: rgba(random(255), random(255), random(255), .5);
+  }
+  
+  @mixin debug-types($headers) {
+    @for $i from 1 through length($headers) {
+      .#{nth(map-keys($headers), $i)} {
+        position: relative;
+     
+        &:after {
+          content: "#{nth(map-keys($headers), $i)} ";
+          position: absolute;
+          @include random-bgr();
+          opacity: 0.7;
+          color: #000;
+          border-radius: 0%;
+          padding: 3px;
+          left: 0;
+          top: -13px;
+          font-size: 10px;
+          font-weight: bold;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
