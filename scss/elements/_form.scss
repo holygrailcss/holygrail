@@ -324,7 +324,7 @@ input::-webkit-input-placeholder {
     select:-webkit-autofill:focus {
       border: 1px solid $c-middle-grey;
       -webkit-text-fill-color: $primary;
-      -webkit-box-shadow: 0 0 0px 1000px $c-white inset;
+     box-shadow: 0 0 0px 1000px $c-white inset;
       transition: background-color 5000s ease-in-out 0s;
     }
 
@@ -784,7 +784,7 @@ $svg-size: 16px;
     select:-webkit-autofill:focus {
       border: 1px solid $c-middle-grey;
       -webkit-text-fill-color: $primary;
-      -webkit-box-shadow: 0 0 0px 1000px $c-white inset;
+      box-shadow: 0 0 0px 1000px $c-white inset;
       transition: background-color 5000s ease-in-out 0s;
     }
 }
@@ -869,7 +869,7 @@ $svg-size: 16px;
     select:-webkit-autofill:focus {
       border: 1px solid $c-white;
       -webkit-text-fill-color: $c-white;
-      -webkit-box-shadow: 0 0 0px 1000px $c-primary inset;
+    box-shadow: 0 0 0px 1000px $c-primary inset;
 
     }
      .input, .textarea, .select select {

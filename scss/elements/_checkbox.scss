@@ -89,7 +89,6 @@
         top: 5px;
         left: 5px;
         color:$primary;
-        -webkit-transition: all .2s;
         transition: all .2s;
     }
     [type="checkbox"]:not(:checked)+label .icon {
@@ -257,7 +256,6 @@
       height: 10px;
       background-color: $primary;
       border-radius: 50%;
-      -webkit-transition: all .2s;
       transition: all .2s;
     }
     [type="radio"]:not(:checked)+label .ico-radio {

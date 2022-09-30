@@ -397,7 +397,6 @@
   }
   
   @mixin box-shadow($shadow...) {
-      -webkit-box-shadow: $shadow; // iOS <4.3 & Android <4.1
       -moz-box-shadow: $shadow; 
       box-shadow: $shadow;
   }
@@ -663,7 +662,6 @@ $spriteHeight:400;
 @mixin transition($transition, $time, $timing: ease) {
 	-moz-transition:    $transition $time $timing;
     -o-transition:      $transition $time $timing;
-    -webkit-transition: $transition $time $timing;
     transition:         $transition $time $timing;
 }
 

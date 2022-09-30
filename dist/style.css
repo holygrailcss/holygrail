@@ -62,12 +62,10 @@ img {
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    -webkit-transform: translate(-50%, -100%);
     transform: translate(-50%, -100%);
   }
   to {
     opacity: 1;
-    -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
   }
 }
@@ -102,12 +100,10 @@ img {
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    -webkit-transform: translate(-50%, -100%);
     transform: translate(-50%, -100%);
   }
   to {
     opacity: 1;
-    -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
   }
 }
@@ -422,12 +418,10 @@ img {
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    -webkit-transform: translate(-50%, -100%);
     transform: translate(-50%, -100%);
   }
   to {
     opacity: 1;
-    -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
   }
 }
@@ -1223,12 +1217,10 @@ img {
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    -webkit-transform: translate(-50%, -100%);
     transform: translate(-50%, -100%);
   }
   to {
     opacity: 1;
-    -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
   }
 }
@@ -1329,12 +1321,10 @@ img {
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    -webkit-transform: translate(-50%, -100%);
     transform: translate(-50%, -100%);
   }
   to {
     opacity: 1;
-    -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
   }
 }
@@ -1405,12 +1395,10 @@ svg-icon.ico-success path {
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    -webkit-transform: translate(-50%, -100%);
     transform: translate(-50%, -100%);
   }
   to {
     opacity: 1;
-    -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
   }
 }
@@ -1459,12 +1447,10 @@ svg-icon.ico-success path {
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    -webkit-transform: translate(-50%, -100%);
     transform: translate(-50%, -100%);
   }
   to {
     opacity: 1;
-    -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
   }
 }
@@ -1960,12 +1946,10 @@ svg-icon.ico-success path {
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    -webkit-transform: translate(-50%, -100%);
     transform: translate(-50%, -100%);
   }
   to {
     opacity: 1;
-    -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
   }
 }
@@ -3344,12 +3328,10 @@ svg-icon.ico-success path {
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    -webkit-transform: translate(-50%, -100%);
     transform: translate(-50%, -100%);
   }
   to {
     opacity: 1;
-    -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
   }
 }
@@ -4695,12 +4677,10 @@ mark {
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    -webkit-transform: translate(-50%, -100%);
     transform: translate(-50%, -100%);
   }
   to {
     opacity: 1;
-    -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
   }
 }
@@ -4866,7 +4846,6 @@ mark {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
@@ -5355,12 +5334,10 @@ strong {
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    -webkit-transform: translate(-50%, -100%);
     transform: translate(-50%, -100%);
   }
   to {
     opacity: 1;
-    -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
   }
 }
@@ -5390,22 +5367,18 @@ strong {
 
 @-webkit-keyframes bounce {
   0% {
-    -webkit-transform: translateZ(0);
     transform: translateZ(0);
   }
   to {
-    -webkit-transform: translate3d(0, -15px, 0);
     transform: translate3d(0, -15px, 0);
   }
 }
 
 @keyframes bounce {
   0% {
-    -webkit-transform: translateZ(0);
     transform: translateZ(0);
   }
   to {
-    -webkit-transform: translate3d(0, -15px, 0);
     transform: translate3d(0, -15px, 0);
   }
 }
@@ -5416,7 +5389,6 @@ strong {
   left: 50%;
   z-index: 3;
   opacity: 1;
-  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
@@ -5429,7 +5401,6 @@ strong {
   height: 12px;
   border-radius: 50%;
   background: #292929;
-  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
@@ -5442,7 +5413,6 @@ strong {
   height: 0;
   border-radius: 2px;
   background: #292929;
-  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   -webkit-animation: stretch 1s 1.5s cubic-bezier(0.55, 0.085, 0, 0.99) forwards;
   animation: stretch 1s 1.5s cubic-bezier(0.55, 0.085, 0, 0.99) forwards;
@@ -5490,12 +5460,10 @@ strong {
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    -webkit-transform: translate(-50%, -100%);
     transform: translate(-50%, -100%);
   }
   to {
     opacity: 1;
-    -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
   }
 }
@@ -5624,12 +5592,10 @@ strong {
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    -webkit-transform: translate(-50%, -100%);
     transform: translate(-50%, -100%);
   }
   to {
     opacity: 1;
-    -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
   }
 }
@@ -6209,21 +6175,8 @@ strong {
   animation: spin 1.6s ease-in-out infinite;
 }
 
-@-moz-keyframes spin {
-  100% {
-    -moz-transform: rotate(-360deg);
-  }
-}
-
-@-webkit-keyframes spin {
-  100% {
-    -webkit-transform: rotate(-360deg);
-  }
-}
-
 @keyframes spin {
   100% {
-    -webkit-transform: rotate(-360deg);
     transform: rotate(-360deg);
   }
 }
@@ -6539,12 +6492,10 @@ strong {
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    -webkit-transform: translate(-50%, -100%);
     transform: translate(-50%, -100%);
   }
   to {
     opacity: 1;
-    -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
   }
 }
@@ -6652,7 +6603,6 @@ strong {
   top: 5px;
   left: 5px;
   color: #292929;
-  -webkit-transition: all .2s;
   transition: all .2s;
 }
 
@@ -6838,7 +6788,6 @@ strong {
   height: 10px;
   background-color: #292929;
   border-radius: 50%;
-  -webkit-transition: all .2s;
   transition: all .2s;
 }
 
@@ -7139,12 +7088,10 @@ strong {
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    -webkit-transform: translate(-50%, -100%);
     transform: translate(-50%, -100%);
   }
   to {
     opacity: 1;
-    -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
   }
 }
@@ -7516,7 +7463,7 @@ input::-webkit-input-placeholder {
 .form-input-label select:-webkit-autofill:focus {
   border: 1px solid #E3E3E3;
   -webkit-text-fill-color: #292929;
-  -webkit-box-shadow: 0 0 0px 1000px #FFFFFF inset;
+  box-shadow: 0 0 0px 1000px #FFFFFF inset;
   transition: background-color 5000s ease-in-out 0s;
 }
 
@@ -8002,7 +7949,7 @@ input::-webkit-input-placeholder {
 .error-zone select:-webkit-autofill:focus {
   border: 1px solid #E3E3E3;
   -webkit-text-fill-color: #292929;
-  -webkit-box-shadow: 0 0 0px 1000px #FFFFFF inset;
+  box-shadow: 0 0 0px 1000px #FFFFFF inset;
   transition: background-color 5000s ease-in-out 0s;
 }
 
@@ -8081,7 +8028,7 @@ input::-webkit-input-placeholder {
 .has-light .form-input-prefix select:-webkit-autofill:focus {
   border: 1px solid #FFFFFF;
   -webkit-text-fill-color: #FFFFFF;
-  -webkit-box-shadow: 0 0 0px 1000px #292929 inset;
+  box-shadow: 0 0 0px 1000px #292929 inset;
 }
 
 .has-light .form-input-label .input, .has-light .form-input-label .textarea, .has-light .form-input-label .select select, .has-light .form-input-prefix .input, .has-light .form-input-prefix .textarea, .has-light .form-input-prefix .select select {
@@ -8125,12 +8072,10 @@ input::-webkit-input-placeholder {
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    -webkit-transform: translate(-50%, -100%);
     transform: translate(-50%, -100%);
   }
   to {
     opacity: 1;
-    -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
   }
 }
@@ -8188,7 +8133,6 @@ a:hover {
 }
 
 .link2:hover::after {
-  -webkit-transform: scaleX(1);
   -ms-transform: scaleX(1);
   transform: scaleX(1);
 }
@@ -8267,7 +8211,6 @@ a:hover {
 }
 
 .link5:hover::after, u:hover::after {
-  -webkit-transform: scaleX(1);
   -ms-transform: scaleX(1);
   transform: scaleX(1);
 }
@@ -8756,12 +8699,10 @@ button.link-line.link-svg-post {
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    -webkit-transform: translate(-50%, -100%);
     transform: translate(-50%, -100%);
   }
   to {
     opacity: 1;
-    -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
   }
 }
@@ -9021,12 +8962,10 @@ ul.list-mini > li:after {
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    -webkit-transform: translate(-50%, -100%);
     transform: translate(-50%, -100%);
   }
   to {
     opacity: 1;
-    -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
   }
 }
@@ -9079,12 +9018,10 @@ ul.list-mini > li:after {
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    -webkit-transform: translate(-50%, -100%);
     transform: translate(-50%, -100%);
   }
   to {
     opacity: 1;
-    -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
   }
 }
@@ -9369,12 +9306,10 @@ ul.list-mini > li:after {
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    -webkit-transform: translate(-50%, -100%);
     transform: translate(-50%, -100%);
   }
   to {
     opacity: 1;
-    -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
   }
 }
@@ -9463,12 +9398,10 @@ ul.list-mini > li:after {
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    -webkit-transform: translate(-50%, -100%);
     transform: translate(-50%, -100%);
   }
   to {
     opacity: 1;
-    -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
   }
 }
@@ -9526,12 +9459,10 @@ ul.list-mini > li:after {
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    -webkit-transform: translate(-50%, -100%);
     transform: translate(-50%, -100%);
   }
   to {
     opacity: 1;
-    -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
   }
 }
@@ -9621,12 +9552,10 @@ ul.list-mini > li:after {
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    -webkit-transform: translate(-50%, -100%);
     transform: translate(-50%, -100%);
   }
   to {
     opacity: 1;
-    -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
   }
 }
@@ -9877,12 +9806,10 @@ ul.list-clear li.list-box:last-child {
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    -webkit-transform: translate(-50%, -100%);
     transform: translate(-50%, -100%);
   }
   to {
     opacity: 1;
-    -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
   }
 }
@@ -10047,12 +9974,10 @@ ul.list-clear li.list-box:last-child {
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    -webkit-transform: translate(-50%, -100%);
     transform: translate(-50%, -100%);
   }
   to {
     opacity: 1;
-    -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
   }
 }
@@ -10100,12 +10025,10 @@ ul.list-clear li.list-box:last-child {
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    -webkit-transform: translate(-50%, -100%);
     transform: translate(-50%, -100%);
   }
   to {
     opacity: 1;
-    -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
   }
 }
@@ -10255,12 +10178,10 @@ ul.list-clear li.list-box:last-child {
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    -webkit-transform: translate(-50%, -100%);
     transform: translate(-50%, -100%);
   }
   to {
     opacity: 1;
-    -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
   }
 }
@@ -10364,12 +10285,10 @@ ul.list-clear li.list-box:last-child {
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    -webkit-transform: translate(-50%, -100%);
     transform: translate(-50%, -100%);
   }
   to {
     opacity: 1;
-    -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
   }
 }
@@ -10460,7 +10379,6 @@ ul.list-clear li.list-box:last-child {
   height: 100%;
   top: 0px;
   opacity: 1;
-  -webkit-transition: opacity 0.25s ease;
   transition: opacity 0.25s ease;
 }
 
@@ -10710,12 +10628,10 @@ img {
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    -webkit-transform: translate(-50%, -100%);
     transform: translate(-50%, -100%);
   }
   to {
     opacity: 1;
-    -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
   }
 }
@@ -10819,12 +10735,10 @@ img {
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    -webkit-transform: translate(-50%, -100%);
     transform: translate(-50%, -100%);
   }
   to {
     opacity: 1;
-    -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
   }
 }
@@ -10924,12 +10838,10 @@ img {
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    -webkit-transform: translate(-50%, -100%);
     transform: translate(-50%, -100%);
   }
   to {
     opacity: 1;
-    -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
   }
 }
@@ -11302,12 +11214,10 @@ img {
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    -webkit-transform: translate(-50%, -100%);
     transform: translate(-50%, -100%);
   }
   to {
     opacity: 1;
-    -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
   }
 }
@@ -11504,12 +11414,10 @@ img {
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    -webkit-transform: translate(-50%, -100%);
     transform: translate(-50%, -100%);
   }
   to {
     opacity: 1;
-    -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
   }
 }
@@ -11594,12 +11502,10 @@ img {
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    -webkit-transform: translate(-50%, -100%);
     transform: translate(-50%, -100%);
   }
   to {
     opacity: 1;
-    -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
   }
 }

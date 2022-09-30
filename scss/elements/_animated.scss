@@ -25,24 +25,20 @@
 
 @-webkit-keyframes bounce {
     0% {
-        -webkit-transform: translateZ(0);
         transform: translateZ(0)
     }
 
     to {
-        -webkit-transform: translate3d(0, -15px, 0);
         transform: translate3d(0, -15px, 0)
     }
 }
 
 @keyframes bounce {
     0% {
-        -webkit-transform: translateZ(0);
         transform: translateZ(0)
     }
 
     to {
-        -webkit-transform: translate3d(0, -15px, 0);
         transform: translate3d(0, -15px, 0)
     }
 }
@@ -54,7 +50,6 @@
     left: 50%;
     z-index: 3;
     opacity: 1;
-    -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
 
     &:before {
@@ -66,7 +61,6 @@
         height: 12px;
         border-radius: 50%;
         background: $primary;
-        -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
     }
 
@@ -79,7 +73,6 @@
         height: 0;
         border-radius: 2px;
         background: $primary;
-        -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
         -webkit-animation: stretch 1s 1.5s cubic-bezier(0.55, 0.085, 0, 0.99) forwards;
         animation: stretch 1s 1.5s cubic-bezier(0.55, 0.085, 0, 0.99) forwards;
