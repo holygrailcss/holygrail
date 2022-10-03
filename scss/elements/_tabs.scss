@@ -20,60 +20,27 @@
         flex-shrink: 0;
         justify-content: flex-start;
         margin: 0;
-        font-size: 14px;
-        @include font-bold();
+        // font-size: 14px;
+        @include font-regular();
     }
     li {
         display: block;
         margin: 0;
-        &.is-active a {
-            border-bottom-color: $c-primary;
-            border-bottom-width: 2px;
-            padding-bottom: $padding-global * 2 - 0;
-            color: $c-primary;
-        }
-        &.is-active span {
-            border-bottom-color: $c-primary;
-            border-bottom-width: 2px;
-            padding-bottom: $padding-global * 2 - 0;
-            color: $c-primary;
-        }
-        &:after {
-            display: none;
-        }
-    }
-    a {
-        align-items: center;
-        border-bottom-color: $c-middle-grey;
-        border-bottom-style: solid;
-        border-bottom-width: 1px;
-        color: $c-primary;
-        display: flex;
-        justify-content: center;
-        margin-bottom: -1px;
-        padding: $padding-global * 2;
-        vertical-align: top;
-        padding-bottom: $padding-global * 2 + 1;
-        &:hover {
-            border-bottom-color: $c-primary;
-            border-bottom-width: 2px;
-            padding-bottom: $padding-global * 2 - 0;
-            color: $c-primary;
-            cursor: pointer;
-        }
-    }
+
+        a,
     span {
         align-items: center;
         border-bottom-color: $c-middle-grey;
         border-bottom-style: solid;
         border-bottom-width: 1px;
-        color: $c-primary;
+        color: $c-dark-grey;
         display: flex;
         justify-content: center;
         margin-bottom: -1px;
         padding: $padding-global * 2;
         vertical-align: top;
         padding-bottom: $padding-global * 2 + 1;
+        font-size: 14px;
         &:hover {
             border-bottom-color: $c-primary;
             border-bottom-width: 2px;
@@ -82,6 +49,21 @@
             cursor: pointer;
         }
     }
+    
+        &.is-active a,
+        &.is-active span {
+            border-bottom-color: $c-primary;
+            border-bottom-width: 2px;
+            padding-bottom: $padding-global * 2 - 0;
+            color: $c-primary;
+            @include font-bold();
+        }
+        &:after {
+            display: none;
+        }
+    }
+    
+    
     &.is-center ul {
         justify-content: center;
     }
