@@ -8565,6 +8565,10 @@ button.link-line {
   opacity: 0.6;
 }
 
+.is-error .link-line {
+  background-image: linear-gradient(transparent calc(100% - 1px), #B40016 10px);
+}
+
 .link-raw {
   font-family: Arial, sans-serif;
   font-weight: 600;
