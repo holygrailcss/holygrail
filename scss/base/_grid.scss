@@ -9,7 +9,7 @@
     margin-right: auto;
     margin-left: auto;
     position: relative;
-    max-width: 800px;
+    max-width: $container;
     @media (min-width: $break-sm) {
  
         padding-right: $padding-global;
@@ -34,7 +34,7 @@
     margin-right: auto;
     margin-left: auto;
     position: relative;
-    max-width: 800px;
+    max-width: $container;
     @media (min-width: $break-sm) {
 
         padding-right: $padding-global;
@@ -99,7 +99,7 @@
     width: 100%;
     max-width: $container-5;
     @media (min-width: $break-sm) {
-        max-width: 800px;
+        max-width: $container;
     }
     @media (min-width: $break-lg) {
         max-width: 1000px;
