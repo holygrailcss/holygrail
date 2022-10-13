@@ -3621,14 +3621,14 @@ mark {
   }
   .h4 {
     font-family: Arial, sans-serif;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 16px;
     line-height: 1.2;
   }
   .h5 {
     font-family: Arial, sans-serif;
-    font-weight: 600;
-    font-size: 14px;
+    font-weight: 700;
+    font-size: 16px;
     line-height: 1.2;
   }
   .h6 {
@@ -3649,10 +3649,22 @@ mark {
     font-size: 8px;
     line-height: 1.2;
   }
+  .h9 {
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.2;
+  }
   .display1 {
     font-family: Arial, sans-serif;
     font-weight: 700;
     font-size: 32px;
+    line-height: 1.2;
+  }
+  .prod {
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    font-size: 12px;
     line-height: 1.2;
   }
   .display2 {
@@ -3691,10 +3703,16 @@ mark {
     font-size: 14px;
     line-height: 1.5;
   }
+  .subtitle {
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+  }
   .p1 {
     font-family: Arial, sans-serif;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.4;
   }
   .p2 {
@@ -3703,10 +3721,100 @@ mark {
     font-size: 14px;
     line-height: 1.4;
   }
+  .p3 {
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.4;
+  }
   .p4 {
     font-family: Arial, sans-serif;
     font-weight: 600;
     font-size: 14px;
+    line-height: 1.4;
+  }
+  .tit-l {
+    font-family: monospace, sans-serif;
+    font-size: 24px;
+    line-height: 1.4;
+  }
+  .tit-m {
+    font-family: monospace, sans-serif;
+    font-size: 20px;
+    line-height: 1.4;
+  }
+  .tit-s {
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  .tit-xs {
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .head-l {
+    font-family: monospace, sans-serif;
+    font-size: 56px;
+    line-height: 1.4;
+  }
+  .head-m {
+    font-family: monospace, sans-serif;
+    font-size: 42px;
+    line-height: 1.4;
+  }
+  .head-s {
+    font-family: monospace, sans-serif;
+    font-size: 32px;
+    line-height: 1.4;
+  }
+  .p-l {
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.4;
+  }
+  .p-m {
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .p-m-b {
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .p-s {
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.4;
+  }
+  .p-xs {
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.4;
+  }
+  .p-xs-b {
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 1.4;
+  }
+  .h10 {
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  .h11 {
+    font-family: monospace, sans-serif;
+    font-size: 16px;
     line-height: 1.4;
   }
 }
@@ -3729,7 +3837,7 @@ mark {
     line-height: 1.2;
   }
   .h5 {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.2;
   }
   .h6 {
@@ -3744,8 +3852,16 @@ mark {
     font-size: 8px;
     line-height: 1.2;
   }
+  .h9 {
+    font-size: 16px;
+    line-height: 1.2;
+  }
   .display1 {
     font-size: 32px;
+    line-height: 1.2;
+  }
+  .prod {
+    font-size: 12px;
     line-height: 1.2;
   }
   .display2 {
@@ -3772,16 +3888,84 @@ mark {
     font-size: 14px;
     line-height: 1.5;
   }
+  .subtitle {
+    font-size: 14px;
+    line-height: 1.4;
+  }
   .p1 {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.4;
   }
   .p2 {
     font-size: 14px;
     line-height: 1.4;
   }
+  .p3 {
+    font-size: 14px;
+    line-height: 1.4;
+  }
   .p4 {
     font-size: 14px;
+    line-height: 1.4;
+  }
+  .tit-l {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+  .tit-m {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+  .tit-s {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  .tit-xs {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .head-l {
+    font-size: 56px;
+    line-height: 1.4;
+  }
+  .head-m {
+    font-size: 42px;
+    line-height: 1.4;
+  }
+  .head-s {
+    font-size: 32px;
+    line-height: 1.4;
+  }
+  .p-l {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+  .p-m {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .p-m-b {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .p-s {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+  .p-xs {
+    font-size: 10px;
+    line-height: 1.4;
+  }
+  .p-xs-b {
+    font-size: 10px;
+    line-height: 1.4;
+  }
+  .h10 {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  .h11 {
+    font-size: 16px;
     line-height: 1.4;
   }
 }
@@ -3804,7 +3988,7 @@ mark {
     line-height: 1.2;
   }
   .h5 {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.2;
   }
   .h6 {
@@ -3819,8 +4003,16 @@ mark {
     font-size: 8px;
     line-height: 1.2;
   }
+  .h9 {
+    font-size: 16px;
+    line-height: 1.2;
+  }
   .display1 {
     font-size: 32px;
+    line-height: 1.2;
+  }
+  .prod {
+    font-size: 14px;
     line-height: 1.2;
   }
   .display2 {
@@ -3847,16 +4039,84 @@ mark {
     font-size: 14px;
     line-height: 1.5;
   }
+  .subtitle {
+    font-size: 14px;
+    line-height: 1.4;
+  }
   .p1 {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.4;
   }
   .p2 {
     font-size: 16px;
     line-height: 1.4;
   }
+  .p3 {
+    font-size: 14px;
+    line-height: 1.4;
+  }
   .p4 {
     font-size: 16px;
+    line-height: 1.4;
+  }
+  .tit-l {
+    font-size: 42px;
+    line-height: 1.4;
+  }
+  .tit-m {
+    font-size: 32px;
+    line-height: 1.4;
+  }
+  .tit-s {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+  .tit-xs {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .head-l {
+    font-size: 96px;
+    line-height: 1.4;
+  }
+  .head-m {
+    font-size: 64px;
+    line-height: 1.4;
+  }
+  .head-s {
+    font-size: 56px;
+    line-height: 1.4;
+  }
+  .p-l {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+  .p-m {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  .p-m-b {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  .p-s {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .p-xs {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+  .p-xs-b {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+  .h10 {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+  .h11 {
+    font-size: 24px;
     line-height: 1.4;
   }
 }
@@ -3894,8 +4154,16 @@ mark {
     font-size: 10px;
     line-height: 1.2;
   }
+  .h9 {
+    font-size: 18px;
+    line-height: 1.2;
+  }
   .display1 {
     font-size: 48px;
+    line-height: 1.2;
+  }
+  .prod {
+    font-size: 14px;
     line-height: 1.2;
   }
   .display2 {
@@ -3922,6 +4190,10 @@ mark {
     font-size: 18px;
     line-height: 1.5;
   }
+  .subtitle {
+    font-size: 14px;
+    line-height: 1.4;
+  }
   .p1 {
     font-size: 14px;
     line-height: 1.4;
@@ -3930,8 +4202,72 @@ mark {
     font-size: 18px;
     line-height: 1.4;
   }
+  .p3 {
+    font-size: 14px;
+    line-height: 1.4;
+  }
   .p4 {
     font-size: 18px;
+    line-height: 1.4;
+  }
+  .tit-l {
+    font-size: 42px;
+    line-height: 1.4;
+  }
+  .tit-m {
+    font-size: 32px;
+    line-height: 1.4;
+  }
+  .tit-s {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+  .tit-xs {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .head-l {
+    font-size: 96px;
+    line-height: 1.4;
+  }
+  .head-m {
+    font-size: 64px;
+    line-height: 1.4;
+  }
+  .head-s {
+    font-size: 56px;
+    line-height: 1.4;
+  }
+  .p-l {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+  .p-m {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  .p-m-b {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  .p-s {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .p-xs {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+  .p-xs-b {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+  .h10 {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+  .h11 {
+    font-size: 24px;
     line-height: 1.4;
   }
 }
