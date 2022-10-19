@@ -379,6 +379,13 @@ button.link-line{
         opacity: $opacity-links;
     }
 
+    &.c-feel-dark{
+        background-image: linear-gradient(transparent calc(100% - 1px), $c-feel-dark 10px);
+    }
+    
+    &.c-feel{
+        background-image: linear-gradient(transparent calc(100% - 1px), $c-feel 10px);
+    }
 }
 
 .is-error{

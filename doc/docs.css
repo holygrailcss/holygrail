@@ -5149,6 +5149,10 @@ mark {
   color: #fb9962;
 }
 
+.c-feel-dark {
+  color: #C94C07;
+}
+
 .c-limited {
   color: #000000;
 }
@@ -8899,6 +8903,14 @@ button.link-line {
 
 .link-line:hover {
   opacity: 0.6;
+}
+
+.link-line.c-feel-dark {
+  background-image: linear-gradient(transparent calc(100% - 1px), #C94C07 10px);
+}
+
+.link-line.c-feel {
+  background-image: linear-gradient(transparent calc(100% - 1px), #fb9962 10px);
 }
 
 .is-error .link-line {
