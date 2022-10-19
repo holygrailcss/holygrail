@@ -46,7 +46,7 @@ ul.list-disc {
 
 
 
-//   -LISTA HORIZONTAL LIMPIA    
+//   -LISTA HORIZONTAL LIMPIA todo repetido 
  
 
 ul.list-inline {
@@ -62,6 +62,22 @@ ul.list-inline {
     }
   }
 }
+
+
+ul.list-inline-flex {
+  margin: 0px;
+  padding: 0px;
+  li {
+    display: inline-flex;
+    padding: 0 $padding-global / 2;
+    margin: 0;
+
+    &:after {
+      display: none
+    }
+  }
+}
+
 
 
 //   -LISTA HORIZONTAL LIMPIA    
