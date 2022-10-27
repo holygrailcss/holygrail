@@ -7372,6 +7372,8 @@ strong {
   margin-right: 40px;
 }
 
+.is-rtl [type="radio"]:not(:checked),
+.is-rtl [type="radio"]:checked,
 .is-rtl .checkbox-card [type=radio] {
   left: 9999px;
 }

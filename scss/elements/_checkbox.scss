@@ -511,6 +511,8 @@ left: 0;
     }
   }
 
+  [type="radio"]:not(:checked),
+  [type="radio"]:checked,
   .checkbox-card [type=radio]{
     left: 9999px;
   }
