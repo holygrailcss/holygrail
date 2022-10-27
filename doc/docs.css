@@ -7450,6 +7450,15 @@ strong {
   margin-right: 40px;
 }
 
+.is-rtl .checkbox-card [type=radio] {
+  left: 9999px;
+}
+
+.is-rtl .checkbox-item-2 [type=checkbox]:not(:checked),
+.is-rtl .checkbox-item-2 [type=checkbox]:checked {
+  left: 9999px;
+}
+
 .has-light .checkbox-item .ico-check:after {
   background-color: transparent;
 }
@@ -9186,6 +9195,21 @@ ul.list-inline li {
 }
 
 ul.list-inline li:after {
+  display: none;
+}
+
+ul.list-inline-flex {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul.list-inline-flex li {
+  display: inline-flex;
+  padding: 0 4px;
+  margin: 0;
+}
+
+ul.list-inline-flex li:after {
   display: none;
 }
 
