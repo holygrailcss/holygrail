@@ -5722,6 +5722,18 @@ strong {
   width: 100%;
 }
 
+.mw-sm {
+  max-width: 356px;
+}
+
+.mw-md {
+  max-width: 432px;
+}
+
+.mw-lg {
+  max-width: 798px;
+}
+
 @keyframes underline {
   0% {
     width: 0;

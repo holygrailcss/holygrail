@@ -542,3 +542,16 @@ strong {
 .w-100 {
     width: 100%;
 }
+
+.mw-sm{
+    max-width: $container-4;
+}
+
+.mw-md{
+    max-width: $container-10;
+}
+.mw-lg{
+    max-width: $container-9;
+}
+
+

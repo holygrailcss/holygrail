@@ -70,7 +70,7 @@ $font-weight-secondary-bold:700!default;
  $height-inputs: 48px!default;
 
 // maxwidth del container
-$container: 800px !default;
+$container:   800px !default;
 $container-2: 700px!default;
 $container-3: 900px!default;
 $container-4: 356px!default;
@@ -79,6 +79,7 @@ $container-6: 442px!default;
 $container-7: 595px!default;
 $container-8: 395px!default;
 $container-9: 798px!default;
+$container-10:432px!default;
 
 
 $transition:278ms;
@@ -236,6 +237,7 @@ my-8: (8px 0, 8px 0, 8px 0, 8px 0),
 my-16: (16px 0, 16px 0, 16px 0, 16px 0),
 my-24: (24px 0, 24px 0, 24px 0, 24px 0),
 my-32: (32px 0, 32px 0, 32px 0, 32px 0),
+my-40: (40px 0, 40px 0, 40px 0, 40px 0),
 my-48: (20px 0, 48px 0, 48px 0, 48px 0)
 )!default;
 $mt: "margin-top";
