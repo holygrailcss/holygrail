@@ -2063,6 +2063,9 @@ svg-icon.ico-success path {
   .my-32 {
     margin: 32px 0;
   }
+  .my-40 {
+    margin: 40px 0;
+  }
   .my-48 {
     margin: 20px 0;
   }
@@ -2080,6 +2083,9 @@ svg-icon.ico-success path {
   }
   .my-32 {
     margin: 32px 0;
+  }
+  .my-40 {
+    margin: 40px 0;
   }
   .my-48 {
     margin: 48px 0;
@@ -2099,6 +2105,9 @@ svg-icon.ico-success path {
   .my-32 {
     margin: 32px 0;
   }
+  .my-40 {
+    margin: 40px 0;
+  }
   .my-48 {
     margin: 48px 0;
   }
@@ -2116,6 +2125,9 @@ svg-icon.ico-success path {
   }
   .my-32 {
     margin: 32px 0;
+  }
+  .my-40 {
+    margin: 40px 0;
   }
   .my-48 {
     margin: 48px 0;
@@ -6593,7 +6605,7 @@ strong {
   border-radius: 8px;
   background-color: #FFFFFF;
   position: absolute;
-  top: 1px;
+  top: 0;
   left: 1px;
   width: 46px;
   height: 46px;
@@ -6634,7 +6646,7 @@ strong {
 .btn-social.btn--full.btn-google {
   background-color: #4285f4;
   color: #FFFFFF;
-  padding-left: 54px;
+  padding-left: 60px;
 }
 
 .btn-social.btn-google svg-icon,
@@ -6780,7 +6792,7 @@ strong {
 }
 
 .is-rtl .btn-social.btn-google {
-  padding-right: 54px;
+  padding-right: 60px;
   padding-left: 0px;
 }
 

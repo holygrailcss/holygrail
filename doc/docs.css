@@ -2135,6 +2135,9 @@ svg-icon.ico-success path {
   .my-32 {
     margin: 32px 0;
   }
+  .my-40 {
+    margin: 40px 0;
+  }
   .my-48 {
     margin: 20px 0;
   }
@@ -2152,6 +2155,9 @@ svg-icon.ico-success path {
   }
   .my-32 {
     margin: 32px 0;
+  }
+  .my-40 {
+    margin: 40px 0;
   }
   .my-48 {
     margin: 48px 0;
@@ -2171,6 +2177,9 @@ svg-icon.ico-success path {
   .my-32 {
     margin: 32px 0;
   }
+  .my-40 {
+    margin: 40px 0;
+  }
   .my-48 {
     margin: 48px 0;
   }
@@ -2188,6 +2197,9 @@ svg-icon.ico-success path {
   }
   .my-32 {
     margin: 32px 0;
+  }
+  .my-40 {
+    margin: 40px 0;
   }
   .my-48 {
     margin: 48px 0;
@@ -6671,7 +6683,7 @@ strong {
   border-radius: 8px;
   background-color: #FFFFFF;
   position: absolute;
-  top: 1px;
+  top: 0;
   left: 1px;
   width: 46px;
   height: 46px;
@@ -6712,7 +6724,7 @@ strong {
 .btn-social.btn--full.btn-google {
   background-color: #4285f4;
   color: #FFFFFF;
-  padding-left: 54px;
+  padding-left: 60px;
 }
 
 .btn-social.btn-google svg-icon,
@@ -6858,7 +6870,7 @@ strong {
 }
 
 .is-rtl .btn-social.btn-google {
-  padding-right: 54px;
+  padding-right: 60px;
   padding-left: 0px;
 }
 
@@ -16836,7 +16848,7 @@ ul.list-clear li.list-box:last-child {
 }
 
 .marginbox-y .filas:nth-child(5) .item:after {
-  content: "my-48";
+  content: "my-40";
 }
 
 .marginbox-y .filas:nth-child(5) .item-0 {
@@ -16844,18 +16856,42 @@ ul.list-clear li.list-box:last-child {
 }
 
 .marginbox-y .filas:nth-child(5) .item-1:after {
-  content: "20px 0";
+  content: "40px 0";
 }
 
 .marginbox-y .filas:nth-child(5) .item-2:after {
-  content: "48px 0";
+  content: "40px 0";
 }
 
 .marginbox-y .filas:nth-child(5) .item-3:after {
-  content: "48px 0";
+  content: "40px 0";
 }
 
 .marginbox-y .filas:nth-child(5) .item-4:after {
+  content: "40px 0";
+}
+
+.marginbox-y .filas:nth-child(6) .item:after {
+  content: "my-48";
+}
+
+.marginbox-y .filas:nth-child(6) .item-0 {
+  word-wrap: break-word;
+}
+
+.marginbox-y .filas:nth-child(6) .item-1:after {
+  content: "20px 0";
+}
+
+.marginbox-y .filas:nth-child(6) .item-2:after {
+  content: "48px 0";
+}
+
+.marginbox-y .filas:nth-child(6) .item-3:after {
+  content: "48px 0";
+}
+
+.marginbox-y .filas:nth-child(6) .item-4:after {
   content: "48px 0";
 }
 

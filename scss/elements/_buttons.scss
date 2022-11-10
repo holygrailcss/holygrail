@@ -634,7 +634,6 @@ $btn-text-full: 14px;
 .btn-social.btn--full {
     height: 48px;
     cursor: pointer;
-    font-weight: bold;
     border-radius: 8px;
     border: none;
     display: flex;
@@ -654,7 +653,7 @@ $btn-text-full: 14px;
         border-radius: 8px;
         background-color: $c-white;
         position: absolute;
-        top: 1px;
+        top: 0;
         left: 1px;
         width: 46px;
         height: 46px;
@@ -679,7 +678,7 @@ $btn-text-full: 14px;
     &.btn-google {
         background-color: $c-google;
         color: $c-white;
-        padding-left: 54px;
+        padding-left: 60px;
         svg-icon {
             background-color: $c-white;
             border: 1px solid $c-google;
@@ -792,7 +791,7 @@ $btn-text-full: 14px;
             left: auto;
         }
         &.btn-google {
-            padding-right: 54px;
+            padding-right: 60px;
             padding-left: 0px;
         }
         &.btn-naver {
