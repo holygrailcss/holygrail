@@ -1,4 +1,5 @@
-@import "../abstract/_all.scss";  // este está duplicado en el proyecto de dutti. 
+@use 'sass:math';
+@import "../abstract/_all.scss";  // este está duplicado en el proyecto de dutti.
 
 $tooltipArrow: 10px;
 $tooltipColor: #e3e3e3;
@@ -12,9 +13,9 @@ $tooltipdist: 18px;
   width: 100%;
   max-width: 327px;
   z-index:10;
-  
+
   &::after {
-    top: -$tooltipArrow/2 - 1;
+    top: math.div(-$tooltipArrow, 2) - 1;
     right: $tooltipdist;
     content: "";
     position: absolute;

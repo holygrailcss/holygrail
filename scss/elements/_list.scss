@@ -1,10 +1,11 @@
+@use 'sass:math';
 @import "../abstract/_all.scss";
 $list-disc:4px;
 $list-disc-color:#292929;
 
 
-//   -LISTA CON BULLET    
- 
+//   -LISTA CON BULLET
+
 ul.list-disc {
   list-style: none;
   margin: $padding-global*2 0;
@@ -20,7 +21,7 @@ ul.list-disc {
       height: $list-disc;
       position: absolute;
       left: 0;
-      margin-top: -$list-disc / 4; 
+      margin-top: -#{math.div($list-disc, 4)};
       top: 50%;
       transform: translateY(-50%);
     }
@@ -46,15 +47,15 @@ ul.list-disc {
 
 
 
-//   -LISTA HORIZONTAL LIMPIA todo repetido 
- 
+//   -LISTA HORIZONTAL LIMPIA todo repetido
+
 
 ul.list-inline {
   margin: 0px;
   padding: 0px;
   li {
     display: inline-flex;
-    padding: 0 $padding-global / 2;
+    padding: 0 math.div($padding-global, 2);
     margin: 0;
 
     &:after {
@@ -69,7 +70,7 @@ ul.list-inline-flex {
   padding: 0px;
   li {
     display: inline-flex;
-    padding: 0 $padding-global / 2;
+    padding: 0 math.div($padding-global, 2);
     margin: 0;
 
     &:after {
@@ -80,8 +81,8 @@ ul.list-inline-flex {
 
 
 
-//   -LISTA HORIZONTAL LIMPIA    
- 
+//   -LISTA HORIZONTAL LIMPIA
+
 
  ul.list-inline-clear {
   margin: 0px;
@@ -99,10 +100,10 @@ ul.list-inline-flex {
 
 
 
-//   -LISTA VERTICAL LIMPIA    
- 
- 
- 
+//   -LISTA VERTICAL LIMPIA
+
+
+
 ul.list-clear {
   li {
     list-style: none;
@@ -115,8 +116,8 @@ ul.list-clear {
 
 
 
-//   -LISTA DE SELECTOR DE TALLAS    
- 
+//   -LISTA DE SELECTOR DE TALLAS
+
 ul.h-size-selector {
   a {
     position: relative;
@@ -145,8 +146,8 @@ ul.h-size-selector {
 }
 
 
-//   -LISTA DE PASSWORD CHECK    
- 
+//   -LISTA DE PASSWORD CHECK
+
 
  ul.list-mini {
   margin: 8px 0;
@@ -198,7 +199,7 @@ ul.h-size-selector {
     opacity: 1;
     cursor: pointer;
   }
-  
+
 }
 .list-box:first-child{
 left: 0px;
@@ -212,7 +213,7 @@ left: 0px;
   .list-box:last-child{
     left: -2px;
     }
-    
+
 }
 
 

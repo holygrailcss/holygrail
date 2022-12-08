@@ -1,17 +1,15 @@
 {
     "name": "holygrailcss",
-
-    "version": "1.9.14",
-
+    "version": "1.9.15",
     "description": "A minimal, responsive, style-agnostic CSS framework.",
     "main": "scss/style.scss",
     "directories": {
         "lib": "scss"
     },
     "scripts": {
-        "docs": "node-sass scss/docs.scss doc/docs.css --output-style expanded && node-sass scss/docs.scss doc/docs.min.css --output-style compressed",
-        "build": "node-sass scss/style.scss dist/style.css --output-style expanded && node-sass scss/style.scss dist/style.min.css --output-style compressed",
-        "build-sass": "node-sass --output-style expanded --source-map true scss/style.scss dist/style.css  &&  node-sass --output-style expanded --source-map true scss/docs.scss doc/docs.css   ",
+        "docs": "sass scss/docs.scss doc/docs.css --style expanded && sass scss/docs.scss doc/docs.min.css --style compressed",
+        "build": "sass scss/style.scss dist/style.css --style expanded && sass scss/style.scss dist/style.min.css --style compressed",
+        "build-sass": "sass --style expanded --source-map true scss/style.scss dist/style.css  &&  sass --output-style expanded --source-map true scss/docs.scss doc/docs.css",
         "start": "npm run build-sass -- --watch"
     },
     "repository": {
@@ -21,8 +19,7 @@
     "devDependencies": {
         "file-saver": "^1.3.8",
         "jszip": "^3.1.5",
-        "node-sass": "^4.9.2",
-        "sass.js": "^0.10.10"
+        "sass": "^1.56.1"
     },
     "keywords": [
         "css",

@@ -1,7 +1,8 @@
+@use 'sass:math';
 @import "../abstract/_all.scss";
 
-//   -BOTONES    
- 
+//   -BOTONES
+
 
 // Definimos los botones y sus variantes
 
@@ -110,8 +111,8 @@
 
 }
 
-//   -TAMAÑOS    
- 
+//   -TAMAÑOS
+
 $btn-text-mini: 12px;
 $btn-text-small: 14px;
 $btn-text-medium: 14px;
@@ -172,8 +173,8 @@ $btn-text-full: 14px;
     border-radius: 50px;
 }
 
-//   -TIPOS DE BOTONES    
- 
+//   -TIPOS DE BOTONES
+
 .btn-xs {
     position: relative;
     display: inline-block;
@@ -185,7 +186,7 @@ $btn-text-full: 14px;
     margin-right: $padding-global;
     white-space: nowrap;
     cursor: pointer;
-    padding: $padding-btn / 2;
+    padding: math.div($padding-btn, 2);
     &:hover,
     &.hover {
         text-decoration: none;
@@ -272,8 +273,8 @@ $btn-text-full: 14px;
     border: 1px solid $c-info;
 }
 
-//   -TIPOS DE BOTONES    
- 
+//   -TIPOS DE BOTONES
+
 
 // Variantes de los botones por tamaño.
 
@@ -474,8 +475,8 @@ $btn-text-full: 14px;
     background-color: transparent;
 }
 
-//   -GRUPOS DE BOTONES    
- 
+//   -GRUPOS DE BOTONES
+
 
 // Con esta clase podemos agrupar los botones
 // en grupos horizontales.
@@ -747,8 +748,8 @@ $btn-text-full: 14px;
     }
 }
 
-//   -RTL BOTONES   
- 
+//   -RTL BOTONES
+
 .is-rtl {
     .btn {
         &.btn-separate {
@@ -801,8 +802,8 @@ $btn-text-full: 14px;
     }
 }
 
-//   -INVERSIÓN DE COLOR DE BOTONES   
- 
+//   -INVERSIÓN DE COLOR DE BOTONES
+
 .has-light {
     .btn-phantom {
         color: $c-white;
