@@ -1,8 +1,9 @@
+@use 'sass:math';
 @import "../abstract/_all.scss";
 
 
-//   -CONTAINERS        
- 
+//   -CONTAINERS
+
 .container {
     padding-right: $padding-global;
     padding-left: $padding-global;
@@ -11,19 +12,19 @@
     position: relative;
     max-width: $container;
     @media (min-width: $break-sm) {
- 
+
         padding-right: $padding-global;
         padding-left: $padding-global;
         width: 90%;
         max-width: nth(map-values($breakpoints), 2);
     }
     @media (min-width: $break-md) {
-  
+
         width: 80%;
         max-width: nth(map-values($breakpoints), 3);
     }
     @media (min-width: $break-lg) {
-  
+
         width: 80%;
         max-width: nth(map-values($breakpoints), 4);
     }
@@ -43,7 +44,7 @@
         max-width: nth(map-values($breakpoints), 2);
     }
     @media (min-width: $break-md) {
- 
+
         width: 80%;
         max-width: nth(map-values($breakpoints), 3);
     }
@@ -155,8 +156,8 @@
     }
 }
 
-  //   -ROW        
-   
+  //   -ROW
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -170,15 +171,15 @@
     }
 }
 
-  //   -COLS        
-   
+  //   -COLS
+
 @for $i from 1 through $colBreakpointscols {
     @media (min-width: nth(map-values($breakpointscols), $i)) {
         @for $c from 1 through $totalCols {
             .col-#{nth(map-keys($breakpointscols), $i)}-#{$c} {
                 -webkit-box-flex: 0;
-                flex: 0 0 percentage($c / $totalCols);
-                max-width: percentage($c / $totalCols);
+                flex: 0 0 math.percentage(math.div($c, $totalCols));
+                max-width: math.percentage(math.div($c, $totalCols));
             }
         }
     }

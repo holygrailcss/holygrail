@@ -1,11 +1,12 @@
+@use 'sass:math';
 @import "breakpoints";
 //   -MIXINS
- 
+
 // .background-alpha(VALUE VALUE);
 @mixin background-alpha($color: $color-white, $alpha: 1) {
     background-color: hsla(hue($color), saturation($color), lightness($color), $alpha);
 }
-// .userselect(VALUE) (all, element, none, text) 
+// .userselect(VALUE) (all, element, none, text)
 @mixin user-select($select) {
     -webkit-user-select: $select;
     -moz-user-select: $select;
@@ -105,7 +106,7 @@
 }
 
 @function unity($value) {
-    @return $value / ($value * 0 + 1);
+    @return math.div($value, $value * 0 + 1);
 }
 @mixin fluid-text($min-vw, $max-vw, $min-font-size, $max-font-size, $fluid-line-height) {
     $u1: unit($min-vw);
@@ -234,7 +235,7 @@
         display: block;
         content: "";
         width: 100%;
-        padding-top: ($height / $width) * 100%;
+        padding-top: math.div($height, $width) * 100%;
     }
     .content {
         position: absolute;
@@ -254,12 +255,12 @@
 
 @mixin bleed($margin) {
     .bleed-#{$margin} {
-        padding: 0 $margin/2+px 0 $margin/2+px;
+        padding: 0 math.div($margin, 2)+px 0 math.div($margin, 2)+px;
         overflow: hidden;
         .container-fluid {
-            margin-left: -$margin/2+px;
-            margin-right: -$margin/2+px;
-            padding: 0 $margin/2+px 0 $margin/2+px;
+            margin-left: -#{math.div($margin, 2)}+px;
+            margin-right: -#{math.div($margin, 2)}+px;
+            padding: 0 math.div($margin, 2)+px 0 math.div($margin, 2)+px;
         }
         >.row {
             margin-left: 0;
@@ -277,7 +278,7 @@
         }
         >[class*="col-"],
         >.col {
-            padding: $margin/2+px;
+            padding: math.div($margin, 2)+px;
             box-sizing: border-box;
         }
     }
@@ -358,7 +359,7 @@
       color: $color;
       background-color: darken($background, 10%);
           border-color: darken($border, 12%);
-  
+
       &:hover,
       &:focus,
       &.focus {
@@ -387,7 +388,7 @@
       background-color: $color;
     }
   }
-  
+
   // Button sizes
   @mixin button-size($padding-vertical, $padding-horizontal, $font-size, $line-height, $border-radius) {
       padding: $padding-vertical $padding-horizontal;
@@ -395,19 +396,19 @@
       line-height: $line-height;
       border-radius: $border-radius;
   }
-  
+
   @mixin box-shadow($shadow...) {
-      -moz-box-shadow: $shadow; 
+      -moz-box-shadow: $shadow;
       box-shadow: $shadow;
   }
-  
+
   // Box sizing
   @mixin box-sizing($boxmodel) {
       -webkit-box-sizing: $boxmodel;
       -moz-box-sizing: $boxmodel;
       box-sizing: $boxmodel;
   }
-  
+
   // CSS3 Content Columns
   @mixin content-columns($column-count, $column-gap: $grid-gutter-width) {
       -webkit-column-count: $column-count;
@@ -417,7 +418,7 @@
       -moz-column-gap: $column-gap;
       column-gap: $column-gap;
   }
-  
+
   // WebKit-style focus
   @mixin tab-focus() {
       // Default
@@ -471,7 +472,7 @@
    $media-max-lg:  "(max-width : 1279px)"; // Desde el minimo
 
 
-	
+
     $media-xxs:  "(min-width : 300px)"; // Desde el minimo
     $media-xs:   "(min-width : 480px)"; // Telefonos
     $media-sm:   "(min-width: 768px)";  // Tablets
@@ -483,10 +484,10 @@
     $portrait:   "(min-width: 768px) and (max-width: 991px)";   // Ajustes Resoluciones Medianas para dispositivos en portrait
     $landscape:  "(min-width: 992px) and (max-width: 1279px)";  // Ajustes Resoluciones Medianas para dispositivos en landscape
     $landscape-2:"(min-width: 1280px) and (max-width: 1560px)"; // Ajustes Resoluciones Medianas para dispositivos en landscape xxl
-    
-    
-    
-    
+
+
+
+
     @if $consulta==xxs {
         @media #{$media-xxs} {
             @content;
@@ -623,31 +624,31 @@ $spriteHeight:400;
 
 // sprite-bg( 5, 10, false)
 
-@mixin sprite-bg($x:0, $y:$x, $hover:true, $sizeBig:false) { 
-    $i:0; 
+@mixin sprite-bg($x:0, $y:$x, $hover:true, $sizeBig:false) {
+    $i:0;
     background-image:url("../images/itx-sprite.png");
-    background-position-x: ($x * -1px); 
-    background-position-y: ($y * -1px); 
+    background-position-x: ($x * -1px);
+    background-position-y: ($y * -1px);
     background-repeat:no-repeat;
     @include media(retina) {
         background-image:url("../images/itx-sprite_2x.png");
         background-size: ($spriteWidth * 1px) ($spriteHeight * 1px);
     }
-    @if $hover { 
-        &:hover, 
-        &:focus { 
+    @if $hover {
+        &:hover,
+        &:focus {
             background-position-x: ($x * -1px);
             background-position-y: ((($spritegrid * -1px)) + $y);
-        } 
+        }
     }
-    @if $sizeBig { 
+    @if $sizeBig {
        background-position-x: ($x * -1px);
        background-position-y: (((($spritegrid * 2) * -1px)) + ($y * 2));
-    }    
+    }
 }
 
 
-// placeholder inputs 
+// placeholder inputs
 
 @mixin placeholder() {
 	&::-webkit-input-placeholder {@content;}
@@ -692,4 +693,3 @@ $spriteHeight:400;
 };
 
 
-  
