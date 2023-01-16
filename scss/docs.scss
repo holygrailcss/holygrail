@@ -68,12 +68,14 @@ $variable-list: (
   //maxwidth del container2
   container-4: #{$container-4},
   //maxwidth del container4
-  font-primary: #{$font-family-primary},
+  font-primary: #{$font-family-a-r},
+  font-family-secondary: #{$font-family-b-r},
+
   font-primary-weight-light: #{$font-weight-light},
   font-primary-weight-regular: #{$font-weight-regular},
   font-primary-weight-medium: #{$font-weight-medium},
   font-primary-weight-bold: #{$font-weight-bold},
-  font-family-secondary: #{$font-family-secondary},
+
   font-secondary-weight-light: #{$font-weight-secondary-light},
   font-secondary-weight-medium: #{$font-weight-secondary-medium},
   xl: 1500px
@@ -85,20 +87,21 @@ $variable-list: (
 
 .font-family{
     &:after{
-        content:''+ $font-family-primary;
+        content:''+ $font-family-a-r;
         position: relative;
     }
 }
 
 .font-family2{
     &:after{
-        content:''+ $font-family-secondary;
+        content:''+ $font-family-b-r;
         position: relative;
     }
 }
 
 .mini-site-main {
-    padding-left: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
     margin: 0 auto ;
     max-width: 720px;
 }
@@ -569,7 +572,8 @@ $headersFluidsGuide: (
   18 : (18px, 12px, .9),
   20 : (20px, 12px, .9),
   50 : (30px, 80px, .9),
-  100 : (40px, 100px, .9));
+  100 : (40px, 100px, .9)
+  );
 @include typesFluids($headersFluidsGuide);
 
 

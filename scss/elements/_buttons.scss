@@ -12,7 +12,7 @@
 .btn {
     position: relative;
     display: inline-block;
-    border-radius: 8px;
+    border-radius: $btn-radius;
     line-height: 1;
     text-align: center;
     vertical-align: middle;
@@ -23,7 +23,7 @@
     white-space: nowrap;
     cursor: pointer;
     padding: 16px 8px;
-    @include font-medium();
+    @include font-regular();
 
 // Nadie quiere un botón con texto subrayado cuando hacemos hover.
 
@@ -374,7 +374,63 @@ $btn-text-full: 14px;
         color: $c-dark-grey;
         cursor: default;
     }
+
+
+
+    .has-light & {
+        &:hover,
+        &.hover,
+        &:focus,
+        &.focus {
+            background-color: rgba($c-feel, .5);
+            color: $c-dark-grey;
+            border-color: rgba($c-feel, .5);
+        }
+
+        &:disabled,
+        &.disabled {
+            opacity: 1;
+            background-color: $c-light-grey;
+            color: $c-dark-grey;
+            cursor: default;
+        }
+
+
+    }
 }
+
+.btn-feel-invert {
+      color: $c-primary;
+      background-color: transparent;
+      border: 1px solid $c-feel;
+      svg {
+          g {
+              fill: $c-primary;
+              stroke: $c-primary;
+          }
+          circle {
+              stroke: $c-primary;
+          }
+      }
+      &:focus,
+      &.focus,
+      &:hover,
+      &.hover,
+      &:active,
+      &.active {
+          color: $c-primary;
+          opacity: 1;
+          border-color: rgba($c-feel, .5);
+      }
+      &:disabled,
+      &.disabled {
+          opacity: 1;
+          border-color: $c-light-grey;
+          color: $c-dark-grey;
+          cursor: default;
+      }
+  }
+
 
 .btn-text {
     background-color: transparent;
@@ -635,7 +691,7 @@ $btn-text-full: 14px;
 .btn-social.btn--full {
     height: 48px;
     cursor: pointer;
-    border-radius: 8px;
+    border-radius: $btn-radius;
     border: none;
     display: flex;
     padding: 9px;
@@ -651,7 +707,7 @@ $btn-text-full: 14px;
         align-content: center;
         justify-content: center;
         align-items: center;
-        border-radius: 8px;
+        border-radius: $btn-radius;
         background-color: $c-white;
         position: absolute;
         top: 0;
@@ -823,6 +879,14 @@ $btn-text-full: 14px;
             background-color: $c-white;
         }
     }
+
+    .btn-feel-invert:hover {
+        color: $c-white;
+        background-color: transparent;
+    }
+
+
+
 }
 
 .btn--square {

@@ -48,7 +48,7 @@ a {
 .link2 {
     text-decoration: none;
     position: relative;
-    @include font-medium();
+    @include font-regular();
     cursor: pointer;
     &:hover {
         opacity: $opacity-links;
@@ -60,7 +60,7 @@ a {
 }
 .link3,
 .link3::before {
-    @include font-medium();
+    @include font-regular();
     text-align: center;
     display: inline-block;
     position: relative;
@@ -78,7 +78,7 @@ a {
     padding: 0;
     content: attr(data-text);
     opacity: 0;
-    @include font-medium();
+    @include font-regular();
 }
 .link3:hover,
 .link3.hover {
@@ -231,7 +231,7 @@ a {
 }
 
 .link8{
-    @include font-medium;
+    @include font-regular;
         font-weight: inherit;
         position: relative;
         display: inline-block;
@@ -362,7 +362,6 @@ button.link-line{
 
 
 .link-line {
-    @include font-medium();
     display: initial;
     position: relative;
     border: 0;
@@ -395,7 +394,7 @@ button.link-line{
 }
 
 .link-raw {
-    @include font-medium();
+    @include font-regular();
     display: initial;
     position: relative;
     border: 0;
@@ -409,7 +408,7 @@ button.link-line{
 }
 .link-svg-pre{
     padding-left: 20px;
-    @include font-medium();
+    @include font-regular();
     display: initial;
     position: relative;
     border: 0;
@@ -438,7 +437,7 @@ button.link-line{
 }
 .link-svg-post{
     padding-right: 20px;
-    @include font-medium();
+    @include font-regular();
     display: initial;
     position: relative;
     border: 0;

@@ -360,11 +360,11 @@ hr {
     }
 }
 .text-12-l {
-    font-family: $font-family-light;
+    font-family: $font-family-a-m;
     font-size: 12px;
 }
 strong {
-    font-family: $font-family-bold;
+    font-family: $font-family-a-b;
 }
 .border-1 {
     border: 1px solid $c-middle-grey;
@@ -380,6 +380,12 @@ strong {
 }
 .border-r {
     border-right: 1px solid $c-middle-grey;
+}
+.border-b2{
+    border-bottom: 1px solid $c-primary;
+}
+.border-t2{
+    border-top: 1px solid $c-primary;
 }
 .flex-vcenter {
     display: flex;
@@ -554,4 +560,7 @@ strong {
     max-width: $container-9;
 }
 
+.w-max{
+    width: max-content;
 
+}

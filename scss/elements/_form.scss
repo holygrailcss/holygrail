@@ -72,7 +72,7 @@ label {
     border-bottom: 1px solid $primary;
 }
 .input-notouch {
-    @include font-medium();
+    @include font-regular();
     pointer-events: none;
     border-color: $c-middle-grey;
     padding: 24px 0;
@@ -246,7 +246,7 @@ label {
         line-height: 1;
         width: 150px;
         text-align: center;
-        @include font-medium();
+        @include font-regular();
     }
     .guide-title {
         padding-left: 200px;
@@ -492,59 +492,6 @@ $svg-size: 16px;
     }
 }
 
-.btn.btn-link.has-ico-pre {
-    padding-left: 18px;
-    .ico-pre {
-        margin: 0;
-        top: -1px;
-    }
-}
-.has-ico-pre {
-    &.btn,
-    & > input,
-    & > label {
-        padding-left: $padding-btn * 2 + $svg-size + 4px;
-    }
-    .form-icon {
-        top: 0;
-        left: 0;
-    }
-}
-.has-ico-post {
-    &.btn,
-    & > input,
-    & > label {
-        padding-right: $padding-btn * 2 + $svg-size;
-    }
-    .form-icon {
-        padding: $padding-btn;
-        top: 0;
-        right: 0;
-        left: auto;
-    }
-}
-
-
-.has-ico-center{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 48px;
-    svg{
-        margin-top: -1px;
-        margin-right: 4px;
-    }
-    div{
-        svg{
-            margin-top: 0;
-            margin-right: 4px;
-        }
-
-    }
-}
-
-
 
 .input-subtext {
     position: absolute;
@@ -613,7 +560,7 @@ $svg-size: 16px;
 	padding-right: 64px;
 	.input,
 	.input:focus {
-		@include font-medium();
+		@include font-regular();
 		padding-left: 0;
 		padding-bottom: 4px;
 		padding-right: 0;
@@ -835,9 +782,6 @@ $svg-size: 16px;
 
 
 
-
-
-
 .has-light{
 .form-input-label,.form-input-prefix {
     & > label {
@@ -885,5 +829,70 @@ $svg-size: 16px;
  .error-zone .info-text {
     color: $c-white;
 }
+
+.input-prefix{
+input::-webkit-input-placeholder {
+    color: $c-white;
+    transform: translate3d(0, 0, 0);
+    opacity: .7;
 }
+}
+
+}
+
+
+.btn.btn-link.has-ico-pre {
+    padding-left: 18px;
+    .ico-pre {
+        margin: 0;
+        top: -1px;
+    }
+}
+.has-ico-pre {
+    &.btn,
+    & > input,
+    & > label {
+        padding-left: $padding-btn * 2 + $svg-size + 4px;
+    }
+    .form-icon {
+        top: 0;
+        left: 0;
+    }
+}
+.has-ico-post {
+    &.btn,
+    & > input,
+    & > label {
+        padding-right: $padding-btn * 2 + $svg-size;
+    }
+    .form-icon {
+        padding: $padding-btn;
+        top: 0;
+        right: 0;
+        left: auto;
+    }
+}
+
+
+.has-ico-center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    svg{
+        margin-top: -1px;
+        margin-right: 4px;
+    }
+    div{
+        svg{
+            margin-top: 0;
+            margin-right: 4px;
+        }
+
+    }
+}
+
+
+
 

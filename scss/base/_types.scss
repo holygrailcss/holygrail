@@ -4,7 +4,7 @@
 //   -HTML REMS        
  
  body{
-  font-family: $font-family-primary;
+  font-family: $font-family-a-r;
  }
 
 
@@ -30,19 +30,19 @@ body {
 
 
 select {
-  @include font-medium();
+  @include font-regular();
 }
 
 
 //   -HEADERS ELÁSTICOS        
  
 p {
-  @include font-medium();
+  @include font-regular();
   margin: 0;
   font-size: 14px;
 
   &.b {
-    @include font-medium();
+    @include font-regular();
     color: $c-primary;
   }
 }
@@ -79,7 +79,7 @@ mark {
  
 
 .secondary{
-  font-family:$font-family-secondary !important;
+  font-family:$font-family-c-r !important;
   font-weight: 100;
 }
 

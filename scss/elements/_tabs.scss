@@ -131,7 +131,7 @@
     }
     a,
     span {
-        @include font-medium;
+        @include font-regular;
         color: $c-dark-grey;
         border-color: $c-light-grey;
         position: relative;
@@ -153,7 +153,7 @@
         background-color: $c-white;
         padding: 0 14px;
         display: inline-flex;
-        font-family: $font-family-regular;
+        font-family:  $font-family-a-r;
     }
     li {
         position: relative;
@@ -181,7 +181,7 @@
     li.is-active a {
         padding: 6px 8px 8px;
         opacity: 1;
-        font-family: $font-family-bold;
+        font-family: $font-family-a-b;
     }
     &.tabs-map {
     max-width: 450px;

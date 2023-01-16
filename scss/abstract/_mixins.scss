@@ -17,31 +17,45 @@
 //   -MIXINS FONTS
 
 @mixin font-light() {
-    font-family: $font-family-light;
+    font-family: $font-family-a-m;
     font-weight: $font-weight-light;
 }
 @mixin font-regular() {
-    font-family: $font-family-regular;
+    font-family: $font-family-a-r;
     font-weight: $font-weight-regular;
 }
 @mixin font-medium() {
-    font-family: $font-family-medium;
+    font-family: $font-family-a-m;
     font-weight: $font-weight-medium;
 }
 @mixin font-bold() {
-    font-family: $font-family-bold;
+    font-family: $font-family-a-b;
     font-weight: $font-weight-bold;
 }
 @mixin font-2-regular() {
-    font-family: $font-family-2-regular;
+    font-family: $font-family-b-r;
 }
 @mixin font-2-medium() {
-    font-family: $font-family-2-medium;
+    font-family: $font-family-b-m;
 }
 @mixin font-2-bold() {
-    font-family: $font-family-2-bold;
+    font-family: $font-family-b-b;
 
 }
+
+
+@mixin font-3-regular() {
+    font-family: $font-family-c-r;
+}
+@mixin font-3-medium() {
+    font-family: $font-family-c-m;
+}
+@mixin font-3-bold() {
+    font-family: $font-family-c-b;
+
+}
+
+
 @mixin fonters($param) {
     @if($param=="regular") {
         @include font-regular();
@@ -55,15 +69,13 @@
     @else if($param=="light") {
         @include font-light();
     }
-    @else if($param=="regular2") {
-        @include font-2-regular();
-    }
-    @else if($param=="medium2") {
-        @include font-2-medium();
-    }
-    @else if($param=="bold2") {
-        @include font-2-bold();
-    }
+    @else if($param=="regular2") { @include font-2-regular(); }
+    @else if($param=="medium2") { @include font-2-medium(); }
+    @else if($param=="bold2") { @include font-2-bold(); }
+
+    @else if($param=="regular3") { @include font-3-regular(); }
+    @else if($param=="medium3") { @include font-3-medium(); }
+    @else if($param=="bold3") { @include font-3-bold(); }
 }
 
 @mixin typesFixers($headersFixers, $cssattr) {

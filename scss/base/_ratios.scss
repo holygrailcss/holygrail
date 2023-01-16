@@ -36,6 +36,9 @@
 .rat-main {
     @include ratio(800, 1066);
 }
+.rat-double {
+    @include ratio(867, 559);
+}
 .sk-load {
     position: relative;
     &:before {
@@ -153,3 +156,67 @@
         content: "";
     }
 }
+
+.sk-load7 {
+    position: relative;
+
+    &:before {
+        display: block;
+        content: '';
+        width: 100%;
+        padding-top: 66.66667%;
+        background-color: $c-white;
+    }
+
+    &::marker {
+        display: none;
+        content: '';
+    }
+}
+
+.sk-load8 {
+    position: relative;
+
+    &:before {
+        display: block;
+        content: '';
+        width: 100%;
+        padding-top: calc(66.66667% + 248px);
+        background-color: $c-white;
+        @media (min-width: 768px) and (max-width: 1439px) {
+            padding-top: calc(66.66667% + 144px);
+        }
+    }
+
+    &::marker {
+        display: none;
+        content: '';
+    }
+}
+
+.swiper-monoproducto .swiper-wrapper {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100% ;
+}
+
+
+.sk-load9 {
+    position: relative;
+    &:before {
+        display: block;
+        content: "";
+        width: 100%;
+        padding-top: calc(66.66667% + 126px);
+        background-color: $c-white;
+        @media (min-width: 768px) {
+            padding-top: calc(64.66667% + 144px);
+        }
+    }
+    &::marker {
+        display: none;
+        content: "";
+    }
+}
+

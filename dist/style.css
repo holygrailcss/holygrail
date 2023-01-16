@@ -1660,6 +1660,31 @@ svg-icon.ico-success path {
   bottom: 0;
 }
 
+.rat-double {
+  position: relative;
+  overflow: hidden;
+}
+.rat-double:before {
+  display: block;
+  content: "";
+  width: 100%;
+  padding-top: 64.4752018454%;
+}
+.rat-double .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.rat-double .rat-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 .sk-load {
   position: relative;
 }
@@ -1789,6 +1814,68 @@ svg-icon.ico-success path {
   padding-top: 126px;
 }
 .sk-load6::marker {
+  display: none;
+  content: "";
+}
+
+.sk-load7 {
+  position: relative;
+}
+.sk-load7:before {
+  display: block;
+  content: "";
+  width: 100%;
+  padding-top: 66.66667%;
+  background-color: #FFFFFF;
+}
+.sk-load7::marker {
+  display: none;
+  content: "";
+}
+
+.sk-load8 {
+  position: relative;
+}
+.sk-load8:before {
+  display: block;
+  content: "";
+  width: 100%;
+  padding-top: calc(66.66667% + 248px);
+  background-color: #FFFFFF;
+}
+@media (min-width: 768px) and (max-width: 1439px) {
+  .sk-load8:before {
+    padding-top: calc(66.66667% + 144px);
+  }
+}
+.sk-load8::marker {
+  display: none;
+  content: "";
+}
+
+.swiper-monoproducto .swiper-wrapper {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.sk-load9 {
+  position: relative;
+}
+.sk-load9:before {
+  display: block;
+  content: "";
+  width: 100%;
+  padding-top: calc(66.66667% + 126px);
+  background-color: #FFFFFF;
+}
+@media (min-width: 768px) {
+  .sk-load9:before {
+    padding-top: calc(64.66667% + 144px);
+  }
+}
+.sk-load9::marker {
   display: none;
   content: "";
 }
@@ -3184,18 +3271,18 @@ body {
 
 select {
   font-family: Arial, sans-serif;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 p {
   font-family: Arial, sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   margin: 0;
   font-size: 14px;
 }
 p.b {
   font-family: Arial, sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   color: #292929;
 }
 
@@ -3222,7 +3309,7 @@ mark {
 }
 
 .secondary {
-  font-family: "Times new roman" !important;
+  font-family: "ms-serif", serif !important;
   font-weight: 100;
 }
 
@@ -3248,13 +3335,13 @@ mark {
 }
 
 .text-12-2r {
-  font-family: monospace, sans-serif;
+  font-family: "arial black", sans-serif;
   font-size: 12px;
   line-height: 1.5;
 }
 
 .text-12-2b {
-  font-family: monospace, sans-serif;
+  font-family: "arial black", sans-serif;
   font-size: 12px;
   line-height: 1.5;
 }
@@ -3281,13 +3368,13 @@ mark {
 }
 
 .text-14-2r {
-  font-family: monospace, sans-serif;
+  font-family: "arial black", sans-serif;
   font-size: 14px;
   line-height: 1.5;
 }
 
 .text-14-2b {
-  font-family: monospace, sans-serif;
+  font-family: "arial black", sans-serif;
   font-size: 14px;
   line-height: 1.5;
 }
@@ -3314,13 +3401,13 @@ mark {
 }
 
 .text-16-2r {
-  font-family: monospace, sans-serif;
+  font-family: "arial black", sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
 
 .text-16-2b {
-  font-family: monospace, sans-serif;
+  font-family: "arial black", sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -3347,13 +3434,13 @@ mark {
 }
 
 .text-18-2r {
-  font-family: monospace, sans-serif;
+  font-family: "arial black", sans-serif;
   font-size: 18px;
   line-height: 1.5;
 }
 
 .text-18-2b {
-  font-family: monospace, sans-serif;
+  font-family: "arial black", sans-serif;
   font-size: 18px;
   line-height: 1.5;
 }
@@ -3380,13 +3467,13 @@ mark {
 }
 
 .text-20-2r {
-  font-family: monospace, sans-serif;
+  font-family: "arial black", sans-serif;
   font-size: 20px;
   line-height: 1.5;
 }
 
 .text-20-2b {
-  font-family: monospace, sans-serif;
+  font-family: "arial black", sans-serif;
   font-size: 20px;
   line-height: 1.5;
 }
@@ -3413,13 +3500,13 @@ mark {
 }
 
 .text-24-2r {
-  font-family: monospace, sans-serif;
+  font-family: "arial black", sans-serif;
   font-size: 24px;
   line-height: 1.5;
 }
 
 .text-24-2b {
-  font-family: monospace, sans-serif;
+  font-family: "arial black", sans-serif;
   font-size: 24px;
   line-height: 1.5;
 }
@@ -3491,48 +3578,6 @@ mark {
     font-size: 12px;
     line-height: 1.2;
   }
-  .display2 {
-    font-family: Arial, sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.2;
-  }
-  .display3 {
-    font-family: Arial, sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.5;
-  }
-  .display4 {
-    font-family: Arial, sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.5;
-  }
-  .display5 {
-    font-family: Arial, sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.5;
-  }
-  .display6 {
-    font-family: Arial, sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.5;
-  }
-  .display7 {
-    font-family: Arial, sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.5;
-  }
-  .subtitle {
-    font-family: Arial, sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.4;
-  }
   .p1 {
     font-family: Arial, sans-serif;
     font-weight: 400;
@@ -3557,13 +3602,28 @@ mark {
     font-size: 14px;
     line-height: 1.4;
   }
+  .sub-l {
+    font-family: "ms-serif", serif;
+    font-size: 56px;
+    line-height: 1.1;
+  }
+  .sub-m {
+    font-family: "ms-serif", serif;
+    font-size: 42px;
+    line-height: 1.1;
+  }
+  .sub-s {
+    font-family: "ms-serif", serif;
+    font-size: 32px;
+    line-height: 1.1;
+  }
   .tit-l {
-    font-family: monospace, sans-serif;
+    font-family: "arial black", sans-serif;
     font-size: 24px;
     line-height: 1.2;
   }
   .tit-m {
-    font-family: monospace, sans-serif;
+    font-family: "arial black", sans-serif;
     font-size: 20px;
     line-height: 1.2;
   }
@@ -3580,24 +3640,30 @@ mark {
     line-height: 1.2;
   }
   .head-l {
-    font-family: monospace, sans-serif;
+    font-family: "arial black", sans-serif;
     font-size: 56px;
     line-height: 1.1;
   }
   .head-m {
-    font-family: monospace, sans-serif;
+    font-family: "arial black", sans-serif;
     font-size: 42px;
     line-height: 1.1;
   }
   .head-s {
-    font-family: monospace, sans-serif;
+    font-family: "arial black", sans-serif;
     font-size: 32px;
     line-height: 1.1;
+  }
+  .p-14 {
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.3;
   }
   .p-l {
     font-family: Arial, sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.3;
   }
   .p-m {
@@ -3637,7 +3703,7 @@ mark {
     line-height: 1.4;
   }
   .h11 {
-    font-family: monospace, sans-serif;
+    font-family: "arial black", sans-serif;
     font-size: 16px;
     line-height: 1.4;
   }
@@ -3687,34 +3753,6 @@ mark {
     font-size: 12px;
     line-height: 1.2;
   }
-  .display2 {
-    font-size: 20px;
-    line-height: 1.2;
-  }
-  .display3 {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-  .display4 {
-    font-size: 14px;
-    line-height: 1.5;
-  }
-  .display5 {
-    font-size: 14px;
-    line-height: 1.5;
-  }
-  .display6 {
-    font-size: 12px;
-    line-height: 1.5;
-  }
-  .display7 {
-    font-size: 14px;
-    line-height: 1.5;
-  }
-  .subtitle {
-    font-size: 14px;
-    line-height: 1.4;
-  }
   .p1 {
     font-size: 14px;
     line-height: 1.4;
@@ -3730,6 +3768,18 @@ mark {
   .p4 {
     font-size: 14px;
     line-height: 1.4;
+  }
+  .sub-l {
+    font-size: 56px;
+    line-height: 1.1;
+  }
+  .sub-m {
+    font-size: 42px;
+    line-height: 1.1;
+  }
+  .sub-s {
+    font-size: 32px;
+    line-height: 1.1;
   }
   .tit-l {
     font-size: 24px;
@@ -3759,8 +3809,12 @@ mark {
     font-size: 32px;
     line-height: 1.1;
   }
+  .p-14 {
+    font-size: 14px;
+    line-height: 1.3;
+  }
   .p-l {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.3;
   }
   .p-m {
@@ -3837,34 +3891,6 @@ mark {
     font-size: 14px;
     line-height: 1.2;
   }
-  .display2 {
-    font-size: 20px;
-    line-height: 1.2;
-  }
-  .display3 {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-  .display4 {
-    font-size: 14px;
-    line-height: 1.5;
-  }
-  .display5 {
-    font-size: 14px;
-    line-height: 1.5;
-  }
-  .display6 {
-    font-size: 12px;
-    line-height: 1.5;
-  }
-  .display7 {
-    font-size: 14px;
-    line-height: 1.5;
-  }
-  .subtitle {
-    font-size: 14px;
-    line-height: 1.4;
-  }
   .p1 {
     font-size: 14px;
     line-height: 1.4;
@@ -3880,6 +3906,18 @@ mark {
   .p4 {
     font-size: 16px;
     line-height: 1.4;
+  }
+  .sub-l {
+    font-size: 96px;
+    line-height: 1.1;
+  }
+  .sub-m {
+    font-size: 64px;
+    line-height: 1.1;
+  }
+  .sub-s {
+    font-size: 56px;
+    line-height: 1.1;
   }
   .tit-l {
     font-size: 42px;
@@ -3909,8 +3947,12 @@ mark {
     font-size: 56px;
     line-height: 1.1;
   }
+  .p-14 {
+    font-size: 14px;
+    line-height: 1.3;
+  }
   .p-l {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.3;
   }
   .p-m {
@@ -3987,34 +4029,6 @@ mark {
     font-size: 14px;
     line-height: 1.2;
   }
-  .display2 {
-    font-size: 40px;
-    line-height: 1.2;
-  }
-  .display3 {
-    font-size: 24px;
-    line-height: 1.5;
-  }
-  .display4 {
-    font-size: 24px;
-    line-height: 1.5;
-  }
-  .display5 {
-    font-size: 18px;
-    line-height: 1.5;
-  }
-  .display6 {
-    font-size: 18px;
-    line-height: 1.5;
-  }
-  .display7 {
-    font-size: 18px;
-    line-height: 1.5;
-  }
-  .subtitle {
-    font-size: 14px;
-    line-height: 1.4;
-  }
   .p1 {
     font-size: 14px;
     line-height: 1.4;
@@ -4030,6 +4044,18 @@ mark {
   .p4 {
     font-size: 18px;
     line-height: 1.4;
+  }
+  .sub-l {
+    font-size: 96px;
+    line-height: 1.1;
+  }
+  .sub-m {
+    font-size: 64px;
+    line-height: 1.1;
+  }
+  .sub-s {
+    font-size: 56px;
+    line-height: 1.1;
   }
   .tit-l {
     font-size: 42px;
@@ -4059,8 +4085,12 @@ mark {
     font-size: 56px;
     line-height: 1.1;
   }
+  .p-14 {
+    font-size: 14px;
+    line-height: 1.3;
+  }
   .p-l {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.3;
   }
   .p-m {
@@ -5175,6 +5205,14 @@ strong {
   border-right: 1px solid #E3E3E3;
 }
 
+.border-b2 {
+  border-bottom: 1px solid #292929;
+}
+
+.border-t2 {
+  border-top: 1px solid #292929;
+}
+
 .flex-vcenter {
   display: flex;
   align-items: center;
@@ -5365,6 +5403,10 @@ strong {
 
 .mw-lg {
   max-width: 798px;
+}
+
+.w-max {
+  width: max-content;
 }
 
 @keyframes underline {
@@ -5659,7 +5701,7 @@ strong {
   cursor: pointer;
   padding: 16px 8px;
   font-family: Arial, sans-serif;
-  font-weight: 600;
+  font-weight: 400;
 }
 .btn:hover, .btn.hover {
   text-decoration: none;
@@ -5953,6 +5995,41 @@ strong {
 .btn-feel:disabled, .btn-feel.disabled {
   opacity: 1;
   background-color: #F0F0F0;
+  color: #8E8E8E;
+  cursor: default;
+}
+.has-light .btn-feel:hover, .has-light .btn-feel.hover, .has-light .btn-feel:focus, .has-light .btn-feel.focus {
+  background-color: rgba(251, 153, 98, 0.5);
+  color: #8E8E8E;
+  border-color: rgba(251, 153, 98, 0.5);
+}
+.has-light .btn-feel:disabled, .has-light .btn-feel.disabled {
+  opacity: 1;
+  background-color: #F0F0F0;
+  color: #8E8E8E;
+  cursor: default;
+}
+
+.btn-feel-invert {
+  color: #292929;
+  background-color: transparent;
+  border: 1px solid #fb9962;
+}
+.btn-feel-invert svg g {
+  fill: #292929;
+  stroke: #292929;
+}
+.btn-feel-invert svg circle {
+  stroke: #292929;
+}
+.btn-feel-invert:focus, .btn-feel-invert.focus, .btn-feel-invert:hover, .btn-feel-invert.hover, .btn-feel-invert:active, .btn-feel-invert.active {
+  color: #292929;
+  opacity: 1;
+  border-color: rgba(251, 153, 98, 0.5);
+}
+.btn-feel-invert:disabled, .btn-feel-invert.disabled {
+  opacity: 1;
+  border-color: #F0F0F0;
   color: #8E8E8E;
   cursor: default;
 }
@@ -6395,6 +6472,10 @@ strong {
 }
 .has-light .btn:after {
   background-color: #FFFFFF;
+}
+.has-light .btn-feel-invert:hover {
+  color: #FFFFFF;
+  background-color: transparent;
 }
 
 .btn--square {
@@ -7035,7 +7116,7 @@ label {
 
 .input-notouch {
   font-family: Arial, sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   pointer-events: none;
   border-color: #E3E3E3;
   padding: 24px 0;
@@ -7215,7 +7296,7 @@ label {
   width: 150px;
   text-align: center;
   font-family: Arial, sans-serif;
-  font-weight: 600;
+  font-weight: 400;
 }
 .guide-font .guide-title {
   padding-left: 200px;
@@ -7446,48 +7527,6 @@ input::-webkit-input-placeholder {
   height: 16px;
 }
 
-.btn.btn-link.has-ico-pre {
-  padding-left: 18px;
-}
-.btn.btn-link.has-ico-pre .ico-pre {
-  margin: 0;
-  top: -1px;
-}
-
-.has-ico-pre.btn, .has-ico-pre > input, .has-ico-pre > label {
-  padding-left: 48px;
-}
-.has-ico-pre .form-icon {
-  top: 0;
-  left: 0;
-}
-
-.has-ico-post.btn, .has-ico-post > input, .has-ico-post > label {
-  padding-right: 44px;
-}
-.has-ico-post .form-icon {
-  padding: 14px;
-  top: 0;
-  right: 0;
-  left: auto;
-}
-
-.has-ico-center {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 48px;
-}
-.has-ico-center svg {
-  margin-top: -1px;
-  margin-right: 4px;
-}
-.has-ico-center div svg {
-  margin-top: 0;
-  margin-right: 4px;
-}
-
 .input-subtext {
   position: absolute;
   width: 100%;
@@ -7559,7 +7598,7 @@ input::-webkit-input-placeholder {
 .input-line-v2 .input,
 .input-line-v2 .input:focus {
   font-family: Arial, sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   padding-left: 0;
   padding-bottom: 4px;
   padding-right: 0;
@@ -7792,6 +7831,53 @@ input::-webkit-input-placeholder {
 .has-light .error-zone .info-text {
   color: #FFFFFF;
 }
+.has-light .input-prefix input::-webkit-input-placeholder {
+  color: #FFFFFF;
+  transform: translate3d(0, 0, 0);
+  opacity: 0.7;
+}
+
+.btn.btn-link.has-ico-pre {
+  padding-left: 18px;
+}
+.btn.btn-link.has-ico-pre .ico-pre {
+  margin: 0;
+  top: -1px;
+}
+
+.has-ico-pre.btn, .has-ico-pre > input, .has-ico-pre > label {
+  padding-left: 48px;
+}
+.has-ico-pre .form-icon {
+  top: 0;
+  left: 0;
+}
+
+.has-ico-post.btn, .has-ico-post > input, .has-ico-post > label {
+  padding-right: 44px;
+}
+.has-ico-post .form-icon {
+  padding: 14px;
+  top: 0;
+  right: 0;
+  left: auto;
+}
+
+.has-ico-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+}
+.has-ico-center svg {
+  margin-top: -1px;
+  margin-right: 4px;
+}
+.has-ico-center div svg {
+  margin-top: 0;
+  margin-right: 4px;
+}
 
 @keyframes underline {
   0% {
@@ -7868,7 +7954,7 @@ a:hover {
   text-decoration: none;
   position: relative;
   font-family: Arial, sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   cursor: pointer;
 }
 .link2:hover {
@@ -7882,7 +7968,7 @@ a:hover {
 .link3,
 .link3::before {
   font-family: Arial, sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   text-align: center;
   display: inline-block;
   position: relative;
@@ -7903,7 +7989,7 @@ a:hover {
   content: attr(data-text);
   opacity: 0;
   font-family: Arial, sans-serif;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .link3:hover,
@@ -8057,7 +8143,7 @@ a:hover {
 
 .link8 {
   font-family: Arial, sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   font-weight: inherit;
   position: relative;
   display: inline-block;
@@ -8179,8 +8265,6 @@ button.link-line {
 }
 
 .link-line {
-  font-family: Arial, sans-serif;
-  font-weight: 600;
   display: initial;
   position: relative;
   border: 0;
@@ -8208,7 +8292,7 @@ button.link-line {
 
 .link-raw {
   font-family: Arial, sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   display: initial;
   position: relative;
   border: 0;
@@ -8224,7 +8308,7 @@ button.link-line {
 .link-svg-pre {
   padding-left: 20px;
   font-family: Arial, sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   display: initial;
   position: relative;
   border: 0;
@@ -8255,7 +8339,7 @@ button.link-line {
 .link-svg-post {
   padding-right: 20px;
   font-family: Arial, sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   display: initial;
   position: relative;
   border: 0;
@@ -8817,7 +8901,7 @@ ul.list-mini > li:after {
 .tabs-gray a,
 .tabs-gray span {
   font-family: Arial, sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   color: #8E8E8E;
   border-color: #F0F0F0;
   position: relative;
@@ -9848,7 +9932,7 @@ ul.list-clear li.list-box:last-child {
 }
 .card9 .card9-sizes button {
   font-family: Arial, sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   border: none;
   background-color: #FFFFFF;
   border-top: 1px solid #E3E3E3;
@@ -10056,7 +10140,7 @@ ul.list-clear li.list-box:last-child {
 }
 
 .product-tag {
-  font-family: monospace, sans-serif;
+  font-family: "arial black", sans-serif;
   font-size: 14px;
   color: #292929;
   letter-spacing: 0;

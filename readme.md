@@ -6,25 +6,29 @@
 
 > Crossbrowser
 header-account is-cart
-> Validado por el w3c
+> Validado por el w
 
 
 
 
-# [holygrailcss](https://holygrailcss.github.io/)
+# [holygrailcss] (https://holygrailcss.github.io/)
 
-HolygrailCss is a **modern CSS framework** based on [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes).
+HolygrailCss is a **modern CSS framework** based on [Flexbox] (https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes).
 
 
-[![npm](https://res.cloudinary.com/manuel-ruiz/image/upload/v1576145416/holygrail/logoholy.svg)][npm-link]
-[![](https://data.jsdelivr.com/v1/package/npm/holygrailcss/badge)](https://www.jsdelivr.com/package/npm/holygrailcss)
+![npm](https://res.cloudinary.com/manuel-ruiz/image/upload/v1576145416/holygrail/logoholy.svg)][npm-link]
+
+
+
+[![npm](https://img.shields.io/npm/v/holygrailcss.svg)][npm-link]
+[![npm](https://img.shields.io/npm/dm/holygrail.svg)][npm-link]
+[![](data.jsdelivr.com/v1/package/npm/holygrailcss/badge)](https://www.jsdelivr.com/package/npm/holygrailcss)
 [![Awesome][awesome-badge]][awesome-link]
 
-<p style="text-align:center">
-<a href="https://holygrailcss.io">
-<img src="https://raw.githubusercontent.com/jgthms/holygrailcss/master/docs/images/holygrail-banner.png" alt="holygrail: a Flexbox CSS framework" style="width:140px;" >
-</a>
-</p>
+
+<a href="https://holyguide.es"><img src="https://raw.githubusercontent.com/jgthms/holygrailcss/master/docs/images/holygrail-banner.png" alt="Holyguide: a Flexbox CSS framework" style="max-width:100%;" width="600"></a>
+
+
 
 
 

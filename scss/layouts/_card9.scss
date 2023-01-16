@@ -33,7 +33,7 @@
             border-right: 1px solid $c-middle-grey;
         }
         button {
-            @include font-medium();
+            @include font-regular();
             border: none;
             background-color: $c-white;
             border-top: 1px solid $c-middle-grey;

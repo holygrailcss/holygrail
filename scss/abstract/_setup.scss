@@ -42,13 +42,12 @@ $primary-guide:#363636 !default;
 $secondary-guide:#6759bb !default;
 $ternary-guide:#6759bb !default;
 
-$btn-radius: 0!default;
+$btn-radius: 8px!default;
 
 
 //   -IMPORT FONTS
 
 
-$font-family-secondary:"Times new roman"!default;
 $font-weight-secondary-light:300!default;
 $font-weight-secondary-medium:400!default;
 $font-weight-secondary-bold:700!default;
@@ -130,30 +129,26 @@ $max-vw:1500px!default;
     display1: ( 32px, 32px, 32px, 48px, 1.2, 'bold' ), 
     prod: ( 12px, 12px, 14px, 14px, 1.2, 'medium' ), 
 
-    /* PROMOTIONS BANNER */ display2: ( 20px, 20px, 20px, 40px, 1.2, 'bold' ), 
-    /* SALES */ display3: ( 16px, 16px, 16px, 24px, 1.5, 'medium' ), 
-    /* BLACK FRIDAY */ display4: ( 14px, 14px, 14px, 24px, 1.5, 'medium' ),
-    /* SALES */ display5: ( 14px, 14px, 14px, 18px, 1.5, 'regular' ),
-    /* BLACK FRIDAY */ display6: ( 12px, 12px, 12px, 18px, 1.5, 'regular' ),
-    /* SALES */ display7: ( 14px, 14px, 14px, 18px, 1.5, 'medium' ), 
-    /* SALES + BLACK FRIDAY */ subtitle: ( 14px, 14px, 14px, 14px, 1.4, 'regular' ), 
-    
     p1: ( 14px, 14px, 14px, 14px, 1.4, 'regular' ), 
     p2: ( 14px, 14px, 16px, 18px, 1.4, 'regular' ),
     p3: ( 12px, 14px, 14px, 14px, 1.4, 'regular' ), 
     p4: ( 14px, 14px, 16px, 18px, 1.4, 'medium' ),
+
+    sub-l:(56px, 56px, 96px, 96px, 1.1, "bold3"),
+    sub-m:(42px, 42px, 64px, 64px, 1.1, "bold3"),
+    sub-s:(32px, 32px, 56px ,56px, 1.1, "medium3"),
 
     tit-l: (24px, 24px, 42px, 42px, 1.2, "bold2"),
     tit-m: (20px, 20px, 32px, 32px, 1.2, "bold2"),
     tit-s: (16px, 16px, 20px,20px, 1.2, "bold"),
     tit-xs:(14px, 14px, 14px,14px, 1.2, "bold"),
 
-
     head-l:(56px, 56px, 96px, 96px, 1.1, "bold2"),
     head-m:(42px, 42px, 64px, 64px, 1.1, "bold2"),
     head-s:(32px, 32px, 56px ,56px, 1.1, "bold2"),
 
-    p-l: (18px, 18px, 20px ,20px, 1.3, "regular"),
+    p-14: ( 14px, 14px, 14px, 14px, 1.3, 'regular' ), 
+    p-l: (16px, 16px, 18px ,18px, 1.3, "regular"),
     p-m: (14px, 14px, 16px ,16px, 1.3, "regular"),
     p-m-b: (14px, 14px, 16px ,16px, 1.3, "bold"), //NUEVO
     p-s: (12px, 12px, 14px ,14px, 1.3, "regular"),
