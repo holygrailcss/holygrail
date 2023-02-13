@@ -146,6 +146,16 @@
         padding: 0 $padding-global;
     }
 }
+
+.container-11 {
+    margin: 0 auto;
+    padding: 0  $padding-mobile;
+    width: 100%;
+    max-width: $container-11;
+    @media (min-width: $break-sm) {
+        padding: 0 $padding-global;
+    }
+}
 .container-body {
     padding: 16px;
     @media (min-width: $break-sm) {

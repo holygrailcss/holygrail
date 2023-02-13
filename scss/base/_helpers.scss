@@ -461,7 +461,7 @@ strong {
 }
 .ov-custom{
     &::-webkit-scrollbar-track {
-        background-color: $c-white;
+        background-color: $c-light-grey;
     }
     &::-webkit-scrollbar-track:hover {
         background-color: $c-light-grey;
@@ -469,11 +469,11 @@ strong {
     &::-webkit-scrollbar-thumb {
         background-color: $c-dark-grey;
         border-radius: 16px;
-        border: 5px solid $c-white;
+        border: 3px solid $c-white;
     }
     &::-webkit-scrollbar-thumb:hover {
         background-color: $c-dark-grey;
-        border: 4px solid $c-light-grey;
+        border: 2px solid $c-light-grey;
     }
     &::-webkit-scrollbar-button {
         display: none;

@@ -379,6 +379,62 @@ img {
 .is-rtl .text-right {
   text-align: left;
 }
+.is-rtl .select select:not([multiple]) {
+  padding-right: 16px;
+  padding-left: 45px;
+}
+.is-rtl .select:not(.is-multiple):not(.is-loading)::after {
+  right: inherit;
+  left: 20px;
+}
+.is-rtl .select.select-label select {
+  padding-right: 100px;
+}
+.is-rtl .select.select-label label {
+  left: inherit;
+  right: 16px;
+}
+.is-rtl .select:not(.is-multiple):not(.is-loading).select-box::after {
+  left: 8px;
+}
+.is-rtl .pr-16 {
+  padding-right: 0px;
+  padding-left: 16px;
+}
+.is-rtl .pr-24 {
+  padding-right: 0px;
+  padding-left: 24px;
+}
+.is-rtl .pr-30 {
+  padding-right: 0px;
+  padding-left: 30px;
+}
+.is-rtl .mr-8 {
+  margin-right: 0px;
+  margin-left: 8px;
+}
+.is-rtl .mr-16 {
+  margin-right: 0px;
+  margin-left: 16px;
+}
+.is-rtl .ml-16 {
+  margin-left: 0px;
+  margin-right: 16px;
+}
+.is-rtl .pl-32 {
+  padding-left: initial;
+  padding-right: 32px;
+}
+.is-rtl .check-center.check-bleed.checkbox-radio [type=radio]:checked + label:before,
+.is-rtl .check-center.check-bleed.checkbox-radio [type=radio]:not(:checked) + label:before {
+  left: initial;
+  right: 0px;
+}
+.is-rtl .check-center.check-bleed.checkbox-radio [type=radio]:checked + label .ico-radio,
+.is-rtl .check-center.check-bleed.checkbox-radio [type=radio]:not(:checked) + label .ico-radio {
+  left: initial;
+  right: 7px;
+}
 
 @keyframes underline {
   0% {
@@ -581,6 +637,18 @@ img {
 }
 @media (min-width: 768px) {
   .container-9 {
+    padding: 0 8px;
+  }
+}
+
+.container-11 {
+  margin: 0 auto;
+  padding: 0 24px;
+  width: 100%;
+  max-width: 1080px;
+}
+@media (min-width: 768px) {
+  .container-11 {
     padding: 0 8px;
   }
 }
@@ -3249,7 +3317,7 @@ svg-icon.ico-success path {
   }
 }
 body {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
 }
 
 pre,
@@ -3260,7 +3328,7 @@ samp {
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 400;
   -webkit-overflow-scrolling: touch;
   font-variant-ligatures: no-common-ligatures !important;
@@ -3270,18 +3338,18 @@ body {
 }
 
 select {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 400;
 }
 
 p {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 400;
   margin: 0;
   font-size: 14px;
 }
 p.b {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 400;
   color: #292929;
 }
@@ -3304,7 +3372,7 @@ a {
 b,
 mark {
   color: #292929;
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 700;
 }
 
@@ -3314,21 +3382,21 @@ mark {
 }
 
 .text-12-r {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.5;
 }
 
 .text-12-m {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.5;
 }
 
 .text-12-b {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 700;
   font-size: 12px;
   line-height: 1.5;
@@ -3347,21 +3415,21 @@ mark {
 }
 
 .text-14-r {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
 }
 
 .text-14-m {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.5;
 }
 
 .text-14-b {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.5;
@@ -3380,21 +3448,21 @@ mark {
 }
 
 .text-16-r {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
 }
 
 .text-16-m {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
 }
 
 .text-16-b {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
@@ -3413,21 +3481,21 @@ mark {
 }
 
 .text-18-r {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
 }
 
 .text-18-m {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 600;
   font-size: 18px;
   line-height: 1.5;
 }
 
 .text-18-b {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.5;
@@ -3446,21 +3514,21 @@ mark {
 }
 
 .text-20-r {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 1.5;
 }
 
 .text-20-m {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.5;
 }
 
 .text-20-b {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.5;
@@ -3479,21 +3547,21 @@ mark {
 }
 
 .text-24-r {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 1.5;
 }
 
 .text-24-m {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 600;
   font-size: 24px;
   line-height: 1.5;
 }
 
 .text-24-b {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.5;
@@ -3513,91 +3581,91 @@ mark {
 
 @media (min-width: 1px) {
   .h1 {
-    font-family: Arial, sans-serif;
+    font-family: arial, sans-serif;
     font-weight: 600;
     font-size: 32px;
     line-height: 1.2;
   }
   .h2 {
-    font-family: Arial, sans-serif;
+    font-family: arial, sans-serif;
     font-weight: 600;
     font-size: 24px;
     line-height: 1.2;
   }
   .h3 {
-    font-family: Arial, sans-serif;
+    font-family: arial, sans-serif;
     font-weight: 600;
     font-size: 18px;
     line-height: 1.2;
   }
   .h4 {
-    font-family: Arial, sans-serif;
+    font-family: arial, sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.2;
   }
   .h5 {
-    font-family: Arial, sans-serif;
+    font-family: arial, sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.2;
   }
   .h6 {
-    font-family: Arial, sans-serif;
+    font-family: arial, sans-serif;
     font-weight: 600;
     font-size: 12px;
     line-height: 1.2;
   }
   .h7 {
-    font-family: Arial, sans-serif;
+    font-family: arial, sans-serif;
     font-weight: 600;
     font-size: 10px;
     line-height: 1.2;
   }
   .h8 {
-    font-family: Arial, sans-serif;
+    font-family: arial, sans-serif;
     font-weight: 600;
     font-size: 8px;
     line-height: 1.2;
   }
   .h9 {
-    font-family: Arial, sans-serif;
+    font-family: arial, sans-serif;
     font-weight: 600;
     font-size: 12px;
     line-height: 1.2;
   }
   .display1 {
-    font-family: Arial, sans-serif;
+    font-family: arial, sans-serif;
     font-weight: 700;
     font-size: 32px;
     line-height: 1.2;
   }
   .prod {
-    font-family: Arial, sans-serif;
+    font-family: arial, sans-serif;
     font-weight: 600;
     font-size: 12px;
     line-height: 1.2;
   }
   .p1 {
-    font-family: Arial, sans-serif;
+    font-family: arial, sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.4;
   }
   .p2 {
-    font-family: Arial, sans-serif;
+    font-family: arial, sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.4;
   }
   .p3 {
-    font-family: Arial, sans-serif;
+    font-family: arial, sans-serif;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.4;
   }
   .p4 {
-    font-family: Arial, sans-serif;
+    font-family: arial, sans-serif;
     font-weight: 600;
     font-size: 14px;
     line-height: 1.4;
@@ -3628,13 +3696,13 @@ mark {
     line-height: 1.2;
   }
   .tit-s {
-    font-family: Arial, sans-serif;
+    font-family: arial, sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.2;
   }
   .tit-xs {
-    font-family: Arial, sans-serif;
+    font-family: arial, sans-serif;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.2;
@@ -3655,49 +3723,55 @@ mark {
     line-height: 1.1;
   }
   .p-14 {
-    font-family: Arial, sans-serif;
+    font-family: arial, sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.3;
   }
+  .p-14-b {
+    font-family: arial, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.3;
+  }
   .p-l {
-    font-family: Arial, sans-serif;
+    font-family: arial, sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.3;
   }
   .p-m {
-    font-family: Arial, sans-serif;
+    font-family: arial, sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.3;
   }
   .p-m-b {
-    font-family: Arial, sans-serif;
+    font-family: arial, sans-serif;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.3;
   }
   .p-s {
-    font-family: Arial, sans-serif;
+    font-family: arial, sans-serif;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.3;
   }
   .p-xs {
-    font-family: Arial, sans-serif;
+    font-family: arial, sans-serif;
     font-weight: 400;
     font-size: 10px;
     line-height: 1.3;
   }
   .p-xs-b {
-    font-family: Arial, sans-serif;
+    font-family: arial, sans-serif;
     font-weight: 700;
     font-size: 10px;
     line-height: 1.3;
   }
   .h10 {
-    font-family: Arial, sans-serif;
+    font-family: arial, sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.4;
@@ -3810,6 +3884,10 @@ mark {
     line-height: 1.1;
   }
   .p-14 {
+    font-size: 14px;
+    line-height: 1.3;
+  }
+  .p-14-b {
     font-size: 14px;
     line-height: 1.3;
   }
@@ -3951,6 +4029,10 @@ mark {
     font-size: 14px;
     line-height: 1.3;
   }
+  .p-14-b {
+    font-size: 14px;
+    line-height: 1.3;
+  }
   .p-l {
     font-size: 18px;
     line-height: 1.3;
@@ -4089,6 +4171,10 @@ mark {
     font-size: 14px;
     line-height: 1.3;
   }
+  .p-14-b {
+    font-size: 14px;
+    line-height: 1.3;
+  }
   .p-l {
     font-size: 18px;
     line-height: 1.3;
@@ -4123,7 +4209,7 @@ mark {
   }
 }
 .fluid-12-l {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 300;
 }
 .fluid-12-l {
@@ -4144,7 +4230,7 @@ mark {
 }
 
 .fluid-12-r {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 400;
 }
 .fluid-12-r {
@@ -4165,7 +4251,7 @@ mark {
 }
 
 .fluid-12-m {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 600;
 }
 .fluid-12-m {
@@ -4186,7 +4272,7 @@ mark {
 }
 
 .fluid-12-b {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 700;
 }
 .fluid-12-b {
@@ -4207,7 +4293,7 @@ mark {
 }
 
 .fluid-14-l {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 300;
 }
 .fluid-14-l {
@@ -4228,7 +4314,7 @@ mark {
 }
 
 .fluid-14-r {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 400;
 }
 .fluid-14-r {
@@ -4249,7 +4335,7 @@ mark {
 }
 
 .fluid-14-m {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 600;
 }
 .fluid-14-m {
@@ -4270,7 +4356,7 @@ mark {
 }
 
 .fluid-14-b {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 700;
 }
 .fluid-14-b {
@@ -4291,7 +4377,7 @@ mark {
 }
 
 .fluid-16-l {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 300;
 }
 .fluid-16-l {
@@ -4312,7 +4398,7 @@ mark {
 }
 
 .fluid-16-r {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 400;
 }
 .fluid-16-r {
@@ -4333,7 +4419,7 @@ mark {
 }
 
 .fluid-16-m {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 600;
 }
 .fluid-16-m {
@@ -4354,7 +4440,7 @@ mark {
 }
 
 .fluid-16-b {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 700;
 }
 .fluid-16-b {
@@ -4375,7 +4461,7 @@ mark {
 }
 
 .fluid-18-l {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 300;
 }
 .fluid-18-l {
@@ -4396,7 +4482,7 @@ mark {
 }
 
 .fluid-18-r {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 400;
 }
 .fluid-18-r {
@@ -4417,7 +4503,7 @@ mark {
 }
 
 .fluid-18-m {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 600;
 }
 .fluid-18-m {
@@ -4438,7 +4524,7 @@ mark {
 }
 
 .fluid-18-b {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 700;
 }
 .fluid-18-b {
@@ -4459,7 +4545,7 @@ mark {
 }
 
 .fluid-20-l {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 300;
 }
 .fluid-20-l {
@@ -4480,7 +4566,7 @@ mark {
 }
 
 .fluid-20-r {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 400;
 }
 .fluid-20-r {
@@ -4501,7 +4587,7 @@ mark {
 }
 
 .fluid-20-m {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 600;
 }
 .fluid-20-m {
@@ -4522,7 +4608,7 @@ mark {
 }
 
 .fluid-20-b {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 700;
 }
 .fluid-20-b {
@@ -4543,7 +4629,7 @@ mark {
 }
 
 .fluid-50-l {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 300;
 }
 .fluid-50-l {
@@ -4564,7 +4650,7 @@ mark {
 }
 
 .fluid-50-r {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 400;
 }
 .fluid-50-r {
@@ -4585,7 +4671,7 @@ mark {
 }
 
 .fluid-50-m {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 600;
 }
 .fluid-50-m {
@@ -4606,7 +4692,7 @@ mark {
 }
 
 .fluid-50-b {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 700;
 }
 .fluid-50-b {
@@ -4627,7 +4713,7 @@ mark {
 }
 
 .fluid-100-l {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 300;
 }
 .fluid-100-l {
@@ -4648,7 +4734,7 @@ mark {
 }
 
 .fluid-100-r {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 400;
 }
 .fluid-100-r {
@@ -4669,7 +4755,7 @@ mark {
 }
 
 .fluid-100-m {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 600;
 }
 .fluid-100-m {
@@ -4690,7 +4776,7 @@ mark {
 }
 
 .fluid-100-b {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 700;
 }
 .fluid-100-b {
@@ -4711,22 +4797,22 @@ mark {
 }
 
 .text-light {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 300;
 }
 
 .text-regular {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 400;
 }
 
 .text-medium {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 600;
 }
 
 .text-bold {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 700;
 }
 
@@ -5177,12 +5263,12 @@ hr {
 }
 
 .text-12-l {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-size: 12px;
 }
 
 strong {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
 }
 
 .border-1 {
@@ -5700,7 +5786,7 @@ strong {
   white-space: nowrap;
   cursor: pointer;
   padding: 16px 8px;
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 400;
 }
 .btn:hover, .btn.hover {
@@ -7115,7 +7201,7 @@ label {
 }
 
 .input-notouch {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 400;
   pointer-events: none;
   border-color: #E3E3E3;
@@ -7295,7 +7381,7 @@ label {
   line-height: 1;
   width: 150px;
   text-align: center;
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 400;
 }
 .guide-font .guide-title {
@@ -7311,12 +7397,12 @@ input::-webkit-input-placeholder {
 }
 
 .form-input-label {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   position: relative;
   margin-bottom: 24px;
 }
 .form-input-label > input, .form-input-label > label {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   padding: 16px;
   font-weight: normal;
 }
@@ -7597,7 +7683,7 @@ input::-webkit-input-placeholder {
 }
 .input-line-v2 .input,
 .input-line-v2 .input:focus {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 400;
   padding-left: 0;
   padding-bottom: 4px;
@@ -7608,7 +7694,7 @@ input::-webkit-input-placeholder {
   border-bottom: 1px solid #292929;
 }
 .input-line-v2 .input::-webkit-input-placeholder {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 400;
   text-overflow: inherit;
   line-height: initial;
@@ -7652,7 +7738,7 @@ input::-webkit-input-placeholder {
 }
 
 .form-input-label-2, .error-zone {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   position: relative;
 }
 .form-input-label-2 .validation-error-messages, .error-zone .validation-error-messages {
@@ -7685,7 +7771,7 @@ input::-webkit-input-placeholder {
   width: 100%;
 }
 .form-input-label-2 > input, .form-input-label-2 > label, .error-zone > input, .error-zone > label {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   padding: 16px;
   font-weight: normal;
 }
@@ -7953,7 +8039,7 @@ a:hover {
 .link2 {
   text-decoration: none;
   position: relative;
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 400;
   cursor: pointer;
 }
@@ -7967,7 +8053,7 @@ a:hover {
 
 .link3,
 .link3::before {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 400;
   text-align: center;
   display: inline-block;
@@ -7988,7 +8074,7 @@ a:hover {
   padding: 0;
   content: attr(data-text);
   opacity: 0;
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 400;
 }
 
@@ -8059,7 +8145,7 @@ a:hover {
 }
 
 .link5-2 {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 700;
   transition: color 250ms linear;
   text-decoration: none;
@@ -8103,7 +8189,7 @@ a:hover {
 }
 
 .link6 {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 700;
   position: relative;
   display: inline-block;
@@ -8142,7 +8228,7 @@ a:hover {
 }
 
 .link8 {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 400;
   font-weight: inherit;
   position: relative;
@@ -8291,7 +8377,7 @@ button.link-line {
 }
 
 .link-raw {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 400;
   display: initial;
   position: relative;
@@ -8307,7 +8393,7 @@ button.link-line {
 
 .link-svg-pre {
   padding-left: 20px;
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 400;
   display: initial;
   position: relative;
@@ -8338,7 +8424,7 @@ button.link-line {
 
 .link-svg-post {
   padding-right: 20px;
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 400;
   display: initial;
   position: relative;
@@ -8796,7 +8882,7 @@ ul.list-mini > li:after {
   flex-shrink: 0;
   justify-content: flex-start;
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 400;
 }
 .tabs li {
@@ -8831,7 +8917,7 @@ ul.list-mini > li:after {
   border-bottom-width: 2px;
   padding-bottom: 16px;
   color: #292929;
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 700;
 }
 .tabs li:after {
@@ -8900,7 +8986,7 @@ ul.list-mini > li:after {
 }
 .tabs-gray a,
 .tabs-gray span {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 400;
   color: #8E8E8E;
   border-color: #F0F0F0;
@@ -8926,7 +9012,7 @@ ul.list-mini > li:after {
   background-color: #FFFFFF;
   padding: 0 14px;
   display: inline-flex;
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
 }
 .tabs-mini li {
   position: relative;
@@ -8954,7 +9040,7 @@ ul.list-mini > li:after {
 .tabs-mini li.is-active a {
   padding: 6px 8px 8px;
   opacity: 1;
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
 }
 .tabs-mini.tabs-map {
   max-width: 450px;
@@ -9931,7 +10017,7 @@ ul.list-clear li.list-box:last-child {
   border-right: 1px solid #E3E3E3;
 }
 .card9 .card9-sizes button {
-  font-family: Arial, sans-serif;
+  font-family: arial, sans-serif;
   font-weight: 400;
   border: none;
   background-color: #FFFFFF;

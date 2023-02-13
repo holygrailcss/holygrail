@@ -79,6 +79,7 @@ $container-7: 595px!default;
 $container-8: 395px!default;
 $container-9: 798px!default;
 $container-10:432px!default;
+$container-11:1080px!default;
 
 
 $transition:278ms;
@@ -148,6 +149,7 @@ $max-vw:1500px!default;
     head-s:(32px, 32px, 56px ,56px, 1.1, "bold2"),
 
     p-14: ( 14px, 14px, 14px, 14px, 1.3, 'regular' ), 
+    p-14-b: ( 14px, 14px, 14px, 14px, 1.3, 'bold' ), 
     p-l: (16px, 16px, 18px ,18px, 1.3, "regular"),
     p-m: (14px, 14px, 16px ,16px, 1.3, "regular"),
     p-m-b: (14px, 14px, 16px ,16px, 1.3, "bold"), //NUEVO

@@ -169,12 +169,68 @@
 //   -Soporte para lenguajes árabes  
  
 
- .is-rtl{
+.is-rtl {
   .text-right {
-   text-align: left;
+    text-align: left;
+  }
+  .select select:not([multiple]) {
+    padding-right: 16px;
+    padding-left: 45px;
+  }
+  .select:not(.is-multiple):not(.is-loading)::after {
+    right: inherit;
+    left: 20px;
+  }
+  .select.select-label select {
+    padding-right: 100px;
+  }
+  .select.select-label label {
+    left: inherit;
+    right: 16px;
+  }
+  .select:not(.is-multiple):not(.is-loading).select-box::after {
+    left: 8px;
+  }
+  .pr-16 {
+    padding-right: 0px;
+    padding-left: 16px;
+  }
+  .pr-24 {
+    padding-right: 0px;
+    padding-left: 24px;
+  }
+  .pr-30 {
+    padding-right: 0px;
+    padding-left: 30px;
   }
 
+  .mr-8 {
+    margin-right: 0px;
+    margin-left: 8px;
+  }
+  .mr-16 {
+    margin-right: 0px;
+    margin-left: 16px;
+  }
 
+  .ml-16 {
+    margin-left: 0px;
+    margin-right: 16px;
+  }
+  .pl-32 {
+    padding-left: initial;
+    padding-right: 32px;
+  }
 
   
- }
+  .check-center.check-bleed.checkbox-radio [type=radio]:checked+label:before,
+  .check-center.check-bleed.checkbox-radio [type=radio]:not(:checked)+label:before {
+    left: initial;
+    right: 0px;
+  }
+  .check-center.check-bleed.checkbox-radio [type=radio]:checked+label .ico-radio,
+  .check-center.check-bleed.checkbox-radio [type=radio]:not(:checked)+label .ico-radio {
+    left: initial;
+    right: 7px;
+  }
+}
