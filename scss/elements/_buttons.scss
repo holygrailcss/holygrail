@@ -291,6 +291,16 @@ $btn-text-full: 14px;
             stroke: $c-white;
         }
     }
+
+    &:disabled,
+    &.disabled {
+        opacity: 1;
+        background-color: $c-light-grey;
+        color: $c-dark-grey;
+        cursor: default;
+    }
+
+
 }
 .btn-secondary {
     color: $c-primary;
