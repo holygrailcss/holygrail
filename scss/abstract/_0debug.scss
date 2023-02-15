@@ -1,212 +1,271 @@
+/* -DEBUG
 
-// -DEBUG       
- 
 
-// Activa esta hoja de estilos para detectar visualmente cualquier
-// anidación impropia o marcado potencialmente inválido.
+  Activa esta hoja de estilos para detectar visualmente cualquier
+  anidación impropia o marcado potencialmente inválido.
 
-// Rojo           ==      Definitivamente un error
-// Amarillo       ==      a revisar
-// Ninguno        ==      debería estar bien
+  Rojo           ==      Definitivamente un error
+  Amarillo       ==      a revisar
+  Ninguno        ==      debería estar bien
 
-// Este método de validación no es más que una guía, no te bases en el
-// para validar tu marcado
+  Este método de validación no es más que una guía, no te bases en el
+  para validar tu marcado
 
- 
-// - PASO 1 : COLORES POR DIV        
- 
- //debug-div
-@mixin random-bgr(){
-    background: rgb(random(255), random(255), random(255));
+
+  - PASO 1 : COLORES POR DIV
+
+  debug-div */
+@mixin random-bgr() {
+  background: rgb(math.random(255) math.random(255) math.random(255));
+}
+
+@mixin debug-divs() {
+  @for $i from 1 through 500 {
+    div:nth-child(#{$i}) {
+      @include random-bgr;
+    }
+  }
+}
+
+/* -ELEMENTOS VACIOS ?   debug-empty */
+
+
+/* -ALT OBLIGATORIO -- PENALIZAMOS SIN NO HAY ALT   debug-img */
+
+@mixin debug-imgs() {
+  img {
+    outline: 5px solid red;
   }
 
+  img[alt] {
+    outline: none;
+  }
 
-@mixin debug-divs(){
-    @for $i from 1 through 500{
-        div:nth-child(#{$i}){  	    @include random-bgr();
-        }
-        }
-}
-
-// -ELEMENTOS VACIOS ?   debug-empty
- 
- 
-// -ALT OBLIGATORIO -- PENALIZAMOS SIN NO HAY ALT   debug-img
- 
- @mixin debug-imgs(){
-img{
-    outline:5px solid red;
-}
-img[alt]{
-    outline:none;
-}
-img[alt=""]{
-    outline:5px solid yellow;
-}
-}
- 
-// -LINKS CON TITLE OBLIGATORIO    debug-links
- 
- @mixin debug-links(){
-a{
-    outline:5px solid yellow;
-}
-a[title]{
-    outline:none;
-}
-a[href="#"],
-a[href*="javascript"]{
-    outline:5px solid yellow;
-}
-a[target]{
-    outline:5px solid yellow;
-}
+  img[alt=""] {
+    outline: 5px solid yellow;
+  }
 }
 
-// -UL SOLO ANIDA LISTAS      
- 
- @mixin debug-forms(){
-ul,
-ol{
-    > *:not(li){
-        outline:5px solid red;
+/* -LINKS CON TITLE OBLIGATORIO    debug-links */
+
+@mixin debug-links() {
+  a {
+    outline: 5px solid yellow;
+  }
+
+  a[title] {
+    outline: none;
+  }
+
+  a[href="#"],
+  a[href*="javascript"] {
+    outline: 5px solid yellow;
+  }
+
+  a[target] {
+    outline: 5px solid yellow;
+  }
+}
+
+/* -UL SOLO ANIDA LISTAS   */
+
+@mixin debug-forms() {
+  ul,
+  ol {
+    > *:not(li) {
+      outline: 5px solid red;
     }
+  }
+
+  /* -TABLAS BIEN TABULADAS    */
+
+
+  /* Deberíamos asignar un atributo 'scope' a los th */
+
+  /* http:/*bit.ly/1aHBDgW */
+
+  th {
+    outline: 5px solid yellow;
+  }
+
+  th[scope] {
+    outline: none;
+  }
+
+  /* los tr hijos de 'table' no son buenos, ¿necesitabas un 'thead' / 'tbody'? */
+
+  table > tr {
+    outline: 5px solid yellow;
+  }
+
+  /* `tfoot` debe estar *antes* de `tbody`. */
+
+  tbody + tfoot {
+    outline: 5px solid yellow;
+  }
+
+  /* Forms necesitan del atributo `action` */
+
+  form {
+    outline: 5px solid red;
+  }
+
+  form[action] {
+    outline: none;
+  }
+
+  /* Varios elementos de formularios requieren atributos. 'input' necsita de 'type' */
+
+  /* 'textarea' necesita `rows' y 'cols' y 'submit' necesita del atributo 'value'. */
+
+
+  /* -FORMULARIOS : REQUIEREN , -INPUT ,-TYPE  */
+
+  /* -TEXTAREA    : REQUIEREN , -ROWS ,-COLS , */
+
+  /* -SUBMIT      : REQUIERE  , VALUE  */
+
+  textarea,
+  input {
+    outline: 5px solid red;
+  }
+
+  input[type] {
+    outline: none;
+  }
+
+  textarea[rows][cols] {
+    outline: none;
+  }
+
+  input[type="submit"] {
+    outline: 5px solid red;
+  }
+
+  input[type="submit"][value] {
+    outline: none;
+  }
 }
 
-// -TABLAS BIEN TABULADAS        
- 
+/* -IDS SOLO PARA PROGRAMAR JS */
 
-// Deberíamos asignar un atributo 'scope' a los th
-// http://bit.ly/1aHBDgW
+@mixin debug-fine() {
+  /* -ESTILOS EN LINEA, EVITAR EN LA MEDIDA DE LO POSIBLE */
 
-th{
-    outline:5px solid yellow;
+  [style] {
+    outline: 5px solid yellow;
+  }
+
+  :empty {
+    outline: 5px solid yellow;
+  }
+
+  [id] {
+    outline: 5px solid yellow;
+  }
+
+  /* -ELEMENTOS VACIOS    */
+
+  div:empty,
+  span:empty,
+  li:empty,
+  p:empty,
+  td:empty,
+  th:empty { margin: 5px; border: 5px dotted yellow !important; }
+
+  /* -ATRIBUTOS VACIOS    */
+
+  *[alt=""],
+  *[title=""],
+  *[class=""],
+  *[id=""],
+  a[href=""],
+  a[href="#"] { border: 5px solid yellow !important; }
+
+  /*  -ATRIBUTOS DEPRECADOS   */
+
+  applet,
+  basefont,
+  center,
+  dir,
+  font,
+  isindex,
+  menu,
+  s,
+  strike,
+  u { border: 5px dotted red !important; }
+
+  *[background],
+  *[bgcolor],
+  *[clear],
+  *[color],
+  *[compact],
+  *[noshade],
+  *[nowrap],
+  *[size],
+  *[start],
+  *[bottommargin],
+  *[leftmargin],
+  *[rightmargin],
+  *[topmargin],
+  *[marginheight],
+  *[marginwidth],
+  *[alink],
+  *[link],
+  *[text],
+  *[vlink],
+  *[align],
+  *[valign],
+  *[hspace],
+  *[vspace],
+  *[height],
+  *[width],
+  ul[type],
+  ol[type],
+  li[type] { border: 5px solid red !important; }
+
+  /*  -PROPUESTA A LOS ELEMENTOS DEPRECADOS   */
+
+  input[type="button"],
+  big,
+  tt { border: 5px dotted #3f0 !important; }
+
+  /*  -PROPUESTA A LOS ATRIBUTOS DEPRECADOS   */
+
+  *[border],
+  a[target],
+  table[cellpadding],
+  table[cellspacing],
+  *[name] { border: 5px solid #3f0 !important; }
 }
-th[scope]{
-    outline:none;
-}
 
-// los tr hijos de 'table' no son buenos, ¿necesitabas un 'thead' / 'tbody'?
-
-table > tr{
-    outline:5px solid yellow;
-}
-
-// `tfoot` debe estar *antes* de `tbody`.
-
-tbody + tfoot{
-    outline:5px solid yellow;
-}
-
-// Forms necesitan del atributo `action`
-
-form{
-    outline:5px solid red;
-}
-form[action]{
-    outline:none;
-}
-
-//Varios elementos de formularios requieren atributos. 'input' necsita de 'type'
-//'textarea' necesita `rows' y 'cols' y 'submit' necesita del atributo 'value'.
-
- 
-// -FORMULARIOS : REQUIEREN , -INPUT ,-TYPE  
-// -TEXTAREA    : REQUIEREN , -ROWS ,-COLS ,
-// -SUBMIT      : REQUIERE  , VALUE  
- 
-textarea,
-input{
-    outline:5px solid red;
-}
-input[type]{
-    outline:none;
-}
-textarea[rows][cols]{
-    outline:none;
-}
-input[type=submit]{
-    outline:5px solid red;
-}
-input[type=submit][value]{
-    outline:none;
-}
-}
-
-// -IDS SOLO PARA PROGRAMAR JS
- 
- @mixin debug-fine(){
-     
-// -ESTILOS EN LINEA, EVITAR EN LA MEDIDA DE LO POSIBLE
- 
-[style]{
-        outline:5px solid yellow;
-}
-:empty{
-    outline:5px solid yellow;
-}  
-[id]{
-        outline:5px solid yellow;
-}
-
-// -ELEMENTOS VACIOS     
- 
-div:empty, span:empty, li:empty, p:empty, td:empty, th:empty
-{ margin: 5px; border: 5px dotted yellow !important; }
-
-// -ATRIBUTOS VACIOS        
- 
-*[alt=""], *[title=""], *[class=""], *[id=""], a[href=""], a[href="#"]
-{ border: 5px solid yellow !important; }
-
-//  -ATRIBUTOS DEPRECADOS        
- 
-applet, basefont, center, dir, font, isindex, menu, s, strike, u
-{ border: 5px dotted red !important; }
-*[background], *[bgcolor], *[clear], *[color], *[compact], *[noshade], *[nowrap], *[size], *[start],
-*[bottommargin], *[leftmargin], *[rightmargin], *[topmargin], *[marginheight], *[marginwidth], *[alink], *[link], *[text], *[vlink],
-*[align], *[valign],
-*[hspace], *[vspace],
-*[height], *[width],
-ul[type], ol[type], li[type]
-{ border: 5px solid red !important; }
-
-//  -PROPUESTA A LOS ELEMENTOS DEPRECADOS      
- 
-input[type="button"], big, tt
-{ border: 5px dotted #33FF00 !important; }
-
-//  -PROPUESTA A LOS ATRIBUTOS DEPRECADOS      
- 
-*[border], a[target], table[cellpadding], table[cellspacing], *[name]
-{ border: 5px solid #33FF00 !important; }
-}
-@mixin debug-all(){
-    @include debug-divs();
-    @include debug-links();
-    @include debug-forms();
-    @include debug-fine();
-    @include debug-types();
+@mixin debug-all() {
+  @include debug-divs;
+  @include debug-links;
+  @include debug-forms;
+  @include debug-fine;
+  @include debug-types;
 }
 
 @mixin debug-types($headers) {
-    @for $i from 1 through length($headers) {
-      .#{nth(map-keys($headers), $i)} {
-        position: relative;
-     
-        &:after {
-          content: "#{nth(map-keys($headers), $i)} ";
-          position: absolute;
-          @include random-bgr();
-          opacity: 0,8;
-          color: #fff;
-      
-          padding: 2px;
-          left: 0;
-          top: -10px;
-          font-size: 10px;
-          font-weight: bold;
-        }
+  @for $i from 1 through length($headers) {
+    .#{nth(map-keys($headers), $i)} {
+      position: relative;
+
+      &::after {
+        content: "#{nth(map-keys($headers), $i)} ";
+        position: absolute;
+
+        @include random-bgr;
+
+        opacity: 0, 8;
+        color: #fff;
+        padding: 2px;
+        left: 0;
+        top: -10px;
+        font-size: 10px;
+        font-weight: bold;
       }
     }
   }
+}

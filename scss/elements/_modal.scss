@@ -1,14 +1,14 @@
-@import "../abstract/_all.scss";
-.modalx-transparent.modalx-backdrop{
+@import "../abstract/_all";
+
+.modalx-transparent.modalx-backdrop {
   pointer-events: none;
   background: transparent;
-  .modalx{
-    pointer-events: none;
-  
-  }
-  .modalx-content{
-    border:1px solid $c-middle-grey;
 
+  .modalx {
+    pointer-events: none;
+  }
+
+  .modalx-content {
+    border: 1px solid $c-middle-grey;
   }
 }
-

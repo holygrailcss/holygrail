@@ -1,282 +1,300 @@
-@import "../abstract/_all.scss";
+@import '../abstract/_all';
 
 .card9 {
-    position: relative;
-    height: 100%;
-    overflow: hidden;
-    .color-wrap {
-        position: relative;
-        padding: 0 0 8px 0;
-    }
-    .card9-image {
-        position: relative;
-        display: block;
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-    }
-    .card9-add {
-        z-index: 1000;
-        position: absolute;
-        background: rgba(255, 255, 255, 1);
-        padding: 16px;
-        bottom: 16px;
-        left: 16px;
-        right: 16px;
-        transition: opacity 275ms ease;
-        opacity: 0;
-    }
-    .card9-sizes {
-        padding: 0;
-        display: inline-flex;
-        &:last-child {
-            border-right: 1px solid $c-middle-grey;
-        }
-        button {
-            @include font-regular();
-            border: none;
-            background-color: $c-white;
-            border-top: 1px solid $c-middle-grey;
-            border-bottom: 1px solid $c-middle-grey;
-            border-left: 1px solid $c-middle-grey;
-            border-right: none;
-            padding: 10px 0;
-            min-width: 48px;
-            display: inline-block;
-            -webkit-appearance: initial;
-            &:hover {
-                background-color: $primary;
-                color: $c-white;
-                cursor: pointer;
-            }
-        }
-    }
-    .card9-wrap-details {
-        position: relative;
-        min-height: 126px;
-        position: absolute;
-        bottom: 1px;
-        left: 0;
-        z-index: 3;
-        width: 100%;
-        @media (min-width:$break-md) {
-            padding: 0;
-            min-height: 144px;
-        }
-    }
-    .card9-video {
-        position: absolute;
-        z-index: 2;
-        width: 100%;
-        left: 0;
-        height: 100%;
-        top: 0px;
-        opacity: 1;
-        transition: opacity 0.25s ease;
-    }
-    .js-card9-inner {
-        margin-bottom: 0;
-        .content {
-            background: $c-middle-grey;
-        }
-    }
-    .card9-slider {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        z-index: 2;
-        pointer-events: none;
-        transition: all .3s ease;
-        opacity: 0;
-        .ma-swiper-button-next,
-        .ma-swiper-button-prev {
-            background: rgba(255, 255, 255, 0.3);
-            border-radius: 50%;
-            height: 30px;
-            width: 30px;
-            position: absolute;
-            top: calc(50% - 80px);
-            z-index: 3000;
-            text-align: center;
-            opacity: 0;
-            transition-delay: 0s;
-            transition: all .3s ease;
-        }
-        .ma-swiper-button-next {
-            padding: 7px 4px 4px 7px;
-            right: 16px;
-            &:hover {
-                transition-delay: 0s;
-                background: rgba(255, 255, 255, 0.5);
-            }
-        }
-        .ma-swiper-button-prev {
-            padding: 7px 7px 4px 4px;
-            left: 16px;
-            &:hover {
-                transition-delay: 0s;
-                background: rgba(255, 255, 255, 0.5);
-            }
-        }
-    }
-}
+  position: relative;
+  height: 100%;
+  overflow: hidden;
 
-.card9-wrap {
+  .color-wrap {
+    position: relative;
+    padding: 0 0 8px;
+  }
+
+  .card9-image {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .card9-add {
+    z-index: 1000;
+    position: absolute;
+    background: rgb(255 255 255 / 100%);
+    padding: 16px;
+    bottom: 16px;
+    left: 16px;
+    right: 16px;
+    transition: opacity 275ms ease;
+    opacity: 0;
+  }
+
+  .card9-sizes {
+    padding: 0;
+    display: inline-flex;
+
+    &:last-child {
+      border-right: 1px solid $c-middle-grey;
+    }
+
+    button {
+      @include font-regular;
+
+      border: none;
+      background-color: $c-white;
+      border-top: 1px solid $c-middle-grey;
+      border-bottom: 1px solid $c-middle-grey;
+      border-left: 1px solid $c-middle-grey;
+      border-right: none;
+      padding: 10px 0;
+      min-width: 48px;
+      display: inline-block;
+      appearance: initial;
+
+      &:hover {
+        background-color: $primary;
+        color: $c-white;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .card9-wrap-details {
+    min-height: 126px;
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+
+    @media (min-width: $break-md) {
+      padding: 0;
+      min-height: 144px;
+    }
+  }
+
+  .card9-video {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    top: 0;
+    opacity: 1;
+    transition: opacity 0.25s ease;
+  }
+
+  .js-card9-inner {
+    margin-bottom: 0;
+
+    .content {
+      background: $c-middle-grey;
+    }
+  }
+
+  .card9-slider {
+    position: absolute;
     width: 100%;
     height: 100%;
-
-    .rat-content {
-        .card9-add {
-            background-color: rgba(255, 255, 255, 0);
-        }
-        .btn-group {
-            display: flex;
-            flex-wrap: wrap;
-        }
-    }
-    .rat-content:hover {
-        .card9-add {
-            background-color: rgba(255, 255, 255, 0.8);
-            opacity: 1;
-        }
-    }
-}
-
-.is-active .card9-add {
-    opacity: 1;
-}
-
-//aparece la caja cuando
-.card9-add {
-    #lookbook & {
-        left: 0px;
-        width: 100%;
-    }
-    .is-active & {
-        opacity: 1;
-    }
-}
-
-.hg a.card9-link:hover{
-    opacity: 1;
-}
-
-.card9-link{
-    .img-poster{
-        cursor: pointer;
-        object-fit: contain;
-        height: 100%;∫
-        img{
-            object-fit: contain;
-            height: 100%;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            -o-user-select: none;
-            user-select: none;
-        }
-    }
-}
-
-.card9-wrap{
-    position: absolute;
     top: 0;
     left: 0;
     z-index: 2;
-    transition: all 1s ease;
+    pointer-events: none;
+    transition: all 0.3s ease;
     opacity: 0;
+
+    .ma-swiper-button-next,
+    .ma-swiper-button-prev {
+      background: rgb(255 255 255 / 30%);
+      border-radius: 50%;
+      height: 30px;
+      width: 30px;
+      position: absolute;
+      top: calc(50% - 80px);
+      z-index: 3000;
+      text-align: center;
+      opacity: 0;
+      transition-delay: 0s;
+      transition: all 0.3s ease;
+    }
+
+    .ma-swiper-button-next {
+      padding: 7px 4px 4px 7px;
+      right: 16px;
+
+      &:hover {
+        transition-delay: 0s;
+        background: rgb(255 255 255 / 50%);
+      }
+    }
+
+    .ma-swiper-button-prev {
+      padding: 7px 7px 4px 4px;
+      left: 16px;
+
+      &:hover {
+        transition-delay: 0s;
+        background: rgb(255 255 255 / 50%);
+      }
+    }
+  }
+}
+
+.card9-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  transition: all 1s ease;
+  opacity: 0;
+  margin-left: 33%;
+
+  .rat-content {
+    .card9-add {
+      background-color: rgb(255 255 255 / 0%);
+    }
+
+    .btn-group {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  .rat-content:hover {
+    .card9-add {
+      background-color: rgb(255 255 255 / 80%);
+      opacity: 1;
+    }
+  }
+}
+
+.card9-add {
+  #lookbook & {
+    left: 0;
+    width: 100%;
+  }
+
+  .is-active & {
+    opacity: 1;
+  }
+}
+
+.hg a.card9-link:hover {
+  opacity: 1;
+}
+
+.card9-link {
+  .img-poster {
+    cursor: pointer;
+    object-fit: contain;
+    height: 100%;
+
+    img {
+      object-fit: contain;
+      height: 100%;
+      user-select: none;
+    }
+  }
 }
 
 .card9-bottom {
-    display: flex;
-    flex-direction: column;
-    .card9-wrap {
-        margin-left: 33%;
-    }
-    .card9-wrap-details {
-        position: relative;
-    }
-    .js-card9-inner {
-        margin-bottom: 0;
-        width: 50%;
-    }
-    }
-    .card9-left {
-        @media (max-width: 767px) {
-            .card9-wrap {
-                margin-left: 0;
-            }
-            .card9-wrap-details {
-                margin-left: 0;
-            }
-        }
-        .card9 {
-            display: flex;
-            flex-direction: row;
-            width: 100%;
-        }
-        .card9-view-details {
-            width: 50%;
-        }
-        .card9-wrap-details {
-            position: relative;
-            margin-left: 8px;
-        }
-        .js-card9-inner {
-            width: 50%;
-            margin-bottom: 0;
-        }
-    }
-    .card9-right {
-        .card9-wrap {
-            margin-right: 33%;
-        }
-        .card9 {
-            display: flex;
-            flex-direction: row-reverse;
-            width: 100%;
-        }
-        .card9-view-details {
-            width: 50%;
-        }
-        .card9-wrap-details {
-            text-align: right;
-            position: relative;
-            padding-right: 8px;
-        }
-        .js-card9-inner {
-            width: 50%;
-            margin-bottom: 0;
-        }
-    }
+  display: flex;
+  flex-direction: column;
 
+  .card9-wrap-details {
+    position: relative;
+  }
 
-
-.product-tag {
-    @include font-2-medium;
-    font-size: 14px;
-    color: $primary;
-    letter-spacing: 0;
-    line-height: 16px;
+  .js-card9-inner {
+    margin-bottom: 0;
+    width: 50%;
+  }
 }
 
-
-.grid-swiper-wrap{
-
-    cursor: grab;
-
-    .card9-view-details{
-        position:relative;
+.card9-left {
+  @media (max-width: 767px) {
+    .card9-wrap {
+      margin-left: 0;
     }
-     .card9-wrap-details{
-         position:relative;
+
+    .card9-wrap-details {
+      margin-left: 0;
     }
-    .rat-3-4:before {
-        display: block;
-        content: "";
-        width: 100%;
-        padding-top: calc(133.33333% );
-    }
+  }
+
+  .card9 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .card9-view-details {
+    width: 50%;
+  }
+
+  .card9-wrap-details {
+    position: relative;
+    margin-left: 8px;
+  }
+
+  .js-card9-inner {
+    width: 50%;
+    margin-bottom: 0;
+  }
+}
+
+.card9-right {
+  .card9-wrap {
+    margin-right: 33%;
+  }
+
+  .card9 {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+  }
+
+  .card9-view-details {
+    width: 50%;
+  }
+
+  .card9-wrap-details {
+    text-align: right;
+    position: relative;
+    padding-right: 8px;
+  }
+
+  .js-card9-inner {
+    width: 50%;
+    margin-bottom: 0;
+  }
+}
+
+.product-tag {
+  @include font-2-medium;
+
+  font-size: 14px;
+  color: $primary;
+  letter-spacing: 0;
+  line-height: 16px;
+}
+
+.grid-swiper-wrap {
+  cursor: grab;
+
+  .card9-view-details {
+    position: relative;
+  }
+
+  .card9-wrap-details {
+    position: relative;
+  }
+
+  .rat-3-4::before {
+    display: block;
+    content: '';
+    width: 100%;
+    padding-top: calc(133.3333%);
+  }
 }

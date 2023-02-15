@@ -1,21 +1,16 @@
-@import "../abstract/_all.scss";
+@import "../abstract/_all";
 
-//   -BACKGROUNDS        
- 
- 
- .bg-cover{
+
+.bg-cover {
   background-position: center center;
   background-size: cover;
 }
 
 .bg-dark {
- background-color: $c-middle-grey;
- color: $c-white;
+  background-color: $c-middle-grey;
+  color: $c-white;
 }
 
 .has-light {
   color: $c-white;
- }
-
-
-
+}

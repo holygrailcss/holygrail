@@ -1,27 +1,15 @@
-@import "../abstract/_all.scss";
-
-
-//   - MARGINS  
- 
-
-
- //  -MIXINS SPACE  
-  
-
-    // margin
-    @include space($breakpoints, $margin, $mg);
-    @include space($breakpoints, $margin-y, $my);
-    @include space($breakpoints, $margin-x, $mx);
-    @include space($breakpoints, $margin-top, $mt);
-    @include space($breakpoints, $margin-right, $mr);
-    @include space($breakpoints, $margin-bottom, $mb);
-    @include space($breakpoints, $margin-left, $ml);
-   // padding
-    @include space($breakpoints, $padding, $p);
-    @include space($breakpoints, $padding-y, $py);
-    @include space($breakpoints, $padding-x, $px);
-    @include space($breakpoints, $padding-top, $pt);
-    @include space($breakpoints, $padding-left, $pl);
-    @include space($breakpoints, $padding-bottom, $pb);
-    @include space($breakpoints, $padding-right, $pr);
-
+@import "../abstract/_all";
+@include space($breakpoints, $margin, $mg);
+@include space($breakpoints, $margin-y, $my);
+@include space($breakpoints, $margin-x, $mx);
+@include space($breakpoints, $margin-top, $mt);
+@include space($breakpoints, $margin-right, $mr);
+@include space($breakpoints, $margin-bottom, $mb);
+@include space($breakpoints, $margin-left, $ml);
+@include space($breakpoints, $padding, $p);
+@include space($breakpoints, $padding-y, $py);
+@include space($breakpoints, $padding-x, $px);
+@include space($breakpoints, $padding-top, $pt);
+@include space($breakpoints, $padding-left, $pl);
+@include space($breakpoints, $padding-bottom, $pb);
+@include space($breakpoints, $padding-right, $pr);

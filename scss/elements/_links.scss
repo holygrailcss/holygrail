@@ -1,170 +1,185 @@
-@import "../abstract/_all.scss";
+@import '../abstract/_all';
 
-//   -LINKS    
- 
-
-$opacity-links:.6;
-
+$opacity-links: 0.6;
 
 a {
-    &:hover {
-        opacity: $opacity-links;
-    }
+  &:hover {
+    opacity: $opacity-links;
+  }
 }
 
 .ico-links {
-    margin-left: 24px;
-    svg {
-      position: absolute;
-      left: -24px;
-      bottom: 2px;
-    }
-  }
+  margin-left: 24px;
 
+  svg {
+    position: absolute;
+    left: -24px;
+    bottom: 2px;
+  }
+}
 
 .link1 {
-    display: inline;
-    position: relative;
-    text-align: center;
-    outline: none;
-    padding: 4px 0;
-    text-align: center;
-    cursor: pointer;
-    background: transparent!important;
-    border: none;
-    &:after {
-        content: '';
-        background-color: $primary;
-        width: 100%;
-        position: absolute;
-        bottom: 0px;
-        left: 0px;
-        height: 1px;
-    }
-    &:hover{
-        opacity: $opacity-links;
-    }
+  display: inline;
+  position: relative;
+  outline: none;
+  padding: 4px 0;
+  text-align: center;
+  cursor: pointer;
+  background: transparent !important;
+  border: none;
+
+  &::after {
+    content: '';
+    background-color: $primary;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+  }
+
+  &:hover {
+    opacity: $opacity-links;
+  }
 }
+
 .link2 {
-    text-decoration: none;
-    position: relative;
-    @include font-regular();
-    cursor: pointer;
-    &:hover {
-        opacity: $opacity-links;
-        &::after {
-            -ms-transform: scaleX(1);
-            transform: scaleX(1)
-        }
+  text-decoration: none;
+  position: relative;
+
+  @include font-regular;
+
+  cursor: pointer;
+
+  &:hover {
+    opacity: $opacity-links;
+
+    &::after {
+      transform: scaleX(1);
     }
+  }
 }
+
 .link3,
 .link3::before {
-    @include font-regular();
-    text-align: center;
-    display: inline-block;
-    position: relative;
-    top: 0;
-    left: 0;
-    transition: all .2s linear;
-    white-space: nowrap;
-    cursor: pointer;
-    &:hover{
-        opacity: $opacity-links;
-    }
+  @include font-regular;
+
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: all 0.2s linear;
+  white-space: nowrap;
+  cursor: pointer;
+
+  &:hover {
+    opacity: $opacity-links;
+  }
 }
+
 .link3::before {
-    position: absolute;
-    padding: 0;
-    content: attr(data-text);
-    opacity: 0;
-    @include font-regular();
+  position: absolute;
+  padding: 0;
+  content: attr(data-text);
+  opacity: 0;
+
+  @include font-regular;
 }
+
 .link3:hover,
 .link3.hover {
-    opacity: $opacity-links;
-}
-.link3:hover::before {
-    opacity: 1;
+  opacity: $opacity-links;
 }
 
+.link3:hover::before {
+  opacity: 1;
+}
 
 .link4 {
-    position: relative;
-    display: inline-block;
-    border: 0;
-    transform: none;
-    transition: background-color 0.3s ease-in-out;
-    margin: 0px;
-    padding: 2px 0;
-    cursor: pointer;
-    &:hover {
-        opacity: $opacity-links;
-    }
-    &:after {
-        content: '';
-        background-color: $primary;
-        width: 100%;
-        position: absolute;
-        bottom: 0px;
-        left: 0px;
-        height: 1px;
-    }
+  position: relative;
+  display: inline-block;
+  border: 0;
+  transform: none;
+  transition: background-color 0.3s ease-in-out;
+  margin: 0;
+  padding: 2px 0;
+  cursor: pointer;
+
+  &:hover {
+    opacity: $opacity-links;
+  }
+
+  &::after {
+    content: '';
+    background-color: $primary;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+  }
 }
 
-.link5,u {
-    transition: color 250ms linear;
-    text-decoration: none;
-    position: relative;
-    cursor: pointer;
-    &:hover {
-  
-            opacity: $opacity-links;
-      
-        &::after {
-            -ms-transform: scaleX(1);
-            transform: scaleX(1)
-        }
-    }
-    &:focus {
-        outline: none;
-        text-decoration: none;
-    }
-    &:focus:hover {}
-    &:-moz-focusring {
-        outline: none !important;
-        background: none;
-    }
-    &::after {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        bottom: -4px;
-        left: 0;
-        background: $primary;
-        transform: scaleX(0);
-        transition: transform $transition;
-        transition: transform $transition, -webkit-transform $transition;
-    }
-}
-
-.link5-2{
-  @include font-bold();
+.link5,
+u {
   transition: color 250ms linear;
   text-decoration: none;
   position: relative;
   cursor: pointer;
+
+  &:hover {
+    opacity: $opacity-links;
+
+    &::after {
+      transform: scaleX(1);
+    }
+  }
+
   &:focus {
     outline: none;
     text-decoration: none;
   }
+
   &:-moz-focusring {
     outline: none !important;
     background: none;
   }
+
   &::after {
-    content: "";
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background: $primary;
+    transform: scaleX(0);
+    transition: transform $transition;
+    transition: transform $transition, -webkit-transform $transition;
+  }
+}
+
+.link5-2 {
+  @include font-bold;
+
+  transition: color 250ms linear;
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+    text-decoration: none;
+  }
+
+  &:-moz-focusring {
+    outline: none !important;
+    background: none;
+  }
+
+  &::after {
+    content: '';
     position: absolute;
     width: 0%;
     height: 1px;
@@ -173,8 +188,9 @@ a {
     background: $primary;
     transition: 0.6s;
   }
+
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     width: 100%;
     height: 1px;
@@ -183,8 +199,10 @@ a {
     background: $primary;
     opacity: 0.3;
   }
+
   &:hover {
     opacity: 1;
+
     &::after {
       width: 100%;
       transition: 0.6s;
@@ -193,369 +211,397 @@ a {
 }
 
 .link6 {
-    @include font-bold;
-    position: relative;
-    display: inline-block;
-    padding: 4px 0;
-    margin: 20px 0;
-    border-bottom: 2px solid $primary;
-    color: $primary;
-    text-align: left;
-    text-decoration: none;
-    cursor: pointer;
-    text-transform: uppercase;
-    &:hover{
-        opacity: $opacity-links;
-    }
+  @include font-bold;
+
+  position: relative;
+  display: inline-block;
+  padding: 4px 0;
+  margin: 20px 0;
+  border-bottom: 2px solid $primary;
+  color: $primary;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+  text-transform: uppercase;
+
+  &:hover {
+    opacity: $opacity-links;
+  }
 }
 
 .link7 {
-    position: relative;
-    text-decoration: none;
-    cursor: pointer;
-    &:after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        z-index: 3;
-        width: 0;
-        height: 1px;
-        background: $primary;
-        -webkit-animation: underline 1s 0.5s cubic-bezier(0.55, 0.085, 0, 0.99) forwards;
-        animation: underline 1s 0.5s cubic-bezier(0.55, 0.085, 0, 0.99) forwards;
-    }
-    &:hover{
-        opacity: $opacity-links;
-    }
+  position: relative;
+  text-decoration: none;
+  cursor: pointer;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    width: 0;
+    height: 1px;
+    background: $primary;
+    animation: underline 1s 0.5s cubic-bezier(0.55, 0.085, 0, 0.99) forwards;
+  }
+
+  &:hover {
+    opacity: $opacity-links;
+  }
 }
 
-.link8{
-    @include font-regular;
-        font-weight: inherit;
-        position: relative;
-        display: inline-block;
-        border: 0;
-        transform: none;
-        transition: background-color .3s ease-in-out;
-        margin: 0;
-        font-size: 14px;
-        line-height: 1.2;
-        padding: 2px 0;
-        text-decoration: underline;
-        cursor: pointer;
-        &:hover{
-            opacity: $opacity-links;
-        }
-    }
+.link8 {
+  @include font-regular;
+
+  font-weight: inherit;
+  position: relative;
+  display: inline-block;
+  border: 0;
+  transform: none;
+  transition: background-color 0.3s ease-in-out;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.2;
+  padding: 2px 0;
+  text-decoration: underline;
+  cursor: pointer;
+
+  &:hover {
+    opacity: $opacity-links;
+  }
+}
 
 .link9 {
-	font-weight: 600;
-	position: relative;
-	display: inline-block;
-	border: 0;
-	transform: none;
-	margin: 0px;
-	font-size: 14px;
-	line-height: 14px;
-	padding:  0;
-    cursor: pointer;
-    &:hover{
-        opacity: $opacity-links;
-    }
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+  border: 0;
+  transform: none;
+  margin: 0;
+  font-size: 14px;
+  line-height: 14px;
+  padding: 0;
+  cursor: pointer;
+
+  &:hover {
+    opacity: $opacity-links;
+  }
 }
 
 .link-button-prev {
-    background: transparent !important;
-    position: relative;
-    width: 40px;
-    height: 40px;
-    z-index: 1;
-    cursor: pointer;
-    border-radius: 50%;
-    border: 1px solid $c-middle-grey;
+  background: transparent !important;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 1px solid $c-middle-grey;
 }
+
 .inner-button {
-    margin-top: -1px;
+  margin-top: -1px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  color: $c-white;
+
+  &::after {
+    border: 1px solid $primary;
+    border-radius: 0;
+    border-right: 0;
+    border-top: 0;
+    content: ' ';
     display: block;
-    width: 40px;
-    height: 40px;
-    color: $c-white;
-    &::after {
-        border: 1px solid $primary;
-        border-radius: 0px;
-        border-right: 0;
-        border-top: 0;
-        content: " ";
-        display: block;
-        height: 10px;
-        margin-top: -8px;
-        pointer-events: none;
-        position: absolute;
-        top: 53%;
-        right: 16px;
-        transform: rotate(-135deg);
-        transform-origin: center;
-        width: 10px;
-    }
-}
-
-.has-light {
-    .link1 {
-        color: $c-white;
-        &:after {
-            background-color: $c-white;
-        }
-    }
-    .link4 {
-        color: $c-white;
-        &:after {
-            background-color: $c-white;
-        }
-        .link4-underline {
-            background: $c-white;
-        }
-    }
-    .link5 {
-        color: $c-white;
-        &:after {
-            background: $c-white;
-        }
-    }
-    .link6 {
-        color: $c-white;
-        border-bottom: 2px solid $c-white;
-    }
-    .link7 {
-        color: $c-white;
-        &:after {
-            background: $c-white;
-        }
-    }
-    .link8{
-        color: $c-white;
-        }
-    .link9 {
-        color: $c-white;
-        &:after {
-            background: $c-white;
-        }
-    }
-}
-
-button{
-    &.link-line {
-        padding-left: 0;
-        padding-right: 0;
-    }
+    height: 10px;
+    margin-top: -8px;
+    pointer-events: none;
+    position: absolute;
+    top: 53%;
+    right: 16px;
+    transform: rotate(-135deg);
+    transform-origin: center;
+    width: 10px;
+  }
 }
 
 
-
-
-
-
-button.link-line{
-    padding-left: 0;
-    padding-right: 0;
+button.link-line {
+  padding-left: 0;
+  padding-right: 0;
 }
-
 
 .link-line {
-    display: initial;
-    position: relative;
-    border: 0;
-    transform: none;
-    cursor: pointer;
-    background-color: transparent;
-    background-image: linear-gradient(transparent calc(100% - 1px), $primary 10px);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    transition: background-size .4s;
+  display: initial;
+  position: relative;
+  border: 0;
+  transform: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-image: linear-gradient(transparent calc(100% - 1px), $primary 10px);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  transition: background-size 0.4s;
 
+  &:hover {
+    opacity: $opacity-links;
+  }
 
-    &:hover {
-        opacity: $opacity-links;
-    }
+  &.c-feel-dark {
+    background-image: linear-gradient(transparent calc(100% - 1px), $c-feel-dark 10px);
+  }
 
-    &.c-feel-dark{
-        background-image: linear-gradient(transparent calc(100% - 1px), $c-feel-dark 10px);
-    }
-    
-    &.c-feel{
-        background-image: linear-gradient(transparent calc(100% - 1px), $c-feel 10px);
-    }
+  &.c-feel {
+    background-image: linear-gradient(transparent calc(100% - 1px), $c-feel 10px);
+  }
 }
 
-.is-error{
-    .link-line{
-        background-image: linear-gradient(transparent calc(100% - 1px), $c-error 10px);
-    }
+.is-error {
+  .link-line {
+    background-image: linear-gradient(transparent calc(100% - 1px), $c-error 10px);
+  }
 }
 
 .link-raw {
-    @include font-regular();
-    display: initial;
-    position: relative;
-    border: 0;
-    transform: none;
-    cursor: pointer;
-    background: initial;
-    padding: 0;
-    &:hover {
-        opacity: $opacity-links;
-    }
-}
-.link-svg-pre{
-    padding-left: 20px;
-    @include font-regular();
-    display: initial;
-    position: relative;
-    border: 0;
-    transform: none;
-    cursor: pointer;
-    background: initial;
-    svg-icon{
-        position: absolute;
-        left: 0;
-        bottom: 4px;
-        width: 16px;
-        height: 16px;
-        }
-    &:hover {
-        opacity: $opacity-links;
-    }
-    &:after {
-        content: '';
-        background-color: $primary;
-        position: absolute;
-        bottom: 0px;
-        width: calc(100% - 20px);
-        left: 20px;
-        height: 1px;
-    }
-}
-.link-svg-post{
-    padding-right: 20px;
-    @include font-regular();
-    display: initial;
-    position: relative;
-    border: 0;
-    transform: none;
-    cursor: pointer;
-    background: initial;
-    svg-icon{
-        position: absolute;
-        right: 0;
-        bottom: 4px;
-        width: 16px;
-        height: 16px;
-        }
-    &:hover {
-        opacity: $opacity-links;
-    }
-    &:after {
-        content: '';
-        background-color: $primary;
-        position: absolute;
-        bottom: 0px;
-        width: calc(100% - 20px);
-        left: 0;
-        height: 1px;
-    }
+  @include font-regular;
+
+  display: initial;
+  position: relative;
+  border: 0;
+  transform: none;
+  cursor: pointer;
+  background: initial;
+  padding: 0;
+
+  &:hover {
+    opacity: $opacity-links;
+  }
 }
 
-button.link-line.link-svg-pre{
-    padding-left: 20px;
-    padding-right: 0;
+.link-svg-pre {
+  padding-left: 20px;
+
+  @include font-regular;
+
+  display: initial;
+  position: relative;
+  border: 0;
+  transform: none;
+  cursor: pointer;
+  background: initial;
+
+  svg-icon {
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+    width: 16px;
+    height: 16px;
+  }
+
+  &:hover {
+    opacity: $opacity-links;
+  }
+
+  &::after {
+    content: '';
+    background-color: $primary;
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 20px);
+    left: 20px;
+    height: 1px;
+  }
 }
-button.link-line.link-svg-post{
-    padding-right: 20px;
+
+.link-svg-post {
+  padding-right: 20px;
+
+  @include font-regular;
+
+  display: initial;
+  position: relative;
+  border: 0;
+  transform: none;
+  cursor: pointer;
+  background: initial;
+
+  svg-icon {
+    position: absolute;
+    right: 0;
+    bottom: 4px;
+    width: 16px;
+    height: 16px;
+  }
+
+  &:hover {
+    opacity: $opacity-links;
+  }
+
+  &::after {
+    content: '';
+    background-color: $primary;
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 20px);
+    left: 0;
+    height: 1px;
+  }
+}
+
+button.link-line.link-svg-pre {
+  padding-left: 20px;
+  padding-right: 0;
+}
+
+button.link-line.link-svg-post {
+  padding-right: 20px;
+  padding-left: 0;
+}
+
+.has-light {
+  .link1 {
+    color: $c-white;
+
+    &::after {
+      background-color: $c-white;
+    }
+  }
+
+  .link4 {
+    color: $c-white;
+
+    &::after {
+      background-color: $c-white;
+    }
+
+    .link4-underline {
+      background: $c-white;
+    }
+  }
+
+  .link5 {
+    color: $c-white;
+
+    &::after {
+      background: $c-white;
+    }
+  }
+
+  .link6 {
+    color: $c-white;
+    border-bottom: 2px solid $c-white;
+  }
+
+  .link7 {
+    color: $c-white;
+
+    &::after {
+      background: $c-white;
+    }
+  }
+
+  .link8 {
+    color: $c-white;
+  }
+
+  .link9 {
+    color: $c-white;
+
+    &::after {
+      background: $c-white;
+    }
+  }
+
+  .link-raw {
+    color: white;
+
+    svg-icon {
+      filter: invert(1);
+    }
+  }
+
+  .link-line {
+    color: white;
+    background-image: linear-gradient(transparent calc(100% - 1px), white 10px);
+
+    svg-icon {
+      filter: invert(1);
+    }
+
+    &::after {
+      background-color: #fff;
+    }
+  }
+
+  .link-multiline {
+    color: white;
+    background-image: linear-gradient(transparent calc(100% - 1px), white 10px);
+
+    svg-icon {
+      filter: invert(1);
+    }
+
+    &::after {
+      background-color: #fff;
+    }
+  }
+
+  .link-svg-post {
+    color: white;
+    background-image: none;
+
+    &::after {
+      background-color: #fff;
+    }
+
+    svg-icon {
+      filter: invert(1);
+    }
+  }
+
+  .link-svg-pre {
+    color: white;
+    background-image: none;
+
+    &::after {
+      background-color: #fff;
+    }
+
+    svg-icon {
+      filter: invert(1);
+    }
+  }
+}
+
+.is-rtl {
+  .link-svg-pre,
+  button.link-line.link-svg-pre {
     padding-left: 0;
-}
+    padding-right: 20px;
 
-
-.has-light{
-    .link-raw {
-        color: white;
-        svg-icon{
-            filter: invert(1);
-        }
-    }
-    .link-line {
-        color: white;
-        background-image: linear-gradient(transparent calc(100% - 1px), white 10px);
-        svg-icon{
-            filter: invert(1);
-        }
-
-        &:after {
-            background-color: #fff;
-            }
-    }
-    .link-multiline {
-        color: white;
-        background-image: linear-gradient(transparent calc(100% - 1px), white 10px);
-
-        svg-icon{
-            filter: invert(1);
-        }
-
-        &:after {
-            background-color: #fff;
-            }
-    }
-    .link-svg-post{
-        color: white;
-        background-image:none;
-        &:after {
-        background-color: #fff;
-        }
-        svg-icon{
-            filter: invert(1);
-        }
-    }
-    .link-svg-pre{
-        color: white;
-        background-image:none;
-        &:after {
-        background-color: #fff;
-        }
-        svg-icon{
-            filter: invert(1);
-        }
+    &::after {
+      left: 0;
     }
 
-
-}
-
-
-.is-rtl{
-    .link-svg-pre, button.link-line.link-svg-pre{
-      padding-left: 0;
-      padding-right: 20px;
-  
-      &:after {
-        left: 0px;
-    }
-    svg-icon{
+    svg-icon {
       left: auto;
       right: 0;
     }
+  }
+
+  .link-svg-post,
+  button.link-line.link-svg-post {
+    padding-left: 20px;
+    padding-right: 0;
+
+    &::after {
+      right: 0;
     }
-    .link-svg-post, button.link-line.link-svg-post{
-      padding-left: 20px;
-      padding-right: 0;
-  
-      &:after {
-        right: 0px;
-    }
-    svg-icon{
+
+    svg-icon {
       right: auto;
       left: 0;
     }
-    }
-
-
-
   }
+}

@@ -47,6 +47,7 @@ Probar el holygrail antes de subir
 
 npm run docs
 npm run build
+npm run start para abrir la guia
 
 
 

@@ -1,0 +1,29 @@
+{
+  "extends": "stylelint-config-standard-scss",
+  "rules": {
+    "scss/dollar-variable-pattern": null,
+    "scss/at-import-no-partial-leading-underscore": null,
+    "no-invalid-position-at-import-rule": null,
+    "no-descending-specificity": null,
+    "selector-pseudo-element-no-unknown": null,
+    "selector-pseudo-class-no-unknown":null,
+    "scss/operator-no-unspaced": null,
+    "selector-no-vendor-prefix": null,
+    "selector-pseudo-class-no-unknown ": null,
+    "declaration-block-no-shorthand-property-overrides": null,
+    "keyframe-selector-notation": null,
+    "scss/double-slash-comment-whitespace-inside": null,
+    "selector-class-pattern": null,
+    "scss/no-global-function-names":null,
+    "rule-empty-line-before":null,
+    "scss/operator-no-newline-after":null,
+    "keyframes-name-pattern":null,
+
+    "no-duplicate-at-import-rules":null,
+
+     "scss/at-mixin-pattern":null,
+    "scss/dollar-variable-empty-line-before":null,
+    "scss/at-extend-no-missing-placeholder":null
+
+  }
+}

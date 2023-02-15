@@ -1,5 +1,6 @@
-@use 'sass:math';
-@import "../abstract/_all.scss";  // este está duplicado en el proyecto de dutti.
+@use "sass:math";
+@import "../abstract/_all";
+
 
 $tooltipArrow: 10px;
 $tooltipColor: #e3e3e3;
@@ -7,12 +8,12 @@ $tooltipdist: 18px;
 
 .tooltip-sm {
   right: 8px;
-  background-color:$c-white;
+  background-color: $c-white;
   border: 1px solid $tooltipColor;
   position: absolute;
   width: 100%;
   max-width: 327px;
-  z-index:10;
+  z-index: 10;
 
   &::after {
     top: math.div(-$tooltipArrow, 2) - 1;

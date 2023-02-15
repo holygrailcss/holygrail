@@ -1,31 +1,30 @@
-@import "../abstract/_all.scss";
+@import "../abstract/_all";
 
-//   -HELPERS DE TEXTO , ALINEACIONES        
- 
- .text-center {
+.text-center {
   text-align: center;
 }
+
 .text-right {
   text-align: right;
 }
+
 .text-left {
   text-align: left;
 }
+
 .text-justify {
   text-align: justify;
 }
+
 .text-nowrap {
   white-space: nowrap;
 }
 
 
-
-
-//   -FLEXBOX    helpers
- 
 .is-flex {
   display: flex;
 }
+
 .is-inlineflex {
   display: inline-flex;
 }
@@ -33,33 +32,43 @@
 .flex-column {
   flex-direction: column;
 }
+
 .flex-row {
   flex-direction: row;
 }
+
 .flex-nowrap {
   flex-wrap: nowrap;
 }
+
 .flex-wrap {
   flex-wrap: wrap;
 }
+
 .content-start {
   justify-content: flex-start;
 }
+
 .content-end {
   justify-content: flex-end;
 }
+
 .content-center {
   justify-content: center;
 }
+
 .content-sp-between {
   justify-content: space-between;
 }
+
 .content-sp-around {
   justify-content: space-around;
 }
+
 .content-sp-evenly {
   justify-content: space-evenly;
 }
+
 .align-top {
   align-items: flex-start;
 }
@@ -69,47 +78,57 @@
   align-content: center;
   flex-wrap: wrap;
 }
+
 .align-bottom {
   align-items: flex-end;
 }
+
 .align-stretch {
   align-items: stretch;
 }
+
 .align-multi-top {
   align-content: flex-start;
   flex-wrap: wrap;
 }
+
 .align-multi-bottom {
   align-content: flex-end;
   flex-wrap: wrap;
 }
+
 .align-multi-center {
   align-content: center;
   flex-wrap: wrap;
 }
+
 .align-multi-between {
   align-content: space-between;
   flex-wrap: wrap;
 }
+
 .align-multi-around {
   align-content: space-around;
   flex-wrap: wrap;
 }
+
 .align-multi-stretch {
   align-content: stretch;
   flex-wrap: wrap;
 }
 
-.align-vertical{
+.align-vertical {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
+
 .d-inline {
   display: inline-block;
 }
+
 .align-center {
   display: flex;
   flex-direction: column;
@@ -117,7 +136,6 @@
   justify-content: center;
   text-align: center;
 }
-
 
 .sticky-bottom {
   width: 100%;
@@ -128,15 +146,12 @@
   bottom: 0;
 }
 
-.is-tooltip{
+.is-tooltip {
   position: relative;
   width: 100%;
 }
 
-
-//Responsive alignement
-
-.xs\:text-center { @media (max-width: #{$break-sm - 1} ) { text-align: center; } }
+.xs\:text-center { @media (max-width: #{$break-sm - 1}) { text-align: center; } }
 .sm\:text-center { @media (max-width: #{$break-sm - 1}) { text-align: center; } }
 .md\:text-center { @media (max-width: #{$break-md - 1}) { text-align: center; } }
 .lg\:text-center { @media (max-width: #{$break-lg - 1}) { text-align: center; } }
@@ -145,91 +160,96 @@
 .md\:min-text-center { @media (min-width: $break-md) { text-align: center; } }
 .lg\:min-text-center { @media (min-width: $break-lg) { text-align: center; } }
 
-
-.xs\:text-left { @media (max-width: #{$break-sm - 1} )  { text-align: left; } }
-.sm\:text-left { @media (max-width: #{$break-sm - 1} )  { text-align: left; } }
-.md\:text-left { @media (max-width: #{$break-md - 1} )  { text-align: left; } }
-.lg\:text-left { @media (max-width: #{$break-lg - 1} )  { text-align: left; } }
+.xs\:text-left { @media (max-width: #{$break-sm - 1}) { text-align: left; } }
+.sm\:text-left { @media (max-width: #{$break-sm - 1}) { text-align: left; } }
+.md\:text-left { @media (max-width: #{$break-md - 1}) { text-align: left; } }
+.lg\:text-left { @media (max-width: #{$break-lg - 1}) { text-align: left; } }
 
 .sm\:min-text-left { @media (min-width: $break-sm) { text-align: left; } }
 .md\:min-text-left { @media (min-width: $break-md) { text-align: left; } }
 .lg\:min-text-left { @media (min-width: $break-lg) { text-align: left; } }
 
-
-.xs\:text-right { @media (max-width: #{$break-sm - 1} ){ text-align: right; } }
-.sm\:text-right { @media (max-width: #{$break-sm - 1} ) { text-align: right; } }
-.md\:text-right { @media (max-width: #{$break-md - 1} ){ text-align: right; } }
-.lg\:text-right { @media (max-width: #{$break-lg - 1} ) { text-align: right; } }
+.xs\:text-right { @media (max-width: #{$break-sm - 1}) { text-align: right; } }
+.sm\:text-right { @media (max-width: #{$break-sm - 1}) { text-align: right; } }
+.md\:text-right { @media (max-width: #{$break-md - 1}) { text-align: right; } }
+.lg\:text-right { @media (max-width: #{$break-lg - 1}) { text-align: right; } }
 
 .sm\:min-text-right { @media (min-width: $break-sm) { text-align: right; } }
 .md\:min-text-right { @media (min-width: $break-md) { text-align: right; } }
 .lg\:min-text-right { @media (min-width: $break-lg) { text-align: right; } }
 
-
-//   -Soporte para lenguajes árabes  
- 
-
 .is-rtl {
   .text-right {
     text-align: left;
   }
+
   .select select:not([multiple]) {
     padding-right: 16px;
     padding-left: 45px;
   }
+
   .select:not(.is-multiple):not(.is-loading)::after {
     right: inherit;
     left: 20px;
   }
+
   .select.select-label select {
     padding-right: 100px;
   }
+
   .select.select-label label {
     left: inherit;
     right: 16px;
   }
+
   .select:not(.is-multiple):not(.is-loading).select-box::after {
     left: 8px;
   }
+
   .pr-16 {
-    padding-right: 0px;
+    padding-right: 0;
     padding-left: 16px;
   }
+
   .pr-24 {
-    padding-right: 0px;
+    padding-right: 0;
     padding-left: 24px;
   }
+
   .pr-30 {
-    padding-right: 0px;
+    padding-right: 0;
     padding-left: 30px;
   }
 
   .mr-8 {
-    margin-right: 0px;
+    margin-right: 0;
     margin-left: 8px;
   }
+
   .mr-16 {
-    margin-right: 0px;
+    margin-right: 0;
     margin-left: 16px;
   }
 
   .ml-16 {
-    margin-left: 0px;
+    margin-left: 0;
     margin-right: 16px;
   }
+
   .pl-32 {
     padding-left: initial;
     padding-right: 32px;
   }
 
-  
-  .check-center.check-bleed.checkbox-radio [type=radio]:checked+label:before,
-  .check-center.check-bleed.checkbox-radio [type=radio]:not(:checked)+label:before {
+
+  .check-center.check-bleed.checkbox-radio [type="radio"]:checked + label::before,
+  .check-center.check-bleed.checkbox-radio [type="radio"]:not(:checked) + label::before {
     left: initial;
-    right: 0px;
+    right: 0;
   }
-  .check-center.check-bleed.checkbox-radio [type=radio]:checked+label .ico-radio,
-  .check-center.check-bleed.checkbox-radio [type=radio]:not(:checked)+label .ico-radio {
+
+  .check-center.check-bleed.checkbox-radio [type="radio"]:checked + label .ico-radio,
+  .check-center.check-bleed.checkbox-radio [type="radio"]:not(:checked) + label .ico-radio {
     left: initial;
     right: 7px;
   }

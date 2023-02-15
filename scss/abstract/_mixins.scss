@@ -1,707 +1,670 @@
 @use 'sass:math';
-@import "breakpoints";
-//   -MIXINS
+@import 'breakpoints';
 
-// .background-alpha(VALUE VALUE);
 @mixin background-alpha($color: $color-white, $alpha: 1) {
-    background-color: hsla(hue($color), saturation($color), lightness($color), $alpha);
-}
-// .userselect(VALUE) (all, element, none, text)
-@mixin user-select($select) {
-    -webkit-user-select: $select;
-    -moz-user-select: $select;
-    -o-user-select: $select;
-    user-select: $select;
+  background-color: hsla(hue($color), saturation($color), lightness($color), $alpha);
 }
 
-//   -MIXINS FONTS
+@mixin user-select($select) {
+  user-select: $select;
+}
+
 
 @mixin font-light() {
-    font-family: $font-family-a-m;
-    font-weight: $font-weight-light;
+  font-family: $font-family-a-m;
+  font-weight: $font-weight-light;
 }
+
 @mixin font-regular() {
-    font-family: $font-family-a-r;
-    font-weight: $font-weight-regular;
+  font-family: $font-family-a-r;
+  font-weight: $font-weight-regular;
 }
+
 @mixin font-medium() {
-    font-family: $font-family-a-m;
-    font-weight: $font-weight-medium;
+  font-family: $font-family-a-m;
+  font-weight: $font-weight-medium;
 }
+
 @mixin font-bold() {
-    font-family: $font-family-a-b;
-    font-weight: $font-weight-bold;
+  font-family: $font-family-a-b;
+  font-weight: $font-weight-bold;
 }
+
 @mixin font-2-regular() {
-    font-family: $font-family-b-r;
+  font-family: $font-family-b-r;
 }
+
 @mixin font-2-medium() {
-    font-family: $font-family-b-m;
+  font-family: $font-family-b-m;
 }
+
 @mixin font-2-bold() {
-    font-family: $font-family-b-b;
-
+  font-family: $font-family-b-b;
 }
-
 
 @mixin font-3-regular() {
-    font-family: $font-family-c-r;
+  font-family: $font-family-c-r;
 }
+
 @mixin font-3-medium() {
-    font-family: $font-family-c-m;
+  font-family: $font-family-c-m;
 }
+
 @mixin font-3-bold() {
-    font-family: $font-family-c-b;
-
+  font-family: $font-family-c-b;
 }
-
 
 @mixin fonters($param) {
-    @if($param=="regular") {
-        @include font-regular();
-    }
-    @else if($param=="medium") {
-        @include font-medium();
-    }
-    @else if($param=="bold") {
-        @include font-bold();
-    }
-    @else if($param=="light") {
-        @include font-light();
-    }
-    @else if($param=="regular2") { @include font-2-regular(); }
-    @else if($param=="medium2") { @include font-2-medium(); }
-    @else if($param=="bold2") { @include font-2-bold(); }
-
-    @else if($param=="regular3") { @include font-3-regular(); }
-    @else if($param=="medium3") { @include font-3-medium(); }
-    @else if($param=="bold3") { @include font-3-bold(); }
+  @if $param== 'regular' {
+    @include font-regular;
+  } @else if $param== 'medium' {
+    @include font-medium;
+  } @else if $param== 'bold' {
+    @include font-bold;
+  } @else if $param== 'light' {
+    @include font-light;
+  } @else if $param== 'regular2' {
+    @include font-2-regular;
+  } @else if $param== 'medium2' {
+    @include font-2-medium;
+  } @else if $param== 'bold2' {
+    @include font-2-bold;
+  } @else if $param== 'regular3' {
+    @include font-3-regular;
+  } @else if $param== 'medium3' {
+    @include font-3-medium;
+  } @else if $param== 'bold3' {
+    @include font-3-bold;
+  }
 }
 
 @mixin typesFixers($headersFixers, $cssattr) {
-    @for $i from 1 through 1 {
-        @each $name,
-        $fsize in $headersFixers {
-            $fontsize: nth($fsize, $i);
-            $fontheight: nth($fsize, 2);
-            .text-#{$name}-r {
-                @include fonters(regular);
-                #{$cssattr }: $fontsize;
-                line-height: $fontheight;
-            }
-            .text-#{$name}-m {
-                @include fonters(medium);
-                #{$cssattr }: $fontsize;
-                line-height: $fontheight;
-            }
-            .text-#{$name}-b {
-                @include fonters(bold);
-                #{$cssattr }: $fontsize;
-                line-height: $fontheight;
-            }
-            .text-#{$name}-2r {
-                @include fonters('regular2');
-                #{$cssattr }: $fontsize;
-                line-height: $fontheight;
-            }
-            .text-#{$name}-2b {
-                @include fonters('bold2');
-                #{$cssattr }: $fontsize;
-                line-height: $fontheight;
-            }
-        }
+  @for $i from 1 through 1 {
+    @each $name, $fsize in $headersFixers {
+      $fontsize: nth($fsize, $i);
+      $fontheight: nth($fsize, 2);
+      .text-#{$name}-r {
+        @include fonters(regular);
+
+        #{$cssattr }: $fontsize;
+        line-height: $fontheight;
+      }
+      .text-#{$name}-m {
+        @include fonters(medium);
+
+        #{$cssattr }: $fontsize;
+        line-height: $fontheight;
+      }
+      .text-#{$name}-b {
+        @include fonters(bold);
+
+        #{$cssattr }: $fontsize;
+        line-height: $fontheight;
+      }
+      .text-#{$name}-2r {
+        @include fonters('regular2');
+
+        #{$cssattr }: $fontsize;
+        line-height: $fontheight;
+      }
+      .text-#{$name}-2b {
+        @include fonters('bold2');
+
+        #{$cssattr }: $fontsize;
+        line-height: $fontheight;
+      }
     }
+  }
 }
 
 @mixin random-bgr() {
-    background: rgb(random(255), random(255), random(255));
+  background: rgb(random(255) random(255) random(255));
 }
 
 @function unity($value) {
-    @return math.div($value, $value * 0 + 1);
+  @return math.div($value, $value * 0 + 1);
 }
+
 @mixin fluid-text($min-vw, $max-vw, $min-font-size, $max-font-size, $fluid-line-height) {
-    $u1: unit($min-vw);
-    $u2: unit($max-vw);
-    $u3: unit($min-font-size);
-    $u4: unit($max-font-size);
-    @if $u1==$u2 and $u1==$u3 and $u1==$u4 {
-        & {
-            font-size: $min-font-size;
-            line-height: $fluid-line-height;
-            color: $min-vw;
-            color: $max-vw;
-            color: $min-font-size;
-            color: $max-font-size;
-            color: $u1;
-            color: $u2;
-            color: $u3;
-            color: $u4;
-            @media screen and (min-width: $min-vw) {
-                font-size: calc(#{$min-font-size} + #{unity($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{unity($max-vw - $min-vw)}));
-                line-height: $fluid-line-height;
-            }
-            @media screen and (min-width: $max-vw) {
-                font-size: $max-font-size;
-                line-height: $fluid-line-height;
-            }
-        }
+  $u1: unit($min-vw);
+  $u2: unit($max-vw);
+  $u3: unit($min-font-size);
+  $u4: unit($max-font-size);
+
+  @if $u1==$u2 and $u1==$u3 and $u1==$u4 {
+    & {
+      font-size: $min-font-size;
+      line-height: $fluid-line-height;
+      color: $min-vw;
+      color: $max-vw;
+      color: $min-font-size;
+      color: $max-font-size;
+      color: $u1;
+      color: $u2;
+      color: $u3;
+      color: $u4;
+
+      @media screen and (min-width: $min-vw) {
+        font-size: calc(
+          #{$min-font-size} + #{unity($max-font-size - $min-font-size)} *
+            ((100vw - #{$min-vw}) / #{unity($max-vw - $min-vw)})
+        );
+        line-height: $fluid-line-height;
+      }
+
+      @media screen and (min-width: $max-vw) {
+        font-size: $max-font-size;
+        line-height: $fluid-line-height;
+      }
     }
+  }
 }
+
 @mixin typesFluids($headersFluids) {
-    @for $i from 1 through 1 {
-        @each $name,
-        $fsize in $headersFluids {
-            $u1: unit($min-vw);
-            $u2: unit($max-vw);
-            $min-font-size: nth($fsize, $i);
-            $max-font-size: nth($fsize, 2);
-            $fluid-line-height: nth($fsize, 3);
-            $u3: unit($min-font-size);
-            $u4: unit($max-font-size);
-            $u5: nth($fsize, 3);
+  @for $i from 1 through 1 {
+    @each $name, $fsize in $headersFluids {
+      $u1: unit($min-vw);
+      $u2: unit($max-vw);
+      $min-font-size: nth($fsize, $i);
+      $max-font-size: nth($fsize, 2);
+      $fluid-line-height: nth($fsize, 3);
+      $u3: unit($min-font-size);
+      $u4: unit($max-font-size);
+      $u5: nth($fsize, 3);
 
+      .fluid-#{$name}-l {
+        @include font-light;
 
+        @if $u1==$u2 and $u1==$u3 and $u1==$u4 {
+          & {
+            font-size: $min-font-size;
+            line-height: $u5;
 
-            .fluid-#{$name}-l {
-                @include font-light();
-                @if $u1==$u2 and $u1==$u3 and $u1==$u4 {
-                    & {
-                        font-size: $min-font-size;
-                        line-height: $u5;
-                        @media screen and (min-width: $min-vw) {
-                            font-size: calc(#{$min-font-size} + #{unity($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{unity($max-vw - $min-vw)}));
-                            line-height: $fluid-line-height;
-                        }
-                        @media screen and (min-width: $max-vw) {
-                            font-size: $max-font-size;
-                            line-height: $fluid-line-height;
-                        }
-                    }
-                }
+            @media screen and (min-width: $min-vw) {
+              font-size: calc(
+                #{$min-font-size} + #{unity($max-font-size - $min-font-size)} *
+                  ((100vw - #{$min-vw}) / #{unity($max-vw - $min-vw)})
+              );
+              line-height: $fluid-line-height;
             }
 
-
-            .fluid-#{$name}-r {
-                @include font-regular();
-                @if $u1==$u2 and $u1==$u3 and $u1==$u4 {
-                    & {
-                        font-size: $min-font-size;
-                        line-height: $u5;
-                        @media screen and (min-width: $min-vw) {
-                            font-size: calc(#{$min-font-size} + #{unity($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{unity($max-vw - $min-vw)}));
-                            line-height: $fluid-line-height;
-                        }
-                        @media screen and (min-width: $max-vw) {
-                            font-size: $max-font-size;
-                            line-height: $fluid-line-height;
-                        }
-                    }
-                }
+            @media screen and (min-width: $max-vw) {
+              font-size: $max-font-size;
+              line-height: $fluid-line-height;
             }
-            .fluid-#{$name}-m {
-                @include font-medium();
-                @if $u1==$u2 and $u1==$u3 and $u1==$u4 {
-                    & {
-                        font-size: $min-font-size;
-                        line-height: $u5;
-                        @media screen and (min-width: $min-vw) {
-                            font-size: calc(#{$min-font-size} + #{unity($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{unity($max-vw - $min-vw)}));
-                            line-height: $fluid-line-height;
-                        }
-                        @media screen and (min-width: $max-vw) {
-                            font-size: $max-font-size;
-                            line-height: $fluid-line-height;
-                        }
-                    }
-                }
-            }
-
-            .fluid-#{$name}-b {
-                @include font-bold();
-                @if $u1==$u2 and $u1==$u3 and $u1==$u4 {
-                    & {
-                        font-size: $min-font-size;
-                        line-height: $u5;
-                        @media screen and (min-width: $min-vw) {
-                            font-size: calc(#{$min-font-size} + #{unity($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{unity($max-vw - $min-vw)}));
-                            line-height: $fluid-line-height;
-                        }
-                        @media screen and (min-width: $max-vw) {
-                            font-size: $max-font-size;
-                            line-height: $fluid-line-height;
-                        }
-                    }
-                }
-            }
-
-
+          }
         }
+      }
+
+      .fluid-#{$name}-r {
+        @include font-regular;
+
+        @if $u1==$u2 and $u1==$u3 and $u1==$u4 {
+          & {
+            font-size: $min-font-size;
+            line-height: $u5;
+
+            @media screen and (min-width: $min-vw) {
+              font-size: calc(
+                #{$min-font-size} + #{unity($max-font-size - $min-font-size)} *
+                  ((100vw - #{$min-vw}) / #{unity($max-vw - $min-vw)})
+              );
+              line-height: $fluid-line-height;
+            }
+
+            @media screen and (min-width: $max-vw) {
+              font-size: $max-font-size;
+              line-height: $fluid-line-height;
+            }
+          }
+        }
+      }
+      .fluid-#{$name}-m {
+        @include font-medium;
+
+        @if $u1==$u2 and $u1==$u3 and $u1==$u4 {
+          & {
+            font-size: $min-font-size;
+            line-height: $u5;
+
+            @media screen and (min-width: $min-vw) {
+              font-size: calc(
+                #{$min-font-size} + #{unity($max-font-size - $min-font-size)} *
+                  ((100vw - #{$min-vw}) / #{unity($max-vw - $min-vw)})
+              );
+              line-height: $fluid-line-height;
+            }
+
+            @media screen and (min-width: $max-vw) {
+              font-size: $max-font-size;
+              line-height: $fluid-line-height;
+            }
+          }
+        }
+      }
+
+      .fluid-#{$name}-b {
+        @include font-bold;
+
+        @if $u1==$u2 and $u1==$u3 and $u1==$u4 {
+          & {
+            font-size: $min-font-size;
+            line-height: $u5;
+
+            @media screen and (min-width: $min-vw) {
+              font-size: calc(
+                #{$min-font-size} + #{unity($max-font-size - $min-font-size)} *
+                  ((100vw - #{$min-vw}) / #{unity($max-vw - $min-vw)})
+              );
+              line-height: $fluid-line-height;
+            }
+
+            @media screen and (min-width: $max-vw) {
+              font-size: $max-font-size;
+              line-height: $fluid-line-height;
+            }
+          }
+        }
+      }
     }
+  }
 }
 
 @mixin ratio($width, $height) {
-    position: relative;
-    overflow: hidden;
-    &:before {
-        display: block;
-        content: "";
-        width: 100%;
-        padding-top: math.div($height, $width) * 100%;
-    }
-    .content {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-    }
-    .rat-content {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-    }
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    display: block;
+    content: '';
+    width: 100%;
+    padding-top: math.div($height, $width) * 100%;
+  }
+
+  .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .rat-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
 }
 
 @mixin bleed($margin) {
-    .bleed-#{$margin} {
-        padding: 0 math.div($margin, 2)+px 0 math.div($margin, 2)+px;
-        overflow: hidden;
-        .container-fluid {
-            margin-left: -#{math.div($margin, 2)}+px;
-            margin-right: -#{math.div($margin, 2)}+px;
-            padding: 0 math.div($margin, 2)+px 0 math.div($margin, 2)+px;
-        }
-        >.row {
-            margin-left: 0;
-            margin-right: 0;
-            box-sizing: border-box;
-            display: flex;
-            -webkit-box-flex: 0;
-            -ms-flex: 0 1 auto;
-            flex: 0 1 auto;
-            -webkit-box-orient: horizontal;
-            -webkit-box-direction: normal;
-            flex-direction: row;
-            -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-        }
-        >[class*="col-"],
-        >.col {
-            padding: math.div($margin, 2)+px;
-            box-sizing: border-box;
-        }
+  .bleed-#{$margin} {
+    padding: 0 math.div($margin, 2) + px 0 math.div($margin, 2) + px;
+    overflow: hidden;
+
+    .container-fluid {
+      margin-left: -#{math.div($margin, 2)}+ px;
+      margin-right: -#{math.div($margin, 2)}+ px;
+      padding: 0 math.div($margin, 2) + px 0 math.div($margin, 2) + px;
     }
+
+    > .row {
+      margin-left: 0;
+      margin-right: 0;
+      box-sizing: border-box;
+      display: flex;
+      -webkit-box-flex: 0;
+      flex: 0 1 auto;
+
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      flex-flow: row wrap;
+      flex-wrap: wrap;
+    }
+
+    > [class*='col-'],
+    > .col {
+      padding: math.div($margin, 2) + px;
+      box-sizing: border-box;
+    }
+  }
+
+  .single {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+
+  .double {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  @media (min-width: $break-sm) {
     .single {
-        flex-basis: 50%;
-        max-width: 50%;
+      flex-basis: 25%;
+      max-width: 25%;
     }
+
     .double {
-        flex-basis: 100%;
-        max-width: 100%;
+      flex-basis: 50%;
+      max-width: 50%;
     }
-    @media (min-width:$break-sm) {
-        .single {
-            flex-basis: 25%;
-            max-width: 25%;
-        }
-        .double {
-            flex-basis: 50%;
-            max-width: 50%;
-        }
-    }
+  }
 }
+
 @mixin types($breakpoints, $headers, $cssattr) {
-    @for $i from 1 through length($breakpoints) {
-        @media (min-width: nth(map-values($breakpoints), $i)) {
-            @each $name,
-            $fsize in $headers {
-                $fontsize: nth($fsize, $i);
-                $fontheight: nth($fsize, 5);
-                $fontweight: nth($fsize, 6);
-                .#{$name} {
-                    @if(nth(map-values($breakpoints), $i)==1px) {
-                        @include fonters($fontweight);
-                    }
-                    #{$cssattr }: $fontsize;
-                    line-height: $fontheight;
-                }
-            }
+  @for $i from 1 through length($breakpoints) {
+    @media (min-width: nth(map-values($breakpoints), $i)) {
+      @each $name, $fsize in $headers {
+        $fontsize: nth($fsize, $i);
+        $fontheight: nth($fsize, 5);
+        $fontweight: nth($fsize, 6);
+        .#{$name} {
+          @if nth(map-values($breakpoints), $i) ==1px {
+            @include fonters($fontweight);
+          }
+
+          #{$cssattr }: $fontsize;
+          line-height: $fontheight;
         }
+      }
     }
+  }
 }
 
-@for $i from 1 through length($breakpoints) {}
 @mixin space($breakpoints, $paddings, $cssattr) {
-    @for $i from 1 through $colBreakpoints {
-        @media (min-width: nth(map-values($breakpoints), $i)) {
-            @each $name,
-            $pad in $paddings {
-                $padding: nth($pad, $i);
-                .#{$name} {
-                    #{$cssattr }: $padding;
-                }
-            }
+  @for $i from 1 through length($colBreakpoints) {
+    @media (min-width: nth(map-values($breakpoints), $i)) {
+      @each $name, $pad in $paddings {
+        $padding: nth($pad, $i);
+        .#{$name} {
+          #{$cssattr }: $padding;
         }
+      }
     }
+  }
 }
-
-
 
 @mixin button-variant($color, $background, $border) {
+  color: $color;
+  background-color: $background;
+  border-color: $border;
+
+  &:focus,
+  &.focus {
     color: $color;
-    background-color: $background;
-    border-color: $border;
+    background-color: darken($background, 10%);
+    border-color: darken($border, 25%);
+  }
+
+  &:hover {
+    color: $color;
+    background-color: darken($background, 10%);
+    border-color: darken($border, 12%);
+  }
+
+
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    background-image: none;
+    color: $color;
+    background-color: darken($background, 10%);
+    border-color: darken($border, 12%);
+    &:hover,
     &:focus,
     &.focus {
       color: $color;
-      background-color: darken($background, 10%);
-          border-color: darken($border, 25%);
+      background-color: darken($background, 17%);
+      border-color: darken($border, 25%);
     }
-    &:hover {
-      color: $color;
-      background-color: darken($background, 10%);
-          border-color: darken($border, 12%);
-    }
-    &:active,
-    &.active,
-    .open > &.dropdown-toggle {
-      color: $color;
-      background-color: darken($background, 10%);
-          border-color: darken($border, 12%);
 
-      &:hover,
-      &:focus,
-      &.focus {
-        color: $color;
-        background-color: darken($background, 17%);
-            border-color: darken($border, 25%);
-      }
-    }
-    &:active,
-    &.active,
-    .open > &.dropdown-toggle {
-      background-image: none;
-    }
-    &.disabled,
-    &[disabled],
-    fieldset[disabled] & {
-      &:hover,
-      &:focus,
-      &.focus {
-        background-color: $background;
-            border-color: $border;
-      }
-    }
-    .badge {
-      color: $background;
-      background-color: $color;
+  }
+
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &:hover,
+    &:focus,
+    &.focus {
+      background-color: $background;
+      border-color: $border;
     }
   }
 
-  // Button sizes
-  @mixin button-size($padding-vertical, $padding-horizontal, $font-size, $line-height, $border-radius) {
-      padding: $padding-vertical $padding-horizontal;
-      font-size: $font-size;
-      line-height: $line-height;
-      border-radius: $border-radius;
+  .badge {
+    color: $background;
+    background-color: $color;
   }
-
-  @mixin box-shadow($shadow...) {
-      -moz-box-shadow: $shadow;
-      box-shadow: $shadow;
-  }
-
-  // Box sizing
-  @mixin box-sizing($boxmodel) {
-      -webkit-box-sizing: $boxmodel;
-      -moz-box-sizing: $boxmodel;
-      box-sizing: $boxmodel;
-  }
-
-  // CSS3 Content Columns
-  @mixin content-columns($column-count, $column-gap: $grid-gutter-width) {
-      -webkit-column-count: $column-count;
-      -moz-column-count: $column-count;
-      column-count: $column-count;
-      -webkit-column-gap: $column-gap;
-      -moz-column-gap: $column-gap;
-      column-gap: $column-gap;
-  }
-
-  // WebKit-style focus
-  @mixin tab-focus() {
-      // Default
-      border-color:transparent;
-      outline: thin dotted;
-      box-shadow: none;
-      outline-offset: -2px;
-  }
-
-
-// User select
-// For selecting text on the page
-@mixin user-select($select) {
-    -webkit-user-select: $select;
-    -moz-user-select: $select;
-    -ms-user-select: $select; // IE10+
-    user-select: $select;
 }
 
-// Calc
-// @include calc($property, $expression);
+@mixin button-size(
+  $padding-vertical,
+  $padding-horizontal,
+  $font-size,
+  $line-height,
+  $border-radius
+) {
+  padding: $padding-vertical $padding-horizontal;
+  font-size: $font-size;
+  line-height: $line-height;
+  border-radius: $border-radius;
+}
+
+@mixin box-shadow($shadow...) {
+  box-shadow: $shadow;
+}
+
+@mixin box-sizing($boxmodel) {
+  box-sizing: $boxmodel;
+}
+
+@mixin content-columns($column-count, $column-gap: $grid-gutter-width) {
+  column-count: $column-count;
+  column-gap: $column-gap;
+}
+
+@mixin tab-focus() {
+  border-color: transparent;
+  outline: thin dotted;
+  box-shadow: none;
+  outline-offset: -2px;
+}
+
+
+
 @mixin calc($property, $expression) {
-    #{$property}: -moz-calc(#{$expression});
-    #{$property}: -webkit-calc(#{$expression});
-    #{$property}: calc(#{$expression});
+  #{$property}: -moz-calc(#{$expression});
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: calc(#{$expression});
 }
 
-// Ellipsis
 @mixin ellipsis() {
-    text-overflow: ellipsis;
-    overflow: hidden;
-	white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
-// Appearance
 @mixin appearance() {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
+  appearance: none;
 }
-
-
-// ==========  Mixins para los Media Queries  ==========
 
 @mixin media($consulta) {
-	//Oficialmente los puntos de corte son mobile 350, 768, 1024, 1980
+  $media-max-xs: '(max-width : 480px)';
+  $media-max-sm: '(max-width : 767px)';
+  $media-max-md: '(max-width : 991px)';
+  $media-max-lg: '(max-width : 1279px)';
 
-   $media-max-xs:  "(max-width : 480px)"; // Desde el minimo
-   $media-max-sm:  "(max-width : 767px)"; // Desde el minimo
-   $media-max-md:  "(max-width : 991px)"; // Desde el minimo
-   $media-max-lg:  "(max-width : 1279px)"; // Desde el minimo
+  $media-xxs: '(min-width : 300px)';
+  $media-xs: '(min-width : 480px)';
+  $media-sm: '(min-width: 768px)';
+  $media-md: '(min-width: 992px)';
+  $media-md-2: '(min-width: 1025px)';
+  $media-lg: '(min-width: 1280px)';
+  $media-xl: '(min-width: 1500px)';
+  $media-xxl: '(min-width: 1600px)';
+  $portrait: '(min-width: 768px) and (max-width: 991px)';
+  $landscape: '(min-width: 992px) and (max-width: 1279px)';
+  $landscape-2: '(min-width: 1280px) and (max-width: 1560px)';
 
-
-
-    $media-xxs:  "(min-width : 300px)"; // Desde el minimo
-    $media-xs:   "(min-width : 480px)"; // Telefonos
-    $media-sm:   "(min-width: 768px)";  // Tablets
-    $media-md:   "(min-width: 992px)";  // Escritorios
-    $media-md-2: "(min-width: 1025px)"; // Escritorios superiores a ipads
-    $media-lg:   "(min-width: 1280px)"; // Resoluciones grandes
-    $media-xl:   "(min-width: 1500px)"; // Resoluciones pantallas grandes
-    $media-xxl:  "(min-width: 1600px)"; // Resoluciones pantallas + grandes
-    $portrait:   "(min-width: 768px) and (max-width: 991px)";   // Ajustes Resoluciones Medianas para dispositivos en portrait
-    $landscape:  "(min-width: 992px) and (max-width: 1279px)";  // Ajustes Resoluciones Medianas para dispositivos en landscape
-    $landscape-2:"(min-width: 1280px) and (max-width: 1560px)"; // Ajustes Resoluciones Medianas para dispositivos en landscape xxl
-
-
-
-
-    @if $consulta==xxs {
-        @media #{$media-xxs} {
-            @content;
-        }
+  @if $consulta==xxs {
+    @media #{$media-xxs} {
+      @content;
     }
-
-    @else if $consulta==max-xs {
-        @media #{$media-max-xs} {
-            @content;
-        }
+  } @else if $consulta==max-xs {
+    @media #{$media-max-xs} {
+      @content;
     }
-
-    @else if $consulta==max-sm {
-        @media #{$media-max-sm} {
-            @content;
-        }
+  } @else if $consulta==max-sm {
+    @media #{$media-max-sm} {
+      @content;
     }
-
-    @else if $consulta==max-md {
-        @media #{$media-max-md} {
-            @content;
-        }
+  } @else if $consulta==max-md {
+    @media #{$media-max-md} {
+      @content;
     }
-
-    @else if $consulta==max-lg {
-        @media #{$media-max-lg} {
-            @content;
-        }
+  } @else if $consulta==max-lg {
+    @media #{$media-max-lg} {
+      @content;
     }
-
-    @else if $consulta==xs {
-        @media #{$media-xs} {
-            @content;
-        }
+  } @else if $consulta==xs {
+    @media #{$media-xs} {
+      @content;
     }
-
-    @else if $consulta==sm {
-        @media #{$media-sm} {
-            @content;
-        }
+  } @else if $consulta==sm {
+    @media #{$media-sm} {
+      @content;
     }
-
-    @else if $consulta==md {
-        @media #{$media-md} {
-            @content;
-        }
+  } @else if $consulta==md {
+    @media #{$media-md} {
+      @content;
     }
-
-    @else if $consulta==md-2 {
-        @media #{$media-md-2} {
-            @content;
-        }
+  } @else if $consulta==md-2 {
+    @media #{$media-md-2} {
+      @content;
     }
-
-    @else if $consulta==lg {
-        @media #{$media-lg} {
-            @content;
-        }
+  } @else if $consulta==lg {
+    @media #{$media-lg} {
+      @content;
     }
-
-    @else if $consulta==xl {
-        @media #{$media-xl} {
-            @content;
-        }
+  } @else if $consulta==xl {
+    @media #{$media-xl} {
+      @content;
     }
-
-    @else if $consulta==xxl {
-        @media #{$media-xxl} {
-            @content;
-        }
+  } @else if $consulta==xxl {
+    @media #{$media-xxl} {
+      @content;
     }
-
-    @else if $consulta==portrait {
-        @media #{$portrait} {
-            @content;
-        }
+  } @else if $consulta==portrait {
+    @media #{$portrait} {
+      @content;
     }
-
-    @else if $consulta==land {
-        @media #{$landscape} {
-            @content;
-        }
+  } @else if $consulta==land {
+    @media #{$landscape} {
+      @content;
     }
-
-    @else if $consulta==land-2 {
-        @media #{$landscape-2} {
-            @content;
-        }
+  } @else if $consulta==land-2 {
+    @media #{$landscape-2} {
+      @content;
     }
-
-
-    @else if $consulta == retina {
-        @media
-          only screen and (-webkit-min-device-pixel-ratio: 2),
-          only screen and (   min--moz-device-pixel-ratio: 2),
-          only screen and (     -o-min-device-pixel-ratio: 2/1),
-          only screen and (        min-device-pixel-ratio: 2),
-          only screen and (                min-resolution: 192dpi),
-          only screen and (                min-resolution: 2dppx) {
-            @content;
-        }
+  } @else if $consulta == retina {
+    @media only screen and (min-device-pixel-ratio: 2),
+      only screen and (min--moz-device-pixel-ratio: 2),
+      only screen and (-o-min-device-pixel-ratio: 2/1),
+      only screen and (min-device-pixel-ratio: 2),
+      only screen and (min-resolution: 192dpi),
+      only screen and (min-resolution: 2dppx) {
+      @content;
     }
-
+  }
 }
 
-
 @function calculateRem($size) {
-    $remSize: $size / 16px;
-    @return $remSize * 1rem;
+  $remSize: $size / 16px;
+
+  @return $remSize * 1rem;
 }
 
 @mixin font-size($size) {
-    font-size: $size;
-    font-size: calculateRem($size);
+  font-size: $size;
+  font-size: calculaterem($size);
 }
-
-
 
 @mixin opacity($opacity) {
-    opacity: $opacity;
-    $opacity-ie: $opacity * 100;
-    filter: alpha(opacity=$opacity-ie); //IE8
+  opacity: $opacity;
+
+  $opacity-ie: $opacity * 100;
+
+  filter: alpha(opacity=$opacity-ie);
 }
 
+$spritegrid: 32;
+$spriteWidth: 600;
+$spriteHeight: 400;
 
+@mixin sprite-bg($x: 0, $y: $x, $hover: true, $sizeBig: false) {
+  $i: 0;
 
+  background-image: url('../images/itx-sprite.png');
+  background-position-x: ($x * -1px);
+  background-position-y: ($y * -1px);
+  background-repeat: no-repeat;
 
-// ========== Tratar el sprite ==========
+  @include media(retina) {
+    background-image: url('../images/itx-sprite_2x.png');
+    background-size: ($spriteWidth * 1px) ($spriteHeight * 1px);
+  }
 
-$spritegrid:32;
-$spriteWidth:600;
-$spriteHeight:400;
+  @if $hover {
+    &:hover,
+    &:focus {
+      background-position-x: ($x * -1px);
+      background-position-y: ((($spritegrid * -1px)) + $y);
+    }
+  }
 
-
-// sprite-bg( 5, 10, false)
-
-@mixin sprite-bg($x:0, $y:$x, $hover:true, $sizeBig:false) {
-    $i:0;
-    background-image:url("../images/itx-sprite.png");
+  @if $sizeBig {
     background-position-x: ($x * -1px);
-    background-position-y: ($y * -1px);
-    background-repeat:no-repeat;
-    @include media(retina) {
-        background-image:url("../images/itx-sprite_2x.png");
-        background-size: ($spriteWidth * 1px) ($spriteHeight * 1px);
-    }
-    @if $hover {
-        &:hover,
-        &:focus {
-            background-position-x: ($x * -1px);
-            background-position-y: ((($spritegrid * -1px)) + $y);
-        }
-    }
-    @if $sizeBig {
-       background-position-x: ($x * -1px);
-       background-position-y: (((($spritegrid * 2) * -1px)) + ($y * 2));
-    }
+    background-position-y: (((($spritegrid * 2) * -1px)) + ($y * 2));
+  }
 }
-
-
-// placeholder inputs
 
 @mixin placeholder() {
-	&::-webkit-input-placeholder {@content;}
-	&:-moz-placeholder           {@content;}
-	&::-moz-placeholder          {@content;}
-	&:-ms-input-placeholder      {@content;}
+  &::input-placeholder {
+    @content;
+  }
+  &:placeholder {
+    @content;
+  }
+  &::placeholder {
+    @content;
+  }
+  &:input-placeholder {
+    @content;
+  }
 }
-
-
-// transitions
 
 @mixin transition($transition, $time, $timing: ease) {
-	-moz-transition:    $transition $time $timing;
-    -o-transition:      $transition $time $timing;
-    transition:         $transition $time $timing;
+  transition: $transition $time $timing;
 }
 
-// ==========  Posicionamiento  ==========
 @mixin absolute-vertical-center() {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 @mixin absolute-vertical-bottom() {
-    position: absolute;
-    bottom: 10%;
+  position: absolute;
+  bottom: 10%;
 }
 
-
-// RGBA fallback
-// @include rgba(background-color, #000000, 0.5, white);
 @mixin rgba($property, $background: #000000, $opacity: 0.75, $mix: white) {
-    #{$property}: mix($background, $mix, $opacity * 100%);
-    #{$property}: rgba($background, $opacity);
+  #{$property}: mix($background, $mix, $opacity * 100%);
+  #{$property}: rgba($background, $opacity);
 }
 
-//Preserve unicode escape on compilation for non messing up with some servers
-//http://stackoverflow.com/questions/30421570/sass-unicode-escape-is-not-preserved-in-css-file
 @function unicode($str) {
-  @return unquote("\"")+unquote(str-insert($str, "\\", 1))+unquote("\"")
-};
-
-
+  @return unquote('"') + unquote(str-insert($str, '\\', 1)) + unquote('"');
+}

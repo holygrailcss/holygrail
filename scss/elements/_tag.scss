@@ -1,52 +1,55 @@
-@import "../abstract/_all.scss";
+@import "../abstract/_all";
 
-//   -tags    
- 
-.tag-warning{
-    background-color: $c-warning;
-    color: $c-white;
-    padding: 6px 6px 6px 6px;
-    line-height: 1;
-    display: inline-block;
-    font-size: 14px;
+.tag-warning {
+  background-color: $c-warning;
+  color: $c-white;
+  padding: 6px;
+  line-height: 1;
+  display: inline-block;
+  font-size: 14px;
 }
-.tag-info{
-    background-color: $c-info;
-    color: $c-white;
-    padding: 6px 6px 6px 6px;
-    line-height: 1;
-    display: inline-block;
-    font-size: 14px;
+
+.tag-info {
+  background-color: $c-info;
+  color: $c-white;
+  padding: 6px;
+  line-height: 1;
+  display: inline-block;
+  font-size: 14px;
 }
-.tag-valid{
-    background-color: $c-valid;
-    color: $c-white;
-    padding: 6px 6px 6px 6px;
-    line-height: 1;
-    display: inline-block;
-    font-size: 14px;
+
+.tag-valid {
+  background-color: $c-valid;
+  color: $c-white;
+  padding: 6px;
+  line-height: 1;
+  display: inline-block;
+  font-size: 14px;
 }
-.tag-alert{
-    background-color: $c-alert;
-    color: $c-primary;
-    padding: 6px 6px 6px 6px;
-    line-height: 1;
-    display: inline-block;
-    font-size: 14px;
+
+.tag-alert {
+  background-color: $c-alert;
+  color: $c-primary;
+  padding: 6px;
+  line-height: 1;
+  display: inline-block;
+  font-size: 14px;
 }
-.tag-feel{
-    background-color: $c-feel;
-    color: $c-primary;
-    padding: 6px 6px 6px 6px;
-    line-height: 1;
-    display: inline-block;
-    font-size: 14px;
+
+.tag-feel {
+  background-color: $c-feel;
+  color: $c-primary;
+  padding: 6px;
+  line-height: 1;
+  display: inline-block;
+  font-size: 14px;
 }
-.tag-limited{
-    background-color: $c-primary;
-    color: $c-white;
-    padding: 6px 6px 6px 6px;
-    line-height: 1;
-    display: inline-block;
-    font-size: 14px;
+
+.tag-limited {
+  background-color: $c-primary;
+  color: $c-white;
+  padding: 6px;
+  line-height: 1;
+  display: inline-block;
+  font-size: 14px;
 }

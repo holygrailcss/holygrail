@@ -1,65 +1,61 @@
-@import "../abstract/_all.scss";
+@import "../abstract/_all";
 
-
-//   -Alturas
- 
-
- .h-100{
-   height: 100%;
- }
- .height-100{
+.h-100 {
   height: 100%;
 }
-.height-128{
+
+.height-100 {
+  height: 100%;
+}
+
+.height-128 {
   min-height: 128px;
 }
 
 .height-xs {
-    min-height: $height-xs;
+  min-height: $height-xs;
 }
 
 .height-sm {
-    min-height: $height-sm;
+  min-height: $height-sm;
 }
 
-
 .height-md {
-    min-height: $height-md;
+  min-height: $height-md;
 }
 
 .height-lg {
-    min-height: $height-lg;
+  min-height: $height-lg;
 }
 
 .height-xl {
-    min-height: $height-xl;
+  min-height: $height-xl;
 }
 
 .height-full {
-    min-height: 100vh;
+  min-height: 100vh;
 }
 
+.hero-big {
+  min-height: 300px;
 
+  @media (min-width: $break-sm) {
+    min-height: 500px;
+  }
+}
 
+.hero-medium {
+  min-height: 200px;
 
+  @media (min-width: $break-sm) {
+    min-height: 400px;
+  }
+}
 
-//   -HEROS        
- 
- .hero-big {
+.hero-mini {
+  min-height: 100px;
+
+  @media (min-width: $break-sm) {
     min-height: 300px;
-    @media (min-width:$break-sm) {
-      min-height: 500px;
-    }
   }
-  .hero-medium {
-    min-height: 200px;
-    @media (min-width:$break-sm) {
-      min-height: 400px;
-    }
-  }
-  .hero-mini {
-    min-height: 100px;
-    @media (min-width:$break-sm) {
-      min-height: 300px;
-    }
-  }
+}

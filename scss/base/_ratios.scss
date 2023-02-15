@@ -1,222 +1,259 @@
-@import "../abstract/_all.scss";
+@import '../abstract/_all';
 
-
-//   -RATIOS    ancho x alto    
- 
 .rat-16-9 {
-    @include ratio(16, 9);
+  @include ratio(16, 9);
 }
-.rat-21-9 {
-    @include ratio(21, 9);
-}
-.rat-1-1 {
-    @include ratio(1, 1);
-}
-.rat-2-1 {
-    @include ratio(2, 1);
-}
-.rat-2-3 {
-    @include ratio(800, 1066);
-}
-.rat-3-2 {
-    @include ratio(3, 2);
-}
-.rat-3-4 {
-    @include ratio(3, 4);
-}
-.rat-4-2 {
-    @include ratio(4, 2);
-}
-.rat-4-3 {
-    @include ratio(4, 3);
-}
-.rat-strech {
-    @include ratio(275, 445);
-}
-.rat-main {
-    @include ratio(800, 1066);
-}
-.rat-double {
-    @include ratio(867, 559);
-}
-.sk-load {
-    position: relative;
-    &:before {
-        display: block;
-        content: "";
-        width: 100%;
-        padding-top: 126%;
-        background-color: $c-white;
-    }
-    &::marker {
-        display: none;
-        content: "";
-    }
-}
-.sk-load1 {
-    position: relative;
-    &:before {
-        display: block;
-        content: "";
-        width: 100%;
-        padding-top: calc(133.25% + 126px);
-        background-color: $c-white;
-        @media (min-width: 992px) {
-            padding-top: calc(133.25% + 144px);
-        }
-    }
-    &::marker {
-        display: none;
-        content: "";
-    }
-}
-.sk-load2 {
-    position: relative;
-    &:before {
-        display: block;
-        content: "";
-        width: 100%;
-        padding-top: calc(133.25% + 126px);
-        background-color: $c-white;
-        @media (min-width: 992px) {
-            padding-top: calc(133.25% + 144px);
-        }
-    }
-    &::marker {
-        display: none;
-        content: "";
-    }
-}
-.sk-load3 {
-    position: relative;
-    &:before {
-        display: block;
-        content: "";
-        width: 100%;
-        padding-top: 133.25%;
-        background-color: $c-white;
-    }
-    &::marker {
-        display: none;
-        content: "";
-    }
-}
-.sk-load4 {
-    position: relative;
-    &:before {
-        display: block;
-        content: "";
-        width: 100%;
-        padding-top: 75.5%;
 
-    }
-    .card9-link {
-        position: absolute;
-        width: 100%;
-        top: 0;
-        left: 0;
-    }
-    &::marker {
-        display: none;
-        content: "";
-    }
+.rat-21-9 {
+  @include ratio(21, 9);
 }
+
+.rat-1-1 {
+  @include ratio(1, 1);
+}
+
+.rat-2-1 {
+  @include ratio(2, 1);
+}
+
+.rat-2-3 {
+  @include ratio(800, 1066);
+}
+
+.rat-3-2 {
+  @include ratio(3, 2);
+}
+
+.rat-3-4 {
+  @include ratio(3, 4);
+}
+
+.rat-4-2 {
+  @include ratio(4, 2);
+}
+
+.rat-4-3 {
+  @include ratio(4, 3);
+}
+
+.rat-strech {
+  @include ratio(275, 445);
+}
+
+.rat-main {
+  @include ratio(800, 1066);
+}
+
+.rat-double {
+  @include ratio(867, 559);
+}
+
+.sk-load {
+  position: relative;
+
+  &::before {
+    display: block;
+    content: '';
+    width: 100%;
+    padding-top: 126%;
+    background-color: $c-white;
+  }
+
+  &::marker {
+    display: none;
+    content: '';
+  }
+}
+
+.sk-load1 {
+  position: relative;
+
+  &::before {
+    display: block;
+    content: '';
+    width: 100%;
+    padding-top: calc(133.25% + 126px);
+    background-color: $c-white;
+
+    @media (min-width: 992px) {
+      padding-top: calc(133.25% + 144px);
+    }
+  }
+
+  &::marker {
+    display: none;
+    content: '';
+  }
+}
+
+.sk-load2 {
+  position: relative;
+
+  &::before {
+    display: block;
+    content: '';
+    width: 100%;
+    padding-top: calc(133.25% + 126px);
+    background-color: $c-white;
+
+    @media (min-width: 992px) {
+      padding-top: calc(133.25% + 144px);
+    }
+  }
+
+  &::marker {
+    display: none;
+    content: '';
+  }
+}
+
+.sk-load3 {
+  position: relative;
+
+  &::before {
+    display: block;
+    content: '';
+    width: 100%;
+    padding-top: 133.25%;
+    background-color: $c-white;
+  }
+
+  &::marker {
+    display: none;
+    content: '';
+  }
+}
+
+.sk-load4 {
+  position: relative;
+
+  &::before {
+    display: block;
+    content: '';
+    width: 100%;
+    padding-top: 75.5%;
+  }
+
+  .card9-link {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  &::marker {
+    display: none;
+    content: '';
+  }
+}
+
 .sk-load5 {
-    position: relative;
-    &:before {
-        display: block;
-        content: "";
-        width: 100%;
-        padding-top: calc(66.66667% + 126px);
-        background-color: $c-white;
-        @media (min-width: 768px) {
-            padding-top: calc(66.66667% + 144px);
-        }
+  position: relative;
+
+  &::before {
+    display: block;
+    content: '';
+    width: 100%;
+    padding-top: calc(66.6667% + 126px);
+    background-color: $c-white;
+
+    @media (min-width: 768px) {
+      padding-top: calc(66.6667% + 144px);
     }
-    &::marker {
-        display: none;
-        content: "";
-    }
+  }
+
+  &::marker {
+    display: none;
+    content: '';
+  }
 }
+
 .sk-load6 {
-    position: relative;
-    &:before {
-        display: block;
-        content: "";
-        width: 100%;
-        padding-top: 133.25%;
-        background-color: $c-white;
-        @media (min-width: 992px) {
-            padding-top: 133.25%;
-        }
+  position: relative;
+
+  &::before {
+    display: block;
+    content: '';
+    width: 100%;
+    padding-top: 133.25%;
+    background-color: $c-white;
+
+    @media (min-width: 992px) {
+      padding-top: 133.25%;
     }
-    &.hidden-image:before{padding-top: 126px;  }
-    &::marker {
-        display: none;
-        content: "";
-    }
+  }
+  &.hidden-image::before {
+    padding-top: 126px;
+  }
+
+  &::marker {
+    display: none;
+    content: '';
+  }
 }
 
 .sk-load7 {
-    position: relative;
+  position: relative;
 
-    &:before {
-        display: block;
-        content: '';
-        width: 100%;
-        padding-top: 66.66667%;
-        background-color: $c-white;
-    }
+  &::before {
+    display: block;
+    content: '';
+    width: 100%;
+    padding-top: 66.6667%;
+    background-color: $c-white;
+  }
 
-    &::marker {
-        display: none;
-        content: '';
-    }
+  &::marker {
+    display: none;
+    content: '';
+  }
 }
 
 .sk-load8 {
-    position: relative;
+  position: relative;
 
-    &:before {
-        display: block;
-        content: '';
-        width: 100%;
-        padding-top: calc(66.66667% + 248px);
-        background-color: $c-white;
-        @media (min-width: 768px) and (max-width: 1439px) {
-            padding-top: calc(66.66667% + 144px);
-        }
-    }
+  &::before {
+    display: block;
+    content: '';
+    width: 100%;
+    padding-top: calc(66.6667% + 248px);
+    background-color: $c-white;
 
-    &::marker {
-        display: none;
-        content: '';
+    @media (min-width: 768px) and (max-width: 1439px) {
+      padding-top: calc(66.6667% + 144px);
     }
+  }
+
+  &::marker {
+    display: none;
+    content: '';
+  }
 }
 
 .swiper-monoproducto .swiper-wrapper {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    width: 100% ;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
 }
-
 
 .sk-load9 {
-    position: relative;
-    &:before {
-        display: block;
-        content: "";
-        width: 100%;
-        padding-top: calc(66.66667% + 126px);
-        background-color: $c-white;
-        @media (min-width: 768px) {
-            padding-top: calc(64.66667% + 144px);
-        }
-    }
-    &::marker {
-        display: none;
-        content: "";
-    }
-}
+  position: relative;
 
+  &::before {
+    display: block;
+    content: '';
+    width: 100%;
+    padding-top: calc(66.6667% + 126px);
+    background-color: $c-white;
+
+    @media (min-width: 768px) {
+      padding-top: calc(64.6667% + 144px);
+    }
+  }
+
+  &::marker {
+    display: none;
+    content: '';
+  }
+}

@@ -1,54 +1,45 @@
-@import "../abstract/_all.scss";
+@import "../abstract/_all";
 
 
-//   -HTML REMS        
- 
- body{
+
+body {
   font-family: $font-family-a-r;
- }
+  @include font-regular;
 
-
- pre,
+  -webkit-overflow-scrolling: touch;
+  font-variant-ligatures: no-common-ligatures !important;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+pre,
 code,
 kbd,
 samp {
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-
-body {
-  @include font-regular;
-  -webkit-overflow-scrolling: touch;
-  font-variant-ligatures: no-common-ligatures !important;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-
-
-
-
 select {
-  @include font-regular();
+  @include font-regular;
 }
 
-
-//   -HEADERS ELÁSTICOS        
- 
 p {
-  @include font-regular();
+  @include font-regular;
+
   margin: 0;
   font-size: 14px;
 
   &.b {
-    @include font-regular();
+    @include font-regular;
+
     color: $c-primary;
   }
 }
+
 a {
   color: $c-primary;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 .h1,
 .h2,
@@ -65,56 +56,40 @@ a {
 b,
 mark {
   color: $c-primary;
-  @include font-bold()
-}
 
+  @include font-bold; }
 
-//   -LINKS        
- 
-
-
-
-//   -FLUID TEXT   Desde min_width   hasta  break-lg  <--->  font-minima hasta font-maxima
- 
- 
-
-.secondary{
-  font-family:$font-family-c-r !important;
+.secondary {
+  font-family: $font-family-c-r !important;
   font-weight: 100;
 }
 
-
-
-
 @include typesFixers($headersFixers, $fs);
 @include types($breakpoints, $headers, $fs);
-
 @include typesFluids($headersFluids) ;
 
-.text-light{@include font-light();}
-.text-regular{@include font-regular();}
-.text-medium{ @include font-medium();}
-.text-bold{ @include font-bold();}
+.text-light { @include font-light; }
+.text-regular { @include font-regular; }
+.text-medium { @include font-medium; }
+.text-bold { @include font-bold; }
 
+.is-through {
+  position: relative;
+  width: max-content;
 
-//   -TACHADO        
- 
-
- .is-through{
-	position: relative;
-	width: max-content;
-	&::after{
-	content: "";
+  &::after {
+    content: "";
     background-color: $c-primary;
     width: 100%;
     position: absolute;
     bottom: 50%;
     left: 0;
     height: 1px;
-	}
+  }
 }
-.c-gray.is-through{
-  &::after{
-      background-color: $c-dark-grey;
-    }
+
+.c-gray.is-through {
+  &::after {
+    background-color: $c-dark-grey;
+  }
 }
