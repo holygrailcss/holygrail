@@ -30,7 +30,7 @@ a {
 
   &::after {
     content: '';
-    background-color: $primary;
+    background-color: $c-primary;
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -112,7 +112,7 @@ a {
 
   &::after {
     content: '';
-    background-color: $primary;
+    background-color: $c-primary;
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -153,7 +153,7 @@ u {
     height: 2px;
     bottom: -4px;
     left: 0;
-    background: $primary;
+    background: $c-primary;
     transform: scaleX(0);
     transition: transform $transition;
     transition: transform $transition, -webkit-transform $transition;
@@ -185,7 +185,7 @@ u {
     height: 1px;
     bottom: -4px;
     left: 0;
-    background: $primary;
+    background: $c-primary;
     transition: 0.6s;
   }
 
@@ -196,7 +196,7 @@ u {
     height: 1px;
     bottom: -4px;
     left: 0;
-    background: $primary;
+    background: $c-primary;
     opacity: 0.3;
   }
 
@@ -217,8 +217,8 @@ u {
   display: inline-block;
   padding: 4px 0;
   margin: 20px 0;
-  border-bottom: 2px solid $primary;
-  color: $primary;
+  border-bottom: 2px solid $c-primary;
+  color: $c-primary;
   text-align: left;
   text-decoration: none;
   cursor: pointer;
@@ -242,7 +242,7 @@ u {
     z-index: 3;
     width: 0;
     height: 1px;
-    background: $primary;
+    background: $c-primary;
     animation: underline 1s 0.5s cubic-bezier(0.55, 0.085, 0, 0.99) forwards;
   }
 
@@ -308,7 +308,7 @@ u {
   color: $c-white;
 
   &::after {
-    border: 1px solid $primary;
+    border: 1px solid $c-primary;
     border-radius: 0;
     border-right: 0;
     border-top: 0;
@@ -405,7 +405,7 @@ button.link-line {
 
   &::after {
     content: '';
-    background-color: $primary;
+    background-color: $c-primary;
     position: absolute;
     bottom: 0;
     width: calc(100% - 20px);
@@ -440,7 +440,7 @@ button.link-line {
 
   &::after {
     content: '';
-    background-color: $primary;
+    background-color: $c-primary;
     position: absolute;
     bottom: 0;
     width: calc(100% - 20px);

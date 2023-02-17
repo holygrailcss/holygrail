@@ -1,6 +1,19 @@
 @use 'sass:math';
 @import '../abstract/_all';
 
+$btn-text-mini: 12px;
+$btn-text-small: 14px;
+$btn-text-medium: 14px;
+$btn-text-large: 14px;
+$btn-text-xlarge: 16px;
+$btn-text-full: 14px;
+
+@keyframes spin {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
 .btn {
   position: relative;
   display: inline-block;
@@ -13,27 +26,26 @@
   border: none;
   white-space: nowrap;
   cursor: pointer;
-  padding: 16px 8px;
+  padding: 15px 8px 17px;
 
   @include font-regular;
 
+  &:focus,
+  &.focus,
   &:hover,
-  &.hover {
+  &.hover,
+  &:visited,
+  &:active,
+  &.active {
     text-decoration: none;
     opacity: 0.6;
-  }
-
-  &:active,
-  &:focus {
-    outline: none;
-  }
-
-  &:visited {
     outline: none;
   }
 
   &:disabled,
   &.disabled {
+    pointer-events: none;
+    filter: grayscale(1);
     opacity: 0.2;
     cursor: default;
   }
@@ -42,17 +54,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 16px;
+    padding: $padding-btn;
 
     svg {
       margin-left: 8px;
-    }
-
-    &.btn-primary,
-    &.btn-blue {
-      svg {
-        filter: invert(1);
-      }
     }
 
     &.btn--mini,
@@ -71,51 +76,27 @@
     padding: 8px;
     background: none;
   }
-
-  &.btn-world {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 8px;
-    padding: 16px;
-    border: none;
-    background-color: rgba($c-primary, 0.4);
-    color: $c-white;
-    transition: all 0.4s ease-in-out;
-
-    svg {
-      path {
-        fill: $c-white;
-      }
-    }
-
-    &:hover {
-      background-color: rgba($c-primary, 0.8);
-    }
-
-    .btn-world-left {
-      padding-right: 8px;
-    }
-
-    .btn-world-center {
-      width: calc(100% - 40px);
-      padding-right: 8px;
-      text-overflow: ellipsis;
-      overflow: hidden;
-      white-space: nowrap;
-      vertical-align: middle;
-      text-align: left;
-      margin-top: -1px;
-    }
-  }
 }
 
-$btn-text-mini: 12px;
-$btn-text-small: 14px;
-$btn-text-medium: 14px;
-$btn-text-large: 14px;
-$btn-text-xlarge: 16px;
-$btn-text-full: 14px;
+.btn-xs {
+  position: relative;
+  display: inline-block;
+  line-height: 1.2;
+  text-align: center;
+  vertical-align: middle;
+  box-sizing: border-box;
+  font-size: 12px;
+  margin-right: $padding-global;
+  white-space: nowrap;
+  cursor: pointer;
+  padding: math.div($padding-btn, 2);
+
+  &:active,
+  &:focus,
+  &:visited {
+    outline: none;
+  }
+}
 
 .btn--mini {
   padding: $padding-global * 1 + 2px $padding-global * 3 $padding-global * 1 $padding-global * 3;
@@ -153,9 +134,7 @@ $btn-text-full: 14px;
   min-height: 48px;
   min-width: 200px;
   max-width: 400px;
-  padding: 16px;
-  font-size: 16px;
-  line-height: 24px;
+  padding: $padding-btn;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -173,122 +152,10 @@ $btn-text-full: 14px;
   border-radius: 50px;
 }
 
-.btn-xs {
-  position: relative;
-  display: inline-block;
-  line-height: 1.2;
-  text-align: center;
-  vertical-align: middle;
-  box-sizing: border-box;
-  font-size: 12px;
-  margin-right: $padding-global;
-  white-space: nowrap;
-  cursor: pointer;
-  padding: math.div($padding-btn, 2);
-
-  &:hover,
-  &.hover {
-    text-decoration: none;
-    opacity: 0.6;
-  }
-
-  &:active,
-  &:focus {
-    outline: none;
-  }
-
-  &:visited {
-    outline: none;
-  }
-}
-
-.btn-underline {
-  display: inline;
-  position: relative;
-  outline: none;
-  padding: 0;
-  text-align: center;
-  cursor: pointer;
-  line-height: 1;
-  background: transparent;
-  border: none;
-  color: $primary;
-
-  &::after {
-    content: '';
-    background-color: $primary;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 1px;
-  }
-
-  &:hover,
-  &.hover &:focus,
-  &.focus {
-    opacity: 0.6;
-    background-color: transparent;
-    color: $primary;
-    text-decoration: none;
-    cursor: pointer;
-
-    &::after {
-      opacity: 0;
-    }
-  }
-
-  &:active,
-  &.active {
-    &:focus,
-    &.focus {
-      outline: 0;
-    }
-
-    outline: 0;
-    background-image: none;
-    box-shadow: none;
-    opacity: 0.6;
-  }
-
-  &:disabled,
-  &.disabled {
-    opacity: 0.2;
-    cursor: default;
-  }
-
-  .has-light & {
-    color: $c-white;
-
-    &::after {
-      background-color: $c-white;
-    }
-
-    &:hover,
-    &.hover,
-    &:focus,
-    &.focus {
-      background-color: transparent;
-      color: $c-white;
-    }
-  }
-}
-
-.btn-block {
-  display: block;
-  width: 100%;
-}
-
-.btn-blue {
-  background-color: $c-info;
-  color: $c-white;
-  border: 1px solid $c-info;
-}
-
 .btn-primary {
   color: $c-white;
-  background-color: $primary;
-  border: 1px solid $primary;
+  background-color: $c-primary;
+  border: 1px solid $c-primary;
 
   svg {
     g {
@@ -299,14 +166,6 @@ $btn-text-full: 14px;
     circle {
       stroke: $c-white;
     }
-  }
-
-  &:disabled,
-  &.disabled {
-    opacity: 1;
-    background-color: $c-light-grey;
-    color: $c-dark-grey;
-    cursor: default;
   }
 }
 
@@ -325,16 +184,6 @@ $btn-text-full: 14px;
       stroke: $c-primary;
     }
   }
-
-  &:focus,
-  &.focus,
-  &:hover,
-  &.hover,
-  &:active,
-  &.active {
-    color: $c-primary;
-    opacity: 0.6;
-  }
 }
 
 .btn-phantom {
@@ -342,14 +191,15 @@ $btn-text-full: 14px;
   background-color: transparent;
   border: 1px solid $c-white;
 
-  &:focus,
-  &.focus,
-  &:hover,
-  &.hover,
-  &:active,
-  &.active {
-    color: $c-white;
-    opacity: 0.6;
+  svg {
+    g {
+      fill: $c-white;
+      stroke: $c-white;
+    }
+
+    circle {
+      stroke: $c-white;
+    }
   }
 }
 
@@ -393,34 +243,7 @@ $btn-text-full: 14px;
   &.active {
     color: $c-primary;
     opacity: 1;
-    background-color: rgba($c-feel, 0.5);
-  }
-
-  &:disabled,
-  &.disabled {
-    opacity: 1;
-    background-color: $c-light-grey;
-    color: $c-dark-grey;
-    cursor: default;
-  }
-
-  .has-light & {
-    &:hover,
-    &.hover,
-    &:focus,
-    &.focus {
-      background-color: rgba($c-feel, 0.5);
-      color: $c-dark-grey;
-      border-color: rgba($c-feel, 0.5);
-    }
-
-    &:disabled,
-    &.disabled {
-      opacity: 1;
-      background-color: $c-light-grey;
-      color: $c-dark-grey;
-      cursor: default;
-    }
+    background-color: rgba($c-feel, 0.6);
   }
 }
 
@@ -447,29 +270,20 @@ $btn-text-full: 14px;
   &:active,
   &.active {
     color: $c-primary;
-    opacity: 1;
-    border-color: rgba($c-feel, 0.5);
-  }
-
-  &:disabled,
-  &.disabled {
-    opacity: 1;
-    border-color: $c-light-grey;
-    color: $c-dark-grey;
-    cursor: default;
+    border-color: rgba($c-feel, 0.6);
   }
 }
 
 .btn-text {
   background-color: transparent;
   border-color: transparent;
-  color: $primary;
+  color: $c-primary;
 }
 
 .btn-invert {
-  color: $primary;
+  color: $c-primary;
   background-color: transparent;
-  border: 1px solid $primary;
+  border: 1px solid $c-primary;
 
   &:focus,
   &.focus,
@@ -482,7 +296,7 @@ $btn-text-full: 14px;
 }
 
 .btn-invert-light {
-  color: $primary;
+  color: $c-primary;
   background-color: transparent;
   border: 1px solid $c-middle-grey;
 
@@ -502,27 +316,76 @@ $btn-text-full: 14px;
 }
 
 .btn-default {
-  background-color: $primary;
-  border: 1px solid $primary;
+  background-color: $c-primary;
+  border: 1px solid $c-primary;
   color: $c-white;
+}
+.btn-underline {
+  display: inline;
+  position: relative;
+  outline: none;
+  padding: 0;
+  text-align: center;
+  cursor: pointer;
+  line-height: 1;
+  background: transparent;
+  border: none;
+  color: $c-primary;
 
-  &:focus,
-  &.focus,
+  &::after {
+    content: '';
+    background-color: $c-primary;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+  }
+
   &:hover,
-  &.hover,
+  &.hover &:focus,
+  &.focus {
+    opacity: 0.6;
+    background-color: transparent;
+    color: $c-primary;
+    text-decoration: none;
+    cursor: pointer;
+
+    &::after {
+      opacity: 0;
+    }
+  }
+
   &:active,
   &.active {
-    color: $c-white;
-    background-color: $c-dark-grey;
-    border-color: $c-dark-grey;
+    &:focus,
+    &.focus {
+      outline: 0;
+    }
+
+    outline: 0;
+    background-image: none;
+    box-shadow: none;
+    opacity: 0.6;
   }
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.btn-blue {
+  background-color: $c-info;
+  color: $c-white;
+  border: 1px solid $c-info;
 }
 
 .btn-link {
   border: none;
   text-align: left;
   text-decoration: none;
-  color: $primary;
+  color: $c-primary;
   background-color: transparent;
   padding: 0;
 }
@@ -534,9 +397,6 @@ $btn-text-full: 14px;
   line-height: 1.2;
   border: 0 solid $c-white;
   box-sizing: border-box;
-  padding: calc(16px + 2px) 48px 14px 48px;
-  display: flex;
-  align-items: center;
 
   svg {
     stroke: $c-white;
@@ -558,13 +418,123 @@ $btn-text-full: 14px;
   width: 40px;
   max-width: initial;
   height: 40px;
-  border: 1px solid $primary;
+  border: 1px solid $c-primary;
   border-radius: 50px;
   align-content: center;
   justify-content: center;
   align-items: center;
   padding: 0;
   background-color: transparent;
+}
+
+.btn-social {
+  height: 48px;
+  cursor: pointer;
+
+  border: none;
+
+  flex-direction: row;
+  align-items: center;
+  color: $c-white;
+  position: relative;
+
+  box-shadow: 0 1px 1px rgb(0 0 0 / 16.8%), 0 0 1px rgb(0 0 0 / 8.4%);
+
+  svg-icon {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $c-white;
+    position: absolute;
+    top: 0;
+    left: 1px;
+    width: 46px;
+    height: 46px;
+
+    div {
+      display: flex;
+    }
+  }
+}
+
+.btn-google {
+  background-color: $c-google;
+  color: $c-white;
+  padding-left: 60px;
+
+  svg-icon {
+    background-color: $c-white;
+    border: 1px solid $c-google;
+    top: 1px;
+  }
+
+  &:hover {
+    background-color: #3367d6;
+    opacity: 1;
+  }
+}
+
+.btn-facebook {
+  background-color: #1977f3;
+  color: $c-white;
+  padding-left: 48px;
+
+  svg-icon {
+    background-color: transparent;
+
+    path {
+      fill: $c-white;
+    }
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.btn-apple {
+  background-color: $c-primary;
+  color: $c-white;
+  padding-left: 48px;
+
+  svg-icon {
+    background-color: $c-primary;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.btn-naver {
+  background-color: $c-naver;
+  color: $c-white;
+  padding-left: 48px;
+
+  svg-icon {
+    width: 80px;
+    background-color: $c-naver;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.btn-wechat {
+  background-color: $c-wechat;
+  color: $c-white;
+  padding-left: 48px;
+
+  svg-icon {
+    background-color: $c-wechat;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
 }
 
 .btns {
@@ -670,7 +640,7 @@ $btn-text-full: 14px;
 
     svg {
       path {
-        fill: rgba($primary, $alpha: 0.6);
+        fill: rgba($c-primary, $alpha: 0.6);
       }
     }
   }
@@ -693,8 +663,8 @@ $btn-text-full: 14px;
 .no-focus {
   &:focus {
     color: $c-white;
-    background-color: $primary;
-    border-color: $primary;
+    background-color: $c-primary;
+    border-color: $c-primary;
   }
 }
 
@@ -702,18 +672,10 @@ $btn-text-full: 14px;
   animation: spin 1.6s ease-in-out infinite;
 }
 
-@keyframes spin {
-  100% {
-    transform: rotate(-360deg);
-  }
-}
-
 .btn-social-login {
   display: flex;
   align-items: center;
   justify-content: center;
-  line-height: 16px;
-  font-size: 16px;
   position: relative;
 
   svg {
@@ -740,148 +702,6 @@ $btn-text-full: 14px;
       path {
         fill: $c-primary;
       }
-    }
-  }
-}
-
-.btn-social,
-.btn-social.btn--full {
-  height: 48px;
-  cursor: pointer;
-  border-radius: $btn-radius;
-  border: none;
-  display: flex;
-  padding: 9px;
-  flex-direction: row;
-  align-items: center;
-  color: $c-white;
-  position: relative;
-  padding-left: 48px;
-  box-shadow: 0 1px 1px rgb(0 0 0 / 16.8%), 0 0 1px rgb(0 0 0 / 8.4%);
-
-  svg-icon {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    border-radius: $btn-radius;
-    background-color: $c-white;
-    position: absolute;
-    top: 0;
-    left: 1px;
-    width: 46px;
-    height: 46px;
-
-    div {
-      display: flex;
-    }
-  }
-
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:disabled,
-  &[disabled],
-  &.disabled {
-    background-color: $c-middle-grey;
-
-    svg-icon {
-      background-color: transparent;
-
-      path {
-        fill: $c-white;
-      }
-    }
-  }
-
-  &.btn-google {
-    background-color: $c-google;
-    color: $c-white;
-    padding-left: 60px;
-
-    svg-icon {
-      background-color: $c-white;
-      border: 1px solid $c-google;
-      top: 1px;
-    }
-
-    &:hover {
-      background-color: #3367d6;
-      opacity: 1;
-    }
-
-    &:disabled,
-    &[disabled],
-    &.disabled {
-      background-color: $c-middle-grey;
-
-      svg-icon {
-        border: 1px solid #f0f0f0;
-        background-color: $c-white;
-
-        path {
-          fill: $c-middle-grey;
-        }
-      }
-    }
-  }
-
-  &.btn-facebook {
-    background-color: #1977f3;
-    color: $c-white;
-
-    svg-icon {
-      background-color: transparent;
-
-      path {
-        fill: $c-white;
-      }
-    }
-
-    &:hover {
-      opacity: 0.6;
-    }
-  }
-
-  &.btn-apple {
-    background-color: $primary;
-    color: $c-white;
-
-    svg-icon {
-      background-color: $primary;
-    }
-
-    &:hover {
-      opacity: 0.6;
-    }
-  }
-
-  &.btn-naver {
-    background-color: $c-naver;
-    color: $c-white;
-    padding-left: 80px;
-
-    svg-icon {
-      width: 80px;
-      background-color: $c-naver;
-    }
-
-    &:hover {
-      opacity: 0.6;
-    }
-  }
-
-  &.btn-wechat {
-    background-color: $c-wechat;
-    color: $c-white;
-
-    svg-icon {
-      background-color: $c-wechat;
-    }
-
-    &:hover {
-      opacity: 0.6;
     }
   }
 }
@@ -947,6 +767,61 @@ $btn-text-full: 14px;
   }
 }
 
+.btn--square {
+  border-radius: 0;
+}
+.btn-world {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: $padding-btn;
+  border: none;
+  background-color: rgba($c-primary, 0.4);
+  color: $c-white;
+  transition: all 0.4s ease-in-out;
+
+  svg {
+    path {
+      fill: $c-white;
+    }
+  }
+
+  &:hover {
+    background-color: rgba($c-primary, 0.8);
+  }
+
+  .btn-world-left {
+    padding-right: 8px;
+  }
+
+  .btn-world-center {
+    width: calc(100% - 40px);
+    padding-right: 8px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    vertical-align: middle;
+    text-align: left;
+    margin-top: -1px;
+  }
+}
+
+.btn-svg svg-icon {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: $btn-radius;
+
+  position: absolute;
+  top: 0;
+  left: 1px;
+  width: 46px;
+  height: 46px;
+  padding-bottom: 3px;
+}
+
 .has-light {
   .btn-phantom {
     color: $c-white;
@@ -969,12 +844,58 @@ $btn-text-full: 14px;
     }
   }
 
-  .btn-feel-invert:hover {
-    color: $c-white;
-    background-color: transparent;
-  }
-}
+  .btn.btn-feel {
+    &:hover,
+    &.hover,
+    &:focus,
+    &.focus {
+      background-color: rgba($c-feel, 0.6);
+      color: $c-dark-grey;
+      border-color: rgba($c-feel, 0.6);
+    }
 
-.btn--square {
-  border-radius: 0;
+    &:disabled,
+    &.disabled {
+      opacity: 1;
+      background-color: $c-light-grey;
+      color: $c-dark-grey;
+      cursor: default;
+    }
+  }
+  .btn-primary {
+    &:hover,
+    &.hover,
+    &:focus,
+    &.focus {
+      background-color: $c-light-grey;
+      border: 1px solid $c-light-grey;
+      color: $c-dark-grey;
+    }
+  }
+  .btn-underline {
+    color: $c-white;
+
+    &::after {
+      background-color: $c-white;
+    }
+
+    &:hover,
+    &.hover,
+    &:focus,
+    &.focus {
+      background-color: transparent;
+      color: $c-white;
+    }
+  }
+
+  .btn-google {
+    svg path {
+      fill: initial;
+      stroke: none;
+    }
+  }
+
+  .btn-feel-invert {
+    border: 1px solid $c-feel;
+  }
 }

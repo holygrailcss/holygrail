@@ -53,7 +53,7 @@
       appearance: initial;
 
       &:hover {
-        background-color: $primary;
+        background-color: $c-primary;
         color: $c-white;
         cursor: pointer;
       }
@@ -274,7 +274,7 @@
   @include font-2-medium;
 
   font-size: 14px;
-  color: $primary;
+  color: $c-primary;
   letter-spacing: 0;
   line-height: 16px;
 }

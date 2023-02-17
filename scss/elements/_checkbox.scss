@@ -24,7 +24,7 @@
     position: absolute;
     content: '';
     height: 1px;
-    background-color: $primary;
+    background-color: $c-primary;
     width: 16px;
     transform: rotate(136deg);
     left: 4px;
@@ -38,7 +38,7 @@
     height: 1px;
     top: 10px;
     transform: rotate(50deg);
-    background-color: $primary;
+    background-color: $c-primary;
   }
 
   [type='checkbox']:not(:checked) + label,
@@ -108,7 +108,7 @@
     position: absolute;
     top: 5px;
     left: 5px;
-    color: $primary;
+    color: $c-primary;
     transition: all 0.2s;
   }
 
@@ -168,7 +168,7 @@
     border-radius: 30px;
     left: 0;
     border: none;
-    border: 1px solid $primary;
+    border: 1px solid $c-primary;
     outline: 0;
     display: inline-block;
     vertical-align: top;
@@ -200,7 +200,7 @@
   }
 
   .checkbox-circle {
-    background: $primary;
+    background: $c-primary;
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -211,7 +211,7 @@
     position: absolute;
     top: 3px;
     left: 6px;
-    color: $primary;
+    color: $c-primary;
     transition: all 0.2s;
   }
 
@@ -294,7 +294,7 @@
     left: 7px;
     width: 10px;
     height: 10px;
-    background-color: $primary;
+    background-color: $c-primary;
     border-radius: 50%;
     transition: all 0.2s;
   }
@@ -344,7 +344,7 @@ input[type='radio']:focus + label::before {
   }
 
   &.checkbox-radio [type='radio']:checked + label .border-1 {
-    border: 1px solid $primary;
+    border: 1px solid $c-primary;
   }
 }
 
@@ -369,7 +369,7 @@ input[type='radio']:focus + label::before {
   }
 
   &.checkbox-radio [type='radio']:checked + label .border-1 {
-    border: 1px solid $primary;
+    border: 1px solid $c-primary;
   }
 }
 
@@ -404,7 +404,7 @@ input[type='radio']:focus + label::before {
   }
 
   &.checkbox-radio [type='radio']:checked + label .border-1 {
-    border: 1px solid $primary;
+    border: 1px solid $c-primary;
   }
 }
 
@@ -427,13 +427,13 @@ input[type='radio']:focus + label::before {
   }
 
   &.checkbox-radio [type='radio']:checked + label .border-1 {
-    border: 1px solid $primary;
+    border: 1px solid $c-primary;
   }
 }
 
 .is-active {
   &.checkbox-radio .border-1 {
-    border: 1px solid $primary;
+    border: 1px solid $c-primary;
   }
 
   &.checkbox-radio [type='radio'] + label .ico-radio {

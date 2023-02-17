@@ -56,25 +56,33 @@ $variable-list: (
   xl: 1500px,
 );
 
-.font-family {
+.font-family-a {
   &::after {
     content: '' + $font-family-a-r;
     position: relative;
   }
 }
 
-.font-family2 {
+.font-family-b {
   &::after {
     content: '' + $font-family-b-r;
     position: relative;
   }
 }
 
+
+.font-family-c {
+  &::after {
+    content: '' + $font-family-c-r;
+    position: relative;
+  }
+}
+
 .mini-site-main {
-  padding-left: 20px;
+  padding-left: 200px;
   padding-right: 20px;
   margin: 0 auto;
-  max-width: 720px;
+ 
 }
 
 $variabletotals: length($variable-list);
@@ -213,6 +221,11 @@ $value in $headers {
     width: 100%;
     transition: all ease 300ms;
     border: 1px solid #fff;
+    display: flex;
+    align-content: flex-start;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
 
     &:hover {
       border: 1px solid #eaeaea;
@@ -260,7 +273,7 @@ $value in $headers {
 
     .item-2 {
       float: left;
-      clear: both;
+     
 
       &::after {
         color: #ccc;
@@ -585,7 +598,10 @@ $headersFluidsGuide: (
   .guide-minilogo {
     width: 30px;
     height: 60px;
-    padding: 17px;
+    margin-left: 18px;
+img{
+  float: left;
+}
     float: left;
   }
 
@@ -1022,7 +1038,7 @@ $headersFluidsGuide: (
   .link-template,
   .link-template-mini {
     background-color: #fff;
-    border-radius: 11px;
+    border-radius: $btn-radius;
     border: 1px solid rgb(204 204 204 / 40%);
     overflow: visible;
     color: #ccc;
@@ -1214,7 +1230,7 @@ $headersFluidsGuide: (
   .box-info {
     padding: 20px;
     border: 1px solid gray;
-    border-radius: 10px;
+    border-radius: $btn-radius;
     font-style: italic;
     opacity: 0.5;
   }
