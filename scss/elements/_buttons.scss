@@ -320,6 +320,7 @@ $btn-text-full: 14px;
   border: 1px solid $c-primary;
   color: $c-white;
 }
+
 .btn-underline {
   display: inline;
   position: relative;
@@ -358,6 +359,7 @@ $btn-text-full: 14px;
 
   &:active,
   &.active {
+
     &:focus,
     &.focus {
       outline: 0;
@@ -430,14 +432,11 @@ $btn-text-full: 14px;
 .btn-social {
   height: 48px;
   cursor: pointer;
-
   border: none;
-
   flex-direction: row;
   align-items: center;
   color: $c-white;
   position: relative;
-
   box-shadow: 0 1px 1px rgb(0 0 0 / 16.8%), 0 0 1px rgb(0 0 0 / 8.4%);
 
   svg-icon {
@@ -445,7 +444,6 @@ $btn-text-full: 14px;
     align-content: center;
     justify-content: center;
     align-items: center;
-
     background-color: $c-white;
     position: absolute;
     top: 0;
@@ -556,7 +554,7 @@ $btn-text-full: 14px;
   position: relative;
   display: flex;
 
-  & > :not(:first-child):not(:last-child) {
+  &> :not(:first-child):not(:last-child) {
     border-radius: 0;
     margin-left: -1px;
   }
@@ -770,6 +768,7 @@ $btn-text-full: 14px;
 .btn--square {
   border-radius: 0;
 }
+
 .btn-world {
   display: flex;
   align-items: center;
@@ -813,7 +812,6 @@ $btn-text-full: 14px;
   justify-content: center;
   align-items: center;
   border-radius: $btn-radius;
-
   position: absolute;
   top: 0;
   left: 1px;
@@ -845,6 +843,7 @@ $btn-text-full: 14px;
   }
 
   .btn.btn-feel {
+
     &:hover,
     &.hover,
     &:focus,
@@ -862,7 +861,9 @@ $btn-text-full: 14px;
       cursor: default;
     }
   }
+
   .btn-primary {
+
     &:hover,
     &.hover,
     &:focus,
@@ -872,6 +873,7 @@ $btn-text-full: 14px;
       color: $c-dark-grey;
     }
   }
+
   .btn-underline {
     color: $c-white;
 

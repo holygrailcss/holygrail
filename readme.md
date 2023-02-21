@@ -1,12 +1,21 @@
+<p align="center">
+  <a href="holyguide.es">
+    <img alt="GitHub Profile Readme Generator" src="https://res.cloudinary.com/manuel-ruiz/image/upload/v1576145416/holygrail/logoholy.svg" width="60" />
+  </a>
+</p>
+
+<h1 align="center">
+Holygrailcss
+</h1>
+
+
+
 # Holy Grail css
 
 > Solo existe una forma de maquetar
 
 > Personalizable en 5 minutos
 
-> Crossbrowser
-header-account is-cart
-> Validado por el w
 
 
 
@@ -52,6 +61,44 @@ npm run start para abrir la guia
 
 
 
+
+
+
+## 🛠️ Installation Steps
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/holygrailcss/holygrail.git
+```
+
+2. Change the working directory
+
+```bash
+cd holygrailcss
+```
+
+3. Install dependencies
+
+```bash
+npm install
+```
+
+4. Run the app
+
+```bash
+npm run docs
+npm run build
+npm run start para abrir la guia
+```
+
+
+
+
+
+
+
+
 ### CDN
 
 [https://www.jsdelivr.com/package/npm/holygrailcss](https://www.jsdelivr.com/package/npm/holygrailcss)
@@ -87,3 +134,8 @@ Browse the [online documentation here.](https://holygrailcss.github.io/)
 ## updates importantes
 
 botones ahora son mediums, si no hay medium heredará otra fuente.
+
+<hr>
+<p align="center">
+Developed with ❤️ in Barcelona 
+</p>

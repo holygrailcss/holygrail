@@ -6,7 +6,6 @@
 
   &.is-error {
     color: $c-error;
-
     [type='checkbox']:checked + label::before,
     [type='checkbox']:not(:checked) + label::before {
       border: 1px solid $c-error;
@@ -328,9 +327,6 @@
   position: relative;
   width: 25px;
   height: 25px;
-}
-
-input[type='radio']:focus + label::before {
 }
 
 .check-no {

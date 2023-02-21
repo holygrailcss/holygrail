@@ -374,7 +374,7 @@
 }
 
 @mixin space($breakpoints, $paddings, $cssattr) {
-  @for $i from 1 through length($colBreakpoints) {
+  @for $i from 1 through length($breakpoints) {
     @media (min-width: nth(map-values($breakpoints), $i)) {
       @each $name, $pad in $paddings {
         $padding: nth($pad, $i);
