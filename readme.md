@@ -10,9 +10,7 @@
 
 Una libreria agnostica y libreria de componentes html y scss. 
 
-
 [npm-url]: https://www.npmjs.com/package/holygrailcss
-
 [github-action-url]: https://github.com/ant-design/ant-design/actions?query=workflow%3A%22%E2%9C%85+test%22
 [download-url]: https://npmjs.org/package/holygrailcss
 
