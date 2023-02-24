@@ -1,141 +1,103 @@
 <p align="center">
-  <a href="holyguide.es">
-    <img alt="GitHub Profile Readme Generator" src="https://res.cloudinary.com/manuel-ruiz/image/upload/v1576145416/holygrail/logoholy.svg" width="60" />
+  <a href="https://holyguide.es">
+    <img width="200" src="https://res.cloudinary.com/manuel-ruiz/image/upload/v1576145416/holygrail/logoholy.svg">
   </a>
 </p>
 
-<h1 align="center">
-Holygrailcss
-</h1>
+<h1 align="center">Holygrail</h1>
 
+<div align="center">
 
+Una libreria agnostica y libreria de componentes html y scss. 
 
-# Holy Grail css
+[![CI status][github-action-image]][github-action-url] [![codecov][codecov-image]][codecov-url] [![NPM version][npm-image]][npm-url] [![NPM downloads][download-image]][download-url]
 
-> Solo existe una forma de maquetar
+[![][bundlephobia-image]][bundlephobia-url] [![][bundlesize-js-image]][unpkg-js-url] [![FOSSA Status][fossa-image]][fossa-url]
 
-> Personalizable en 5 minutos
+[![Follow Twitter][twitter-image]][twitter-url] [![Renovate status][renovate-image]][renovate-dashboard-url] [![][issues-helper-image]][issues-helper-url] [![dumi][dumi-image]][dumi-url] [![Issues need help][help-wanted-image]][help-wanted-url]
 
+</div>
 
+[![npm](https://res.cloudinary.com/manuel-ruiz/image/upload/v1576145416/holygrail/logoholy.svg)][npm-link]
 
+## ✨ Features
 
+- 🌈 Enterprise-class UI designed for web applications.
+- 📦 A set of high-quality React components out of the box.
+- 🛡 Written in TypeScript with predictable static types.
+- ⚙️ Whole package of design resources and development tools.
+- 🌍 Internationalization support for dozens of languages.
+- 🎨 Powerful theme customization in every detail.
 
-# [holygrailcss] (https://holygrailcss.github.io/)
+## 🖥 Environment Support
 
-HolygrailCss is a **modern CSS framework** based on [Flexbox] (https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes).
+- Modern browsers
+- Server-side Rendering
+- [Electron](https://www.electronjs.org/)
 
+| [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br>Edge | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br>Safari | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/electron/electron_48x48.png" alt="Electron" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br>Electron |
+| --- | --- | --- | --- | --- |
+| Edge | last 2 versions | last 2 versions | last 2 versions | last 2 versions |
 
-![npm](https://res.cloudinary.com/manuel-ruiz/image/upload/v1576145416/holygrail/logoholy.svg)][npm-link]
+## 📦 Install
 
-
-
-[![npm](https://img.shields.io/npm/v/holygrailcss.svg)][npm-link]
-[![npm](https://img.shields.io/npm/dm/holygrail.svg)][npm-link]
-[![](data.jsdelivr.com/v1/package/npm/holygrailcss/badge)](https://www.jsdelivr.com/package/npm/holygrailcss)
-[![Awesome][awesome-badge]][awesome-link]
-
-
-<a href="https://holyguide.es"><img src="https://raw.githubusercontent.com/jgthms/holygrailcss/master/docs/images/holygrail-banner.png" alt="Holyguide: a Flexbox CSS framework" style="max-width:100%;" width="600"></a>
-
-
-
-
-
-## Quick install
-
-holygrailcss is constantly in development! Try it out now:
-
-### NPM
-
-```sh
+```bash
 npm install holygrailcss
 ```
 
-Probar el holygrail antes de subir
-
-
-npm run docs
-npm run build
-npm run start para abrir la guia
-
-
-
-
-
-
-
-## 🛠️ Installation Steps
-
-1. Clone the repository
-
 ```bash
-git clone https://github.com/holygrailcss/holygrail.git
+yarn add holygrailcss
 ```
 
-2. Change the working directory
+## 🔨 Usage
 
-```bash
-cd holygrailcss
-```
+```css
 
-3. Install dependencies
-
-```bash
-npm install
-```
-
-4. Run the app
-
-```bash
-npm run docs
-npm run build
-npm run start para abrir la guia
 ```
 
 
 
+## 🌍 Internationalization
+
+Dozens of languages are supported in `holygrailcss`
+
+## 🔗 Links
+
+- [Home page](https://holyguide.es/)
 
 
+## ⌨️ Development
+
+Use Gitpod, a free online dev environment for GitHub for create your website.
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://github.com/holygrailcss/holysite)
 
 
-
-### CDN
-
+Or clone locally:
 [https://www.jsdelivr.com/package/npm/holygrailcss](https://www.jsdelivr.com/package/npm/holygrailcss)
 
 Feel free to raise an issue or submit a pull request.
 
-## CSS only
 
-holygrailCss is a **CSS** and **SCSS** framework. As such, the sole output is a single CSS file: [holygrailcss.css](https://github.com/manuelruizredondo/holygrail/blob/master/css/holygraicss.css)
+Or clone locally:
 
-You can either use that file, "out of the box", or download the Sass source files to customize the [variables](https://holygrail.io/documentation/overview/variables/).
-
-
-
-## Browser Support
-
-
-* Chrome
-* Edge
-* Firefox
-* Opera
-* Safari
-
-Internet Explorer (10+) is only partially supported.
-
-## Documentation
-
-The documentation resides in the [guide](guide) directory, and is built with the scss a manopler tool.
-
-Browse the [online documentation here.](https://holygrailcss.github.io/)
+```bash
+$ gh repo clone holygrailcss/holysite
+$ cd holysite
+$ npm install
+$ npm run docs
+$ npm run build
+$ npm run start 
+```
 
 
-## updates importantes
 
-botones ahora son mediums, si no hay medium heredará otra fuente.
+## 🤝 Contributing [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-<hr>
+
 <p align="center">
-Developed with ❤️ in Barcelona 
+Developed with ❤️ from  Barcelona 
 </p>
+
+
+
