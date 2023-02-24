@@ -54,20 +54,3 @@
   }
 }
 
-.is-rtl {
-  .form-input-label,
-  .form-input-label-2 {
-    &.datalist {
-      svg {
-        right: auto;
-        left: 16px;
-      }
-
-      .validation-error-messages {
-        svg {
-          left: auto;
-        }
-      }
-    }
-  }
-}

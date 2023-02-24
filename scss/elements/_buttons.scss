@@ -704,66 +704,6 @@ $btn-text-full: 14px;
   }
 }
 
-.is-rtl {
-  .btn {
-    &.btn-separate {
-      svg-icon {
-        transform: scaleX(-1);
-        margin-left: 0;
-        margin-right: 8px;
-      }
-    }
-
-    &.btn-world {
-      .btn-world-center {
-        text-align: right;
-      }
-
-      .btn-world-right {
-        transform: rotateY(180deg);
-      }
-    }
-  }
-
-  .btn-group {
-    .btn {
-      &:first-child() {
-        border-radius: 0 8px 8px 0;
-      }
-
-      &:last-child() {
-        border-radius: 8px 0 0 8px;
-      }
-    }
-  }
-
-  .btn-social-login {
-    svg {
-      margin-right: 0;
-      margin-left: 8px;
-    }
-  }
-
-  .btn-social {
-    padding-right: 48px;
-    padding-left: 0;
-
-    svg-icon {
-      right: 1px;
-      left: auto;
-    }
-
-    &.btn-google {
-      padding-right: 60px;
-      padding-left: 0;
-    }
-
-    &.btn-naver {
-      padding-right: 80px;
-      padding-left: 0;
-    }
-  }
-}
 
 .btn--square {
   border-radius: 0;

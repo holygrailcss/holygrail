@@ -216,13 +216,3 @@
   }
 }
 
-.is-rtl {
-  .tabs-mini {
-    float: left;
-
-    li:first-child a::after {
-      left: 0;
-      right: auto;
-    }
-  }
-}

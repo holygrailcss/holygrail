@@ -240,23 +240,3 @@ ul.list-mini {
   }
 }
 
-.is-rtl {
-  ul.list-disc {
-    li {
-      &::after {
-        right: 0;
-      }
-    }
-  }
-  .list-button {
-    &.list-secundary {
-      padding-left: 16px;
-      padding-right: 42px;
-    }
-
-    &.list-tertiary {
-      padding-left: 16px;
-      padding-right: 64px;
-    }
-  }
-}
