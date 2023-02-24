@@ -21,7 +21,6 @@ Una libreria agnostica y libreria de componentes html y scss.
 
 </div>
 
-[![npm](https://res.cloudinary.com/manuel-ruiz/image/upload/v1576145416/holygrail/logoholy.svg)][npm-link]
 
 ## ✨ Features
 
