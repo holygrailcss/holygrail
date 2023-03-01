@@ -193,8 +193,9 @@ label {
   box-sizing: border-box;
   display: table;
   transform: translateY(-50%);
-  margin: 12px 14px 14px;
-  height: 100%;
+  margin: -1px 16px;
+  height: 16px;
+  width: 16px;
 }
 
 .ico-post {
@@ -205,8 +206,9 @@ label {
   box-sizing: border-box;
   display: table;
   transform: translateY(-50%);
-  margin: 12px 14px 14px;
-  height: 100%;
+  margin: -1px 16px;
+  height: 16px;
+  width: 16px;
   opacity: .3;
   cursor: pointer;
 }
@@ -533,8 +535,7 @@ input::input-placeholder {
   }
 }
 
-$padding-btn: 14px;
-$svg-size: 16px;
+
 
 .form-icon {
   position: absolute;

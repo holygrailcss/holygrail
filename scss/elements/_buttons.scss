@@ -18,6 +18,7 @@ $btn-text-full: 14px;
   position: relative;
   display: inline-block;
   border-radius: $btn-radius;
+  overflow: hidden;
   line-height: 1;
   text-align: center;
   box-sizing: border-box;
@@ -444,7 +445,8 @@ $btn-text-full: 14px;
     align-content: center;
     justify-content: center;
     align-items: center;
-    background-color: $c-white;
+    border-radius: 8px;
+
     position: absolute;
     top: 0;
     left: 1px;
