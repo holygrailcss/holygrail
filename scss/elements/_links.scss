@@ -364,7 +364,6 @@ button.link-line {
 }
 
 .link-raw {
-  display: initial;
   position: relative;
   border: 0;
   transform: none;
@@ -382,7 +381,6 @@ button.link-line {
 
   @include font-regular;
 
-  display: initial;
   position: relative;
   border: 0;
   transform: none;
@@ -458,6 +456,10 @@ button.link-line.link-svg-post {
 }
 
 .has-light {
+
+  a{
+    color: $c-white;
+  }
   .link1 {
     color: $c-white;
 

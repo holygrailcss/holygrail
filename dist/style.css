@@ -3347,7 +3347,6 @@ svg-icon.ico-success path {
 }
 body {
   font-family: arial, sans-serif;
-  font-family: arial, sans-serif;
   font-weight: 500;
   -webkit-overflow-scrolling: touch;
   font-variant-ligatures: no-common-ligatures !important;
@@ -5570,6 +5569,7 @@ strong {
   position: relative;
   display: inline-block;
   border-radius: 8px;
+  overflow: hidden;
   line-height: 1;
   text-align: center;
   box-sizing: border-box;
@@ -5597,7 +5597,7 @@ strong {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px;
+  padding: 14px;
 }
 .btn.btn-separate svg {
   margin-left: 8px;
@@ -5626,7 +5626,7 @@ strong {
   margin-right: 8px;
   white-space: nowrap;
   cursor: pointer;
-  padding: 8px;
+  padding: 7px;
 }
 .btn-xs:active, .btn-xs:focus, .btn-xs:visited {
   outline: none;
@@ -5668,7 +5668,7 @@ strong {
   min-height: 48px;
   min-width: 200px;
   max-width: 400px;
-  padding: 16px;
+  padding: 14px;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -5913,7 +5913,7 @@ strong {
   align-content: center;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
+  border-radius: 8px;
   position: absolute;
   top: 0;
   left: 1px;
@@ -6138,7 +6138,7 @@ strong {
   align-items: center;
   justify-content: space-between;
   gap: 8px;
-  padding: 16px;
+  padding: 14px;
   border: none;
   background-color: rgba(41, 41, 41, 0.4);
   color: #fff;
@@ -6879,7 +6879,7 @@ label {
   box-sizing: border-box;
   display: table;
   transform: translateY(-50%);
-  margin: 0 16px;
+  margin: -1px 16px;
   height: 16px;
   width: 16px;
 }
@@ -6892,7 +6892,7 @@ label {
   box-sizing: border-box;
   display: table;
   transform: translateY(-50%);
-  margin: 0 16px;
+  margin: -1px 16px;
   height: 16px;
   width: 16px;
   opacity: 0.3;
@@ -7066,7 +7066,7 @@ input::input-placeholder {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 16px;
+  left: 14px;
   z-index: 1;
 }
 .select::after {
@@ -7151,6 +7151,26 @@ input::input-placeholder {
 }
 .select.select-flat::after {
   right: 0;
+}
+.select.select-size {
+  width: max-content;
+}
+.select.select-size label {
+  z-index: 0;
+  left: 0;
+}
+.select.select-size select {
+  border-radius: 8px;
+  padding-left: 16px;
+  background: none;
+  padding-right: 16px;
+  border-color: #292929;
+}
+.select.select-size select:hover {
+  opacity: 0.6;
+}
+.select.select-size::after {
+  display: none;
 }
 
 .hg-form .row {
@@ -7958,6 +7978,9 @@ button.link-line.link-svg-post {
   padding-left: 0;
 }
 
+.has-light a {
+  color: #fff;
+}
 .has-light .link1 {
   color: #fff;
 }

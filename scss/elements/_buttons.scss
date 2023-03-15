@@ -99,26 +99,41 @@ $btn-text-full: 14px;
   }
 }
 
-.btn--mini {
+
+.btn{
+
+
+
+&.btn--mini {
   padding: $padding-global * 1 + 2px $padding-global * 3 $padding-global * 1 $padding-global * 3;
   font-size: $btn-text-mini;
 }
 
-.btn--small {
+&.btn--small {
   padding-right: $padding-global * 2;
   padding-left: $padding-global * 2;
   font-size: $btn-text-small;
 }
 
-.btn--medium {
+&.btn--medium {
   padding-right: $padding-global * 5;
   padding-left: $padding-global * 5;
   font-size: $btn-text-medium;
   max-width: 272px;
   width: 100%;
 }
+&.btn--mini-rd {
+  padding: $padding-global * 1 + 2px $padding-global * 3 $padding-global * 1 $padding-global * 3;
+  font-size: $btn-text-mini;
+  @media (min-width: $break-sm) {
+    padding-right: $padding-global * 2;
+    padding-left: $padding-global * 2;
+    font-size: $btn-text-small;
 
-.btn--large {
+  }
+}
+
+&.btn--large {
   min-width: 200px;
   max-width: 400px;
   width: 100%;
@@ -127,7 +142,7 @@ $btn-text-full: 14px;
   font-size: $btn-text-large;
 }
 
-.btn--xlarge {
+&.btn--xlarge {
   padding-right: $padding-global * 8;
   padding-left: $padding-global * 8;
   position: relative;
@@ -141,14 +156,14 @@ $btn-text-full: 14px;
   cursor: pointer;
 }
 
-.btn--full {
+&.btn--full {
   width: 100%;
   padding-right: $padding-global * 2;
   padding-left: $padding-global * 2;
   font-size: $btn-text-full;
   height: 48px;
 }
-
+}
 .btn--round {
   border-radius: 50px;
 }
@@ -221,7 +236,7 @@ $btn-text-full: 14px;
   }
 }
 
-.btn-feel {
+.btn-primary-feel {
   color: $c-primary;
   background-color: $c-feel;
 
@@ -246,9 +261,26 @@ $btn-text-full: 14px;
     opacity: 1;
     background-color: rgba($c-feel, 0.6);
   }
+
+  &:disabled,
+  &[disabled],
+  &.disabled {
+    pointer-events: none;
+    cursor: default;
+    border: 1px solid $c-middle-grey !important;
+    color:$c-dark-grey !important;
+    background-color: $c-middle-grey !important;
+    filter: none;
+    opacity: 1;
+    svg-icon{
+      background-color: $c-middle-grey !important;
+      border: 1px solid $c-middle-grey !important;
+    }
+  }
+  
 }
 
-.btn-feel-invert {
+.btn-secondary-feel {
   color: $c-primary;
   background-color: transparent;
   border: 1px solid $c-feel;
@@ -270,9 +302,28 @@ $btn-text-full: 14px;
   &.hover,
   &:active,
   &.active {
+    opacity: 1;
     color: $c-primary;
     border-color: rgba($c-feel, 0.6);
   }
+
+
+  &:disabled,
+  &[disabled],
+  &.disabled {
+    pointer-events: none;
+    cursor: default;
+    border: 1px solid $c-middle-grey !important;
+    color:$c-dark-grey !important;
+    background-color: $c-middle-grey !important;
+    filter: none;
+    opacity: 1;
+    svg-icon{
+      background-color: $c-middle-grey !important;
+      border: 1px solid $c-middle-grey !important;
+    }
+  }
+
 }
 
 .btn-text {
@@ -391,6 +442,7 @@ $btn-text-full: 14px;
   color: $c-primary;
   background-color: transparent;
   padding: 0;
+  border-radius: 0;
 }
 
 .btn-trans {
@@ -784,7 +836,7 @@ $btn-text-full: 14px;
     }
   }
 
-  .btn.btn-feel {
+  .btn.btn-primary-feel {
 
     &:hover,
     &.hover,
@@ -839,7 +891,7 @@ $btn-text-full: 14px;
     }
   }
 
-  .btn-feel-invert {
+  .btn-secondary-feel {
     border: 1px solid $c-feel;
   }
 }

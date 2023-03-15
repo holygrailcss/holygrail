@@ -192,6 +192,7 @@ ul.list-mini {
 }
 
 .list-button {
+  position: relative;
   padding: 16px;
   background: $c-white;
   border-bottom: 1px solid $c-middle-grey;
@@ -225,6 +226,23 @@ ul.list-mini {
       flex-grow: 1;
     }
   }
+
+    &.list-icons {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    &.list-tertiary {
+        background-color: #f0f0f0;
+        padding-left: 100px;
+
+        svg-icon {
+            left: 20px;
+        }
+    }
+
+
+
 }
 
 .list-selection {

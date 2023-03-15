@@ -28,3 +28,19 @@ $tooltipdist: 18px;
     transform: rotate(45deg);
   }
 }
+
+.store-state {
+  width: max-content;
+  position: relative;
+  padding-left: 16px;
+
+  div {
+      position: absolute;
+      border-radius: 50%;
+      overflow: hidden;
+      top: 2px;
+      left: 0;
+      width: 8px;
+      height: 8px;
+  }
+}

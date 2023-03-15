@@ -6,10 +6,37 @@
     text-align: left;
   }
 
+  .xs\:text-right {
+    @media (max-width: #{$break-sm - 1}) {
+      text-align: left;
+    }
+  }
+  
+  .sm\:text-right {
+    @media (max-width: #{$break-sm - 1}) {
+      text-align: left;
+    }
+  }
+  
+  .md\:text-right {
+    @media (max-width: #{$break-md - 1}) {
+      text-align: left;
+    }
+  }
+
+
+
   .select select:not([multiple]) {
     padding-right: 16px;
     padding-left: 45px;
   }
+
+  .select-size select:not([multiple]) {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+
 
   .select:not(.is-multiple):not(.is-loading)::after {
     right: inherit;
@@ -379,7 +406,6 @@
 
     &.has-ico-post {
       .ico-post {
-        transform: none;
         right: auto;
         left: 0;
       }
@@ -393,7 +419,6 @@
 
     &.has-ico-pre {
       .ico-pre {
-        transform: none;
         position: absolute;
         right: 0;
         left: auto;
