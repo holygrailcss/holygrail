@@ -5827,12 +5827,13 @@ strong {
 .btn.btn--mini-rd {
   padding: 10px 24px 8px 24px;
   font-size: 12px;
+  height: 32px;
 }
 @media (min-width: 768px) {
   .btn.btn--mini-rd {
-    padding-right: 16px;
-    padding-left: 16px;
+    padding: 16px;
     font-size: 14px;
+    height: 48px;
   }
 }
 .btn.btn--large {
@@ -6437,6 +6438,24 @@ strong {
 }
 .has-light .btn-secondary-feel {
   border: 1px solid #fb9962;
+}
+
+.btn.btn-secondary-rd {
+  border-radius: 8px;
+  border: 1px solid #292929;
+  padding: 6px 16px 4px 16px;
+  height: 32px;
+  min-width: 100px;
+  text-align: center;
+  background: none;
+  font-size: 12px;
+}
+@media (min-width: 768px) {
+  .btn.btn-secondary-rd {
+    padding: 14px 16px 14px 16px;
+    height: 48px;
+    font-size: 16px;
+  }
 }
 
 @keyframes underline {
@@ -7392,6 +7411,32 @@ input::input-placeholder {
     font-size: 16px;
   }
 }
+.select.select-secondary-rd.select select:not([multiple]) {
+  padding: 6px 16px 4px 16px;
+}
+@media (min-width: 768px) {
+  .select.select-secondary-rd.select select:not([multiple]) {
+    padding: 14px 16px 14px 16px;
+  }
+}
+.select.select-secondary-rd.select select:not(.is-multiple) {
+  padding: 6px 16px 4px 16px;
+  height: 32px;
+}
+@media (min-width: 768px) {
+  .select.select-secondary-rd.select select:not(.is-multiple) {
+    padding: 14px 16px 14px 16px;
+    height: 48px;
+  }
+}
+.select.select-secondary-rd.select:not([multiple]), .select.select-secondary-rd.select:not(.is-multiple) {
+  height: 32px;
+}
+@media (min-width: 768px) {
+  .select.select-secondary-rd.select:not([multiple]), .select.select-secondary-rd.select:not(.is-multiple) {
+    height: 48px;
+  }
+}
 .select.select-size {
   width: max-content;
 }
@@ -7755,7 +7800,7 @@ input::input-placeholder {
   height: 48px;
 }
 .has-ico-center svg {
-  margin-top: -1px;
+  margin-top: 0;
   margin-right: 4px;
 }
 .has-ico-center div svg {
@@ -8367,7 +8412,7 @@ ul.list-disc li a::after {
 }
 
 ul.list-inline {
-  margin: 0;
+  margin: 0 -4px;
   padding: 0;
 }
 ul.list-inline li {
@@ -9710,6 +9755,31 @@ ul.list-clear li.list-box:last-child {
   transition: all 0.3s ease;
 }
 .card-video .card-video-play:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.minicard-3 svg-icon {
+  display: block;
+  padding-bottom: 16px;
+  transform: scale(1.4);
+}
+@media (max-width: 767px) {
+  .minicard-3 {
+    display: flex;
+    align-items: center;
+  }
+  .minicard-3 svg-icon {
+    padding-right: 16px;
+    padding-bottom: 0;
+    transform: scale(1);
+  }
+  .is-rtl .minicard-3 svg-icon {
+    padding-right: 0;
+    padding-left: 16px;
+  }
+}
+.minicard-3:hover {
   opacity: 0.6;
   cursor: pointer;
 }

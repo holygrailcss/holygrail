@@ -70,3 +70,31 @@
     }
   }
 }
+
+.minicard-3 {
+  svg-icon {
+    display: block;
+    padding-bottom: 16px;
+    transform: scale(1.4);
+  }
+
+  @media (max-width: #{$break-sm - 1}) {
+    svg-icon {
+      padding-right: 16px;
+      padding-bottom: 0;
+      transform: scale(1);
+      .is-rtl & {
+        padding-right: 0;
+        padding-left: 16px;
+      }
+    }
+    display: flex;
+    align-items: center;
+  }
+
+  &:hover {
+    opacity: 0.6;
+    cursor: pointer;
+  }
+}
+

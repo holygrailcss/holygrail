@@ -125,10 +125,12 @@ $btn-text-full: 14px;
 &.btn--mini-rd {
   padding: $padding-global * 1 + 2px $padding-global * 3 $padding-global * 1 $padding-global * 3;
   font-size: $btn-text-mini;
+  height: 32px;
+  
   @media (min-width: $break-sm) {
-    padding-right: $padding-global * 2;
-    padding-left: $padding-global * 2;
+    padding: $padding-global * 2;
     font-size: $btn-text-small;
+    height: 48px;
 
   }
 }
@@ -894,4 +896,24 @@ $btn-text-full: 14px;
   .btn-secondary-feel {
     border: 1px solid $c-feel;
   }
+}
+
+
+.btn.btn-secondary-rd{
+  border-radius: 8px;
+  border: 1px solid #292929;
+  padding: 6px 16px 4px 16px;
+  height: 32px;
+  min-width: 100px;
+  text-align: center;
+  background: none;
+
+  font-size: 12px;
+
+@media (min-width: $break-sm) {
+      padding: 14px 16px 14px 16px;
+      height: 48px;
+      font-size: 16px;
+
+}
 }

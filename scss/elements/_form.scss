@@ -184,26 +184,26 @@ label {
     box-sizing: initial;
   }
 }
-.has-ico-pre{
-.ico-pre {
-  right: auto;
-  left: 0;
-  position: absolute;
-  top: 50%;
-  box-sizing: border-box;
-  display: table;
-  transform: translateY(-50%);
-  margin: 0 16px;
-  height: 16px;
-  width: 16px;
+.has-ico-pre {
+  .ico-pre {
+    right: auto;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    box-sizing: border-box;
+    display: table;
+    transform: translateY(-50%);
+    margin: 0 16px;
+    height: 16px;
+    width: 16px;
+  }
 }
-}
-.has-ico-post{
+.has-ico-post {
   .ico-post {
     right: 0;
     left: auto;
     position: absolute;
-    
+
     top: 50%;
     box-sizing: border-box;
     display: table;
@@ -211,10 +211,9 @@ label {
     margin: 0px 16px;
     height: 16px;
     width: 16px;
-    opacity: .3;
+    opacity: 0.3;
     cursor: pointer;
   }
-  
 }
 
 .is-error {
@@ -409,8 +408,8 @@ input::input-placeholder {
     display: block;
     max-width: 100%;
     outline: 0;
-    &:hover{
-      opacity: .6;
+    &:hover {
+      opacity: 0.6;
     }
   }
 
@@ -523,19 +522,17 @@ input::input-placeholder {
     }
   }
 
-
   &.select-secondary-rd {
     width: max-content;
-  
+
     label {
       z-index: 0;
       left: 0;
     }
     &::after {
       display: none;
-      }
+    }
 
-  
     select {
       border-radius: 8px;
       border: 1px solid $c-primary;
@@ -550,13 +547,35 @@ input::input-placeholder {
         padding: 14px 16px 14px 16px;
         height: 48px;
         font-size: 16px;
-      
       }
-  
     }
-  
-  }
 
+    &.select select:not([multiple]) {
+      padding: 6px 16px 4px 16px;
+
+      @media (min-width: $break-sm) {
+        padding: 14px 16px 14px 16px;
+      }
+    }
+
+    &.select select:not(.is-multiple) {
+      padding: 6px 16px 4px 16px;
+      height: 32px;
+      @media (min-width: $break-sm) {
+        padding: 14px 16px 14px 16px;
+        height: 48px;
+      }
+    }
+
+    &.select:not([multiple]) ,
+    &.select:not(.is-multiple){
+          height: 32px;
+        @media (min-width: $break-sm) {
+          height: 48px;
+      }
+      }
+
+  }
 
   &.select-size {
     width: max-content;
@@ -572,15 +591,11 @@ input::input-placeholder {
       background: none;
       padding-right: 40px;
       border-color: $c-primary;
-      &:hover{
-        opacity: .6;
+      &:hover {
+        opacity: 0.6;
       }
     }
-
-
   }
-
-
 }
 
 .hg-form {
@@ -600,8 +615,6 @@ input::input-placeholder {
     }
   }
 }
-
-
 
 .form-icon {
   position: absolute;
@@ -940,7 +953,6 @@ input::input-placeholder {
   }
 }
 
-
 .has-ico-center {
   display: flex;
   flex-direction: row;
@@ -949,7 +961,7 @@ input::input-placeholder {
   height: 48px;
 
   svg {
-    margin-top: -1px;
+    margin-top: 0;
     margin-right: 4px;
   }
 
