@@ -899,21 +899,23 @@ $btn-text-full: 14px;
 }
 
 
-.btn.btn-secondary-rd{
+.btn.btn-secondary-rd {
   border-radius: 8px;
-  border: 1px solid #292929;
-  padding: 6px 16px 4px 16px;
+  border: 1px solid $c-primary;
+  padding: 9px 2px 4px 2px;
   height: 32px;
   min-width: 100px;
   text-align: center;
   background: none;
-
   font-size: 12px;
 
-@media (min-width: $break-sm) {
-      padding: 14px 16px 14px 16px;
+  @media (min-width: $break-sm) {
+      padding: 16px 2px 14px 2px;
       height: 48px;
-      font-size: 16px;
-
+      font-size: 14px;
+      min-width: 120px;
+  }
+  &:hover{
+    opacity: .5;
 }
 }

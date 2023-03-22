@@ -524,7 +524,9 @@ input::input-placeholder {
 
   &.select-secondary-rd {
     width: max-content;
-
+    &:hover {
+      opacity: 0.5;
+    }
     label {
       z-index: 0;
       left: 0;
@@ -536,7 +538,7 @@ input::input-placeholder {
     select {
       border-radius: 8px;
       border: 1px solid $c-primary;
-      padding: 6px 16px 4px 16px;
+      padding: 6px 2px 4px 2px;
       min-width: 100px;
       text-align: center;
       background: none;
@@ -544,37 +546,40 @@ input::input-placeholder {
       font-size: 12px;
 
       @media (min-width: 768px) {
-        padding: 14px 16px 14px 16px;
+        padding: 14px 2px 14px 2px;
         height: 48px;
-        font-size: 16px;
+        font-size: 14px;
+      }
+      opacity: 0;
+      &:hover {
+        opacity: 0;
       }
     }
 
-    &.select select:not([multiple]) {
-      padding: 6px 16px 4px 16px;
-
-      @media (min-width: $break-sm) {
-        padding: 14px 16px 14px 16px;
-      }
-    }
-
-    &.select select:not(.is-multiple) {
-      padding: 6px 16px 4px 16px;
+    &.select:not([multiple]),
+    &.select:not(.is-multiple) {
       height: 32px;
       @media (min-width: $break-sm) {
-        padding: 14px 16px 14px 16px;
         height: 48px;
       }
     }
 
-    &.select:not([multiple]) ,
-    &.select:not(.is-multiple){
-          height: 32px;
-        @media (min-width: $break-sm) {
-          height: 48px;
+    &.select select:not(.is-multiple),
+    &.select select:not([multiple]) {
+      padding: 6px 2px 4px 2px;
+      height: 32px;
+      width: 100px;
+      @media (min-width: $break-sm) {
+        width: 120px;
+        padding: 14px 2px 14px 2px;
+        height: 48px;
       }
-      }
-
+    }
+    .btn-secondary-rd {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
   }
 
   &.select-size {

@@ -211,11 +211,15 @@ ul.list-mini {
     background-color: $c-middle-grey;
     padding-left: 42px;
   }
-
   &.list-tertiary {
     background-color: $c-light-grey;
     padding-left: 64px;
-  }
+
+    svg-icon {
+        left: 20px;
+        opacity: 1;
+    }
+}
 
   &.list-icons {
     display: flex;
@@ -232,14 +236,7 @@ ul.list-mini {
         padding-bottom: 24px;
     }
 
-    &.list-tertiary {
-        background-color: #f0f0f0;
-        padding-left: 100px;
 
-        svg-icon {
-            left: 20px;
-        }
-    }
 
 
 

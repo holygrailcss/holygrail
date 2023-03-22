@@ -6443,7 +6443,7 @@ strong {
 .btn.btn-secondary-rd {
   border-radius: 8px;
   border: 1px solid #292929;
-  padding: 6px 16px 4px 16px;
+  padding: 9px 2px 4px 2px;
   height: 32px;
   min-width: 100px;
   text-align: center;
@@ -6452,10 +6452,14 @@ strong {
 }
 @media (min-width: 768px) {
   .btn.btn-secondary-rd {
-    padding: 14px 16px 14px 16px;
+    padding: 16px 2px 14px 2px;
     height: 48px;
-    font-size: 16px;
+    font-size: 14px;
+    min-width: 120px;
   }
+}
+.btn.btn-secondary-rd:hover {
+  opacity: 0.5;
 }
 
 @keyframes underline {
@@ -7387,6 +7391,9 @@ input::input-placeholder {
 .select.select-secondary-rd {
   width: max-content;
 }
+.select.select-secondary-rd:hover {
+  opacity: 0.5;
+}
 .select.select-secondary-rd label {
   z-index: 0;
   left: 0;
@@ -7397,37 +7404,23 @@ input::input-placeholder {
 .select.select-secondary-rd select {
   border-radius: 8px;
   border: 1px solid #292929;
-  padding: 6px 16px 4px 16px;
+  padding: 6px 2px 4px 2px;
   min-width: 100px;
   text-align: center;
   background: none;
   height: 32px;
   font-size: 12px;
+  opacity: 0;
 }
 @media (min-width: 768px) {
   .select.select-secondary-rd select {
-    padding: 14px 16px 14px 16px;
+    padding: 14px 2px 14px 2px;
     height: 48px;
-    font-size: 16px;
+    font-size: 14px;
   }
 }
-.select.select-secondary-rd.select select:not([multiple]) {
-  padding: 6px 16px 4px 16px;
-}
-@media (min-width: 768px) {
-  .select.select-secondary-rd.select select:not([multiple]) {
-    padding: 14px 16px 14px 16px;
-  }
-}
-.select.select-secondary-rd.select select:not(.is-multiple) {
-  padding: 6px 16px 4px 16px;
-  height: 32px;
-}
-@media (min-width: 768px) {
-  .select.select-secondary-rd.select select:not(.is-multiple) {
-    padding: 14px 16px 14px 16px;
-    height: 48px;
-  }
+.select.select-secondary-rd select:hover {
+  opacity: 0;
 }
 .select.select-secondary-rd.select:not([multiple]), .select.select-secondary-rd.select:not(.is-multiple) {
   height: 32px;
@@ -7436,6 +7429,23 @@ input::input-placeholder {
   .select.select-secondary-rd.select:not([multiple]), .select.select-secondary-rd.select:not(.is-multiple) {
     height: 48px;
   }
+}
+.select.select-secondary-rd.select select:not(.is-multiple), .select.select-secondary-rd.select select:not([multiple]) {
+  padding: 6px 2px 4px 2px;
+  height: 32px;
+  width: 100px;
+}
+@media (min-width: 768px) {
+  .select.select-secondary-rd.select select:not(.is-multiple), .select.select-secondary-rd.select select:not([multiple]) {
+    width: 120px;
+    padding: 14px 2px 14px 2px;
+    height: 48px;
+  }
+}
+.select.select-secondary-rd .btn-secondary-rd {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .select.select-size {
   width: max-content;
@@ -8176,6 +8186,7 @@ button.link-line {
 }
 
 .link-raw {
+  display: initial;
   position: relative;
   border: 0;
   transform: none;
@@ -8565,6 +8576,10 @@ ul.list-mini > li::after {
   background-color: #f0f0f0;
   padding-left: 64px;
 }
+.list-button.list-tertiary svg-icon {
+  left: 20px;
+  opacity: 1;
+}
 .list-button.list-icons {
   display: flex;
   align-items: center;
@@ -8576,13 +8591,6 @@ ul.list-mini > li::after {
 .list-button.list-icons {
   padding-top: 24px;
   padding-bottom: 24px;
-}
-.list-button.list-tertiary {
-  background-color: #f0f0f0;
-  padding-left: 100px;
-}
-.list-button.list-tertiary svg-icon {
-  left: 20px;
 }
 
 .list-selection a {
@@ -10255,6 +10263,67 @@ ul.list-clear li.list-box:last-child {
 }
 .box3:hover {
   cursor: pointer;
+}
+
+@keyframes underline {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes stretch {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 80px;
+  }
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -100%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+.box4 {
+  position: relative;
+  display: flex;
+}
+.box4 ul {
+  margin-left: 16px;
+  margin-top: 4px;
+}
+.box4:before {
+  width: 2px;
+  height: calc(100% - 48px);
+  content: "";
+  position: absolute;
+  background-color: #8e8e8e;
+  top: 47px;
+  left: 20px;
+}
+.is-rtl .box4 ul {
+  margin-left: 0;
+  margin-right: 16px;
+}
+.is-rtl .box4:before {
+  left: initial;
+  top: 47px;
+  right: 20px;
 }
 
 @keyframes underline {

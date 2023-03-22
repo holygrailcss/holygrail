@@ -1,0 +1,32 @@
+@import "../abstract/_all";
+
+.box4 {
+  position: relative;
+  display: flex;
+  ul {
+    margin-left: 16px;
+    margin-top: 4px;
+  }
+  &:before {
+    width: 2px;
+    height: calc(100% - 48px);
+    content: "";
+    position: absolute;
+    background-color: $c-dark-grey;
+    top: 47px;
+    left: 20px;
+  }
+
+  .is-rtl & {
+    ul {
+      margin-left: 0;
+      margin-right: 16px;
+    }
+    &:before {
+      left: initial;
+
+      top: 47px;
+      right: 20px;
+    }
+  }
+}
