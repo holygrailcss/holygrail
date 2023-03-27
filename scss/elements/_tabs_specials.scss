@@ -1,4 +1,4 @@
-@import "../abstract/_all";
+@import '../abstract/_all';
 
 .ico-round {
   width: 56px;
@@ -50,13 +50,13 @@
   }
 }
 
-.checkbox-radio.checkbox-box [type="radio"]:checked + label,
-.checkbox-radio.checkbox-box [type="radio"]:not(:checked) + label {
+.checkbox-radio.checkbox-box [type='radio']:checked + label,
+.checkbox-radio.checkbox-box [type='radio']:not(:checked) + label {
   padding: 16px;
 }
 
-.checkbox-radio.checkbox-box [type="radio"]:checked + label span,
-.checkbox-radio.checkbox-box [type="radio"]:not(:checked) + label span {
+.checkbox-radio.checkbox-box [type='radio']:checked + label span,
+.checkbox-radio.checkbox-box [type='radio']:not(:checked) + label span {
   display: inline-block;
   vertical-align: top;
   margin: 5px 0 0;
@@ -65,14 +65,14 @@
   min-height: 20px;
 }
 
-.checkbox-radio.checkbox-box [type="radio"]:checked + label .ico-radio,
-.checkbox-radio.checkbox-box [type="radio"]:not(:checked) + label .ico-radio {
+.checkbox-radio.checkbox-box [type='radio']:checked + label .ico-radio,
+.checkbox-radio.checkbox-box [type='radio']:not(:checked) + label .ico-radio {
   top: 6px;
   left: 6px;
 }
 
-.checkbox-radio.checkbox-box [type="radio"]:checked + label::before,
-.checkbox-radio.checkbox-box [type="radio"]:not(:checked) + label::before {
+.checkbox-radio.checkbox-box [type='radio']:checked + label::before,
+.checkbox-radio.checkbox-box [type='radio']:not(:checked) + label::before {
   display: none;
 }
 
@@ -109,15 +109,15 @@ ul.list-clear li.list-box {
   }
 
   &::before {
-    content: "";
+    content: '';
     display: block;
     width: 100%;
     padding-top: 15%;
     min-height: 78px;
   }
 
-  .checkbox-radio [type="radio"]:checked + label,
-  .checkbox-radio [type="radio"]:not(:checked) + label {
+  .checkbox-radio [type='radio']:checked + label,
+  .checkbox-radio [type='radio']:not(:checked) + label {
     flex-direction: row;
 
     @media (min-width: 992px) {
@@ -188,15 +188,15 @@ ul.list-clear li.list-box {
     width: 100%;
 
     &::before {
-      content: "";
+      content: '';
       display: block;
       width: 100%;
       padding-top: 100%;
       min-height: 78px;
     }
 
-    .checkbox-radio [type="radio"]:checked + label,
-    .checkbox-radio [type="radio"]:not(:checked) + label {
+    .checkbox-radio [type='radio']:checked + label,
+    .checkbox-radio [type='radio']:not(:checked) + label {
       flex-direction: column;
     }
 

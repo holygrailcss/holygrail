@@ -9,7 +9,6 @@
   user-select: $select;
 }
 
-
 @mixin font-light() {
   font-family: $font-family-a-l;
   font-weight: $font-weight-light;
@@ -404,7 +403,6 @@
     border-color: darken($border, 12%);
   }
 
-
   &:active,
   &.active,
   .open > &.dropdown-toggle {
@@ -419,7 +417,6 @@
       background-color: darken($background, 17%);
       border-color: darken($border, 25%);
     }
-
   }
 
   &.disabled,
@@ -471,8 +468,6 @@
   box-shadow: none;
   outline-offset: -2px;
 }
-
-
 
 @mixin calc($property, $expression) {
   #{$property}: -moz-calc(#{$expression});

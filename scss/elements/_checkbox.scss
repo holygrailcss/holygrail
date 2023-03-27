@@ -317,7 +317,7 @@
   min-height: 42px;
 
   span {
-    position: absolute;
+    position: relative;
     margin-left: 40px;
     min-height: 48px;
   }
@@ -427,6 +427,50 @@
   }
 }
 
+.checkbox-card {
+  .checkbox-card-label {
+    border-radius: 8px; //$btn-radius
+    overflow: hidden;
+    border: 1px solid $c-middle-grey;
+    background: $c-white;
+
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+  }
+  & [type="radio"] {
+    position: absolute;
+    left: -9999px;
+  }
+  & [type="radio"]:checked,
+  & :hover {
+    & + .checkbox-card-label {
+      cursor: pointer;
+      border: 1px solid $c-primary;
+    }
+  }
+
+  .has-light & {
+    color: $c-white;
+    .checkbox-card-label {
+      border: 1px solid $c-dark-grey;
+      background: $c-primary;
+    }
+
+    & [type="radio"]:checked,
+    & :hover {
+      & + .checkbox-card-label {
+        cursor: pointer;
+        border: 1px solid $c-white;
+      }
+    }
+  }
+}
+
+
 .is-active {
   &.checkbox-radio .border-1 {
     border: 1px solid $c-primary;
@@ -440,6 +484,10 @@
 
 .is-error {
   .checkbox-item {
+    [type="checkbox"]:checked + label::before,
+    [type="checkbox"]:not(:checked) + label::before {
+      border: 1px solid $c-error;
+    }
     a {
       color: $c-error;
     }
@@ -447,15 +495,15 @@
     svg {
       g {
         fill: $c-error;
-
         polyline {
           stroke: $c-error;
         }
       }
     }
   }
-}
 
+
+}
 
 .has-light {
   .checkbox-item {
@@ -487,4 +535,31 @@
       }
     }
   }
+  .checkbox-radio {
+    [type="radio"]:not(:checked) + label::before,
+    [type="radio"]:checked + label::before {
+      border: 1px solid $c-white;
+    }
+
+    [type="radio"]:not(:checked) + label .ico-radio,
+    [type="radio"]:checked + label .ico-radio {
+      background-color: $c-white;
+    }
+  }
+  .checkbox-item-2 {
+    [type="checkbox"]:not(:checked) + label::before,
+    [type="checkbox"]:checked + label::before {
+      border: 1px solid $c-white;
+    }
+
+    .checkbox-circle {
+      background: $c-white;
+    }
+
+    [type="checkbox"]:not(:checked) + label .checkbox-circle,
+    [type="checkbox"]:checked + label .checkbox-circle {
+      color: $c-white;
+    }
+  }
+
 }

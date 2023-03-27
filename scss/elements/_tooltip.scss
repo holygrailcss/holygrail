@@ -1,6 +1,5 @@
-@use "sass:math";
-@import "../abstract/_all";
-
+@use 'sass:math';
+@import '../abstract/_all';
 
 $tooltipArrow: 10px;
 $tooltipColor: #e3e3e3;
@@ -18,7 +17,7 @@ $tooltipdist: 18px;
   &::after {
     top: math.div(-$tooltipArrow, 2) - 1;
     right: $tooltipdist;
-    content: "";
+    content: '';
     position: absolute;
     border-top: 1px solid $tooltipColor;
     border-left: 1px solid $tooltipColor;
@@ -35,12 +34,12 @@ $tooltipdist: 18px;
   padding-left: 16px;
 
   div {
-      position: absolute;
-      border-radius: 50%;
-      overflow: hidden;
-      top: 2px;
-      left: 0;
-      width: 8px;
-      height: 8px;
+    position: absolute;
+    border-radius: 50%;
+    overflow: hidden;
+    top: 2px;
+    left: 0;
+    width: 8px;
+    height: 8px;
   }
 }

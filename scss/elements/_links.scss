@@ -19,7 +19,7 @@ a {
 }
 
 .link1 {
-  display: inline;
+  display: inline-block;
   position: relative;
   outline: none;
   padding: 4px 0;
@@ -230,6 +230,7 @@ u {
 }
 
 .link7 {
+  display: inline-block;
   position: relative;
   text-decoration: none;
   cursor: pointer;
@@ -326,14 +327,13 @@ u {
   }
 }
 
-
 button.link-line {
   padding-left: 0;
   padding-right: 0;
 }
 
 .link-line {
-  display: initial;
+  display: inline-block;
   position: relative;
   border: 0;
   transform: none;
@@ -364,7 +364,7 @@ button.link-line {
 }
 
 .link-raw {
-  display: initial;
+  display: inline-block;
   position: relative;
   border: 0;
   transform: none;
@@ -457,8 +457,7 @@ button.link-line.link-svg-post {
 }
 
 .has-light {
-
-  a{
+  a {
     color: $c-white;
   }
   .link1 {
@@ -574,4 +573,3 @@ button.link-line.link-svg-post {
     }
   }
 }
-

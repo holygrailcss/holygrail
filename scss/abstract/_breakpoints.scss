@@ -2,13 +2,15 @@ $breakpoints: (
   xs: 1px,
   sm: 768px,
   md: 992px,
-  lg: 1280px) !default;
+  lg: 1280px,
+) !default;
 $breakpointscols: (
   xs: 1px,
   sm: 768px,
   md: 992px,
   lg: 1280px,
-  xl: 1500px) !default;
+  xl: 1500px,
+) !default;
 
 $colBreakpoints: length($breakpoints) !default;
 $colBreakpointscols: length($breakpointscols) !default;

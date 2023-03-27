@@ -1,4 +1,4 @@
-@import "../abstract/_all";
+@import '../abstract/_all';
 
 @keyframes fadein {
   from {
@@ -76,6 +76,9 @@
 .c-feel-dark {
   color: $c-feel-dark;
 }
+.c-feel-light {
+  color: $c-feel-light;
+}
 
 .c-limited {
   color: $c-limited;
@@ -91,6 +94,14 @@
 
 .bg-cream {
   background-color: $c-light-grey;
+}
+
+.bg-feel-light {
+  background-color: $c-feel-light;
+}
+
+.bg-feel-dark {
+  background-color: $c-feel-dark;
 }
 
 .bg-line {
@@ -183,6 +194,13 @@
   vertical-align: top;
   width: 100%;
 }
+.has-ellipsis-3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
 
 .video-cover {
   position: absolute;
@@ -240,7 +258,7 @@ hr {
 
   &::before {
     position: absolute;
-    content: "";
+    content: '';
     border-radius: 50%;
     overflow: hidden;
     top: 5px;
@@ -462,8 +480,8 @@ strong {
   display: flex;
   align-items: center;
 
-  [type="checkbox"]:checked + label .icon,
-  [type="checkbox"]:not(:checked) + label .icon {
+  [type='checkbox']:checked + label .icon,
+  [type='checkbox']:not(:checked) + label .icon {
     position: absolute;
     top: 50%;
     margin-top: -9px;
@@ -657,3 +675,18 @@ strong {
 .w-max {
   width: max-content;
 }
+
+.sm\:flex {
+  @media (max-width: #{$break-sm - 1}) {
+    display: flex;
+  }
+}
+
+.hidden {
+  display: none !important;
+}
+
+.flex-grow-0 {
+  flex-grow: 0;
+}
+

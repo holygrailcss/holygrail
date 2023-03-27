@@ -1,6 +1,6 @@
 {
     "name": "holygrailcss",
-    "version": "2.0.73",
+    "version": "2.0.91",
     "description": "A minimal, responsive, style-agnostic CSS framework.",
     "main": "scss/style.scss",
     "directories": {
@@ -15,7 +15,7 @@
         "lint2": "stylelint 'scss/*.?(s)css'",
         "lint:fix": "stylelint --fix 'scss/**/*.?(s)css'",
         "format": "npm run prettier -- --write",
-        "prettier": "prettier 'src/**/*.+(js|html|css|scss|json|md|md)'"
+        "prettier": "prettier 'scss/**/*.+(css|scss)'"
     },
     "repository": {
         "type": "git",

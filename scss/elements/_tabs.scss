@@ -1,4 +1,4 @@
-@import "../abstract/_all";
+@import '../abstract/_all';
 
 .tabs {
   .list-equal {
@@ -63,7 +63,6 @@
     }
   }
 
-
   &.is-center ul {
     justify-content: center;
   }
@@ -98,7 +97,7 @@
         cursor: pointer;
 
         &::after {
-          content: "";
+          content: '';
           width: 100%;
           background: $c-primary;
           height: 2px;
@@ -111,7 +110,7 @@
 
     &.is-active span {
       &::after {
-        content: "";
+        content: '';
         width: 100%;
         background: $c-primary;
         height: 2px;
@@ -183,7 +182,7 @@
   }
 
   li:first-child a::after {
-    content: "";
+    content: '';
     position: absolute;
     right: 0;
     width: 1px;
@@ -215,4 +214,3 @@
     }
   }
 }
-

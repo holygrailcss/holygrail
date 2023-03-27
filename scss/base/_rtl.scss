@@ -1,6 +1,5 @@
 @import '../abstract/_all';
 
-
 .is-rtl {
   .text-right {
     text-align: left;
@@ -11,20 +10,18 @@
       text-align: left;
     }
   }
-  
+
   .sm\:text-right {
     @media (max-width: #{$break-sm - 1}) {
       text-align: left;
     }
   }
-  
+
   .md\:text-right {
     @media (max-width: #{$break-md - 1}) {
       text-align: left;
     }
   }
-
-
 
   .select select:not([multiple]) {
     padding-right: 16px;
@@ -35,8 +32,6 @@
     padding-right: 16px;
     padding-left: 16px;
   }
-
-
 
   .select:not(.is-multiple):not(.is-loading)::after {
     right: inherit;
@@ -368,6 +363,10 @@
   }
 
   .form-input-label {
+    .info-text {
+      left: 0;
+    }
+
     &.icon-right {
       .form-text {
         right: auto;
@@ -488,7 +487,8 @@
     }
   }
   .list-button {
-    &.list-secundary {
+    &.list-secundary ,
+    &.list-secondary {
       padding-left: 16px;
       padding-right: 42px;
     }

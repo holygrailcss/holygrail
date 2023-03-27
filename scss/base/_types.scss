@@ -1,9 +1,8 @@
-@import "../abstract/_all";
-
-
+@import '../abstract/_all';
 
 body {
   @include font-regular;
+  
   -webkit-overflow-scrolling: touch;
   font-variant-ligatures: no-common-ligatures !important;
   text-rendering: optimizelegibility;
@@ -14,7 +13,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
 }
 
 select {
@@ -55,7 +54,8 @@ b,
 mark {
   color: $c-primary;
 
-  @include font-bold; }
+  @include font-bold;
+}
 
 .secondary {
   font-family: $font-family-c-r !important;
@@ -64,19 +64,27 @@ mark {
 
 @include typesFixers($headersFixers, $fs);
 @include types($breakpoints, $headers, $fs);
-@include typesFluids($headersFluids) ;
+@include typesFluids($headersFluids);
 
-.text-light { @include font-light; }
-.text-regular { @include font-regular; }
-.text-medium { @include font-medium; }
-.text-bold { @include font-bold; }
+.text-light {
+  @include font-light;
+}
+.text-regular {
+  @include font-regular;
+}
+.text-medium {
+  @include font-medium;
+}
+.text-bold {
+  @include font-bold;
+}
 
 .is-through {
   position: relative;
   width: max-content;
 
   &::after {
-    content: "";
+    content: '';
     background-color: $c-primary;
     width: 100%;
     position: absolute;

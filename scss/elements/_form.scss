@@ -51,7 +51,7 @@ label {
 .input,
 .textarea,
 .select select {
-  background-color: $c-white;
+  background-color: transparent;
   border-color: $c-middle-grey;
   color: $c-primary;
   max-width: 100%;
@@ -145,11 +145,6 @@ label {
   }
 }
 
-.help {
-  position: absolute;
-  font-size: 12px;
-  margin-top: 4px;
-}
 
 .info-text {
   color: $c-dark-grey;
@@ -184,7 +179,17 @@ label {
     box-sizing: initial;
   }
 }
+.form-input-label-2.has-ico-pre,
 .has-ico-pre {
+  &.btn,
+  & > input,
+  & > label {
+    padding-left: $padding-btn * 3 ;
+  }
+  .form-icon {
+    top: 0;
+    left: 0;
+  }
   .ico-pre {
     right: auto;
     left: 0;
@@ -198,20 +203,32 @@ label {
     width: 16px;
   }
 }
+.form-input-label-2.has-ico-post,
 .has-ico-post {
+  &.btn,
+  & > input,
+  & > label {
+    padding-right: $padding-btn * 3;
+  }
+
+  .form-icon {
+    padding: $padding-btn;
+    top: 0;
+    right: 0;
+    left: auto;
+  }
+
   .ico-post {
     right: 0;
     left: auto;
     position: absolute;
-
     top: 50%;
     box-sizing: border-box;
     display: table;
     transform: translateY(-50%);
-    margin: 0px 16px;
+    margin: 0 16px;
     height: 16px;
     width: 16px;
-    opacity: 0.3;
     cursor: pointer;
   }
 }
@@ -439,7 +456,7 @@ input::input-placeholder {
   }
 
   &:not(.is-multiple) {
-    height: 56px;
+    height: 48px;
   }
 
   &:not(.is-multiple):not(.is-loading)::after {
@@ -538,7 +555,7 @@ input::input-placeholder {
     select {
       border-radius: 8px;
       border: 1px solid $c-primary;
-      padding: 6px 2px 4px 2px;
+      padding: 6px 2px 4px;
       min-width: 100px;
       text-align: center;
       background: none;
@@ -546,11 +563,12 @@ input::input-placeholder {
       font-size: 12px;
 
       @media (min-width: 768px) {
-        padding: 14px 2px 14px 2px;
+        padding: 14px 2px;
         height: 48px;
         font-size: 14px;
       }
       opacity: 0;
+
       &:hover {
         opacity: 0;
       }
@@ -559,6 +577,7 @@ input::input-placeholder {
     &.select:not([multiple]),
     &.select:not(.is-multiple) {
       height: 32px;
+
       @media (min-width: $break-sm) {
         height: 48px;
       }
@@ -566,12 +585,13 @@ input::input-placeholder {
 
     &.select select:not(.is-multiple),
     &.select select:not([multiple]) {
-      padding: 6px 2px 4px 2px;
+      padding: 6px 2px 4px;
       height: 32px;
       width: 100px;
+
       @media (min-width: $break-sm) {
         width: 120px;
-        padding: 14px 2px 14px 2px;
+        padding: 14px 2px;
         height: 48px;
       }
     }
@@ -736,15 +756,16 @@ input::input-placeholder {
 
   .validation-error-messages {
     width: calc(100% - 40px);
-    min-height: 24px;
+
   }
 
   .help {
+    font-family: $font-family-form;
     position: relative;
-    line-height: 1.2;
+    line-height: 1.5;
     font-size: 12px;
     margin-top: 0;
-    padding-top: 8px;
+    padding-top: 2px;
     margin-bottom: 4px;
     width: calc(100% - 50px);
     display: flex;
@@ -760,11 +781,12 @@ input::input-placeholder {
   }
 
   .info-text {
-    position: absolute;
     color: #8e8e8e;
-    margin-top: 0;
-    padding-top: 4px;
-    width: 100%;
+    margin-top: 4px;
+    width: auto;
+    position: absolute;
+    bottom: 0;
+    right: 0;
   }
 
   & > input,
@@ -927,34 +949,6 @@ input::input-placeholder {
   .ico-pre {
     margin: 0;
     top: -1px;
-  }
-}
-
-.has-ico-pre {
-  &.btn,
-  & > input,
-  & > label {
-    padding-left: $padding-btn * 2 + $svg-size + 4px;
-  }
-
-  .form-icon {
-    top: 0;
-    left: 0;
-  }
-}
-
-.has-ico-post {
-  &.btn,
-  & > input,
-  & > label {
-    padding-right: $padding-btn * 2 + $svg-size;
-  }
-
-  .form-icon {
-    padding: $padding-btn;
-    top: 0;
-    right: 0;
-    left: auto;
   }
 }
 

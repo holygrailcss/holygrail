@@ -11,6 +11,7 @@ $c-valid: #76ae4a !default;
 $c-warning: #ffc700 !default;
 $c-feel: #fb9962 !default;
 $c-feel-dark: #c94c07 !default;
+$c-feel-light: #FCCBB0 !default;
 $c-limited: #000 !default;
 $c-success: #76ae4a !default;
 $c-alert: #ffc700 !default;
@@ -23,8 +24,6 @@ $primary: #292929 !default;
 $primary-guide: #363636 !default;
 $secondary-guide: #6759bb !default;
 $ternary-guide: #6759bb !default;
-
-
 
 $btn-radius: 8px !default;
 $font-weight-secondary-light: 300 !default;
@@ -46,7 +45,7 @@ $container-6: 442px !default;
 $container-7: 595px !default;
 $container-8: 395px !default;
 $container-9: 798px !default;
-$container-10: 432px !default;
+$container-10: 200px !default;
 $container-11: 1080px !default;
 $transition: 278ms;
 $height-xs: 80px !default;
@@ -61,198 +60,748 @@ $min-width: 319px !default;
 $min-vw: 319px !default;
 $max-vw: 1500px !default;
 
-$padding-btn: 14px;
+$padding-btn: 16px;
 $svg-size: 16px;
 
-
-$fs: "font-size";
-$lh: "line-height";
+$fs: 'font-size';
+$lh: 'line-height';
 $headers: (
+  sub-l:(56px, 56px, 222px, 222px, 1.1, "bold3"),
+  sub-m:(42px, 42px, 64px, 64px, 1.1, "bold3"),
+  sub-s:(32px, 32px, 56px ,56px, 1.1, "medium3"),
 
-sub-l: ( 56px, 56px, 96px, 96px, 1.1, "bold3", ), 
-sub-m: ( 42px, 42px, 64px, 64px, 1.1, "bold3", ), 
-sub-s: ( 32px, 32px, 56px, 56px, 1.1, "medium3", ), 
-tit-l: ( 24px, 24px, 42px, 42px, 1.2, "bold2", ), 
-tit-m: ( 20px, 20px, 32px, 32px, 1.2, "bold2", ),
-tit-s: ( 16px, 16px, 20px, 20px, 1.2, "bold", ), 
-tit-xs: ( 14px, 14px, 14px, 14px, 1.2, "bold", ), 
-head-l: ( 56px, 56px, 96px, 96px, 1.1, "bold2", ), 
-head-m: ( 42px, 42px, 64px, 64px, 1.1, "bold2", ), 
-head-s: ( 32px, 32px, 56px, 56px, 1.1, "bold2", ), 
-p-14: ( 14px, 14px, 14px, 14px, 1.3, "regular", ), 
-p-14-b: ( 14px, 14px, 14px, 14px, 1.3, "bold", ), 
-p-l: ( 16px, 16px, 18px, 18px, 1.3, "regular", ), 
-p-m: ( 14px, 14px, 16px, 16px, 1.3, "regular", ), 
-p-m-b: ( 14px, 14px, 16px, 16px, 1.3, "bold", ), 
-p-s: ( 12px, 12px, 14px, 14px, 1.3, "regular", ), 
-p-xs: ( 10px, 10px, 12px, 12px, 1.3, "regular", ), 
-p-xs-b: ( 10px, 10px, 12px, 12px, 1.3, "bold", )
+  head-l:(56px, 56px, 96px, 96px, 1.1, "bold2"),
+  head-m:(42px, 42px, 64px, 64px, 1.1, "bold2"),
+  head-s:(32px, 32px, 56px ,56px, 1.1, "bold2"),
 
-);
+  tit-l: (24px, 24px, 42px, 42px, 1.2, "bold2"),
+  tit-m: (20px, 20px, 32px, 32px, 1.2, "bold2"),
+  tit-s: (16px, 16px, 20px,20px, 1.2, "bold"),
+  tit-xs:(14px, 14px, 14px,14px, 1.2, "bold"),
+
+  p-14: ( 14px, 14px, 14px, 14px, 1.3, 'regular' ), 
+  p-14-b: ( 14px, 14px, 14px, 14px, 1.3, 'bold' ), 
+
+  p-l: (16px, 16px, 18px ,18px, 1.3, "regular"),
+  p-m: (14px, 14px, 16px ,16px, 1.3, "regular"),
+  p-s: (12px, 12px, 14px ,14px, 1.3, "regular"),
+  p-xs:(10px, 10px, 12px ,12px, 1.3, "regular"),
+  p-m-b: (14px, 14px, 16px ,16px, 1.3, "bold"), //NUEVO
+  p-s-b: (12px, 12px, 14px ,14px, 1.3, "bold"),
+  p-xs-b:(10px, 10px, 12px ,12px, 1.3, "bold"), // NUEVO
+) !default;
+
 $headersFixers: (
-12: ( 12px, 1.5, ),
-14: ( 14px, 1.5, ), 
-16: ( 16px, 1.5, ),
-18: ( 18px, 1.5, ),
-20: ( 20px, 1.5, ),
-24: ( 24px, 1.5, ), ) !default;
+  12: (
+    12px,
+    1.5,
+  ),
+  14: (
+    14px,
+    1.5,
+  ),
+  16: (
+    16px,
+    1.5,
+  ),
+  18: (
+    18px,
+    1.5,
+  ),
+  20: (
+    20px,
+    1.5,
+  ),
+  24: (
+    24px,
+    1.5,
+  ),
+) !default;
 
-$headersFluids: ( 
-12: ( 1px, 2px, 0.3, ), 
-14: ( 14px, 12px, 0.9, ), 
-16: ( 16px, 12px, 0.9, ), 
-18: ( 18px, 12px, 0.9, ), 
-20: ( 20px, 12px, 0.9, ), 
-50: ( 30px, 80px, 0.9, ), 
-100: ( 30px, 100px, 0.9, ), ) !default; 
+$headersFluids: (
+  12: (
+    1px,
+    2px,
+    0.3,
+  ),
+  14: (
+    14px,
+    12px,
+    0.9,
+  ),
+  16: (
+    16px,
+    12px,
+    0.9,
+  ),
+  18: (
+    18px,
+    12px,
+    0.9,
+  ),
+  20: (
+    20px,
+    12px,
+    0.9,
+  ),
+  50: (
+    30px,
+    80px,
+    0.9,
+  ),
+  100: (
+    30px,
+    100px,
+    0.9,
+  ),
+) !default;
 
+$heights: (
+  height-xs: (
+    80px,
+  ),
+  height-sm: (
+    100px,
+  ),
+  height-md: (
+    350px,
+  ),
+  height-lg: (
+    400px,
+  ),
+  height-xl: (
+    450px,
+  ),
+  height-full: (
+    100vh,
+  ),
+  height-home: (
+    calc(100vh - 80px),
+  ),
+) !default;
 
-$heights: ( 
-height-xs: ( 80px, ),
-height-sm: ( 100px, ),
-height-md: ( 350px, ), 
-height-lg: ( 400px, ), 
-height-xl: ( 450px, ), 
-height-full: ( 100vh, ), 
-height-home: ( calc(100vh - 80px), ), ) !default; 
+$mg: 'margin';
+$margin: (
+  m-0: (
+    0,
+    0,
+    0,
+    0,
+  ),
+  m-8: (
+    8px,
+    8px,
+    8px,
+    8px,
+  ),
+  m-16: (
+    16px,
+    16px,
+    16px,
+    16px,
+  ),
+  m-24: (
+    24px,
+    24px,
+    24px,
+    24px,
+  ),
+  m-32: (
+    32px,
+    32px,
+    32px,
+    32px,
+  ),
+  m-40: (
+    40px,
+    40px,
+    40px,
+    40px,
+  ),
+  m-48: (
+    48px,
+    48px,
+    48px,
+    48px,
+  ),
+) !default;
 
-$mg: "margin"; 
-$margin: ( 
-m-0: ( 0, 0, 0, 0, ), 
-m-8: ( 8px, 8px, 8px, 8px, ), 
-m-16: ( 16px, 16px, 16px, 16px, ),
-m-24: ( 24px, 24px, 24px, 24px, ), 
-m-32: ( 32px, 32px, 32px, 32px, ), 
-m-40: ( 40px, 40px, 40px, 40px, ), 
-m-48: ( 48px, 48px, 48px, 48px, ), ) !default; 
+$mx: 'margin';
+$margin-x: (
+  mx-8: (
+    0 8px,
+    0 8px,
+    0 8px,
+    0 8px,
+  ),
+  mx-16: (
+    0 16px,
+    0 16px,
+    0 16px,
+    0 16px,
+  ),
+  mx-24: (
+    0 24px,
+    0 24px,
+    0 24px,
+    0 24px,
+  ),
+  mx-32: (
+    0 10px,
+    0 32px,
+    0 32px,
+    0 32px,
+  ),
+  mx-40: (
+    0 10px,
+    0 40px,
+    0 40px,
+    0 40px,
+  ),
+  mx-48: (
+    0 48px,
+    0 48px,
+    0 48px,
+    0 48px,
+  ),
+) !default;
 
-$mx: "margin"; 
-$margin-x: ( 
-mx-8: ( 0 8px, 0 8px, 0 8px, 0 8px, ), 
-mx-16: ( 0 16px, 0 16px, 0 16px, 0 16px, ),
-mx-24: ( 0 24px, 0 24px, 0 24px, 0 24px, ),
-mx-32: ( 0 10px, 0 32px, 0 32px, 0 32px, ), 
-mx-40: ( 0 10px, 0 40px, 0 40px, 0 40px, ), 
-mx-48: ( 0 48px, 0 48px, 0 48px, 0 48px, ), ) !default; 
-
-$my: "margin"; 
+$my: 'margin';
 $margin-y: (
-my-8: ( 8px 0, 8px 0, 8px 0, 8px 0, ), 
-my-16: ( 16px 0, 16px 0, 16px 0, 16px 0, ), 
-my-24: ( 24px 0, 24px 0, 24px 0, 24px 0, ), 
-my-32: ( 32px 0, 32px 0, 32px 0, 32px 0, ),
-my-40: ( 40px 0, 40px 0, 40px 0, 40px 0, ), 
-my-48: ( 20px 0, 48px 0, 48px 0, 48px 0, ), ) !default;
+  my-8: (
+    8px 0,
+    8px 0,
+    8px 0,
+    8px 0,
+  ),
+  my-16: (
+    16px 0,
+    16px 0,
+    16px 0,
+    16px 0,
+  ),
+  my-24: (
+    24px 0,
+    24px 0,
+    24px 0,
+    24px 0,
+  ),
+  my-32: (
+    32px 0,
+    32px 0,
+    32px 0,
+    32px 0,
+  ),
+  my-40: (
+    40px 0,
+    40px 0,
+    40px 0,
+    40px 0,
+  ),
+  my-48: (
+    20px 0,
+    48px 0,
+    48px 0,
+    48px 0,
+  ),
+) !default;
 
-$mt: "margin-top"; 
-$margin-top: ( 
-mt-8: ( 8px, 8px, 8px, 8px, ), 
-mt-16: ( 16px, 16px, 16px, 16px, ), 
-mt-24: ( 24px, 24px, 24px, 24px, ),
-mt-32: ( 32px, 32px, 32px, 32px, ),
-mt-40: ( 42px, 42px, 42px, 42px, ),
-mt-48: ( 48px, 48px, 48px, 48px, ), ) !default;
+$mt: 'margin-top';
+$margin-top: (
+  mt-8: (
+    8px,
+    8px,
+    8px,
+    8px,
+  ),
+  mt-16: (
+    16px,
+    16px,
+    16px,
+    16px,
+  ),
+  mt-24: (
+    24px,
+    24px,
+    24px,
+    24px,
+  ),
+  mt-32: (
+    32px,
+    32px,
+    32px,
+    32px,
+  ),
+  mt-40: (
+    42px,
+    42px,
+    42px,
+    42px,
+  ),
+  mt-48: (
+    48px,
+    48px,
+    48px,
+    48px,
+  ),
+  mtr-128: ( 64px, 128px, 128px, 128px, )
+) !default;
 
-$mr: "margin-right";
-$margin-right: ( 
-mr-8: ( 8px, 8px, 8px, 8px, ), 
-mr-16: ( 16px, 16px, 16px, 16px, ), 
-mr-24: ( 24px, 24px, 24px, 24px, ),
-mr-32: ( 32px, 32px, 32px, 32px, ), 
-mr-40: ( 42px, 42px, 42px, 42px, ), 
-mr-48: ( 48px, 48px, 48px, 48px, ), ) !default; 
+$mr: 'margin-right';
+$margin-right: (
+  mr-8: (
+    8px,
+    8px,
+    8px,
+    8px,
+  ),
+  mr-16: (
+    16px,
+    16px,
+    16px,
+    16px,
+  ),
+  mr-24: (
+    24px,
+    24px,
+    24px,
+    24px,
+  ),
+  mr-32: (
+    32px,
+    32px,
+    32px,
+    32px,
+  ),
+  mr-40: (
+    42px,
+    42px,
+    42px,
+    42px,
+  ),
+  mr-48: (
+    48px,
+    48px,
+    48px,
+    48px,
+  ),
+) !default;
 
-$mb: "margin-bottom"; 
-$margin-bottom: ( 
-mb-8: ( 8px, 8px, 8px, 8px, ), 
-mb-16: ( 16px, 16px, 16px, 16px, ), 
-mb-24: ( 24px, 24px, 24px, 24px, ), 
-mb-32: ( 32px, 32px, 32px, 32px, ), 
-mb-40: ( 40px, 40px, 40px, 40px, ),
-mb-48: ( 48px, 48px, 48px, 48px, ), 
-mb-100: ( 100px, 100px, 100px, 100px, ), 
-mbr-24: ( 16px, 24px, 24px, 24px, ),
-mbr-32: ( 24px, 32px, 32px, 32px, ), 
-mbr-64: ( 32px, 64px, 64px, 64px, ), 
-mbr-128: ( 64px, 128px, 128px, 128px, ), 
-mbr-20-40: ( 20px, 40px, 40px, 40px, ), ) !default; 
+$mb: 'margin-bottom';
+$margin-bottom: (
+  mb-8: (
+    8px,
+    8px,
+    8px,
+    8px,
+  ),
+  mb-16: (
+    16px,
+    16px,
+    16px,
+    16px,
+  ),
+  mb-24: (
+    24px,
+    24px,
+    24px,
+    24px,
+  ),
+  mb-32: (
+    32px,
+    32px,
+    32px,
+    32px,
+  ),
+  mb-40: (
+    40px,
+    40px,
+    40px,
+    40px,
+  ),
+  mb-48: (
+    48px,
+    48px,
+    48px,
+    48px,
+  ),
+  mb-100: (
+    100px,
+    100px,
+    100px,
+    100px,
+  ),
+  mbr-24: ( 16px, 24px, 24px, 24px, ), 
+  mbr-32: ( 24px, 32px, 32px, 32px, ), 
+  mbr-64: ( 32px, 64px, 64px, 64px, ), 
+  mbr-128: ( 64px, 128px, 128px, 128px, ),
+  mbr-20-40: ( 20px, 40px, 40px, 40px, ),
+) !default;
 
-$ml: "margin-left"; 
-$margin-left: ( 
-ml-8: ( 8px, 8px, 8px, 8px, ), 
-ml-16: ( 16px, 16px, 16px, 16px, ), 
-ml-24: ( 24px, 24px, 24px, 24px, ),
-ml-32: ( 32px, 32px, 32px, 32px, ), 
-ml-40: ( 42px, 42px, 42px, 42px, ), 
-ml-48: ( 48px, 48px, 48px, 48px, ), ) !default; 
+$ml: 'margin-left';
+$margin-left: (
+  ml-8: (
+    8px,
+    8px,
+    8px,
+    8px,
+  ),
+  ml-16: (
+    16px,
+    16px,
+    16px,
+    16px,
+  ),
+  ml-24: (
+    24px,
+    24px,
+    24px,
+    24px,
+  ),
+  ml-32: (
+    32px,
+    32px,
+    32px,
+    32px,
+  ),
+  ml-40: (
+    42px,
+    42px,
+    42px,
+    42px,
+  ),
+  ml-48: (
+    48px,
+    48px,
+    48px,
+    48px,
+  ),
+) !default;
 
-$p: "padding"; 
-$padding: ( 
-p-body: ( 16px, 16px, 40px, 40px, ),
-p-0: ( 0, 0, 0, 0, ), 
-p-4: ( 4px, 4px, 4px, 4px, ),
-p-8: ( 8px, 8px, 8px, 8px, ), 
-p-16: ( 16px, 16px, 16px, 16px, ),
-p-20: ( 20px, 20px, 20px, 20px, ), 
-p-30: ( 10px, 30px, 30px, 30px, ), 
-p-40: ( 40px, 40px, 40px, 40px, ), 
-p-48: ( 20px, 50px, 50px, 50px, ), ) !default; 
+$p: 'padding';
+$padding: (
+  p-body: (
+    16px,
+    16px,
+    40px,
+    40px,
+  ),
+  p-0: (
+    0,
+    0,
+    0,
+    0,
+  ),
+  p-4: (
+    4px,
+    4px,
+    4px,
+    4px,
+  ),
+  p-8: (
+    8px,
+    8px,
+    8px,
+    8px,
+  ),
+  p-16: (
+    16px,
+    16px,
+    16px,
+    16px,
+  ),
+  p-20: (
+    20px,
+    20px,
+    20px,
+    20px,
+  ),
+  p-30: (
+    10px,
+    30px,
+    30px,
+    30px,
+  ),
+  p-40: (
+    40px,
+    40px,
+    40px,
+    40px,
+  ),
+  p-48: (
+    20px,
+    50px,
+    50px,
+    50px,
+  ),
+) !default;
 
-$py: "padding"; 
-$padding-y: ( 
-py-8: ( 8px 0, 8px 0, 8px 0, 8px 0, ),
-py-16: ( 16px 0, 16px 0, 16px 0, 16px 0, ),
-py-24: ( 10px 0, 24px 0, 24px 0, 24px 0, ), 
-py-32: ( 32px 0, 32px 0, 32px 0, 32px 0, ), 
-py-48: ( 20px 0, 30px 0, 40px 0, 48px 0, ), 
-py-60: ( 24px 16px, 24px 16px, 24px 16px, 60px 60px, ), ) !default; 
+$py: 'padding';
+$padding-y: (
+  py-8: (
+    8px 0,
+    8px 0,
+    8px 0,
+    8px 0,
+  ),
+  py-16: (
+    16px 0,
+    16px 0,
+    16px 0,
+    16px 0,
+  ),
+  py-24: (
+    10px 0,
+    24px 0,
+    24px 0,
+    24px 0,
+  ),
+  py-32: (
+    32px 0,
+    32px 0,
+    32px 0,
+    32px 0,
+  ),
+  py-48: (
+    20px 0,
+    30px 0,
+    40px 0,
+    48px 0,
+  ),
+  py-60: (
+    24px 16px,
+    24px 16px,
+    24px 16px,
+    60px 60px,
+  ),
+) !default;
 
-$px: "padding"; 
-$padding-x: ( 
-px-8: ( 0 8px, 0 8px, 0 8px, 0 8px, ), 
-px-16: ( 0 16px, 0 16px, 0 16px, 0 16px, ), 
-px-24: ( 0 24px, 0 24px, 0 24px, 0 24px, ), 
-px-32: ( 0 32px, 0 32px, 0 32px, 0 32px, ), 
-px-40: ( 0 40px, 0 40px, 0 40px, 0 40px, ), 
-px-48: ( 0 48px, 0 48px, 0 48px, 0 48px, ), ) !default; 
+$px: 'padding';
+$padding-x: (
+  px-8: (
+    0 8px,
+    0 8px,
+    0 8px,
+    0 8px,
+  ),
+  px-16: (
+    0 16px,
+    0 16px,
+    0 16px,
+    0 16px,
+  ),
+  px-24: (
+    0 24px,
+    0 24px,
+    0 24px,
+    0 24px,
+  ),
+  px-32: (
+    0 32px,
+    0 32px,
+    0 32px,
+    0 32px,
+  ),
+  px-40: (
+    0 40px,
+    0 40px,
+    0 40px,
+    0 40px,
+  ),
+  px-48: (
+    0 48px,
+    0 48px,
+    0 48px,
+    0 48px,
+  ),
+) !default;
 
-$pt: "padding-top";
-$padding-top: ( 
-pt-8: ( 8px, 8px, 8px, 8px, ),
-pt-16: ( 16px, 16px, 16px, 16px, ),
-pt-24: ( 24px, 24px, 24px, 24px, ), 
-pt-32: ( 32px, 32px, 32px, 32px, ), 
-pt-40: ( 40px, 40px, 40px, 40px, ), 
-pt-48: ( 20px, 48px, 48px, 48px, ), 
-pt-64: ( 64px, 64px, 64px, 64px, ), ) !default; 
+$pt: 'padding-top';
+$padding-top: (
+  pt-8: (
+    8px,
+    8px,
+    8px,
+    8px,
+  ),
+  pt-16: (
+    16px,
+    16px,
+    16px,
+    16px,
+  ),
+  pt-24: (
+    24px,
+    24px,
+    24px,
+    24px,
+  ),
+  pt-32: (
+    32px,
+    32px,
+    32px,
+    32px,
+  ),
+  pt-40: (
+    40px,
+    40px,
+    40px,
+    40px,
+  ),
+  pt-48: (
+    20px,
+    48px,
+    48px,
+    48px,
+  ),
+  pt-64: (
+    64px,
+    64px,
+    64px,
+    64px,
+  ),
+) !default;
 
-$pb: "padding-bottom"; 
-$padding-bottom: ( 
-pb-8: ( 8px, 8px, 8px, 8px, ),
-pb-16: ( 20px, 20px, 20px, 20px, ), 
-pb-24: ( 24px, 24px, 24px, 24px, ), 
-pb-32: ( 32px, 32px, 32px, 32px, ), 
-pb-40: ( 40px, 40px, 40px, 40px, ), 
-pb-48: ( 48px, 48px, 48px, 48px, ),
-pb-64: ( 64px, 64px, 64px, 64px, ), ) !default; 
+$pb: 'padding-bottom';
+$padding-bottom: (
+  pb-8: (
+    8px,
+    8px,
+    8px,
+    8px,
+  ),
+  pb-16: (
+    20px,
+    20px,
+    20px,
+    20px,
+  ),
+  pb-24: (
+    24px,
+    24px,
+    24px,
+    24px,
+  ),
+  pb-32: (
+    32px,
+    32px,
+    32px,
+    32px,
+  ),
+  pb-40: (
+    40px,
+    40px,
+    40px,
+    40px,
+  ),
+  pb-48: (
+    48px,
+    48px,
+    48px,
+    48px,
+  ),
+  pb-64: (
+    64px,
+    64px,
+    64px,
+    64px,
+  ),
+) !default;
 
-$pl: "padding-left"; 
+$pl: 'padding-left';
 $padding-left: (
-pl-body: ( 16px, 16px, 40px, 40px, ),
-pl-0: ( 0, 0, 0, 0, ), 
-pl-8: ( 8px, 8px, 8px, 8px, ), 
-pl-16: ( 16px, 16px, 16px, 16px, ), 
-pl-24: ( 24px, 24px, 24px, 24px, ), 
-pl-32: ( 32px, 32px, 32px, 32px, ), 
-pl-40: ( 16px, 42px, 42px, 42px, ), 
-pl-48: ( 48px, 48px, 48px, 48px, ), ) !default; 
+  pl-body: (
+    16px,
+    16px,
+    40px,
+    40px,
+  ),
+  pl-0: (
+    0,
+    0,
+    0,
+    0,
+  ),
+  pl-8: (
+    8px,
+    8px,
+    8px,
+    8px,
+  ),
+  pl-16: (
+    16px,
+    16px,
+    16px,
+    16px,
+  ),
+  pl-24: (
+    24px,
+    24px,
+    24px,
+    24px,
+  ),
+  pl-32: (
+    32px,
+    32px,
+    32px,
+    32px,
+  ),
+  pl-40: (
+    16px,
+    42px,
+    42px,
+    42px,
+  ),
+  pl-48: (
+    48px,
+    48px,
+    48px,
+    48px,
+  ),
+) !default;
 
-$pr: "padding-right"; 
+$pr: 'padding-right';
 $padding-right: (
-pr-body: ( 16px, 16px, 40px, 40px, ), 
-pr-8: ( 8px, 8px, 8px, 8px, ),
-pr-16: ( 16px, 16px, 16px, 16px, ), 
-pr-24: ( 24px, 24px, 24px, 24px, ),
-pr-32: ( 32px, 32px, 32px, 32px, ), 
-pr-40: ( 16px, 42px, 42px, 42px, ), 
-pr-48: ( 48px, 48px, 48px, 48px, ), ) !default;
+  pr-body: (
+    16px,
+    16px,
+    40px,
+    40px,
+  ),
+  pr-8: (
+    8px,
+    8px,
+    8px,
+    8px,
+  ),
+  pr-16: (
+    16px,
+    16px,
+    16px,
+    16px,
+  ),
+  pr-24: (
+    24px,
+    24px,
+    24px,
+    24px,
+  ),
+  pr-32: (
+    32px,
+    32px,
+    32px,
+    32px,
+  ),
+  pr-40: (
+    16px,
+    42px,
+    42px,
+    42px,
+  ),
+  pr-48: (
+    48px,
+    48px,
+    48px,
+    48px,
+  ),
+) !default;

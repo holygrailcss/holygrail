@@ -20,6 +20,11 @@
 // soporte para estilos de color iconos con el componente svg-icon
 
 svg-icon {
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   &.c-invert {
     fill: $c-white;
   }
@@ -51,4 +56,55 @@ svg-icon {
       stroke: none;
     }
   }
+}
+
+.ico-ball {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  background-color: $c-middle-grey;
+
+  .ico-count {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    font-size: 10px;
+    background-color: $c-primary;
+    color: $c-white;
+    text-align: center;
+    line-height: 1.6;
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    border: 1px solid $c-white;
+    font-weight: 600;
+  }
+  svg {
+    margin-top: -4px;
+  }
+}
+
+.x24 {
+  width: 24px;
+  height: 24px;
+}
+
+.x32 {
+  width: 32px;
+  height: 32px;
+}
+
+.x48 {
+  width: 64px;
+  height: 64px;
+}
+
+.x64 {
+  width: 64px;
+  height: 64px;
 }

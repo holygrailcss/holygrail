@@ -1,4 +1,4 @@
-@import "../abstract/_all";
+@import '../abstract/_all';
 @include space($breakpoints, $margin, $mg);
 @include space($breakpoints, $margin-y, $my);
 @include space($breakpoints, $margin-x, $mx);

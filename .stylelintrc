@@ -6,7 +6,7 @@
     "no-invalid-position-at-import-rule": null,
     "no-descending-specificity": null,
     "selector-pseudo-element-no-unknown": null,
-    "selector-pseudo-class-no-unknown":null,
+    "selector-pseudo-class-no-unknown": null,
     "scss/operator-no-unspaced": null,
     "selector-no-vendor-prefix": null,
     "selector-pseudo-class-no-unknown ": null,

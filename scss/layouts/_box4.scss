@@ -1,4 +1,4 @@
-@import "../abstract/_all";
+@import '../abstract/_all';
 
 .box4 {
   position: relative;
@@ -7,10 +7,10 @@
     margin-left: 16px;
     margin-top: 4px;
   }
-  &:before {
+  &::before {
     width: 2px;
     height: calc(100% - 48px);
-    content: "";
+    content: '';
     position: absolute;
     background-color: $c-dark-grey;
     top: 47px;
@@ -22,9 +22,8 @@
       margin-left: 0;
       margin-right: 16px;
     }
-    &:before {
+    &::before {
       left: initial;
-
       top: 47px;
       right: 20px;
     }

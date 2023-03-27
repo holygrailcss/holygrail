@@ -1,5 +1,5 @@
-@use "sass:math";
-@import "../abstract/_all";
+@use 'sass:math';
+@import '../abstract/_all';
 
 //   -CONTAINERS
 
@@ -153,7 +153,7 @@
 
 .container-9 {
   margin: 0 auto;
-  padding: 0  $padding-mobile;
+  padding: 0 $padding-mobile;
   width: 100%;
   max-width: $container-9;
 
@@ -164,7 +164,7 @@
 
 .container-11 {
   margin: 0 auto;
-  padding: 0  $padding-mobile;
+  padding: 0 $padding-mobile;
   width: 100%;
   max-width: $container-11;
 
@@ -215,7 +215,7 @@
   }
 }
 
-[class*="col-"] {
+[class*='col-'] {
   box-sizing: border-box;
   position: relative;
   min-height: 1px;

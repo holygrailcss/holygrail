@@ -1,20 +1,4 @@
-/* -DEBUG
 
-
-  Activa esta hoja de estilos para detectar visualmente cualquier
-  anidación impropia o marcado potencialmente inválido.
-
-  Rojo           ==      Definitivamente un error
-  Amarillo       ==      a revisar
-  Ninguno        ==      debería estar bien
-
-  Este método de validación no es más que una guía, no te bases en el
-  para validar tu marcado
-
-
-  - PASO 1 : COLORES POR DIV
-
-  debug-div */
 @mixin random-bgr() {
   background: rgb(math.random(255) math.random(255) math.random(255));
 }
@@ -27,11 +11,6 @@
   }
 }
 
-/* -ELEMENTOS VACIOS ?   debug-empty */
-
-
-/* -ALT OBLIGATORIO -- PENALIZAMOS SIN NO HAY ALT   debug-img */
-
 @mixin debug-imgs() {
   img {
     outline: 5px solid red;
@@ -41,12 +20,11 @@
     outline: none;
   }
 
-  img[alt=""] {
+  img[alt=''] {
     outline: 5px solid yellow;
   }
 }
 
-/* -LINKS CON TITLE OBLIGATORIO    debug-links */
 
 @mixin debug-links() {
   a {
@@ -57,8 +35,8 @@
     outline: none;
   }
 
-  a[href="#"],
-  a[href*="javascript"] {
+  a[href='#'],
+  a[href*='javascript'] {
     outline: 5px solid yellow;
   }
 
@@ -67,7 +45,6 @@
   }
 }
 
-/* -UL SOLO ANIDA LISTAS   */
 
 @mixin debug-forms() {
   ul,
@@ -77,12 +54,6 @@
     }
   }
 
-  /* -TABLAS BIEN TABULADAS    */
-
-
-  /* Deberíamos asignar un atributo 'scope' a los th */
-
-  /* http:/*bit.ly/1aHBDgW */
 
   th {
     outline: 5px solid yellow;
@@ -92,19 +63,18 @@
     outline: none;
   }
 
-  /* los tr hijos de 'table' no son buenos, ¿necesitabas un 'thead' / 'tbody'? */
 
   table > tr {
     outline: 5px solid yellow;
   }
 
-  /* `tfoot` debe estar *antes* de `tbody`. */
+
 
   tbody + tfoot {
     outline: 5px solid yellow;
   }
 
-  /* Forms necesitan del atributo `action` */
+
 
   form {
     outline: 5px solid red;
@@ -114,16 +84,6 @@
     outline: none;
   }
 
-  /* Varios elementos de formularios requieren atributos. 'input' necsita de 'type' */
-
-  /* 'textarea' necesita `rows' y 'cols' y 'submit' necesita del atributo 'value'. */
-
-
-  /* -FORMULARIOS : REQUIEREN , -INPUT ,-TYPE  */
-
-  /* -TEXTAREA    : REQUIEREN , -ROWS ,-COLS , */
-
-  /* -SUBMIT      : REQUIERE  , VALUE  */
 
   textarea,
   input {
@@ -138,19 +98,17 @@
     outline: none;
   }
 
-  input[type="submit"] {
+  input[type='submit'] {
     outline: 5px solid red;
   }
 
-  input[type="submit"][value] {
+  input[type='submit'][value] {
     outline: none;
   }
 }
 
-/* -IDS SOLO PARA PROGRAMAR JS */
 
 @mixin debug-fine() {
-  /* -ESTILOS EN LINEA, EVITAR EN LA MEDIDA DE LO POSIBLE */
 
   [style] {
     outline: 5px solid yellow;
@@ -164,25 +122,27 @@
     outline: 5px solid yellow;
   }
 
-  /* -ELEMENTOS VACIOS    */
 
   div:empty,
   span:empty,
   li:empty,
   p:empty,
   td:empty,
-  th:empty { margin: 5px; border: 5px dotted yellow !important; }
+  th:empty {
+    margin: 5px;
+    border: 5px dotted yellow !important;
+  }
 
-  /* -ATRIBUTOS VACIOS    */
 
-  *[alt=""],
-  *[title=""],
-  *[class=""],
-  *[id=""],
-  a[href=""],
-  a[href="#"] { border: 5px solid yellow !important; }
+  *[alt=''],
+  *[title=''],
+  *[class=''],
+  *[id=''],
+  a[href=''],
+  a[href='#'] {
+    border: 5px solid yellow !important;
+  }
 
-  /*  -ATRIBUTOS DEPRECADOS   */
 
   applet,
   basefont,
@@ -193,7 +153,9 @@
   menu,
   s,
   strike,
-  u { border: 5px dotted red !important; }
+  u {
+    border: 5px dotted red !important;
+  }
 
   *[background],
   *[bgcolor],
@@ -222,21 +184,25 @@
   *[width],
   ul[type],
   ol[type],
-  li[type] { border: 5px solid red !important; }
+  li[type] {
+    border: 5px solid red !important;
+  }
 
-  /*  -PROPUESTA A LOS ELEMENTOS DEPRECADOS   */
 
-  input[type="button"],
+  input[type='button'],
   big,
-  tt { border: 5px dotted #3f0 !important; }
+  tt {
+    border: 5px dotted #3f0 !important;
+  }
 
-  /*  -PROPUESTA A LOS ATRIBUTOS DEPRECADOS   */
 
   *[border],
   a[target],
   table[cellpadding],
   table[cellspacing],
-  *[name] { border: 5px solid #3f0 !important; }
+  *[name] {
+    border: 5px solid #3f0 !important;
+  }
 }
 
 @mixin debug-all() {
@@ -253,7 +219,7 @@
       position: relative;
 
       &::after {
-        content: "#{nth(map-keys($headers), $i)} ";
+        content: '#{nth(map-keys($headers), $i)} ';
         position: absolute;
 
         @include random-bgr;
