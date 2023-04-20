@@ -68,6 +68,10 @@ label {
   }
 }
 
+.validation-error-wrap {
+  min-height: 24px;
+}
+
 .input-line {
   border-top: 1px solid transparent;
   border-left: 1px solid transparent;
@@ -194,9 +198,8 @@ label {
     right: auto;
     left: 0;
     position: absolute;
-    top: 50%;
+    top: 24px;
     box-sizing: border-box;
-    display: table;
     transform: translateY(-50%);
     margin: 0 16px;
     height: 16px;
@@ -222,9 +225,8 @@ label {
     right: 0;
     left: auto;
     position: absolute;
-    top: 50%;
+    top: 24px;
     box-sizing: border-box;
-    display: table;
     transform: translateY(-50%);
     margin: 0 16px;
     height: 16px;
@@ -728,7 +730,9 @@ input::input-placeholder {
   padding-right: 64px;
 
   .input,
-  .input:focus {
+  .input:focus ,
+  .textarea,
+  .textarea:focus {
     @include font-regular;
 
     padding: 12px 0 4px;
@@ -785,7 +789,6 @@ input::input-placeholder {
     margin-top: 4px;
     width: auto;
     position: absolute;
-    bottom: 0;
     right: 0;
   }
 

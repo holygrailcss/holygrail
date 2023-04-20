@@ -27,8 +27,8 @@ $btn-text-full: 14px;
   border: none;
   white-space: nowrap;
   cursor: pointer;
-  padding: 15px 8px 17px;
-
+  padding: 17px 8px 17px;
+  background-color: transparent;
   @include font-regular;
 
   &:focus,
@@ -41,8 +41,9 @@ $btn-text-full: 14px;
     text-decoration: none;
     opacity: 0.6;
     outline: none;
-    background-color: $c-dark-grey;
-    border: 1px solid $c-dark-grey;
+    background-color: transparent;
+
+ 
   }
   &[disabled],
   &:disabled,
@@ -54,6 +55,7 @@ $btn-text-full: 14px;
     border: 1px solid $c-middle-grey;
     color: $c-dark-grey;
     opacity: 1;
+    cursor: not-allowed;
   }
 
   .has-light & {
@@ -494,6 +496,20 @@ $btn-text-full: 14px;
       fill: $c-white;
     }
   }
+  &:focus,
+  &.focus,
+  &:hover,
+  &.hover,
+  &:active,
+  &.active {
+    color: $c-primary;
+    background-color: transparent;
+    border: 1px solid $c-dark-grey;
+    opacity: 1;
+  }
+
+
+
 }
 
 .btn-limited {
@@ -1163,8 +1179,12 @@ $btn-text-full: 14px;
     }
   }
 
-  &:hover {
+  &:hover,
+  &.hover,
+  &:focus,
+  &.focus {
     background-color: rgba($c-primary, 0.8);
+    border: none;
   }
 
   .btn-world-left {
