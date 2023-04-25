@@ -445,8 +445,8 @@
     &.btn,
     & > input,
     & > label {
-      padding-right: $padding-btn;
-      padding-left: $padding-btn * 2 + $svg-size;
+      padding-right: $btn-padding;
+      padding-left: $btn-padding * 2 + $svg-size;
     }
   }
 
@@ -454,8 +454,8 @@
     &.btn,
     & > input,
     & > label {
-      padding-left: $padding-btn;
-      padding-right: $padding-btn * 2 + $svg-size + 4px;
+      padding-left: $btn-padding;
+      padding-right: $btn-padding * 2 + $svg-size + 4px;
     }
   }
 

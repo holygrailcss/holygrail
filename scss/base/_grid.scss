@@ -36,7 +36,7 @@
   margin-right: auto;
   margin-left: auto;
   position: relative;
-  max-width: $container;
+  max-width: $container-full;
 
   @media (min-width: $break-sm) {
     padding-right: $padding-global;

@@ -4,6 +4,7 @@ $c-dark-grey: #8e8e8e !default;
 $c-middle-grey: #e3e3e3 !default;
 $c-light-grey: #f0f0f0 !default;
 $c-primary: #292929 !default;
+$c-secondary: #292929 !default;
 $c-error: #b40016 !default;
 $c-warning: #b40016 !default;
 $c-info: #1a32a4 !default;
@@ -26,15 +27,22 @@ $secondary-guide: #6759bb !default;
 $ternary-guide: #6759bb !default;
 
 $btn-radius: 8px !default;
+$btn-line-height: 1 !default;
+
+$btn-padding: 16px !default;
+
+
 $font-weight-secondary-light: 300 !default;
 $font-weight-secondary-medium: 400 !default;
 $font-weight-secondary-bold: 700 !default;
 $totalCols: 12 !default;
+
+
 $padding-global: 8px !default;
 $padding-mobile: 24px !default;
 $padding-desktop: 40px !default;
 $padding-button: 8px !default;
-$padding-btn: 16px !default;
+
 $height-inputs: 48px !default;
 $container: 800px !default;
 $container-2: 700px !default;
@@ -48,7 +56,9 @@ $container-9: 798px !default;
 $container-10: 200px !default;
 $container-11: 1080px !default;
 $container-12: 1080px !default;
-$transition: 278ms;
+$container-full: 1500px !default;
+
+
 $height-xs: 80px !default;
 $height-sm: 100px !default;
 $height-md: 350px !default;
@@ -56,12 +66,14 @@ $height-lg: 400px !default;
 $height-xl: 450px !default;
 $height-full: 100vh !default;
 $height-home: calc(100vh - 80px) !default;
+
+
 $transition: 278ms !default;
 $min-width: 319px !default;
 $min-vw: 319px !default;
 $max-vw: 1500px !default;
 
-$padding-btn: 16px;
+
 $svg-size: 16px;
 
 $fs: 'font-size';

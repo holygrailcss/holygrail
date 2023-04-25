@@ -16,18 +16,18 @@ $btn-text-full: 14px;
 
 .btn {
   position: relative;
-  display: inline-block;
+  display: inline-flex;
   border-radius: $btn-radius;
   overflow: hidden;
-  line-height: 1;
   text-align: center;
   box-sizing: border-box;
   font-size: 14px;
   vertical-align: middle;
+  justify-content: center;
   border: none;
   white-space: nowrap;
   cursor: pointer;
-  padding: 17px 8px 17px;
+  padding: $btn-padding;
   background-color: transparent;
   @include font-regular;
 
@@ -96,7 +96,7 @@ $btn-text-full: 14px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: $padding-btn;
+    padding: $btn-padding;
 
     svg {
       margin-left: 8px;
@@ -156,8 +156,7 @@ $btn-text-full: 14px;
 
 .btn-xs {
   position: relative;
-  display: inline-block;
-  line-height: 1.2;
+  display: inline-flex;
   text-align: center;
   vertical-align: middle;
   box-sizing: border-box;
@@ -165,7 +164,7 @@ $btn-text-full: 14px;
   margin-right: $padding-global;
   white-space: nowrap;
   cursor: pointer;
-  padding: math.div($padding-btn, 2);
+  padding: math.div($btn-padding, 2);
 
   &:active,
   &:focus,
@@ -217,11 +216,11 @@ $btn-text-full: 14px;
   padding-right: $padding-global * 8;
   padding-left: $padding-global * 8;
   position: relative;
-  display: inline-block;
+  display: inline-flex;
   min-height: 48px;
   min-width: 200px;
   max-width: 400px;
-  padding: $padding-btn;
+  padding: $btn-padding;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -695,7 +694,6 @@ $btn-text-full: 14px;
   padding: 0;
   text-align: center;
   cursor: pointer;
-  line-height: 1;
   background: transparent;
   border: none;
   color: $c-primary;
@@ -763,7 +761,6 @@ $btn-text-full: 14px;
   color: $c-white;
   background: rgb(226 226 226 / 60%);
   font-size: 14px;
-  line-height: 1.2;
   border: 0 solid $c-white;
   box-sizing: border-box;
 
@@ -1167,7 +1164,7 @@ $btn-text-full: 14px;
   align-items: center;
   justify-content: space-between;
   gap: 8px;
-  padding: $padding-btn;
+  padding: $btn-padding;
   border: none;
   background-color: rgba($c-primary, 0.4);
   color: $c-white;

@@ -188,7 +188,7 @@ label {
   &.btn,
   & > input,
   & > label {
-    padding-left: $padding-btn * 3 ;
+    padding-left: $btn-padding * 3 ;
   }
   .form-icon {
     top: 0;
@@ -211,11 +211,11 @@ label {
   &.btn,
   & > input,
   & > label {
-    padding-right: $padding-btn * 3;
+    padding-right: $btn-padding * 3;
   }
 
   .form-icon {
-    padding: $padding-btn;
+    padding: $btn-padding;
     top: 0;
     right: 0;
     left: auto;
@@ -436,7 +436,7 @@ input::input-placeholder {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: $padding-btn;
+    left: $btn-padding;
     z-index: 1;
   }
 
@@ -647,7 +647,7 @@ input::input-placeholder {
   position: absolute;
   top: 0;
   left: 0;
-  padding: $padding-btn;
+  padding: $btn-padding;
 
   svg {
     width: $svg-size;

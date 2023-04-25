@@ -675,7 +675,7 @@ img {
   margin-right: auto;
   margin-left: auto;
   position: relative;
-  max-width: 800px;
+  max-width: 1500px;
 }
 @media (min-width: 768px) {
   .container-full {
@@ -5883,18 +5883,18 @@ strong {
 }
 .btn {
   position: relative;
-  display: inline-block;
+  display: inline-flex;
   border-radius: 8px;
   overflow: hidden;
-  line-height: 1;
   text-align: center;
   box-sizing: border-box;
   font-size: 14px;
   vertical-align: middle;
+  justify-content: center;
   border: none;
   white-space: nowrap;
   cursor: pointer;
-  padding: 17px 8px 17px;
+  padding: 16px;
   background-color: transparent;
   font-family: arial, sans-serif;
   font-weight: 500;
@@ -5985,8 +5985,7 @@ strong {
 
 .btn-xs {
   position: relative;
-  display: inline-block;
-  line-height: 1.2;
+  display: inline-flex;
   text-align: center;
   vertical-align: middle;
   box-sizing: border-box;
@@ -6045,7 +6044,7 @@ strong {
   padding-right: 64px;
   padding-left: 64px;
   position: relative;
-  display: inline-block;
+  display: inline-flex;
   min-height: 48px;
   min-width: 200px;
   max-width: 400px;
@@ -6387,7 +6386,6 @@ strong {
   padding: 0;
   text-align: center;
   cursor: pointer;
-  line-height: 1;
   background: transparent;
   border: none;
   color: #292929;
@@ -6446,7 +6444,6 @@ strong {
   color: #fff;
   background: rgba(226, 226, 226, 0.6);
   font-size: 14px;
-  line-height: 1.2;
   border: 0 solid #fff;
   box-sizing: border-box;
 }
@@ -7558,7 +7555,7 @@ label {
   right: auto;
   left: 0;
   position: absolute;
-  top: 22px;
+  top: 24px;
   box-sizing: border-box;
   transform: translateY(-50%);
   margin: 0 16px;
@@ -7584,7 +7581,7 @@ label {
   right: 0;
   left: auto;
   position: absolute;
-  top: 22px;
+  top: 24px;
   box-sizing: border-box;
   transform: translateY(-50%);
   margin: 0 16px;
@@ -8020,7 +8017,9 @@ input::input-placeholder {
   padding-right: 64px;
 }
 .input-line-v2 .input,
-.input-line-v2 .input:focus {
+.input-line-v2 .input:focus,
+.input-line-v2 .textarea,
+.input-line-v2 .textarea:focus {
   font-family: arial, sans-serif;
   font-weight: 500;
   padding: 12px 0 4px;
@@ -8075,7 +8074,6 @@ input::input-placeholder {
   margin-top: 4px;
   width: auto;
   position: absolute;
-  bottom: 0;
   right: 0;
 }
 .form-input-label-2 > input, .form-input-label-2 > label,
@@ -11684,6 +11682,10 @@ ul.list-clear li.list-box:last-child {
 }
 .is-rtl .form-input-label.has-ico-post .validation-error-messages svg-icon {
   position: relative;
+}
+.is-rtl .form-input-label-2 .info-text {
+  left: 0;
+  right: initial;
 }
 .is-rtl .form-input-prefix .input-prefix {
   margin-right: 0;
