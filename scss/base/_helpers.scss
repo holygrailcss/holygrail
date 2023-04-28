@@ -360,6 +360,25 @@ hr {
   }
 }
 
+.mdmax\:mb-24 {
+  @media (max-width: #{$break-md - 1}) {
+    margin-bottom: 24px;
+  }
+}
+
+.mdmax\:mb-32 {
+  @media (max-width: #{$break-md - 1}) {
+    margin-bottom: 32px;
+  }
+}
+
+.mdmax\:mb-40 {
+  @media (max-width: #{$break-md - 1}) {
+    margin-bottom: 40px;
+  }
+}
+
+
 .mdmax\:mb-42 {
   @media (max-width: #{$break-md - 1}) {
     margin-bottom: 42px;
