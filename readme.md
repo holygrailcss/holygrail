@@ -94,7 +94,7 @@ $ npm run start
 
 
 <p align="center">
-Developed with ❤️ from  Barcelona 
+Developed with ❤️ from Barcelona to the world
 </p>
 
 
