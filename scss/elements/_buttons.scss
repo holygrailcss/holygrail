@@ -17,6 +17,7 @@ $btn-text-full: 14px;
 .btn {
   position: relative;
   display: inline-flex;
+  align-items: center;
   border-radius: $btn-radius;
   overflow: hidden;
   text-align: center;
@@ -179,6 +180,7 @@ $btn-text-full: 14px;
 }
 
 .btn--small {
+  height: 48px;
   padding-right: $padding-global * 2;
   padding-left: $padding-global * 2;
   font-size: $btn-text-small;
@@ -191,10 +193,16 @@ $btn-text-full: 14px;
   max-width: 272px;
   width: 100%;
 }
+
 .btn--mini-rd {
-  padding: $padding-global * 1 + 2px $padding-global * 3 $padding-global * 1 $padding-global * 3;
+  padding-right: $padding-global * 3 ;
+  padding-left: $padding-global * 3 ;
   font-size: $btn-text-mini;
   height: 32px;
+
+  display: inline-flex;
+  align-content: center;
+  align-items: center;
 
   @media (min-width: $break-sm) {
     padding: $padding-global * 2;
@@ -204,6 +212,7 @@ $btn-text-full: 14px;
 }
 
 .btn--large {
+  height: 48px;
   min-width: 200px;
   max-width: 400px;
   width: 100%;
@@ -456,25 +465,6 @@ $btn-text-full: 14px;
   }
 }
 
-.btn-secondary {
-  color: $c-primary;
-  background-color: transparent;
-  border: 1px solid $c-primary;
-
-  svg {
-    g {
-      fill: $c-primary;
-      stroke: $c-primary;
-    }
-
-    circle {
-      stroke: $c-primary;
-    }
-    path {
-      fill: $c-primary;
-    }
-  }
-}
 
 .btn-phantom {
   color: $c-white;
@@ -512,6 +502,7 @@ $btn-text-full: 14px;
 }
 
 .btn-limited {
+  height: 48px;
   color: $c-white;
   background-color: $c-limited;
   border: 1px solid $c-limited;
@@ -687,54 +678,6 @@ $btn-text-full: 14px;
   color: $c-white;
 }
 
-.btn-underline {
-  display: inline;
-  position: relative;
-  outline: none;
-  padding: 0;
-  text-align: center;
-  cursor: pointer;
-  background: transparent;
-  border: none;
-  color: $c-primary;
-
-  &::after {
-    content: "";
-    background-color: $c-primary;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 1px;
-  }
-
-  &:hover,
-  &.hover &:focus,
-  &.focus {
-    opacity: 0.6;
-    background-color: transparent;
-    color: $c-primary;
-    text-decoration: none;
-    cursor: pointer;
-
-    &::after {
-      opacity: 0;
-    }
-  }
-
-  &:active,
-  &.active {
-    &:focus,
-    &.focus {
-      outline: 0;
-    }
-
-    outline: 0;
-    background-image: none;
-    box-shadow: none;
-    opacity: 0.6;
-  }
-}
 
 .btn-block {
   display: block;
@@ -745,6 +688,17 @@ $btn-text-full: 14px;
   background-color: $c-info;
   color: $c-white;
   border: 1px solid $c-info;
+  &:focus,
+  &.focus,
+  &:hover,
+  &.hover,
+  &:visited,
+  &:active,
+  &.active {
+    color: $c-white;
+    text-decoration: none;
+    opacity: .6;
+  }
 }
 
 .btn-link {
@@ -768,13 +722,20 @@ $btn-text-full: 14px;
     stroke: $c-white;
   }
 
+
+
+  &:focus,
+  &.focus,
   &:hover,
   &.hover,
-  &:focus,
-  &.focus {
+  &:visited,
+  &:active,
+  &.active {
     color: $c-white;
     text-decoration: none;
   }
+
+
 }
 
 .btn-circle {

@@ -333,7 +333,7 @@ button.link-line {
 }
 
 .link-line {
-  display: inline-block;
+  display: inline;
   position: relative;
   border: 0;
   transform: none;
@@ -516,18 +516,12 @@ button.link-line.link-svg-post {
   .link-raw {
     color: white;
 
-    svg-icon {
-      filter: invert(1);
-    }
   }
 
   .link-line {
     color: white;
     background-image: linear-gradient(transparent calc(100% - 1px), white 10px);
 
-    svg-icon {
-      filter: invert(1);
-    }
 
     &::after {
       background-color: #fff;
@@ -538,9 +532,6 @@ button.link-line.link-svg-post {
     color: white;
     background-image: linear-gradient(transparent calc(100% - 1px), white 10px);
 
-    svg-icon {
-      filter: invert(1);
-    }
 
     &::after {
       background-color: #fff;
@@ -555,9 +546,6 @@ button.link-line.link-svg-post {
       background-color: #fff;
     }
 
-    svg-icon {
-      filter: invert(1);
-    }
   }
 
   .link-svg-pre {
@@ -568,8 +556,5 @@ button.link-line.link-svg-post {
       background-color: #fff;
     }
 
-    svg-icon {
-      filter: invert(1);
-    }
   }
 }
