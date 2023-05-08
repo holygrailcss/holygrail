@@ -71,6 +71,18 @@
     padding-left: 30px;
   }
 
+  .pr-32 {
+    padding-right: 0;
+    padding-left: 32px;
+  }
+
+
+
+  .pr-40 {
+    padding-right: 0;
+    padding-left: 40px;
+  }
+
   .pr-48 {
     padding-right: 0;
     padding-left: 48px;
@@ -91,6 +103,16 @@
     margin-left: 24px;
   }
 
+  .mr-32 {
+    margin-right: 0;
+    margin-left: 32px;
+  }
+
+  .mr-40 {
+    margin-right: 0;
+    margin-left: 40px;
+  }
+
   .ml-8 {
     margin-left: 0;
     margin-right: 8px;
@@ -104,6 +126,16 @@
   .ml-24 {
     margin-left: 0;
     margin-right: 24px;
+  }
+
+  .ml-32 {
+    margin-left: 0;
+    margin-right: 32px;
+  }
+
+  .ml-40 {
+    margin-left: 0;
+    margin-right: 40px;
   }
 
   .pl-8 {
@@ -124,6 +156,11 @@
   .pl-32 {
     padding-left: 0;
     padding-right: 32px;
+  }
+
+  .pl-40 {
+    padding-left: 0;
+    padding-right: 40px;
   }
 
   .check-center.check-bleed.checkbox-radio [type='radio']:checked + label::before,
