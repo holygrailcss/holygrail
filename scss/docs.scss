@@ -1026,7 +1026,7 @@ $headersFluidsGuide: (
   .link-template,
   .link-template-mini {
     background-color: #fff;
-    border-radius: $btn-radius;
+    border-radius: $obj-radius;
     border: 1px solid rgb(204 204 204 / 40%);
     overflow: visible;
     color: #ccc;
@@ -1218,7 +1218,7 @@ $headersFluidsGuide: (
   .box-info {
     padding: 20px;
     border: 1px solid gray;
-    border-radius: $btn-radius;
+    border-radius: $obj-radius;
     font-style: italic;
     opacity: 0.5;
   }

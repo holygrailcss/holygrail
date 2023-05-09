@@ -132,7 +132,7 @@ label {
 .input-gray {
   padding-left: 40px;
   background: rgb(0 0 0 / 5%);
-  border-radius: $btn-radius;
+  border-radius: $obj-radius;
   border: none;
 }
 
@@ -340,7 +340,7 @@ input::input-placeholder {
     margin-bottom: 0;
     line-height: 1.1;
     color: $c-dark-grey;
-    border-radius: 0.25rem;
+    border-radius: $btn-radius;
     transition: all 0.1s ease-in-out;
     pointer-events: none;
   }
@@ -555,7 +555,7 @@ input::input-placeholder {
     }
 
     select {
-      border-radius: 8px;
+      border-radius: $obj-radius;
       border: 1px solid $c-primary;
       padding: 6px 2px 4px;
       min-width: 100px;
@@ -613,7 +613,7 @@ input::input-placeholder {
     }
 
     select {
-      border-radius: 8px;
+      border-radius: $obj-radius;
       padding-left: 16px;
       background: none;
       padding-right: 40px;
@@ -811,7 +811,7 @@ input::input-placeholder {
     margin-bottom: 0;
     line-height: 1.1;
     color: $c-dark-grey;
-    border-radius: 0.25rem;
+    border-radius: $obj-radius;
     transition: all 0.1s ease-in-out;
     pointer-events: none;
   }

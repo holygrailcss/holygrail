@@ -429,7 +429,7 @@
 
 .checkbox-card {
   .checkbox-card-label {
-    border-radius: 8px; //$btn-radius
+    border-radius: $obj-radius; 
     overflow: hidden;
     border: 1px solid $c-middle-grey;
     background: $c-white;
