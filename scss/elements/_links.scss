@@ -310,7 +310,7 @@ u {
 
   &::after {
     border: 1px solid $c-primary;
-    border-radius: 0;
+    border-radius: $form-radius;
     border-right: 0;
     border-top: 0;
     content: ' ';

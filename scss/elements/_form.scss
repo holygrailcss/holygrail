@@ -22,7 +22,7 @@ fieldset[disabled] .form-control {
 select {
   background-color: $c-white;
   border-color: $c-middle-grey;
-  border-radius: 0;
+  border-radius: $form-radius;
   color: $c-primary;
 }
 
@@ -43,7 +43,7 @@ label {
   position: relative;
   vertical-align: top;
   font-size: 12px;
-  border-radius: 0;
+  border-radius: $form-radius;
   height: 48px;
   box-sizing: border-box;
 }
@@ -415,7 +415,7 @@ input::input-placeholder {
   max-width: 100%;
   appearance: none;
   align-items: center;
-  border-radius: 0;
+  border-radius: $form-radius;
   box-shadow: none;
   display: inline-flex;
   justify-content: flex-start;
@@ -442,7 +442,7 @@ input::input-placeholder {
 
   &::after {
     border: 1px solid $c-primary;
-    border-radius: 0;
+    border-radius: $form-radius;
     border-right: 0;
     border-top: 0;
     content: ' ';
@@ -507,7 +507,7 @@ input::input-placeholder {
       height: 24px;
       padding: 0 16px 0 8px;
       font-size: 14px;
-      border-radius: 2px;
+      border-radius: $form-radius;
       border: none;
       text-align: center;
     }

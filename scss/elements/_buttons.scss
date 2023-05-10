@@ -708,7 +708,7 @@ $btn-text-full: 14px;
   color: $c-primary;
   background-color: transparent;
   padding: 0;
-  border-radius: 0;
+  border-radius: $btn-radius;
 }
 
 .btn-trans {
@@ -771,7 +771,7 @@ $btn-text-full: 14px;
     align-content: center;
     justify-content: center;
     align-items: center;
-    border-radius: 8px;
+    border-radius: $btn-radius;
     margin-top: -3px;
     margin-right: 16px;
 
@@ -1176,7 +1176,7 @@ $btn-text-full: 14px;
 }
 
 .btn.btn-secondary-rd {
-  border-radius: 8px;
+  border-radius: $btn-radius;
   border: 1px solid $c-primary;
   padding: 9px 2px 4px;
   height: 32px;
