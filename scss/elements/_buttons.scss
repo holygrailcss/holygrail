@@ -679,11 +679,6 @@ $btn-text-full: 14px;
 }
 
 
-.btn-block {
-  display: block;
-  width: 100%;
-}
-
 .btn-blue {
   background-color: $c-info;
   color: $c-white;
@@ -773,7 +768,7 @@ $btn-text-full: 14px;
     align-items: center;
     border-radius: $btn-radius;
     margin-top: -3px;
-    margin-right: 16px;
+    margin-right: 12px;
 
     top: 0;
     left: 1px;
@@ -782,6 +777,24 @@ $btn-text-full: 14px;
       display: flex;
     }
   }
+
+
+
+  &:disabled,
+  &[disabled],
+  &.disabled {
+    background-color: $c-light-grey;
+    border-color: transparent;
+    opacity: 1;
+
+    svg {
+      path {
+        fill: $c-dark-grey;
+      }
+    }
+  }
+
+
 }
 
 .btn-google,.has-light .btn-google {
@@ -838,6 +851,9 @@ $btn-text-full: 14px;
   
   
   }
+
+
+  
 }
 
 .btn-apple ,.has-light .btn-apple {
@@ -896,6 +912,11 @@ $btn-text-full: 14px;
     background-color: #02b953;
     border: 1px solid $c-wechat;
   }
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
 }
 
 .btns {
@@ -1222,21 +1243,7 @@ $btn-text-full: 14px;
     }
   }
 
-  .btn-underline {
-    color: $c-white;
 
-    &::after {
-      background-color: $c-white;
-    }
-
-    &:hover,
-    &.hover,
-    &:focus,
-    &.focus {
-      background-color: transparent;
-      color: $c-white;
-    }
-  }
 
   .btn-google {
     svg path {

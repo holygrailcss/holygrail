@@ -6,6 +6,7 @@ $c-light-grey: #f0f0f0 !default;
 $c-primary: #292929 !default;
 $c-secondary: #292929 !default;
 $c-error: #b40016 !default;
+$c-sale:#b40016 !default;
 $c-warning: #b40016 !default;
 $c-info: #1a32a4 !default;
 $c-valid: #76ae4a !default;
@@ -139,41 +140,13 @@ $headersFixers: (
 ) !default;
 
 $headersFluids: (
-  12: (
-    1px,
-    2px,
-    0.3,
-  ),
-  14: (
-    14px,
-    12px,
-    0.9,
-  ),
-  16: (
-    16px,
-    12px,
-    0.9,
-  ),
-  18: (
-    18px,
-    12px,
-    0.9,
-  ),
-  20: (
-    20px,
-    12px,
-    0.9,
-  ),
-  50: (
-    30px,
-    80px,
-    0.9,
-  ),
-  100: (
-    30px,
-    100px,
-    0.9,
-  ),
+  12: ( 1px, 2px, 0.3, ),
+   14: ( 14px, 14px, 0.9, ),
+    16: ( 16px, 14px, 0.9, ),
+     18: ( 18px, 14px, 0.9, ), 
+     20: ( 20px, 14px, 0.9, ), 
+     50: ( 30px, 50px, 0.9, ), 
+     100: ( 30px, 100px, 0.9, ),
 ) !default;
 
 $heights: (

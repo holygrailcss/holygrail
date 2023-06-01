@@ -124,9 +124,11 @@
   text-align: center;
 }
 
-.d-inline {
-  display: inline-block;
+.align-items-center {
+  display: flex;
+  align-items: center;
 }
+
 
 .align-center {
   display: flex;
@@ -273,5 +275,13 @@
 .lg\:min-text-right {
   @media (min-width: $break-lg) {
     text-align: right;
+  }
+}
+
+
+
+.sm\:min-content-end{
+  @media (min-width: $break-sm) {
+    justify-content: flex-end;
   }
 }

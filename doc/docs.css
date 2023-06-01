@@ -453,8 +453,9 @@ img {
   text-align: center;
 }
 
-.d-inline {
-  display: inline-block;
+.align-items-center {
+  display: flex;
+  align-items: center;
 }
 
 .align-center {
@@ -4370,7 +4371,7 @@ mark {
 @media screen and (min-width: 319px) {
   .fluid-14-l {
     font-size: calc(
-                14px + -2 *
+                14px + 0 *
                   ((100vw - 319px) / 1181)
               );
     line-height: 0.9;
@@ -4378,7 +4379,7 @@ mark {
 }
 @media screen and (min-width: 1500px) {
   .fluid-14-l {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 0.9;
   }
 }
@@ -4394,7 +4395,7 @@ mark {
 @media screen and (min-width: 319px) {
   .fluid-14-r {
     font-size: calc(
-                14px + -2 *
+                14px + 0 *
                   ((100vw - 319px) / 1181)
               );
     line-height: 0.9;
@@ -4402,7 +4403,7 @@ mark {
 }
 @media screen and (min-width: 1500px) {
   .fluid-14-r {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 0.9;
   }
 }
@@ -4418,7 +4419,7 @@ mark {
 @media screen and (min-width: 319px) {
   .fluid-14-m {
     font-size: calc(
-                14px + -2 *
+                14px + 0 *
                   ((100vw - 319px) / 1181)
               );
     line-height: 0.9;
@@ -4426,7 +4427,7 @@ mark {
 }
 @media screen and (min-width: 1500px) {
   .fluid-14-m {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 0.9;
   }
 }
@@ -4442,7 +4443,7 @@ mark {
 @media screen and (min-width: 319px) {
   .fluid-14-b {
     font-size: calc(
-                14px + -2 *
+                14px + 0 *
                   ((100vw - 319px) / 1181)
               );
     line-height: 0.9;
@@ -4450,7 +4451,7 @@ mark {
 }
 @media screen and (min-width: 1500px) {
   .fluid-14-b {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 0.9;
   }
 }
@@ -4466,7 +4467,7 @@ mark {
 @media screen and (min-width: 319px) {
   .fluid-16-l {
     font-size: calc(
-                16px + -4 *
+                16px + -2 *
                   ((100vw - 319px) / 1181)
               );
     line-height: 0.9;
@@ -4474,7 +4475,7 @@ mark {
 }
 @media screen and (min-width: 1500px) {
   .fluid-16-l {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 0.9;
   }
 }
@@ -4490,7 +4491,7 @@ mark {
 @media screen and (min-width: 319px) {
   .fluid-16-r {
     font-size: calc(
-                16px + -4 *
+                16px + -2 *
                   ((100vw - 319px) / 1181)
               );
     line-height: 0.9;
@@ -4498,7 +4499,7 @@ mark {
 }
 @media screen and (min-width: 1500px) {
   .fluid-16-r {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 0.9;
   }
 }
@@ -4514,7 +4515,7 @@ mark {
 @media screen and (min-width: 319px) {
   .fluid-16-m {
     font-size: calc(
-                16px + -4 *
+                16px + -2 *
                   ((100vw - 319px) / 1181)
               );
     line-height: 0.9;
@@ -4522,7 +4523,7 @@ mark {
 }
 @media screen and (min-width: 1500px) {
   .fluid-16-m {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 0.9;
   }
 }
@@ -4538,7 +4539,7 @@ mark {
 @media screen and (min-width: 319px) {
   .fluid-16-b {
     font-size: calc(
-                16px + -4 *
+                16px + -2 *
                   ((100vw - 319px) / 1181)
               );
     line-height: 0.9;
@@ -4546,7 +4547,7 @@ mark {
 }
 @media screen and (min-width: 1500px) {
   .fluid-16-b {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 0.9;
   }
 }
@@ -4562,7 +4563,7 @@ mark {
 @media screen and (min-width: 319px) {
   .fluid-18-l {
     font-size: calc(
-                18px + -6 *
+                18px + -4 *
                   ((100vw - 319px) / 1181)
               );
     line-height: 0.9;
@@ -4570,7 +4571,7 @@ mark {
 }
 @media screen and (min-width: 1500px) {
   .fluid-18-l {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 0.9;
   }
 }
@@ -4586,7 +4587,7 @@ mark {
 @media screen and (min-width: 319px) {
   .fluid-18-r {
     font-size: calc(
-                18px + -6 *
+                18px + -4 *
                   ((100vw - 319px) / 1181)
               );
     line-height: 0.9;
@@ -4594,7 +4595,7 @@ mark {
 }
 @media screen and (min-width: 1500px) {
   .fluid-18-r {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 0.9;
   }
 }
@@ -4610,7 +4611,7 @@ mark {
 @media screen and (min-width: 319px) {
   .fluid-18-m {
     font-size: calc(
-                18px + -6 *
+                18px + -4 *
                   ((100vw - 319px) / 1181)
               );
     line-height: 0.9;
@@ -4618,7 +4619,7 @@ mark {
 }
 @media screen and (min-width: 1500px) {
   .fluid-18-m {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 0.9;
   }
 }
@@ -4634,7 +4635,7 @@ mark {
 @media screen and (min-width: 319px) {
   .fluid-18-b {
     font-size: calc(
-                18px + -6 *
+                18px + -4 *
                   ((100vw - 319px) / 1181)
               );
     line-height: 0.9;
@@ -4642,7 +4643,7 @@ mark {
 }
 @media screen and (min-width: 1500px) {
   .fluid-18-b {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 0.9;
   }
 }
@@ -4658,7 +4659,7 @@ mark {
 @media screen and (min-width: 319px) {
   .fluid-20-l {
     font-size: calc(
-                20px + -8 *
+                20px + -6 *
                   ((100vw - 319px) / 1181)
               );
     line-height: 0.9;
@@ -4666,7 +4667,7 @@ mark {
 }
 @media screen and (min-width: 1500px) {
   .fluid-20-l {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 0.9;
   }
 }
@@ -4682,7 +4683,7 @@ mark {
 @media screen and (min-width: 319px) {
   .fluid-20-r {
     font-size: calc(
-                20px + -8 *
+                20px + -6 *
                   ((100vw - 319px) / 1181)
               );
     line-height: 0.9;
@@ -4690,7 +4691,7 @@ mark {
 }
 @media screen and (min-width: 1500px) {
   .fluid-20-r {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 0.9;
   }
 }
@@ -4706,7 +4707,7 @@ mark {
 @media screen and (min-width: 319px) {
   .fluid-20-m {
     font-size: calc(
-                20px + -8 *
+                20px + -6 *
                   ((100vw - 319px) / 1181)
               );
     line-height: 0.9;
@@ -4714,7 +4715,7 @@ mark {
 }
 @media screen and (min-width: 1500px) {
   .fluid-20-m {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 0.9;
   }
 }
@@ -4730,7 +4731,7 @@ mark {
 @media screen and (min-width: 319px) {
   .fluid-20-b {
     font-size: calc(
-                20px + -8 *
+                20px + -6 *
                   ((100vw - 319px) / 1181)
               );
     line-height: 0.9;
@@ -4738,7 +4739,7 @@ mark {
 }
 @media screen and (min-width: 1500px) {
   .fluid-20-b {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 0.9;
   }
 }
@@ -4754,7 +4755,7 @@ mark {
 @media screen and (min-width: 319px) {
   .fluid-50-l {
     font-size: calc(
-                30px + 50 *
+                30px + 20 *
                   ((100vw - 319px) / 1181)
               );
     line-height: 0.9;
@@ -4762,7 +4763,7 @@ mark {
 }
 @media screen and (min-width: 1500px) {
   .fluid-50-l {
-    font-size: 80px;
+    font-size: 50px;
     line-height: 0.9;
   }
 }
@@ -4778,7 +4779,7 @@ mark {
 @media screen and (min-width: 319px) {
   .fluid-50-r {
     font-size: calc(
-                30px + 50 *
+                30px + 20 *
                   ((100vw - 319px) / 1181)
               );
     line-height: 0.9;
@@ -4786,7 +4787,7 @@ mark {
 }
 @media screen and (min-width: 1500px) {
   .fluid-50-r {
-    font-size: 80px;
+    font-size: 50px;
     line-height: 0.9;
   }
 }
@@ -4802,7 +4803,7 @@ mark {
 @media screen and (min-width: 319px) {
   .fluid-50-m {
     font-size: calc(
-                30px + 50 *
+                30px + 20 *
                   ((100vw - 319px) / 1181)
               );
     line-height: 0.9;
@@ -4810,7 +4811,7 @@ mark {
 }
 @media screen and (min-width: 1500px) {
   .fluid-50-m {
-    font-size: 80px;
+    font-size: 50px;
     line-height: 0.9;
   }
 }
@@ -4826,7 +4827,7 @@ mark {
 @media screen and (min-width: 319px) {
   .fluid-50-b {
     font-size: calc(
-                30px + 50 *
+                30px + 20 *
                   ((100vw - 319px) / 1181)
               );
     line-height: 0.9;
@@ -4834,7 +4835,7 @@ mark {
 }
 @media screen and (min-width: 1500px) {
   .fluid-50-b {
-    font-size: 80px;
+    font-size: 50px;
     line-height: 0.9;
   }
 }
@@ -5031,6 +5032,14 @@ mark {
   color: #000;
 }
 
+.c-dark-grey.is-through::after {
+  background-color: #8e8e8e;
+}
+
+.c-feel-dark.is-through::after {
+  background-color: #c94c07;
+}
+
 .c-dark-grey {
   color: #8e8e8e;
 }
@@ -5056,6 +5065,10 @@ mark {
 }
 
 .c-error {
+  color: #b40016;
+}
+
+.c-sale {
   color: #b40016;
 }
 
@@ -5704,6 +5717,10 @@ strong {
 
 .flex-grow-0 {
   flex-grow: 0;
+}
+
+.d-inline {
+  display: inline-block;
 }
 
 @keyframes underline {
@@ -6552,6 +6569,14 @@ strong {
 }
 .btn-social svg-icon div {
   display: flex;
+}
+.btn-social:disabled, .btn-social[disabled], .btn-social.disabled {
+  background-color: #f0f0f0;
+  border-color: transparent;
+  opacity: 1;
+}
+.btn-social:disabled svg path, .btn-social[disabled] svg path, .btn-social.disabled svg path {
+  fill: #8e8e8e;
 }
 
 .btn-google, .has-light .btn-google {
@@ -9871,8 +9896,8 @@ ul.list-clear li.list-box:last-child {
   border: 0;
   cursor: pointer;
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   left: 0;
   line-height: 16px;
   margin-right: 6px;
@@ -9883,44 +9908,23 @@ ul.list-clear li.list-box:last-child {
   top: 0;
   vertical-align: middle;
 }
-.color-wrap button:hover .color-selector::before, .color-wrap button.is-active .color-selector::before {
-  transform: scale(1);
-}
 .color-wrap button .color-selector {
-  border-radius: 50%;
   box-sizing: border-box;
   display: inline-block;
-  height: 100%;
+  height: 16px;
   margin: 0;
   margin-top: 0;
   position: relative;
   top: 0;
-  width: 100%;
-}
-.color-wrap button .color-selector::before {
-  border: 1px solid #d8d8d8;
-  border-radius: 50%;
-  content: "";
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  transform: scale(0);
-  transition: all ease 275ms;
-  width: 100%;
+  width: 16px;
 }
 .color-wrap button .color-selector img,
 .color-wrap button .color-selector .color-plain {
-  border: 1px solid #d8d8d8;
-  border-radius: 50%;
-  height: 10px;
-  left: 50%;
-  margin-left: -5px;
-  margin-top: 0;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 10px;
+  left: 0;
+  border: 1px solid #d8d8d8;
+  height: 16px;
+  width: 16px;
 }
 .color-wrap button .color-selector span {
   border: 1px solid #e3e3e3;
@@ -9934,9 +9938,9 @@ ul.list-clear li.list-box:last-child {
   transform: translateY(-50%);
   width: 12px;
 }
-.color-wrap button .color-selector:hover::before,
-.color-wrap button .color-selector .is-active {
-  transform: scale(1);
+.color-wrap button:hover .color-selector img,
+.color-wrap button .is-active .color-selector img {
+  border: 1px solid black;
 }
 .color-wrap button .color-square {
   border-radius: 0;
@@ -11620,6 +11624,8 @@ ul.list-clear li.list-box:last-child {
 .is-rtl .btn-social svg-icon {
   right: 1px;
   left: auto;
+  margin-right: 0;
+  margin-left: 16px;
 }
 .is-rtl .btn-social.btn-google {
   padding-right: 60px;
@@ -14346,7 +14352,7 @@ ul.list-clear li.list-box:last-child {
   content: "14px";
 }
 .wrap-item-typeFluid:nth-child(2) .item-2::after {
-  content: "12px";
+  content: "14px";
 }
 .wrap-item-typeFluid:nth-child(2) .item-3::after {
   content: "0.9";
@@ -14362,7 +14368,7 @@ ul.list-clear li.list-box:last-child {
   content: "16px";
 }
 .wrap-item-typeFluid:nth-child(3) .item-2::after {
-  content: "12px";
+  content: "14px";
 }
 .wrap-item-typeFluid:nth-child(3) .item-3::after {
   content: "0.9";
@@ -14378,7 +14384,7 @@ ul.list-clear li.list-box:last-child {
   content: "18px";
 }
 .wrap-item-typeFluid:nth-child(4) .item-2::after {
-  content: "12px";
+  content: "14px";
 }
 .wrap-item-typeFluid:nth-child(4) .item-3::after {
   content: "0.9";
@@ -14394,7 +14400,7 @@ ul.list-clear li.list-box:last-child {
   content: "20px";
 }
 .wrap-item-typeFluid:nth-child(5) .item-2::after {
-  content: "12px";
+  content: "14px";
 }
 .wrap-item-typeFluid:nth-child(5) .item-3::after {
   content: "0.9";
@@ -14410,7 +14416,7 @@ ul.list-clear li.list-box:last-child {
   content: "30px";
 }
 .wrap-item-typeFluid:nth-child(6) .item-2::after {
-  content: "80px";
+  content: "50px";
 }
 .wrap-item-typeFluid:nth-child(6) .item-3::after {
   content: "0.9";
@@ -16486,7 +16492,7 @@ ul.list-clear li.list-box:last-child {
   content: "14px";
 }
 .text-fluids .filas:nth-child(2) .item-2::after {
-  content: "12px";
+  content: "14px";
 }
 .text-fluids .filas:nth-child(2) .item-3::after {
   content: "0.9";
@@ -16502,7 +16508,7 @@ ul.list-clear li.list-box:last-child {
   content: "16px";
 }
 .text-fluids .filas:nth-child(3) .item-2::after {
-  content: "12px";
+  content: "14px";
 }
 .text-fluids .filas:nth-child(3) .item-3::after {
   content: "0.9";
@@ -16518,7 +16524,7 @@ ul.list-clear li.list-box:last-child {
   content: "18px";
 }
 .text-fluids .filas:nth-child(4) .item-2::after {
-  content: "12px";
+  content: "14px";
 }
 .text-fluids .filas:nth-child(4) .item-3::after {
   content: "0.9";
@@ -16534,7 +16540,7 @@ ul.list-clear li.list-box:last-child {
   content: "20px";
 }
 .text-fluids .filas:nth-child(5) .item-2::after {
-  content: "12px";
+  content: "14px";
 }
 .text-fluids .filas:nth-child(5) .item-3::after {
   content: "0.9";
@@ -16550,7 +16556,7 @@ ul.list-clear li.list-box:last-child {
   content: "30px";
 }
 .text-fluids .filas:nth-child(6) .item-2::after {
-  content: "80px";
+  content: "50px";
 }
 .text-fluids .filas:nth-child(6) .item-3::after {
   content: "0.9";

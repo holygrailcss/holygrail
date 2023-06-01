@@ -27,6 +27,12 @@
 .c-black {
   color: $c-black;
 }
+.c-dark-grey.is-through::after{
+  background-color:  $c-dark-grey;
+}
+.c-feel-dark.is-through::after{
+  background-color:  $c-feel-dark;
+}
 
 .c-dark-grey {
   color: $c-dark-grey;
@@ -52,6 +58,10 @@
 
 .c-error {
   color: $c-error;
+}
+
+.c-sale {
+  color: $c-sale;
 }
 
 .c-info {
@@ -397,6 +407,12 @@ hr {
   }
 }
 
+.smmax\:mb-24 {
+  @media (max-width: #{$break-sm - 1}) {
+    margin-bottom: 24px;
+  }
+}
+
 .smmax\:mb-42 {
   @media (max-width: #{$break-sm - 1}) {
     margin-bottom: 42px;
@@ -709,3 +725,6 @@ strong {
   flex-grow: 0;
 }
 
+.d-inline {
+  display: inline-block;
+}
