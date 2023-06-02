@@ -147,7 +147,6 @@ img {
     transform: translate(-50%, 0);
   }
 }
-/* @import "abstract/0debug";  si queremos debugar la maqueta */
 *,
 *::before,
 *::after {
@@ -603,6 +602,12 @@ img {
 @media (min-width: 1280px) {
   .lg\:min-text-right {
     text-align: right;
+  }
+}
+
+@media (min-width: 768px) {
+  .sm\:min-content-end {
+    justify-content: flex-end;
   }
 }
 
@@ -5411,6 +5416,12 @@ hr {
 }
 
 @media (max-width: 767px) {
+  .smmax\:mb-24 {
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 767px) {
   .smmax\:mb-42 {
     margin-bottom: 42px;
   }
@@ -6487,11 +6498,6 @@ strong {
   color: #fff;
 }
 
-.btn-block {
-  display: block;
-  width: 100%;
-}
-
 .btn-blue {
   background-color: #1a32a4;
   color: #fff;
@@ -6563,7 +6569,7 @@ strong {
   align-items: center;
   border-radius: 8px;
   margin-top: -3px;
-  margin-right: 16px;
+  margin-right: 12px;
   top: 0;
   left: 1px;
 }
@@ -6647,6 +6653,11 @@ strong {
   opacity: 1;
   background-color: #02b953;
   border: 1px solid #2dc100;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
 }
 
 .btns {
@@ -6909,16 +6920,6 @@ strong {
   background-color: #f0f0f0;
   color: #8e8e8e;
   cursor: default;
-}
-.has-light .btn-underline {
-  color: #fff;
-}
-.has-light .btn-underline::after {
-  background-color: #fff;
-}
-.has-light .btn-underline:hover, .has-light .btn-underline.hover, .has-light .btn-underline:focus, .has-light .btn-underline.focus {
-  background-color: transparent;
-  color: #fff;
 }
 .has-light .btn-google svg path {
   fill: initial;
@@ -9153,10 +9154,11 @@ ul.list-mini > li::after {
   overflow: hidden;
 }
 .progressbar .progressbar-status {
-  width: 8px;
+  min-width: 8px;
   height: 8px;
   border-radius: 8px;
   background-color: #292929;
+  transition: all 0.2s ease;
 }
 
 @keyframes underline {
@@ -9896,8 +9898,8 @@ ul.list-clear li.list-box:last-child {
   border: 0;
   cursor: pointer;
   display: inline-block;
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   left: 0;
   line-height: 16px;
   margin-right: 6px;
@@ -9908,23 +9910,44 @@ ul.list-clear li.list-box:last-child {
   top: 0;
   vertical-align: middle;
 }
+.color-wrap button:hover .color-selector::before, .color-wrap button.is-active .color-selector::before {
+  transform: scale(1);
+}
 .color-wrap button .color-selector {
+  border-radius: 50%;
   box-sizing: border-box;
   display: inline-block;
-  height: 16px;
+  height: 100%;
   margin: 0;
   margin-top: 0;
   position: relative;
   top: 0;
-  width: 16px;
+  width: 100%;
+}
+.color-wrap button .color-selector::before {
+  border: 1px solid #d8d8d8;
+  border-radius: 50%;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: scale(0);
+  transition: all ease 275ms;
+  width: 100%;
 }
 .color-wrap button .color-selector img,
 .color-wrap button .color-selector .color-plain {
-  position: absolute;
-  left: 0;
   border: 1px solid #d8d8d8;
-  height: 16px;
-  width: 16px;
+  border-radius: 50%;
+  height: 10px;
+  left: 50%;
+  margin-left: -5px;
+  margin-top: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
 }
 .color-wrap button .color-selector span {
   border: 1px solid #e3e3e3;
@@ -9938,9 +9961,9 @@ ul.list-clear li.list-box:last-child {
   transform: translateY(-50%);
   width: 12px;
 }
-.color-wrap button:hover .color-selector img,
-.color-wrap button .is-active .color-selector img {
-  border: 1px solid black;
+.color-wrap button:hover::before,
+.color-wrap button .is-active {
+  transform: scale(1);
 }
 .color-wrap button .color-square {
   border-radius: 0;
