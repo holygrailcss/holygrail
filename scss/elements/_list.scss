@@ -245,3 +245,20 @@ ul.list-mini {
     background: $c-light-grey;
   }
 }
+
+//has-light
+ul.list-disc, ul.list-mini {
+  &.has-light {
+    > li {
+      &.is-missing {
+        &::after {
+          background-color: $c-white;
+        }
+      }
+  
+      &::after {
+        background-color: $c-white;
+      }
+    }
+  }
+}

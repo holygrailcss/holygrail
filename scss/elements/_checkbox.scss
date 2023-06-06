@@ -486,23 +486,20 @@
   .checkbox-item {
     [type="checkbox"]:checked + label::before,
     [type="checkbox"]:not(:checked) + label::before {
-      border: 1px solid $c-error;
+      border: 1px solid $c-error!important;
     }
     a {
-      color: $c-error;
+      color: $c-error!important;
     }
-
     svg {
       g {
-        fill: $c-error;
+        fill: $c-error!important;
         polyline {
-          stroke: $c-error;
+          stroke: $c-error!important;
         }
       }
     }
   }
-
-
 }
 
 .has-light {

@@ -876,6 +876,23 @@ $btn-text-full: 14px;
 
 }
 
+.btn-apple-secondary ,.has-light .btn-apple-secondary {
+  background-color: $c-white;
+  color: $c-black;
+  border: 1px solid $c-black;
+  &:focus,
+  &.focus,
+  &:hover,
+  &.hover,
+  &:visited,
+  &:active,
+  &.active {
+    opacity: 1;
+    background-color: $c-white;
+    border: 1px solid $c-dark-grey;
+  }
+}
+
 .btn-naver ,.has-light .btn-naver {
   background-color: $c-naver;
   color: $c-white;
