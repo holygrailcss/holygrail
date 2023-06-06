@@ -68,7 +68,9 @@ svg-icon {
   justify-content: center;
   align-items: center;
   background-color: $c-middle-grey;
-
+  flex-basis: 40px;
+  flex-grow: 0;
+  flex-shrink: 0;
   .ico-count {
     width: 16px;
     height: 16px;
