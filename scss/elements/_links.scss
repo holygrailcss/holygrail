@@ -355,9 +355,12 @@ button.link-line {
   &.c-feel {
     background-image: linear-gradient(transparent calc(100% - 1px), $c-feel 10px);
   }
+  &.is-error, &.c-error {
+    background-image: linear-gradient(transparent calc(100% - 1px), $c-error 10px);
+  }
 }
 
-.is-error {
+.is-error{
   .link-line {
     background-image: linear-gradient(transparent calc(100% - 1px), $c-error 10px);
   }
@@ -386,28 +389,18 @@ button.link-line {
   border: 0;
   transform: none;
   cursor: pointer;
-  background: initial;
+  background-position-x: 20px;
 
   svg-icon {
     position: absolute;
     left: 0;
-    bottom: 4px;
+    top: 2px;
     width: 16px;
     height: 16px;
   }
 
   &:hover {
     opacity: $opacity-links;
-  }
-
-  &::after {
-    content: '';
-    background-color: $c-primary;
-    position: absolute;
-    bottom: 0;
-    width: calc(100% - 20px);
-    left: 20px;
-    height: 1px;
   }
 }
 
@@ -421,28 +414,18 @@ button.link-line {
   border: 0;
   transform: none;
   cursor: pointer;
-  background: initial;
+  background-position: calc(100% - 20px);
 
   svg-icon {
     position: absolute;
     right: 0;
-    bottom: 4px;
+    top: 2px;
     width: 16px;
     height: 16px;
   }
 
   &:hover {
     opacity: $opacity-links;
-  }
-
-  &::after {
-    content: '';
-    background-color: $c-primary;
-    position: absolute;
-    bottom: 0;
-    width: calc(100% - 20px);
-    left: 0;
-    height: 1px;
   }
 }
 
@@ -540,21 +523,9 @@ button.link-line.link-svg-post {
 
   .link-svg-post {
     color: white;
-    background-image: none;
-
-    &::after {
-      background-color: #fff;
-    }
-
   }
 
   .link-svg-pre {
     color: white;
-    background-image: none;
-
-    &::after {
-      background-color: #fff;
-    }
-
   }
 }
