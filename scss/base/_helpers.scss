@@ -67,6 +67,11 @@
 .c-info {
   color: $c-info;
 }
+
+.c-studio {
+  color: $c-studio;
+}
+
 .c-success {
   color: $c-success;
 }
@@ -144,6 +149,11 @@
 
 .bg-info {
   background-color: $c-info;
+  color: $c-white;
+}
+
+.bg-studio {
+  background-color: $c-studio;
   color: $c-white;
 }
 
