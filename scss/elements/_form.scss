@@ -238,13 +238,16 @@ label {
 .is-error {
   .input,
   label,
-  ::placeholder,
   .help {
     color: $c-error !important;
   }
 
   .input {
     border: 1px solid $c-error;
+  }
+
+  .input-prefix :nth-child(1)::placeholder {
+    color: $c-error;
   }
 
   svg {
@@ -259,12 +262,18 @@ label {
 }
 
 .ok-input {
-  label {
-    color: $c-success;
+  .input,
+  label,
+  .help {
+    color: $c-success !important;
   }
 
   .input {
     border: 1px solid $c-success;
+    color: $c-success;
+  }
+
+  .input-prefix :nth-child(1)::placeholder {
     color: $c-success;
   }
 
@@ -704,11 +713,11 @@ input::input-placeholder {
   gap: 8px;
 
   :nth-child(1) {
-    flex: 0 0 80px;
+    flex: 0 0 75px;
   }
 
   :nth-child(2) {
-    flex: 1 0 140px;
+    flex: 3 0 130px;
   }
   
   :nth-child(3) {

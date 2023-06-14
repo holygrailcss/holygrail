@@ -1554,6 +1554,9 @@ svg-icon.ico-success path {
   justify-content: center;
   align-items: center;
   background-color: #e3e3e3;
+  flex-basis: 40px;
+  flex-grow: 0;
+  flex-shrink: 0;
 }
 .ico-ball .ico-count {
   width: 16px;
@@ -4461,16 +4464,16 @@ mark {
   }
 }
 
-.fluid-16-l {
+.fluid-6-l {
   font-family: arial, sans-serif;
   font-weight: 100;
 }
-.fluid-16-l {
+.fluid-6-l {
   font-size: 16px;
   line-height: 0.9;
 }
 @media screen and (min-width: 319px) {
-  .fluid-16-l {
+  .fluid-6-l {
     font-size: calc(
                 16px + -2 *
                   ((100vw - 319px) / 1181)
@@ -4479,22 +4482,22 @@ mark {
   }
 }
 @media screen and (min-width: 1500px) {
-  .fluid-16-l {
+  .fluid-6-l {
     font-size: 14px;
     line-height: 0.9;
   }
 }
 
-.fluid-16-r {
+.fluid-6-r {
   font-family: arial, sans-serif;
   font-weight: 500;
 }
-.fluid-16-r {
+.fluid-6-r {
   font-size: 16px;
   line-height: 0.9;
 }
 @media screen and (min-width: 319px) {
-  .fluid-16-r {
+  .fluid-6-r {
     font-size: calc(
                 16px + -2 *
                   ((100vw - 319px) / 1181)
@@ -4503,22 +4506,22 @@ mark {
   }
 }
 @media screen and (min-width: 1500px) {
-  .fluid-16-r {
+  .fluid-6-r {
     font-size: 14px;
     line-height: 0.9;
   }
 }
 
-.fluid-16-m {
+.fluid-6-m {
   font-family: arial, sans-serif;
   font-weight: 500;
 }
-.fluid-16-m {
+.fluid-6-m {
   font-size: 16px;
   line-height: 0.9;
 }
 @media screen and (min-width: 319px) {
-  .fluid-16-m {
+  .fluid-6-m {
     font-size: calc(
                 16px + -2 *
                   ((100vw - 319px) / 1181)
@@ -4527,22 +4530,22 @@ mark {
   }
 }
 @media screen and (min-width: 1500px) {
-  .fluid-16-m {
+  .fluid-6-m {
     font-size: 14px;
     line-height: 0.9;
   }
 }
 
-.fluid-16-b {
+.fluid-6-b {
   font-family: arial, sans-serif;
   font-weight: 900;
 }
-.fluid-16-b {
+.fluid-6-b {
   font-size: 16px;
   line-height: 0.9;
 }
 @media screen and (min-width: 319px) {
-  .fluid-16-b {
+  .fluid-6-b {
     font-size: calc(
                 16px + -2 *
                   ((100vw - 319px) / 1181)
@@ -4551,7 +4554,7 @@ mark {
   }
 }
 @media screen and (min-width: 1500px) {
-  .fluid-16-b {
+  .fluid-6-b {
     font-size: 14px;
     line-height: 0.9;
   }
@@ -5081,6 +5084,10 @@ mark {
   color: #1a32a4;
 }
 
+.c-studio {
+  color: #3984D9;
+}
+
 .c-success {
   color: #76ae4a;
 }
@@ -5159,6 +5166,11 @@ mark {
 
 .bg-info {
   background-color: #1a32a4;
+  color: #fff;
+}
+
+.bg-studio {
+  background-color: #3984D9;
   color: #fff;
 }
 
@@ -5732,6 +5744,22 @@ strong {
 
 .d-inline {
   display: inline-block;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
+}
+
+.flex-auto {
+  flex: 1 1 auto;
+}
+
+.flex-initial {
+  flex: 0 1 auto;
+}
+
+.flex-none {
+  flex: none;
 }
 
 @keyframes underline {
@@ -6631,6 +6659,17 @@ strong {
   border: 1px solid #8e8e8e;
 }
 
+.btn-apple-secondary, .has-light .btn-apple-secondary {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
+.btn-apple-secondary:focus, .btn-apple-secondary.focus, .btn-apple-secondary:hover, .btn-apple-secondary.hover, .btn-apple-secondary:visited, .btn-apple-secondary:active, .btn-apple-secondary.active, .has-light .btn-apple-secondary:focus, .has-light .btn-apple-secondary.focus, .has-light .btn-apple-secondary:hover, .has-light .btn-apple-secondary.hover, .has-light .btn-apple-secondary:visited, .has-light .btn-apple-secondary:active, .has-light .btn-apple-secondary.active {
+  opacity: 1;
+  background-color: #fff;
+  border: 1px solid #8e8e8e;
+}
+
 .btn-naver, .has-light .btn-naver {
   background-color: #03cf5d;
   color: #fff;
@@ -7359,16 +7398,16 @@ strong {
 
 .is-error .checkbox-item [type=checkbox]:checked + label::before,
 .is-error .checkbox-item [type=checkbox]:not(:checked) + label::before {
-  border: 1px solid #b40016;
+  border: 1px solid #b40016 !important;
 }
 .is-error .checkbox-item a {
-  color: #b40016;
+  color: #b40016 !important;
 }
 .is-error .checkbox-item svg g {
-  fill: #b40016;
+  fill: #b40016 !important;
 }
 .is-error .checkbox-item svg g polyline {
-  stroke: #b40016;
+  stroke: #b40016 !important;
 }
 
 .has-light .checkbox-item .ico-check::after {
@@ -7674,12 +7713,14 @@ label {
 
 .is-error .input,
 .is-error label,
-.is-error textarea::placeholder,
 .is-error .help {
   color: #b40016 !important;
 }
 .is-error .input {
   border: 1px solid #b40016;
+}
+.is-error .input-prefix :nth-child(1)::placeholder {
+  color: #b40016;
 }
 .is-error svg g {
   stroke: #b40016 !important;
@@ -7688,11 +7729,16 @@ label {
   fill: #b40016 !important;
 }
 
-.ok-input label {
-  color: #76ae4a;
+.ok-input .input,
+.ok-input label,
+.ok-input .help {
+  color: #76ae4a !important;
 }
 .ok-input .input {
   border: 1px solid #76ae4a;
+  color: #76ae4a;
+}
+.ok-input .input-prefix :nth-child(1)::placeholder {
   color: #76ae4a;
 }
 .ok-input .input-line {
@@ -8066,6 +8112,21 @@ input::input-placeholder {
 .form-input-prefix .form-input-label-2 {
   display: inline-block;
   width: calc(100% - 60px);
+}
+
+.form-prefix {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.form-prefix :nth-child(1) {
+  flex: 0 0 75px;
+}
+.form-prefix :nth-child(2) {
+  flex: 3 0 130px;
+}
+.form-prefix :nth-child(3) {
+  flex: 1 0 auto;
 }
 
 .select-line {
@@ -8705,6 +8766,9 @@ button.link-line {
 .link-line.c-feel {
   background-image: linear-gradient(transparent calc(100% - 1px), #fb9962 10px);
 }
+.link-line.is-error, .link-line.c-error {
+  background-image: linear-gradient(transparent calc(100% - 1px), #b40016 10px);
+}
 
 .is-error .link-line {
   background-image: linear-gradient(transparent calc(100% - 1px), #b40016 10px);
@@ -8731,26 +8795,17 @@ button.link-line {
   border: 0;
   transform: none;
   cursor: pointer;
-  background: initial;
+  background-position-x: 20px;
 }
 .link-svg-pre svg-icon {
   position: absolute;
   left: 0;
-  bottom: 4px;
+  top: 2px;
   width: 16px;
   height: 16px;
 }
 .link-svg-pre:hover {
   opacity: 0.6;
-}
-.link-svg-pre::after {
-  content: "";
-  background-color: #292929;
-  position: absolute;
-  bottom: 0;
-  width: calc(100% - 20px);
-  left: 20px;
-  height: 1px;
 }
 
 .link-svg-post {
@@ -8762,26 +8817,17 @@ button.link-line {
   border: 0;
   transform: none;
   cursor: pointer;
-  background: initial;
+  background-position: calc(100% - 20px);
 }
 .link-svg-post svg-icon {
   position: absolute;
   right: 0;
-  bottom: 4px;
+  top: 2px;
   width: 16px;
   height: 16px;
 }
 .link-svg-post:hover {
   opacity: 0.6;
-}
-.link-svg-post::after {
-  content: "";
-  background-color: #292929;
-  position: absolute;
-  bottom: 0;
-  width: calc(100% - 20px);
-  left: 0;
-  height: 1px;
 }
 
 button.link-line.link-svg-pre {
@@ -8856,17 +8902,9 @@ button.link-line.link-svg-post {
 }
 .has-light .link-svg-post {
   color: white;
-  background-image: none;
-}
-.has-light .link-svg-post::after {
-  background-color: #fff;
 }
 .has-light .link-svg-pre {
   color: white;
-  background-image: none;
-}
-.has-light .link-svg-pre::after {
-  background-color: #fff;
 }
 
 @keyframes underline {
@@ -9107,6 +9145,13 @@ ul.list-mini > li::after {
 .list-selection .is-active {
   padding: 8px;
   background: #f0f0f0;
+}
+
+ul.list-disc.has-light > li.is-missing::after, ul.list-mini.has-light > li.is-missing::after {
+  background-color: #fff;
+}
+ul.list-disc.has-light > li::after, ul.list-mini.has-light > li::after {
+  background-color: #fff;
 }
 
 @keyframes underline {
@@ -14382,7 +14427,7 @@ ul.list-clear li.list-box:last-child {
 }
 
 .wrap-item-typeFluid:nth-child(3) .item::after {
-  content: "16";
+  content: "6";
 }
 .wrap-item-typeFluid:nth-child(3) .item-0 {
   word-wrap: break-word;
@@ -16522,7 +16567,7 @@ ul.list-clear li.list-box:last-child {
 }
 
 .text-fluids .filas:nth-child(3) .item::after {
-  content: "16";
+  content: "6";
 }
 .text-fluids .filas:nth-child(3) .item-0 {
   word-wrap: break-word;
