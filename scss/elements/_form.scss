@@ -675,6 +675,7 @@ input::input-placeholder {
   height: 40px;
 }
 
+//deprecated
 .form-input-prefix {
   display: flex;
 
@@ -694,6 +695,24 @@ input::input-placeholder {
   .form-input-label-2 {
     display: inline-block;
     width: calc(100% - 60px);
+  }
+}
+
+.form-prefix {
+  display :flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  :nth-child(1) {
+    flex: 0 0 80px;
+  }
+
+  :nth-child(2) {
+    flex: 1 0 140px;
+  }
+  
+  :nth-child(3) {
+    flex: 1 0 auto;
   }
 }
 
