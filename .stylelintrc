@@ -9,7 +9,6 @@
     "selector-pseudo-class-no-unknown": null,
     "scss/operator-no-unspaced": null,
     "selector-no-vendor-prefix": null,
-    "selector-pseudo-class-no-unknown ": null,
     "declaration-block-no-shorthand-property-overrides": null,
     "keyframe-selector-notation": null,
     "scss/double-slash-comment-whitespace-inside": null,
@@ -18,12 +17,9 @@
     "rule-empty-line-before":null,
     "scss/operator-no-newline-after":null,
     "keyframes-name-pattern":null,
-
     "no-duplicate-at-import-rules":null,
-
-     "scss/at-mixin-pattern":null,
+    "scss/at-mixin-pattern":null,
     "scss/dollar-variable-empty-line-before":null,
     "scss/at-extend-no-missing-placeholder":null
-
   }
 }

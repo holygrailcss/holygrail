@@ -30,6 +30,7 @@ $btn-text-full: 14px;
   cursor: pointer;
   padding: $btn-padding;
   background-color: transparent;
+
   @include font-regular;
 
   &:focus,
@@ -49,7 +50,6 @@ $btn-text-full: 14px;
   &[disabled],
   &:disabled,
   &.disabled {
-    cursor: default;
     pointer-events: none;
     filter: grayscale(1);
     background-color: $c-middle-grey;
@@ -199,7 +199,6 @@ $btn-text-full: 14px;
   padding-left: $padding-global * 3 ;
   font-size: $btn-text-mini;
   height: 32px;
-
   display: inline-flex;
   align-content: center;
   align-items: center;
@@ -769,7 +768,6 @@ $btn-text-full: 14px;
     border-radius: $btn-radius;
     margin-top: -3px;
     margin-right: 12px;
-
     top: 0;
     left: 1px;
 
@@ -955,7 +953,7 @@ $btn-text-full: 14px;
   position: relative;
   display: flex;
 
-  & > :not(:first-child):not(:last-child) {
+  & > :not(:first-child, :last-child) {
     border-radius: 0;
     margin-left: -1px;
   }

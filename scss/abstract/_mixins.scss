@@ -56,32 +56,23 @@
 @mixin fonters($param) {
   @if $param=='light' {
     @include font-light;
-  }
-  @else if $param=='regular' {
+  } @else if $param=='regular' {
     @include font-regular;
-  }
-  @else if $param=='medium' {
+  } @else if $param=='medium' {
     @include font-medium;
-  }
-  @else if $param=='bold' {
+  } @else if $param=='bold' {
     @include font-bold;
-  }
-  @else if $param=='regular2' {
+  } @else if $param=='regular2' {
     @include font-2-regular;
-  }
-  @else if $param=='medium2' {
+  } @else if $param=='medium2' {
     @include font-2-medium;
-  }
-  @else if $param=='bold2' {
+  } @else if $param=='bold2' {
     @include font-2-bold;
-  }
-  @else if $param=='regular3' {
+  } @else if $param=='regular3' {
     @include font-3-regular;
-  }
-  @else if $param=='medium3' {
+  } @else if $param=='medium3' {
     @include font-3-medium;
-  }
-  @else if $param=='bold3' {
+  } @else if $param=='bold3' {
     @include font-3-bold;
   }
 }
@@ -324,7 +315,6 @@
       display: flex;
       -webkit-box-flex: 0;
       flex: 0 1 auto;
-
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
       flex-flow: row wrap;
@@ -573,7 +563,7 @@
       @content;
     }
   } @else if $consulta == retina {
-    @media only screen and (min-device-pixel-ratio: 2),
+    @media only screen and (minpixel-ratio: 2),
       only screen and (min--moz-device-pixel-ratio: 2),
       only screen and (-o-min-device-pixel-ratio: 2/1),
       only screen and (min-device-pixel-ratio: 2),
@@ -584,7 +574,7 @@
   }
 }
 
-@function calculateRem($size) {
+@function calculate-rem($size) {
   $remSize: $size / 16px;
 
   @return $remSize * 1rem;
@@ -592,7 +582,7 @@
 
 @mixin font-size($size) {
   font-size: $size;
-  font-size: calculaterem($size);
+  font-size: calculate-rem($size);
 }
 
 @mixin opacity($opacity) {

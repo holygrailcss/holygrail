@@ -470,7 +470,7 @@ input::input-placeholder {
     height: 48px;
   }
 
-  &:not(.is-multiple):not(.is-loading)::after {
+  &:not(.is-multiple, .is-loading)::after {
     border-color: $c-primary;
   }
 
@@ -496,7 +496,7 @@ input::input-placeholder {
     padding: 0 40px;
   }
 
-  &:not(.is-multiple):not(.is-loading):hover::after {
+  &:not(.is-multiple, .is-loading):hover::after {
     border-color: $c-primary;
   }
 
@@ -578,6 +578,7 @@ input::input-placeholder {
         height: 48px;
         font-size: 14px;
       }
+
       opacity: 0;
 
       &:hover {
