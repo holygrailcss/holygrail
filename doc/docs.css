@@ -1,19 +1,16 @@
 @charset "UTF-8";
-/*
-  The code below has been extracted from the following projects:
-
-  - https://github.com/murtaugh/HTML5-Reset
-  - http://meyerweb.com
-  - http://html5doctor.com
-  - http://html5boilerplate.com
-
-  … and then cleaned up a lot.
-*/
 @import "https://fonts.googleapis.com/css2?family=Muli&display=swap";
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html,
 body,
 div,
 span,
+select,
 object,
 iframe,
 h1,
@@ -26,13 +23,27 @@ p,
 blockquote,
 pre,
 abbr,
+address,
+cite,
 code,
+del,
+dfn,
 em,
 img,
+ins,
+kbd,
+q,
+samp,
 small,
 strong,
 sub,
 sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
 ol,
 ul,
 li,
@@ -41,6 +52,7 @@ form,
 label,
 legend,
 table,
+caption,
 tbody,
 tfoot,
 thead,
@@ -49,118 +61,56 @@ th,
 td,
 article,
 aside,
+figure,
 footer,
 header,
+main,
+menu,
 nav,
 section,
 time,
+mark,
 audio,
 video {
+  margin: 0;
   padding: 0;
   border: 0;
-  margin: 0;
-  background: transparent;
+  outline: 0;
   font-size: 100%;
-  font-weight: inherit;
   vertical-align: baseline;
+  background: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
 }
 
 article,
 aside,
+details,
+figcaption,
 figure,
 footer,
 header,
+main,
+menu,
 nav,
-section {
+section,
+summary {
   display: block;
 }
 
-html {
-  box-sizing: border-box;
-  overflow-y: scroll;
-}
-
-html,
-body {
-  background-color: #fff;
-  color: #000;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-img,
-object {
+img {
   max-width: 100%;
-}
-
-ul {
-  list-style: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-th {
-  font-weight: bold;
-  vertical-align: bottom;
-}
-
-td {
-  font-weight: normal;
-  vertical-align: top;
-}
-
-input,
-select {
+  border-width: 0;
   vertical-align: middle;
-}
-
-input[type=radio] {
-  vertical-align: text-bottom;
-}
-
-input[type=checkbox] {
-  vertical-align: bottom;
-}
-
-strong {
-  font-weight: bold;
-}
-
-label,
-input[type=file] {
-  cursor: pointer;
-}
-
-input,
-select,
-textarea {
-  border: 0;
-  border-radius: 0;
-  margin: 0;
-}
-
-button,
-input[type=button],
-input[type=submit] {
-  padding: 0;
-  border: 0;
-  border-radius: 0;
-  margin: 0;
-  background: transparent;
-  appearance: none;
-  cursor: pointer;
-}
-
-button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
+  -ms-interpolation-mode: bicubic;
 }
 
 @keyframes underline {
@@ -197,20 +147,17 @@ button::-moz-focus-inner {
     transform: translate(-50%, 0);
   }
 }
-/*
-  The code below has been extracted from the following projects:
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
-  - https://github.com/murtaugh/HTML5-Reset
-  - http://meyerweb.com
-  - http://html5doctor.com
-  - http://html5boilerplate.com
-
-  … and then cleaned up a lot.
-*/
 html,
 body,
 div,
 span,
+select,
 object,
 iframe,
 h1,
@@ -223,13 +170,27 @@ p,
 blockquote,
 pre,
 abbr,
+address,
+cite,
 code,
+del,
+dfn,
 em,
 img,
+ins,
+kbd,
+q,
+samp,
 small,
 strong,
 sub,
 sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
 ol,
 ul,
 li,
@@ -238,6 +199,7 @@ form,
 label,
 legend,
 table,
+caption,
 tbody,
 tfoot,
 thead,
@@ -246,118 +208,56 @@ th,
 td,
 article,
 aside,
+figure,
 footer,
 header,
+main,
+menu,
 nav,
 section,
 time,
+mark,
 audio,
 video {
+  margin: 0;
   padding: 0;
   border: 0;
-  margin: 0;
-  background: transparent;
+  outline: 0;
   font-size: 100%;
-  font-weight: inherit;
   vertical-align: baseline;
+  background: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
 }
 
 article,
 aside,
+details,
+figcaption,
 figure,
 footer,
 header,
+main,
+menu,
 nav,
-section {
+section,
+summary {
   display: block;
 }
 
-html {
-  box-sizing: border-box;
-  overflow-y: scroll;
-}
-
-html,
-body {
-  background-color: #fff;
-  color: #000;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-img,
-object {
+img {
   max-width: 100%;
-}
-
-ul {
-  list-style: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-th {
-  font-weight: bold;
-  vertical-align: bottom;
-}
-
-td {
-  font-weight: normal;
-  vertical-align: top;
-}
-
-input,
-select {
+  border-width: 0;
   vertical-align: middle;
-}
-
-input[type=radio] {
-  vertical-align: text-bottom;
-}
-
-input[type=checkbox] {
-  vertical-align: bottom;
-}
-
-strong {
-  font-weight: bold;
-}
-
-label,
-input[type=file] {
-  cursor: pointer;
-}
-
-input,
-select,
-textarea {
-  border: 0;
-  border-radius: 0;
-  margin: 0;
-}
-
-button,
-input[type=button],
-input[type=submit] {
-  padding: 0;
-  border: 0;
-  border-radius: 0;
-  margin: 0;
-  background: transparent;
-  appearance: none;
-  cursor: pointer;
-}
-
-button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
+  -ms-interpolation-mode: bicubic;
 }
 
 @keyframes underline {
@@ -5182,10 +5082,6 @@ mark {
   color: #1a32a4;
 }
 
-.c-studio {
-  color: #3984D9;
-}
-
 .c-success {
   color: #76ae4a;
 }
@@ -5264,11 +5160,6 @@ mark {
 
 .bg-info {
   background-color: #1a32a4;
-  color: #fff;
-}
-
-.bg-studio {
-  background-color: #3984D9;
   color: #fff;
 }
 
@@ -6138,7 +6029,7 @@ strong {
   position: relative;
   display: inline-flex;
   align-items: center;
-  border-radius: 8px;
+  border-radius: 0;
   overflow: hidden;
   text-align: center;
   box-sizing: border-box;
@@ -6641,7 +6532,7 @@ strong {
   color: #292929;
   background-color: transparent;
   padding: 0;
-  border-radius: 8px;
+  border-radius: 0;
 }
 
 .btn-trans {
@@ -6692,7 +6583,7 @@ strong {
   align-content: center;
   justify-content: center;
   align-items: center;
-  border-radius: 8px;
+  border-radius: 0;
   margin-top: -3px;
   margin-right: 12px;
   top: 0;
@@ -6838,10 +6729,10 @@ strong {
   border-radius: 0;
 }
 .btn-group .btn:first-child {
-  border-radius: 8px 0 0 8px;
+  border-radius: 0 0 0 0;
 }
 .btn-group .btn:last-child {
-  border-radius: 0 8px 8px 0;
+  border-radius: 0 0 0 0;
 }
 
 .btn-group-inline {
@@ -7010,7 +6901,7 @@ strong {
   align-content: center;
   justify-content: center;
   align-items: center;
-  border-radius: 8px;
+  border-radius: 0;
   position: absolute;
   top: 0;
   left: 1px;
@@ -7020,7 +6911,7 @@ strong {
 }
 
 .btn.btn-secondary-rd {
-  border-radius: 8px;
+  border-radius: 0;
   border: 1px solid #292929;
   padding: 9px 2px 4px;
   height: 32px;
@@ -7454,7 +7345,7 @@ strong {
 }
 
 .checkbox-card .checkbox-card-label {
-  border-radius: 8px;
+  border-radius: 0;
   overflow: hidden;
   border: 1px solid #e3e3e3;
   background: #fff;
@@ -7711,7 +7602,7 @@ label {
 .input-gray {
   padding-left: 40px;
   background: rgba(0, 0, 0, 0.05);
-  border-radius: 8px;
+  border-radius: 0;
   border: none;
 }
 
@@ -7904,7 +7795,7 @@ input::input-placeholder {
   margin-bottom: 0;
   line-height: 1.1;
   color: #8e8e8e;
-  border-radius: 8px;
+  border-radius: 0;
   transition: all 0.1s ease-in-out;
   pointer-events: none;
 }
@@ -8085,7 +7976,7 @@ input::input-placeholder {
   display: none;
 }
 .select.select-secondary-rd select {
-  border-radius: 8px;
+  border-radius: 0;
   border: 1px solid #292929;
   padding: 6px 2px 4px;
   min-width: 100px;
@@ -8138,7 +8029,7 @@ input::input-placeholder {
   left: 0;
 }
 .select.select-size select {
-  border-radius: 8px;
+  border-radius: 0;
   padding-left: 16px;
   background: none;
   padding-right: 40px;
@@ -8216,13 +8107,13 @@ input::input-placeholder {
   flex-wrap: wrap;
   gap: 8px;
 }
-.form-prefix :nth-child(1) {
+.form-prefix > :not(.select):nth-child(1) {
   flex: 0 0 75px;
 }
-.form-prefix :nth-child(2) {
-  flex: 3 0 130px;
+.form-prefix > :nth-child(2) {
+  flex: 5 0 130px;
 }
-.form-prefix :nth-child(3) {
+.form-prefix > :nth-child(3) {
   flex: 1 0 auto;
 }
 
@@ -8336,7 +8227,7 @@ input::input-placeholder {
   margin-bottom: 0;
   line-height: 1.1;
   color: #8e8e8e;
-  border-radius: 8px;
+  border-radius: 0;
   transition: all 0.1s ease-in-out;
   pointer-events: none;
 }
@@ -9288,7 +9179,7 @@ ul.list-disc.has-light > li::after, ul.list-mini.has-light > li::after {
 .progressbar {
   width: 100%;
   height: 8px;
-  border-radius: 8px;
+  border-radius: 0;
   background-color: #e3e3e3;
   display: flex;
   align-items: flex-start;
@@ -9298,7 +9189,7 @@ ul.list-disc.has-light > li::after, ul.list-mini.has-light > li::after {
 .progressbar .progressbar-status {
   min-width: 8px;
   height: 8px;
-  border-radius: 8px;
+  border-radius: 0;
   background-color: #292929;
   transition: all 0.2s ease;
 }
@@ -11773,10 +11664,10 @@ ul.list-clear li.list-box:last-child {
   transform: rotateY(180deg);
 }
 .is-rtl .btn-group .btn:first-child() {
-  border-radius: 0 8px 8px 0;
+  border-radius: 0 0 0 0;
 }
 .is-rtl .btn-group .btn:last-child() {
-  border-radius: 8px 0 0 8px;
+  border-radius: 0 0 0 0;
 }
 .is-rtl .btn-social-login svg {
   margin-right: 0;
@@ -17860,7 +17751,7 @@ ul.list-clear li.list-box:last-child {
 .guide .link-template,
 .guide .link-template-mini {
   background-color: #fff;
-  border-radius: 8px;
+  border-radius: 0;
   border: 1px solid rgba(204, 204, 204, 0.4);
   overflow: visible;
   color: #ccc;
@@ -18023,7 +17914,7 @@ ul.list-clear li.list-box:last-child {
 .guide .box-info {
   padding: 20px;
   border: 1px solid gray;
-  border-radius: 8px;
+  border-radius: 0;
   font-style: italic;
   opacity: 0.5;
 }
