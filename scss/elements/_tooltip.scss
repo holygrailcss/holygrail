@@ -4,6 +4,7 @@
 $tooltip-arrow: 10px;
 $tooltip-border-color: #e3e3e3;
 $tooltip-dist: 10px;
+$tooltip-padding: 8px;
 
 .has-tooltip {
   position: relative;
@@ -19,6 +20,15 @@ $tooltip-dist: 10px;
   width: 100%;
   max-width: 240px;
   z-index: 10;
+  padding: $tooltip-padding $tooltip-padding*2;
+  padding-right: $tooltip-padding + 16px;
+  color: $c-primary;
+
+  .close {
+    position: absolute;
+    right: $tooltip-padding;
+    top: $tooltip-padding;
+  }
 
   &::after {
     content: '';

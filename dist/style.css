@@ -9384,19 +9384,33 @@ ul.list-disc.has-light > li::after, ul.list-mini.has-light > li::after {
     transform: translate(-50%, 0);
   }
 }
+.has-tooltip {
+  position: relative;
+}
+
 .tooltip-sm {
-  right: 8px;
+  top: 50%;
+  transform: translateY(16px);
+  right: 7px;
   background-color: #fff;
   border: 1px solid #e3e3e3;
   position: absolute;
   width: 100%;
-  max-width: 327px;
+  max-width: 240px;
   z-index: 10;
+  padding: 8px 16px;
+  padding-right: 24px;
+  color: #292929;
+}
+.tooltip-sm .close {
+  position: absolute;
+  right: 8px;
+  top: 8px;
 }
 .tooltip-sm::after {
-  top: -6px;
-  right: 18px;
   content: "";
+  top: -6px;
+  right: 10px;
   position: absolute;
   border-top: 1px solid #e3e3e3;
   border-left: 1px solid #e3e3e3;
