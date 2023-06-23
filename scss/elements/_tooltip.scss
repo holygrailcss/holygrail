@@ -1,28 +1,34 @@
 @use 'sass:math';
 @import '../abstract/_all';
 
-$tooltipArrow: 10px;
-$tooltipColor: #e3e3e3;
-$tooltipdist: 18px;
+$tooltip-arrow: 10px;
+$tooltip-border-color: #e3e3e3;
+$tooltip-dist: 10px;
+
+.has-tooltip {
+  position: relative;
+}
 
 .tooltip-sm {
-  right: 8px;
+  top: 50%;
+  transform: translateY(16px);
+  right: 7px;
   background-color: $c-white;
-  border: 1px solid $tooltipColor;
+  border: 1px solid $tooltip-border-color;
   position: absolute;
   width: 100%;
-  max-width: 327px;
+  max-width: 240px;
   z-index: 10;
 
   &::after {
-    top: math.div(-$tooltipArrow, 2) - 1;
-    right: $tooltipdist;
     content: '';
+    top: math.div(-$tooltip-arrow, 2) - 1;
+    right: $tooltip-dist;
     position: absolute;
-    border-top: 1px solid $tooltipColor;
-    border-left: 1px solid $tooltipColor;
-    width: $tooltipArrow;
-    height: $tooltipArrow;
+    border-top: 1px solid $tooltip-border-color;
+    border-left: 1px solid $tooltip-border-color;
+    width: $tooltip-arrow;
+    height: $tooltip-arrow;
     background: $c-white;
     transform: rotate(45deg);
   }
