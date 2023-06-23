@@ -6,14 +6,27 @@ $tooltip-border-color: #e3e3e3;
 $tooltip-dist: 10px;
 $tooltip-padding: 8px;
 
-.has-tooltip {
-  position: relative;
+.is-rtl {
+  .tooltip-sm {
+    left: 8px;
+    right: auto;
+    padding-left: $tooltip-padding + 16px;
+    padding-right: $tooltip-padding*2;
+    &::after {
+      right: auto;
+      left: $tooltip-dist;
+    }
+    .close {
+      right: auto;
+      left: $tooltip-padding;
+    }
+  }
 }
 
 .tooltip-sm {
   top: 50%;
   transform: translateY(16px);
-  right: 7px;
+  right: 8px;
   background-color: $c-white;
   border: 1px solid $tooltip-border-color;
   position: absolute;
@@ -23,12 +36,6 @@ $tooltip-padding: 8px;
   padding: $tooltip-padding $tooltip-padding*2;
   padding-right: $tooltip-padding + 16px;
   color: $c-primary;
-
-  .close {
-    position: absolute;
-    right: $tooltip-padding;
-    top: $tooltip-padding;
-  }
 
   &::after {
     content: '';
@@ -41,6 +48,12 @@ $tooltip-padding: 8px;
     height: $tooltip-arrow;
     background: $c-white;
     transform: rotate(45deg);
+  }
+
+  .close {
+    position: absolute;
+    right: $tooltip-padding;
+    top: $tooltip-padding;
   }
 }
 
