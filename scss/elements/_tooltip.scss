@@ -5,23 +5,9 @@ $tooltip-arrow: 10px;
 $tooltip-border-color: #e3e3e3;
 $tooltip-dist: 10px;
 $tooltip-padding: 8px;
+$tooltip-width: 240px;
 
-.is-rtl {
-  .tooltip-sm {
-    left: -8px;
-    right: auto;
-    padding-left: $tooltip-padding + 16px;
-    padding-right: $tooltip-padding*2;
-    &::after {
-      right: auto;
-      left: $tooltip-dist;
-    }
-    .close {
-      right: auto;
-      left: $tooltip-padding;
-    }
-  }
-}
+
 
 .tooltip-sm {
   bottom: 0;
@@ -30,7 +16,8 @@ $tooltip-padding: 8px;
   background-color: $c-white;
   border: 1px solid $tooltip-border-color;
   position: absolute;
-  width: 240px;
+  width: max-content;
+  max-width: $tooltip-width;
   z-index: 10;
   padding: $tooltip-padding;
   padding-right: $tooltip-padding + 16px;
@@ -49,13 +36,7 @@ $tooltip-padding: 8px;
     transform: rotate(45deg);
   }
 
-  .close {
-    position: absolute;
-    right: 8px;
-    top: 8px;
-  }
-
-  &.tooltip-tl {
+  &.tooltip-br, &.tooltip-tr {
     left: -8px;
     right: auto;
     &::after {
@@ -63,10 +44,22 @@ $tooltip-padding: 8px;
       left: $tooltip-dist;
     }
   }
-  &.tooltip-bl {
+
+  &.tooltip-tl, &.tooltip-tr {
     top: 0;
     bottom: auto;
     transform: translateY(-100%) translateY(-$tooltip-arrow);
+    &::after {
+      top: auto;
+      bottom: math.div(-$tooltip-arrow, 2) - 1;
+      transform: rotate(225deg);
+    }
+  }
+
+  .close {
+    position: absolute;
+    right: 8px;
+    top: 8px;
   }
 }
 
@@ -83,5 +76,31 @@ $tooltip-padding: 8px;
     left: 0;
     width: 8px;
     height: 8px;
+  }
+}
+
+.is-rtl {
+  .tooltip-sm {
+    left: -8px;
+    right: auto;
+    padding-left: $tooltip-padding + 16px;
+    padding-right: $tooltip-padding*2;
+    &::after {
+      right: auto;
+      left: $tooltip-dist;
+    }
+    &.tooltip-tl, &.tooltip-bl {
+      right: -8px;
+      left: auto;
+      &::after {
+        left: auto;
+        right: $tooltip-dist;
+      }
+    }
+
+    .close {
+      right: auto;
+      left: $tooltip-padding;
+    }
   }
 }
