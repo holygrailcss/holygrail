@@ -9540,7 +9540,7 @@ ul.list-disc.has-light > li::after, ul.list-mini.has-light > li::after {
 .tooltip-sm {
   bottom: 0;
   transform: translateY(100%) translateY(10px);
-  right: -8px;
+  right: calc(50% - 16px);
   background-color: #fff;
   border: 1px solid #e3e3e3;
   position: absolute;
@@ -9564,7 +9564,7 @@ ul.list-disc.has-light > li::after, ul.list-mini.has-light > li::after {
   transform: rotate(45deg);
 }
 .tooltip-sm.tooltip-br, .tooltip-sm.tooltip-tr {
-  left: -8px;
+  left: calc(50% - 16px);
   right: auto;
 }
 .tooltip-sm.tooltip-br::after, .tooltip-sm.tooltip-tr::after {
@@ -9603,7 +9603,7 @@ ul.list-disc.has-light > li::after, ul.list-mini.has-light > li::after {
 }
 
 .is-rtl .tooltip-sm {
-  left: -8px;
+  left: calc(50% - 16px);
   right: auto;
   padding-left: 24px;
   padding-right: 16px;
@@ -9612,11 +9612,11 @@ ul.list-disc.has-light > li::after, ul.list-mini.has-light > li::after {
   right: auto;
   left: 10px;
 }
-.is-rtl .tooltip-sm.tooltip-tl, .is-rtl .tooltip-sm.tooltip-bl {
-  right: -8px;
+.is-rtl .tooltip-sm.tooltip-tr, .is-rtl .tooltip-sm.tooltip-br {
+  right: calc(50% - 16px);
   left: auto;
 }
-.is-rtl .tooltip-sm.tooltip-tl::after, .is-rtl .tooltip-sm.tooltip-bl::after {
+.is-rtl .tooltip-sm.tooltip-tr::after, .is-rtl .tooltip-sm.tooltip-br::after {
   left: auto;
   right: 10px;
 }

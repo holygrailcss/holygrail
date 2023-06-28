@@ -12,7 +12,7 @@ $tooltip-width: 240px;
 .tooltip-sm {
   bottom: 0;
   transform: translateY(100%) translateY($tooltip-arrow);
-  right: -8px;
+  right: calc(50% - 16px);
   background-color: $c-white;
   border: 1px solid $tooltip-border-color;
   position: absolute;
@@ -37,7 +37,7 @@ $tooltip-width: 240px;
   }
 
   &.tooltip-br, &.tooltip-tr {
-    left: -8px;
+    left: calc(50% - 16px);
     right: auto;
     &::after {
       right: auto;
@@ -81,7 +81,7 @@ $tooltip-width: 240px;
 
 .is-rtl {
   .tooltip-sm {
-    left: -8px;
+    left: calc(50% - 16px);
     right: auto;
     padding-left: $tooltip-padding + 16px;
     padding-right: $tooltip-padding*2;
@@ -89,8 +89,8 @@ $tooltip-width: 240px;
       right: auto;
       left: $tooltip-dist;
     }
-    &.tooltip-tl, &.tooltip-bl {
-      right: -8px;
+    &.tooltip-tr, &.tooltip-br {
+      right: calc(50% - 16px);
       left: auto;
       &::after {
         left: auto;
