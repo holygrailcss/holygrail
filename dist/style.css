@@ -7803,21 +7803,27 @@ input::input-placeholder {
   height: 5px;
   margin-top: -3px;
 }
-.select.select-flat {
+.select.select-flat, .select.select-flat-no-icon {
   width: max-content;
 }
-.select.select-flat label {
+.select.select-flat label, .select.select-flat-no-icon label {
   z-index: 0;
   left: 0;
 }
-.select.select-flat select {
+.select.select-flat select, .select.select-flat-no-icon select {
   border: none;
   padding-left: 0;
   background: none;
   padding-right: 40px;
 }
-.select.select-flat::after {
+.select.select-flat::after, .select.select-flat-no-icon::after {
   right: 0;
+}
+.select.select-flat-no-icon {
+  padding-right: 8px;
+}
+.select.select-flat-no-icon::after {
+  content: none;
 }
 .select.select-secondary-rd {
   width: max-content;
@@ -7970,7 +7976,7 @@ input::input-placeholder {
 .form-prefix > :nth-child(2) {
   flex: 5 0 130px;
 }
-.form-prefix > :nth-child(3) {
+.form-prefix > .btn {
   flex: 1 0 auto;
 }
 

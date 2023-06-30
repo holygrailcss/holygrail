@@ -530,7 +530,7 @@ input::input-placeholder {
     }
   }
 
-  &.select-flat {
+  &.select-flat, &.select-flat-no-icon {
     width: max-content;
 
     label {
@@ -547,6 +547,13 @@ input::input-placeholder {
 
     &::after {
       right: 0;
+    }
+  }
+
+  &.select-flat-no-icon {
+    padding-right: 8px;
+    &::after {
+      content: none;
     }
   }
 
@@ -721,7 +728,7 @@ input::input-placeholder {
     flex: 5 0 130px;
   }
   
-  > :nth-child(3) {
+  > .btn {
     flex: 1 0 auto;
   }
 }
