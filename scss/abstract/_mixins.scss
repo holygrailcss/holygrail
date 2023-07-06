@@ -662,3 +662,24 @@ $spriteHeight: 400;
 @function unicode($str) {
   @return unquote('"') + unquote(str-insert($str, '\\', 1)) + unquote('"');
 }
+
+
+@mixin mintypes($minbreakpoints, $headers, $cssattr) {
+  @for $i from 1 through length($minbreakpoints) {
+    @media (min-width: nth(map-values($minbreakpoints), $i)) {
+      @each $name, $fsize in $headers {
+        $fontsize: nth($fsize, $i);
+        $fontheight: nth($fsize, 3);
+        $fontweight: nth($fsize, 4);
+        .#{$name} {
+          @if nth(map-values($minbreakpoints), $i) ==1px {
+            @include fonters($fontweight);
+          }
+
+          #{$cssattr }: $fontsize;
+          line-height: $fontheight;
+        }
+      }
+    }
+  }
+}
