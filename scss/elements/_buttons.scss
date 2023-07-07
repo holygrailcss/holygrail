@@ -43,7 +43,7 @@ $btn-text-full: 14px;
     text-decoration: none;
     opacity: 0.6;
     outline: none;
-    background-color: transparent;
+
 
  
   }
@@ -1001,9 +1001,6 @@ $btn-text-full: 14px;
   }
 }
 
-.btn-group-container {
-  display: flex;
-}
 
 .btn-anim {
   height: 48px;
@@ -1102,9 +1099,6 @@ $btn-text-full: 14px;
   }
 }
 
-.btn--square {
-  border-radius: 0;
-}
 
 .btn-feel {
   background-color: $c-feel;

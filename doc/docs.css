@@ -3589,7 +3589,7 @@ mark {
     line-height: 1.3;
   }
 }
-/*todo una vez incluida*/
+/* todo una vez incluida*/
 .fluid-12-l {
   font-family: arial, sans-serif;
   font-weight: 100;
@@ -5186,7 +5186,7 @@ strong {
   text-transform: uppercase;
 }
 
-/* Todos los idiomas que no tienen uppercase porque son Capital sensitive, lo dejamos en minúsculas */
+/*  Todos los idiomas que no tienen uppercase porque son Capital sensitive, lo dejamos en minúsculas */
 [lang^=de] .ttu,
 [lang^=zh] .ttu,
 [lang^=zo] .ttu,
@@ -5326,7 +5326,7 @@ strong {
     transform: translate(-50%, 0);
   }
 }
-/* deprecated no se usan */
+/*  deprecated no se usan */
 .arrow-cover {
   height: auto;
   padding: 30px;
@@ -5589,7 +5589,6 @@ strong {
   text-decoration: none;
   opacity: 0.6;
   outline: none;
-  background-color: transparent;
 }
 .btn[disabled], .btn:disabled, .btn.disabled {
   pointer-events: none;
@@ -6288,10 +6287,6 @@ strong {
   margin: 0 8px;
 }
 
-.btn-group-container {
-  display: flex;
-}
-
 .btn-anim {
   height: 48px;
   display: flex;
@@ -6364,10 +6359,6 @@ strong {
 }
 .btn-social-login.disabled svg path {
   fill: #292929;
-}
-
-.btn--square {
-  border-radius: 0;
 }
 
 .btn-feel {
@@ -9705,7 +9696,7 @@ ul.list-clear li.list-box:last-child {
   overflow: hidden;
 }
 
-.row1 { /*no se usa*/
+.row1 { /* no se usa */
   display: box;
   display: flex;
   flex-flow: row wrap;
@@ -10276,7 +10267,7 @@ ul.list-clear li.list-box:last-child {
   }
 }
 
-.text-box .text-box-img { /*no se usa*/
+.text-box .text-box-img { /* no se usa */
   display: inline-block;
   width: 72px;
   height: 72px;
@@ -10284,16 +10275,16 @@ ul.list-clear li.list-box:last-child {
   vertical-align: top;
   box-sizing: border-box;
 }
-.text-box .text-box-inner { /*no se usa*/
+.text-box .text-box-inner { /* no se usa */
   box-sizing: border-box;
   width: calc(100% - 80px - 5px);
   display: inline-block;
 }
 
-.card-video { /*no se usa*/
+.card-video { /* no se usa */
   position: relative;
 }
-.card-video .card-video-play { /*no se usa*/
+.card-video .card-video-play { /* no se usa */
   width: 100px;
   height: 100px;
   position: absolute;
@@ -10350,7 +10341,7 @@ ul.list-clear li.list-box:last-child {
     transform: translate(-50%, 0);
   }
 }
-.box3 { /*no se usa*/
+.box3 { /* no se usa */
   position: relative;
   width: 100%;
   min-height: 58px;
@@ -10827,7 +10818,7 @@ ul.list-clear li.list-box:last-child {
     transform: translate(-50%, 0);
   }
 }
-@media (max-width: 768px) { /*no se usa*/
+@media (max-width: 768px) { /* no se usa */
   .header-account-logo {
     display: none;
   }
