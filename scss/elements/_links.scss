@@ -327,15 +327,12 @@ u {
   }
 }
 
-button.link-line {
-  padding-left: 0;
-  padding-right: 0;
-}
 
 .link-line {
   display: inline;
   position: relative;
   border: 0;
+  padding: 0;
   transform: none;
   cursor: pointer;
   background-color: transparent;
@@ -358,13 +355,28 @@ button.link-line {
   &.is-error, &.c-error {
     background-image: linear-gradient(transparent calc(100% - 1px), $c-error 10px);
   }
+
+  .is-error &{
+      background-image: linear-gradient(transparent calc(100% - 1px), $c-error 10px);
+  }
+  &button {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &button.link-svg-pre {
+    padding-left: 20px;
+    padding-right: 0;
+  }
+  
+  &button.link-svg-post {
+    padding-right: 20px;
+    padding-left: 0;
+  }
+  
+
 }
 
-.is-error{
-  .link-line {
-    background-image: linear-gradient(transparent calc(100% - 1px), $c-error 10px);
-  }
-}
 
 .link-raw {
   display: inline-block;
@@ -429,15 +441,7 @@ button.link-line {
   }
 }
 
-button.link-line.link-svg-pre {
-  padding-left: 20px;
-  padding-right: 0;
-}
 
-button.link-line.link-svg-post {
-  padding-right: 20px;
-  padding-left: 0;
-}
 
 .has-light {
   a {
