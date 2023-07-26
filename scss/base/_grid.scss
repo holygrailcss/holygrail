@@ -185,12 +185,8 @@
 .container-body {
   padding: 16px;
 
-  @media (min-width: $break-sm) {
-    padding: 24px;
-  }
-
-  @media (min-width: $break-lg) {
-    padding: 32px;
+  @media (min-width: $break-md) {
+    padding: 40px;
   }
 }
 

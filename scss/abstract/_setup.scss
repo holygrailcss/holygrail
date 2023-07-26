@@ -82,16 +82,15 @@ $svg-size: 16px;
 $fs: 'font-size';
 $lh: 'line-height';
 $headers: (
-  sub-l:(56px, 56px, 96px, 96px, 1.1, "bold3"),
-  sub-m:(42px, 42px, 64px, 64px, 1.1, "bold3"),
-  sub-s:(32px, 32px, 56px ,56px, 1.1, "medium3"),
+  sub-l:(56px, 56px, 96px, 96px, 1.1, "bold3"),  /* deprecated */
+  sub-m:(42px, 42px, 64px, 64px, 1.1, "bold3"), /* deprecated */
+  sub-s:(32px, 32px, 56px ,56px, 1.1, "medium3"), /* deprecated */
 
+  head-l:(56px, 56px, 96px, 96px, 1.1, "bold"), /* deprecated */
+  head-m:(42px, 42px, 64px, 64px, 1.1, "bold"),/* deprecated */
+  head-s:(32px, 32px, 56px ,56px, 1.1, "bold"),/* deprecated */
 
-  head-l:(56px, 56px, 96px, 96px, 1.1, "bold"),
-  head-m:(42px, 42px, 64px, 64px, 1.1, "bold"),
-  head-s:(32px, 32px, 56px ,56px, 1.1, "bold"),
-
-  tit-l: (24px, 24px, 42px, 42px, 1.2, "bold"),
+  tit-l: (24px, 24px, 42px, 42px, 1.2, "bold"), 
   tit-m: (20px, 20px, 32px, 32px, 1.2, "bold"),
   tit-s: (16px, 16px, 20px,20px, 1.2, "bold"),
   tit-xs:(14px, 14px, 14px,14px, 1.2, "bold"),
@@ -102,17 +101,18 @@ $headers: (
   p-14-b: ( 14px, 14px, 14px, 14px, 1.3, "bold"),
   p-l: (16px, 16px, 18px ,18px, 1.3, "regular"),
   p-m: (14px, 14px, 16px ,16px, 1.3, "regular"),
-  p-m-b: (14px, 14px, 16px ,16px, 1.3, "bold"), //NUEVO
+  p-m-b: (14px, 14px, 16px ,16px, 1.3, "bold"), 
   p-s: (12px, 12px, 14px ,14px, 1.3, "regular"),
   p-s-b: (12px, 12px, 14px ,14px, 1.3, "bold"),
 
   p-xs:(11px, 11px, 12px ,12px, 1.3, "regular"),
-  p-xs-b:(11px, 11px, 12px ,12px, 1.3, "bold"), // NUEVO
+  p-xs-b:(11px, 11px, 12px ,12px, 1.3, "bold"), 
   p-xxs-b:(9px, 9px, 9px ,9px, 1.3, "bold"),
 
 ) !default;
 
 
+/* hasta 991px ,  desktop, lineheight, grosor */
 $minheaders: (
 sub-l: (56px,96px,1.1,"bold3"),
 sub-m: (42px,64px,1.1,"bold3"),
@@ -676,6 +676,12 @@ $padding-top: (
     120px,
     120px,
   ),
+  ptr-128: (
+    64px,
+    64px,
+    128px,
+    128px,
+  )
 ) !default;
 
 $pb: 'padding-bottom';
@@ -728,6 +734,12 @@ $padding-bottom: (
     64px,
     64px,
   ),
+  pbr-128: (
+    64px,
+    64px,
+    128px,
+    128px,
+  )
 ) !default;
 
 $pl: 'padding-left';
