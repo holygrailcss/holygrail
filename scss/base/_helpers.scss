@@ -1,4 +1,5 @@
 @import '../abstract/_all';
+
 @keyframes fadein {
   from {
     opacity: 0;
@@ -7,6 +8,7 @@
     opacity: 1;
   }
 }
+
 @keyframes fadeout {
   from {
     opacity: 1;
@@ -186,6 +188,7 @@ hr {
 }
 .only-mobile {
   display: inline-block;
+
   @media (min-width: $break-sm) {
     display: none;
   }
@@ -423,24 +426,30 @@ strong {
 }
 .only-mobile-flex {
   display: flex;
+
   @media (min-width: $break-sm) {
     display: flex;
   }
+
   @media (min-width: $break-md) {
     display: none;
   }
+
   @media (min-width: $break-lg) {
     display: none;
   }
 }
 .only-desktop-flex {
   display: none;
+
   @media (min-width: $break-sm) {
     display: none;
   }
+
   @media (min-width: $break-md) {
     display: flex;
   }
+
   @media (min-width: $break-lg) {
     display: flex;
   }
@@ -513,6 +522,7 @@ strong {
 .ttu {
   text-transform: uppercase;
 }
+
 /*  Todos los idiomas que no tienen uppercase porque son Capital sensitive, lo dejamos en minúsculas */
 [lang^="de"], //aleman
 [lang^="zh"], //chino

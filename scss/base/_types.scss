@@ -63,7 +63,6 @@ mark {
 @include typesFixers($headersFixers, $fs);
 @include types($breakpoints, $headers, $fs); /* todo una vez incluida */
 @include typesFluids($headersFluids);
-
 @include mintypes($minbreakpoints, $minheaders, $fs);
 
 .text-light {

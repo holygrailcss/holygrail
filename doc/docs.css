@@ -10517,7 +10517,7 @@ ul.list-clear li.list-box:last-child {
 }
 
 .modalx-16 .modalx-body {
-  padding: 48px 16px 16px 16px;
+  padding: 48px 16px 16px;
 }
 @media (min-width: 768px) {
   .modalx-16 .modalx-body {
@@ -10530,25 +10530,25 @@ ul.list-clear li.list-box:last-child {
 }
 
 .modalx-24 .modalx-body {
-  padding: 48px 16px 16px 16px;
+  padding: 48px 16px 16px;
 }
 @media (min-width: 768px) {
   .modalx-24 .modalx-body {
-    padding: 64px 24px 24px 24px;
+    padding: 64px 24px 24px;
   }
 }
 
 .modalx-32 .modalx-body {
-  padding: 48px 16px 16px 16px;
+  padding: 48px 16px 16px;
 }
 @media (min-width: 768px) {
   .modalx-32 .modalx-body {
-    padding: 64px 32px 32px 32px;
+    padding: 64px 32px 32px;
   }
 }
 
 .modalx-40 .modalx-body {
-  padding: 40px 16px 16px 16px;
+  padding: 40px 16px 16px;
 }
 @media (min-width: 768px) {
   .modalx-40 .modalx-body {
@@ -10561,7 +10561,7 @@ ul.list-clear li.list-box:last-child {
 }
 @media (min-width: 768px) {
   .modalx-0-24 .modalx-body {
-    padding: 64px 24px 24px 24px;
+    padding: 64px 24px 24px;
   }
 }
 
