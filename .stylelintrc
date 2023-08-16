@@ -20,6 +20,7 @@
     "no-duplicate-at-import-rules":null,
     "scss/at-mixin-pattern":null,
     "scss/dollar-variable-empty-line-before":null,
-    "scss/at-extend-no-missing-placeholder":null
+    "scss/at-extend-no-missing-placeholder":null,
+    "media-feature-range-notation":null
   }
 }

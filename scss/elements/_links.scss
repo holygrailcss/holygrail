@@ -156,7 +156,9 @@ u {
     background: $c-primary;
     transform: scaleX(0);
     transition: transform $transition;
-    transition: transform $transition, -webkit-transform $transition;
+    transition:
+      transform $transition,
+      -webkit-transform $transition;
   }
 }
 

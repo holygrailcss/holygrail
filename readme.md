@@ -98,6 +98,15 @@ $ npm run start   Abrimos la aplicacion
   "prettier": "prettier 'scss/**/*.+(css|scss)'"
 
 ```
+## Actualizar todos los packs a la ultima versión
+
+npm outdated
+
+npm install -g npm-check-updates
+
+ncu -u
+
+
 
 
 

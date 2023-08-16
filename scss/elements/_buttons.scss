@@ -746,7 +746,9 @@ $btn-text-full: 14px;
   align-items: center;
   color: $c-white;
   position: relative;
-  box-shadow: 0 1px 1px rgb(0 0 0 / 16.8%), 0 0 1px rgb(0 0 0 / 8.4%);
+  box-shadow:
+    0 1px 1px rgb(0 0 0 / 16.8%),
+    0 0 1px rgb(0 0 0 / 8.4%);
 
   svg-icon {
     display: flex;
@@ -992,7 +994,8 @@ $btn-text-full: 14px;
 
   span {
     position: absolute;
-    transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1),
+    transition:
+      transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1),
       opacity 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
   }
 
