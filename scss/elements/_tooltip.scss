@@ -7,8 +7,6 @@ $tooltip-dist: 10px;
 $tooltip-padding: 8px;
 $tooltip-width: 320px;
 
-
-
 .tooltip-sm {
   bottom: 0;
   transform: translateY(100%) translateY($tooltip-arrow);
@@ -36,7 +34,8 @@ $tooltip-width: 320px;
     transform: rotate(45deg);
   }
 
-  &.tooltip-br, &.tooltip-tr {
+  &.tooltip-br,
+  &.tooltip-tr {
     left: calc(50% - 16px);
     right: auto;
     &::after {
@@ -45,7 +44,8 @@ $tooltip-width: 320px;
     }
   }
 
-  &.tooltip-tl, &.tooltip-tr {
+  &.tooltip-tl,
+  &.tooltip-tr {
     top: 0;
     bottom: auto;
     transform: translateY(-100%) translateY(-$tooltip-arrow);
@@ -84,12 +84,13 @@ $tooltip-width: 320px;
     left: calc(50% - 16px);
     right: auto;
     padding-left: $tooltip-padding + 16px;
-    padding-right: $tooltip-padding*2;
+    padding-right: $tooltip-padding * 2;
     &::after {
       right: auto;
       left: $tooltip-dist;
     }
-    &.tooltip-tr, &.tooltip-br {
+    &.tooltip-tr,
+    &.tooltip-br {
       right: calc(50% - 16px);
       left: auto;
       &::after {

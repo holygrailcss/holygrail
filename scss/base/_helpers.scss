@@ -560,7 +560,6 @@ strong {
   height: 50px;
 }
 
-
 .w-100 {
   width: 50px;
 }
@@ -610,7 +609,7 @@ strong {
 
 .smmax\:flex {
   @media (max-width: #{$break-sm - 1}) {
-display: flex;
+    display: flex;
   }
 }
 .mdmax\:flex {
@@ -625,17 +624,17 @@ display: flex;
 }
 
 .sm\:flex {
-  @media (min-width:  $break-sm ) {
-display: flex;
+  @media (min-width: $break-sm) {
+    display: flex;
   }
 }
 .md\:flex {
-  @media (min-width:  $break-md ) {
+  @media (min-width: $break-md) {
     display: flex;
   }
 }
 .lg\:flex {
-  @media (min-width:  $break-lg ) {
+  @media (min-width: $break-lg) {
     display: flex;
   }
 }

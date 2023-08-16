@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import "https://fonts.googleapis.com/css2?family=Muli&display=swap";
+@import 'https://fonts.googleapis.com/css2?family=Muli&display=swap';
 *,
 *::before,
 *::after {
@@ -5376,7 +5376,7 @@ mark {
 }
 
 .c-feel-light {
-  color: #FCCBB0;
+  color: #fccbb0;
 }
 
 .c-limited {
@@ -5396,7 +5396,7 @@ mark {
 }
 
 .bg-feel-light {
-  background-color: #FCCBB0;
+  background-color: #fccbb0;
 }
 
 .bg-feel-dark {
@@ -6766,7 +6766,7 @@ strong {
 .btn-secondary-feel:focus, .btn-secondary-feel.focus, .btn-secondary-feel:hover, .btn-secondary-feel.hover, .btn-secondary-feel:active, .btn-secondary-feel.active {
   opacity: 1;
   color: #292929;
-  border: 1px solid #FCCBB0;
+  border: 1px solid #fccbb0;
   background-color: transparent;
 }
 .btn-secondary-feel:disabled, .btn-secondary-feel[disabled], .btn-secondary-feel.disabled {
@@ -6790,7 +6790,7 @@ strong {
 .has-light .btn-secondary-feel:focus, .has-light .btn-secondary-feel.focus, .has-light .btn-secondary-feel:hover, .has-light .btn-secondary-feel.hover, .has-light .btn-secondary-feel:active, .has-light .btn-secondary-feel.active {
   opacity: 1;
   color: #fff;
-  border: 1px solid #FCCBB0;
+  border: 1px solid #fccbb0;
   background-color: transparent;
 }
 
@@ -6914,15 +6914,24 @@ strong {
   fill: #8e8e8e;
 }
 
-.btn-google, .has-light .btn-google {
+.btn-google,
+.has-light .btn-google {
   background-color: #fff;
   color: #292929;
   border: 1px solid #fff;
 }
-.btn-google svg-icon, .has-light .btn-google svg-icon {
+.btn-google svg-icon,
+.has-light .btn-google svg-icon {
   top: 1px;
 }
-.btn-google:focus, .btn-google.focus, .btn-google:hover, .btn-google.hover, .btn-google:visited, .btn-google:active, .btn-google.active, .has-light .btn-google:focus, .has-light .btn-google.focus, .has-light .btn-google:hover, .has-light .btn-google.hover, .has-light .btn-google:visited, .has-light .btn-google:active, .has-light .btn-google.active {
+.btn-google:focus, .btn-google.focus, .btn-google:hover, .btn-google.hover, .btn-google:visited, .btn-google:active, .btn-google.active,
+.has-light .btn-google:focus,
+.has-light .btn-google.focus,
+.has-light .btn-google:hover,
+.has-light .btn-google.hover,
+.has-light .btn-google:visited,
+.has-light .btn-google:active,
+.has-light .btn-google.active {
   border: 1px solid #f0f0f0;
   opacity: 1;
 }
@@ -6949,47 +6958,79 @@ strong {
   border: 1px solid #1977f3;
 }
 
-.btn-apple, .has-light .btn-apple {
+.btn-apple,
+.has-light .btn-apple {
   background-color: #000;
   color: #fff;
   border: 1px solid #000;
 }
-.btn-apple:focus, .btn-apple.focus, .btn-apple:hover, .btn-apple.hover, .btn-apple:visited, .btn-apple:active, .btn-apple.active, .has-light .btn-apple:focus, .has-light .btn-apple.focus, .has-light .btn-apple:hover, .has-light .btn-apple.hover, .has-light .btn-apple:visited, .has-light .btn-apple:active, .has-light .btn-apple.active {
+.btn-apple:focus, .btn-apple.focus, .btn-apple:hover, .btn-apple.hover, .btn-apple:visited, .btn-apple:active, .btn-apple.active,
+.has-light .btn-apple:focus,
+.has-light .btn-apple.focus,
+.has-light .btn-apple:hover,
+.has-light .btn-apple.hover,
+.has-light .btn-apple:visited,
+.has-light .btn-apple:active,
+.has-light .btn-apple.active {
   opacity: 1;
   background-color: #8e8e8e;
   border: 1px solid #8e8e8e;
 }
 
-.btn-apple-secondary, .has-light .btn-apple-secondary {
+.btn-apple-secondary,
+.has-light .btn-apple-secondary {
   background-color: #fff;
   color: #000;
   border: 1px solid #000;
 }
-.btn-apple-secondary:focus, .btn-apple-secondary.focus, .btn-apple-secondary:hover, .btn-apple-secondary.hover, .btn-apple-secondary:visited, .btn-apple-secondary:active, .btn-apple-secondary.active, .has-light .btn-apple-secondary:focus, .has-light .btn-apple-secondary.focus, .has-light .btn-apple-secondary:hover, .has-light .btn-apple-secondary.hover, .has-light .btn-apple-secondary:visited, .has-light .btn-apple-secondary:active, .has-light .btn-apple-secondary.active {
+.btn-apple-secondary:focus, .btn-apple-secondary.focus, .btn-apple-secondary:hover, .btn-apple-secondary.hover, .btn-apple-secondary:visited, .btn-apple-secondary:active, .btn-apple-secondary.active,
+.has-light .btn-apple-secondary:focus,
+.has-light .btn-apple-secondary.focus,
+.has-light .btn-apple-secondary:hover,
+.has-light .btn-apple-secondary.hover,
+.has-light .btn-apple-secondary:visited,
+.has-light .btn-apple-secondary:active,
+.has-light .btn-apple-secondary.active {
   opacity: 1;
   background-color: #fff;
   border: 1px solid #8e8e8e;
 }
 
-.btn-naver, .has-light .btn-naver {
+.btn-naver,
+.has-light .btn-naver {
   background-color: #03cf5d;
   color: #fff;
   padding-left: 48px;
   border: 1px solid #03cf5d;
 }
-.btn-naver:focus, .btn-naver.focus, .btn-naver:hover, .btn-naver.hover, .btn-naver:visited, .btn-naver:active, .btn-naver.active, .has-light .btn-naver:focus, .has-light .btn-naver.focus, .has-light .btn-naver:hover, .has-light .btn-naver.hover, .has-light .btn-naver:visited, .has-light .btn-naver:active, .has-light .btn-naver.active {
+.btn-naver:focus, .btn-naver.focus, .btn-naver:hover, .btn-naver.hover, .btn-naver:visited, .btn-naver:active, .btn-naver.active,
+.has-light .btn-naver:focus,
+.has-light .btn-naver.focus,
+.has-light .btn-naver:hover,
+.has-light .btn-naver.hover,
+.has-light .btn-naver:visited,
+.has-light .btn-naver:active,
+.has-light .btn-naver.active {
   opacity: 1;
   background-color: #02b953;
   border: 1px solid #02b953;
 }
 
-.btn-wechat, .has-light .btn-wechat {
+.btn-wechat,
+.has-light .btn-wechat {
   background-color: #2dc100;
   color: #fff;
   padding-left: 48px;
   border: 1px solid #2dc100;
 }
-.btn-wechat:focus, .btn-wechat.focus, .btn-wechat:hover, .btn-wechat.hover, .btn-wechat:visited, .btn-wechat:active, .btn-wechat.active, .has-light .btn-wechat:focus, .has-light .btn-wechat.focus, .has-light .btn-wechat:hover, .has-light .btn-wechat.hover, .has-light .btn-wechat:visited, .has-light .btn-wechat:active, .has-light .btn-wechat.active {
+.btn-wechat:focus, .btn-wechat.focus, .btn-wechat:hover, .btn-wechat.hover, .btn-wechat:visited, .btn-wechat:active, .btn-wechat.active,
+.has-light .btn-wechat:focus,
+.has-light .btn-wechat.focus,
+.has-light .btn-wechat:hover,
+.has-light .btn-wechat.hover,
+.has-light .btn-wechat:visited,
+.has-light .btn-wechat:active,
+.has-light .btn-wechat.active {
   opacity: 1;
   background-color: #02b953;
   border: 1px solid #2dc100;
@@ -7140,8 +7181,8 @@ strong {
   color: #292929;
 }
 .btn-feel:hover, .btn-feel.hover, .btn-feel:focus, .btn-feel.focus {
-  background-color: #FCCBB0;
-  border: 1px solid #FCCBB0;
+  background-color: #fccbb0;
+  border: 1px solid #fccbb0;
   color: #292929;
   opacity: 1;
 }
@@ -7157,8 +7198,8 @@ strong {
   color: #292929;
 }
 .has-light .btn-feel:hover, .has-light .btn-feel.hover, .has-light .btn-feel:focus, .has-light .btn-feel.focus {
-  background-color: #FCCBB0;
-  border: 1px solid #FCCBB0;
+  background-color: #fccbb0;
+  border: 1px solid #fccbb0;
   color: #292929;
   opacity: 1;
 }
@@ -9447,10 +9488,12 @@ ul.list-mini > li::after {
   background: #f0f0f0;
 }
 
-ul.list-disc.has-light > li.is-missing::after, ul.list-mini.has-light > li.is-missing::after {
+ul.list-disc.has-light > li.is-missing::after,
+ul.list-mini.has-light > li.is-missing::after {
   background-color: #fff;
 }
-ul.list-disc.has-light > li::after, ul.list-mini.has-light > li::after {
+ul.list-disc.has-light > li::after,
+ul.list-mini.has-light > li::after {
   background-color: #fff;
 }
 
@@ -10634,7 +10677,8 @@ ul.list-clear li.list-box:last-child {
   overflow: hidden;
 }
 
-.row1 { /* no se usa */
+.row1 {
+  /* no se usa */
   display: box;
   display: flex;
   flex-flow: row wrap;
@@ -11208,7 +11252,8 @@ ul.list-clear li.list-box:last-child {
   }
 }
 
-.text-box .text-box-img { /* no se usa */
+.text-box .text-box-img {
+  /* no se usa */
   display: inline-block;
   width: 72px;
   height: 72px;
@@ -11216,16 +11261,19 @@ ul.list-clear li.list-box:last-child {
   vertical-align: top;
   box-sizing: border-box;
 }
-.text-box .text-box-inner { /* no se usa */
+.text-box .text-box-inner {
+  /* no se usa */
   box-sizing: border-box;
   width: calc(100% - 80px - 5px);
   display: inline-block;
 }
 
-.card-video { /* no se usa */
+.card-video {
+  /* no se usa */
   position: relative;
 }
-.card-video .card-video-play { /* no se usa */
+.card-video .card-video-play {
+  /* no se usa */
   width: 100px;
   height: 100px;
   position: absolute;
@@ -11283,7 +11331,8 @@ ul.list-clear li.list-box:last-child {
     transform: translate(-50%, 0);
   }
 }
-.box3 { /* no se usa */
+.box3 {
+  /* no se usa */
   position: relative;
   width: 100%;
   min-height: 58px;
@@ -11763,7 +11812,8 @@ ul.list-clear li.list-box:last-child {
     transform: translate(-50%, 0);
   }
 }
-@media (max-width: 768px) { /* no se usa */
+@media (max-width: 768px) {
+  /* no se usa */
   .header-account-logo {
     display: none;
   }

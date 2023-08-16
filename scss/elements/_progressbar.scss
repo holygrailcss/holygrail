@@ -11,10 +11,10 @@
   overflow: hidden;
 
   .progressbar-status {
-      min-width: 8px;
-      height: 8px;
-      border-radius: $obj-radius;
-      background-color: $c-primary;
-      transition: all 0.2s ease;
+    min-width: 8px;
+    height: 8px;
+    border-radius: $obj-radius;
+    background-color: $c-primary;
+    transition: all 0.2s ease;
   }
 }

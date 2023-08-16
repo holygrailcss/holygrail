@@ -129,7 +129,6 @@
   align-items: center;
 }
 
-
 .align-center {
   display: flex;
   flex-direction: column;
@@ -283,26 +282,23 @@
   }
 }
 
-
-
-.sm\:min-content-end{
+.sm\:min-content-end {
   @media (min-width: $break-sm) {
     justify-content: flex-end;
   }
 }
 
-
 .sm\:align-middle {
   @media (min-width: $break-sm) {
-   display: flex;
-  align-content: center;
-  flex-wrap: wrap;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
   }
 }
 .md\:align-middle {
   @media (min-width: $break-md) {
-   display: flex;
-  align-content: center;
-  flex-wrap: wrap;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
   }
 }

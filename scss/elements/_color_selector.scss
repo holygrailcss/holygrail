@@ -31,7 +31,6 @@
       transform: scale(1);
     }
 
-
     .color-selector {
       border-radius: 50%;
       box-sizing: border-box;
@@ -68,7 +67,6 @@
         top: 50%;
         transform: translateY(-50%);
         width: 10px;
-
       }
       span {
         border: 1px solid $c-middle-grey;
@@ -88,7 +86,6 @@
     .is-active {
       transform: scale(1);
     }
-
 
     .color-square {
       border-radius: 0;

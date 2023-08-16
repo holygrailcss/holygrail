@@ -327,7 +327,6 @@ u {
   }
 }
 
-
 .link-line {
   display: inline;
   position: relative;
@@ -352,12 +351,13 @@ u {
   &.c-feel {
     background-image: linear-gradient(transparent calc(100% - 1px), $c-feel 10px);
   }
-  &.is-error, &.c-error {
+  &.is-error,
+  &.c-error {
     background-image: linear-gradient(transparent calc(100% - 1px), $c-error 10px);
   }
 
-  .is-error &{
-      background-image: linear-gradient(transparent calc(100% - 1px), $c-error 10px);
+  .is-error & {
+    background-image: linear-gradient(transparent calc(100% - 1px), $c-error 10px);
   }
   &button {
     padding-left: 0;
@@ -368,15 +368,12 @@ u {
     padding-left: 20px;
     padding-right: 0;
   }
-  
+
   &button.link-svg-post {
     padding-right: 20px;
     padding-left: 0;
   }
-  
-
 }
-
 
 .link-raw {
   display: inline-block;
@@ -441,8 +438,6 @@ u {
   }
 }
 
-
-
 .has-light {
   a {
     color: $c-white;
@@ -502,13 +497,11 @@ u {
 
   .link-raw {
     color: white;
-
   }
 
   .link-line {
     color: white;
     background-image: linear-gradient(transparent calc(100% - 1px), white 10px);
-
 
     &::after {
       background-color: #fff;
@@ -518,7 +511,6 @@ u {
   .link-multiline {
     color: white;
     background-image: linear-gradient(transparent calc(100% - 1px), white 10px);
-
 
     &::after {
       background-color: #fff;

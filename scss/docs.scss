@@ -549,7 +549,7 @@ $variablecolors: length($variable-colors);
   float: left;
 }
 
-@import "https://fonts.googleapis.com/css2?family=Muli&display=swap";
+@import 'https://fonts.googleapis.com/css2?family=Muli&display=swap';
 $headersFluidsGuide: (
   12: (
     12px,

@@ -13,7 +13,7 @@ $c-valid: #76ae4a !default;
 $c-warning: #ffc700 !default;
 $c-feel: #fb9962 !default;
 $c-feel-dark: #c94c07 !default;
-$c-feel-light: #FCCBB0 !default;
+$c-feel-light: #fccbb0 !default;
 $c-limited: #000 !default;
 $c-success: #76ae4a !default;
 $c-alert: #ffc700 !default;
@@ -34,12 +34,10 @@ $btn-line-height: 1 !default;
 
 $btn-padding: 13px !default;
 
-
 $font-weight-secondary-light: 300 !default;
 $font-weight-secondary-medium: 400 !default;
 $font-weight-secondary-bold: 700 !default;
 $totalCols: 12 !default;
-
 
 $padding-global: 8px !default;
 $padding-mobile: 24px !default;
@@ -61,7 +59,6 @@ $container-11: 1080px !default;
 $container-12: 1080px !default;
 $container-full: 1500px !default;
 
-
 $height-xs: 60px !default;
 $height-sm: 100px !default;
 $height-md: 350px !default;
@@ -70,105 +67,428 @@ $height-xl: 450px !default;
 $height-full: 100vh !default;
 $height-home: calc(100vh - 80px) !default;
 
-
 $transition: 278ms !default;
 $min-width: 319px !default;
 $min-vw: 319px !default;
 $max-vw: 1500px !default;
-
 
 $svg-size: 16px;
 
 $fs: 'font-size';
 $lh: 'line-height';
 $headers: (
-  sub-l:(56px, 56px, 96px, 96px, 1.1, "bold3"),  /* deprecated */
-  sub-m:(42px, 42px, 64px, 64px, 1.1, "bold3"), /* deprecated */
-  sub-s:(32px, 32px, 56px ,56px, 1.1, "medium3"), /* deprecated */
-
-  head-l:(56px, 56px, 96px, 96px, 1.1, "bold"), /* deprecated */
-  head-m:(42px, 42px, 64px, 64px, 1.1, "bold"),/* deprecated */
-  head-s:(32px, 32px, 56px ,56px, 1.1, "bold"),/* deprecated */
-
-  tit-l: (24px, 24px, 42px, 42px, 1.2, "bold"), 
-  tit-m: (20px, 20px, 32px, 32px, 1.2, "bold"),
-  tit-s: (16px, 16px, 20px,20px, 1.2, "bold"),
-  tit-xs:(14px, 14px, 14px,14px, 1.2, "bold"),
-
-  p-18-2b: ( 18px, 18px, 18px, 18px, 1.3, "bold"),
-  p-18-b: ( 18px, 18px, 18px, 18px, 1.3, "bold"),
-  p-14: ( 14px, 14px, 14px, 14px, 1.3, "regular"),
-  p-14-b: ( 14px, 14px, 14px, 14px, 1.3, "bold"),
-  p-l: (16px, 16px, 18px ,18px, 1.3, "regular"),
-  p-m: (14px, 14px, 16px ,16px, 1.3, "regular"),
-  p-m-b: (14px, 14px, 16px ,16px, 1.3, "bold"), 
-  p-s: (12px, 12px, 14px ,14px, 1.3, "regular"),
-  p-s-b: (12px, 12px, 14px ,14px, 1.3, "bold"),
-
-  p-xs:(11px, 11px, 12px ,12px, 1.3, "regular"),
-  p-xs-b:(11px, 11px, 12px ,12px, 1.3, "bold"), 
-  p-xxs-b:(9px, 9px, 9px ,9px, 1.3, "bold"),
-
+  sub-l: (
+    56px,
+    56px,
+    96px,
+    96px,
+    1.1,
+    'bold3',
+  ),
+  /* deprecated */ sub-m:
+    (
+      42px,
+      42px,
+      64px,
+      64px,
+      1.1,
+      'bold3',
+    ),
+  /* deprecated */ sub-s:
+    (
+      32px,
+      32px,
+      56px,
+      56px,
+      1.1,
+      'medium3',
+    ),
+  /* deprecated */ head-l:
+    (
+      56px,
+      56px,
+      96px,
+      96px,
+      1.1,
+      'bold',
+    ),
+  /* deprecated */ head-m:
+    (
+      42px,
+      42px,
+      64px,
+      64px,
+      1.1,
+      'bold',
+    ),
+  /* deprecated */ head-s:
+    (
+      32px,
+      32px,
+      56px,
+      56px,
+      1.1,
+      'bold',
+    ),
+  /* deprecated */ tit-l:
+    (
+      24px,
+      24px,
+      42px,
+      42px,
+      1.2,
+      'bold',
+    ),
+  tit-m: (
+    20px,
+    20px,
+    32px,
+    32px,
+    1.2,
+    'bold',
+  ),
+  tit-s: (
+    16px,
+    16px,
+    20px,
+    20px,
+    1.2,
+    'bold',
+  ),
+  tit-xs: (
+    14px,
+    14px,
+    14px,
+    14px,
+    1.2,
+    'bold',
+  ),
+  p-18-2b: (
+    18px,
+    18px,
+    18px,
+    18px,
+    1.3,
+    'bold',
+  ),
+  p-18-b: (
+    18px,
+    18px,
+    18px,
+    18px,
+    1.3,
+    'bold',
+  ),
+  p-14: (
+    14px,
+    14px,
+    14px,
+    14px,
+    1.3,
+    'regular',
+  ),
+  p-14-b: (
+    14px,
+    14px,
+    14px,
+    14px,
+    1.3,
+    'bold',
+  ),
+  p-l: (
+    16px,
+    16px,
+    18px,
+    18px,
+    1.3,
+    'regular',
+  ),
+  p-m: (
+    14px,
+    14px,
+    16px,
+    16px,
+    1.3,
+    'regular',
+  ),
+  p-m-b: (
+    14px,
+    14px,
+    16px,
+    16px,
+    1.3,
+    'bold',
+  ),
+  p-s: (
+    12px,
+    12px,
+    14px,
+    14px,
+    1.3,
+    'regular',
+  ),
+  p-s-b: (
+    12px,
+    12px,
+    14px,
+    14px,
+    1.3,
+    'bold',
+  ),
+  p-xs: (
+    11px,
+    11px,
+    12px,
+    12px,
+    1.3,
+    'regular',
+  ),
+  p-xs-b: (
+    11px,
+    11px,
+    12px,
+    12px,
+    1.3,
+    'bold',
+  ),
+  p-xxs-b: (
+    9px,
+    9px,
+    9px,
+    9px,
+    1.3,
+    'bold',
+  ),
 ) !default;
-
 
 /* hasta 991px ,  desktop, lineheight, grosor */
 $minheaders: (
-sub-l: (56px,96px,1.1,"bold3"),
-sub-m: (42px,64px,1.1,"bold3"),
-sub-s: (32px,56px,1.1,"medium3"),
-
-head-l: (56px,96px,1.1,"bold"),
-head-m: (42px,64px,1.1,"bold"),
-head-s: (32px,56px,1.1,"bold"),
-
-tit-l:  (24px,42px,1.2,"bold"),
-tit-m:  (20px,32px,1.2,"bold"),
-tit-s:  (16px,20px,1.2,"bold"),
-tit-xs: (14px,14px,1.2,"bold"),
-
-p-18-2b:(18px,18px,1.3,"bold"),
-p-18-b: (18px,18px,1.3,"bold"),
-p-14:   (14px,14px,1.3,"regular"),
-p-14-b: (14px,14px,1.3,"bold"),
-p-l:    (16px,18px,1.3,"regular"),
-p-m:    (14px,16px,1.3,"regular"),
-p-m-b:  (14px,16px,1.3,"bold"),//NUEVO
-p-s:    (12px,14px,1.3,"regular"),
-p-s-b:  (12px,14px,1.3,"bold"),
-
-p-xs:   (11px,12px,1.3,"regular"),
-p-xs-b: (11px,12px,1.3,"bold"),//NUEVO
-p-xxs-b:(9px,9px,1.3, "bold"),
-
+  sub-l: (
+    56px,
+    96px,
+    1.1,
+    'bold3',
+  ),
+  sub-m: (
+    42px,
+    64px,
+    1.1,
+    'bold3',
+  ),
+  sub-s: (
+    32px,
+    56px,
+    1.1,
+    'medium3',
+  ),
+  head-l: (
+    56px,
+    96px,
+    1.1,
+    'bold',
+  ),
+  head-m: (
+    42px,
+    64px,
+    1.1,
+    'bold',
+  ),
+  head-s: (
+    32px,
+    56px,
+    1.1,
+    'bold',
+  ),
+  tit-l: (
+    24px,
+    42px,
+    1.2,
+    'bold',
+  ),
+  tit-m: (
+    20px,
+    32px,
+    1.2,
+    'bold',
+  ),
+  tit-s: (
+    16px,
+    20px,
+    1.2,
+    'bold',
+  ),
+  tit-xs: (
+    14px,
+    14px,
+    1.2,
+    'bold',
+  ),
+  p-18-2b: (
+    18px,
+    18px,
+    1.3,
+    'bold',
+  ),
+  p-18-b: (
+    18px,
+    18px,
+    1.3,
+    'bold',
+  ),
+  p-14: (
+    14px,
+    14px,
+    1.3,
+    'regular',
+  ),
+  p-14-b: (
+    14px,
+    14px,
+    1.3,
+    'bold',
+  ),
+  p-l: (
+    16px,
+    18px,
+    1.3,
+    'regular',
+  ),
+  p-m: (
+    14px,
+    16px,
+    1.3,
+    'regular',
+  ),
+  p-m-b: (
+    14px,
+    16px,
+    1.3,
+    'bold',
+  ),
+  //NUEVO
+  p-s:
+    (
+      12px,
+      14px,
+      1.3,
+      'regular',
+    ),
+  p-s-b: (
+    12px,
+    14px,
+    1.3,
+    'bold',
+  ),
+  p-xs: (
+    11px,
+    12px,
+    1.3,
+    'regular',
+  ),
+  p-xs-b: (
+    11px,
+    12px,
+    1.3,
+    'bold',
+  ),
+  //NUEVO
+  p-xxs-b:
+    (
+      9px,
+      9px,
+      1.3,
+      'bold',
+    ),
 ) !default;
 
-$headersFixers: ( 
-  12: ( 12px, 1.5, ), 
-  14: ( 14px, 1.5, ),
-  16: ( 16px, 1.5, ), 
-  18: ( 18px, 1.5, ),
-  20: ( 20px, 1.5, ), 
-  24: ( 24px, 1.5, ), ) !default;
+$headersFixers: (
+  12: (
+    12px,
+    1.5,
+  ),
+  14: (
+    14px,
+    1.5,
+  ),
+  16: (
+    16px,
+    1.5,
+  ),
+  18: (
+    18px,
+    1.5,
+  ),
+  20: (
+    20px,
+    1.5,
+  ),
+  24: (
+    24px,
+    1.5,
+  ),
+) !default;
 
 $headersFluids: (
-  12: ( 1px, 2px, 0.3, ),
-  14: ( 14px, 14px, 0.9, ),
-  6: ( 16px, 14px, 0.9, ),
-  18: ( 18px, 14px, 0.9, ), 
-  20: ( 20px, 14px, 0.9, ), 
-  50: ( 30px, 50px, 0.9, ), 
-  100: ( 30px, 100px, 0.9, ),
+  12: (
+    1px,
+    2px,
+    0.3,
+  ),
+  14: (
+    14px,
+    14px,
+    0.9,
+  ),
+  6: (
+    16px,
+    14px,
+    0.9,
+  ),
+  18: (
+    18px,
+    14px,
+    0.9,
+  ),
+  20: (
+    20px,
+    14px,
+    0.9,
+  ),
+  50: (
+    30px,
+    50px,
+    0.9,
+  ),
+  100: (
+    30px,
+    100px,
+    0.9,
+  ),
 ) !default;
 
-$heights: ( 
-  height-xs: ( 80px, ), 
-  height-sm: ( 100px, ),
-  height-md: ( 350px, ),
-  height-lg: ( 400px, ),
-  height-xl: ( 450px, ), 
-  height-full: ( 100vh, ), 
-  height-home: ( calc(100vh - 80px), ), ) !default;
+$heights: (
+  height-xs: (
+    80px,
+  ),
+  height-sm: (
+    100px,
+  ),
+  height-md: (
+    350px,
+  ),
+  height-lg: (
+    400px,
+  ),
+  height-xl: (
+    450px,
+  ),
+  height-full: (
+    100vh,
+  ),
+  height-home: (
+    calc(100vh - 80px),
+  ),
+) !default;
 
 $mg: 'margin';
 $margin: (
@@ -334,7 +654,12 @@ $margin-top: (
     48px,
     48px,
   ),
-  mtr-128: ( 64px, 128px, 128px, 128px, )
+  mtr-128: (
+    64px,
+    128px,
+    128px,
+    128px,
+  ),
 ) !default;
 
 $mr: 'margin-right';
@@ -421,11 +746,36 @@ $margin-bottom: (
     100px,
     100px,
   ),
-  mbr-24: ( 16px, 24px, 24px, 24px, ), 
-  mbr-32: ( 24px, 32px, 32px, 32px, ), 
-  mbr-64: ( 32px, 64px, 64px, 64px, ), 
-  mbr-128: ( 64px, 128px, 128px, 128px, ),
-  mbr-20-40: ( 20px, 40px, 40px, 40px, ),
+  mbr-24: (
+    16px,
+    24px,
+    24px,
+    24px,
+  ),
+  mbr-32: (
+    24px,
+    32px,
+    32px,
+    32px,
+  ),
+  mbr-64: (
+    32px,
+    64px,
+    64px,
+    64px,
+  ),
+  mbr-128: (
+    64px,
+    128px,
+    128px,
+    128px,
+  ),
+  mbr-20-40: (
+    20px,
+    40px,
+    40px,
+    40px,
+  ),
 ) !default;
 
 $ml: 'margin-left';
@@ -681,7 +1031,7 @@ $padding-top: (
     64px,
     128px,
     128px,
-  )
+  ),
 ) !default;
 
 $pb: 'padding-bottom';
@@ -739,7 +1089,7 @@ $padding-bottom: (
     64px,
     128px,
     128px,
-  )
+  ),
 ) !default;
 
 $pl: 'padding-left';

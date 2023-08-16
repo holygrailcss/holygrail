@@ -2,7 +2,7 @@
 
 body {
   @include font-regular;
-  
+
   -webkit-overflow-scrolling: touch;
   font-variant-ligatures: no-common-ligatures !important;
   text-rendering: optimizelegibility;
@@ -52,8 +52,7 @@ a {
 
 b,
 mark {
-  color: $c-primary  ;
-
+  color: $c-primary;
 }
 
 .secondary {

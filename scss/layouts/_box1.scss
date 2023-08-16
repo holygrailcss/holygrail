@@ -4,7 +4,8 @@
   width: 100%;
 }
 
-.card1 {  //no existe
+.card1 {
+  //no existe
   border: 1px solid $c-middle-grey;
   align-items: stretch;
   height: calc(100% - 20px);
@@ -27,7 +28,8 @@
 .text-box {
   $text-box-img: 80px;
 
-  .text-box-img { /* no se usa */
+  .text-box-img {
+    /* no se usa */
     display: inline-block;
     width: $text-box-img - $padding-global;
     height: $text-box-img - $padding-global;
@@ -36,17 +38,20 @@
     box-sizing: border-box;
   }
 
-  .text-box-inner { /* no se usa */
+  .text-box-inner {
+    /* no se usa */
     box-sizing: border-box;
     width: calc(100% - #{$text-box-img} - 5px);
     display: inline-block;
   }
 }
 
-.card-video { /* no se usa */
+.card-video {
+  /* no se usa */
   position: relative;
 
-  .card-video-play { /* no se usa */
+  .card-video-play {
+    /* no se usa */
     width: 100px;
     height: 100px;
     position: absolute;

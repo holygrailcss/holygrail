@@ -85,7 +85,18 @@ $ cd holysite
 $ npm install
 $ npm run docs
 $ npm run build
-$ npm run start 
+$ npm run start   Abrimos la aplicacion
+
+  "docs": "sass scss/docs.scss doc/docs.css --style expanded && sass scss/docs.scss doc/docs.min.css --style compressed",
+  "build": "sass scss/style.scss dist/style.css --style expanded && sass scss/style.scss dist/style.min.css --style compressed",
+  "build-sass": "sass --style expanded --source-map true scss/style.scss dist/style.css  &&  sass --output-style expanded --source-map true scss/docs.scss doc/docs.css",
+  "start": "open guide/index.html",
+  "lint": "stylelint 'scss/**/*.?(s)css'",
+  "lint2": "stylelint 'scss/*.?(s)css'",
+  "lint:fix": "stylelint --fix 'scss/**/*.?(s)css'",
+  "format": "npm run prettier -- --write",
+  "prettier": "prettier 'scss/**/*.+(css|scss)'"
+
 ```
 
 

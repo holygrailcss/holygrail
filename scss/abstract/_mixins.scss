@@ -54,25 +54,25 @@
 }
 
 @mixin fonters($param) {
-  @if $param=='light' {
+  @if $param== 'light' {
     @include font-light;
-  } @else if $param=='regular' {
+  } @else if $param== 'regular' {
     @include font-regular;
-  } @else if $param=='medium' {
+  } @else if $param== 'medium' {
     @include font-medium;
-  } @else if $param=='bold' {
+  } @else if $param== 'bold' {
     @include font-bold;
-  } @else if $param=='regular2' {
+  } @else if $param== 'regular2' {
     @include font-2-regular;
-  } @else if $param=='medium2' {
+  } @else if $param== 'medium2' {
     @include font-2-medium;
-  } @else if $param=='bold2' {
+  } @else if $param== 'bold2' {
     @include font-2-bold;
-  } @else if $param=='regular3' {
+  } @else if $param== 'regular3' {
     @include font-3-regular;
-  } @else if $param=='medium3' {
+  } @else if $param== 'medium3' {
     @include font-3-medium;
-  } @else if $param=='bold3' {
+  } @else if $param== 'bold3' {
     @include font-3-bold;
   }
 }
@@ -662,7 +662,6 @@ $spriteHeight: 400;
 @function unicode($str) {
   @return unquote('"') + unquote(str-insert($str, '\\', 1)) + unquote('"');
 }
-
 
 @mixin mintypes($minbreakpoints, $headers, $cssattr) {
   @for $i from 1 through length($minbreakpoints) {

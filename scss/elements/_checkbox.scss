@@ -429,7 +429,7 @@
 
 .checkbox-card {
   .checkbox-card-label {
-    border-radius: $btn-radius; 
+    border-radius: $btn-radius;
     overflow: hidden;
     border: 1px solid $c-middle-grey;
     background: $c-white;
@@ -440,11 +440,11 @@
     box-sizing: border-box;
     transition: all 0.2s ease;
   }
-  & [type="radio"] {
+  & [type='radio'] {
     position: absolute;
     left: -9999px;
   }
-  & [type="radio"]:checked,
+  & [type='radio']:checked,
   & :hover {
     & + .checkbox-card-label {
       cursor: pointer;
@@ -459,7 +459,7 @@
       background: $c-primary;
     }
 
-    & [type="radio"]:checked,
+    & [type='radio']:checked,
     & :hover {
       & + .checkbox-card-label {
         cursor: pointer;
@@ -468,7 +468,6 @@
     }
   }
 }
-
 
 .is-active {
   &.checkbox-radio .border-1 {
@@ -483,18 +482,18 @@
 
 .is-error {
   .checkbox-item {
-    [type="checkbox"]:checked + label::before,
-    [type="checkbox"]:not(:checked) + label::before {
-      border: 1px solid $c-error!important;
+    [type='checkbox']:checked + label::before,
+    [type='checkbox']:not(:checked) + label::before {
+      border: 1px solid $c-error !important;
     }
     a {
-      color: $c-error!important;
+      color: $c-error !important;
     }
     svg {
       g {
-        fill: $c-error!important;
+        fill: $c-error !important;
         polyline {
-          stroke: $c-error!important;
+          stroke: $c-error !important;
         }
       }
     }
@@ -532,19 +531,19 @@
     }
   }
   .checkbox-radio {
-    [type="radio"]:not(:checked) + label::before,
-    [type="radio"]:checked + label::before {
+    [type='radio']:not(:checked) + label::before,
+    [type='radio']:checked + label::before {
       border: 1px solid $c-white;
     }
 
-    [type="radio"]:not(:checked) + label .ico-radio,
-    [type="radio"]:checked + label .ico-radio {
+    [type='radio']:not(:checked) + label .ico-radio,
+    [type='radio']:checked + label .ico-radio {
       background-color: $c-white;
     }
   }
   .checkbox-item-2 {
-    [type="checkbox"]:not(:checked) + label::before,
-    [type="checkbox"]:checked + label::before {
+    [type='checkbox']:not(:checked) + label::before,
+    [type='checkbox']:checked + label::before {
       border: 1px solid $c-white;
     }
 
@@ -552,10 +551,9 @@
       background: $c-white;
     }
 
-    [type="checkbox"]:not(:checked) + label .checkbox-circle,
-    [type="checkbox"]:checked + label .checkbox-circle {
+    [type='checkbox']:not(:checked) + label .checkbox-circle,
+    [type='checkbox']:checked + label .checkbox-circle {
       color: $c-white;
     }
   }
-
 }

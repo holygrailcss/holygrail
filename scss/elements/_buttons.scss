@@ -1,5 +1,5 @@
-@use "sass:math";
-@import "../abstract/_all";
+@use 'sass:math';
+@import '../abstract/_all';
 
 $btn-text-mini: 12px;
 $btn-text-small: 14px;
@@ -43,9 +43,6 @@ $btn-text-full: 14px;
     text-decoration: none;
     opacity: 0.6;
     outline: none;
-
-
- 
   }
   &[disabled],
   &:disabled,
@@ -195,8 +192,8 @@ $btn-text-full: 14px;
 }
 
 .btn--mini-rd {
-  padding-right: $padding-global * 3 ;
-  padding-left: $padding-global * 3 ;
+  padding-right: $padding-global * 3;
+  padding-left: $padding-global * 3;
   font-size: $btn-text-mini;
   height: 32px;
   display: inline-flex;
@@ -464,7 +461,6 @@ $btn-text-full: 14px;
   }
 }
 
-
 .btn-phantom {
   color: $c-white;
   background-color: transparent;
@@ -495,9 +491,6 @@ $btn-text-full: 14px;
     border: 1px solid $c-dark-grey;
     opacity: 1;
   }
-
-
-
 }
 
 .btn-limited {
@@ -677,7 +670,6 @@ $btn-text-full: 14px;
   color: $c-white;
 }
 
-
 .btn-blue {
   background-color: $c-info;
   color: $c-white;
@@ -691,7 +683,7 @@ $btn-text-full: 14px;
   &.active {
     color: $c-white;
     text-decoration: none;
-    opacity: .6;
+    opacity: 0.6;
   }
 }
 
@@ -716,8 +708,6 @@ $btn-text-full: 14px;
     stroke: $c-white;
   }
 
-
-
   &:focus,
   &.focus,
   &:hover,
@@ -728,8 +718,6 @@ $btn-text-full: 14px;
     color: $c-white;
     text-decoration: none;
   }
-
-
 }
 
 .btn-circle {
@@ -776,8 +764,6 @@ $btn-text-full: 14px;
     }
   }
 
-
-
   &:disabled,
   &[disabled],
   &.disabled {
@@ -791,11 +777,10 @@ $btn-text-full: 14px;
       }
     }
   }
-
-
 }
 
-.btn-google,.has-light .btn-google {
+.btn-google,
+.has-light .btn-google {
   background-color: $c-white;
   color: $c-primary;
   border: 1px solid $c-white;
@@ -814,7 +799,6 @@ $btn-text-full: 14px;
     border: 1px solid $c-light-grey;
     opacity: 1;
   }
-
 }
 
 .btn-facebook {
@@ -842,19 +826,15 @@ $btn-text-full: 14px;
     border: 1px solid #045ed3;
   }
 
-  .has-light &{
+  .has-light & {
     background-color: #1977f3;
     color: $c-white;
     border: 1px solid #1977f3;
-  
-  
   }
-
-
-  
 }
 
-.btn-apple ,.has-light .btn-apple {
+.btn-apple,
+.has-light .btn-apple {
   background-color: $c-black;
   color: $c-white;
   border: 1px solid $c-black;
@@ -870,11 +850,10 @@ $btn-text-full: 14px;
     background-color: $c-dark-grey;
     border: 1px solid $c-dark-grey;
   }
-
-
 }
 
-.btn-apple-secondary ,.has-light .btn-apple-secondary {
+.btn-apple-secondary,
+.has-light .btn-apple-secondary {
   background-color: $c-white;
   color: $c-black;
   border: 1px solid $c-black;
@@ -891,7 +870,8 @@ $btn-text-full: 14px;
   }
 }
 
-.btn-naver ,.has-light .btn-naver {
+.btn-naver,
+.has-light .btn-naver {
   background-color: $c-naver;
   color: $c-white;
   padding-left: 48px;
@@ -910,7 +890,8 @@ $btn-text-full: 14px;
   }
 }
 
-.btn-wechat ,.has-light .btn-wechat {
+.btn-wechat,
+.has-light .btn-wechat {
   background-color: $c-wechat;
   color: $c-white;
   padding-left: 48px;
@@ -958,8 +939,8 @@ $btn-text-full: 14px;
     margin-left: -1px;
   }
 
-  [class^="btn--"],
-  [class*=" btn--"] {
+  [class^='btn--'],
+  [class*=' btn--'] {
     position: relative;
     border-radius: 0;
     float: left;
@@ -1001,7 +982,6 @@ $btn-text-full: 14px;
   }
 }
 
-
 .btn-anim {
   height: 48px;
   display: flex;
@@ -1012,7 +992,8 @@ $btn-text-full: 14px;
 
   span {
     position: absolute;
-    transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1),
+      opacity 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
   }
 
   .btn-submit {
@@ -1098,7 +1079,6 @@ $btn-text-full: 14px;
     }
   }
 }
-
 
 .btn-feel {
   background-color: $c-feel;
@@ -1251,8 +1231,6 @@ $btn-text-full: 14px;
       cursor: default;
     }
   }
-
-
 
   .btn-google {
     svg path {

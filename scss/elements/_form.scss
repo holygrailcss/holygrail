@@ -149,7 +149,6 @@ label {
   }
 }
 
-
 .info-text {
   color: $c-dark-grey;
   margin-top: 4px;
@@ -188,7 +187,7 @@ label {
   &.btn,
   & > input,
   & > label {
-    padding-left: $btn-padding * 3 ;
+    padding-left: $btn-padding * 3;
   }
   .form-icon {
     top: 0;
@@ -530,7 +529,8 @@ input::input-placeholder {
     }
   }
 
-  &.select-flat, &.select-flat-no-icon {
+  &.select-flat,
+  &.select-flat-no-icon {
     width: max-content;
 
     label {
@@ -716,7 +716,7 @@ input::input-placeholder {
 }
 
 .form-prefix {
-  display :flex;
+  display: flex;
   flex-wrap: wrap;
   gap: 8px;
 
@@ -727,7 +727,7 @@ input::input-placeholder {
   > :nth-child(2) {
     flex: 5 0 130px;
   }
-  
+
   > .btn {
     flex: 1 0 auto;
   }
@@ -766,7 +766,7 @@ input::input-placeholder {
   padding-right: 64px;
 
   .input,
-  .input:focus ,
+  .input:focus,
   .textarea,
   .textarea:focus {
     @include font-regular;
@@ -796,7 +796,6 @@ input::input-placeholder {
 
   .validation-error-messages {
     width: calc(100% - 40px);
-
   }
 
   .help {

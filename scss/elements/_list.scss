@@ -247,7 +247,8 @@ ul.list-mini {
 }
 
 //has-light
-ul.list-disc, ul.list-mini {
+ul.list-disc,
+ul.list-mini {
   &.has-light {
     > li {
       &.is-missing {
@@ -255,7 +256,7 @@ ul.list-disc, ul.list-mini {
           background-color: $c-white;
         }
       }
-  
+
       &::after {
         background-color: $c-white;
       }
