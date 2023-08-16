@@ -5971,10 +5971,6 @@ strong {
 }
 
 .w-100 {
-  width: 50px;
-}
-
-.w-100 {
   width: 100%;
 }
 
@@ -10521,10 +10517,7 @@ ul.list-clear li.list-box:last-child {
 }
 
 .modalx-16 .modalx-body {
-  padding-top: 48px;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-bottom: 16px;
+  padding: 48px 16px 16px 16px;
 }
 @media (min-width: 768px) {
   .modalx-16 .modalx-body {
@@ -10533,69 +10526,42 @@ ul.list-clear li.list-box:last-child {
 }
 
 .modalx-16-16 .modalx-body {
-  padding-top: 16px;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-bottom: 16px;
+  padding: 16px;
 }
 
 .modalx-24 .modalx-body {
-  padding-top: 48px;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-bottom: 16px;
+  padding: 48px 16px 16px 16px;
 }
 @media (min-width: 768px) {
   .modalx-24 .modalx-body {
-    padding-top: 64px;
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-bottom: 24px;
+    padding: 64px 24px 24px 24px;
   }
 }
 
 .modalx-32 .modalx-body {
-  padding-top: 48px;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-bottom: 16px;
+  padding: 48px 16px 16px 16px;
 }
 @media (min-width: 768px) {
   .modalx-32 .modalx-body {
-    padding-top: 64px;
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-bottom: 32px;
+    padding: 64px 32px 32px 32px;
   }
 }
 
 .modalx-40 .modalx-body {
-  padding-top: 40px;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-bottom: 16px;
+  padding: 40px 16px 16px 16px;
 }
 @media (min-width: 768px) {
   .modalx-40 .modalx-body {
-    padding-top: 40px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 40px;
+    padding: 40px;
   }
 }
 
 .modalx-0-24 .modalx-body {
-  padding-top: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
+  padding: 0;
 }
 @media (min-width: 768px) {
   .modalx-0-24 .modalx-body {
-    padding-top: 64px;
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-bottom: 24px;
+    padding: 64px 24px 24px 24px;
   }
 }
 

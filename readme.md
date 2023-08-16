@@ -100,12 +100,13 @@ $ npm run start   Abrimos la aplicacion
 ```
 ## Actualizar todos los packs a la ultima versión
 
+``````
 npm outdated
 
 npm install -g npm-check-updates
 
 ncu -u
-
+``````
 
 
 
