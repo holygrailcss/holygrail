@@ -56,6 +56,16 @@
   }
 }
 
+
+.container-bleed {
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
+
+
 .container-fluid {
   padding-right: $padding-global;
   padding-left: $padding-global;
