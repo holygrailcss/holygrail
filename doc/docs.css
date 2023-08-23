@@ -6066,6 +6066,10 @@ strong {
   }
 }
 
+.pe-none {
+  pointer-events: none;
+}
+
 /* hasta 991px ,  desktop, lineheight, grosor */
 @keyframes underline {
   0% {
@@ -8458,6 +8462,25 @@ input::input-placeholder {
 .form-input-prefix .form-input-label-2 {
   display: inline-block;
   width: calc(100% - 60px);
+}
+
+.form-btn {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.form-btn > :nth-child(1) {
+  flex: 1;
+}
+
+.form-btn > :nth-child(2) {
+  flex: 100%;
+}
+@media (min-width: 768px) {
+  .form-btn > :nth-child(2) {
+    flex: 0 0 auto;
+  }
 }
 
 .form-prefix {

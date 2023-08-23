@@ -715,6 +715,21 @@ input::input-placeholder {
   }
 }
 
+.form-btn {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.form-btn > :nth-child(1) {
+  flex: 1;
+}
+.form-btn > :nth-child(2) {
+  flex: 100%;
+  @media (min-width: $break-sm) {
+    flex: 0 0 auto;
+  }
+}
+
 .form-prefix {
   display: flex;
   flex-wrap: wrap;
