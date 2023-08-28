@@ -47,6 +47,12 @@ svg-icon {
       fill: $c-valid;
     }
   }
+
+  &.ico-feel {
+    path {
+      fill: $c-feel-dark;
+    }
+  }
 }
 
 .has-light {
