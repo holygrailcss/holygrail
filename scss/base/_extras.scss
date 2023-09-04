@@ -1,0 +1,21 @@
+@import '../abstract/_all';
+
+$links: (
+  btn-primary: #{$break-xs},
+  btn-secondary: #{$break-sm},
+  btn-tertiary: #{$break-md},
+  btn-feel: #{$break-lg},
+  link-line: #{$break-lg},
+  link-raw: #{$break-lg},
+  btn-phantom: #{$break-lg},
+  btn-world: #{$break-lg},
+  product-tag: #{$break-lg},
+);
+
+.helper-font {
+  @include debug-types($headers);
+  @include debug-types($links);
+  .form-input-label-2 {
+    border: 1px solid #96c3ac;
+  }
+}
