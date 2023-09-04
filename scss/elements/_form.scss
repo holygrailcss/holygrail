@@ -68,6 +68,23 @@ label {
   }
 }
 
+.validation-error-messages {
+  color: $c-error;
+  font-weight: 500;
+
+  svg {
+    path {
+      fill: $c-error;
+    }
+  }
+  .is-rtl & {
+    svg-icon {
+      padding-right: 0;
+      padding-left: 8px;
+    }
+  }
+}
+
 .validation-error-wrap {
   min-height: 24px;
 }
@@ -224,8 +241,9 @@ label {
     right: 0;
     left: auto;
     position: absolute;
-    top: 50%;
+    top: 22px;
     box-sizing: border-box;
+    display: table;
     transform: translateY(-50%);
     margin: 0 16px;
     height: 16px;
@@ -322,6 +340,11 @@ label {
 input::input-placeholder {
   color: $c-middle-grey;
   transform: translate3d(0, 0, 0);
+}
+
+.form-input-label input,
+.form-input-label-2 input {
+  background-color: #fff;
 }
 
 .form-input-label {
@@ -618,6 +641,19 @@ input::input-placeholder {
       position: absolute;
       top: 0;
       left: 0;
+    }
+  }
+
+  .select-secondary-rd {
+    .btn.btn-secondary-rd {
+      padding: 9px 2px 4px 2px;
+
+      &:hover {
+        opacity: 0.5;
+      }
+      @media (min-width: $break-sm) {
+        padding: 16px 2px 14px 2px;
+      }
     }
   }
 
@@ -1023,4 +1059,11 @@ input::input-placeholder {
       margin-right: 4px;
     }
   }
+}
+
+svg-icon.ico-post,
+svg-icon.ico-pre {
+  margin: 0px 16px;
+  top: 50%;
+  transform: translateY(-50%);
 }

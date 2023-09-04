@@ -24,6 +24,11 @@
   font-weight: $font-weight-medium;
 }
 
+@mixin font-semibold() {
+  font-family: $font-family-a-sb;
+  font-weight: $font-weight-semibold;
+}
+
 @mixin font-bold() {
   font-family: $font-family-a-b;
   font-weight: $font-weight-bold;

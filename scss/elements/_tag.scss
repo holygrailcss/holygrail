@@ -53,3 +53,16 @@
   display: inline-block;
   font-size: 14px;
 }
+
+.tag-new {
+  color: #000;
+  font-style: normal;
+  line-height: 10px;
+  top: 10px;
+  right: -30px;
+  position: absolute;
+  .is-rtl & {
+      right: auto;
+      left: -30px;
+  }
+}

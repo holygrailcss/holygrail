@@ -970,6 +970,9 @@ $btn-text-full: 14px;
     }
   }
 }
+.btn-group > .btn {
+  flex: 1;
+}
 
 .btn-group-inline {
   text-align: center;

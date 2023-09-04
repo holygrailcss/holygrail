@@ -105,3 +105,109 @@ $tooltip-width: 320px;
     }
   }
 }
+
+.has-tooltip-temp {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+}
+
+.tooltip-sm-temp {
+  bottom: 0;
+  transform: translateY(100%) translateY($tooltip-arrow);
+  right: -8px;
+  background-color: $c-white;
+  border: 1px solid $tooltip-border-color;
+  position: absolute;
+  width: 240px;
+  z-index: 10;
+  padding: $tooltip-padding;
+  padding-right: $tooltip-padding + 16px;
+  color: $c-primary;
+
+  &::after {
+    content: '';
+    top: math.div(-$tooltip-arrow, 2) - 1;
+    right: $tooltip-dist;
+    position: absolute;
+    border-top: 1px solid $tooltip-border-color;
+    border-left: 1px solid $tooltip-border-color;
+    width: $tooltip-arrow;
+    height: $tooltip-arrow;
+    background: $c-white;
+    transform: rotate(45deg);
+  }
+
+  .close-temp {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+  }
+
+  &.tooltip-tl-temp {
+    left: -8px;
+    right: auto;
+    &::after {
+      right: auto;
+      left: $tooltip-dist;
+    }
+  }
+  &.tooltip-bl-temp {
+    top: 0;
+    bottom: auto;
+    transform: translateY(-100%) translateY(-$tooltip-arrow);
+  }
+}
+
+.tooltip-sm-old {
+  right: 8px;
+  background-color: #fff;
+  border: 1px solid #e3e3e3;
+  position: absolute;
+  width: 100%;
+  max-width: 327px;
+  z-index: 10;
+}
+
+.tooltip-sm-old:after {
+  top: -6px;
+  right: 18px;
+  content: '';
+  position: absolute;
+  border-top: 1px solid #e3e3e3;
+  border-left: 1px solid #e3e3e3;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  transform: rotate(45deg);
+}
+
+.tooltip-sm-old {
+  top: 36px;
+}
+
+.tooltip-close {
+  border-bottom: 1px solid $c-middle-grey;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 8px;
+}
+
+.is-rtl {
+  .tooltip-sm-temp {
+    left: -8px;
+    right: auto;
+    padding-left: $tooltip-padding + 16px;
+    padding-right: $tooltip-padding * 2;
+    &::after {
+      right: auto;
+      left: $tooltip-dist;
+    }
+    .close-temp {
+      right: auto;
+      left: $tooltip-padding;
+    }
+  }
+}

@@ -181,6 +181,7 @@
 }
 hr {
   width: 100%;
+  margin: 0px;
   border-top: 1px solid $c-middle-grey;
   border-bottom: 1px solid transparent;
   border-left: 1px solid transparent;
@@ -578,6 +579,9 @@ strong {
 .mw-md {
   max-width: $container-6;
 }
+.col-lg-4 > .mw-md {
+  max-width: $container-6;
+}
 .mw-lg {
   max-width: $container-9;
 }
@@ -592,6 +596,9 @@ strong {
   flex-grow: 0;
 }
 .d-inline {
+  display: inline;
+}
+.d-inline-block {
   display: inline-block;
 }
 .flex-1 {
@@ -646,4 +653,83 @@ strong {
 
 .pe-none {
   pointer-events: none;
+}
+
+.font-l {
+  font-family: $font-family-a-l;
+}
+
+.font-r {
+  font-family: $font-family-a-r;
+}
+
+.font-m {
+  font-family: $font-family-a-m;
+}
+
+.font-b {
+  font-family: $font-family-a-b;
+}
+
+.font-sb {
+  font-family: $font-family-a-sb;
+}
+
+.absolute-middle {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.c-sale {
+  color: $c-error;
+}
+
+.c-info {
+  color: $c-info;
+}
+
+.c-success {
+  color: $c-success;
+}
+.free-product {
+  color: $c-warning;
+}
+
+.is-invert {
+  filter: invert(1);
+}
+
+.p-stick {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.m-0 {
+  margin: 0px;
+}
+
+.bg-black {
+  background-color: $c-black;
+}
+
+.c-notify {
+  background-color: #e6f5ff;
+}
+
+.o-hidden {
+  overflow: hidden;
+}
+
+.reset-body {
+  margin-left: -16px;
+  margin-right: -16px;
+
+  @media (min-width: $break-md) {
+      margin-left: -40px;
+      margin-right: -40px;
+  }
 }
