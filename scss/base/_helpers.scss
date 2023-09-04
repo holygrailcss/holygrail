@@ -678,22 +678,9 @@ strong {
 .absolute-middle {
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
-.c-sale {
-  color: $c-error;
-}
-
-.c-info {
-  color: $c-info;
-}
-
-.c-success {
-  color: $c-success;
-}
 .free-product {
   color: $c-warning;
 }
@@ -729,7 +716,7 @@ strong {
   margin-right: -16px;
 
   @media (min-width: $break-md) {
-      margin-left: -40px;
-      margin-right: -40px;
+    margin-left: -40px;
+    margin-right: -40px;
   }
 }

@@ -5956,21 +5956,7 @@ strong {
 .absolute-middle {
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-}
-
-.c-sale {
-  color: #b40016;
-}
-
-.c-info {
-  color: #1a32a4;
-}
-
-.c-success {
-  color: #76ae4a;
 }
 
 .free-product {
@@ -6001,6 +5987,552 @@ strong {
 
 .o-hidden {
   overflow: hidden;
+}
+
+.reset-body {
+  margin-left: -16px;
+  margin-right: -16px;
+}
+@media (min-width: 992px) {
+  .reset-body {
+    margin-left: -40px;
+    margin-right: -40px;
+  }
+}
+
+/* hasta 991px ,  desktop, lineheight, grosor */
+@keyframes underline {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes stretch {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 80px;
+  }
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -100%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+.helper-font .sub-l {
+  position: relative;
+  border: 1px solid #96c3ac;
+}
+.helper-font .sub-l::after {
+  content: "sub-l " !important;
+  position: absolute;
+  background: rgb(42, 242, 232);
+  opacity: 0.8;
+  white-space: nowrap;
+  color: #fff;
+  padding: 2px;
+  left: 0;
+  font-size: 10px;
+  font-weight: bold;
+}
+.helper-font .sub-m {
+  position: relative;
+  border: 1px solid #96c3ac;
+}
+.helper-font .sub-m::after {
+  content: "sub-m " !important;
+  position: absolute;
+  background: rgb(198, 209, 230);
+  opacity: 0.8;
+  white-space: nowrap;
+  color: #fff;
+  padding: 2px;
+  left: 0;
+  font-size: 10px;
+  font-weight: bold;
+}
+.helper-font .sub-s {
+  position: relative;
+  border: 1px solid #96c3ac;
+}
+.helper-font .sub-s::after {
+  content: "sub-s " !important;
+  position: absolute;
+  background: rgb(230, 120, 114);
+  opacity: 0.8;
+  white-space: nowrap;
+  color: #fff;
+  padding: 2px;
+  left: 0;
+  font-size: 10px;
+  font-weight: bold;
+}
+.helper-font .head-l {
+  position: relative;
+  border: 1px solid #96c3ac;
+}
+.helper-font .head-l::after {
+  content: "head-l " !important;
+  position: absolute;
+  background: rgb(48, 179, 229);
+  opacity: 0.8;
+  white-space: nowrap;
+  color: #fff;
+  padding: 2px;
+  left: 0;
+  font-size: 10px;
+  font-weight: bold;
+}
+.helper-font .head-m {
+  position: relative;
+  border: 1px solid #96c3ac;
+}
+.helper-font .head-m::after {
+  content: "head-m " !important;
+  position: absolute;
+  background: rgb(196, 60, 176);
+  opacity: 0.8;
+  white-space: nowrap;
+  color: #fff;
+  padding: 2px;
+  left: 0;
+  font-size: 10px;
+  font-weight: bold;
+}
+.helper-font .head-s {
+  position: relative;
+  border: 1px solid #96c3ac;
+}
+.helper-font .head-s::after {
+  content: "head-s " !important;
+  position: absolute;
+  background: rgb(107, 29, 141);
+  opacity: 0.8;
+  white-space: nowrap;
+  color: #fff;
+  padding: 2px;
+  left: 0;
+  font-size: 10px;
+  font-weight: bold;
+}
+.helper-font .tit-l {
+  position: relative;
+  border: 1px solid #96c3ac;
+}
+.helper-font .tit-l::after {
+  content: "tit-l " !important;
+  position: absolute;
+  background: rgb(143, 255, 94);
+  opacity: 0.8;
+  white-space: nowrap;
+  color: #fff;
+  padding: 2px;
+  left: 0;
+  font-size: 10px;
+  font-weight: bold;
+}
+.helper-font .tit-m {
+  position: relative;
+  border: 1px solid #96c3ac;
+}
+.helper-font .tit-m::after {
+  content: "tit-m " !important;
+  position: absolute;
+  background: rgb(157, 236, 249);
+  opacity: 0.8;
+  white-space: nowrap;
+  color: #fff;
+  padding: 2px;
+  left: 0;
+  font-size: 10px;
+  font-weight: bold;
+}
+.helper-font .tit-s {
+  position: relative;
+  border: 1px solid #96c3ac;
+}
+.helper-font .tit-s::after {
+  content: "tit-s " !important;
+  position: absolute;
+  background: rgb(169, 88, 115);
+  opacity: 0.8;
+  white-space: nowrap;
+  color: #fff;
+  padding: 2px;
+  left: 0;
+  font-size: 10px;
+  font-weight: bold;
+}
+.helper-font .tit-xs {
+  position: relative;
+  border: 1px solid #96c3ac;
+}
+.helper-font .tit-xs::after {
+  content: "tit-xs " !important;
+  position: absolute;
+  background: rgb(1, 222, 173);
+  opacity: 0.8;
+  white-space: nowrap;
+  color: #fff;
+  padding: 2px;
+  left: 0;
+  font-size: 10px;
+  font-weight: bold;
+}
+.helper-font .p-18-2b {
+  position: relative;
+  border: 1px solid #96c3ac;
+}
+.helper-font .p-18-2b::after {
+  content: "p-18-2b " !important;
+  position: absolute;
+  background: rgb(144, 67, 13);
+  opacity: 0.8;
+  white-space: nowrap;
+  color: #fff;
+  padding: 2px;
+  left: 0;
+  font-size: 10px;
+  font-weight: bold;
+}
+.helper-font .p-18-b {
+  position: relative;
+  border: 1px solid #96c3ac;
+}
+.helper-font .p-18-b::after {
+  content: "p-18-b " !important;
+  position: absolute;
+  background: rgb(106, 252, 156);
+  opacity: 0.8;
+  white-space: nowrap;
+  color: #fff;
+  padding: 2px;
+  left: 0;
+  font-size: 10px;
+  font-weight: bold;
+}
+.helper-font .p-14 {
+  position: relative;
+  border: 1px solid #96c3ac;
+}
+.helper-font .p-14::after {
+  content: "p-14 " !important;
+  position: absolute;
+  background: rgb(250, 29, 96);
+  opacity: 0.8;
+  white-space: nowrap;
+  color: #fff;
+  padding: 2px;
+  left: 0;
+  font-size: 10px;
+  font-weight: bold;
+}
+.helper-font .p-14-b {
+  position: relative;
+  border: 1px solid #96c3ac;
+}
+.helper-font .p-14-b::after {
+  content: "p-14-b " !important;
+  position: absolute;
+  background: rgb(74, 125, 34);
+  opacity: 0.8;
+  white-space: nowrap;
+  color: #fff;
+  padding: 2px;
+  left: 0;
+  font-size: 10px;
+  font-weight: bold;
+}
+.helper-font .p-l {
+  position: relative;
+  border: 1px solid #96c3ac;
+}
+.helper-font .p-l::after {
+  content: "p-l " !important;
+  position: absolute;
+  background: rgb(131, 24, 108);
+  opacity: 0.8;
+  white-space: nowrap;
+  color: #fff;
+  padding: 2px;
+  left: 0;
+  font-size: 10px;
+  font-weight: bold;
+}
+.helper-font .p-m {
+  position: relative;
+  border: 1px solid #96c3ac;
+}
+.helper-font .p-m::after {
+  content: "p-m " !important;
+  position: absolute;
+  background: rgb(159, 189, 105);
+  opacity: 0.8;
+  white-space: nowrap;
+  color: #fff;
+  padding: 2px;
+  left: 0;
+  font-size: 10px;
+  font-weight: bold;
+}
+.helper-font .p-m-b {
+  position: relative;
+  border: 1px solid #96c3ac;
+}
+.helper-font .p-m-b::after {
+  content: "p-m-b " !important;
+  position: absolute;
+  background: rgb(54, 56, 190);
+  opacity: 0.8;
+  white-space: nowrap;
+  color: #fff;
+  padding: 2px;
+  left: 0;
+  font-size: 10px;
+  font-weight: bold;
+}
+.helper-font .p-s {
+  position: relative;
+  border: 1px solid #96c3ac;
+}
+.helper-font .p-s::after {
+  content: "p-s " !important;
+  position: absolute;
+  background: rgb(54, 219, 218);
+  opacity: 0.8;
+  white-space: nowrap;
+  color: #fff;
+  padding: 2px;
+  left: 0;
+  font-size: 10px;
+  font-weight: bold;
+}
+.helper-font .p-s-b {
+  position: relative;
+  border: 1px solid #96c3ac;
+}
+.helper-font .p-s-b::after {
+  content: "p-s-b " !important;
+  position: absolute;
+  background: rgb(98, 236, 128);
+  opacity: 0.8;
+  white-space: nowrap;
+  color: #fff;
+  padding: 2px;
+  left: 0;
+  font-size: 10px;
+  font-weight: bold;
+}
+.helper-font .p-xs {
+  position: relative;
+  border: 1px solid #96c3ac;
+}
+.helper-font .p-xs::after {
+  content: "p-xs " !important;
+  position: absolute;
+  background: rgb(92, 75, 248);
+  opacity: 0.8;
+  white-space: nowrap;
+  color: #fff;
+  padding: 2px;
+  left: 0;
+  font-size: 10px;
+  font-weight: bold;
+}
+.helper-font .p-xs-b {
+  position: relative;
+  border: 1px solid #96c3ac;
+}
+.helper-font .p-xs-b::after {
+  content: "p-xs-b " !important;
+  position: absolute;
+  background: rgb(132, 189, 217);
+  opacity: 0.8;
+  white-space: nowrap;
+  color: #fff;
+  padding: 2px;
+  left: 0;
+  font-size: 10px;
+  font-weight: bold;
+}
+.helper-font .p-xxs-b {
+  position: relative;
+  border: 1px solid #96c3ac;
+}
+.helper-font .p-xxs-b::after {
+  content: "p-xxs-b " !important;
+  position: absolute;
+  background: rgb(151, 29, 91);
+  opacity: 0.8;
+  white-space: nowrap;
+  color: #fff;
+  padding: 2px;
+  left: 0;
+  font-size: 10px;
+  font-weight: bold;
+}
+.helper-font .btn-primary {
+  position: relative;
+  border: 1px solid #96c3ac;
+}
+.helper-font .btn-primary::after {
+  content: "btn-primary " !important;
+  position: absolute;
+  background: rgb(188, 140, 203);
+  opacity: 0.8;
+  white-space: nowrap;
+  color: #fff;
+  padding: 2px;
+  left: 0;
+  font-size: 10px;
+  font-weight: bold;
+}
+.helper-font .btn-secondary {
+  position: relative;
+  border: 1px solid #96c3ac;
+}
+.helper-font .btn-secondary::after {
+  content: "btn-secondary " !important;
+  position: absolute;
+  background: rgb(18, 144, 229);
+  opacity: 0.8;
+  white-space: nowrap;
+  color: #fff;
+  padding: 2px;
+  left: 0;
+  font-size: 10px;
+  font-weight: bold;
+}
+.helper-font .btn-tertiary {
+  position: relative;
+  border: 1px solid #96c3ac;
+}
+.helper-font .btn-tertiary::after {
+  content: "btn-tertiary " !important;
+  position: absolute;
+  background: rgb(117, 111, 140);
+  opacity: 0.8;
+  white-space: nowrap;
+  color: #fff;
+  padding: 2px;
+  left: 0;
+  font-size: 10px;
+  font-weight: bold;
+}
+.helper-font .btn-feel {
+  position: relative;
+  border: 1px solid #96c3ac;
+}
+.helper-font .btn-feel::after {
+  content: "btn-feel " !important;
+  position: absolute;
+  background: rgb(114, 246, 232);
+  opacity: 0.8;
+  white-space: nowrap;
+  color: #fff;
+  padding: 2px;
+  left: 0;
+  font-size: 10px;
+  font-weight: bold;
+}
+.helper-font .link-line {
+  position: relative;
+  border: 1px solid #96c3ac;
+}
+.helper-font .link-line::after {
+  content: "link-line " !important;
+  position: absolute;
+  background: rgb(23, 169, 251);
+  opacity: 0.8;
+  white-space: nowrap;
+  color: #fff;
+  padding: 2px;
+  left: 0;
+  font-size: 10px;
+  font-weight: bold;
+}
+.helper-font .link-raw {
+  position: relative;
+  border: 1px solid #96c3ac;
+}
+.helper-font .link-raw::after {
+  content: "link-raw " !important;
+  position: absolute;
+  background: rgb(172, 30, 228);
+  opacity: 0.8;
+  white-space: nowrap;
+  color: #fff;
+  padding: 2px;
+  left: 0;
+  font-size: 10px;
+  font-weight: bold;
+}
+.helper-font .btn-phantom {
+  position: relative;
+  border: 1px solid #96c3ac;
+}
+.helper-font .btn-phantom::after {
+  content: "btn-phantom " !important;
+  position: absolute;
+  background: rgb(157, 119, 154);
+  opacity: 0.8;
+  white-space: nowrap;
+  color: #fff;
+  padding: 2px;
+  left: 0;
+  font-size: 10px;
+  font-weight: bold;
+}
+.helper-font .btn-world {
+  position: relative;
+  border: 1px solid #96c3ac;
+}
+.helper-font .btn-world::after {
+  content: "btn-world " !important;
+  position: absolute;
+  background: rgb(29, 18, 214);
+  opacity: 0.8;
+  white-space: nowrap;
+  color: #fff;
+  padding: 2px;
+  left: 0;
+  font-size: 10px;
+  font-weight: bold;
+}
+.helper-font .product-tag {
+  position: relative;
+  border: 1px solid #96c3ac;
+}
+.helper-font .product-tag::after {
+  content: "product-tag " !important;
+  position: absolute;
+  background: rgb(172, 9, 209);
+  opacity: 0.8;
+  white-space: nowrap;
+  color: #fff;
+  padding: 2px;
+  left: 0;
+  font-size: 10px;
+  font-weight: bold;
+}
+.helper-font .form-input-label-2 {
+  border: 1px solid #96c3ac;
 }
 
 /* hasta 991px ,  desktop, lineheight, grosor */
@@ -8339,14 +8871,14 @@ input::input-placeholder {
   left: 0;
 }
 .select .select-secondary-rd .btn.btn-secondary-rd {
-  padding: 9px 2px 4px 2px;
+  padding: 9px 2px 4px;
 }
 .select .select-secondary-rd .btn.btn-secondary-rd:hover {
   opacity: 0.5;
 }
 @media (min-width: 768px) {
   .select .select-secondary-rd .btn.btn-secondary-rd {
-    padding: 16px 2px 14px 2px;
+    padding: 16px 2px 14px;
   }
 }
 .select.select-size {
@@ -9856,6 +10388,19 @@ ul.list-mini.has-light > li::after {
   font-size: 14px;
 }
 
+.tag-new {
+  color: #000;
+  font-style: normal;
+  line-height: 10px;
+  top: 10px;
+  right: -30px;
+  position: absolute;
+}
+.is-rtl .tag-new {
+  right: auto;
+  left: -30px;
+}
+
 /* hasta 991px ,  desktop, lineheight, grosor */
 @keyframes underline {
   0% {
@@ -9978,6 +10523,20 @@ ul.list-mini.has-light > li::after {
   right: auto;
   left: 8px;
 }
+.is-rtl .tooltip-sm-temp {
+  left: -8px;
+  right: auto;
+  padding-left: 24px;
+  padding-right: 16px;
+}
+.is-rtl .tooltip-sm-temp::after {
+  right: auto;
+  left: 10px;
+}
+.is-rtl .tooltip-sm-temp .close-temp {
+  right: auto;
+  left: 8px;
+}
 
 .has-tooltip-temp {
   position: relative;
@@ -10030,6 +10589,7 @@ ul.list-mini.has-light > li::after {
 }
 
 .tooltip-sm-old {
+  top: 36px;
   right: 8px;
   background-color: #fff;
   border: 1px solid #e3e3e3;
@@ -10052,10 +10612,6 @@ ul.list-mini.has-light > li::after {
   transform: rotate(45deg);
 }
 
-.tooltip-sm-old {
-  top: 36px;
-}
-
 .tooltip-close {
   border-bottom: 1px solid #e3e3e3;
   width: 100%;
@@ -10063,21 +10619,6 @@ ul.list-mini.has-light > li::after {
   top: 0;
   left: 0;
   padding: 8px;
-}
-
-.is-rtl .tooltip-sm-temp {
-  left: -8px;
-  right: auto;
-  padding-left: 24px;
-  padding-right: 16px;
-}
-.is-rtl .tooltip-sm-temp::after {
-  right: auto;
-  left: 10px;
-}
-.is-rtl .tooltip-sm-temp .close-temp {
-  right: auto;
-  left: 8px;
 }
 
 /* hasta 991px ,  desktop, lineheight, grosor */
@@ -10695,8 +11236,6 @@ ul.list-clear li.list-box:last-child {
 }
 
 .modalx-centered {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;

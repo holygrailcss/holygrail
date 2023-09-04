@@ -646,13 +646,14 @@ input::input-placeholder {
 
   .select-secondary-rd {
     .btn.btn-secondary-rd {
-      padding: 9px 2px 4px 2px;
+      padding: 9px 2px 4px;
 
       &:hover {
         opacity: 0.5;
       }
+
       @media (min-width: $break-sm) {
-        padding: 16px 2px 14px 2px;
+        padding: 16px 2px 14px;
       }
     }
   }
