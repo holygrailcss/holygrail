@@ -705,6 +705,12 @@ $margin-right: (
 
 $mb: 'margin-bottom';
 $margin-bottom: (
+  mb-4: (
+    4px,
+    4px,
+    4px,
+    4px,
+  ),
   mb-8: (
     8px,
     8px,
@@ -740,6 +746,12 @@ $margin-bottom: (
     48px,
     48px,
     48px,
+  ),
+  mb-64: (
+    64px,
+    64px,
+    64px,
+    64px,
   ),
   mb-100: (
     100px,
