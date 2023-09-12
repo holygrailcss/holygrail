@@ -687,3 +687,26 @@ $spriteHeight: 400;
     }
   }
 }
+
+@mixin debug-types($headers) {
+  @for $i from 1 through length($headers) {
+    .#{nth(map-keys($headers), $i)} {
+      position: relative;
+      border: 1px solid #96c3ac;
+      &::after {
+        content: '#{nth(map-keys($headers), $i)} ' !important;
+        position: absolute;
+
+        @include random-bgr;
+
+        opacity: 0.8;
+        white-space: nowrap;
+        color: #fff;
+        padding: 2px;
+        left: 0;
+        font-size: 10px;
+        font-weight: bold;
+      }
+    }
+  }
+}

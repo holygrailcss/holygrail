@@ -112,7 +112,7 @@ img {
   -ms-interpolation-mode: bicubic;
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -147,7 +147,7 @@ img {
     transform: translate(-50%, 0);
   }
 }
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -486,7 +486,7 @@ img {
   }
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -1254,7 +1254,7 @@ img {
     max-width: 50%;
   }
 }
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -1352,7 +1352,7 @@ img {
   }
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -1479,7 +1479,7 @@ svg-icon.ico-feel path {
   height: 64px;
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -1528,7 +1528,7 @@ svg-icon.ico-feel path {
   color: #fff;
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -2058,7 +2058,7 @@ svg-icon.ico-feel path {
   content: "";
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -3513,7 +3513,7 @@ svg-icon.ico-feel path {
     padding-right: 48px;
   }
 }
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -4774,66 +4774,26 @@ mark {
 }
 
 @media (min-width: 1px) {
-  .sub-l {
-    font-family: "ms-serif", serif;
-    font-size: 56px;
-    line-height: 1.1;
-  }
-  .sub-m {
-    font-family: "ms-serif", serif;
-    font-size: 42px;
-    line-height: 1.1;
-  }
-  .sub-s {
-    font-family: "ms-serif", serif;
-    font-size: 32px;
-    line-height: 1.1;
-  }
-  .head-l {
-    font-family: arial, sans-serif;
-    font-weight: 900;
-    font-size: 56px;
-    line-height: 1.1;
-  }
-  .head-m {
-    font-family: arial, sans-serif;
-    font-weight: 900;
-    font-size: 42px;
-    line-height: 1.1;
-  }
-  .head-s {
-    font-family: arial, sans-serif;
-    font-weight: 900;
-    font-size: 32px;
-    line-height: 1.1;
-  }
-  .tit-l {
-    font-family: arial, sans-serif;
-    font-weight: 900;
-    font-size: 24px;
-    line-height: 1.2;
-  }
   .tit-m {
     font-family: arial, sans-serif;
-    font-weight: 900;
-    font-size: 20px;
+    font-weight: 500;
+    font-size: 14px;
     line-height: 1.2;
   }
   .tit-s {
     font-family: arial, sans-serif;
-    font-weight: 900;
-    font-size: 16px;
+    font-weight: 500;
+    font-size: 12px;
     line-height: 1.2;
   }
   .tit-xs {
     font-family: arial, sans-serif;
-    font-weight: 900;
-    font-size: 14px;
+    font-weight: 500;
+    font-size: 12px;
     line-height: 1.2;
   }
   .p-18-2b {
-    font-family: arial, sans-serif;
-    font-weight: 900;
+    font-family: "arial black", sans-serif;
     font-size: 18px;
     line-height: 1.3;
   }
@@ -4861,34 +4821,40 @@ mark {
     font-size: 16px;
     line-height: 1.3;
   }
-  .p-m {
-    font-family: arial, sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.3;
-  }
   .p-m-b {
     font-family: arial, sans-serif;
     font-weight: 900;
-    font-size: 14px;
-    line-height: 1.3;
+    font-size: 12px;
+    line-height: 1.2;
+  }
+  .p-m {
+    font-family: arial, sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.2;
+  }
+  .p-m-m {
+    font-family: arial, sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.2;
   }
   .p-s {
     font-family: arial, sans-serif;
     font-weight: 500;
     font-size: 12px;
-    line-height: 1.3;
-  }
-  .p-s-b {
-    font-family: arial, sans-serif;
-    font-weight: 900;
-    font-size: 12px;
-    line-height: 1.3;
+    line-height: 1.2;
   }
   .p-xs {
     font-family: arial, sans-serif;
     font-weight: 500;
     font-size: 11px;
+    line-height: 1.2;
+  }
+  .p-s-b {
+    font-family: arial, sans-serif;
+    font-weight: 900;
+    font-size: 12px;
     line-height: 1.3;
   }
   .p-xs-b {
@@ -4905,44 +4871,16 @@ mark {
   }
 }
 @media (min-width: 992px) {
-  .sub-l {
-    font-size: 96px;
-    line-height: 1.1;
-  }
-  .sub-m {
-    font-size: 64px;
-    line-height: 1.1;
-  }
-  .sub-s {
-    font-size: 56px;
-    line-height: 1.1;
-  }
-  .head-l {
-    font-size: 96px;
-    line-height: 1.1;
-  }
-  .head-m {
-    font-size: 64px;
-    line-height: 1.1;
-  }
-  .head-s {
-    font-size: 56px;
-    line-height: 1.1;
-  }
-  .tit-l {
-    font-size: 42px;
-    line-height: 1.2;
-  }
   .tit-m {
-    font-size: 32px;
+    font-size: 16px;
     line-height: 1.2;
   }
   .tit-s {
-    font-size: 20px;
+    font-size: 13px;
     line-height: 1.2;
   }
   .tit-xs {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.2;
   }
   .p-18-2b {
@@ -4965,24 +4903,28 @@ mark {
     font-size: 18px;
     line-height: 1.3;
   }
-  .p-m {
-    font-size: 16px;
-    line-height: 1.3;
-  }
   .p-m-b {
-    font-size: 16px;
-    line-height: 1.3;
+    font-size: 13px;
+    line-height: 1.2;
+  }
+  .p-m {
+    font-size: 13px;
+    line-height: 1.2;
+  }
+  .p-m-m {
+    font-size: 13px;
+    line-height: 1.2;
   }
   .p-s {
-    font-size: 14px;
-    line-height: 1.3;
-  }
-  .p-s-b {
-    font-size: 14px;
-    line-height: 1.3;
+    font-size: 12px;
+    line-height: 1.2;
   }
   .p-xs {
-    font-size: 12px;
+    font-size: 11px;
+    line-height: 1.2;
+  }
+  .p-s-b {
+    font-size: 13px;
     line-height: 1.3;
   }
   .p-xs-b {
@@ -5032,7 +4974,7 @@ mark {
   background-color: #8e8e8e;
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -5918,7 +5860,7 @@ strong {
   }
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -5960,7 +5902,7 @@ strong {
 .helper-font .tit-m::after {
   content: "tit-m " !important;
   position: absolute;
-  background: rgb(142, 53, 27);
+  background: rgb(177, 210, 18);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -5976,7 +5918,7 @@ strong {
 .helper-font .tit-s::after {
   content: "tit-s " !important;
   position: absolute;
-  background: rgb(139, 99, 145);
+  background: rgb(72, 64, 166);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -5992,7 +5934,7 @@ strong {
 .helper-font .tit-xs::after {
   content: "tit-xs " !important;
   position: absolute;
-  background: rgb(117, 59, 76);
+  background: rgb(197, 186, 110);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6008,7 +5950,7 @@ strong {
 .helper-font .p-18-2b::after {
   content: "p-18-2b " !important;
   position: absolute;
-  background: rgb(178, 18, 93);
+  background: rgb(13, 13, 110);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6024,7 +5966,7 @@ strong {
 .helper-font .p-18-b::after {
   content: "p-18-b " !important;
   position: absolute;
-  background: rgb(83, 215, 71);
+  background: rgb(240, 236, 45);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6040,7 +5982,7 @@ strong {
 .helper-font .p-14::after {
   content: "p-14 " !important;
   position: absolute;
-  background: rgb(126, 2, 163);
+  background: rgb(239, 199, 199);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6056,7 +5998,7 @@ strong {
 .helper-font .p-14-b::after {
   content: "p-14-b " !important;
   position: absolute;
-  background: rgb(255, 210, 231);
+  background: rgb(46, 113, 136);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6072,7 +6014,7 @@ strong {
 .helper-font .p-l::after {
   content: "p-l " !important;
   position: absolute;
-  background: rgb(252, 39, 132);
+  background: rgb(95, 119, 150);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6088,7 +6030,7 @@ strong {
 .helper-font .p-m-b::after {
   content: "p-m-b " !important;
   position: absolute;
-  background: rgb(128, 62, 84);
+  background: rgb(130, 56, 66);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6104,7 +6046,7 @@ strong {
 .helper-font .p-m::after {
   content: "p-m " !important;
   position: absolute;
-  background: rgb(20, 72, 226);
+  background: rgb(171, 102, 199);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6120,7 +6062,7 @@ strong {
 .helper-font .p-m-m::after {
   content: "p-m-m " !important;
   position: absolute;
-  background: rgb(252, 14, 64);
+  background: rgb(188, 217, 129);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6136,7 +6078,7 @@ strong {
 .helper-font .p-s::after {
   content: "p-s " !important;
   position: absolute;
-  background: rgb(34, 75, 113);
+  background: rgb(179, 45, 118);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6152,7 +6094,7 @@ strong {
 .helper-font .p-xs::after {
   content: "p-xs " !important;
   position: absolute;
-  background: rgb(177, 111, 31);
+  background: rgb(236, 100, 188);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6168,7 +6110,7 @@ strong {
 .helper-font .p-s-b::after {
   content: "p-s-b " !important;
   position: absolute;
-  background: rgb(230, 184, 55);
+  background: rgb(144, 199, 70);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6184,7 +6126,7 @@ strong {
 .helper-font .p-xs-b::after {
   content: "p-xs-b " !important;
   position: absolute;
-  background: rgb(117, 199, 13);
+  background: rgb(66, 233, 57);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6200,7 +6142,7 @@ strong {
 .helper-font .p-xxs-b::after {
   content: "p-xxs-b " !important;
   position: absolute;
-  background: rgb(126, 252, 208);
+  background: rgb(74, 254, 154);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6216,7 +6158,7 @@ strong {
 .helper-font .btn-primary::after {
   content: "btn-primary " !important;
   position: absolute;
-  background: rgb(4, 41, 192);
+  background: rgb(242, 248, 32);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6232,7 +6174,7 @@ strong {
 .helper-font .btn-secondary::after {
   content: "btn-secondary " !important;
   position: absolute;
-  background: rgb(51, 203, 226);
+  background: rgb(33, 230, 224);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6248,7 +6190,7 @@ strong {
 .helper-font .btn-tertiary::after {
   content: "btn-tertiary " !important;
   position: absolute;
-  background: rgb(233, 192, 252);
+  background: rgb(10, 74, 99);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6264,7 +6206,7 @@ strong {
 .helper-font .btn-feel::after {
   content: "btn-feel " !important;
   position: absolute;
-  background: rgb(17, 219, 208);
+  background: rgb(24, 236, 113);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6280,7 +6222,7 @@ strong {
 .helper-font .link-line::after {
   content: "link-line " !important;
   position: absolute;
-  background: rgb(92, 105, 168);
+  background: rgb(64, 171, 109);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6296,7 +6238,7 @@ strong {
 .helper-font .link-raw::after {
   content: "link-raw " !important;
   position: absolute;
-  background: rgb(197, 40, 1);
+  background: rgb(29, 234, 48);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6312,7 +6254,7 @@ strong {
 .helper-font .btn-phantom::after {
   content: "btn-phantom " !important;
   position: absolute;
-  background: rgb(21, 192, 125);
+  background: rgb(240, 41, 121);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6328,7 +6270,7 @@ strong {
 .helper-font .btn-world::after {
   content: "btn-world " !important;
   position: absolute;
-  background: rgb(80, 66, 174);
+  background: rgb(166, 130, 154);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6344,7 +6286,7 @@ strong {
 .helper-font .product-tag::after {
   content: "product-tag " !important;
   position: absolute;
-  background: rgb(73, 214, 33);
+  background: rgb(9, 241, 73);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6357,7 +6299,7 @@ strong {
   border: 1px solid #96c3ac;
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -6473,7 +6415,7 @@ strong {
   background: #fff;
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -6594,7 +6536,7 @@ strong {
   color: #fff;
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -7598,7 +7540,7 @@ strong {
   stroke: none;
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -8084,7 +8026,7 @@ strong {
   color: #fff;
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -9099,7 +9041,7 @@ svg-icon.ico-pre {
   transform: translateY(-50%);
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -9601,7 +9543,7 @@ u::after {
   color: white;
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -9851,7 +9793,7 @@ ul.list-mini.has-light > li::after {
   background-color: #fff;
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -9904,7 +9846,7 @@ ul.list-mini.has-light > li::after {
   transition: all 0.2s ease;
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -10121,7 +10063,7 @@ ul.list-mini.has-light > li::after {
   border: 1px solid #e3e3e3;
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -10223,7 +10165,7 @@ ul.list-mini.has-light > li::after {
   left: -30px;
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -10443,7 +10385,7 @@ ul.list-mini.has-light > li::after {
   padding: 8px;
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -10524,7 +10466,7 @@ ul.list-mini.has-light > li::after {
   fill: #b40016;
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -10758,7 +10700,7 @@ ul.list-clear li.list-box:last-child {
   margin: 16px;
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -10901,7 +10843,7 @@ ul.list-clear li.list-box:last-child {
   border-bottom: 1px dotted #8e8e8e;
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -11069,7 +11011,7 @@ ul.list-clear li.list-box:last-child {
   }
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -11210,7 +11152,7 @@ ul.list-clear li.list-box:last-child {
   }
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -11336,7 +11278,7 @@ ul.list-clear li.list-box:last-child {
   cursor: pointer;
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -11624,7 +11566,7 @@ ul.list-clear li.list-box:last-child {
   padding-top: 133.3333%;
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -11728,7 +11670,7 @@ ul.list-clear li.list-box:last-child {
   cursor: pointer;
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -11818,7 +11760,7 @@ ul.list-clear li.list-box:last-child {
   cursor: pointer;
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -11880,7 +11822,7 @@ ul.list-clear li.list-box:last-child {
   right: 20px;
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -12209,7 +12151,7 @@ ul.list-clear li.list-box:last-child {
   }
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -12380,7 +12322,7 @@ ul.list-clear li.list-box:last-child {
   }
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -12458,7 +12400,7 @@ ul.list-clear li.list-box:last-child {
   opacity: 0.4;
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -12498,7 +12440,7 @@ ul.list-clear li.list-box:last-child {
   border-top: 1px solid #e3e3e3;
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;

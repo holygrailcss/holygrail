@@ -113,7 +113,7 @@ img {
   -ms-interpolation-mode: bicubic;
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -261,7 +261,7 @@ img {
   -ms-interpolation-mode: bicubic;
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -296,7 +296,7 @@ img {
     transform: translate(-50%, 0);
   }
 }
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -635,7 +635,7 @@ img {
   }
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -1403,7 +1403,7 @@ img {
     max-width: 50%;
   }
 }
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -1501,7 +1501,7 @@ img {
   }
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -1628,7 +1628,7 @@ svg-icon.ico-feel path {
   height: 64px;
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -1677,7 +1677,7 @@ svg-icon.ico-feel path {
   color: #fff;
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -2207,7 +2207,7 @@ svg-icon.ico-feel path {
   content: "";
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -3662,7 +3662,7 @@ svg-icon.ico-feel path {
     padding-right: 48px;
   }
 }
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -4923,66 +4923,26 @@ mark {
 }
 
 @media (min-width: 1px) {
-  .sub-l {
-    font-family: "ms-serif", serif;
-    font-size: 56px;
-    line-height: 1.1;
-  }
-  .sub-m {
-    font-family: "ms-serif", serif;
-    font-size: 42px;
-    line-height: 1.1;
-  }
-  .sub-s {
-    font-family: "ms-serif", serif;
-    font-size: 32px;
-    line-height: 1.1;
-  }
-  .head-l {
-    font-family: arial, sans-serif;
-    font-weight: 900;
-    font-size: 56px;
-    line-height: 1.1;
-  }
-  .head-m {
-    font-family: arial, sans-serif;
-    font-weight: 900;
-    font-size: 42px;
-    line-height: 1.1;
-  }
-  .head-s {
-    font-family: arial, sans-serif;
-    font-weight: 900;
-    font-size: 32px;
-    line-height: 1.1;
-  }
-  .tit-l {
-    font-family: arial, sans-serif;
-    font-weight: 900;
-    font-size: 24px;
-    line-height: 1.2;
-  }
   .tit-m, .wrap-item-type:nth-child(1) .item-1::after {
     font-family: arial, sans-serif;
-    font-weight: 900;
-    font-size: 20px;
+    font-weight: 500;
+    font-size: 14px;
     line-height: 1.2;
   }
   .tit-s, .wrap-item-type:nth-child(2) .item-1::after {
     font-family: arial, sans-serif;
-    font-weight: 900;
-    font-size: 16px;
+    font-weight: 500;
+    font-size: 12px;
     line-height: 1.2;
   }
   .tit-xs, .wrap-item-type:nth-child(3) .item-1::after {
     font-family: arial, sans-serif;
-    font-weight: 900;
-    font-size: 14px;
+    font-weight: 500;
+    font-size: 12px;
     line-height: 1.2;
   }
   .p-18-2b, .wrap-item-type:nth-child(4) .item-1::after {
-    font-family: arial, sans-serif;
-    font-weight: 900;
+    font-family: "arial black", sans-serif;
     font-size: 18px;
     line-height: 1.3;
   }
@@ -5010,34 +4970,40 @@ mark {
     font-size: 16px;
     line-height: 1.3;
   }
-  .p-m, .wrap-item-type:nth-child(10) .item-1::after {
-    font-family: arial, sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.3;
-  }
   .p-m-b, .wrap-item-type:nth-child(9) .item-1::after {
     font-family: arial, sans-serif;
     font-weight: 900;
-    font-size: 14px;
-    line-height: 1.3;
+    font-size: 12px;
+    line-height: 1.2;
+  }
+  .p-m, .wrap-item-type:nth-child(10) .item-1::after {
+    font-family: arial, sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.2;
+  }
+  .p-m-m, .wrap-item-type:nth-child(11) .item-1::after {
+    font-family: arial, sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.2;
   }
   .p-s, .wrap-item-type:nth-child(12) .item-1::after {
     font-family: arial, sans-serif;
     font-weight: 500;
     font-size: 12px;
-    line-height: 1.3;
-  }
-  .p-s-b, .wrap-item-type:nth-child(14) .item-1::after {
-    font-family: arial, sans-serif;
-    font-weight: 900;
-    font-size: 12px;
-    line-height: 1.3;
+    line-height: 1.2;
   }
   .p-xs, .wrap-item-type:nth-child(13) .item-1::after {
     font-family: arial, sans-serif;
     font-weight: 500;
     font-size: 11px;
+    line-height: 1.2;
+  }
+  .p-s-b, .wrap-item-type:nth-child(14) .item-1::after {
+    font-family: arial, sans-serif;
+    font-weight: 900;
+    font-size: 12px;
     line-height: 1.3;
   }
   .p-xs-b, .wrap-item-type:nth-child(15) .item-1::after {
@@ -5054,44 +5020,16 @@ mark {
   }
 }
 @media (min-width: 992px) {
-  .sub-l {
-    font-size: 96px;
-    line-height: 1.1;
-  }
-  .sub-m {
-    font-size: 64px;
-    line-height: 1.1;
-  }
-  .sub-s {
-    font-size: 56px;
-    line-height: 1.1;
-  }
-  .head-l {
-    font-size: 96px;
-    line-height: 1.1;
-  }
-  .head-m {
-    font-size: 64px;
-    line-height: 1.1;
-  }
-  .head-s {
-    font-size: 56px;
-    line-height: 1.1;
-  }
-  .tit-l {
-    font-size: 42px;
-    line-height: 1.2;
-  }
   .tit-m, .wrap-item-type:nth-child(1) .item-1::after {
-    font-size: 32px;
+    font-size: 16px;
     line-height: 1.2;
   }
   .tit-s, .wrap-item-type:nth-child(2) .item-1::after {
-    font-size: 20px;
+    font-size: 13px;
     line-height: 1.2;
   }
   .tit-xs, .wrap-item-type:nth-child(3) .item-1::after {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.2;
   }
   .p-18-2b, .wrap-item-type:nth-child(4) .item-1::after {
@@ -5114,24 +5052,28 @@ mark {
     font-size: 18px;
     line-height: 1.3;
   }
-  .p-m, .wrap-item-type:nth-child(10) .item-1::after {
-    font-size: 16px;
-    line-height: 1.3;
-  }
   .p-m-b, .wrap-item-type:nth-child(9) .item-1::after {
-    font-size: 16px;
-    line-height: 1.3;
+    font-size: 13px;
+    line-height: 1.2;
+  }
+  .p-m, .wrap-item-type:nth-child(10) .item-1::after {
+    font-size: 13px;
+    line-height: 1.2;
+  }
+  .p-m-m, .wrap-item-type:nth-child(11) .item-1::after {
+    font-size: 13px;
+    line-height: 1.2;
   }
   .p-s, .wrap-item-type:nth-child(12) .item-1::after {
-    font-size: 14px;
-    line-height: 1.3;
-  }
-  .p-s-b, .wrap-item-type:nth-child(14) .item-1::after {
-    font-size: 14px;
-    line-height: 1.3;
+    font-size: 12px;
+    line-height: 1.2;
   }
   .p-xs, .wrap-item-type:nth-child(13) .item-1::after {
-    font-size: 12px;
+    font-size: 11px;
+    line-height: 1.2;
+  }
+  .p-s-b, .wrap-item-type:nth-child(14) .item-1::after {
+    font-size: 13px;
     line-height: 1.3;
   }
   .p-xs-b, .wrap-item-type:nth-child(15) .item-1::after {
@@ -5181,7 +5123,7 @@ mark {
   background-color: #8e8e8e;
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -6067,7 +6009,7 @@ strong {
   }
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -6109,7 +6051,7 @@ strong {
 .helper-font .tit-m::after, .helper-font .wrap-item-type:nth-child(1) .item-1::after, .wrap-item-type:nth-child(1) .helper-font .item-1::after {
   content: "tit-m " !important;
   position: absolute;
-  background: rgb(35, 15, 171);
+  background: rgb(115, 250, 224);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6125,7 +6067,7 @@ strong {
 .helper-font .tit-s::after, .helper-font .wrap-item-type:nth-child(2) .item-1::after, .wrap-item-type:nth-child(2) .helper-font .item-1::after {
   content: "tit-s " !important;
   position: absolute;
-  background: rgb(108, 191, 214);
+  background: rgb(247, 255, 209);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6141,7 +6083,7 @@ strong {
 .helper-font .tit-xs::after, .helper-font .wrap-item-type:nth-child(3) .item-1::after, .wrap-item-type:nth-child(3) .helper-font .item-1::after {
   content: "tit-xs " !important;
   position: absolute;
-  background: rgb(22, 168, 21);
+  background: rgb(115, 250, 189);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6157,7 +6099,7 @@ strong {
 .helper-font .p-18-2b::after, .helper-font .wrap-item-type:nth-child(4) .item-1::after, .wrap-item-type:nth-child(4) .helper-font .item-1::after {
   content: "p-18-2b " !important;
   position: absolute;
-  background: rgb(202, 3, 81);
+  background: rgb(49, 24, 132);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6173,7 +6115,7 @@ strong {
 .helper-font .p-18-b::after, .helper-font .wrap-item-type:nth-child(5) .item-1::after, .wrap-item-type:nth-child(5) .helper-font .item-1::after {
   content: "p-18-b " !important;
   position: absolute;
-  background: rgb(216, 117, 43);
+  background: rgb(70, 139, 91);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6189,7 +6131,7 @@ strong {
 .helper-font .p-14::after, .helper-font .wrap-item-type:nth-child(6) .item-1::after, .wrap-item-type:nth-child(6) .helper-font .item-1::after {
   content: "p-14 " !important;
   position: absolute;
-  background: rgb(22, 45, 235);
+  background: rgb(117, 50, 237);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6205,7 +6147,7 @@ strong {
 .helper-font .p-14-b::after, .helper-font .wrap-item-type:nth-child(7) .item-1::after, .wrap-item-type:nth-child(7) .helper-font .item-1::after {
   content: "p-14-b " !important;
   position: absolute;
-  background: rgb(4, 187, 14);
+  background: rgb(53, 228, 139);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6221,7 +6163,7 @@ strong {
 .helper-font .p-l::after, .helper-font .wrap-item-type:nth-child(8) .item-1::after, .wrap-item-type:nth-child(8) .helper-font .item-1::after {
   content: "p-l " !important;
   position: absolute;
-  background: rgb(153, 27, 174);
+  background: rgb(187, 74, 217);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6237,7 +6179,7 @@ strong {
 .helper-font .p-m-b::after, .helper-font .wrap-item-type:nth-child(9) .item-1::after, .wrap-item-type:nth-child(9) .helper-font .item-1::after {
   content: "p-m-b " !important;
   position: absolute;
-  background: rgb(46, 35, 32);
+  background: rgb(12, 113, 186);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6253,7 +6195,7 @@ strong {
 .helper-font .p-m::after, .helper-font .wrap-item-type:nth-child(10) .item-1::after, .wrap-item-type:nth-child(10) .helper-font .item-1::after {
   content: "p-m " !important;
   position: absolute;
-  background: rgb(247, 47, 61);
+  background: rgb(221, 2, 231);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6269,7 +6211,7 @@ strong {
 .helper-font .p-m-m::after, .helper-font .wrap-item-type:nth-child(11) .item-1::after, .wrap-item-type:nth-child(11) .helper-font .item-1::after {
   content: "p-m-m " !important;
   position: absolute;
-  background: rgb(189, 63, 81);
+  background: rgb(18, 112, 36);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6285,7 +6227,7 @@ strong {
 .helper-font .p-s::after, .helper-font .wrap-item-type:nth-child(12) .item-1::after, .wrap-item-type:nth-child(12) .helper-font .item-1::after {
   content: "p-s " !important;
   position: absolute;
-  background: rgb(173, 196, 37);
+  background: rgb(182, 154, 98);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6301,7 +6243,7 @@ strong {
 .helper-font .p-xs::after, .helper-font .wrap-item-type:nth-child(13) .item-1::after, .wrap-item-type:nth-child(13) .helper-font .item-1::after {
   content: "p-xs " !important;
   position: absolute;
-  background: rgb(250, 59, 32);
+  background: rgb(139, 46, 208);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6317,7 +6259,7 @@ strong {
 .helper-font .p-s-b::after, .helper-font .wrap-item-type:nth-child(14) .item-1::after, .wrap-item-type:nth-child(14) .helper-font .item-1::after {
   content: "p-s-b " !important;
   position: absolute;
-  background: rgb(106, 192, 117);
+  background: rgb(198, 191, 47);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6333,7 +6275,7 @@ strong {
 .helper-font .p-xs-b::after, .helper-font .wrap-item-type:nth-child(15) .item-1::after, .wrap-item-type:nth-child(15) .helper-font .item-1::after {
   content: "p-xs-b " !important;
   position: absolute;
-  background: rgb(162, 87, 70);
+  background: rgb(233, 236, 36);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6349,7 +6291,7 @@ strong {
 .helper-font .p-xxs-b::after, .helper-font .wrap-item-type:nth-child(16) .item-1::after, .wrap-item-type:nth-child(16) .helper-font .item-1::after {
   content: "p-xxs-b " !important;
   position: absolute;
-  background: rgb(32, 211, 24);
+  background: rgb(165, 191, 192);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6365,7 +6307,7 @@ strong {
 .helper-font .btn-primary::after {
   content: "btn-primary " !important;
   position: absolute;
-  background: rgb(221, 85, 192);
+  background: rgb(56, 36, 190);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6381,7 +6323,7 @@ strong {
 .helper-font .btn-secondary::after {
   content: "btn-secondary " !important;
   position: absolute;
-  background: rgb(80, 203, 113);
+  background: rgb(47, 184, 18);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6397,7 +6339,7 @@ strong {
 .helper-font .btn-tertiary::after {
   content: "btn-tertiary " !important;
   position: absolute;
-  background: rgb(126, 15, 15);
+  background: rgb(152, 118, 71);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6413,7 +6355,7 @@ strong {
 .helper-font .btn-feel::after {
   content: "btn-feel " !important;
   position: absolute;
-  background: rgb(254, 211, 78);
+  background: rgb(130, 38, 106);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6429,7 +6371,7 @@ strong {
 .helper-font .link-line::after {
   content: "link-line " !important;
   position: absolute;
-  background: rgb(60, 176, 225);
+  background: rgb(130, 91, 76);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6445,7 +6387,7 @@ strong {
 .helper-font .link-raw::after {
   content: "link-raw " !important;
   position: absolute;
-  background: rgb(36, 186, 166);
+  background: rgb(33, 97, 85);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6461,7 +6403,7 @@ strong {
 .helper-font .btn-phantom::after {
   content: "btn-phantom " !important;
   position: absolute;
-  background: rgb(172, 129, 208);
+  background: rgb(79, 235, 12);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6477,7 +6419,7 @@ strong {
 .helper-font .btn-world::after {
   content: "btn-world " !important;
   position: absolute;
-  background: rgb(233, 150, 167);
+  background: rgb(250, 232, 27);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6493,7 +6435,7 @@ strong {
 .helper-font .product-tag::after {
   content: "product-tag " !important;
   position: absolute;
-  background: rgb(103, 122, 189);
+  background: rgb(117, 6, 203);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6506,7 +6448,7 @@ strong {
   border: 1px solid #96c3ac;
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -6622,7 +6564,7 @@ strong {
   background: #fff;
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -6743,7 +6685,7 @@ strong {
   color: #fff;
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -7747,7 +7689,7 @@ strong {
   stroke: none;
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -8233,7 +8175,7 @@ strong {
   color: #fff;
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -9248,7 +9190,7 @@ svg-icon.ico-pre {
   transform: translateY(-50%);
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -9750,7 +9692,7 @@ u::after {
   color: white;
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -10000,7 +9942,7 @@ ul.list-mini.has-light > li::after {
   background-color: #fff;
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -10053,7 +9995,7 @@ ul.list-mini.has-light > li::after {
   transition: all 0.2s ease;
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -10270,7 +10212,7 @@ ul.list-mini.has-light > li::after {
   border: 1px solid #e3e3e3;
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -10372,7 +10314,7 @@ ul.list-mini.has-light > li::after {
   left: -30px;
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -10592,7 +10534,7 @@ ul.list-mini.has-light > li::after {
   padding: 8px;
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -10673,7 +10615,7 @@ ul.list-mini.has-light > li::after {
   fill: #b40016;
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -10907,7 +10849,7 @@ ul.list-clear li.list-box:last-child {
   margin: 16px;
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -11050,7 +10992,7 @@ ul.list-clear li.list-box:last-child {
   border-bottom: 1px dotted #8e8e8e;
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -11218,7 +11160,7 @@ ul.list-clear li.list-box:last-child {
   }
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -11359,7 +11301,7 @@ ul.list-clear li.list-box:last-child {
   }
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -11485,7 +11427,7 @@ ul.list-clear li.list-box:last-child {
   cursor: pointer;
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -11773,7 +11715,7 @@ ul.list-clear li.list-box:last-child {
   padding-top: 133.3333%;
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -11877,7 +11819,7 @@ ul.list-clear li.list-box:last-child {
   cursor: pointer;
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -11967,7 +11909,7 @@ ul.list-clear li.list-box:last-child {
   cursor: pointer;
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -12029,7 +11971,7 @@ ul.list-clear li.list-box:last-child {
   right: 20px;
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -12358,7 +12300,7 @@ ul.list-clear li.list-box:last-child {
   }
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -12529,7 +12471,7 @@ ul.list-clear li.list-box:last-child {
   }
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -12607,7 +12549,7 @@ ul.list-clear li.list-box:last-child {
   opacity: 0.4;
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
@@ -12647,7 +12589,7 @@ ul.list-clear li.list-box:last-child {
   border-top: 1px solid #e3e3e3;
 }
 
-/* hasta 991px ,  desktop, lineheight, grosor */
+/* hay que eliminar headers y quedarnos con minheaders*/
 @keyframes underline {
   0% {
     width: 0;
