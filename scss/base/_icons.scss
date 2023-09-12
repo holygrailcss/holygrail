@@ -63,6 +63,27 @@ svg-icon {
     }
   }
 }
+.has-error {
+  svg {
+    path {
+      fill: $c-error;
+    }
+  }
+}
+.has-feel {
+  svg {
+    path {
+      fill: $c-feel-dark;
+    }
+  }
+}
+.has-success {
+  svg {
+    path {
+      fill: $c-success;
+    }
+  }
+}
 
 .ico-ball {
   position: relative;
