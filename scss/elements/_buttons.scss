@@ -1,12 +1,7 @@
 @use 'sass:math';
 @import '../abstract/_all';
 
-$btn-text-mini: 12px;
-$btn-text-small: 14px;
-$btn-text-medium: 14px;
-$btn-text-large: 14px;
-$btn-text-xlarge: 16px;
-$btn-text-full: 14px;
+
 
 @keyframes spin {
   100% {
@@ -22,7 +17,7 @@ $btn-text-full: 14px;
   overflow: hidden;
   text-align: center;
   box-sizing: border-box;
-  font-size: 14px;
+  font-size: $btn-text-full;
   vertical-align: middle;
   justify-content: center;
   border: none;

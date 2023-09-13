@@ -5902,7 +5902,7 @@ strong {
 .helper-font .tit-m::after {
   content: "tit-m " !important;
   position: absolute;
-  background: rgb(177, 210, 18);
+  background: rgb(120, 236, 152);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -5918,7 +5918,7 @@ strong {
 .helper-font .tit-s::after {
   content: "tit-s " !important;
   position: absolute;
-  background: rgb(72, 64, 166);
+  background: rgb(17, 241, 141);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -5934,7 +5934,7 @@ strong {
 .helper-font .tit-xs::after {
   content: "tit-xs " !important;
   position: absolute;
-  background: rgb(197, 186, 110);
+  background: rgb(240, 119, 238);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -5950,7 +5950,7 @@ strong {
 .helper-font .p-18-2b::after {
   content: "p-18-2b " !important;
   position: absolute;
-  background: rgb(13, 13, 110);
+  background: rgb(135, 153, 13);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -5966,7 +5966,7 @@ strong {
 .helper-font .p-18-b::after {
   content: "p-18-b " !important;
   position: absolute;
-  background: rgb(240, 236, 45);
+  background: rgb(150, 64, 252);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -5982,7 +5982,7 @@ strong {
 .helper-font .p-14::after {
   content: "p-14 " !important;
   position: absolute;
-  background: rgb(239, 199, 199);
+  background: rgb(90, 108, 167);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -5998,7 +5998,7 @@ strong {
 .helper-font .p-14-b::after {
   content: "p-14-b " !important;
   position: absolute;
-  background: rgb(46, 113, 136);
+  background: rgb(161, 82, 70);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6014,7 +6014,7 @@ strong {
 .helper-font .p-l::after {
   content: "p-l " !important;
   position: absolute;
-  background: rgb(95, 119, 150);
+  background: rgb(142, 253, 101);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6030,7 +6030,7 @@ strong {
 .helper-font .p-m-b::after {
   content: "p-m-b " !important;
   position: absolute;
-  background: rgb(130, 56, 66);
+  background: rgb(233, 158, 43);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6046,7 +6046,7 @@ strong {
 .helper-font .p-m::after {
   content: "p-m " !important;
   position: absolute;
-  background: rgb(171, 102, 199);
+  background: rgb(55, 116, 40);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6062,7 +6062,7 @@ strong {
 .helper-font .p-m-m::after {
   content: "p-m-m " !important;
   position: absolute;
-  background: rgb(188, 217, 129);
+  background: rgb(47, 118, 236);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6078,7 +6078,7 @@ strong {
 .helper-font .p-s::after {
   content: "p-s " !important;
   position: absolute;
-  background: rgb(179, 45, 118);
+  background: rgb(59, 159, 227);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6094,7 +6094,7 @@ strong {
 .helper-font .p-xs::after {
   content: "p-xs " !important;
   position: absolute;
-  background: rgb(236, 100, 188);
+  background: rgb(164, 26, 109);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6110,7 +6110,7 @@ strong {
 .helper-font .p-s-b::after {
   content: "p-s-b " !important;
   position: absolute;
-  background: rgb(144, 199, 70);
+  background: rgb(77, 14, 232);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6126,7 +6126,7 @@ strong {
 .helper-font .p-xs-b::after {
   content: "p-xs-b " !important;
   position: absolute;
-  background: rgb(66, 233, 57);
+  background: rgb(18, 45, 41);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6142,7 +6142,7 @@ strong {
 .helper-font .p-xxs-b::after {
   content: "p-xxs-b " !important;
   position: absolute;
-  background: rgb(74, 254, 154);
+  background: rgb(202, 200, 36);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6158,7 +6158,7 @@ strong {
 .helper-font .btn-primary::after {
   content: "btn-primary " !important;
   position: absolute;
-  background: rgb(242, 248, 32);
+  background: rgb(25, 125, 80);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6174,7 +6174,7 @@ strong {
 .helper-font .btn-secondary::after {
   content: "btn-secondary " !important;
   position: absolute;
-  background: rgb(33, 230, 224);
+  background: rgb(40, 202, 71);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6190,7 +6190,7 @@ strong {
 .helper-font .btn-tertiary::after {
   content: "btn-tertiary " !important;
   position: absolute;
-  background: rgb(10, 74, 99);
+  background: rgb(164, 98, 191);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6206,7 +6206,7 @@ strong {
 .helper-font .btn-feel::after {
   content: "btn-feel " !important;
   position: absolute;
-  background: rgb(24, 236, 113);
+  background: rgb(10, 46, 111);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6222,7 +6222,7 @@ strong {
 .helper-font .link-line::after {
   content: "link-line " !important;
   position: absolute;
-  background: rgb(64, 171, 109);
+  background: rgb(173, 42, 57);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6238,7 +6238,7 @@ strong {
 .helper-font .link-raw::after {
   content: "link-raw " !important;
   position: absolute;
-  background: rgb(29, 234, 48);
+  background: rgb(16, 154, 124);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6254,7 +6254,7 @@ strong {
 .helper-font .btn-phantom::after {
   content: "btn-phantom " !important;
   position: absolute;
-  background: rgb(240, 41, 121);
+  background: rgb(66, 184, 169);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6270,7 +6270,7 @@ strong {
 .helper-font .btn-world::after {
   content: "btn-world " !important;
   position: absolute;
-  background: rgb(166, 130, 154);
+  background: rgb(187, 189, 45);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6286,7 +6286,7 @@ strong {
 .helper-font .product-tag::after {
   content: "product-tag " !important;
   position: absolute;
-  background: rgb(9, 241, 73);
+  background: rgb(61, 2, 192);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -11092,7 +11092,6 @@ ul.list-clear li.list-box:last-child {
 }
 .row1 .box-single,
 .row1 .box-single-center {
-  -ms-flex-preferred-size: calc(50% - 1em);
   flex-basis: calc(50% - 1em);
   max-width: 50%;
 }
@@ -11103,25 +11102,21 @@ ul.list-clear li.list-box:last-child {
 }
 @media (min-width: 1280px) {
   .row1 .box-single {
-    -ms-flex-preferred-size: calc(50% - 1em);
     flex-basis: calc(50% - 1em);
     max-width: 50%;
   }
   .row1 .box-single-center {
     justify-content: center;
     display: flex;
-    -ms-flex-preferred-size: calc(100% - 1em);
     flex-basis: calc(100% - 1em);
     max-width: 100%;
   }
   .row1 .box-single-center .card9-wrap {
-    -ms-flex-preferred-size: calc(50% - 1em);
     flex-basis: calc(50% - 1em);
     max-width: 50%;
   }
   .row1 .box-double,
   .row1 .box-super {
-    -ms-flex-preferred-size: calc(100% - 1em);
     flex-basis: calc(100% - 1em);
     max-width: 100%;
   }
@@ -11131,12 +11126,10 @@ ul.list-clear li.list-box:last-child {
   }
 }
 .explorer .row1 .box-single {
-  -ms-flex-preferred-size: calc(50% - 1em);
   flex-basis: calc(50% - 1em);
   max-width: 50%;
 }
 .explorer .row1 .box-double {
-  -ms-flex-preferred-size: calc(100% - 1em);
   flex-basis: calc(100% - 1em);
   max-width: 100%;
 }
@@ -11146,7 +11139,6 @@ ul.list-clear li.list-box:last-child {
   .expanded .row1 .box-single-center,
   .expanded .row1 .box-double,
   .expanded .row1 .box-super {
-    -ms-flex-preferred-size: calc(25% - 1em);
     flex-basis: calc(25% - 1em);
     max-width: 25%;
   }

@@ -6051,7 +6051,7 @@ strong {
 .helper-font .tit-m::after, .helper-font .wrap-item-type:nth-child(1) .item-1::after, .wrap-item-type:nth-child(1) .helper-font .item-1::after {
   content: "tit-m " !important;
   position: absolute;
-  background: rgb(115, 250, 224);
+  background: rgb(211, 215, 79);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6067,7 +6067,7 @@ strong {
 .helper-font .tit-s::after, .helper-font .wrap-item-type:nth-child(2) .item-1::after, .wrap-item-type:nth-child(2) .helper-font .item-1::after {
   content: "tit-s " !important;
   position: absolute;
-  background: rgb(247, 255, 209);
+  background: rgb(162, 188, 26);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6083,7 +6083,7 @@ strong {
 .helper-font .tit-xs::after, .helper-font .wrap-item-type:nth-child(3) .item-1::after, .wrap-item-type:nth-child(3) .helper-font .item-1::after {
   content: "tit-xs " !important;
   position: absolute;
-  background: rgb(115, 250, 189);
+  background: rgb(83, 232, 45);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6099,7 +6099,7 @@ strong {
 .helper-font .p-18-2b::after, .helper-font .wrap-item-type:nth-child(4) .item-1::after, .wrap-item-type:nth-child(4) .helper-font .item-1::after {
   content: "p-18-2b " !important;
   position: absolute;
-  background: rgb(49, 24, 132);
+  background: rgb(163, 34, 220);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6115,7 +6115,7 @@ strong {
 .helper-font .p-18-b::after, .helper-font .wrap-item-type:nth-child(5) .item-1::after, .wrap-item-type:nth-child(5) .helper-font .item-1::after {
   content: "p-18-b " !important;
   position: absolute;
-  background: rgb(70, 139, 91);
+  background: rgb(193, 223, 118);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6131,7 +6131,7 @@ strong {
 .helper-font .p-14::after, .helper-font .wrap-item-type:nth-child(6) .item-1::after, .wrap-item-type:nth-child(6) .helper-font .item-1::after {
   content: "p-14 " !important;
   position: absolute;
-  background: rgb(117, 50, 237);
+  background: rgb(133, 15, 43);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6147,7 +6147,7 @@ strong {
 .helper-font .p-14-b::after, .helper-font .wrap-item-type:nth-child(7) .item-1::after, .wrap-item-type:nth-child(7) .helper-font .item-1::after {
   content: "p-14-b " !important;
   position: absolute;
-  background: rgb(53, 228, 139);
+  background: rgb(40, 133, 176);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6163,7 +6163,7 @@ strong {
 .helper-font .p-l::after, .helper-font .wrap-item-type:nth-child(8) .item-1::after, .wrap-item-type:nth-child(8) .helper-font .item-1::after {
   content: "p-l " !important;
   position: absolute;
-  background: rgb(187, 74, 217);
+  background: rgb(248, 26, 242);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6179,7 +6179,7 @@ strong {
 .helper-font .p-m-b::after, .helper-font .wrap-item-type:nth-child(9) .item-1::after, .wrap-item-type:nth-child(9) .helper-font .item-1::after {
   content: "p-m-b " !important;
   position: absolute;
-  background: rgb(12, 113, 186);
+  background: rgb(226, 7, 255);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6195,7 +6195,7 @@ strong {
 .helper-font .p-m::after, .helper-font .wrap-item-type:nth-child(10) .item-1::after, .wrap-item-type:nth-child(10) .helper-font .item-1::after {
   content: "p-m " !important;
   position: absolute;
-  background: rgb(221, 2, 231);
+  background: rgb(1, 69, 104);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6211,7 +6211,7 @@ strong {
 .helper-font .p-m-m::after, .helper-font .wrap-item-type:nth-child(11) .item-1::after, .wrap-item-type:nth-child(11) .helper-font .item-1::after {
   content: "p-m-m " !important;
   position: absolute;
-  background: rgb(18, 112, 36);
+  background: rgb(47, 176, 33);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6227,7 +6227,7 @@ strong {
 .helper-font .p-s::after, .helper-font .wrap-item-type:nth-child(12) .item-1::after, .wrap-item-type:nth-child(12) .helper-font .item-1::after {
   content: "p-s " !important;
   position: absolute;
-  background: rgb(182, 154, 98);
+  background: rgb(43, 83, 252);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6243,7 +6243,7 @@ strong {
 .helper-font .p-xs::after, .helper-font .wrap-item-type:nth-child(13) .item-1::after, .wrap-item-type:nth-child(13) .helper-font .item-1::after {
   content: "p-xs " !important;
   position: absolute;
-  background: rgb(139, 46, 208);
+  background: rgb(25, 87, 113);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6259,7 +6259,7 @@ strong {
 .helper-font .p-s-b::after, .helper-font .wrap-item-type:nth-child(14) .item-1::after, .wrap-item-type:nth-child(14) .helper-font .item-1::after {
   content: "p-s-b " !important;
   position: absolute;
-  background: rgb(198, 191, 47);
+  background: rgb(93, 60, 108);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6275,7 +6275,7 @@ strong {
 .helper-font .p-xs-b::after, .helper-font .wrap-item-type:nth-child(15) .item-1::after, .wrap-item-type:nth-child(15) .helper-font .item-1::after {
   content: "p-xs-b " !important;
   position: absolute;
-  background: rgb(233, 236, 36);
+  background: rgb(74, 11, 87);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6291,7 +6291,7 @@ strong {
 .helper-font .p-xxs-b::after, .helper-font .wrap-item-type:nth-child(16) .item-1::after, .wrap-item-type:nth-child(16) .helper-font .item-1::after {
   content: "p-xxs-b " !important;
   position: absolute;
-  background: rgb(165, 191, 192);
+  background: rgb(204, 118, 111);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6307,7 +6307,7 @@ strong {
 .helper-font .btn-primary::after {
   content: "btn-primary " !important;
   position: absolute;
-  background: rgb(56, 36, 190);
+  background: rgb(37, 72, 4);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6323,7 +6323,7 @@ strong {
 .helper-font .btn-secondary::after {
   content: "btn-secondary " !important;
   position: absolute;
-  background: rgb(47, 184, 18);
+  background: rgb(235, 229, 145);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6339,7 +6339,7 @@ strong {
 .helper-font .btn-tertiary::after {
   content: "btn-tertiary " !important;
   position: absolute;
-  background: rgb(152, 118, 71);
+  background: rgb(93, 184, 137);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6355,7 +6355,7 @@ strong {
 .helper-font .btn-feel::after {
   content: "btn-feel " !important;
   position: absolute;
-  background: rgb(130, 38, 106);
+  background: rgb(232, 69, 75);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6371,7 +6371,7 @@ strong {
 .helper-font .link-line::after {
   content: "link-line " !important;
   position: absolute;
-  background: rgb(130, 91, 76);
+  background: rgb(77, 130, 121);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6387,7 +6387,7 @@ strong {
 .helper-font .link-raw::after {
   content: "link-raw " !important;
   position: absolute;
-  background: rgb(33, 97, 85);
+  background: rgb(3, 140, 88);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6403,7 +6403,7 @@ strong {
 .helper-font .btn-phantom::after {
   content: "btn-phantom " !important;
   position: absolute;
-  background: rgb(79, 235, 12);
+  background: rgb(40, 84, 209);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6419,7 +6419,7 @@ strong {
 .helper-font .btn-world::after {
   content: "btn-world " !important;
   position: absolute;
-  background: rgb(250, 232, 27);
+  background: rgb(54, 53, 214);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6435,7 +6435,7 @@ strong {
 .helper-font .product-tag::after {
   content: "product-tag " !important;
   position: absolute;
-  background: rgb(117, 6, 203);
+  background: rgb(123, 218, 218);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -11241,7 +11241,6 @@ ul.list-clear li.list-box:last-child {
 }
 .row1 .box-single,
 .row1 .box-single-center {
-  -ms-flex-preferred-size: calc(50% - 1em);
   flex-basis: calc(50% - 1em);
   max-width: 50%;
 }
@@ -11252,25 +11251,21 @@ ul.list-clear li.list-box:last-child {
 }
 @media (min-width: 1280px) {
   .row1 .box-single {
-    -ms-flex-preferred-size: calc(50% - 1em);
     flex-basis: calc(50% - 1em);
     max-width: 50%;
   }
   .row1 .box-single-center {
     justify-content: center;
     display: flex;
-    -ms-flex-preferred-size: calc(100% - 1em);
     flex-basis: calc(100% - 1em);
     max-width: 100%;
   }
   .row1 .box-single-center .card9-wrap {
-    -ms-flex-preferred-size: calc(50% - 1em);
     flex-basis: calc(50% - 1em);
     max-width: 50%;
   }
   .row1 .box-double,
   .row1 .box-super {
-    -ms-flex-preferred-size: calc(100% - 1em);
     flex-basis: calc(100% - 1em);
     max-width: 100%;
   }
@@ -11280,12 +11275,10 @@ ul.list-clear li.list-box:last-child {
   }
 }
 .explorer .row1 .box-single {
-  -ms-flex-preferred-size: calc(50% - 1em);
   flex-basis: calc(50% - 1em);
   max-width: 50%;
 }
 .explorer .row1 .box-double {
-  -ms-flex-preferred-size: calc(100% - 1em);
   flex-basis: calc(100% - 1em);
   max-width: 100%;
 }
@@ -11295,7 +11288,6 @@ ul.list-clear li.list-box:last-child {
   .expanded .row1 .box-single-center,
   .expanded .row1 .box-double,
   .expanded .row1 .box-super {
-    -ms-flex-preferred-size: calc(25% - 1em);
     flex-basis: calc(25% - 1em);
     max-width: 25%;
   }

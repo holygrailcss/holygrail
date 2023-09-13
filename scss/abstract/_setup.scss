@@ -34,6 +34,13 @@ $btn-line-height: 1 !default;
 
 $btn-padding: 13px !default;
 
+$btn-text-mini: 12px !default;
+$btn-text-small: 14px !default;
+$btn-text-medium: 14px !default;
+$btn-text-large: 14px !default;
+$btn-text-xlarge: 16px !default;
+$btn-text-full: 14px !default;
+
 $font-weight-secondary-light: 300 !default;
 $font-weight-secondary-medium: 400 !default;
 $font-weight-secondary-bold: 700 !default;
@@ -207,7 +214,7 @@ $headers: (
   ),
 ) !default;
 
-/* hay que eliminar headers y quedarnos con minheaders*/
+/* hay que eliminar headers y quedarnos con minheaders */
 $minheaders: (
   tit-m: (
     14px,
