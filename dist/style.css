@@ -112,7 +112,7 @@ img {
   -ms-interpolation-mode: bicubic;
 }
 
-/* hay que eliminar headers y quedarnos con minheaders*/
+/* hay que eliminar headers y quedarnos con minheaders */
 @keyframes underline {
   0% {
     width: 0;
@@ -147,7 +147,7 @@ img {
     transform: translate(-50%, 0);
   }
 }
-/* hay que eliminar headers y quedarnos con minheaders*/
+/* hay que eliminar headers y quedarnos con minheaders */
 @keyframes underline {
   0% {
     width: 0;
@@ -486,7 +486,7 @@ img {
   }
 }
 
-/* hay que eliminar headers y quedarnos con minheaders*/
+/* hay que eliminar headers y quedarnos con minheaders */
 @keyframes underline {
   0% {
     width: 0;
@@ -1254,7 +1254,7 @@ img {
     max-width: 50%;
   }
 }
-/* hay que eliminar headers y quedarnos con minheaders*/
+/* hay que eliminar headers y quedarnos con minheaders */
 @keyframes underline {
   0% {
     width: 0;
@@ -1352,7 +1352,7 @@ img {
   }
 }
 
-/* hay que eliminar headers y quedarnos con minheaders*/
+/* hay que eliminar headers y quedarnos con minheaders */
 @keyframes underline {
   0% {
     width: 0;
@@ -1428,6 +1428,18 @@ svg-icon.ico-feel path {
   stroke: none;
 }
 
+.has-error svg path {
+  fill: #b40016;
+}
+
+.has-feel svg path {
+  fill: #c94c07;
+}
+
+.has-success svg path {
+  fill: #76ae4a;
+}
+
 .ico-ball {
   position: relative;
   width: 40px;
@@ -1445,7 +1457,7 @@ svg-icon.ico-feel path {
   height: 16px;
   border-radius: 50%;
   font-size: 10px;
-  background-color: #292929;
+  background-color: #1a1a1a;
   color: #fff;
   text-align: center;
   line-height: 1.6;
@@ -1479,7 +1491,7 @@ svg-icon.ico-feel path {
   height: 64px;
 }
 
-/* hay que eliminar headers y quedarnos con minheaders*/
+/* hay que eliminar headers y quedarnos con minheaders */
 @keyframes underline {
   0% {
     width: 0;
@@ -1528,7 +1540,7 @@ svg-icon.ico-feel path {
   color: #fff;
 }
 
-/* hay que eliminar headers y quedarnos con minheaders*/
+/* hay que eliminar headers y quedarnos con minheaders */
 @keyframes underline {
   0% {
     width: 0;
@@ -2058,7 +2070,7 @@ svg-icon.ico-feel path {
   content: "";
 }
 
-/* hay que eliminar headers y quedarnos con minheaders*/
+/* hay que eliminar headers y quedarnos con minheaders */
 @keyframes underline {
   0% {
     width: 0;
@@ -3513,7 +3525,7 @@ svg-icon.ico-feel path {
     padding-right: 48px;
   }
 }
-/* hay que eliminar headers y quedarnos con minheaders*/
+/* hay que eliminar headers y quedarnos con minheaders */
 @keyframes underline {
   0% {
     width: 0;
@@ -3579,11 +3591,11 @@ p {
 p.b {
   font-family: arial, sans-serif;
   font-weight: 500;
-  color: #292929;
+  color: #1a1a1a;
 }
 
 a {
-  color: #292929;
+  color: #1a1a1a;
   text-decoration: none;
 }
 
@@ -3594,12 +3606,12 @@ a {
 .h5 span,
 .h6 span,
 .p1 span {
-  color: #292929;
+  color: #1a1a1a;
 }
 
 b,
 mark {
-  color: #292929;
+  color: #1a1a1a;
 }
 
 .secondary {
@@ -4962,7 +4974,7 @@ mark {
 }
 .is-through::after {
   content: "";
-  background-color: #292929;
+  background-color: #1a1a1a;
   width: 100%;
   position: absolute;
   bottom: 50%;
@@ -4974,7 +4986,7 @@ mark {
   background-color: #8e8e8e;
 }
 
-/* hay que eliminar headers y quedarnos con minheaders*/
+/* hay que eliminar headers y quedarnos con minheaders */
 @keyframes underline {
   0% {
     width: 0;
@@ -5026,7 +5038,7 @@ mark {
   }
 }
 .c-primary {
-  color: #292929;
+  color: #1a1a1a;
 }
 
 .c-black {
@@ -5142,7 +5154,7 @@ mark {
 }
 
 .bg-primary {
-  background-color: #292929;
+  background-color: #1a1a1a;
 }
 
 .bg-white {
@@ -5509,11 +5521,11 @@ strong {
 }
 
 .border-b2 {
-  border-bottom: 1px solid #292929;
+  border-bottom: 1px solid #1a1a1a;
 }
 
 .border-t2 {
-  border-top: 1px solid #292929;
+  border-top: 1px solid #1a1a1a;
 }
 
 .flex-vcenter {
@@ -5834,7 +5846,7 @@ strong {
 }
 
 .m-0 {
-  margin: 0px;
+  margin: 0;
 }
 
 .bg-black {
@@ -5860,7 +5872,7 @@ strong {
   }
 }
 
-/* hay que eliminar headers y quedarnos con minheaders*/
+/* hay que eliminar headers y quedarnos con minheaders */
 @keyframes underline {
   0% {
     width: 0;
@@ -5902,7 +5914,7 @@ strong {
 .helper-font .tit-m::after {
   content: "tit-m " !important;
   position: absolute;
-  background: rgb(120, 236, 152);
+  background: rgb(1, 175, 216);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -5918,7 +5930,7 @@ strong {
 .helper-font .tit-s::after {
   content: "tit-s " !important;
   position: absolute;
-  background: rgb(17, 241, 141);
+  background: rgb(190, 15, 87);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -5934,7 +5946,7 @@ strong {
 .helper-font .tit-xs::after {
   content: "tit-xs " !important;
   position: absolute;
-  background: rgb(240, 119, 238);
+  background: rgb(20, 70, 160);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -5950,7 +5962,7 @@ strong {
 .helper-font .p-18-2b::after {
   content: "p-18-2b " !important;
   position: absolute;
-  background: rgb(135, 153, 13);
+  background: rgb(72, 61, 21);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -5966,7 +5978,7 @@ strong {
 .helper-font .p-18-b::after {
   content: "p-18-b " !important;
   position: absolute;
-  background: rgb(150, 64, 252);
+  background: rgb(34, 208, 54);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -5982,7 +5994,7 @@ strong {
 .helper-font .p-14::after {
   content: "p-14 " !important;
   position: absolute;
-  background: rgb(90, 108, 167);
+  background: rgb(132, 151, 8);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -5998,7 +6010,7 @@ strong {
 .helper-font .p-14-b::after {
   content: "p-14-b " !important;
   position: absolute;
-  background: rgb(161, 82, 70);
+  background: rgb(15, 220, 163);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6014,7 +6026,7 @@ strong {
 .helper-font .p-l::after {
   content: "p-l " !important;
   position: absolute;
-  background: rgb(142, 253, 101);
+  background: rgb(127, 237, 183);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6030,7 +6042,7 @@ strong {
 .helper-font .p-m-b::after {
   content: "p-m-b " !important;
   position: absolute;
-  background: rgb(233, 158, 43);
+  background: rgb(62, 50, 233);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6046,7 +6058,7 @@ strong {
 .helper-font .p-m::after {
   content: "p-m " !important;
   position: absolute;
-  background: rgb(55, 116, 40);
+  background: rgb(112, 163, 136);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6062,7 +6074,7 @@ strong {
 .helper-font .p-m-m::after {
   content: "p-m-m " !important;
   position: absolute;
-  background: rgb(47, 118, 236);
+  background: rgb(204, 13, 240);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6078,7 +6090,7 @@ strong {
 .helper-font .p-s::after {
   content: "p-s " !important;
   position: absolute;
-  background: rgb(59, 159, 227);
+  background: rgb(185, 17, 33);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6094,7 +6106,7 @@ strong {
 .helper-font .p-xs::after {
   content: "p-xs " !important;
   position: absolute;
-  background: rgb(164, 26, 109);
+  background: rgb(96, 13, 9);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6110,7 +6122,7 @@ strong {
 .helper-font .p-s-b::after {
   content: "p-s-b " !important;
   position: absolute;
-  background: rgb(77, 14, 232);
+  background: rgb(144, 198, 96);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6126,7 +6138,7 @@ strong {
 .helper-font .p-xs-b::after {
   content: "p-xs-b " !important;
   position: absolute;
-  background: rgb(18, 45, 41);
+  background: rgb(105, 159, 66);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6142,7 +6154,7 @@ strong {
 .helper-font .p-xxs-b::after {
   content: "p-xxs-b " !important;
   position: absolute;
-  background: rgb(202, 200, 36);
+  background: rgb(196, 148, 161);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6158,7 +6170,7 @@ strong {
 .helper-font .btn-primary::after {
   content: "btn-primary " !important;
   position: absolute;
-  background: rgb(25, 125, 80);
+  background: rgb(194, 141, 217);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6174,7 +6186,7 @@ strong {
 .helper-font .btn-secondary::after {
   content: "btn-secondary " !important;
   position: absolute;
-  background: rgb(40, 202, 71);
+  background: rgb(254, 171, 138);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6190,7 +6202,7 @@ strong {
 .helper-font .btn-tertiary::after {
   content: "btn-tertiary " !important;
   position: absolute;
-  background: rgb(164, 98, 191);
+  background: rgb(227, 253, 151);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6206,7 +6218,7 @@ strong {
 .helper-font .btn-feel::after {
   content: "btn-feel " !important;
   position: absolute;
-  background: rgb(10, 46, 111);
+  background: rgb(25, 173, 62);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6222,7 +6234,7 @@ strong {
 .helper-font .link-line::after {
   content: "link-line " !important;
   position: absolute;
-  background: rgb(173, 42, 57);
+  background: rgb(121, 25, 207);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6238,7 +6250,7 @@ strong {
 .helper-font .link-raw::after {
   content: "link-raw " !important;
   position: absolute;
-  background: rgb(16, 154, 124);
+  background: rgb(110, 30, 193);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6254,7 +6266,7 @@ strong {
 .helper-font .btn-phantom::after {
   content: "btn-phantom " !important;
   position: absolute;
-  background: rgb(66, 184, 169);
+  background: rgb(23, 129, 129);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6270,7 +6282,7 @@ strong {
 .helper-font .btn-world::after {
   content: "btn-world " !important;
   position: absolute;
-  background: rgb(187, 189, 45);
+  background: rgb(122, 200, 11);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6286,7 +6298,7 @@ strong {
 .helper-font .product-tag::after {
   content: "product-tag " !important;
   position: absolute;
-  background: rgb(61, 2, 192);
+  background: rgb(41, 109, 171);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6299,7 +6311,7 @@ strong {
   border: 1px solid #96c3ac;
 }
 
-/* hay que eliminar headers y quedarnos con minheaders*/
+/* hay que eliminar headers y quedarnos con minheaders */
 @keyframes underline {
   0% {
     width: 0;
@@ -6341,7 +6353,7 @@ strong {
   position: absolute;
   bottom: 0;
   right: 0;
-  color: #292929;
+  color: #1a1a1a;
   display: box;
   display: flexbox;
   display: flex;
@@ -6389,7 +6401,7 @@ strong {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: #292929;
+  background: #1a1a1a;
   transform: translateX(-50%);
 }
 .line-scrolldown::after {
@@ -6400,7 +6412,7 @@ strong {
   width: 1px;
   height: 0;
   border-radius: 2px;
-  background: #292929;
+  background: #1a1a1a;
   transform: translateX(-50%);
   animation: stretch 1s 1.5s cubic-bezier(0.55, 0.085, 0, 0.99) forwards;
 }
@@ -6415,7 +6427,7 @@ strong {
   background: #fff;
 }
 
-/* hay que eliminar headers y quedarnos con minheaders*/
+/* hay que eliminar headers y quedarnos con minheaders */
 @keyframes underline {
   0% {
     width: 0;
@@ -6456,7 +6468,7 @@ strong {
   justify-content: center;
   flex-flow: row nowrap;
   padding: 16px;
-  border: 1px solid #292929;
+  border: 1px solid #1a1a1a;
   margin-top: 16px;
 }
 .marketing-spot svg-icon {
@@ -6509,7 +6521,7 @@ strong {
   margin-top: 16px;
   text-align: center;
   background-color: #ffc700;
-  color: #292929;
+  color: #1a1a1a;
 }
 
 .banner-feel {
@@ -6521,7 +6533,7 @@ strong {
   margin-top: 16px;
   text-align: center;
   background-color: #fb9962;
-  color: #292929;
+  color: #1a1a1a;
 }
 
 .banner-limited {
@@ -6536,7 +6548,7 @@ strong {
   color: #fff;
 }
 
-/* hay que eliminar headers y quedarnos con minheaders*/
+/* hay que eliminar headers y quedarnos con minheaders */
 @keyframes underline {
   0% {
     width: 0;
@@ -6610,7 +6622,7 @@ strong {
   cursor: not-allowed;
 }
 .has-light .btn {
-  color: #292929;
+  color: #1a1a1a;
   border-color: #fff;
   background-color: #fff;
 }
@@ -6644,19 +6656,19 @@ strong {
   width: max-content;
 }
 .btn.btn-feel-invert {
-  color: #292929;
+  color: #1a1a1a;
   background-color: transparent;
   border: 1px solid #fb9962;
 }
 .btn.btn-feel-invert svg g {
-  fill: #292929;
-  stroke: #292929;
+  fill: #1a1a1a;
+  stroke: #1a1a1a;
 }
 .btn.btn-feel-invert svg circle {
-  stroke: #292929;
+  stroke: #1a1a1a;
 }
 .btn.btn-feel-invert:focus, .btn.btn-feel-invert.focus, .btn.btn-feel-invert:hover, .btn.btn-feel-invert.hover, .btn.btn-feel-invert:active, .btn.btn-feel-invert.active {
-  color: #292929;
+  color: #1a1a1a;
   opacity: 1;
   border-color: rgba(251, 153, 98, 0.5);
 }
@@ -6768,8 +6780,8 @@ strong {
 
 .btn-primary {
   color: #fff;
-  background-color: #292929;
-  border: 1px solid #292929;
+  background-color: #1a1a1a;
+  border: 1px solid #1a1a1a;
 }
 .btn-primary svg g {
   fill: #fff;
@@ -6804,19 +6816,19 @@ strong {
   fill: #8e8e8e;
 }
 .has-light .btn-primary {
-  color: #292929;
+  color: #1a1a1a;
   background-color: #fff;
   border: 1px solid #fff;
 }
 .has-light .btn-primary svg g {
-  fill: #292929;
-  stroke: #292929;
+  fill: #1a1a1a;
+  stroke: #1a1a1a;
 }
 .has-light .btn-primary svg circle {
-  stroke: #292929;
+  stroke: #1a1a1a;
 }
 .has-light .btn-primary svg path {
-  fill: #292929;
+  fill: #1a1a1a;
 }
 .has-light .btn-primary:focus, .has-light .btn-primary.focus, .has-light .btn-primary:hover, .has-light .btn-primary.hover, .has-light .btn-primary:active, .has-light .btn-primary.active {
   color: #fff;
@@ -6842,22 +6854,22 @@ strong {
 }
 
 .btn-secondary {
-  color: #292929;
+  color: #1a1a1a;
   background-color: #fff;
-  border: 1px solid #292929;
+  border: 1px solid #1a1a1a;
 }
 .btn-secondary svg g {
-  fill: #292929;
-  stroke: #292929;
+  fill: #1a1a1a;
+  stroke: #1a1a1a;
 }
 .btn-secondary svg circle {
-  stroke: #292929;
+  stroke: #1a1a1a;
 }
 .btn-secondary svg path {
-  fill: #292929;
+  fill: #1a1a1a;
 }
 .btn-secondary:focus, .btn-secondary.focus, .btn-secondary:hover, .btn-secondary.hover, .btn-secondary:active, .btn-secondary.active {
-  color: #292929;
+  color: #1a1a1a;
   background-color: #fff;
   border: 1px solid #8e8e8e;
   opacity: 1;
@@ -6932,7 +6944,7 @@ strong {
   fill: #fff;
 }
 .btn-phantom:focus, .btn-phantom.focus, .btn-phantom:hover, .btn-phantom.hover, .btn-phantom:active, .btn-phantom.active {
-  color: #292929;
+  color: #1a1a1a;
   background-color: transparent;
   border: 1px solid #8e8e8e;
   opacity: 1;
@@ -6956,21 +6968,21 @@ strong {
 }
 
 .btn-primary-feel {
-  color: #292929;
+  color: #1a1a1a;
   background-color: #fb9962;
 }
 .btn-primary-feel svg g {
-  fill: #292929;
-  stroke: #292929;
+  fill: #1a1a1a;
+  stroke: #1a1a1a;
 }
 .btn-primary-feel svg circle {
-  stroke: #292929;
+  stroke: #1a1a1a;
 }
 .btn-primary-feel svg path {
-  fill: #292929;
+  fill: #1a1a1a;
 }
 .btn-primary-feel:focus, .btn-primary-feel.focus, .btn-primary-feel:hover, .btn-primary-feel.hover, .btn-primary-feel:active, .btn-primary-feel.active {
-  color: #292929;
+  color: #1a1a1a;
   opacity: 1;
   background-color: rgba(251, 153, 98, 0.6);
 }
@@ -6989,20 +7001,20 @@ strong {
 }
 
 .btn-secondary-feel {
-  color: #292929;
+  color: #1a1a1a;
   background-color: transparent;
   border: 1px solid #fb9962;
 }
 .btn-secondary-feel svg g {
-  fill: #292929;
-  stroke: #292929;
+  fill: #1a1a1a;
+  stroke: #1a1a1a;
 }
 .btn-secondary-feel svg circle {
-  stroke: #292929;
+  stroke: #1a1a1a;
 }
 .btn-secondary-feel:focus, .btn-secondary-feel.focus, .btn-secondary-feel:hover, .btn-secondary-feel.hover, .btn-secondary-feel:active, .btn-secondary-feel.active {
   opacity: 1;
-  color: #292929;
+  color: #1a1a1a;
   border: 1px solid #fccbb0;
   background-color: transparent;
 }
@@ -7034,20 +7046,20 @@ strong {
 .btn-text {
   background-color: transparent;
   border-color: transparent;
-  color: #292929;
+  color: #1a1a1a;
 }
 
 .btn-invert {
-  color: #292929;
+  color: #1a1a1a;
   background-color: transparent;
-  border: 1px solid #292929;
+  border: 1px solid #1a1a1a;
 }
 .btn-invert:focus, .btn-invert.focus, .btn-invert:hover, .btn-invert.hover, .btn-invert:active, .btn-invert.active {
   opacity: 0.6;
 }
 
 .btn-invert-light {
-  color: #292929;
+  color: #1a1a1a;
   background-color: transparent;
   border: 1px solid #e3e3e3;
 }
@@ -7059,8 +7071,8 @@ strong {
 }
 
 .btn-default {
-  background-color: #292929;
-  border: 1px solid #292929;
+  background-color: #1a1a1a;
+  border: 1px solid #1a1a1a;
   color: #fff;
 }
 
@@ -7079,7 +7091,7 @@ strong {
   border: none;
   text-align: left;
   text-decoration: none;
-  color: #292929;
+  color: #1a1a1a;
   background-color: transparent;
   padding: 0;
   border-radius: 0;
@@ -7107,7 +7119,7 @@ strong {
   width: 40px;
   max-width: initial;
   height: 40px;
-  border: 1px solid #292929;
+  border: 1px solid #1a1a1a;
   border-radius: 50px;
   align-content: center;
   justify-content: center;
@@ -7154,7 +7166,7 @@ strong {
 .btn-google,
 .has-light .btn-google {
   background-color: #fff;
-  color: #292929;
+  color: #1a1a1a;
   border: 1px solid #fff;
 }
 .btn-google svg-icon,
@@ -7367,7 +7379,7 @@ strong {
   opacity: 1;
 }
 .btn-anim:disabled svg path, .btn-anim[disabled] svg path, .btn-anim.disabled svg path {
-  fill: rgba(41, 41, 41, 0.6);
+  fill: rgba(26, 26, 26, 0.6);
 }
 
 .is-loading.btn-anim .btn-submit {
@@ -7381,8 +7393,8 @@ strong {
 
 .no-focus:focus {
   color: #fff;
-  background-color: #292929;
-  border-color: #292929;
+  background-color: #1a1a1a;
+  border-color: #1a1a1a;
 }
 
 .btn-loading svg {
@@ -7409,22 +7421,22 @@ strong {
 .btn-social-login.disabled {
   filter: invert(1);
   background: #fff;
-  color: #292929;
+  color: #1a1a1a;
   cursor: default;
 }
 .btn-social-login.disabled svg path {
-  fill: #292929;
+  fill: #1a1a1a;
 }
 
 .btn-feel {
   background-color: #fb9962;
   border: 1px solid #fb9962;
-  color: #292929;
+  color: #1a1a1a;
 }
 .btn-feel:hover, .btn-feel.hover, .btn-feel:focus, .btn-feel.focus {
   background-color: #fccbb0;
   border: 1px solid #fccbb0;
-  color: #292929;
+  color: #1a1a1a;
   opacity: 1;
 }
 .btn-feel[disabled], .btn-feel:disabled, .btn-feel.disabled {
@@ -7436,12 +7448,12 @@ strong {
 .has-light .btn-feel {
   background-color: #fb9962;
   border: 1px solid #fb9962;
-  color: #292929;
+  color: #1a1a1a;
 }
 .has-light .btn-feel:hover, .has-light .btn-feel.hover, .has-light .btn-feel:focus, .has-light .btn-feel.focus {
   background-color: #fccbb0;
   border: 1px solid #fccbb0;
-  color: #292929;
+  color: #1a1a1a;
   opacity: 1;
 }
 .has-light .btn-feel[disabled], .has-light .btn-feel:disabled, .has-light .btn-feel.disabled {
@@ -7458,7 +7470,7 @@ strong {
   gap: 8px;
   padding: 13px;
   border: none;
-  background-color: rgba(41, 41, 41, 0.4);
+  background-color: rgba(26, 26, 26, 0.4);
   color: #fff;
   transition: all 0.4s ease-in-out;
 }
@@ -7466,7 +7478,7 @@ strong {
   fill: #fff;
 }
 .btn-world:hover, .btn-world.hover, .btn-world:focus, .btn-world.focus {
-  background-color: rgba(41, 41, 41, 0.8);
+  background-color: rgba(26, 26, 26, 0.8);
   border: none;
 }
 .btn-world .btn-world-left {
@@ -7499,7 +7511,7 @@ strong {
 
 .btn.btn-secondary-rd {
   border-radius: 0;
-  border: 1px solid #292929;
+  border: 1px solid #1a1a1a;
   padding: 9px 2px 4px;
   height: 32px;
   min-width: 100px;
@@ -7540,7 +7552,7 @@ strong {
   stroke: none;
 }
 
-/* hay que eliminar headers y quedarnos con minheaders*/
+/* hay que eliminar headers y quedarnos con minheaders */
 @keyframes underline {
   0% {
     width: 0;
@@ -7596,7 +7608,7 @@ strong {
   position: absolute;
   content: "";
   height: 1px;
-  background-color: #292929;
+  background-color: #1a1a1a;
   width: 16px;
   transform: rotate(136deg);
   left: 4px;
@@ -7609,7 +7621,7 @@ strong {
   height: 1px;
   top: 10px;
   transform: rotate(50deg);
-  background-color: #292929;
+  background-color: #1a1a1a;
 }
 .checkbox-item [type=checkbox]:not(:checked) + label,
 .checkbox-item [type=checkbox]:checked + label {
@@ -7672,7 +7684,7 @@ strong {
   position: absolute;
   top: 5px;
   left: 5px;
-  color: #292929;
+  color: #1a1a1a;
   transition: all 0.2s;
 }
 .checkbox-item [type=checkbox]:not(:checked) + label .icon {
@@ -7721,7 +7733,7 @@ strong {
   border-radius: 30px;
   left: 0;
   border: none;
-  border: 1px solid #292929;
+  border: 1px solid #1a1a1a;
   outline: 0;
   display: inline-block;
   vertical-align: top;
@@ -7749,7 +7761,7 @@ strong {
   line-height: normal;
 }
 .checkbox-item-2 .checkbox-circle {
-  background: #292929;
+  background: #1a1a1a;
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -7759,7 +7771,7 @@ strong {
   position: absolute;
   top: 3px;
   left: 6px;
-  color: #292929;
+  color: #1a1a1a;
   transition: all 0.2s;
 }
 .checkbox-item-2 [type=checkbox]:not(:checked) + label .checkbox-circle {
@@ -7834,7 +7846,7 @@ strong {
   left: 7px;
   width: 10px;
   height: 10px;
-  background-color: #292929;
+  background-color: #1a1a1a;
   border-radius: 50%;
   transition: all 0.2s;
 }
@@ -7872,7 +7884,7 @@ strong {
   display: none;
 }
 .check-no.checkbox-radio [type=radio]:checked + label .border-1 {
-  border: 1px solid #292929;
+  border: 1px solid #1a1a1a;
 }
 
 .check-center.checkbox-radio [type=radio]:checked + label::before, .check-center.checkbox-radio [type=radio]:not(:checked) + label::before {
@@ -7890,7 +7902,7 @@ strong {
   padding-left: 40px;
 }
 .check-center.checkbox-radio [type=radio]:checked + label .border-1 {
-  border: 1px solid #292929;
+  border: 1px solid #1a1a1a;
 }
 
 .check-bleed.checkbox-radio [type=radio]:checked + label::before, .check-bleed.checkbox-radio [type=radio]:not(:checked) + label::before {
@@ -7913,7 +7925,7 @@ strong {
   padding-left: 40px;
 }
 .check-top.checkbox-radio [type=radio]:checked + label .border-1 {
-  border: 1px solid #292929;
+  border: 1px solid #1a1a1a;
 }
 
 .check-clear.checkbox-radio [type=radio]:checked + label::before, .check-clear.checkbox-radio [type=radio]:not(:checked) + label::before {
@@ -7929,7 +7941,7 @@ strong {
   padding-left: 40px;
 }
 .check-clear.checkbox-radio [type=radio]:checked + label .border-1 {
-  border: 1px solid #292929;
+  border: 1px solid #1a1a1a;
 }
 
 .checkbox-card .checkbox-card-label {
@@ -7950,14 +7962,14 @@ strong {
 }
 .checkbox-card [type=radio]:checked + .checkbox-card-label, .checkbox-card :hover + .checkbox-card-label {
   cursor: pointer;
-  border: 1px solid #292929;
+  border: 1px solid #1a1a1a;
 }
 .has-light .checkbox-card {
   color: #fff;
 }
 .has-light .checkbox-card .checkbox-card-label {
   border: 1px solid #8e8e8e;
-  background: #292929;
+  background: #1a1a1a;
 }
 .has-light .checkbox-card [type=radio]:checked + .checkbox-card-label, .has-light .checkbox-card :hover + .checkbox-card-label {
   cursor: pointer;
@@ -7965,7 +7977,7 @@ strong {
 }
 
 .is-active.checkbox-radio .border-1 {
-  border: 1px solid #292929;
+  border: 1px solid #1a1a1a;
 }
 .is-active.checkbox-radio [type=radio] + label .ico-radio {
   opacity: 1;
@@ -8026,7 +8038,7 @@ strong {
   color: #fff;
 }
 
-/* hay que eliminar headers y quedarnos con minheaders*/
+/* hay que eliminar headers y quedarnos con minheaders */
 @keyframes underline {
   0% {
     width: 0;
@@ -8063,7 +8075,7 @@ strong {
 }
 input:focus {
   outline: none;
-  border: 1px solid #292929;
+  border: 1px solid #1a1a1a;
 }
 
 .form {
@@ -8081,7 +8093,7 @@ select {
   background-color: #fff;
   border-color: #e3e3e3;
   border-radius: 0;
-  color: #292929;
+  color: #1a1a1a;
 }
 
 label {
@@ -8111,7 +8123,7 @@ label {
 .select select {
   background-color: transparent;
   border-color: #e3e3e3;
-  color: #292929;
+  color: #1a1a1a;
   max-width: 100%;
   width: 100%;
   font-size: 16px;
@@ -8152,7 +8164,7 @@ label {
   border-right: 1px solid transparent;
   background-color: transparent;
   padding-left: 0;
-  border-bottom: 1px solid #292929;
+  border-bottom: 1px solid #1a1a1a;
 }
 
 .input-notouch {
@@ -8171,7 +8183,7 @@ label {
 
 .inputmini {
   border-color: #e3e3e3;
-  color: #292929;
+  color: #1a1a1a;
   max-width: 100%;
   width: 58px;
   align-items: center;
@@ -8439,7 +8451,7 @@ input::input-placeholder {
 .form-input-label select:-webkit-autofill:hover,
 .form-input-label select:-webkit-autofill:focus {
   border: 1px solid #e3e3e3;
-  -webkit-text-fill-color: #292929;
+  -webkit-text-fill-color: #1a1a1a;
   box-shadow: 0 0 0 1000px #fff inset;
   transition: background-color 5000s ease-in-out 0s;
 }
@@ -8488,7 +8500,7 @@ input::input-placeholder {
   z-index: 1;
 }
 .select::after {
-  border: 1px solid #292929;
+  border: 1px solid #1a1a1a;
   border-radius: 0;
   border-right: 0;
   border-top: 0;
@@ -8507,7 +8519,7 @@ input::input-placeholder {
   height: 48px;
 }
 .select:not(.is-multiple, .is-loading)::after {
-  border-color: #292929;
+  border-color: #1a1a1a;
 }
 .select select::-ms-expand {
   display: none;
@@ -8527,7 +8539,7 @@ input::input-placeholder {
   padding: 0 40px;
 }
 .select:not(.is-multiple, .is-loading):hover::after {
-  border-color: #292929;
+  border-color: #1a1a1a;
 }
 .select.select-label select {
   padding-left: 100px;
@@ -8590,7 +8602,7 @@ input::input-placeholder {
 }
 .select.select-secondary-rd select {
   border-radius: 0;
-  border: 1px solid #292929;
+  border: 1px solid #1a1a1a;
   padding: 6px 2px 4px;
   min-width: 100px;
   text-align: center;
@@ -8657,7 +8669,7 @@ input::input-placeholder {
   padding-left: 16px;
   background: none;
   padding-right: 40px;
-  border-color: #292929;
+  border-color: #1a1a1a;
 }
 .select.select-size select:hover {
   opacity: 0.6;
@@ -8767,8 +8779,8 @@ input::input-placeholder {
 .select-line select,
 .select-line .textarea {
   background-color: #fff;
-  border-color: #292929;
-  color: #292929;
+  border-color: #1a1a1a;
+  color: #1a1a1a;
   max-width: 100%;
   width: 100%;
   font-size: 14px;
@@ -8799,7 +8811,7 @@ input::input-placeholder {
   padding: 12px 0 4px;
   height: auto;
   border: none;
-  border-bottom: 1px solid #292929;
+  border-bottom: 1px solid #1a1a1a;
 }
 .input-line-v2 .input::input-placeholder {
   font-family: arial, sans-serif;
@@ -8923,7 +8935,7 @@ input::input-placeholder {
 .error-zone select:-webkit-autofill:hover,
 .error-zone select:-webkit-autofill:focus {
   border: 1px solid #e3e3e3;
-  -webkit-text-fill-color: #292929;
+  -webkit-text-fill-color: #1a1a1a;
   box-shadow: 0 0 0 1000px #fff inset;
   transition: background-color 5000s ease-in-out 0s;
 }
@@ -8988,7 +9000,7 @@ input::input-placeholder {
 .has-light .form-input-prefix select:-webkit-autofill:focus {
   border: 1px solid #fff;
   -webkit-text-fill-color: #fff;
-  box-shadow: 0 0 0 1000px #292929 inset;
+  box-shadow: 0 0 0 1000px #1a1a1a inset;
 }
 .has-light .form-input-label .input,
 .has-light .form-input-label .textarea,
@@ -9036,12 +9048,12 @@ input::input-placeholder {
 
 svg-icon.ico-post,
 svg-icon.ico-pre {
-  margin: 0px 16px;
+  margin: 0 16px;
   top: 50%;
   transform: translateY(-50%);
 }
 
-/* hay que eliminar headers y quedarnos con minheaders*/
+/* hay que eliminar headers y quedarnos con minheaders */
 @keyframes underline {
   0% {
     width: 0;
@@ -9101,7 +9113,7 @@ a:hover {
 }
 .link1::after {
   content: "";
-  background-color: #292929;
+  background-color: #1a1a1a;
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -9177,7 +9189,7 @@ a:hover {
 }
 .link4::after {
   content: "";
-  background-color: #292929;
+  background-color: #1a1a1a;
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -9218,7 +9230,7 @@ u::after {
   height: 2px;
   bottom: -4px;
   left: 0;
-  background: #292929;
+  background: #1a1a1a;
   transform: scaleX(0);
   transition: transform 278ms;
   transition: transform 278ms, -webkit-transform 278ms;
@@ -9247,7 +9259,7 @@ u::after {
   height: 1px;
   bottom: -4px;
   left: 0;
-  background: #292929;
+  background: #1a1a1a;
   transition: 0.6s;
 }
 .link5-2::before {
@@ -9257,7 +9269,7 @@ u::after {
   height: 1px;
   bottom: -4px;
   left: 0;
-  background: #292929;
+  background: #1a1a1a;
   opacity: 0.3;
 }
 .link5-2:hover {
@@ -9275,8 +9287,8 @@ u::after {
   display: inline-block;
   padding: 4px 0;
   margin: 20px 0;
-  border-bottom: 2px solid #292929;
-  color: #292929;
+  border-bottom: 2px solid #1a1a1a;
+  color: #1a1a1a;
   text-align: left;
   text-decoration: none;
   cursor: pointer;
@@ -9300,7 +9312,7 @@ u::after {
   z-index: 3;
   width: 0;
   height: 1px;
-  background: #292929;
+  background: #1a1a1a;
   animation: underline 1s 0.5s cubic-bezier(0.55, 0.085, 0, 0.99) forwards;
 }
 .link7:hover {
@@ -9362,7 +9374,7 @@ u::after {
   color: #fff;
 }
 .inner-button::after {
-  border: 1px solid #292929;
+  border: 1px solid #1a1a1a;
   border-radius: 0;
   border-right: 0;
   border-top: 0;
@@ -9387,7 +9399,7 @@ u::after {
   transform: none;
   cursor: pointer;
   background-color: transparent;
-  background-image: linear-gradient(transparent calc(100% - 1px), #292929 10px);
+  background-image: linear-gradient(transparent calc(100% - 1px), #1a1a1a 10px);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   transition: background-size 0.4s;
@@ -9543,7 +9555,7 @@ u::after {
   color: white;
 }
 
-/* hay que eliminar headers y quedarnos con minheaders*/
+/* hay que eliminar headers y quedarnos con minheaders */
 @keyframes underline {
   0% {
     width: 0;
@@ -9588,7 +9600,7 @@ ul.list-disc li {
   padding: 8px 16px;
 }
 ul.list-disc li::after {
-  background-color: #292929;
+  background-color: #1a1a1a;
   content: "";
   border-radius: 50%;
   width: 4px;
@@ -9693,7 +9705,7 @@ ul.list-mini > li.is-missing::after {
   content: "";
   width: 100%;
   height: 1px;
-  background-color: #292929;
+  background-color: #1a1a1a;
   border-radius: 0;
   margin-top: -1px;
   transform: none;
@@ -9702,7 +9714,7 @@ ul.list-mini > li::after {
   content: "";
   width: 2px;
   height: 2px;
-  background-color: #292929;
+  background-color: #1a1a1a;
   position: absolute;
   left: 0;
   bottom: 10px;
@@ -9722,7 +9734,7 @@ ul.list-mini > li::after {
   left: -1px;
 }
 .list-box.is-active, .list-box:hover {
-  border: 1px solid #292929;
+  border: 1px solid #1a1a1a;
   opacity: 1;
   cursor: pointer;
 }
@@ -9793,7 +9805,7 @@ ul.list-mini.has-light > li::after {
   background-color: #fff;
 }
 
-/* hay que eliminar headers y quedarnos con minheaders*/
+/* hay que eliminar headers y quedarnos con minheaders */
 @keyframes underline {
   0% {
     width: 0;
@@ -9842,11 +9854,11 @@ ul.list-mini.has-light > li::after {
   min-width: 8px;
   height: 8px;
   border-radius: 0;
-  background-color: #292929;
+  background-color: #1a1a1a;
   transition: all 0.2s ease;
 }
 
-/* hay que eliminar headers y quedarnos con minheaders*/
+/* hay que eliminar headers y quedarnos con minheaders */
 @keyframes underline {
   0% {
     width: 0;
@@ -9918,17 +9930,17 @@ ul.list-mini.has-light > li::after {
 }
 .tabs li a:hover,
 .tabs li span:hover {
-  border-bottom-color: #292929;
+  border-bottom-color: #1a1a1a;
   border-bottom-width: 2px;
   padding-bottom: 16px;
-  color: #292929;
+  color: #1a1a1a;
   cursor: pointer;
 }
 .tabs li.is-active a, .tabs li.is-active span {
-  border-bottom-color: #292929;
+  border-bottom-color: #1a1a1a;
   border-bottom-width: 2px;
   padding-bottom: 16px;
-  color: #292929;
+  color: #1a1a1a;
   font-family: arial, sans-serif;
   font-weight: 900;
 }
@@ -9965,7 +9977,7 @@ ul.list-mini.has-light > li::after {
 .tabs-list li span:hover::after {
   content: "";
   width: 100%;
-  background: #292929;
+  background: #1a1a1a;
   height: 2px;
   position: absolute;
   bottom: -4px;
@@ -9974,7 +9986,7 @@ ul.list-mini.has-light > li::after {
 .tabs-list li.is-active span::after {
   content: "";
   width: 100%;
-  background: #292929;
+  background: #1a1a1a;
   height: 2px;
   position: absolute;
   bottom: -4px;
@@ -10005,7 +10017,7 @@ ul.list-mini.has-light > li::after {
 }
 .tabs-gray a:hover,
 .tabs-gray span:hover {
-  color: #292929;
+  color: #1a1a1a;
   cursor: pointer;
 }
 
@@ -10032,7 +10044,7 @@ ul.list-mini.has-light > li::after {
   opacity: 0.5;
   border: none;
   padding: 6px 8px 8px;
-  color: #292929;
+  color: #1a1a1a;
 }
 .tabs-mini li:first-child a::after {
   content: "";
@@ -10063,7 +10075,7 @@ ul.list-mini.has-light > li::after {
   border: 1px solid #e3e3e3;
 }
 
-/* hay que eliminar headers y quedarnos con minheaders*/
+/* hay que eliminar headers y quedarnos con minheaders */
 @keyframes underline {
   0% {
     width: 0;
@@ -10127,7 +10139,7 @@ ul.list-mini.has-light > li::after {
 
 .tag-alert {
   background-color: #ffc700;
-  color: #292929;
+  color: #1a1a1a;
   padding: 6px;
   line-height: 1;
   display: inline-block;
@@ -10136,7 +10148,7 @@ ul.list-mini.has-light > li::after {
 
 .tag-feel {
   background-color: #fb9962;
-  color: #292929;
+  color: #1a1a1a;
   padding: 6px;
   line-height: 1;
   display: inline-block;
@@ -10144,7 +10156,7 @@ ul.list-mini.has-light > li::after {
 }
 
 .tag-limited {
-  background-color: #292929;
+  background-color: #1a1a1a;
   color: #fff;
   padding: 6px;
   line-height: 1;
@@ -10165,7 +10177,7 @@ ul.list-mini.has-light > li::after {
   left: -30px;
 }
 
-/* hay que eliminar headers y quedarnos con minheaders*/
+/* hay que eliminar headers y quedarnos con minheaders */
 @keyframes underline {
   0% {
     width: 0;
@@ -10212,7 +10224,7 @@ ul.list-mini.has-light > li::after {
   z-index: 10;
   padding: 8px;
   padding-right: 24px;
-  color: #292929;
+  color: #1a1a1a;
 }
 .tooltip-sm::after {
   content: "";
@@ -10319,7 +10331,7 @@ ul.list-mini.has-light > li::after {
   z-index: 10;
   padding: 8px;
   padding-right: 24px;
-  color: #292929;
+  color: #1a1a1a;
 }
 .tooltip-sm-temp::after {
   content: "";
@@ -10385,7 +10397,7 @@ ul.list-mini.has-light > li::after {
   padding: 8px;
 }
 
-/* hay que eliminar headers y quedarnos con minheaders*/
+/* hay que eliminar headers y quedarnos con minheaders */
 @keyframes underline {
   0% {
     width: 0;
@@ -10466,7 +10478,7 @@ ul.list-mini.has-light > li::after {
   fill: #b40016;
 }
 
-/* hay que eliminar headers y quedarnos con minheaders*/
+/* hay que eliminar headers y quedarnos con minheaders */
 @keyframes underline {
   0% {
     width: 0;
@@ -10596,7 +10608,7 @@ ul.list-clear li.list-box:last-child {
   left: -1px;
 }
 .list-box.is-active, .list-box:hover {
-  border: 1px solid #292929;
+  border: 1px solid #1a1a1a;
   opacity: 1;
   cursor: pointer;
 }
@@ -10700,7 +10712,7 @@ ul.list-clear li.list-box:last-child {
   margin: 16px;
 }
 
-/* hay que eliminar headers y quedarnos con minheaders*/
+/* hay que eliminar headers y quedarnos con minheaders */
 @keyframes underline {
   0% {
     width: 0;
@@ -10843,7 +10855,7 @@ ul.list-clear li.list-box:last-child {
   border-bottom: 1px dotted #8e8e8e;
 }
 
-/* hay que eliminar headers y quedarnos con minheaders*/
+/* hay que eliminar headers y quedarnos con minheaders */
 @keyframes underline {
   0% {
     width: 0;
@@ -11011,7 +11023,7 @@ ul.list-clear li.list-box:last-child {
   }
 }
 
-/* hay que eliminar headers y quedarnos con minheaders*/
+/* hay que eliminar headers y quedarnos con minheaders */
 @keyframes underline {
   0% {
     width: 0;
@@ -11144,7 +11156,7 @@ ul.list-clear li.list-box:last-child {
   }
 }
 
-/* hay que eliminar headers y quedarnos con minheaders*/
+/* hay que eliminar headers y quedarnos con minheaders */
 @keyframes underline {
   0% {
     width: 0;
@@ -11270,7 +11282,7 @@ ul.list-clear li.list-box:last-child {
   cursor: pointer;
 }
 
-/* hay que eliminar headers y quedarnos con minheaders*/
+/* hay que eliminar headers y quedarnos con minheaders */
 @keyframes underline {
   0% {
     width: 0;
@@ -11354,7 +11366,7 @@ ul.list-clear li.list-box:last-child {
   appearance: initial;
 }
 .card9 .card9-sizes button:hover {
-  background-color: #292929;
+  background-color: #1a1a1a;
   color: #fff;
   cursor: pointer;
 }
@@ -11558,7 +11570,7 @@ ul.list-clear li.list-box:last-child {
   padding-top: 133.3333%;
 }
 
-/* hay que eliminar headers y quedarnos con minheaders*/
+/* hay que eliminar headers y quedarnos con minheaders */
 @keyframes underline {
   0% {
     width: 0;
@@ -11662,7 +11674,7 @@ ul.list-clear li.list-box:last-child {
   cursor: pointer;
 }
 
-/* hay que eliminar headers y quedarnos con minheaders*/
+/* hay que eliminar headers y quedarnos con minheaders */
 @keyframes underline {
   0% {
     width: 0;
@@ -11752,7 +11764,7 @@ ul.list-clear li.list-box:last-child {
   cursor: pointer;
 }
 
-/* hay que eliminar headers y quedarnos con minheaders*/
+/* hay que eliminar headers y quedarnos con minheaders */
 @keyframes underline {
   0% {
     width: 0;
@@ -11814,7 +11826,7 @@ ul.list-clear li.list-box:last-child {
   right: 20px;
 }
 
-/* hay que eliminar headers y quedarnos con minheaders*/
+/* hay que eliminar headers y quedarnos con minheaders */
 @keyframes underline {
   0% {
     width: 0;
@@ -11938,7 +11950,7 @@ ul.list-clear li.list-box:last-child {
   content: "";
   width: 100%;
   height: 4px;
-  background-color: #292929;
+  background-color: #1a1a1a;
   bottom: 0;
   left: 0;
 }
@@ -12143,7 +12155,7 @@ ul.list-clear li.list-box:last-child {
   }
 }
 
-/* hay que eliminar headers y quedarnos con minheaders*/
+/* hay que eliminar headers y quedarnos con minheaders */
 @keyframes underline {
   0% {
     width: 0;
@@ -12314,7 +12326,7 @@ ul.list-clear li.list-box:last-child {
   }
 }
 
-/* hay que eliminar headers y quedarnos con minheaders*/
+/* hay que eliminar headers y quedarnos con minheaders */
 @keyframes underline {
   0% {
     width: 0;
@@ -12383,7 +12395,7 @@ ul.list-clear li.list-box:last-child {
 .hg-bread .hg-bread-line div {
   width: 42px;
   height: 1px;
-  background-color: #292929;
+  background-color: #1a1a1a;
 }
 .hg-bread .hg-bread-title {
   line-height: 1;
@@ -12392,7 +12404,7 @@ ul.list-clear li.list-box:last-child {
   opacity: 0.4;
 }
 
-/* hay que eliminar headers y quedarnos con minheaders*/
+/* hay que eliminar headers y quedarnos con minheaders */
 @keyframes underline {
   0% {
     width: 0;
@@ -12432,7 +12444,7 @@ ul.list-clear li.list-box:last-child {
   border-top: 1px solid #e3e3e3;
 }
 
-/* hay que eliminar headers y quedarnos con minheaders*/
+/* hay que eliminar headers y quedarnos con minheaders */
 @keyframes underline {
   0% {
     width: 0;
