@@ -28,11 +28,10 @@
 
     &:hover .color-selector::before,
     &.is-active .color-selector::before {
-      transform: scale(1);
+      transform: scale(0);
     }
 
     .color-selector {
-      border-radius: 50%;
       box-sizing: border-box;
       display: inline-block;
       height: 100%;
@@ -44,7 +43,6 @@
 
       &::before {
         border: 1px solid #d8d8d8;
-        border-radius: 50%;
         content: '';
         height: 100%;
         left: 0;
@@ -58,7 +56,6 @@
       img,
       .color-plain {
         border: 1px solid #d8d8d8;
-        border-radius: 50%;
         height: 10px;
         left: 50%;
         margin-left: -5px;
@@ -70,7 +67,6 @@
       }
       span {
         border: 1px solid $c-middle-grey;
-        border-radius: 50%;
         height: 12px;
         left: 50%;
         margin-left: -6px;

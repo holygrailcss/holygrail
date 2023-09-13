@@ -5914,7 +5914,7 @@ strong {
 .helper-font .tit-m::after {
   content: "tit-m " !important;
   position: absolute;
-  background: rgb(158, 232, 219);
+  background: rgb(233, 78, 130);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -5930,7 +5930,7 @@ strong {
 .helper-font .tit-s::after {
   content: "tit-s " !important;
   position: absolute;
-  background: rgb(80, 25, 79);
+  background: rgb(55, 148, 250);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -5946,7 +5946,7 @@ strong {
 .helper-font .tit-xs::after {
   content: "tit-xs " !important;
   position: absolute;
-  background: rgb(84, 91, 13);
+  background: rgb(197, 247, 60);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -5962,7 +5962,7 @@ strong {
 .helper-font .p-18-2b::after {
   content: "p-18-2b " !important;
   position: absolute;
-  background: rgb(66, 36, 135);
+  background: rgb(238, 174, 37);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -5978,7 +5978,7 @@ strong {
 .helper-font .p-18-b::after {
   content: "p-18-b " !important;
   position: absolute;
-  background: rgb(62, 41, 49);
+  background: rgb(12, 129, 113);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -5994,7 +5994,7 @@ strong {
 .helper-font .p-14::after {
   content: "p-14 " !important;
   position: absolute;
-  background: rgb(174, 171, 88);
+  background: rgb(83, 236, 156);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6010,7 +6010,7 @@ strong {
 .helper-font .p-14-b::after {
   content: "p-14-b " !important;
   position: absolute;
-  background: rgb(136, 98, 183);
+  background: rgb(216, 225, 124);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6026,7 +6026,7 @@ strong {
 .helper-font .p-l::after {
   content: "p-l " !important;
   position: absolute;
-  background: rgb(255, 225, 96);
+  background: rgb(215, 144, 23);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6042,7 +6042,7 @@ strong {
 .helper-font .p-m-b::after {
   content: "p-m-b " !important;
   position: absolute;
-  background: rgb(134, 254, 87);
+  background: rgb(146, 65, 24);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6058,7 +6058,7 @@ strong {
 .helper-font .p-m::after {
   content: "p-m " !important;
   position: absolute;
-  background: rgb(230, 4, 61);
+  background: rgb(230, 101, 58);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6074,7 +6074,7 @@ strong {
 .helper-font .p-m-m::after {
   content: "p-m-m " !important;
   position: absolute;
-  background: rgb(167, 20, 12);
+  background: rgb(16, 73, 55);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6090,7 +6090,7 @@ strong {
 .helper-font .p-s::after {
   content: "p-s " !important;
   position: absolute;
-  background: rgb(226, 67, 219);
+  background: rgb(31, 24, 64);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6106,7 +6106,7 @@ strong {
 .helper-font .p-xs::after {
   content: "p-xs " !important;
   position: absolute;
-  background: rgb(76, 133, 114);
+  background: rgb(34, 98, 141);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6122,7 +6122,7 @@ strong {
 .helper-font .p-s-b::after {
   content: "p-s-b " !important;
   position: absolute;
-  background: rgb(74, 224, 38);
+  background: rgb(30, 250, 185);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6138,7 +6138,7 @@ strong {
 .helper-font .p-xs-b::after {
   content: "p-xs-b " !important;
   position: absolute;
-  background: rgb(203, 79, 240);
+  background: rgb(252, 226, 88);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6154,7 +6154,7 @@ strong {
 .helper-font .p-xxs-b::after {
   content: "p-xxs-b " !important;
   position: absolute;
-  background: rgb(8, 34, 169);
+  background: rgb(136, 51, 77);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6170,7 +6170,7 @@ strong {
 .helper-font .btn-primary::after {
   content: "btn-primary " !important;
   position: absolute;
-  background: rgb(113, 24, 10);
+  background: rgb(4, 152, 217);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6186,7 +6186,7 @@ strong {
 .helper-font .btn-secondary::after {
   content: "btn-secondary " !important;
   position: absolute;
-  background: rgb(66, 153, 56);
+  background: rgb(242, 72, 96);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6202,7 +6202,7 @@ strong {
 .helper-font .btn-tertiary::after {
   content: "btn-tertiary " !important;
   position: absolute;
-  background: rgb(92, 202, 162);
+  background: rgb(247, 49, 249);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6218,7 +6218,7 @@ strong {
 .helper-font .btn-feel::after {
   content: "btn-feel " !important;
   position: absolute;
-  background: rgb(150, 14, 198);
+  background: rgb(143, 218, 103);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6234,7 +6234,7 @@ strong {
 .helper-font .link-line::after {
   content: "link-line " !important;
   position: absolute;
-  background: rgb(36, 30, 211);
+  background: rgb(75, 207, 94);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6250,7 +6250,7 @@ strong {
 .helper-font .link-raw::after {
   content: "link-raw " !important;
   position: absolute;
-  background: rgb(6, 200, 154);
+  background: rgb(128, 14, 111);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6266,7 +6266,7 @@ strong {
 .helper-font .btn-phantom::after {
   content: "btn-phantom " !important;
   position: absolute;
-  background: rgb(218, 24, 121);
+  background: rgb(103, 218, 30);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6282,7 +6282,7 @@ strong {
 .helper-font .btn-world::after {
   content: "btn-world " !important;
   position: absolute;
-  background: rgb(129, 215, 104);
+  background: rgb(148, 10, 205);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6298,7 +6298,7 @@ strong {
 .helper-font .product-tag::after {
   content: "product-tag " !important;
   position: absolute;
-  background: rgb(79, 106, 87);
+  background: rgb(79, 235, 153);
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -10778,7 +10778,6 @@ ul.list-clear li.list-box:last-child {
   transform: scale(1);
 }
 .color-wrap button .color-selector {
-  border-radius: 50%;
   box-sizing: border-box;
   display: inline-block;
   height: 100%;
@@ -10790,7 +10789,6 @@ ul.list-clear li.list-box:last-child {
 }
 .color-wrap button .color-selector::before {
   border: 1px solid #d8d8d8;
-  border-radius: 50%;
   content: "";
   height: 100%;
   left: 0;
@@ -10803,7 +10801,6 @@ ul.list-clear li.list-box:last-child {
 .color-wrap button .color-selector img,
 .color-wrap button .color-selector .color-plain {
   border: 1px solid #d8d8d8;
-  border-radius: 50%;
   height: 10px;
   left: 50%;
   margin-left: -5px;
@@ -10815,7 +10812,6 @@ ul.list-clear li.list-box:last-child {
 }
 .color-wrap button .color-selector span {
   border: 1px solid #e3e3e3;
-  border-radius: 50%;
   height: 12px;
   left: 50%;
   margin-left: -6px;
