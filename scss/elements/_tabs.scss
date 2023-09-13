@@ -37,7 +37,7 @@
       padding: $padding-global * 2;
       vertical-align: top;
       padding-bottom: $padding-global * 2 + 1;
-      font-size: 14px;
+      font-size: $tabs-text;
 
       &:hover {
         border-bottom-color: $c-primary;

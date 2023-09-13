@@ -205,9 +205,9 @@
         content: '#{nth(map-keys($headers), $i)} ' !important;
         position: absolute;
 
-        @include random-bgr;
+        background-color: red;
 
-        opacity: 0.8;
+        opacity: 1;
         white-space: nowrap;
         color: #fff;
         padding: 2px;

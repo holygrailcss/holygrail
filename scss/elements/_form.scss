@@ -42,7 +42,7 @@ label {
   padding: 14px 16px;
   position: relative;
   vertical-align: top;
-  font-size: 12px;
+  font-size: $text-input-m;
   border-radius: $form-radius;
   height: 48px;
   box-sizing: border-box;
@@ -56,11 +56,11 @@ label {
   color: $c-primary;
   max-width: 100%;
   width: 100%;
-  font-size: 16px;
+  font-size: $text-input-m;
   line-height: 1;
 
   @media (min-width: $break-sm) {
-    font-size: 14px;
+    font-size: $text-input-d;
   }
 
   &.validation-error {
@@ -319,7 +319,7 @@ label {
   span {
     top: 15px;
     color: $primary-guide;
-    font-size: 14px;
+    font-size: $text-input-d;
     position: absolute;
     line-height: 1;
     width: 150px;
@@ -537,7 +537,7 @@ input::input-placeholder {
       width: 100%;
       height: 24px;
       padding: 0 16px 0 8px;
-      font-size: 14px;
+      font-size: $text-input-d;
       border-radius: $form-radius;
       border: none;
       text-align: center;
@@ -601,12 +601,12 @@ input::input-placeholder {
       text-align: center;
       background: none;
       height: 32px;
-      font-size: 12px;
+      font-size: $text-input-m;
 
       @media (min-width: 768px) {
         padding: 14px 2px;
         height: 48px;
-        font-size: 14px;
+        font-size: $text-input-d;
       }
 
       opacity: 0;
@@ -796,7 +796,7 @@ input::input-placeholder {
     color: $c-primary;
     max-width: 100%;
     width: 100%;
-    font-size: 14px;
+    font-size: $text-input-d;
     line-height: 1;
     border-top: none;
     border-right: none;
@@ -854,7 +854,7 @@ input::input-placeholder {
     font-family: $font-family-form;
     position: relative;
     line-height: 1.5;
-    font-size: 12px;
+    font-size: $text-input-d;
     margin-top: 0;
     padding-top: 2px;
     margin-bottom: 4px;
