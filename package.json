@@ -1,6 +1,6 @@
 {
     "name": "holygrailcss",
-    "version": "2.2.20",
+    "version": "2.2.21",
     "description": "A minimal, responsive, style-agnostic CSS framework.",
     "main": "scss/style.scss",
     "directories": {
@@ -8,7 +8,7 @@
     },
     "scripts": {
 
-  
+
         "start": " npm run format  && npm run docs && npm run build &&  npm run open:guide ",
 
         "open:guide": "open guide/index.html",

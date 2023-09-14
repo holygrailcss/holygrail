@@ -1192,12 +1192,12 @@
   min-width: 100px;
   text-align: center;
   background: none;
-  font-size: 12px;
+  font-size: $btn-text-r;
 
   @media (min-width: $break-sm) {
     padding: 16px 2px 14px;
     height: 48px;
-    font-size: 14px;
+    font-size: $btn-text-m;
     min-width: 120px;
   }
   &:hover {
