@@ -124,6 +124,9 @@
 @mixin random-bgr() {
   background: rgb(random(255) random(255) random(255));
 }
+@mixin fixed-bgr() {
+  background: red;
+}
 
 @function unity($value) {
   @return math.div($value, $value * 0 + 1);
@@ -697,7 +700,7 @@ $spriteHeight: 400;
         content: '#{nth(map-keys($headers), $i)} ' !important;
         position: absolute;
 
-        @include random-bgr;
+        @include fixed-bgr;
 
         opacity: 0.8;
         white-space: nowrap;

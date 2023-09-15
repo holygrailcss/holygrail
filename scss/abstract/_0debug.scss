@@ -1,11 +1,14 @@
 @mixin random-bgr() {
   background: rgb(math.random(255) math.random(255) math.random(255));
 }
+@mixin fixed-bgr() {
+  background: red;
+}
 
 @mixin debug-divs() {
   @for $i from 1 through 500 {
     div:nth-child(#{$i}) {
-      @include random-bgr;
+      @include fixed-bgr;
     }
   }
 }
