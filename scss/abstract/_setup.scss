@@ -96,12 +96,6 @@ $headers: (
   tit-s: ( 12px, 12px, 13px, 13px, 1.2, 'medium', ), 
   tit-xs: ( 11px, 11px, 11px, 11px, 1.2, 'medium', ),
 
-  p-18-2b: ( 18px, 18px, 18px, 18px, 1.3, 'bold2', ), 
-  p-18-b: ( 18px, 18px, 18px, 18px, 1.3, 'bold', ), 
-  p-14: ( 14px, 14px, 14px, 14px, 1.3, 'regular', ), 
-  p-14-b: ( 14px, 14px, 14px, 14px, 1.3, 'bold', ), 
-
-  p-l: ( 16px, 16px, 18px, 18px, 1.3, 'regular', ), 
   p-m-b: ( 12px, 12px, 13px, 13px, 1.2, 'bold', ), 
 
   p-m: ( 12px, 12px, 13px, 13px, 1.2, 'regular', ),
@@ -112,30 +106,23 @@ $headers: (
   p-xs-b: ( 11px, 11px, 12px, 12px, 1.3, 'bold', ), 
   p-xxs-b: ( 9px, 9px, 9px, 9px, 1.3, 'bold', ),
 
-  p-tag: ( 8px, 8px, 10px, 10px, 1.3, 'bold', )
+  p-tag: ( 8px, 8px, 10px, 10px, 1.3, 'bold', )   
 ) !default;
 
 /* hay que eliminar headers y quedarnos con minheaders */
 $minheaders: ( 
-  tit-m: ( 14px, 16px, 1.2, 'medium', ),  // siempre mayus   36
-  tit-s: ( 12px, 13px, 1.2, 'medium', ),  // siempre mayus   84 lo vamos a borrar y sustiuir por p-m
+  tit-m: ( 14px, 16px, 1.2, 'medium', ),  // siempre mayus   36 ✅
+  tit-s: ( 12px, 13px, 1.2, 'medium', ),  // siempre mayus   84 lo vamos a borrar y sustiuir por p-m ❌
   tit-xs: ( 11px, 11px, 1.2, 'medium', ), // siempre mayus   77
-
-  p-18-2b: ( 18px, 18px, 1.3, 'bold2', ), // 3 borramos y pasamos a tit-m
-  p-18-b: ( 18px, 18px, 1.3, 'bold', ),  // 0  borramos y pasamos a tit-m
-  p-14: ( 14px, 14px, 1.3, 'regular', ),  // 31  borramos y sustiuir por p-m
-  p-14-b: ( 14px, 14px, 1.3, 'bold', ),  // 3  borramos y sustiur por p-m
-
-
-  p-l: ( 16px, 18px, 1.3, 'regular', ), // 9 siempre mayus y tit-m
+  
   p-m-b: ( 12px, 13px, 1.2, 'bold', ),  // 146  es semibold aunque ponga bold
 
 
-  p-m: ( 12px, 13px, 1.2, 'regular', ),   // 384 pasa a ser medium y borramos tit-s
+  p-m: ( 12px, 13px, 1.2, 'regular', ),   // 384 pasa a ser medium y borramos tit-s ❌
   p-m-m: ( 12px, 13px, 1.2, 'medium', ),  // 3
-  p-s: ( 12px, 12px, 1.2, 'regular', ),   //598
+  p-s: ( 12px, 12px, 1.2, 'regular', ),   //598  ❌
   p-xs: ( 11px, 11px, 1.2, 'regular', ),  //169
-  p-s-b: ( 12px, 13px, 1.3, 'bold', ),     //15 borramos y pasa a ser p-m-b
+  p-s-b: ( 12px, 13px, 1.3, 'bold', ),     //0 borramos y pasa a ser p-m-b  ✅
   p-xs-b: ( 11px, 12px, 1.3, 'bold', ),   // 35
   p-xxs-b: ( 9px, 9px, 1.3, 'bold', ),    // 6
 
