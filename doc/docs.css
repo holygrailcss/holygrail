@@ -3735,7 +3735,7 @@ p {
   font-family: arial, sans-serif;
   font-weight: 500;
   margin: 0;
-  font-size: 14px;
+  font-size: 12px;
 }
 p.b {
   font-family: arial, sans-serif;
@@ -7031,7 +7031,7 @@ strong {
 .btn-trans {
   color: #fff;
   background: rgba(226, 226, 226, 0.6);
-  font-size: 14px;
+  font-size: 12px;
   border: 0 solid #fff;
   box-sizing: border-box;
 }
@@ -8028,7 +8028,7 @@ select {
 }
 
 label {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .input,
@@ -8122,7 +8122,7 @@ label {
   box-shadow: none;
   display: inline-flex;
   height: 34px;
-  font-size: 18px;
+  font-size: 12px;
   margin-left: 10px;
   text-align: center;
   justify-content: flex-start;
@@ -9260,7 +9260,7 @@ u::after {
   transform: none;
   transition: background-color 0.3s ease-in-out;
   margin: 0;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.2;
   padding: 2px 0;
   text-decoration: underline;
@@ -9277,7 +9277,7 @@ u::after {
   border: 0;
   transform: none;
   margin: 0;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 14px;
   padding: 0;
   cursor: pointer;
@@ -10047,7 +10047,6 @@ ul.list-mini.has-light > li::after {
   padding: 6px;
   line-height: 1;
   display: inline-block;
-  font-size: 14px;
 }
 
 .tag-info {
@@ -10056,7 +10055,6 @@ ul.list-mini.has-light > li::after {
   padding: 6px;
   line-height: 1;
   display: inline-block;
-  font-size: 14px;
 }
 
 .tag-valid {
@@ -10065,7 +10063,6 @@ ul.list-mini.has-light > li::after {
   padding: 6px;
   line-height: 1;
   display: inline-block;
-  font-size: 14px;
 }
 
 .tag-alert {
@@ -10074,7 +10071,6 @@ ul.list-mini.has-light > li::after {
   padding: 6px;
   line-height: 1;
   display: inline-block;
-  font-size: 14px;
 }
 
 .tag-feel {
@@ -10083,7 +10079,6 @@ ul.list-mini.has-light > li::after {
   padding: 6px;
   line-height: 1;
   display: inline-block;
-  font-size: 14px;
 }
 
 .tag-limited {
@@ -10092,7 +10087,6 @@ ul.list-mini.has-light > li::after {
   padding: 6px;
   line-height: 1;
   display: inline-block;
-  font-size: 14px;
 }
 
 .tag-new {
@@ -11479,7 +11473,6 @@ ul.list-clear li.list-box:last-child {
 .product-tag {
   font-family: arial, sans-serif;
   font-weight: 500;
-  font-size: 10px;
   color: #8e8e8e;
   letter-spacing: 0;
   line-height: 1;
