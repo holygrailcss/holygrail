@@ -264,7 +264,7 @@ u {
   transform: none;
   transition: background-color 0.3s ease-in-out;
   margin: 0;
-  font-size: 14px;
+  font-size: $text-md;
   line-height: 1.2;
   padding: 2px 0;
   text-decoration: underline;
@@ -282,7 +282,7 @@ u {
   border: 0;
   transform: none;
   margin: 0;
-  font-size: 14px;
+  font-size: $text-md;
   line-height: 14px;
   padding: 0;
   cursor: pointer;

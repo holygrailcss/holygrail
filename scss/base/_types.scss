@@ -24,7 +24,7 @@ p {
   @include font-regular;
 
   margin: 0;
-  font-size: 14px;
+  font-size: $text-sm;
 
   &.b {
     @include font-regular;
