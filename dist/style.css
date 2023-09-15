@@ -3833,37 +3833,8 @@ mark {
   .tit-xs {
     font-family: arial, sans-serif;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 11px;
     line-height: 1.2;
-  }
-  .p-18-2b {
-    font-family: "arial black", sans-serif;
-    font-size: 18px;
-    line-height: 1.3;
-  }
-  .p-18-b {
-    font-family: arial, sans-serif;
-    font-weight: 900;
-    font-size: 18px;
-    line-height: 1.3;
-  }
-  .p-14 {
-    font-family: arial, sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.3;
-  }
-  .p-14-b {
-    font-family: arial, sans-serif;
-    font-weight: 900;
-    font-size: 14px;
-    line-height: 1.3;
-  }
-  .p-l {
-    font-family: arial, sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.3;
   }
   .p-m-b {
     font-family: arial, sans-serif;
@@ -3895,12 +3866,6 @@ mark {
     font-size: 11px;
     line-height: 1.2;
   }
-  .p-s-b {
-    font-family: arial, sans-serif;
-    font-weight: 900;
-    font-size: 12px;
-    line-height: 1.3;
-  }
   .p-xs-b {
     font-family: arial, sans-serif;
     font-weight: 900;
@@ -3911,6 +3876,12 @@ mark {
     font-family: arial, sans-serif;
     font-weight: 900;
     font-size: 9px;
+    line-height: 1.3;
+  }
+  .p-tag {
+    font-family: arial, sans-serif;
+    font-weight: 900;
+    font-size: 8px;
     line-height: 1.3;
   }
 }
@@ -3924,28 +3895,8 @@ mark {
     line-height: 1.2;
   }
   .tit-xs {
-    font-size: 12px;
+    font-size: 11px;
     line-height: 1.2;
-  }
-  .p-18-2b {
-    font-size: 18px;
-    line-height: 1.3;
-  }
-  .p-18-b {
-    font-size: 18px;
-    line-height: 1.3;
-  }
-  .p-14 {
-    font-size: 14px;
-    line-height: 1.3;
-  }
-  .p-14-b {
-    font-size: 14px;
-    line-height: 1.3;
-  }
-  .p-l {
-    font-size: 16px;
-    line-height: 1.3;
   }
   .p-m-b {
     font-size: 12px;
@@ -3967,16 +3918,16 @@ mark {
     font-size: 11px;
     line-height: 1.2;
   }
-  .p-s-b {
-    font-size: 12px;
-    line-height: 1.3;
-  }
   .p-xs-b {
     font-size: 11px;
     line-height: 1.3;
   }
   .p-xxs-b {
     font-size: 9px;
+    line-height: 1.3;
+  }
+  .p-tag {
+    font-size: 8px;
     line-height: 1.3;
   }
 }
@@ -3990,28 +3941,8 @@ mark {
     line-height: 1.2;
   }
   .tit-xs {
-    font-size: 12px;
+    font-size: 11px;
     line-height: 1.2;
-  }
-  .p-18-2b {
-    font-size: 18px;
-    line-height: 1.3;
-  }
-  .p-18-b {
-    font-size: 18px;
-    line-height: 1.3;
-  }
-  .p-14 {
-    font-size: 14px;
-    line-height: 1.3;
-  }
-  .p-14-b {
-    font-size: 14px;
-    line-height: 1.3;
-  }
-  .p-l {
-    font-size: 18px;
-    line-height: 1.3;
   }
   .p-m-b {
     font-size: 13px;
@@ -4033,16 +3964,16 @@ mark {
     font-size: 11px;
     line-height: 1.2;
   }
-  .p-s-b {
-    font-size: 13px;
-    line-height: 1.3;
-  }
   .p-xs-b {
     font-size: 12px;
     line-height: 1.3;
   }
   .p-xxs-b {
     font-size: 9px;
+    line-height: 1.3;
+  }
+  .p-tag {
+    font-size: 10px;
     line-height: 1.3;
   }
 }
@@ -4056,28 +3987,8 @@ mark {
     line-height: 1.2;
   }
   .tit-xs {
-    font-size: 12px;
+    font-size: 11px;
     line-height: 1.2;
-  }
-  .p-18-2b {
-    font-size: 18px;
-    line-height: 1.3;
-  }
-  .p-18-b {
-    font-size: 18px;
-    line-height: 1.3;
-  }
-  .p-14 {
-    font-size: 14px;
-    line-height: 1.3;
-  }
-  .p-14-b {
-    font-size: 14px;
-    line-height: 1.3;
-  }
-  .p-l {
-    font-size: 18px;
-    line-height: 1.3;
   }
   .p-m-b {
     font-size: 13px;
@@ -4099,16 +4010,16 @@ mark {
     font-size: 11px;
     line-height: 1.2;
   }
-  .p-s-b {
-    font-size: 13px;
-    line-height: 1.3;
-  }
   .p-xs-b {
     font-size: 12px;
     line-height: 1.3;
   }
   .p-xxs-b {
     font-size: 9px;
+    line-height: 1.3;
+  }
+  .p-tag {
+    font-size: 10px;
     line-height: 1.3;
   }
 }
@@ -4801,37 +4712,8 @@ mark {
   .tit-xs {
     font-family: arial, sans-serif;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 11px;
     line-height: 1.2;
-  }
-  .p-18-2b {
-    font-family: "arial black", sans-serif;
-    font-size: 18px;
-    line-height: 1.3;
-  }
-  .p-18-b {
-    font-family: arial, sans-serif;
-    font-weight: 900;
-    font-size: 18px;
-    line-height: 1.3;
-  }
-  .p-14 {
-    font-family: arial, sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.3;
-  }
-  .p-14-b {
-    font-family: arial, sans-serif;
-    font-weight: 900;
-    font-size: 14px;
-    line-height: 1.3;
-  }
-  .p-l {
-    font-family: arial, sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.3;
   }
   .p-m-b {
     font-family: arial, sans-serif;
@@ -4863,12 +4745,6 @@ mark {
     font-size: 11px;
     line-height: 1.2;
   }
-  .p-s-b {
-    font-family: arial, sans-serif;
-    font-weight: 900;
-    font-size: 12px;
-    line-height: 1.3;
-  }
   .p-xs-b {
     font-family: arial, sans-serif;
     font-weight: 900;
@@ -4879,6 +4755,12 @@ mark {
     font-family: arial, sans-serif;
     font-weight: 900;
     font-size: 9px;
+    line-height: 1.3;
+  }
+  .p-tag {
+    font-family: arial, sans-serif;
+    font-weight: 500;
+    font-size: 8px;
     line-height: 1.3;
   }
 }
@@ -4892,28 +4774,8 @@ mark {
     line-height: 1.2;
   }
   .tit-xs {
-    font-size: 12px;
+    font-size: 11px;
     line-height: 1.2;
-  }
-  .p-18-2b {
-    font-size: 18px;
-    line-height: 1.3;
-  }
-  .p-18-b {
-    font-size: 18px;
-    line-height: 1.3;
-  }
-  .p-14 {
-    font-size: 14px;
-    line-height: 1.3;
-  }
-  .p-14-b {
-    font-size: 14px;
-    line-height: 1.3;
-  }
-  .p-l {
-    font-size: 18px;
-    line-height: 1.3;
   }
   .p-m-b {
     font-size: 13px;
@@ -4935,16 +4797,16 @@ mark {
     font-size: 11px;
     line-height: 1.2;
   }
-  .p-s-b {
-    font-size: 13px;
-    line-height: 1.3;
-  }
   .p-xs-b {
     font-size: 12px;
     line-height: 1.3;
   }
   .p-xxs-b {
     font-size: 9px;
+    line-height: 1.3;
+  }
+  .p-tag {
+    font-size: 10px;
     line-height: 1.3;
   }
 }
@@ -5914,7 +5776,7 @@ strong {
 .helper-font .tit-m::after {
   content: "tit-m " !important;
   position: absolute;
-  background: rgb(17, 238, 152);
+  background: red;
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -5930,7 +5792,7 @@ strong {
 .helper-font .tit-s::after {
   content: "tit-s " !important;
   position: absolute;
-  background: rgb(252, 243, 252);
+  background: red;
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -5946,87 +5808,7 @@ strong {
 .helper-font .tit-xs::after {
   content: "tit-xs " !important;
   position: absolute;
-  background: rgb(243, 61, 67);
-  opacity: 0.8;
-  white-space: nowrap;
-  color: #fff;
-  padding: 2px;
-  left: 0;
-  font-size: 10px;
-  font-weight: bold;
-}
-.helper-font .p-18-2b {
-  position: relative;
-  border: 1px solid #96c3ac;
-}
-.helper-font .p-18-2b::after {
-  content: "p-18-2b " !important;
-  position: absolute;
-  background: rgb(240, 100, 66);
-  opacity: 0.8;
-  white-space: nowrap;
-  color: #fff;
-  padding: 2px;
-  left: 0;
-  font-size: 10px;
-  font-weight: bold;
-}
-.helper-font .p-18-b {
-  position: relative;
-  border: 1px solid #96c3ac;
-}
-.helper-font .p-18-b::after {
-  content: "p-18-b " !important;
-  position: absolute;
-  background: rgb(203, 102, 89);
-  opacity: 0.8;
-  white-space: nowrap;
-  color: #fff;
-  padding: 2px;
-  left: 0;
-  font-size: 10px;
-  font-weight: bold;
-}
-.helper-font .p-14 {
-  position: relative;
-  border: 1px solid #96c3ac;
-}
-.helper-font .p-14::after {
-  content: "p-14 " !important;
-  position: absolute;
-  background: rgb(197, 194, 173);
-  opacity: 0.8;
-  white-space: nowrap;
-  color: #fff;
-  padding: 2px;
-  left: 0;
-  font-size: 10px;
-  font-weight: bold;
-}
-.helper-font .p-14-b {
-  position: relative;
-  border: 1px solid #96c3ac;
-}
-.helper-font .p-14-b::after {
-  content: "p-14-b " !important;
-  position: absolute;
-  background: rgb(235, 39, 245);
-  opacity: 0.8;
-  white-space: nowrap;
-  color: #fff;
-  padding: 2px;
-  left: 0;
-  font-size: 10px;
-  font-weight: bold;
-}
-.helper-font .p-l {
-  position: relative;
-  border: 1px solid #96c3ac;
-}
-.helper-font .p-l::after {
-  content: "p-l " !important;
-  position: absolute;
-  background: rgb(227, 100, 136);
+  background: red;
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6042,7 +5824,7 @@ strong {
 .helper-font .p-m-b::after {
   content: "p-m-b " !important;
   position: absolute;
-  background: rgb(131, 160, 73);
+  background: red;
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6058,7 +5840,7 @@ strong {
 .helper-font .p-m::after {
   content: "p-m " !important;
   position: absolute;
-  background: rgb(211, 29, 249);
+  background: red;
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6074,7 +5856,7 @@ strong {
 .helper-font .p-m-m::after {
   content: "p-m-m " !important;
   position: absolute;
-  background: rgb(188, 203, 171);
+  background: red;
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6090,7 +5872,7 @@ strong {
 .helper-font .p-s::after {
   content: "p-s " !important;
   position: absolute;
-  background: rgb(108, 125, 1);
+  background: red;
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6106,23 +5888,7 @@ strong {
 .helper-font .p-xs::after {
   content: "p-xs " !important;
   position: absolute;
-  background: rgb(44, 38, 129);
-  opacity: 0.8;
-  white-space: nowrap;
-  color: #fff;
-  padding: 2px;
-  left: 0;
-  font-size: 10px;
-  font-weight: bold;
-}
-.helper-font .p-s-b {
-  position: relative;
-  border: 1px solid #96c3ac;
-}
-.helper-font .p-s-b::after {
-  content: "p-s-b " !important;
-  position: absolute;
-  background: rgb(231, 113, 194);
+  background: red;
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6138,7 +5904,7 @@ strong {
 .helper-font .p-xs-b::after {
   content: "p-xs-b " !important;
   position: absolute;
-  background: rgb(252, 80, 59);
+  background: red;
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6154,7 +5920,23 @@ strong {
 .helper-font .p-xxs-b::after {
   content: "p-xxs-b " !important;
   position: absolute;
-  background: rgb(59, 97, 215);
+  background: red;
+  opacity: 0.8;
+  white-space: nowrap;
+  color: #fff;
+  padding: 2px;
+  left: 0;
+  font-size: 10px;
+  font-weight: bold;
+}
+.helper-font .p-tag {
+  position: relative;
+  border: 1px solid #96c3ac;
+}
+.helper-font .p-tag::after {
+  content: "p-tag " !important;
+  position: absolute;
+  background: red;
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6170,7 +5952,7 @@ strong {
 .helper-font .btn-primary::after {
   content: "btn-primary " !important;
   position: absolute;
-  background: rgb(12, 247, 228);
+  background: red;
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6186,7 +5968,7 @@ strong {
 .helper-font .btn-secondary::after {
   content: "btn-secondary " !important;
   position: absolute;
-  background: rgb(196, 111, 124);
+  background: red;
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6202,7 +5984,7 @@ strong {
 .helper-font .btn-tertiary::after {
   content: "btn-tertiary " !important;
   position: absolute;
-  background: rgb(203, 254, 172);
+  background: red;
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6218,7 +6000,7 @@ strong {
 .helper-font .btn-feel::after {
   content: "btn-feel " !important;
   position: absolute;
-  background: rgb(217, 161, 247);
+  background: red;
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6234,7 +6016,7 @@ strong {
 .helper-font .link-line::after {
   content: "link-line " !important;
   position: absolute;
-  background: rgb(38, 77, 15);
+  background: red;
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6250,7 +6032,7 @@ strong {
 .helper-font .link-raw::after {
   content: "link-raw " !important;
   position: absolute;
-  background: rgb(182, 74, 119);
+  background: red;
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6266,7 +6048,7 @@ strong {
 .helper-font .btn-phantom::after {
   content: "btn-phantom " !important;
   position: absolute;
-  background: rgb(25, 11, 176);
+  background: red;
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6282,7 +6064,7 @@ strong {
 .helper-font .btn-world::after {
   content: "btn-world " !important;
   position: absolute;
-  background: rgb(210, 169, 245);
+  background: red;
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -6298,7 +6080,7 @@ strong {
 .helper-font .product-tag::after {
   content: "product-tag " !important;
   position: absolute;
-  background: rgb(188, 206, 56);
+  background: red;
   opacity: 0.8;
   white-space: nowrap;
   color: #fff;
@@ -8257,7 +8039,7 @@ label {
 
 .form-text-svg svg {
   display: inline-block;
-  padding: 16px;
+  padding: 12px;
   box-sizing: initial;
 }
 
@@ -10271,7 +10053,7 @@ ul.list-mini.has-light > li::after {
   position: absolute;
   border-radius: 50%;
   overflow: hidden;
-  top: 2px;
+  top: 3px;
   left: 0;
   width: 8px;
   height: 8px;
@@ -10395,6 +10177,10 @@ ul.list-mini.has-light > li::after {
   top: 0;
   left: 0;
   padding: 8px;
+}
+
+.pt-2 {
+  padding-top: 2px;
 }
 
 /* hay que eliminar headers y quedarnos con minheaders */
@@ -10762,8 +10548,8 @@ ul.list-clear li.list-box:last-child {
   border: 0;
   cursor: pointer;
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 12px;
+  height: 12px;
   left: 0;
   line-height: 16px;
   margin-right: 6px;
