@@ -95,37 +95,34 @@ $headers: (
   tit-m: ( 14px, 14px, 16px, 16px, 1.2, 'medium', ), 
   tit-s: ( 12px, 12px, 13px, 13px, 1.2, 'medium', ), 
   tit-xs: ( 11px, 11px, 11px, 11px, 1.2, 'medium', ),
-
+  
   p-m-b: ( 12px, 12px, 13px, 13px, 1.2, 'bold', ), 
-
   p-m: ( 12px, 12px, 13px, 13px, 1.2, 'regular', ),
   p-m-m: ( 12px, 12px, 13px, 13px, 1.2, 'medium', ),
+  
   p-s: ( 12px, 12px, 12px, 12px, 1.2, 'regular', ), 
   p-xs: ( 11px, 11px, 11px, 11px, 1.2, 'regular', ), 
-  p-s-b: ( 12px, 12px, 13px, 13px, 1.3, 'bold', ), 
   p-xs-b: ( 11px, 11px, 12px, 12px, 1.3, 'bold', ), 
+  
   p-xxs-b: ( 9px, 9px, 9px, 9px, 1.3, 'bold', ),
-
   p-tag: ( 8px, 8px, 10px, 10px, 1.3, 'bold', )   
 ) !default;
 
 /* hay que eliminar headers y quedarnos con minheaders */
 $minheaders: ( 
-  tit-m: ( 14px, 16px, 1.2, 'medium', ),  // siempre mayus   36 ✅
-  tit-s: ( 12px, 13px, 1.2, 'medium', ),  // siempre mayus   84 lo vamos a borrar y sustiuir por p-m ❌
+  tit-m: ( 14px, 16px, 1.2, 'medium', ),  // siempre mayus   56
+  tit-s: ( 12px, 13px, 1.2, 'medium', ),  // siempre mayus   84 lo vamos a borrar y sustiuir por p-m
   tit-xs: ( 11px, 11px, 1.2, 'medium', ), // siempre mayus   77
-  
+
   p-m-b: ( 12px, 13px, 1.2, 'bold', ),  // 146  es semibold aunque ponga bold
-
-
-  p-m: ( 12px, 13px, 1.2, 'regular', ),   // 384 pasa a ser medium y borramos tit-s ❌
+  p-m: ( 12px, 13px, 1.2, 'regular', ),   // 430 pasa a ser medium y borramos tit-s
   p-m-m: ( 12px, 13px, 1.2, 'medium', ),  // 3
-  p-s: ( 12px, 12px, 1.2, 'regular', ),   //598  ❌
-  p-xs: ( 11px, 11px, 1.2, 'regular', ),  //169
-  p-s-b: ( 12px, 13px, 1.3, 'bold', ),     //0 borramos y pasa a ser p-m-b  ✅
-  p-xs-b: ( 11px, 12px, 1.3, 'bold', ),   // 35
-  p-xxs-b: ( 9px, 9px, 1.3, 'bold', ),    // 6
 
+  p-s: ( 12px, 12px, 1.2, 'regular', ),   //598
+  p-xs: ( 11px, 11px, 1.2, 'regular', ),  //169
+  p-xs-b: ( 11px, 12px, 1.3, 'bold', ),   // 35
+
+  p-xxs-b: ( 9px, 9px, 1.3, 'bold', ),    // 6
   p-tag: ( 8px, 10px, 1.3, 'regular', )    //  siempre en mayus
   
    ) !default;
