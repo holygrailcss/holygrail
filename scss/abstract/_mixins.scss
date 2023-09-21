@@ -250,6 +250,30 @@
         }
       }
 
+      .fluid-#{$name}-sb {
+        @include font-semibold;
+
+        @if $u1==$u2 and $u1==$u3 and $u1==$u4 {
+          & {
+            font-size: $min-font-size;
+            line-height: $u5;
+
+            @media screen and (min-width: $min-vw) {
+              font-size: calc(
+                #{$min-font-size} + #{unity($max-font-size - $min-font-size)} *
+                  ((100vw - #{$min-vw}) / #{unity($max-vw - $min-vw)})
+              );
+              line-height: $fluid-line-height;
+            }
+
+            @media screen and (min-width: $max-vw) {
+              font-size: $max-font-size;
+              line-height: $fluid-line-height;
+            }
+          }
+        }
+      }
+
       .fluid-#{$name}-b {
         @include font-bold;
 

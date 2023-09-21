@@ -7,6 +7,12 @@
   }
 }
 
+input:is([type='button'], [type='submit'], [type='reset']),
+input[type='file']::file-selector-button,
+button {
+  color: $c-primary;
+}
+
 .btn {
   position: relative;
   display: inline-flex;

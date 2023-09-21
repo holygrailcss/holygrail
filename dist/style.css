@@ -3827,28 +3827,28 @@ mark {
   .tit-s {
     font-family: arial, sans-serif;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 1.2;
   }
   .tit-xs {
     font-family: arial, sans-serif;
     font-weight: 500;
-    font-size: 11px;
+    font-size: 12px;
     line-height: 1.2;
   }
-  .p-m-b {
+  .tit-xs-b {
     font-family: arial, sans-serif;
     font-weight: 900;
     font-size: 12px;
     line-height: 1.2;
   }
-  .p-m {
+  .sub-xs {
     font-family: arial, sans-serif;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 11px;
     line-height: 1.2;
   }
-  .p-m-m {
+  .p-m {
     font-family: arial, sans-serif;
     font-weight: 500;
     font-size: 12px;
@@ -3866,6 +3866,24 @@ mark {
     font-size: 11px;
     line-height: 1.2;
   }
+  .p-tag {
+    font-family: arial, sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 1.3;
+  }
+  .p-m-b {
+    font-family: arial, sans-serif;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 1.2;
+  }
+  .p-m-m {
+    font-family: arial, sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.2;
+  }
   .p-xs-b {
     font-family: arial, sans-serif;
     font-weight: 900;
@@ -3876,12 +3894,6 @@ mark {
     font-family: arial, sans-serif;
     font-weight: 900;
     font-size: 9px;
-    line-height: 1.3;
-  }
-  .p-tag {
-    font-family: arial, sans-serif;
-    font-weight: 900;
-    font-size: 8px;
     line-height: 1.3;
   }
 }
@@ -3891,22 +3903,22 @@ mark {
     line-height: 1.2;
   }
   .tit-s {
-    font-size: 12px;
+    font-size: 13px;
     line-height: 1.2;
   }
   .tit-xs {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+  .tit-xs-b {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+  .sub-xs {
     font-size: 11px;
     line-height: 1.2;
   }
-  .p-m-b {
-    font-size: 12px;
-    line-height: 1.2;
-  }
   .p-m {
-    font-size: 12px;
-    line-height: 1.2;
-  }
-  .p-m-m {
     font-size: 12px;
     line-height: 1.2;
   }
@@ -3918,16 +3930,24 @@ mark {
     font-size: 11px;
     line-height: 1.2;
   }
+  .p-tag {
+    font-size: 10px;
+    line-height: 1.3;
+  }
+  .p-m-b {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+  .p-m-m {
+    font-size: 12px;
+    line-height: 1.2;
+  }
   .p-xs-b {
     font-size: 11px;
     line-height: 1.3;
   }
   .p-xxs-b {
     font-size: 9px;
-    line-height: 1.3;
-  }
-  .p-tag {
-    font-size: 8px;
     line-height: 1.3;
   }
 }
@@ -3941,19 +3961,19 @@ mark {
     line-height: 1.2;
   }
   .tit-xs {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+  .tit-xs-b {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+  .sub-xs {
     font-size: 11px;
     line-height: 1.2;
   }
-  .p-m-b {
-    font-size: 13px;
-    line-height: 1.2;
-  }
   .p-m {
-    font-size: 13px;
-    line-height: 1.2;
-  }
-  .p-m-m {
-    font-size: 13px;
+    font-size: 12px;
     line-height: 1.2;
   }
   .p-s {
@@ -3964,16 +3984,24 @@ mark {
     font-size: 11px;
     line-height: 1.2;
   }
+  .p-tag {
+    font-size: 10px;
+    line-height: 1.3;
+  }
+  .p-m-b {
+    font-size: 13px;
+    line-height: 1.2;
+  }
+  .p-m-m {
+    font-size: 13px;
+    line-height: 1.2;
+  }
   .p-xs-b {
     font-size: 12px;
     line-height: 1.3;
   }
   .p-xxs-b {
     font-size: 9px;
-    line-height: 1.3;
-  }
-  .p-tag {
-    font-size: 10px;
     line-height: 1.3;
   }
 }
@@ -3987,19 +4015,19 @@ mark {
     line-height: 1.2;
   }
   .tit-xs {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+  .tit-xs-b {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+  .sub-xs {
     font-size: 11px;
     line-height: 1.2;
   }
-  .p-m-b {
-    font-size: 13px;
-    line-height: 1.2;
-  }
   .p-m {
-    font-size: 13px;
-    line-height: 1.2;
-  }
-  .p-m-m {
-    font-size: 13px;
+    font-size: 12px;
     line-height: 1.2;
   }
   .p-s {
@@ -4010,16 +4038,24 @@ mark {
     font-size: 11px;
     line-height: 1.2;
   }
+  .p-tag {
+    font-size: 10px;
+    line-height: 1.3;
+  }
+  .p-m-b {
+    font-size: 13px;
+    line-height: 1.2;
+  }
+  .p-m-m {
+    font-size: 13px;
+    line-height: 1.2;
+  }
   .p-xs-b {
     font-size: 12px;
     line-height: 1.3;
   }
   .p-xxs-b {
     font-size: 9px;
-    line-height: 1.3;
-  }
-  .p-tag {
-    font-size: 10px;
     line-height: 1.3;
   }
 }
@@ -4096,6 +4132,30 @@ mark {
   }
 }
 
+.fluid-12-sb {
+  font-family: arial, sans-serif;
+  font-weight: 700;
+}
+.fluid-12-sb {
+  font-size: 1px;
+  line-height: 0.3;
+}
+@media screen and (min-width: 319px) {
+  .fluid-12-sb {
+    font-size: calc(
+                1px + 1 *
+                  ((100vw - 319px) / 1181)
+              );
+    line-height: 0.3;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .fluid-12-sb {
+    font-size: 2px;
+    line-height: 0.3;
+  }
+}
+
 .fluid-12-b {
   font-family: arial, sans-serif;
   font-weight: 900;
@@ -4192,6 +4252,30 @@ mark {
   }
 }
 
+.fluid-14-sb {
+  font-family: arial, sans-serif;
+  font-weight: 700;
+}
+.fluid-14-sb {
+  font-size: 14px;
+  line-height: 0.9;
+}
+@media screen and (min-width: 319px) {
+  .fluid-14-sb {
+    font-size: calc(
+                14px + 0 *
+                  ((100vw - 319px) / 1181)
+              );
+    line-height: 0.9;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .fluid-14-sb {
+    font-size: 14px;
+    line-height: 0.9;
+  }
+}
+
 .fluid-14-b {
   font-family: arial, sans-serif;
   font-weight: 900;
@@ -4288,6 +4372,30 @@ mark {
   }
 }
 
+.fluid-6-sb {
+  font-family: arial, sans-serif;
+  font-weight: 700;
+}
+.fluid-6-sb {
+  font-size: 16px;
+  line-height: 0.9;
+}
+@media screen and (min-width: 319px) {
+  .fluid-6-sb {
+    font-size: calc(
+                16px + -2 *
+                  ((100vw - 319px) / 1181)
+              );
+    line-height: 0.9;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .fluid-6-sb {
+    font-size: 14px;
+    line-height: 0.9;
+  }
+}
+
 .fluid-6-b {
   font-family: arial, sans-serif;
   font-weight: 900;
@@ -4384,6 +4492,30 @@ mark {
   }
 }
 
+.fluid-18-sb {
+  font-family: arial, sans-serif;
+  font-weight: 700;
+}
+.fluid-18-sb {
+  font-size: 18px;
+  line-height: 0.9;
+}
+@media screen and (min-width: 319px) {
+  .fluid-18-sb {
+    font-size: calc(
+                18px + -4 *
+                  ((100vw - 319px) / 1181)
+              );
+    line-height: 0.9;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .fluid-18-sb {
+    font-size: 14px;
+    line-height: 0.9;
+  }
+}
+
 .fluid-18-b {
   font-family: arial, sans-serif;
   font-weight: 900;
@@ -4480,6 +4612,30 @@ mark {
   }
 }
 
+.fluid-20-sb {
+  font-family: arial, sans-serif;
+  font-weight: 700;
+}
+.fluid-20-sb {
+  font-size: 20px;
+  line-height: 0.9;
+}
+@media screen and (min-width: 319px) {
+  .fluid-20-sb {
+    font-size: calc(
+                20px + -6 *
+                  ((100vw - 319px) / 1181)
+              );
+    line-height: 0.9;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .fluid-20-sb {
+    font-size: 14px;
+    line-height: 0.9;
+  }
+}
+
 .fluid-20-b {
   font-family: arial, sans-serif;
   font-weight: 900;
@@ -4576,6 +4732,30 @@ mark {
   }
 }
 
+.fluid-50-sb {
+  font-family: arial, sans-serif;
+  font-weight: 700;
+}
+.fluid-50-sb {
+  font-size: 30px;
+  line-height: 0.9;
+}
+@media screen and (min-width: 319px) {
+  .fluid-50-sb {
+    font-size: calc(
+                30px + 20 *
+                  ((100vw - 319px) / 1181)
+              );
+    line-height: 0.9;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .fluid-50-sb {
+    font-size: 50px;
+    line-height: 0.9;
+  }
+}
+
 .fluid-50-b {
   font-family: arial, sans-serif;
   font-weight: 900;
@@ -4667,6 +4847,30 @@ mark {
 }
 @media screen and (min-width: 1500px) {
   .fluid-100-m {
+    font-size: 100px;
+    line-height: 0.9;
+  }
+}
+
+.fluid-100-sb {
+  font-family: arial, sans-serif;
+  font-weight: 700;
+}
+.fluid-100-sb {
+  font-size: 30px;
+  line-height: 0.9;
+}
+@media screen and (min-width: 319px) {
+  .fluid-100-sb {
+    font-size: calc(
+                30px + 70 *
+                  ((100vw - 319px) / 1181)
+              );
+    line-height: 0.9;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .fluid-100-sb {
     font-size: 100px;
     line-height: 0.9;
   }
@@ -5817,12 +6021,28 @@ strong {
   font-size: 10px;
   font-weight: bold;
 }
-.helper-font .p-m-b {
+.helper-font .tit-xs-b {
   position: relative;
   border: 1px solid #96c3ac;
 }
-.helper-font .p-m-b::after {
-  content: "p-m-b " !important;
+.helper-font .tit-xs-b::after {
+  content: "tit-xs-b " !important;
+  position: absolute;
+  background: red;
+  opacity: 0.8;
+  white-space: nowrap;
+  color: #fff;
+  padding: 2px;
+  left: 0;
+  font-size: 10px;
+  font-weight: bold;
+}
+.helper-font .sub-xs {
+  position: relative;
+  border: 1px solid #96c3ac;
+}
+.helper-font .sub-xs::after {
+  content: "sub-xs " !important;
   position: absolute;
   background: red;
   opacity: 0.8;
@@ -5839,22 +6059,6 @@ strong {
 }
 .helper-font .p-m::after {
   content: "p-m " !important;
-  position: absolute;
-  background: red;
-  opacity: 0.8;
-  white-space: nowrap;
-  color: #fff;
-  padding: 2px;
-  left: 0;
-  font-size: 10px;
-  font-weight: bold;
-}
-.helper-font .p-m-m {
-  position: relative;
-  border: 1px solid #96c3ac;
-}
-.helper-font .p-m-m::after {
-  content: "p-m-m " !important;
   position: absolute;
   background: red;
   opacity: 0.8;
@@ -5897,6 +6101,54 @@ strong {
   font-size: 10px;
   font-weight: bold;
 }
+.helper-font .p-tag {
+  position: relative;
+  border: 1px solid #96c3ac;
+}
+.helper-font .p-tag::after {
+  content: "p-tag " !important;
+  position: absolute;
+  background: red;
+  opacity: 0.8;
+  white-space: nowrap;
+  color: #fff;
+  padding: 2px;
+  left: 0;
+  font-size: 10px;
+  font-weight: bold;
+}
+.helper-font .p-m-b {
+  position: relative;
+  border: 1px solid #96c3ac;
+}
+.helper-font .p-m-b::after {
+  content: "p-m-b " !important;
+  position: absolute;
+  background: red;
+  opacity: 0.8;
+  white-space: nowrap;
+  color: #fff;
+  padding: 2px;
+  left: 0;
+  font-size: 10px;
+  font-weight: bold;
+}
+.helper-font .p-m-m {
+  position: relative;
+  border: 1px solid #96c3ac;
+}
+.helper-font .p-m-m::after {
+  content: "p-m-m " !important;
+  position: absolute;
+  background: red;
+  opacity: 0.8;
+  white-space: nowrap;
+  color: #fff;
+  padding: 2px;
+  left: 0;
+  font-size: 10px;
+  font-weight: bold;
+}
 .helper-font .p-xs-b {
   position: relative;
   border: 1px solid #96c3ac;
@@ -5919,22 +6171,6 @@ strong {
 }
 .helper-font .p-xxs-b::after {
   content: "p-xxs-b " !important;
-  position: absolute;
-  background: red;
-  opacity: 0.8;
-  white-space: nowrap;
-  color: #fff;
-  padding: 2px;
-  left: 0;
-  font-size: 10px;
-  font-weight: bold;
-}
-.helper-font .p-tag {
-  position: relative;
-  border: 1px solid #96c3ac;
-}
-.helper-font .p-tag::after {
-  content: "p-tag " !important;
   position: absolute;
   background: red;
   opacity: 0.8;
@@ -6370,6 +6606,12 @@ strong {
     transform: rotate(-360deg);
   }
 }
+input:is([type=button], [type=submit], [type=reset]),
+input[type=file]::file-selector-button,
+button {
+  color: #1a1a1a;
+}
+
 .btn {
   position: relative;
   display: inline-flex;

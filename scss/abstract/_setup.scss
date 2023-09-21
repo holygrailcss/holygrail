@@ -95,6 +95,7 @@ $svg-size: 16px;
 
 $fs: 'font-size';
 $lh: 'line-height';
+
 $headers: (
   tit-m: (
     14px,
@@ -105,47 +106,47 @@ $headers: (
     'medium',
   ),
   tit-s: (
-    12px,
-    12px,
+    13px,
+    13px,
     13px,
     13px,
     1.2,
     'medium',
   ),
   tit-xs: (
-    11px,
-    11px,
-    11px,
-    11px,
-    1.2,
-    'medium',
-  ),
-
-  p-m-b: (
     12px,
     12px,
-    13px,
-    13px,
-    1.2,
-    'bold',
-  ),
-  p-m: (
     12px,
     12px,
-    13px,
-    13px,
     1.2,
     'regular',
   ),
-  p-m-m: (
+  tit-xs-b: (
     12px,
     12px,
-    13px,
-    13px,
+    12px,
+    12px,
     1.2,
-    'medium',
+    'bold',
   ),
-
+  sub-xs: (
+    11px,
+    11px,
+    11px,
+    11px,
+    1.2,
+    'regular',
+  ),
+  //ttu
+  p-m:
+    (
+      12px,
+      12px,
+      12px,
+      12px,
+      1.2,
+      'regular',
+    ),
   p-s: (
     12px,
     12px,
@@ -154,39 +155,64 @@ $headers: (
     1.2,
     'regular',
   ),
-  p-xs: (
-    11px,
-    11px,
-    11px,
-    11px,
-    1.2,
+  // desaparece y pasa a ser --> p-m ❌
+  p-xs:
+    (
+      11px,
+      11px,
+      11px,
+      11px,
+      1.2,
+      'regular',
+    ),
+  p-tag: (
+    10px,
+    10px,
+    10px,
+    10px,
+    1.3,
     'regular',
   ),
-  p-xs-b: (
-    11px,
-    11px,
+  p-m-b: (
     12px,
     12px,
-    1.3,
+    13px,
+    13px,
+    1.2,
     'bold',
   ),
-
-  p-xxs-b: (
-    9px,
-    9px,
-    9px,
-    9px,
-    1.3,
-    'bold',
-  ),
-  p-tag: (
-    8px,
-    8px,
-    10px,
-    10px,
-    1.3,
-    'bold',
-  ),
+  // desaparece y pasa a ser tit-xs-b  ❌
+  p-m-m:
+    (
+      12px,
+      12px,
+      13px,
+      13px,
+      1.2,
+      'medium',
+    ),
+  //desaparece y pasa a ser p-m❌
+  p-xs-b:
+    (
+      11px,
+      11px,
+      12px,
+      12px,
+      1.3,
+      'bold',
+    ),
+  // desaparece y pasa a ser sub-xs ❌
+  p-xxs-b:
+    (
+      9px,
+      9px,
+      9px,
+      9px,
+      1.3,
+      'bold',
+    ),
+  // desaparece y pasa a aser --> sub-xs❌
+  //  p-s-b pasa a ser tit-xs-b❌
 ) !default;
 
 /* hay que eliminar headers y quedarnos con minheaders */
