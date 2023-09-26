@@ -1551,6 +1551,9 @@ img {
   vertical-align: middle;
 }
 
+svg-icon svg {
+  display: block;
+}
 svg-icon div {
   display: flex;
   align-items: center;
@@ -8930,18 +8933,18 @@ input::input-placeholder {
   }
 }
 
-.form-phone-prefix {
+.form-prefix {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
 }
-.form-phone-prefix > :not(.select):nth-child(1) {
+.form-prefix > :not(.select):nth-child(1) {
   flex: 0 0 75px;
 }
-.form-phone-prefix > :nth-child(2) {
+.form-prefix > :nth-child(2) {
   flex: 5 0 130px;
 }
-.form-phone-prefix > .btn {
+.form-prefix > .btn {
   flex: 1 0 auto;
 }
 
