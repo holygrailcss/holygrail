@@ -1551,9 +1551,6 @@ img {
   vertical-align: middle;
 }
 
-svg-icon svg {
-  display: block;
-}
 svg-icon div {
   display: flex;
   align-items: center;
@@ -8450,15 +8447,18 @@ label {
 }
 .form-input-label-2.has-ico-pre .ico-pre,
 .has-ico-pre .ico-pre {
+  height: 45px;
+  position: absolute;
+  top: 0;
   right: auto;
   left: 0;
-  position: absolute;
-  top: 50%;
   box-sizing: border-box;
-  transform: translateY(-50%);
-  margin: 0 16px;
-  height: 16px;
-  width: 16px;
+  display: block;
+  margin: 0 15px;
+  cursor: pointer;
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
 }
 
 .form-input-label-2.has-ico-post.btn, .form-input-label-2.has-ico-post > input, .form-input-label-2.has-ico-post > label,
@@ -8476,17 +8476,18 @@ label {
 }
 .form-input-label-2.has-ico-post .ico-post,
 .has-ico-post .ico-post {
+  height: 45px;
+  position: absolute;
+  top: 0;
   right: 0;
   left: auto;
-  position: absolute;
-  top: 22px;
   box-sizing: border-box;
-  display: table;
-  transform: translateY(-50%);
-  margin: 0 16px;
-  height: 16px;
-  width: 16px;
+  display: block;
+  margin: 0 15px;
   cursor: pointer;
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
 }
 
 .is-error .input,

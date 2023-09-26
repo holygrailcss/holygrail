@@ -8298,15 +8298,18 @@ label {
 }
 .form-input-label-2.has-ico-pre .ico-pre,
 .has-ico-pre .ico-pre {
+  height: 45px;
+  position: absolute;
+  top: 0;
   right: auto;
   left: 0;
-  position: absolute;
-  top: 50%;
   box-sizing: border-box;
-  transform: translateY(-50%);
-  margin: 0 16px;
-  height: 16px;
-  width: 16px;
+  display: block;
+  margin: 0 15px;
+  cursor: pointer;
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
 }
 
 .form-input-label-2.has-ico-post.btn, .form-input-label-2.has-ico-post > input, .form-input-label-2.has-ico-post > label,
@@ -8324,17 +8327,18 @@ label {
 }
 .form-input-label-2.has-ico-post .ico-post,
 .has-ico-post .ico-post {
+  height: 45px;
+  position: absolute;
+  top: 0;
   right: 0;
   left: auto;
-  position: absolute;
-  top: 22px;
   box-sizing: border-box;
-  display: table;
-  transform: translateY(-50%);
-  margin: 0 16px;
-  height: 16px;
-  width: 16px;
+  display: block;
+  margin: 0 15px;
   cursor: pointer;
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
 }
 
 .is-error .input,
@@ -8781,18 +8785,18 @@ input::input-placeholder {
   }
 }
 
-.form-phone-prefix {
+.form-prefix {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
 }
-.form-phone-prefix > :not(.select):nth-child(1) {
+.form-prefix > :not(.select):nth-child(1) {
   flex: 0 0 75px;
 }
-.form-phone-prefix > :nth-child(2) {
+.form-prefix > :nth-child(2) {
   flex: 5 0 130px;
 }
-.form-phone-prefix > .btn {
+.form-prefix > .btn {
   flex: 1 0 auto;
 }
 
