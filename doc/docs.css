@@ -7844,6 +7844,7 @@ button {
 .checkbox-item [type=checkbox]:checked {
   position: absolute;
   left: -9999px;
+  width: 70px;
 }
 .checkbox-item input[type=checkbox] {
   box-sizing: border-box;
@@ -7925,6 +7926,7 @@ button {
 .checkbox-item-2 [type=checkbox]:checked {
   position: absolute;
   left: -9999px;
+  width: 70px;
 }
 .checkbox-item-2 input[type=checkbox] {
   box-sizing: border-box;
@@ -8004,6 +8006,7 @@ button {
 .checkbox-radio [type=radio]:checked {
   position: absolute;
   left: -9999px;
+  width: 70px;
 }
 .checkbox-radio input[type=radio] {
   box-sizing: border-box;
@@ -8132,6 +8135,7 @@ button {
 .checkbox-card [type=radio] {
   position: absolute;
   left: -9999px;
+  width: 70px;
 }
 .checkbox-card [type=radio]:checked + .checkbox-card-label, .checkbox-card :hover + .checkbox-card-label {
   cursor: pointer;
@@ -8567,6 +8571,15 @@ input::input-placeholder {
 .form-input-label input,
 .form-input-label-2 input {
   background-color: #fff;
+}
+
+.has-light .form-input-label input,
+.has-light .form-input-label-2 input {
+  background-color: transparent;
+}
+.has-light input,
+.has-light label {
+  color: #fff;
 }
 
 .form-input-label {
@@ -12831,6 +12844,7 @@ ul.list-clear li.list-box:last-child {
   left: 0;
   right: -9999px;
   position: absolute;
+  width: 70px;
 }
 .is-rtl .checkbox-item [type=checkbox]:not(:checked) + label::before,
 .is-rtl .checkbox-item [type=checkbox]:checked + label::before {
@@ -12885,6 +12899,7 @@ ul.list-clear li.list-box:last-child {
   left: 0;
   right: -9999px;
   position: absolute;
+  width: 70px;
 }
 .is-rtl .checkbox-item-text span {
   margin-left: 0;

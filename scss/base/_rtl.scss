@@ -240,6 +240,7 @@
       left: 0;
       right: -9999px;
       position: absolute;
+      width: 70px;
     }
 
     [type='checkbox']:not(:checked) + label::before,
@@ -319,6 +320,7 @@
       left: 0;
       right: -9999px;
       position: absolute;
+      width: 70px;
     }
   }
 

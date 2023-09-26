@@ -351,6 +351,16 @@ input::input-placeholder {
 .form-input-label-2 input {
   background-color: #fff;
 }
+.has-light {
+  .form-input-label input,
+  .form-input-label-2 input {
+    background-color: transparent;
+  }
+  input,
+  label {
+    color: #fff;
+  }
+}
 
 .form-input-label {
   font-family: $font-family-form;
