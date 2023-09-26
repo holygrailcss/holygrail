@@ -5372,6 +5372,14 @@ mark {
   background-color: #1a1a1a;
 }
 
+.bg-secondary {
+  background-color: #1a1a1a;
+}
+
+.bg-accent {
+  background-color: #b40016;
+}
+
 .bg-white {
   background-color: #fff;
 }
