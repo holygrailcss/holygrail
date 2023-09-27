@@ -3,7 +3,8 @@
 $input-padding-x: 14px;
 $input-padding-y: 14px;
 
-input:focus {
+input:focus,
+textarea:focus {
   outline: none;
   border: 1px solid $c-primary;
 }
@@ -895,7 +896,9 @@ input::input-placeholder {
   }
 
   & > input,
-  & > label {
+  & > label ,
+  & > textarea
+  {
     font-family: $font-family-form;
     padding: 16px;
     font-weight: normal;
