@@ -896,9 +896,8 @@ input::input-placeholder {
   }
 
   & > input,
-  & > label ,
-  & > textarea
-  {
+  & > label,
+  & > textarea {
     font-family: $font-family-form;
     padding: 16px;
     font-weight: normal;

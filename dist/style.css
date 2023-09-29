@@ -3588,6 +3588,11 @@ p {
   margin: 0;
   font-size: 12px;
 }
+@media (min-width: 992px) {
+  p {
+    font-size: 13px;
+  }
+}
 p.b {
   font-family: arial, sans-serif;
   font-weight: 500;
@@ -8109,7 +8114,8 @@ button {
     transform: translate(-50%, 0);
   }
 }
-input:focus {
+input:focus,
+textarea:focus {
   outline: none;
   border: 1px solid #1a1a1a;
 }
@@ -8133,7 +8139,7 @@ select {
 }
 
 label {
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .input,
@@ -8227,7 +8233,7 @@ label {
   box-shadow: none;
   display: inline-flex;
   height: 34px;
-  font-size: 12px;
+  font-size: 13px;
   margin-left: 10px;
   text-align: center;
   justify-content: flex-start;
@@ -8911,9 +8917,10 @@ input::input-placeholder {
   position: absolute;
   right: 0;
 }
-.form-input-label-2 > input, .form-input-label-2 > label,
+.form-input-label-2 > input, .form-input-label-2 > label, .form-input-label-2 > textarea,
 .error-zone > input,
-.error-zone > label {
+.error-zone > label,
+.error-zone > textarea {
   font-family: arial, sans-serif;
   padding: 16px;
   font-weight: normal;
@@ -9378,7 +9385,7 @@ u::after {
   transform: none;
   transition: background-color 0.3s ease-in-out;
   margin: 0;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.2;
   padding: 2px 0;
   text-decoration: underline;
@@ -9395,7 +9402,7 @@ u::after {
   border: 0;
   transform: none;
   margin: 0;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 14px;
   padding: 0;
   cursor: pointer;

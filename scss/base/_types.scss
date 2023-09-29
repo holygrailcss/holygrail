@@ -26,6 +26,10 @@ p {
   margin: 0;
   font-size: $text-sm;
 
+  @media (min-width: $break-md) {
+    font-size: $text-md;
+  }
+
   &.b {
     @include font-regular;
 
