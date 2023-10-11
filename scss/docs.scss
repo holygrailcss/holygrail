@@ -1442,8 +1442,6 @@ $headersFluidsGuide: (
   .h2-guide {
     color: #8c8c8c;
 
-    @include fluid-text($min_width, $break-lg, 30px, 50px, 1);
-
     line-height: 1.2;
 
     @include font-bold;

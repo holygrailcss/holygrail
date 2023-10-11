@@ -157,7 +157,7 @@
     padding-top: calc(66.6667% + 126px);
     background-color: $c-white;
 
-    @media (min-width: 768px) {
+    @media (min-width: $break-sm) {
       padding-top: calc(66.6667% + 144px);
     }
   }
@@ -209,27 +209,6 @@
   }
 }
 
-.sk-load8 {
-  position: relative;
-
-  &::before {
-    display: block;
-    content: '';
-    width: 100%;
-    padding-top: calc(66.6667% + 248px);
-    background-color: $c-white;
-
-    @media (min-width: 768px) and (max-width: 1439px) {
-      padding-top: calc(66.6667% + 144px);
-    }
-  }
-
-  &::marker {
-    display: none;
-    content: '';
-  }
-}
-
 .swiper-monoproducto .swiper-wrapper {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -247,7 +226,7 @@
     padding-top: calc(66.6667% + 126px);
     background-color: $c-white;
 
-    @media (min-width: 768px) {
+    @media (min-width: $break-sm) {
       padding-top: calc(64.6667% + 144px);
     }
   }

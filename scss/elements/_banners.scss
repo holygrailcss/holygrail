@@ -63,6 +63,6 @@
 .banner-limited {
   @include banner;
 
-  background-color: $c-black;
+  background-color: $bg-black;
   color: $c-white;
 }

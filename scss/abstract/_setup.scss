@@ -18,53 +18,49 @@ $c-feel-light: #fccbb0 !default;
 $c-limited: #000 !default;
 $c-success: #76ae4a !default;
 $c-alert: #ffc700 !default;
-$c-facebook: #1977f3;
-$c-google: #4285f4;
-$c-naver: #03cf5d;
-$c-wechat: #2dc100;
+$c-facebook: #1977f3 !default;
+$c-google: #4285f4 !default;
+$c-naver: #03cf5d !default;
+$c-wechat: #2dc100 !default;
+$bg-light: #fff !default;
+$bg-dark: #000 !default;
+$bg-black: #000 !default;
+$c-bg-light: #000 !default;
+$c-bg-dark: #fff !default;
 $white-smoke: #f0f0f0 !default;
 $primary: #1a1a1a !default;
 $primary-guide: #363636 !default;
 $secondary-guide: #6759bb !default;
 $ternary-guide: #6759bb !default;
-
+$list-disc-color: #1a1a1a !default;
 $text-sm: 12px;
 $text-md: 13px;
 $text-lg: 13px;
-
 $btn-radius: 0 !default;
 $obj-radius: 0 !default;
 $form-radius: 0 !default;
 $btn-line-height: 1 !default;
-
 $btn-padding: 13px !default;
-
 $btn-text-mini: 12px !default;
 $btn-text-small: 14px !default;
 $btn-text-medium: 14px !default;
 $btn-text-large: 14px !default;
 $btn-text-xlarge: 16px !default;
 $btn-text-full: 14px !default;
-
 $btn-text-r: 12px !default;
 $btn-text-m: 12px !default;
-
 $tabs-text: 12px !default;
-
 $font-weight-secondary-light: 300 !default;
 $font-weight-secondary-medium: 400 !default;
 $font-weight-secondary-bold: 700 !default;
 $totalCols: 12 !default;
-
 $padding-global: 8px !default;
 $padding-mobile: 24px !default;
 $padding-desktop: 40px !default;
 $padding-button: 8px !default;
-
 $height-inputs: 48px !default;
 $text-input-m: 12px !default;
 $text-input-d: 12px !default;
-
 $container: 800px !default;
 $container-2: 700px !default;
 $container-3: 900px !default;
@@ -78,7 +74,6 @@ $container-10: 200px !default;
 $container-11: 1080px !default;
 $container-12: 1080px !default;
 $container-full: 1500px !default;
-
 $height-xs: 60px !default;
 $height-sm: 100px !default;
 $height-md: 350px !default;
@@ -86,17 +81,13 @@ $height-lg: 400px !default;
 $height-xl: 450px !default;
 $height-full: 100vh !default;
 $height-home: calc(100vh - 80px) !default;
-
 $transition: 278ms !default;
-$min-width: 319px !default;
-$min-vw: 319px !default;
+$min-width: 320px !default;
+$min-vw: 320px !default;
 $max-vw: 1500px !default;
-
 $svg-size: 16px;
-
 $fs: 'font-size';
 $lh: 'line-height';
-
 $headers: (
   tit-m: (
     14px,
@@ -138,8 +129,7 @@ $headers: (
     1.2,
     'regular',
   ),
-  //ttu
-  p-m:
+  /* ttu */ p-m:
     (
       12px,
       12px,
@@ -156,8 +146,7 @@ $headers: (
     1.2,
     'regular',
   ),
-  // desaparece y pasa a ser --> p-m ❌
-  p-xs:
+  /* desaparece y pasa a ser --> p-m ❌ */ p-xs:
     (
       11px,
       11px,
@@ -182,8 +171,7 @@ $headers: (
     1.2,
     'bold',
   ),
-  // desaparece y pasa a ser tit-xs-b  ❌
-  p-m-m:
+  /* desaparece y pasa a ser tit-xs-b  ❌ */ p-m-m:
     (
       12px,
       12px,
@@ -192,8 +180,7 @@ $headers: (
       1.2,
       'medium',
     ),
-  //desaparece y pasa a ser p-m❌
-  p-xs-b:
+  /*desaparece y pasa a ser p-m❌ */ p-xs-b:
     (
       11px,
       11px,
@@ -202,8 +189,7 @@ $headers: (
       1.3,
       'bold',
     ),
-  // desaparece y pasa a ser sub-xs ❌
-  p-xxs-b:
+  /* desaparece y pasa a ser sub-xs ❌ */ p-xxs-b:
     (
       9px,
       9px,
@@ -212,10 +198,7 @@ $headers: (
       1.3,
       'bold',
     ),
-  // desaparece y pasa a aser --> sub-xs❌
-  //  p-s-b pasa a ser tit-xs-b❌
 ) !default;
-
 /* hay que eliminar headers y quedarnos con minheaders */
 $minheaders: (
   tit-m: (
@@ -224,91 +207,84 @@ $minheaders: (
     1.2,
     'medium',
   ),
-  // siempre mayus   56
-  tit-s:
-    (
-      12px,
-      13px,
-      1.2,
-      'medium',
-    ),
-  // siempre mayus   84 lo vamos a borrar y sustiuir por p-m
-  tit-xs:
-    (
-      11px,
-      11px,
-      1.2,
-      'medium',
-    ),
-
-  // siempre mayus   77
-  p-m-b:
-    (
-      12px,
-      13px,
-      1.2,
-      'bold',
-    ),
-  // 146  es semibold aunque ponga bold
-  p-m:
-    (
-      12px,
-      13px,
-      1.2,
-      'regular',
-    ),
-  // 430 pasa a ser medium y borramos tit-s
-  p-m-m:
-    (
-      12px,
-      13px,
-      1.2,
-      'medium',
-    ),
-
-  // 3
-  p-s:
+  tit-s: (
+    13px,
+    13px,
+    1.2,
+    'medium',
+  ),
+  tit-xs: (
+    12px,
+    12px,
+    1.2,
+    'regular',
+  ),
+  tit-xs-b: (
+    12px,
+    12px,
+    1.2,
+    'bold',
+  ),
+  sub-xs: (
+    11px,
+    11px,
+    1.2,
+    'regular',
+  ),
+  /* ttu */ p-m:
     (
       12px,
       12px,
       1.2,
       'regular',
     ),
-  //598
-  p-xs:
+  p-s: (
+    12px,
+    12px,
+    1.2,
+    'regular',
+  ),
+  /* desaparece y pasa a ser --> p-m ❌ */ p-xs:
     (
       11px,
       11px,
       1.2,
       'regular',
     ),
-  //169
-  p-xs-b:
+  p-tag: (
+    10px,
+    10px,
+    1.3,
+    'regular',
+  ),
+  p-m-b: (
+    12px,
+    13px,
+    1.2,
+    'bold',
+  ),
+  /* desaparece y pasa a ser tit-xs-b  ❌ */ p-m-m:
+    (
+      12px,
+      13px,
+      1.2,
+      'medium',
+    ),
+  /*desaparece y pasa a ser p-m❌ */ p-xs-b:
     (
       11px,
       12px,
       1.3,
       'bold',
     ),
-
-  // 35
-  p-xxs-b:
+  /* desaparece y pasa a ser sub-xs ❌ */ p-xxs-b:
     (
       9px,
       9px,
       1.3,
       'bold',
-    ),
-  // 6
-  p-tag:
-    (
-      8px,
-      10px,
-      1.3,
-      'regular',
     ),
 ) !default;
-
 $headersFixers: (
   12: (
     12px,
@@ -335,45 +311,53 @@ $headersFixers: (
     1.5,
   ),
 ) !default;
-
 $headersFluids: (
-  12: (
-    1px,
-    2px,
-    0.3,
+  9: (
+    14px,
+    18px,
+    1.2,
   ),
-  14: (
-    14px,
-    14px,
-    0.9,
+  8: (
+    16px,
+    24px,
+    1.2,
+  ),
+  7: (
+    18px,
+    32px,
+    1.2,
   ),
   6: (
-    16px,
-    14px,
-    0.9,
-  ),
-  18: (
-    18px,
-    14px,
-    0.9,
-  ),
-  20: (
     20px,
-    14px,
+    40px,
+    1.2,
+  ),
+  5: (
+    30px,
+    48px,
+    1,
+  ),
+  4: (
+    40px,
+    64px,
+    1,
+  ),
+  3: (
+    40px,
+    72px,
     0.9,
   ),
-  50: (
-    30px,
-    50px,
-    0.9,
-  ),
-  100: (
-    30px,
+  2: (
+    40px,
     100px,
     0.9,
   ),
+  1: (
+    60px,
+    160px,
+    0.8,
+  ),
 ) !default;
-
 $heights: (
   height-xs: (
     80px,
@@ -397,7 +381,6 @@ $heights: (
     calc(100vh - 80px),
   ),
 ) !default;
-
 $mg: 'margin';
 $margin: (
   m-0: (
@@ -443,7 +426,6 @@ $margin: (
     48px,
   ),
 ) !default;
-
 $mx: 'margin';
 $margin-x: (
   mx-8: (
@@ -483,7 +465,6 @@ $margin-x: (
     0 48px,
   ),
 ) !default;
-
 $my: 'margin';
 $margin-y: (
   my-8: (
@@ -523,7 +504,6 @@ $margin-y: (
     48px 0,
   ),
 ) !default;
-
 $mt: 'margin-top';
 $margin-top: (
   mt-8: (
@@ -569,7 +549,6 @@ $margin-top: (
     128px,
   ),
 ) !default;
-
 $mr: 'margin-right';
 $margin-right: (
   mr-8: (
@@ -609,7 +588,6 @@ $margin-right: (
     48px,
   ),
 ) !default;
-
 $mb: 'margin-bottom';
 $margin-bottom: (
   mb-4: (
@@ -697,7 +675,6 @@ $margin-bottom: (
     40px,
   ),
 ) !default;
-
 $ml: 'margin-left';
 $margin-left: (
   ml-8: (
@@ -737,7 +714,6 @@ $margin-left: (
     48px,
   ),
 ) !default;
-
 $p: 'padding';
 $padding: (
   p-body: (
@@ -788,7 +764,6 @@ $padding: (
     30px,
     30px,
   ),
-
   p-32: (
     32px,
     32px,
@@ -808,7 +783,6 @@ $padding: (
     50px,
   ),
 ) !default;
-
 $py: 'padding';
 $padding-y: (
   py-8: (
@@ -848,7 +822,6 @@ $padding-y: (
     60px 60px,
   ),
 ) !default;
-
 $px: 'padding';
 $padding-x: (
   px-8: (
@@ -888,7 +861,6 @@ $padding-x: (
     0 48px,
   ),
 ) !default;
-
 $pt: 'padding-top';
 $padding-top: (
   pt-4: (
@@ -939,7 +911,6 @@ $padding-top: (
     64px,
     64px,
   ),
-
   ptr-120: (
     64px,
     64px,
@@ -953,7 +924,6 @@ $padding-top: (
     128px,
   ),
 ) !default;
-
 $pb: 'padding-bottom';
 $padding-bottom: (
   pb-4: (
@@ -1011,7 +981,6 @@ $padding-bottom: (
     128px,
   ),
 ) !default;
-
 $pl: 'padding-left';
 $padding-left: (
   pl-body: (
@@ -1063,7 +1032,6 @@ $padding-left: (
     48px,
   ),
 ) !default;
-
 $pr: 'padding-right';
 $padding-right: (
   pr-body: (

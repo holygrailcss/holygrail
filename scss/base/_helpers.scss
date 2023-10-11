@@ -81,7 +81,8 @@
   background-color: $c-white;
 }
 .bg-light {
-  background-color: $c-light-grey;
+  background-color: $bg-light;
+  color: $c-bg-light;
 }
 .bg-cream {
   background-color: $c-light-grey;
@@ -137,9 +138,15 @@
   background-color: $c-feel;
 }
 .bg-dark {
-  background-color: $c-black;
-  color: $c-white;
+  background-color: $bg-black;
+  color: $c-bg-dark;
 }
+
+.bg-cover {
+  background-position: center center;
+  background-size: cover;
+}
+
 .banner-zone {
   display: flex;
   align-items: center;
@@ -187,7 +194,7 @@
 }
 hr {
   width: 100%;
-  margin: 0px;
+  margin: 0;
   border-top: 1px solid $c-middle-grey;
   border-bottom: 1px solid transparent;
   border-left: 1px solid transparent;
@@ -398,6 +405,7 @@ hr {
   font-size: 12px;
 }
 strong {
+  color: $primary;
   font-family: $font-family-a-b;
 }
 .border-1 {
@@ -526,7 +534,11 @@ strong {
   vertical-align: middle;
   margin: 4px;
 }
-.ttu {
+.ttu,
+.btn-primary,
+.btn--full,
+.btn-secondary,
+.form-input-label-2 label {
   text-transform: uppercase;
 }
 
@@ -543,7 +555,11 @@ strong {
 [lang^="bg"], //bulgaro
 [lang^="ar"],//arab emirates, egipto ,jordania, israel ,qatar , bahrain ,arabia saudi
 [lang^="nl"] {
-  .ttu {
+  .ttu,
+  .btn-primary,
+  .btn--full,
+  .btn-secondary,
+  .form-input-label-2 label {
     text-transform: none;
   }
 }
@@ -620,6 +636,8 @@ strong {
   flex: none;
 }
 .has-light {
+  color: $c-white;
+
   hr {
     border-top: 1px solid $c-white;
   }
@@ -705,14 +723,6 @@ strong {
   margin: 0;
 }
 
-.bg-black {
-  background-color: $c-black;
-}
-
-.c-notify {
-  background-color: #e6f5ff;
-}
-
 .o-hidden {
   overflow: hidden;
 }
@@ -725,4 +735,19 @@ strong {
     margin-left: -40px;
     margin-right: -40px;
   }
+}
+
+.bold {
+  @include font-bold;
+}
+b {
+  color: $c-secondary;
+}
+
+.ttc {
+  text-transform: capitalize;
+}
+
+.margin-auto {
+  margin: 0 auto;
 }

@@ -2,7 +2,7 @@
 @import '../abstract/_all';
 
 $tooltip-arrow: 10px;
-$tooltip-border-color: #e3e3e3;
+$tooltip-border-color: $c-middle-grey;
 $tooltip-dist: 10px;
 $tooltip-padding: 8px;
 $tooltip-width: 320px;
@@ -177,24 +177,24 @@ $tooltip-width: 320px;
 .tooltip-sm-old {
   top: 36px;
   right: 8px;
-  background-color: #fff;
-  border: 1px solid #e3e3e3;
+  background-color: $c-white;
+  border: 1px solid $c-middle-grey;
   position: absolute;
   width: 100%;
   max-width: 327px;
   z-index: 10;
 }
 
-.tooltip-sm-old:after {
+.tooltip-sm-old::after {
   top: -6px;
   right: 18px;
   content: '';
   position: absolute;
-  border-top: 1px solid #e3e3e3;
-  border-left: 1px solid #e3e3e3;
+  border-top: 1px solid $c-middle-grey;
+  border-left: 1px solid $c-middle-grey;
   width: 10px;
   height: 10px;
-  background: #fff;
+  background: $c-white;
   transform: rotate(45deg);
 }
 
@@ -209,4 +209,14 @@ $tooltip-width: 320px;
 
 .pt-2 {
   padding-top: 2px;
+}
+
+.is-tooltip {
+  position: relative;
+  width: 100%;
+}
+
+.has-tooltip {
+  position: relative;
+  width: fit-content;
 }

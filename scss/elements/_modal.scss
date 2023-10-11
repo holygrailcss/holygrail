@@ -15,7 +15,8 @@
 
 .modalx-xxs {
   max-width: 320px;
-  @media (min-width: 768px) {
+
+  @media (min-width: $break-sm) {
     max-width: 445px;
   }
 }
@@ -51,7 +52,7 @@
   .modalx-body {
     padding: 48px 16px 16px;
 
-    @media (min-width: 768px) {
+    @media (min-width: $break-sm) {
       padding-top: 64px;
     }
   }
@@ -67,7 +68,7 @@
   .modalx-body {
     padding: 48px 16px 16px;
 
-    @media (min-width: 768px) {
+    @media (min-width: $break-sm) {
       padding: 64px 24px 24px;
     }
   }
@@ -77,7 +78,7 @@
   .modalx-body {
     padding: 48px 16px 16px;
 
-    @media (min-width: 768px) {
+    @media (min-width: $break-sm) {
       padding: 64px 32px 32px;
     }
   }
@@ -87,7 +88,7 @@
   .modalx-body {
     padding: 40px 16px 16px;
 
-    @media (min-width: 768px) {
+    @media (min-width: $break-sm) {
       padding: 40px;
     }
   }
@@ -97,14 +98,14 @@
   .modalx-body {
     padding: 0;
 
-    @media (min-width: 768px) {
+    @media (min-width: $break-sm) {
       padding: 64px 24px 24px;
     }
   }
 }
 
 .modalx-fullmobile {
-  @media (max-width: 768px) {
+  @media (max-width: #{$break-sm - 1}) {
     margin: 0 !important;
     max-width: initial;
     width: 100%;
@@ -121,7 +122,7 @@
 }
 
 .modalx-fullviewport {
-  @media (max-width: 768px) {
+  @media (max-width: #{$break-sm - 1}) {
     margin: 0;
     max-width: initial;
   }
@@ -134,7 +135,7 @@
   align-items: center;
   min-height: calc(100% - (0.5rem * 2));
 
-  @media (min-width: 768px) {
+  @media (min-width: $break-sm) {
     min-height: calc(100% - (1.75rem * 2));
   }
 }

@@ -4,7 +4,7 @@ body {
   @include font-regular;
 
   -webkit-overflow-scrolling: touch;
-  font-variant-ligatures: no-common-ligatures !important;
+  font-variant-ligatures: no-common-ligatures;
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -60,14 +60,17 @@ mark {
 }
 
 .secondary {
-  font-family: $font-family-c-r !important;
+  font-family: $font-family-c-r;
   font-weight: 100;
 }
 
 @include typesFixers($headersFixers, $fs);
-@include types($breakpoints, $headers, $fs); /* todo una vez incluida */
-@include typesFluids($headersFluids);
 @include mintypes($minbreakpoints, $minheaders, $fs);
+@include types($breakpoints, $headers, $fs); /* todo una vez incluida */
+
+@include typesFluids($headersFluids);
+
+//
 
 .text-light {
   @include font-light;

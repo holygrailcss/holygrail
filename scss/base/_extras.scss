@@ -16,6 +16,6 @@ $links: (
   @include debug-types($headers);
   @include debug-types($links);
   .form-input-label-2 {
-    border: 1px solid #96c3ac;
+    border: 1px solid $c-success;
   }
 }

@@ -42,7 +42,7 @@
       width: 100%;
 
       &::before {
-        border: 1px solid #d8d8d8;
+        border: 1px solid $c-middle-grey;
         content: '';
         height: 100%;
         left: 0;
@@ -55,7 +55,7 @@
 
       img,
       .color-plain {
-        border: 1px solid #d8d8d8;
+        border: 1px solid $c-middle-grey;
         height: 10px;
         left: 50%;
         margin-left: -5px;
@@ -86,7 +86,7 @@
     .color-square {
       border-radius: 0;
       &::before {
-        border: 1px solid #d8d8d8;
+        border: 1px solid $c-middle-grey;
         border-radius: 0;
       }
       &:hover {
@@ -94,7 +94,7 @@
       }
       img,
       .color-plain {
-        border: 1px solid #d8d8d8;
+        border: 1px solid $c-middle-grey;
         border-radius: 0;
       }
       span {

@@ -181,10 +181,6 @@
   }
 }
 
-.hg a.card9-link:hover {
-  opacity: 1;
-}
-
 .card9-link {
   .img-poster {
     cursor: pointer;
@@ -214,7 +210,7 @@
 }
 
 .card9-left {
-  @media (max-width: 767px) {
+  @media (max-width: #{$break-sm - 1}) {
     .card9-wrap {
       margin-left: 0;
     }
@@ -274,6 +270,7 @@
 
 .product-tag {
   @include font-regular;
+
   color: $c-dark-grey;
   letter-spacing: 0;
   line-height: 1;

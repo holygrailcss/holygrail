@@ -124,47 +124,13 @@
 @mixin random-bgr() {
   background: rgb(random(255) random(255) random(255));
 }
+
 @mixin fixed-bgr() {
   background: red;
 }
 
 @function unity($value) {
   @return math.div($value, $value * 0 + 1);
-}
-
-@mixin fluid-text($min-vw, $max-vw, $min-font-size, $max-font-size, $fluid-line-height) {
-  $u1: unit($min-vw);
-  $u2: unit($max-vw);
-  $u3: unit($min-font-size);
-  $u4: unit($max-font-size);
-
-  @if $u1==$u2 and $u1==$u3 and $u1==$u4 {
-    & {
-      font-size: $min-font-size;
-      line-height: $fluid-line-height;
-      color: $min-vw;
-      color: $max-vw;
-      color: $min-font-size;
-      color: $max-font-size;
-      color: $u1;
-      color: $u2;
-      color: $u3;
-      color: $u4;
-
-      @media screen and (min-width: $min-vw) {
-        font-size: calc(
-          #{$min-font-size} + #{unity($max-font-size - $min-font-size)} *
-            ((100vw - #{$min-vw}) / #{unity($max-vw - $min-vw)})
-        );
-        line-height: $fluid-line-height;
-      }
-
-      @media screen and (min-width: $max-vw) {
-        font-size: $max-font-size;
-        line-height: $fluid-line-height;
-      }
-    }
-  }
 }
 
 @mixin typesFluids($headersFluids) {
@@ -187,7 +153,7 @@
             font-size: $min-font-size;
             line-height: $u5;
 
-            @media screen and (min-width: $min-vw) {
+            @media (min-width: $min-vw) {
               font-size: calc(
                 #{$min-font-size} + #{unity($max-font-size - $min-font-size)} *
                   ((100vw - #{$min-vw}) / #{unity($max-vw - $min-vw)})
@@ -195,7 +161,7 @@
               line-height: $fluid-line-height;
             }
 
-            @media screen and (min-width: $max-vw) {
+            @media (min-width: $max-vw) {
               font-size: $max-font-size;
               line-height: $fluid-line-height;
             }
@@ -211,7 +177,7 @@
             font-size: $min-font-size;
             line-height: $u5;
 
-            @media screen and (min-width: $min-vw) {
+            @media (min-width: $min-vw) {
               font-size: calc(
                 #{$min-font-size} + #{unity($max-font-size - $min-font-size)} *
                   ((100vw - #{$min-vw}) / #{unity($max-vw - $min-vw)})
@@ -219,7 +185,7 @@
               line-height: $fluid-line-height;
             }
 
-            @media screen and (min-width: $max-vw) {
+            @media (min-width: $max-vw) {
               font-size: $max-font-size;
               line-height: $fluid-line-height;
             }
@@ -234,7 +200,7 @@
             font-size: $min-font-size;
             line-height: $u5;
 
-            @media screen and (min-width: $min-vw) {
+            @media (min-width: $min-vw) {
               font-size: calc(
                 #{$min-font-size} + #{unity($max-font-size - $min-font-size)} *
                   ((100vw - #{$min-vw}) / #{unity($max-vw - $min-vw)})
@@ -242,7 +208,7 @@
               line-height: $fluid-line-height;
             }
 
-            @media screen and (min-width: $max-vw) {
+            @media (min-width: $max-vw) {
               font-size: $max-font-size;
               line-height: $fluid-line-height;
             }
@@ -258,7 +224,7 @@
             font-size: $min-font-size;
             line-height: $u5;
 
-            @media screen and (min-width: $min-vw) {
+            @media (min-width: $min-vw) {
               font-size: calc(
                 #{$min-font-size} + #{unity($max-font-size - $min-font-size)} *
                   ((100vw - #{$min-vw}) / #{unity($max-vw - $min-vw)})
@@ -266,7 +232,7 @@
               line-height: $fluid-line-height;
             }
 
-            @media screen and (min-width: $max-vw) {
+            @media (min-width: $max-vw) {
               font-size: $max-font-size;
               line-height: $fluid-line-height;
             }
@@ -282,7 +248,7 @@
             font-size: $min-font-size;
             line-height: $u5;
 
-            @media screen and (min-width: $min-vw) {
+            @media (min-width: $min-vw) {
               font-size: calc(
                 #{$min-font-size} + #{unity($max-font-size - $min-font-size)} *
                   ((100vw - #{$min-vw}) / #{unity($max-vw - $min-vw)})
@@ -290,7 +256,7 @@
               line-height: $fluid-line-height;
             }
 
-            @media screen and (min-width: $max-vw) {
+            @media (min-width: $max-vw) {
               font-size: $max-font-size;
               line-height: $fluid-line-height;
             }
@@ -629,33 +595,6 @@ $spritegrid: 32;
 $spriteWidth: 600;
 $spriteHeight: 400;
 
-@mixin sprite-bg($x: 0, $y: $x, $hover: true, $sizeBig: false) {
-  $i: 0;
-
-  background-image: url('../images/itx-sprite.png');
-  background-position-x: ($x * -1px);
-  background-position-y: ($y * -1px);
-  background-repeat: no-repeat;
-
-  @include media(retina) {
-    background-image: url('../images/itx-sprite_2x.png');
-    background-size: ($spriteWidth * 1px) ($spriteHeight * 1px);
-  }
-
-  @if $hover {
-    &:hover,
-    &:focus {
-      background-position-x: ($x * -1px);
-      background-position-y: ((($spritegrid * -1px)) + $y);
-    }
-  }
-
-  @if $sizeBig {
-    background-position-x: ($x * -1px);
-    background-position-y: (((($spritegrid * 2) * -1px)) + ($y * 2));
-  }
-}
-
 @mixin placeholder() {
   &::input-placeholder {
     @content;
@@ -728,7 +667,7 @@ $spriteHeight: 400;
 
         opacity: 0.8;
         white-space: nowrap;
-        color: #fff;
+        color: $c-white;
         padding: 2px;
         left: 0;
         font-size: 10px;

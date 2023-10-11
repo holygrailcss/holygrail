@@ -135,3 +135,35 @@ svg-icon {
   width: 64px;
   height: 64px;
 }
+
+.btn.btn-link.has-ico-pre {
+  padding-left: 18px;
+  .ico-pre {
+    margin: 0;
+    top: -1px;
+  }
+}
+.has-ico-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  svg {
+    margin-top: 0;
+    margin-right: 4px;
+  }
+  div {
+    svg {
+      margin-top: 0;
+      margin-right: 4px;
+    }
+  }
+}
+
+svg-icon.ico-post,
+svg-icon.ico-pre {
+  margin: 0 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}

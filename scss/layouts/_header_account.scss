@@ -1,6 +1,6 @@
 @import '../abstract/_all';
 
-@media (max-width: 768px) {
+@media (max-width: #{$break-sm - 1}) {
   /* no se usa */
   .header-account-logo {
     display: none;
@@ -21,7 +21,7 @@
   z-index: 1002;
   border-bottom: 1px solid $c-middle-grey;
 
-  @media (min-width: 768px) {
+  @media (min-width: $break-sm) {
     height: 72px;
     padding: 0 16px;
   }
@@ -100,7 +100,7 @@
     height: 20%;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $break-sm) {
     transform: translateY(-100px);
     display: none;
   }
@@ -137,7 +137,7 @@
     opacity: 1;
     transform: translateY(56px);
 
-    @media (min-width: 768px) {
+    @media (min-width: $break-sm) {
       transform: translateY(72px);
     }
   }

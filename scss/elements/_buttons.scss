@@ -803,9 +803,9 @@ button {
 }
 
 .btn-facebook {
-  background-color: #1977f3;
+  background-color: $c-facebook;
   color: $c-white;
-  border: 1px solid #1977f3;
+  border: 1px solid $c-facebook;
 
   svg-icon {
     background-color: transparent;
@@ -823,14 +823,14 @@ button {
   &:active,
   &.active {
     opacity: 1;
-    background-color: #045ed3;
-    border: 1px solid #045ed3;
+    background-color: $c-facebook;
+    border: 1px solid $c-facebook;
   }
 
   .has-light & {
-    background-color: #1977f3;
+    background-color: $c-facebook;
     color: $c-white;
-    border: 1px solid #1977f3;
+    border: 1px solid $c-facebook;
   }
 }
 
@@ -886,8 +886,8 @@ button {
   &:active,
   &.active {
     opacity: 1;
-    background-color: #02b953;
-    border: 1px solid #02b953;
+    background-color: $c-naver;
+    border: 1px solid $c-naver;
   }
 }
 
@@ -906,7 +906,7 @@ button {
   &:active,
   &.active {
     opacity: 1;
-    background-color: #02b953;
+    background-color: $c-naver;
     border: 1px solid $c-wechat;
   }
 }

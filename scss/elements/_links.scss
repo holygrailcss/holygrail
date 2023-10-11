@@ -25,7 +25,7 @@ a {
   padding: 4px 0;
   text-align: center;
   cursor: pointer;
-  background: transparent !important;
+  background: transparent;
   border: none;
 
   &::after {
@@ -506,7 +506,7 @@ u {
     background-image: linear-gradient(transparent calc(100% - 1px), white 10px);
 
     &::after {
-      background-color: #fff;
+      background-color: $c-white;
     }
   }
 
@@ -515,7 +515,7 @@ u {
     background-image: linear-gradient(transparent calc(100% - 1px), white 10px);
 
     &::after {
-      background-color: #fff;
+      background-color: $c-white;
     }
   }
 

@@ -146,16 +146,6 @@
   bottom: 0;
 }
 
-.is-tooltip {
-  position: relative;
-  width: 100%;
-}
-
-.has-tooltip {
-  position: relative;
-  width: fit-content;
-}
-
 .xs\:text-center {
   @media (max-width: #{$break-sm - 1}) {
     text-align: center;

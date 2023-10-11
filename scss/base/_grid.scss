@@ -273,3 +273,34 @@
 @include bleed(0);
 @include bleed(4);
 @include bleed(8);
+
+.list-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid-8 {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 16px;
+  width: 100%;
+  align-items: start;
+  max-width: 1200px;
+  margin: 0 auto;
+  img {
+    border: 1px solid #eaeaea;
+  }
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+.margin-auto {
+  margin: 0 auto;
+}

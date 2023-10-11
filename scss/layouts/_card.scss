@@ -4,26 +4,6 @@
   width: 100%;
 }
 
-.card1 {
-  border: 1px solid $c-middle-grey;
-  align-items: stretch;
-  height: calc(100% - 20px);
-  padding-bottom: 30px;
-  position: relative;
-}
-
-.img-bg {
-  background-position: top left;
-  padding-bottom: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-
-  @media (min-width: $break-sm) {
-    padding-bottom: 0;
-    height: 100%;
-  }
-}
-
 .text-box {
   $text-box-img: 80px;
 
@@ -40,60 +20,5 @@
     box-sizing: border-box;
     width: calc(100% - #{$text-box-img} - 5px);
     display: inline-block;
-  }
-}
-
-.card-video {
-  position: relative;
-
-  .card-video-play {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    left: 50%;
-    margin-left: -50px;
-    top: 50%;
-    margin-top: -50px;
-    padding-top: 25px;
-    border-radius: 50%;
-    text-align: center;
-    color: $c-white;
-    border: 5px solid $c-white;
-    box-sizing: border-box;
-    font-size: 22px;
-    font-weight: 100;
-    transition: all 0.3s ease;
-
-    &:hover {
-      opacity: 0.6;
-      cursor: pointer;
-    }
-  }
-}
-
-.minicard-3 {
-  padding: 24px 16px;
-  svg-icon {
-    display: block;
-    padding-bottom: 16px;
-  }
-
-  @media (max-width: #{$break-sm - 1}) {
-    svg-icon {
-      padding-right: 16px;
-      padding-bottom: 0;
-      .is-rtl & {
-        padding-right: 0;
-        padding-left: 16px;
-      }
-    }
-
-    display: flex;
-    align-items: center;
-  }
-
-  &:hover {
-    opacity: 0.6;
-    cursor: pointer;
   }
 }

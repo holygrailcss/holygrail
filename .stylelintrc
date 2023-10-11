@@ -15,6 +15,7 @@
     "selector-class-pattern": null,
     "scss/no-global-function-names":null,
     "rule-empty-line-before":null,
+    "at-rule-empty-line-before":null,
     "scss/operator-no-newline-after":null,
     "keyframes-name-pattern":null,
     "no-duplicate-at-import-rules":null,
