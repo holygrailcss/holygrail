@@ -676,3 +676,16 @@ $spriteHeight: 400;
     }
   }
 }
+
+@mixin heights-mix() {
+  @each $height-name in map-keys($heights) {
+    $values: map-get($heights, $height-name);
+    .#{$height-name} {
+      min-height: nth($values, 1);
+
+      @media (min-width: $break-sm) {
+        min-height: nth($values, 2);
+      }
+    }
+  }
+}

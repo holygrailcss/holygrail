@@ -1,22 +1,5 @@
 @import '../abstract/_all';
 
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeout {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
 .c-primary {
   color: $c-primary;
 }
@@ -93,9 +76,7 @@
 .bg-feel-dark {
   background-color: $c-feel-dark;
 }
-.bg-line {
-  border-bottom: 1px solid $c-middle-grey;
-}
+
 .bg-dark-grey {
   background-color: $c-dark-grey;
 }
@@ -407,6 +388,10 @@ hr {
 strong {
   color: $primary;
   font-family: $font-family-a-b;
+}
+
+.bb-line {
+  border-bottom: 1px solid $c-middle-grey;
 }
 .border-1 {
   border: 1px solid $c-middle-grey;

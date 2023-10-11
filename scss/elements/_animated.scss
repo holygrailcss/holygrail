@@ -22,26 +22,6 @@
   animation: bounce 0.8s infinite alternate;
 }
 
-@keyframes bounce {
-  0% {
-    transform: translateZ(0);
-  }
-
-  to {
-    transform: translate3d(0, -15px, 0);
-  }
-}
-
-@keyframes bounce {
-  0% {
-    transform: translateZ(0);
-  }
-
-  to {
-    transform: translate3d(0, -15px, 0);
-  }
-}
-
 .line-scrolldown {
   position: absolute;
   top: calc(100% - 120px);

@@ -361,23 +361,42 @@ $headersFluids: (
 $heights: (
   height-xs: (
     80px,
+    80px,
   ),
   height-sm: (
+    100px,
     100px,
   ),
   height-md: (
     350px,
+    350px,
   ),
   height-lg: (
+    400px,
     400px,
   ),
   height-xl: (
     450px,
+    450px,
   ),
   height-full: (
     100vh,
+    100vh,
+  ),
+  height-big: (
+    300px,
+    500px,
+  ),
+  height-medium: (
+    200px,
+    400px,
+  ),
+  height-mini: (
+    100px,
+    300px,
   ),
   height-home: (
+    calc(100vh - 80px),
     calc(100vh - 80px),
   ),
 ) !default;

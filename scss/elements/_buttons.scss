@@ -1,12 +1,6 @@
 @use 'sass:math';
 @import '../abstract/_all';
 
-@keyframes spin {
-  100% {
-    transform: rotate(-360deg);
-  }
-}
-
 input:is([type='button'], [type='submit'], [type='reset']),
 input[type='file']::file-selector-button,
 button {
