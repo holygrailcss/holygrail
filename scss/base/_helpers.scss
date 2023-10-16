@@ -722,6 +722,21 @@ strong {
   }
 }
 
+.sm\:reset-body {
+  @media (max-width: #{$break-sm - 1}) {
+    margin-left: -16px;
+    margin-right: -16px;
+  }
+}
+
+.md\:reset-body {
+  @media (max-width: #{$break-md - 1}) {
+    margin-left: -16px;
+    margin-right: -16px;
+  }
+}
+
+
 .bold {
   @include font-bold;
 }
