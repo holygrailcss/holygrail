@@ -1,15 +1,60 @@
 @import '../abstract/_all';
-@include space($breakpoints, $margin, $mg);
-@include space($breakpoints, $margin-y, $my);
-@include space($breakpoints, $margin-x, $mx);
-@include space($breakpoints, $margin-top, $mt);
-@include space($breakpoints, $margin-right, $mr);
-@include space($breakpoints, $margin-bottom, $mb);
-@include space($breakpoints, $margin-left, $ml);
-@include space($breakpoints, $padding, $p);
-@include space($breakpoints, $padding-y, $py);
-@include space($breakpoints, $padding-x, $px);
-@include space($breakpoints, $padding-top, $pt);
-@include space($breakpoints, $padding-left, $pl);
-@include space($breakpoints, $padding-bottom, $pb);
-@include space($breakpoints, $padding-right, $pr);
+
+.margin-auto {
+  margin: 0 auto;
+}
+
+@for $i from 1 through length($espaciados) {
+  $espaciado: nth($espaciados, $i);
+  .m-#{$espaciado} {
+    margin: #{$espaciado}px;
+  }
+
+  .mx-#{$espaciado} {
+    margin-left: #{$espaciado}px;
+    margin-right: #{$espaciado}px;
+  }
+
+  .my-#{$espaciado} {
+    margin-top: #{$espaciado}px;
+    margin-bottom: #{$espaciado}px;
+  }
+  .mt-#{$espaciado} {
+    margin-top: #{$espaciado}px;
+  }
+  .mr-#{$espaciado} {
+    margin-right: #{$espaciado}px;
+  }
+  .mb-#{$espaciado} {
+    margin-bottom: #{$espaciado}px;
+  }
+  .ml-#{$espaciado} {
+    margin-left: #{$espaciado}px;
+  }
+  .p-#{$espaciado} {
+    padding: #{$espaciado}px;
+  }
+
+  .px-#{$espaciado} {
+    padding-left: #{$espaciado}px;
+    padding-right: #{$espaciado}px;
+  }
+
+  .py-#{$espaciado} {
+    padding-top: #{$espaciado}px;
+    padding-bottom: #{$espaciado}px;
+  }
+
+  .pt-#{$espaciado} {
+    padding-top: #{$espaciado}px;
+  }
+  .pr-#{$espaciado} {
+    padding-right: #{$espaciado}px;
+  }
+  .pb-#{$espaciado} {
+    padding-bottom: #{$espaciado}px;
+  }
+  .pl-#{$espaciado} {
+    padding-left: #{$espaciado}px;
+  }
+}

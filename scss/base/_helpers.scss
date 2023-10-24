@@ -9,6 +9,7 @@
 .c-dark-grey.is-through::after {
   background-color: $c-dark-grey;
 }
+
 .c-feel-dark.is-through::after {
   background-color: $c-feel-dark;
 }
@@ -57,6 +58,17 @@
 .c-feel-light {
   color: $c-feel-light;
 }
+
+.c-tier-silver {
+  color: $c-tier-silver;
+}
+.c-tier-platinum {
+  color: $c-tier-platinum;
+}
+.c-tier-gold {
+  color: $c-tier-gold;
+}
+
 .c-limited {
   color: $c-limited;
 }
@@ -65,7 +77,7 @@
 }
 .bg-light {
   background-color: $bg-light;
-  color: $c-bg-light;
+  color: $c-primary;
 }
 .bg-cream {
   background-color: $c-light-grey;
@@ -121,6 +133,16 @@
 .bg-dark {
   background-color: $bg-black;
   color: $c-bg-dark;
+}
+
+.bg-tier-silver {
+  background-color: $c-tier-silver;
+}
+.bg-tier-platinum {
+  background-color: $c-tier-platinum;
+}
+.bg-tier-gold {
+  background-color: $c-tier-gold;
 }
 
 .bg-cover {
@@ -735,7 +757,6 @@ strong {
     margin-right: -16px;
   }
 }
-
 
 .bold {
   @include font-bold;

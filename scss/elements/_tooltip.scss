@@ -79,48 +79,6 @@ $tooltip-width: 320px;
   }
 }
 
-.is-rtl {
-  .tooltip-sm {
-    left: calc(50% - 16px);
-    right: auto;
-    padding-left: $tooltip-padding + 16px;
-    padding-right: $tooltip-padding * 2;
-    &::after {
-      right: auto;
-      left: $tooltip-dist;
-    }
-    &.tooltip-tr,
-    &.tooltip-br {
-      right: calc(50% - 16px);
-      left: auto;
-      &::after {
-        left: auto;
-        right: $tooltip-dist;
-      }
-    }
-
-    .close {
-      right: auto;
-      left: $tooltip-padding;
-    }
-  }
-
-  .tooltip-sm-temp {
-    left: -8px;
-    right: auto;
-    padding-left: $tooltip-padding + 16px;
-    padding-right: $tooltip-padding * 2;
-    &::after {
-      right: auto;
-      left: $tooltip-dist;
-    }
-    .close-temp {
-      right: auto;
-      left: $tooltip-padding;
-    }
-  }
-}
-
 .has-tooltip-temp {
   position: relative;
   width: fit-content;
@@ -207,10 +165,6 @@ $tooltip-width: 320px;
   padding: 8px;
 }
 
-.pt-2 {
-  padding-top: 2px;
-}
-
 .is-tooltip {
   position: relative;
   width: 100%;
@@ -219,4 +173,46 @@ $tooltip-width: 320px;
 .has-tooltip {
   position: relative;
   width: fit-content;
+}
+
+.is-rtl {
+  .tooltip-sm {
+    left: calc(50% - 16px);
+    right: auto;
+    padding-left: $tooltip-padding + 16px;
+    padding-right: $tooltip-padding * 2;
+    &::after {
+      right: auto;
+      left: $tooltip-dist;
+    }
+    &.tooltip-tr,
+    &.tooltip-br {
+      right: calc(50% - 16px);
+      left: auto;
+      &::after {
+        left: auto;
+        right: $tooltip-dist;
+      }
+    }
+
+    .close {
+      right: auto;
+      left: $tooltip-padding;
+    }
+  }
+
+  .tooltip-sm-temp {
+    left: -8px;
+    right: auto;
+    padding-left: $tooltip-padding + 16px;
+    padding-right: $tooltip-padding * 2;
+    &::after {
+      right: auto;
+      left: $tooltip-dist;
+    }
+    .close-temp {
+      right: auto;
+      left: $tooltip-padding;
+    }
+  }
 }

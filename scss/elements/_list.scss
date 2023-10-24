@@ -37,7 +37,7 @@ ul.list-disc {
 }
 
 ul.list-inline {
-  margin: 0 -4px;
+  margin: 0;
   padding: 0;
 
   li {
@@ -169,16 +169,16 @@ ul.list-mini {
   opacity: 0.5;
   left: -1px;
 
+  &:first-child {
+    left: 0;
+  }
+
   &.is-active,
   &:hover {
     border: 1px solid $c-primary;
     opacity: 1;
     cursor: pointer;
   }
-}
-
-.list-box:first-child {
-  left: 0;
 }
 
 .multiple-table {
@@ -245,7 +245,6 @@ ul.list-mini {
   }
 }
 
-//has-light
 ul.list-disc,
 ul.list-mini {
   &.has-light {

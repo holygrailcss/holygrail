@@ -1,10 +1,9 @@
-@import 'abstract/reset';
-@import 'abstract/setup';
-@import 'abstract/fonts';
-@import 'abstract/breakpoints';
-@import 'abstract/mixins';
-@import 'abstract/animations';
-@import 'partials';
+@import 'abstract/reset.scss';
+
+@import 'base/_animations.scss';
+
+@import 'abstract/_all.scss';
+
 $variable-colors: (
   c-white: #{$c-white},
   c-black: #{$c-black},

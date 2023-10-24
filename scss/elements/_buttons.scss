@@ -555,8 +555,8 @@ button {
 
 .btn-secondary-feel {
   color: $c-primary;
-  background-color: transparent;
-  border: 1px solid $c-feel;
+  background-color: $c-white;
+  border: 1px solid $c-primary;
 
   svg {
     g {
@@ -577,8 +577,8 @@ button {
   &.active {
     opacity: 1;
     color: $c-primary;
-    border: 1px solid $c-feel-light;
-    background-color: transparent;
+    border: 1px solid $c-dark-grey;
+    background-color: $c-white;
   }
 
   &:disabled,
@@ -599,7 +599,7 @@ button {
 
   .has-light & {
     color: $c-white;
-    border-color: $c-feel;
+    border-color: $c-white;
     background-color: transparent;
 
     &:focus,
@@ -610,8 +610,71 @@ button {
     &.active {
       opacity: 1;
       color: $c-white;
-      border: 1px solid $c-feel-light;
-      background-color: transparent;
+      border: 1px solid $c-dark-grey;
+      background-color: $c-dark-grey;
+    }
+  }
+}
+
+.btn-tertiary {
+  color: $c-primary;
+  background-color: $c-white;
+  border: 1px solid $c-primary;
+
+  svg {
+    g {
+      fill: $c-primary;
+      stroke: $c-primary;
+    }
+
+    circle {
+      stroke: $c-primary;
+    }
+  }
+
+  &:focus,
+  &.focus,
+  &:hover,
+  &.hover,
+  &:active,
+  &.active {
+    opacity: 1;
+    color: $c-primary;
+    border: 1px solid $c-dark-grey;
+    background-color: $c-white;
+  }
+
+  &:disabled,
+  &[disabled],
+  &.disabled {
+    pointer-events: none;
+    cursor: default;
+    border: 1px solid $c-middle-grey !important;
+    color: $c-dark-grey !important;
+    background-color: $c-middle-grey !important;
+    filter: none;
+    opacity: 1;
+    svg-icon {
+      background-color: $c-middle-grey !important;
+      border: 1px solid $c-middle-grey !important;
+    }
+  }
+
+  .has-light & {
+    color: $c-white;
+    border-color: $c-white;
+    background-color: transparent;
+
+    &:focus,
+    &.focus,
+    &:hover,
+    &.hover,
+    &:active,
+    &.active {
+      opacity: 1;
+      color: $c-white;
+      border: 1px solid $c-dark-grey;
+      background-color: $c-dark-grey;
     }
   }
 }
@@ -688,6 +751,24 @@ button {
   background-color: transparent;
   padding: 0;
   border-radius: $btn-radius;
+
+  .has-light & {
+    color: $c-white;
+    background-color: transparent;
+
+    &:focus,
+    &.focus,
+    &:hover,
+    &.hover,
+    &:visited,
+    &:active,
+    &.active {
+      background-color: transparent;
+      color: $c-white;
+      text-decoration: none;
+      opacity: 0.6;
+    }
+  }
 }
 
 .btn-trans {
