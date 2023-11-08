@@ -112,6 +112,18 @@ img {
   -ms-interpolation-mode: bicubic;
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 @keyframes underline {
   0% {
     width: 0;
@@ -700,7 +712,7 @@ img {
     margin-left: -8px;
   }
 }
-@media (min-width: 1500px) {
+@media (min-width: 1440px) {
   .row {
     margin-right: -8px;
     margin-left: -8px;
@@ -955,7 +967,7 @@ img {
     max-width: 100%;
   }
 }
-@media (min-width: 1500px) {
+@media (min-width: 1440px) {
   .col-xl-1 {
     -webkit-box-flex: 0;
     flex: 0 0 8.3333333333%;
@@ -1947,6 +1959,10 @@ svg-icon.ico-pre {
   content: "";
 }
 
+.ar-3-4 {
+  aspect-ratio: 3/4;
+}
+
 .margin-auto {
   margin: 0 auto;
 }
@@ -2009,6 +2025,66 @@ svg-icon.ico-pre {
 
 .pl-0 {
   padding-left: 0px;
+}
+
+.m-2 {
+  margin: 2px;
+}
+
+.mx-2 {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.my-2 {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.mt-2 {
+  margin-top: 2px;
+}
+
+.mr-2 {
+  margin-right: 2px;
+}
+
+.mb-2 {
+  margin-bottom: 2px;
+}
+
+.ml-2 {
+  margin-left: 2px;
+}
+
+.p-2 {
+  padding: 2px;
+}
+
+.px-2 {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.py-2 {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.pt-2 {
+  padding-top: 2px;
+}
+
+.pr-2 {
+  padding-right: 2px;
+}
+
+.pb-2 {
+  padding-bottom: 2px;
+}
+
+.pl-2 {
+  padding-left: 2px;
 }
 
 .m-4 {
@@ -3811,7 +3887,7 @@ hr {
   }
 }
 
-@media (max-width: 1499px) {
+@media (max-width: 1439px) {
   .xl\:hidden {
     display: none !important;
   }
@@ -3835,7 +3911,7 @@ hr {
   }
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1440px) {
   .xl\:visible {
     display: none !important;
   }
@@ -4418,6 +4494,18 @@ b {
 
 .margin-auto {
   margin: 0 auto;
+}
+
+.fl-left {
+  float: left;
+}
+
+.fl-right {
+  float: right;
+}
+
+.p-relative {
+  position: relative;
 }
 
 .helper-font .tit-m {
@@ -9432,6 +9520,12 @@ ul.list-clear li.list-box:last-child {
   opacity: 0.4;
 }
 
+.is-rtl .fl-left {
+  float: right;
+}
+.is-rtl .fl-right {
+  float: left;
+}
 .is-rtl .text-right {
   text-align: left;
 }
@@ -9487,6 +9581,22 @@ ul.list-clear li.list-box:last-child {
 .is-rtl .pl-0 {
   padding-left: 0;
   padding-right: 0px;
+}
+.is-rtl .mr-2 {
+  margin-right: 0;
+  margin-left: 2px;
+}
+.is-rtl .ml-2 {
+  margin-left: 0;
+  margin-right: 2px;
+}
+.is-rtl .pr-2 {
+  padding-right: 0;
+  padding-left: 2px;
+}
+.is-rtl .pl-2 {
+  padding-left: 0;
+  padding-right: 2px;
 }
 .is-rtl .mr-4 {
   margin-right: 0;

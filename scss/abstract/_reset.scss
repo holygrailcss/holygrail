@@ -110,3 +110,15 @@ img {
   vertical-align: middle;
   -ms-interpolation-mode: bicubic;
 }
+
+/* Reset de arrows en inputs */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}

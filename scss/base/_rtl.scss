@@ -1,6 +1,14 @@
 @import '../abstract/_all';
 
 .is-rtl {
+  .fl-left {
+    float: right;
+  }
+
+  .fl-right {
+    float: left;
+  }
+
   .text-right {
     text-align: left;
   }

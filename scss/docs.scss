@@ -1,3 +1,4 @@
+@use 'sass:math';
 @import 'abstract/reset.scss';
 
 @import 'base/_animations.scss';
@@ -571,6 +572,7 @@ pre[class*='language-'] {
   grid-template-columns: repeat(8, 1fr);
   gap: 24px;
 }
+
 .item {
   white-space: nowrap;
 }
