@@ -1418,7 +1418,6 @@ input[type=number] {
   font-size: 12px;
   margin-top: -40px;
   left: 0;
-  mix-blend-mode: difference;
   color: white;
   bottom: 27px;
 }
