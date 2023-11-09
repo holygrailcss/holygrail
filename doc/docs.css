@@ -111,7 +111,7 @@ img {
   -ms-interpolation-mode: bicubic;
 }
 
-/* Chrome, Safari, Edge, Opera */
+/* Reset de arrows en inputs */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -1191,8 +1191,9 @@ input[type=number] {
 .tag-color-wrap .wrap-item {
   position: relative;
   width: 100px;
-  margin-top: 50px;
-  margin-bottom: 10px;
+  margin: 10px 10px 0 0;
+  padding: 5px;
+  box-shadow: 0 9px 25px rgba(0, 0, 0, 0.35);
 }
 .tag-color-wrap .wrap-item::after {
   position: absolute;
@@ -1212,8 +1213,6 @@ input[type=number] {
   height: 100px;
   margin: 0;
   position: relative;
-  border-radius: 50%;
-  box-shadow: 0 9px 25px rgba(0, 0, 0, 0.06);
 }
 .tag-color-wrap .wrap-item .item::after {
   font-size: 12px;
@@ -1472,7 +1471,6 @@ input[type=number] {
 .guide .box-info {
   padding: 20px;
   border: 1px solid gray;
-  border-radius: 0;
   font-style: italic;
   opacity: 0.5;
 }
@@ -1510,13 +1508,28 @@ pre[class*=language-] {
 }
 
 .filas {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  gap: 24px;
+  line-height: 2;
 }
 
 .item {
   white-space: nowrap;
+}
+
+.bg-docs {
+  background: #fafafa;
+}
+
+.grid-8-docs {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 16px;
+}
+
+.grid-24-docs {
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  gap: 16px;
+  align-items: start;
 }
 
 /*# sourceMappingURL=docs.css.map */

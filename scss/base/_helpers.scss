@@ -761,6 +761,10 @@ strong {
 .bold {
   @include font-bold;
 }
+
+.semibold {
+  @include font-semibold;
+}
 b {
   color: $c-secondary;
 }

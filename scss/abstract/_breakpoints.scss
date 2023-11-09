@@ -14,9 +14,7 @@ $breakpointscols: (
   sm: 768px,
   md: 992px,
   lg: 1280px,
-  // 12 columnas
   xl: 1440px,
-  // 24 columnas
 ) !default;
 
 $colBreakpoints: length($breakpoints) !default;

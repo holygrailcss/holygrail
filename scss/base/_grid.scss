@@ -214,7 +214,7 @@
 
 //   -COLS
 
-@for $i from 1 through $colBreakpointscols {
+@for $i from 1 through 4 {
   @media (min-width: nth(map-values($breakpointscols), $i)) {
     @for $c from 1 through $totalCols {
       .col-#{nth(map-keys($breakpointscols), $i)}-#{$c} {
@@ -222,6 +222,16 @@
         flex: 0 0 math.percentage(math.div($c, $totalCols));
         max-width: math.percentage(math.div($c, $totalCols));
       }
+    }
+  }
+}
+
+@for $i from 5 through $colBreakpointscols {
+  @for $c from 1 through $totalColsXl {
+    .col-#{nth(map-keys($breakpointscols), $i)}-#{$c} {
+      -webkit-box-flex: 0;
+      flex: 0 0 math.percentage(math.div($c, $totalColsXl));
+      max-width: math.percentage(math.div($c, $totalColsXl));
     }
   }
 }

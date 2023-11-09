@@ -72,16 +72,26 @@ mark {
 
 //
 
-.text-light {
+.text-light,
+.font-light {
+  // 2
   @include font-light;
 }
-.text-regular {
+.text-regular,
+.font-regular {
   @include font-regular;
 }
-.text-medium {
+.text-medium,
+.font-medium {
   @include font-medium;
 }
-.text-bold {
+.text-semibold,
+.font-semibold {
+  @include font-semibold;
+}
+.text-bold,
+.font-bold {
+  //2
   @include font-bold;
 }
 

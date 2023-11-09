@@ -1,4 +1,4 @@
-$espaciados: (0, 2, 4, 8, 16, 24, 32, 40, 48, 56, 64);
+$espaciados: (0, 2, 4, 8, 16, 24, 32, 40, 48, 56, 64, 72);
 $c-white: #fff !default;
 $c-black: #000 !default;
 $c-dark-grey: #8e8e8e !default;
@@ -58,6 +58,7 @@ $font-weight-secondary-light: 300 !default;
 $font-weight-secondary-medium: 400 !default;
 $font-weight-secondary-bold: 700 !default;
 $totalCols: 12 !default;
+$totalColsXl: 24 !default;
 $padding-global: 8px !default;
 $padding-mobile: 24px !default;
 $padding-desktop: 40px !default;
