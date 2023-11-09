@@ -8,6 +8,8 @@
 $variable-colors: (
   c-white: #{$c-white},
   c-black: #{$c-black},
+  c-accent: #{$c-accent},
+  c-secondary: #{$c-secondary},
   c-dark-grey: #{$c-dark-grey},
   c-middle-grey: #{$c-middle-grey},
   c-light-grey: #{$c-light-grey},
@@ -56,6 +58,7 @@ $variable-list: (
 
 $variabletotals: length($variable-list);
 $variablecolors: length($variable-colors);
+
 @for $i from 1 through $variabletotals {
   .var-a-#{nth(map-keys($variable-list), $i)} {
     &::after {
@@ -70,6 +73,22 @@ $variablecolors: length($variable-colors);
     }
   }
 }
+
+@for $i from 1 through $variablecolors {
+  .var-a-#{nth(map-keys($variable-colors), $i)} {
+    &::before {
+      display: inline-block;
+      content: '#{nth(map-keys($variable-colors), $i)}';
+    }
+  }
+  .var-b-#{nth(map-keys($variable-colors), $i)} {
+    &::before {
+      content: '#{nth(map-values($variable-colors), $i)}';
+      display: inline-block;
+    }
+  }
+}
+
 @for $i from 1 through $variablecolors {
   .bg-#{nth(map-keys($variable-colors), $i)} {
     background-color: #{nth(map-values($variable-colors), $i)};
@@ -259,11 +278,16 @@ $variablecolors: length($variable-colors);
       left: 16px;
     }
     ::before {
+      width: 100%;
+      text-align: center;
       position: absolute;
       z-index: 10;
       font-size: 12px;
       margin-top: -40px;
       left: 0;
+      mix-blend-mode: difference;
+      color: white;
+      bottom: 27px;
     }
     .item {
       height: 100px;

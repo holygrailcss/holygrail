@@ -3837,6 +3837,10 @@ mark {
   background-color: #fff;
 }
 
+.bg-black {
+  background-color: #000;
+}
+
 .bg-error {
   background-color: #b40016;
 }

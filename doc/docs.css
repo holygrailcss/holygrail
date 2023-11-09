@@ -446,12 +446,220 @@ input[type=number] {
   display: inline-block;
 }
 
+.var-a-c-white::before {
+  display: inline-block;
+  content: "c-white";
+}
+
+.var-b-c-white::before {
+  content: "#fff";
+  display: inline-block;
+}
+
+.var-a-c-black::before {
+  display: inline-block;
+  content: "c-black";
+}
+
+.var-b-c-black::before {
+  content: "#000";
+  display: inline-block;
+}
+
+.var-a-c-accent::before {
+  display: inline-block;
+  content: "c-accent";
+}
+
+.var-b-c-accent::before {
+  content: "#b40016";
+  display: inline-block;
+}
+
+.var-a-c-secondary::before {
+  display: inline-block;
+  content: "c-secondary";
+}
+
+.var-b-c-secondary::before {
+  content: "#1a1a1a";
+  display: inline-block;
+}
+
+.var-a-c-dark-grey::before {
+  display: inline-block;
+  content: "c-dark-grey";
+}
+
+.var-b-c-dark-grey::before {
+  content: "#8e8e8e";
+  display: inline-block;
+}
+
+.var-a-c-middle-grey::before {
+  display: inline-block;
+  content: "c-middle-grey";
+}
+
+.var-b-c-middle-grey::before {
+  content: "#e3e3e3";
+  display: inline-block;
+}
+
+.var-a-c-light-grey::before {
+  display: inline-block;
+  content: "c-light-grey";
+}
+
+.var-b-c-light-grey::before {
+  content: "#f0f0f0";
+  display: inline-block;
+}
+
+.var-a-c-primary::before {
+  display: inline-block;
+  content: "c-primary";
+}
+
+.var-b-c-primary::before {
+  content: "#1a1a1a";
+  display: inline-block;
+}
+
+.var-a-c-error::before {
+  display: inline-block;
+  content: "c-error";
+}
+
+.var-b-c-error::before {
+  content: "#b40016";
+  display: inline-block;
+}
+
+.var-a-c-info::before {
+  display: inline-block;
+  content: "c-info";
+}
+
+.var-b-c-info::before {
+  content: "#1a32a4";
+  display: inline-block;
+}
+
+.var-a-c-valid::before {
+  display: inline-block;
+  content: "c-valid";
+}
+
+.var-b-c-valid::before {
+  content: "#76ae4a";
+  display: inline-block;
+}
+
+.var-a-c-warning::before {
+  display: inline-block;
+  content: "c-warning";
+}
+
+.var-b-c-warning::before {
+  content: "#b40016";
+  display: inline-block;
+}
+
+.var-a-c-feel::before {
+  display: inline-block;
+  content: "c-feel";
+}
+
+.var-b-c-feel::before {
+  content: "#fb9962";
+  display: inline-block;
+}
+
+.var-a-c-limited::before {
+  display: inline-block;
+  content: "c-limited";
+}
+
+.var-b-c-limited::before {
+  content: "#000";
+  display: inline-block;
+}
+
+.var-a-c-success::before {
+  display: inline-block;
+  content: "c-success";
+}
+
+.var-b-c-success::before {
+  content: "#76ae4a";
+  display: inline-block;
+}
+
+.var-a-c-alert::before {
+  display: inline-block;
+  content: "c-alert";
+}
+
+.var-b-c-alert::before {
+  content: "#ffc700";
+  display: inline-block;
+}
+
+.var-a-c-facebook::before {
+  display: inline-block;
+  content: "c-facebook";
+}
+
+.var-b-c-facebook::before {
+  content: "#1977f3";
+  display: inline-block;
+}
+
+.var-a-c-google::before {
+  display: inline-block;
+  content: "c-google";
+}
+
+.var-b-c-google::before {
+  content: "#4285f4";
+  display: inline-block;
+}
+
+.var-a-c-naver::before {
+  display: inline-block;
+  content: "c-naver";
+}
+
+.var-b-c-naver::before {
+  content: "#03cf5d";
+  display: inline-block;
+}
+
+.var-a-c-wechat::before {
+  display: inline-block;
+  content: "c-wechat";
+}
+
+.var-b-c-wechat::before {
+  content: "#2dc100";
+  display: inline-block;
+}
+
 .bg-c-white {
   background-color: #fff;
 }
 
 .bg-c-black {
   background-color: #000;
+}
+
+.bg-c-accent {
+  background-color: #b40016;
+}
+
+.bg-c-secondary {
+  background-color: #1a1a1a;
 }
 
 .bg-c-dark-grey {
@@ -1203,11 +1411,16 @@ input[type=number] {
   left: 16px;
 }
 .tag-color-wrap .wrap-item ::before {
+  width: 100%;
+  text-align: center;
   position: absolute;
   z-index: 10;
   font-size: 12px;
   margin-top: -40px;
   left: 0;
+  mix-blend-mode: difference;
+  color: white;
+  bottom: 27px;
 }
 .tag-color-wrap .wrap-item .item {
   height: 100px;
