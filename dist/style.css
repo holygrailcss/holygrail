@@ -3757,7 +3757,7 @@ mark {
 }
 
 .c-warning {
-  color: #b40016;
+  color: #ffc700;
 }
 
 .c-feel {
@@ -3856,7 +3856,7 @@ mark {
 }
 
 .bg-warning {
-  background-color: #b40016;
+  background-color: #ffc700;
 }
 
 .bg-alert {
@@ -4589,7 +4589,7 @@ strong {
 }
 
 .free-product {
-  color: #b40016;
+  color: #ffc700;
 }
 
 .is-invert {
@@ -5112,7 +5112,7 @@ b {
   padding: 24px 16px;
   margin-top: 16px;
   text-align: center;
-  background-color: #b40016;
+  background-color: #ffc700;
   color: #fff;
 }
 
@@ -8319,7 +8319,7 @@ ul.list-breadcrumb li.list-breadcrumb-divider {
 }
 
 .tag-warning {
-  background-color: #b40016;
+  background-color: #ffc700;
   color: #fff;
   padding: 6px;
   line-height: 1;

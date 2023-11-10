@@ -9,7 +9,6 @@ $c-secondary: #1a1a1a !default;
 $c-accent: #b40016 !default;
 $c-error: #b40016 !default;
 $c-sale: #b40016 !default;
-$c-warning: #b40016 !default;
 $c-info: #1a32a4 !default;
 $c-valid: #76ae4a !default;
 $c-warning: #ffc700 !default;
@@ -480,3 +479,8 @@ $padding-right: (
     40px,
   ),
 ) !default;
+
+//@include space($breakpoints, $padding-top, $pt);
+//@include space($breakpoints, $padding-left, $pl);
+//@include space($breakpoints, $padding-bottom, $pb);
+//@include space($breakpoints, $padding-right, $pr);

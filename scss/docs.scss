@@ -8,17 +8,20 @@
 $variable-colors: (
   c-white: #{$c-white},
   c-black: #{$c-black},
-  c-accent: #{$c-accent},
-  c-secondary: #{$c-secondary},
   c-dark-grey: #{$c-dark-grey},
   c-middle-grey: #{$c-middle-grey},
   c-light-grey: #{$c-light-grey},
   c-primary: #{$c-primary},
+  c-secondary: #{$c-secondary},
+  c-accent: #{$c-accent},
   c-error: #{$c-error},
+  c-sale: #{$c-sale},
   c-info: #{$c-info},
   c-valid: #{$c-valid},
   c-warning: #{$c-warning},
   c-feel: #{$c-feel},
+  c-feel-dark: #{$c-feel-dark},
+  c-feel-light: #{$c-feel-light},
   c-limited: #{$c-limited},
   c-success: #{$c-success},
   c-alert: #{$c-alert},
@@ -265,7 +268,7 @@ $variablecolors: length($variable-colors);
 .tag-color-wrap {
   .wrap-item {
     position: relative;
-    width: 100px;
+    width: 100%;
     margin: 10px 10px 0 0;
     padding: 5px;
     box-shadow: 0 9px 25px rgb(0 0 0 / 15%);

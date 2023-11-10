@@ -466,26 +466,6 @@ input[type=number] {
   display: inline-block;
 }
 
-.var-a-c-accent::before {
-  display: inline-block;
-  content: "c-accent";
-}
-
-.var-b-c-accent::before {
-  content: "#b40016";
-  display: inline-block;
-}
-
-.var-a-c-secondary::before {
-  display: inline-block;
-  content: "c-secondary";
-}
-
-.var-b-c-secondary::before {
-  content: "#1a1a1a";
-  display: inline-block;
-}
-
 .var-a-c-dark-grey::before {
   display: inline-block;
   content: "c-dark-grey";
@@ -526,12 +506,42 @@ input[type=number] {
   display: inline-block;
 }
 
+.var-a-c-secondary::before {
+  display: inline-block;
+  content: "c-secondary";
+}
+
+.var-b-c-secondary::before {
+  content: "#1a1a1a";
+  display: inline-block;
+}
+
+.var-a-c-accent::before {
+  display: inline-block;
+  content: "c-accent";
+}
+
+.var-b-c-accent::before {
+  content: "#b40016";
+  display: inline-block;
+}
+
 .var-a-c-error::before {
   display: inline-block;
   content: "c-error";
 }
 
 .var-b-c-error::before {
+  content: "#b40016";
+  display: inline-block;
+}
+
+.var-a-c-sale::before {
+  display: inline-block;
+  content: "c-sale";
+}
+
+.var-b-c-sale::before {
   content: "#b40016";
   display: inline-block;
 }
@@ -562,7 +572,7 @@ input[type=number] {
 }
 
 .var-b-c-warning::before {
-  content: "#b40016";
+  content: "#ffc700";
   display: inline-block;
 }
 
@@ -573,6 +583,26 @@ input[type=number] {
 
 .var-b-c-feel::before {
   content: "#fb9962";
+  display: inline-block;
+}
+
+.var-a-c-feel-dark::before {
+  display: inline-block;
+  content: "c-feel-dark";
+}
+
+.var-b-c-feel-dark::before {
+  content: "#c94c07";
+  display: inline-block;
+}
+
+.var-a-c-feel-light::before {
+  display: inline-block;
+  content: "c-feel-light";
+}
+
+.var-b-c-feel-light::before {
+  content: "#fccbb0";
   display: inline-block;
 }
 
@@ -654,14 +684,6 @@ input[type=number] {
   background-color: #000;
 }
 
-.bg-c-accent {
-  background-color: #b40016;
-}
-
-.bg-c-secondary {
-  background-color: #1a1a1a;
-}
-
 .bg-c-dark-grey {
   background-color: #8e8e8e;
 }
@@ -678,7 +700,19 @@ input[type=number] {
   background-color: #1a1a1a;
 }
 
+.bg-c-secondary {
+  background-color: #1a1a1a;
+}
+
+.bg-c-accent {
+  background-color: #b40016;
+}
+
 .bg-c-error {
+  background-color: #b40016;
+}
+
+.bg-c-sale {
   background-color: #b40016;
 }
 
@@ -691,11 +725,19 @@ input[type=number] {
 }
 
 .bg-c-warning {
-  background-color: #b40016;
+  background-color: #ffc700;
 }
 
 .bg-c-feel {
   background-color: #fb9962;
+}
+
+.bg-c-feel-dark {
+  background-color: #c94c07;
+}
+
+.bg-c-feel-light {
+  background-color: #fccbb0;
 }
 
 .bg-c-limited {
@@ -1398,10 +1440,10 @@ input[type=number] {
 
 .tag-color-wrap .wrap-item {
   position: relative;
-  width: 100px;
+  width: 100%;
   margin: 10px 10px 0 0;
   padding: 5px;
-  box-shadow: 0 9px 25px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 9px 25px rgba(0, 0, 0, 0.15);
 }
 .tag-color-wrap .wrap-item::after {
   position: absolute;
