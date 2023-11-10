@@ -13,7 +13,7 @@
 
         "open:guide": "open guide/index.html",
         "docs": "sass scss/docs.scss doc/docs.css --style expanded ",
-        "build": "sass scss/style.scss dist/style.css --style expanded ",
+        "build": "sass scss/style.scss dist/style.css  && sass scss/docs.scss doc/docs.css   --style expanded ",
         "build-sass": "sass --style expanded --source-map true scss/style.scss dist/style.css  &&  sass --output-style expanded --source-map true scss/docs.scss doc/docs.css",
      
         "lint": "stylelint 'scss/**/*.?(s)css'",
