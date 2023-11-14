@@ -1773,10 +1773,31 @@ pre[class*=language-] {
   background: #fafafa;
 }
 
+.grid-6-docs {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 0;
+}
+.grid-6-docs div:nth-child(6n+3),
+.grid-6-docs div:nth-child(6n+4) {
+  background-color: #eaeaea;
+  padding: 4px;
+}
+.grid-6-docs div {
+  border-bottom: 1px solid #ebeaea;
+  padding-left: 10px;
+}
+
 .grid-8-docs {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  gap: 16px;
+  /* Opcional: Estilos para filas impares */
+}
+.grid-8-docs:nth-child(even) {
+  background-color: #f7f6f6; /* Cambia el color de fondo de las filas pares */
+}
+.grid-8-docs:nth-child(odd) {
+  background-color: #fff; /* Cambia el color de fondo de las filas impares */
 }
 
 .grid-24-docs {
@@ -1784,6 +1805,23 @@ pre[class*=language-] {
   grid-template-columns: repeat(24, 1fr);
   gap: 16px;
   align-items: start;
+}
+
+.grid-10-docs {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  border-bottom: 1px dashed #d8d8d8;
+  border-left: 1px dashed #d8d8d8;
+  align-items: start;
+}
+.grid-10-docs div {
+  padding: 10px;
+  border-top: 1px dashed #d8d8d8;
+  border-right: 1px dashed #d8d8d8;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=docs.css.map */
