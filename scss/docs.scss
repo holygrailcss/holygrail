@@ -241,7 +241,7 @@ $variablecolors: length($variable-colors);
 
 @include muestraArray($heights, 'heights', 2);
 @include muestraArray($headersFluids, 'fluids', 3);
-@include muestraArray($headers, 'headers', 6);
+@include muestraArray($minheaders, 'minheaders', 4);
 
 .font-family-a {
   &::after {

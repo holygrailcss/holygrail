@@ -1132,26 +1132,212 @@ input[type=number] {
   content: "0.8";
 }
 
-.headers .filas:nth-child(1) .item::after {
+.minheaders .filas:nth-child(1) .item::after {
   content: "tit-m";
 }
-.headers .filas:nth-child(1) .item-1::after {
+.minheaders .filas:nth-child(1) .item-1::after {
   content: "14px";
 }
-.headers .filas:nth-child(1) .item-2::after {
-  content: "14px";
-}
-.headers .filas:nth-child(1) .item-3::after {
+.minheaders .filas:nth-child(1) .item-2::after {
   content: "16px";
 }
-.headers .filas:nth-child(1) .item-4::after {
-  content: "16px";
-}
-.headers .filas:nth-child(1) .item-5::after {
+.minheaders .filas:nth-child(1) .item-3::after {
   content: "1.2";
 }
-.headers .filas:nth-child(1) .item-6::after {
+.minheaders .filas:nth-child(1) .item-4::after {
   content: "medium";
+}
+
+.minheaders .filas:nth-child(2) .item::after {
+  content: "tit-s";
+}
+.minheaders .filas:nth-child(2) .item-1::after {
+  content: "13px";
+}
+.minheaders .filas:nth-child(2) .item-2::after {
+  content: "13px";
+}
+.minheaders .filas:nth-child(2) .item-3::after {
+  content: "1.2";
+}
+.minheaders .filas:nth-child(2) .item-4::after {
+  content: "medium";
+}
+
+.minheaders .filas:nth-child(3) .item::after {
+  content: "tit-xs";
+}
+.minheaders .filas:nth-child(3) .item-1::after {
+  content: "12px";
+}
+.minheaders .filas:nth-child(3) .item-2::after {
+  content: "12px";
+}
+.minheaders .filas:nth-child(3) .item-3::after {
+  content: "1.2";
+}
+.minheaders .filas:nth-child(3) .item-4::after {
+  content: "regular";
+}
+
+.minheaders .filas:nth-child(4) .item::after {
+  content: "tit-xs-b";
+}
+.minheaders .filas:nth-child(4) .item-1::after {
+  content: "12px";
+}
+.minheaders .filas:nth-child(4) .item-2::after {
+  content: "12px";
+}
+.minheaders .filas:nth-child(4) .item-3::after {
+  content: "1.2";
+}
+.minheaders .filas:nth-child(4) .item-4::after {
+  content: "bold";
+}
+
+.minheaders .filas:nth-child(5) .item::after {
+  content: "sub-xs";
+}
+.minheaders .filas:nth-child(5) .item-1::after {
+  content: "11px";
+}
+.minheaders .filas:nth-child(5) .item-2::after {
+  content: "11px";
+}
+.minheaders .filas:nth-child(5) .item-3::after {
+  content: "1.2";
+}
+.minheaders .filas:nth-child(5) .item-4::after {
+  content: "regular";
+}
+
+.minheaders .filas:nth-child(6) .item::after {
+  content: "p-m";
+}
+.minheaders .filas:nth-child(6) .item-1::after {
+  content: "12px";
+}
+.minheaders .filas:nth-child(6) .item-2::after {
+  content: "12px";
+}
+.minheaders .filas:nth-child(6) .item-3::after {
+  content: "1.2";
+}
+.minheaders .filas:nth-child(6) .item-4::after {
+  content: "regular";
+}
+
+.minheaders .filas:nth-child(7) .item::after {
+  content: "p-s";
+}
+.minheaders .filas:nth-child(7) .item-1::after {
+  content: "12px";
+}
+.minheaders .filas:nth-child(7) .item-2::after {
+  content: "12px";
+}
+.minheaders .filas:nth-child(7) .item-3::after {
+  content: "1.2";
+}
+.minheaders .filas:nth-child(7) .item-4::after {
+  content: "regular";
+}
+
+.minheaders .filas:nth-child(8) .item::after {
+  content: "p-xs";
+}
+.minheaders .filas:nth-child(8) .item-1::after {
+  content: "11px";
+}
+.minheaders .filas:nth-child(8) .item-2::after {
+  content: "11px";
+}
+.minheaders .filas:nth-child(8) .item-3::after {
+  content: "1.2";
+}
+.minheaders .filas:nth-child(8) .item-4::after {
+  content: "regular";
+}
+
+.minheaders .filas:nth-child(9) .item::after {
+  content: "p-tag";
+}
+.minheaders .filas:nth-child(9) .item-1::after {
+  content: "10px";
+}
+.minheaders .filas:nth-child(9) .item-2::after {
+  content: "10px";
+}
+.minheaders .filas:nth-child(9) .item-3::after {
+  content: "1.3";
+}
+.minheaders .filas:nth-child(9) .item-4::after {
+  content: "regular";
+}
+
+.minheaders .filas:nth-child(10) .item::after {
+  content: "p-m-b";
+}
+.minheaders .filas:nth-child(10) .item-1::after {
+  content: "12px";
+}
+.minheaders .filas:nth-child(10) .item-2::after {
+  content: "13px";
+}
+.minheaders .filas:nth-child(10) .item-3::after {
+  content: "1.2";
+}
+.minheaders .filas:nth-child(10) .item-4::after {
+  content: "bold";
+}
+
+.minheaders .filas:nth-child(11) .item::after {
+  content: "p-m-m";
+}
+.minheaders .filas:nth-child(11) .item-1::after {
+  content: "12px";
+}
+.minheaders .filas:nth-child(11) .item-2::after {
+  content: "13px";
+}
+.minheaders .filas:nth-child(11) .item-3::after {
+  content: "1.2";
+}
+.minheaders .filas:nth-child(11) .item-4::after {
+  content: "medium";
+}
+
+.minheaders .filas:nth-child(12) .item::after {
+  content: "p-xs-b";
+}
+.minheaders .filas:nth-child(12) .item-1::after {
+  content: "11px";
+}
+.minheaders .filas:nth-child(12) .item-2::after {
+  content: "12px";
+}
+.minheaders .filas:nth-child(12) .item-3::after {
+  content: "1.3";
+}
+.minheaders .filas:nth-child(12) .item-4::after {
+  content: "bold";
+}
+
+.minheaders .filas:nth-child(13) .item::after {
+  content: "p-xxs-b";
+}
+.minheaders .filas:nth-child(13) .item-1::after {
+  content: "9px";
+}
+.minheaders .filas:nth-child(13) .item-2::after {
+  content: "9px";
+}
+.minheaders .filas:nth-child(13) .item-3::after {
+  content: "1.3";
+}
+.minheaders .filas:nth-child(13) .item-4::after {
+  content: "bold";
 }
 
 .font-family-a::after {
