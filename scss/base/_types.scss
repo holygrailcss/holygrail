@@ -1,8 +1,6 @@
 @import '../abstract/_all';
 
 body {
-  @include font-regular;
-
   -webkit-overflow-scrolling: touch;
   font-variant-ligatures: no-common-ligatures;
   text-rendering: optimizelegibility;

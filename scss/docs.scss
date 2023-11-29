@@ -660,3 +660,21 @@ pre[class*='language-'] {
     align-items: center;
   }
 }
+
+.grid-4-docs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-bottom: 1px dashed #d8d8d8;
+  border-left: 1px dashed #d8d8d8;
+
+  align-items: start;
+  & > div {
+    padding: 10px;
+    border-top: 1px dashed #d8d8d8;
+    border-right: 1px dashed #d8d8d8;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

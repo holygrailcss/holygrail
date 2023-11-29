@@ -1154,270 +1154,6 @@ input[type=number] {
   content: "medium";
 }
 
-.headers .filas:nth-child(2) .item::after {
-  content: "tit-s";
-}
-.headers .filas:nth-child(2) .item-1::after {
-  content: "13px";
-}
-.headers .filas:nth-child(2) .item-2::after {
-  content: "13px";
-}
-.headers .filas:nth-child(2) .item-3::after {
-  content: "13px";
-}
-.headers .filas:nth-child(2) .item-4::after {
-  content: "13px";
-}
-.headers .filas:nth-child(2) .item-5::after {
-  content: "1.2";
-}
-.headers .filas:nth-child(2) .item-6::after {
-  content: "medium";
-}
-
-.headers .filas:nth-child(3) .item::after {
-  content: "tit-xs";
-}
-.headers .filas:nth-child(3) .item-1::after {
-  content: "12px";
-}
-.headers .filas:nth-child(3) .item-2::after {
-  content: "12px";
-}
-.headers .filas:nth-child(3) .item-3::after {
-  content: "12px";
-}
-.headers .filas:nth-child(3) .item-4::after {
-  content: "12px";
-}
-.headers .filas:nth-child(3) .item-5::after {
-  content: "1.2";
-}
-.headers .filas:nth-child(3) .item-6::after {
-  content: "regular";
-}
-
-.headers .filas:nth-child(4) .item::after {
-  content: "tit-xs-b";
-}
-.headers .filas:nth-child(4) .item-1::after {
-  content: "12px";
-}
-.headers .filas:nth-child(4) .item-2::after {
-  content: "12px";
-}
-.headers .filas:nth-child(4) .item-3::after {
-  content: "12px";
-}
-.headers .filas:nth-child(4) .item-4::after {
-  content: "12px";
-}
-.headers .filas:nth-child(4) .item-5::after {
-  content: "1.2";
-}
-.headers .filas:nth-child(4) .item-6::after {
-  content: "bold";
-}
-
-.headers .filas:nth-child(5) .item::after {
-  content: "sub-xs";
-}
-.headers .filas:nth-child(5) .item-1::after {
-  content: "11px";
-}
-.headers .filas:nth-child(5) .item-2::after {
-  content: "11px";
-}
-.headers .filas:nth-child(5) .item-3::after {
-  content: "11px";
-}
-.headers .filas:nth-child(5) .item-4::after {
-  content: "11px";
-}
-.headers .filas:nth-child(5) .item-5::after {
-  content: "1.2";
-}
-.headers .filas:nth-child(5) .item-6::after {
-  content: "regular";
-}
-
-.headers .filas:nth-child(6) .item::after {
-  content: "p-m";
-}
-.headers .filas:nth-child(6) .item-1::after {
-  content: "12px";
-}
-.headers .filas:nth-child(6) .item-2::after {
-  content: "12px";
-}
-.headers .filas:nth-child(6) .item-3::after {
-  content: "12px";
-}
-.headers .filas:nth-child(6) .item-4::after {
-  content: "12px";
-}
-.headers .filas:nth-child(6) .item-5::after {
-  content: "1.2";
-}
-.headers .filas:nth-child(6) .item-6::after {
-  content: "regular";
-}
-
-.headers .filas:nth-child(7) .item::after {
-  content: "p-s";
-}
-.headers .filas:nth-child(7) .item-1::after {
-  content: "12px";
-}
-.headers .filas:nth-child(7) .item-2::after {
-  content: "12px";
-}
-.headers .filas:nth-child(7) .item-3::after {
-  content: "12px";
-}
-.headers .filas:nth-child(7) .item-4::after {
-  content: "12px";
-}
-.headers .filas:nth-child(7) .item-5::after {
-  content: "1.2";
-}
-.headers .filas:nth-child(7) .item-6::after {
-  content: "regular";
-}
-
-.headers .filas:nth-child(8) .item::after {
-  content: "p-xs";
-}
-.headers .filas:nth-child(8) .item-1::after {
-  content: "11px";
-}
-.headers .filas:nth-child(8) .item-2::after {
-  content: "11px";
-}
-.headers .filas:nth-child(8) .item-3::after {
-  content: "11px";
-}
-.headers .filas:nth-child(8) .item-4::after {
-  content: "11px";
-}
-.headers .filas:nth-child(8) .item-5::after {
-  content: "1.2";
-}
-.headers .filas:nth-child(8) .item-6::after {
-  content: "regular";
-}
-
-.headers .filas:nth-child(9) .item::after {
-  content: "p-tag";
-}
-.headers .filas:nth-child(9) .item-1::after {
-  content: "10px";
-}
-.headers .filas:nth-child(9) .item-2::after {
-  content: "10px";
-}
-.headers .filas:nth-child(9) .item-3::after {
-  content: "10px";
-}
-.headers .filas:nth-child(9) .item-4::after {
-  content: "10px";
-}
-.headers .filas:nth-child(9) .item-5::after {
-  content: "1.3";
-}
-.headers .filas:nth-child(9) .item-6::after {
-  content: "regular";
-}
-
-.headers .filas:nth-child(10) .item::after {
-  content: "p-m-b";
-}
-.headers .filas:nth-child(10) .item-1::after {
-  content: "12px";
-}
-.headers .filas:nth-child(10) .item-2::after {
-  content: "12px";
-}
-.headers .filas:nth-child(10) .item-3::after {
-  content: "13px";
-}
-.headers .filas:nth-child(10) .item-4::after {
-  content: "13px";
-}
-.headers .filas:nth-child(10) .item-5::after {
-  content: "1.2";
-}
-.headers .filas:nth-child(10) .item-6::after {
-  content: "bold";
-}
-
-.headers .filas:nth-child(11) .item::after {
-  content: "p-m-m";
-}
-.headers .filas:nth-child(11) .item-1::after {
-  content: "12px";
-}
-.headers .filas:nth-child(11) .item-2::after {
-  content: "12px";
-}
-.headers .filas:nth-child(11) .item-3::after {
-  content: "13px";
-}
-.headers .filas:nth-child(11) .item-4::after {
-  content: "13px";
-}
-.headers .filas:nth-child(11) .item-5::after {
-  content: "1.2";
-}
-.headers .filas:nth-child(11) .item-6::after {
-  content: "medium";
-}
-
-.headers .filas:nth-child(12) .item::after {
-  content: "p-xs-b";
-}
-.headers .filas:nth-child(12) .item-1::after {
-  content: "11px";
-}
-.headers .filas:nth-child(12) .item-2::after {
-  content: "11px";
-}
-.headers .filas:nth-child(12) .item-3::after {
-  content: "12px";
-}
-.headers .filas:nth-child(12) .item-4::after {
-  content: "12px";
-}
-.headers .filas:nth-child(12) .item-5::after {
-  content: "1.3";
-}
-.headers .filas:nth-child(12) .item-6::after {
-  content: "bold";
-}
-
-.headers .filas:nth-child(13) .item::after {
-  content: "p-xxs-b";
-}
-.headers .filas:nth-child(13) .item-1::after {
-  content: "9px";
-}
-.headers .filas:nth-child(13) .item-2::after {
-  content: "9px";
-}
-.headers .filas:nth-child(13) .item-3::after {
-  content: "9px";
-}
-.headers .filas:nth-child(13) .item-4::after {
-  content: "9px";
-}
-.headers .filas:nth-child(13) .item-5::after {
-  content: "1.3";
-}
-.headers .filas:nth-child(13) .item-6::after {
-  content: "bold";
-}
-
 .font-family-a::after {
   content: "arial, sans-serif";
   position: relative;
@@ -1815,6 +1551,23 @@ pre[class*=language-] {
   align-items: start;
 }
 .grid-10-docs div {
+  padding: 10px;
+  border-top: 1px dashed #d8d8d8;
+  border-right: 1px dashed #d8d8d8;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-4-docs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-bottom: 1px dashed #d8d8d8;
+  border-left: 1px dashed #d8d8d8;
+  align-items: start;
+}
+.grid-4-docs > div {
   padding: 10px;
   border-top: 1px dashed #d8d8d8;
   border-right: 1px dashed #d8d8d8;
