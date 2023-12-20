@@ -799,3 +799,16 @@ b {
 .p-relative {
   position: relative;
 }
+
+.sm\:reset-body {
+  @media (max-width: #{$break-sm - 1}) {
+    margin-left: -16px;
+    margin-right: -16px;
+  }
+}
+
+.sm\:grid-4 {
+  @media (max-width: #{$break-sm - 1}) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

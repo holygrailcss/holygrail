@@ -15,7 +15,6 @@ fieldset[disabled] .form-control {
   background-color: transparent;
   opacity: 1;
 }
-
 .textarea {
   height: 100px;
   padding: 10px;
@@ -24,7 +23,6 @@ fieldset[disabled] .form-control {
 label {
   font-size: $text-md;
 }
-
 select {
   background-color: $c-white;
   border-color: $c-middle-grey;
@@ -269,12 +267,6 @@ select {
       fill: $c-error;
     }
   }
-  .is-rtl & {
-    svg-icon {
-      padding-right: 0;
-      padding-left: 8px;
-    }
-  }
 }
 .validation-error-wrap {
   min-height: 24px;
@@ -377,6 +369,9 @@ input::input-placeholder {
 }
 .form-input-label-2,
 .error-zone {
+  label {
+    font-size: $text-input-d;
+  }
   font-family: $font-family-form;
   position: relative;
   .validation-error-messages {
@@ -531,6 +526,15 @@ input::input-placeholder {
     }
   }
 }
+
+.form-input-label-2 {
+  &.required {
+    label::after {
+      content: ' *';
+    }
+  }
+}
+
 .is-error {
   .input,
   label,
@@ -771,7 +775,6 @@ input::input-placeholder {
     }
   }
 }
-
 @supports (-ms-ime-align: auto) {
   .form-input-label > label {
     display: none;
@@ -787,4 +790,31 @@ input::input-placeholder {
   .formlabel input:-ms-input-placeholder {
     color: $c-dark-grey !important;
   }
+}
+
+.form-postcode {
+  flex-wrap: wrap;
+  gap: 8px;
+
+  > :not(.select):nth-child(1) {
+    flex: 0 0 200px;
+  }
+
+  > :nth-child(2) {
+    flex: 1 0 auto;
+  }
+
+  .form-input-label-2 .help {
+    width: 100%;
+  }
+}
+
+.form-input-mobile {
+  position: absolute;
+  z-index: 1;
+  width: calc(100% - 40px);
+  max-width: 450px;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
 }

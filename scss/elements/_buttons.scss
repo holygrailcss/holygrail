@@ -1267,6 +1267,7 @@ button {
 }
 
 .btn.btn-secondary-rd {
+  font-size: $text-input-d;
   border-radius: $btn-radius;
   border: 1px solid $c-primary;
   padding: 9px 2px 4px;
@@ -1277,6 +1278,7 @@ button {
   font-size: $btn-text-r;
 
   @media (min-width: $break-sm) {
+    font-size: $text-input-d;
     padding: 16px 2px 14px;
     height: 48px;
     font-size: $btn-text-m;

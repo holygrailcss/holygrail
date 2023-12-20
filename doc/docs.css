@@ -1703,11 +1703,16 @@ pre[class*=language-] {
 .grid-6-docs div:nth-child(6n+3),
 .grid-6-docs div:nth-child(6n+4) {
   background-color: #eaeaea;
-  padding: 4px;
 }
 .grid-6-docs div {
-  border-bottom: 1px solid #ebeaea;
-  padding-left: 10px;
+  border-bottom: 1px solid #f6f6f6;
+  padding: 6px;
+}
+.grid-6-docs div:nth-child(6n+1),
+.grid-6-docs div:nth-child(6n+3),
+.grid-6-docs div:nth-child(6n+5) {
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .grid-8-docs {

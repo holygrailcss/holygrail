@@ -1,5 +1,4 @@
 @import '../abstract/_all';
-
 .ico-big {
   width: 48px;
   height: 48px;
@@ -8,7 +7,6 @@
   box-sizing: border-box;
   border-radius: 50%;
 }
-
 .ico {
   svg {
     display: inline-block;
@@ -16,9 +14,7 @@
     vertical-align: middle;
   }
 }
-
 // soporte para estilos de color iconos con el componente svg-icon
-
 svg-icon {
   div {
     display: flex;
@@ -28,39 +24,43 @@ svg-icon {
   &.c-invert {
     fill: $c-white;
   }
-
   &.ico-white,
   &.c-invert {
     path {
       fill: $c-white;
     }
   }
-
   &.ico-error {
     path {
       fill: $c-error;
     }
   }
-
   &.ico-success {
     path {
       fill: $c-valid;
     }
   }
-
   &.ico-feel {
     path {
       fill: $c-feel-dark;
     }
   }
 }
-
 .has-light {
   svg {
     path {
       fill: white;
       stroke: none;
     }
+  }
+  a {
+    color: $c-white;
+  }
+  a:focus,
+  a:hover,
+  a:active {
+    text-decoration: none;
+    color: $c-white;
   }
 }
 .has-error {
@@ -84,7 +84,6 @@ svg-icon {
     }
   }
 }
-
 .ico-ball {
   position: relative;
   width: 40px;
@@ -115,27 +114,22 @@ svg-icon {
     margin-top: -4px;
   }
 }
-
 .x24 {
   width: 24px;
   height: 24px;
 }
-
 .x32 {
   width: 32px;
   height: 32px;
 }
-
 .x48 {
   width: 48px;
   height: 48px;
 }
-
 .x64 {
   width: 64px;
   height: 64px;
 }
-
 .btn.btn-link.has-ico-pre {
   padding-left: 18px;
   .ico-pre {
@@ -160,7 +154,6 @@ svg-icon {
     }
   }
 }
-
 svg-icon.ico-post,
 svg-icon.ico-pre {
   margin: 0 16px;

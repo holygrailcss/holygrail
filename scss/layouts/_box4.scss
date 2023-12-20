@@ -16,16 +16,4 @@
     top: 44px;
     left: 20px;
   }
-
-  .is-rtl & {
-    ul {
-      margin-left: 0;
-      margin-right: 16px;
-    }
-    &::before {
-      left: initial;
-      top: 47px;
-      right: 20px;
-    }
-  }
 }

@@ -219,15 +219,23 @@
 .sk-load9 {
   position: relative;
 
-  &::before {
+  &:before {
     display: block;
     content: '';
     width: 100%;
-    padding-top: calc(66.6667% + 126px);
+    padding-top: calc(64.66667% + 126px);
     background-color: $c-white;
 
-    @media (min-width: $break-sm) {
-      padding-top: calc(64.6667% + 144px);
+    .p-view {
+      background-color: transparent;
+    }
+
+    @media (min-width: #{$break-md}) {
+      padding-top: calc(62.9% + 144px);
+    }
+
+    @media (min-width: #{$break-lg}) {
+      padding-top: calc(64.7% + 144px);
     }
   }
 
@@ -239,4 +247,16 @@
 
 .ar-3-4 {
   aspect-ratio: 3 / 4;
+}
+
+.grid-wrap-custom {
+  .sk-load:before,
+  .sk-load1:before,
+  .sk-load2:before,
+  .sk-load3:before,
+  .sk-load5:before,
+  .sk-load6:before,
+  .p-view {
+    background-color: transparent;
+  }
 }

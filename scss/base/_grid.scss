@@ -189,10 +189,34 @@
 }
 
 .container-body {
-  padding: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  @media (min-width: $break-md) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.container-body2 {
+  padding-left: 16px;
+  overflow: hidden;
 
   @media (min-width: $break-md) {
-    padding: 40px;
+    padding-left: 40px;
+  }
+
+  .is-rtl & {
+    padding-right: 16px;
+    padding-left: 0;
+
+    @media (min-width: $break-md) {
+      padding-right: 40px;
+      padding-left: 0;
+    }
+  }
+
+  .swiper-container {
+    overflow: inherit;
   }
 }
 
@@ -310,4 +334,28 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 16px;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 16px;
+}
+.grid-2-desktop {
+  @media (min-width: $break-sm) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 16px;
+    align-items: end;
+  }
+}
+
+.grid-2-wide {
+  grid-column: span 2;
 }

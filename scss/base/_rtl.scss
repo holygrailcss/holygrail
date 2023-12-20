@@ -1,33 +1,46 @@
 @import '../abstract/_all';
-
 .is-rtl {
   .fl-left {
     float: right;
   }
-
   .fl-right {
     float: left;
   }
-
+  .text-left {
+    text-align: right;
+  }
   .text-right {
     text-align: left;
   }
-
   .xs\:text-right {
     @media (max-width: #{$break-sm - 1}) {
       text-align: left;
     }
   }
-
   .sm\:text-right {
     @media (max-width: #{$break-sm - 1}) {
       text-align: left;
     }
   }
-
   .md\:text-right {
     @media (max-width: #{$break-md - 1}) {
       text-align: left;
+    }
+  }
+
+  .xs\:text-left {
+    @media (max-width: #{$break-sm - 1}) {
+      text-align: right;
+    }
+  }
+  .sm\:text-left {
+    @media (max-width: #{$break-sm - 1}) {
+      text-align: right;
+    }
+  }
+  .md\:text-left {
+    @media (max-width: #{$break-md - 1}) {
+      text-align: right;
     }
   }
 
@@ -35,66 +48,53 @@
     padding-right: 16px;
     padding-left: 45px;
   }
-
   .select-size select:not([multiple]) {
     padding-right: 16px;
     padding-left: 16px;
   }
-
   .select:not(.is-multiple, .is-loading)::after {
     right: inherit;
     left: 20px;
   }
-
   .select.select-label select {
     padding-right: 100px;
   }
-
   .select.select-label label {
     left: inherit;
     right: 16px;
   }
-
   .select:not(.is-multiple, .is-loading).select-box::after {
     left: 8px;
   }
-
   @for $i from 1 through length($espaciados) {
     $espaciado: nth($espaciados, $i);
-
     .mr-#{$espaciado} {
       margin-right: 0;
       margin-left: #{$espaciado}px;
     }
-
     .ml-#{$espaciado} {
       margin-left: 0;
       margin-right: #{$espaciado}px;
     }
-
     .pr-#{$espaciado} {
       padding-right: 0;
       padding-left: #{$espaciado}px;
     }
-
     .pl-#{$espaciado} {
       padding-left: 0;
       padding-right: #{$espaciado}px;
     }
   }
-
   .check-center.check-bleed.checkbox-radio [type='radio']:checked + label::before,
   .check-center.check-bleed.checkbox-radio [type='radio']:not(:checked) + label::before {
     left: initial;
     right: 0;
   }
-
   .check-center.check-bleed.checkbox-radio [type='radio']:checked + label .ico-radio,
   .check-center.check-bleed.checkbox-radio [type='radio']:not(:checked) + label .ico-radio {
     left: initial;
     right: 7px;
   }
-
   .btn {
     &.btn-separate {
       svg-icon {
@@ -103,59 +103,49 @@
         margin-right: 8px;
       }
     }
-
     &.btn-world {
       .btn-world-center {
         text-align: right;
       }
-
       .btn-world-right {
         transform: rotateY(180deg);
       }
     }
   }
-
   .btn-group {
     .btn {
       &:first-child() {
         border-radius: 0 $btn-radius $btn-radius 0;
       }
-
       &:last-child() {
         border-radius: $btn-radius 0 0 $btn-radius;
       }
     }
   }
-
   .btn-social-login {
     svg {
       margin-right: 0;
       margin-left: 8px;
     }
   }
-
   .btn-social {
     padding-right: 48px;
     padding-left: 0;
-
     svg-icon {
       right: 1px;
       left: auto;
       margin-right: 0;
       margin-left: 16px;
     }
-
     &.btn-google {
       padding-right: 60px;
       padding-left: 0;
     }
-
     &.btn-naver {
       padding-right: 80px;
       padding-left: 0;
     }
   }
-
   .checkbox-item {
     [type='checkbox']:not(:checked),
     [type='checkbox']:checked {
@@ -164,20 +154,17 @@
       position: absolute;
       width: 70px;
     }
-
     [type='checkbox']:not(:checked) + label::before,
     [type='checkbox']:checked + label::before {
       left: auto;
       right: 0;
       margin: 0 0 0 10px;
     }
-
     [type='checkbox']:not(:checked) + label,
     [type='checkbox']:checked + label {
       padding-left: 0;
       padding-right: 40px;
     }
-
     [type='checkbox']:not(:checked) + label span,
     [type='checkbox']:checked + label span {
       &.theta {
@@ -185,14 +172,12 @@
         padding-right: 40px;
       }
     }
-
     [type='checkbox']:not(:checked) + label .icon,
     [type='checkbox']:checked + label .icon {
       right: 5px;
       left: auto;
       top: 4px;
     }
-
     .ma-wrapper-terms-inner {
       span,
       span.legal-text {
@@ -201,21 +186,18 @@
       }
     }
   }
-
   .check-bleed {
     &.checkbox-radio [type='radio']:checked + label .ico-radio,
     &.checkbox-radio [type='radio']:not(:checked) + label .ico-radio {
       left: 0;
       right: 17px;
     }
-
     &.checkbox-radio [type='radio']:checked + label::before,
     &.checkbox-radio [type='radio']:not(:checked) + label::before {
       left: auto;
       right: 0;
     }
   }
-
   .check-center {
     &.checkbox-radio [type='radio']:checked + label::before,
     &.checkbox-radio [type='radio']:not(:checked) + label::before {
@@ -223,19 +205,16 @@
       right: 16px;
       margin: 0;
     }
-
     &.checkbox-radio [type='radio']:checked + label .ico-radio,
     &.checkbox-radio [type='radio']:not(:checked) + label .ico-radio {
       left: 0;
       right: 23px;
     }
-
     .box3-content {
       padding-left: 0;
       padding-right: calc(48px);
     }
   }
-
   .checkbox-radio {
     [type='radio']:not(:checked),
     [type='radio']:checked {
@@ -245,32 +224,27 @@
       width: 70px;
     }
   }
-
   .checkbox-item-text {
     span {
       margin-left: 0;
       margin-right: 40px;
     }
   }
-
   [type='radio']:not(:checked),
   [type='radio']:checked,
   .checkbox-card [type='radio'] {
     left: 9999px;
   }
-
   .checkbox-item-2 [type='checkbox']:not(:checked),
   .checkbox-item-2 [type='checkbox']:checked {
     left: 9999px;
   }
-
   .color-wrap {
     button {
       margin-right: 0;
       margin-left: 8px;
     }
   }
-
   .form-input-label,
   .form-input-label-2 {
     &.datalist {
@@ -278,7 +252,6 @@
         right: auto;
         left: 16px;
       }
-
       .validation-error-messages {
         svg {
           left: auto;
@@ -286,53 +259,44 @@
       }
     }
   }
-
   .select {
     &.select-box {
       select {
         padding: 0 8px 0 16px;
       }
-
       &::after {
         left: 6px;
         right: auto;
       }
     }
-
     &.select-flat {
       label {
         left: auto;
       }
-
       select {
         padding-right: 0;
       }
-
       &::after {
         left: 20px;
         right: auto;
       }
     }
   }
-
   .form-input-label {
     .info-text {
       left: 0;
     }
-
     &.icon-right {
       .form-text {
         right: auto;
         left: 0;
       }
     }
-
     &.has-ico-post {
       svg-icon {
         position: absolute;
         right: 0;
       }
-
       .validation-error-messages {
         svg-icon {
           position: relative;
@@ -340,14 +304,12 @@
       }
     }
   }
-
   .form-input-prefix {
     .input-prefix {
       margin-right: 0;
       margin-left: 8px;
     }
   }
-
   .form-input-label-2 {
     &.icon-right {
       .form-text {
@@ -355,40 +317,34 @@
         left: 0;
       }
     }
-
     &.has-ico-post {
       .ico-post {
         right: auto;
         left: 0;
       }
-
       .validation-error-messages {
         svg-icon {
           position: relative;
         }
       }
     }
-
     &.has-ico-pre {
       .ico-pre {
         position: absolute;
         right: 0;
         left: auto;
       }
-
       .validation-error-messages {
         svg-icon {
           position: relative;
         }
       }
     }
-
     .info-text {
       left: 0;
       right: initial;
     }
   }
-
   .has-ico-post {
     &.btn,
     & > input,
@@ -397,7 +353,6 @@
       padding-left: $btn-padding * 2 + $svg-size;
     }
   }
-
   .has-ico-pre {
     &.btn,
     & > input,
@@ -406,37 +361,30 @@
       padding-right: $btn-padding * 2 + $svg-size + 4px;
     }
   }
-
   .link-svg-pre,
   button.link-line.link-svg-pre {
     padding-left: 0;
     padding-right: 20px;
-
     &::after {
       left: 0;
     }
-
     svg-icon {
       left: auto;
       right: 0;
     }
   }
-
   .link-svg-post,
   button.link-line.link-svg-post {
     padding-left: 20px;
     padding-right: 0;
-
     &::after {
       right: 0;
     }
-
     svg-icon {
       right: auto;
       left: 0;
     }
   }
-
   ul.list-disc {
     li {
       &::after {
@@ -450,30 +398,83 @@
       padding-left: 16px;
       padding-right: 42px;
     }
-
     &.list-tertiary {
       padding-left: 16px;
       padding-right: 64px;
     }
   }
-
   .tabs-mini {
     float: left;
-
     li:first-child a::after {
       left: 0;
       right: auto;
     }
   }
-
   .header-account-back {
     left: auto;
     right: 0;
-
     svg-icon {
       svg {
         transform: rotate(180deg);
       }
+    }
+  }
+  .validation-error-messages {
+    svg-icon {
+      padding-right: 0;
+      padding-left: 8px;
+    }
+  }
+  .tooltip-sm {
+    left: calc(50% - 16px);
+    right: auto;
+    padding-left: $tooltip-padding + 16px;
+    padding-right: $tooltip-padding * 2;
+    &::after {
+      right: auto;
+      left: $tooltip-dist;
+    }
+    &.tooltip-tr,
+    &.tooltip-br {
+      right: calc(50% - 16px);
+      left: auto;
+      &::after {
+        left: auto;
+        right: $tooltip-dist;
+      }
+    }
+    .close {
+      right: auto;
+      left: $tooltip-padding;
+    }
+  }
+  .tooltip-sm-temp {
+    left: -8px;
+    right: auto;
+    padding-left: $tooltip-padding + 16px;
+    padding-right: $tooltip-padding * 2;
+    &::after {
+      right: auto;
+      left: $tooltip-dist;
+    }
+    .close-temp {
+      right: auto;
+      left: $tooltip-padding;
+    }
+  }
+  .tag-new {
+    right: auto;
+    left: -30px;
+  }
+  .box4 {
+    ul {
+      margin-left: 0;
+      margin-right: 16px;
+    }
+    &::before {
+      left: initial;
+      top: 47px;
+      right: 20px;
     }
   }
 }

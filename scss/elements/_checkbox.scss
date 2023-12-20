@@ -713,3 +713,8 @@
     }
   }
 }
+
+.checkbox-item [type='checkbox']:not(:checked) + label::before,
+.checkbox-item [type='checkbox']:checked + label::before {
+  background-color: #fff;
+}

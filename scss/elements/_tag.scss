@@ -55,8 +55,4 @@
   top: 10px;
   right: -30px;
   position: absolute;
-  .is-rtl & {
-    right: auto;
-    left: -30px;
-  }
 }
