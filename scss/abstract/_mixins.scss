@@ -691,11 +691,15 @@ $spriteHeight: 400;
 @mixin heights-mix() {
   @each $height-name in map.keys(setup.$heights) {
     $values: map.get(setup.$heights, $height-name);
+    $val-desktop: list.nth($values, 1);
+    @if list.length($values) >= 2 {
+      $val-desktop: list.nth($values, 2);
+    }
     .#{$height-name} {
       min-height: list.nth($values, 1);
 
       @media (min-width: breakpoints.$break-sm) {
-        min-height: list.nth($values, 2);
+        min-height: $val-desktop;
       }
     }
   }
