@@ -1,6 +1,8 @@
-@import '../abstract/_all';
+@use '../abstract/_all';
+@use '../abstract/breakpoints';
+@use '../abstract/setup';
 
-@media (max-width: #{$break-sm - 1}) {
+@media (max-width: #{breakpoints.$break-sm - 1}) {
   /* no se usa */
   .header-account-logo {
     display: none;
@@ -17,11 +19,11 @@
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
-  background-color: $c-white;
+  background-color: setup.$c-white;
   z-index: 1002;
-  border-bottom: 1px solid $c-middle-grey;
+  border-bottom: 1px solid setup.$c-middle-grey;
 
-  @media (min-width: $break-sm) {
+  @media (min-width: breakpoints.$break-sm) {
     height: 72px;
     padding: 0 16px;
   }
@@ -100,7 +102,7 @@
     height: 20%;
   }
 
-  @media (min-width: $break-sm) {
+  @media (min-width: breakpoints.$break-sm) {
     transform: translateY(-100px);
     display: none;
   }
@@ -110,8 +112,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: $c-white;
-  border-bottom: 1px solid $c-middle-grey;
+  background-color: setup.$c-white;
+  border-bottom: 1px solid setup.$c-middle-grey;
 }
 
 .header-cart-list {
@@ -137,7 +139,7 @@
     opacity: 1;
     transform: translateY(56px);
 
-    @media (min-width: $break-sm) {
+    @media (min-width: breakpoints.$break-sm) {
       transform: translateY(72px);
     }
   }

@@ -1,9 +1,10 @@
-@import '../abstract/_all';
+@use '../abstract/_all';
+@use '../abstract/setup';
 
 .hg-bread {
-  background-color: $c-white;
+  background-color: setup.$c-white;
   padding: 0;
-  border-bottom: 1px solid $c-middle-grey;
+  border-bottom: 1px solid setup.$c-middle-grey;
 
   .hg-bread-inner {
     display: table;
@@ -37,7 +38,7 @@
     div {
       width: 42px;
       height: 1px;
-      background-color: $c-primary;
+      background-color: setup.$c-primary;
     }
   }
 

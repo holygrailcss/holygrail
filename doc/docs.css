@@ -1630,12 +1630,10 @@ pre[class*=language-] {
 }
 
 .mini-box span {
-  display: block;
-  font-size: 14px;
-}
-.mini-box span {
   font-family: arial, sans-serif;
   font-weight: 900;
+  display: block;
+  font-size: 14px;
 }
 
 .filas {
@@ -1673,10 +1671,12 @@ pre[class*=language-] {
 .grid-8-docs {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  /* Opcional: Estilos para filas impares */
 }
 .grid-8-docs:nth-child(even) {
   background-color: #f7f6f6; /* Cambia el color de fondo de las filas pares */
+}
+.grid-8-docs {
+  /* Opcional: Estilos para filas impares */
 }
 .grid-8-docs:nth-child(odd) {
   background-color: #fff; /* Cambia el color de fondo de las filas impares */

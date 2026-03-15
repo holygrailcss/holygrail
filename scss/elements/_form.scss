@@ -1,10 +1,15 @@
-@import '../abstract/_all';
+@use '../abstract/_all';
+@use '../abstract/breakpoints';
+@use '../abstract/fonts';
+@use '../abstract/mixins';
+@use '../abstract/setup';
+
 $input-padding-x: 14px;
 $input-padding-y: 14px;
 input:focus,
 textarea:focus {
   outline: none;
-  border: 1px solid $c-primary;
+  border: 1px solid setup.$c-primary;
 }
 .form {
   width: 100%;
@@ -21,19 +26,19 @@ fieldset[disabled] .form-control {
   box-sizing: border-box;
 }
 label {
-  font-size: $text-md;
+  font-size: setup.$text-md;
 }
 select {
-  background-color: $c-white;
-  border-color: $c-middle-grey;
-  border-radius: $form-radius;
-  color: $c-primary;
+  background-color: setup.$c-white;
+  border-color: setup.$c-middle-grey;
+  border-radius: setup.$form-radius;
+  color: setup.$c-primary;
 }
 .select {
   max-width: 100%;
   appearance: none;
   align-items: center;
-  border-radius: $form-radius;
+  border-radius: setup.$form-radius;
   box-shadow: none;
   display: inline-flex;
   justify-content: flex-start;
@@ -52,12 +57,12 @@ select {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: $btn-padding;
+    left: setup.$btn-padding;
     z-index: 1;
   }
   &::after {
-    border: 1px solid $c-primary;
-    border-radius: $form-radius;
+    border: 1px solid setup.$c-primary;
+    border-radius: setup.$form-radius;
     border-right: 0;
     border-top: 0;
     content: ' ';
@@ -75,14 +80,14 @@ select {
     height: 48px;
   }
   &:not(.is-multiple, .is-loading)::after {
-    border-color: $c-primary;
+    border-color: setup.$c-primary;
   }
   select::-ms-expand {
     display: none;
   }
   select[disabled]:hover,
   fieldset[disabled] select:hover {
-    border-color: $c-light-grey;
+    border-color: setup.$c-light-grey;
   }
   select:not([multiple]) {
     padding-right: 45px;
@@ -95,7 +100,7 @@ select {
     padding: 0 40px;
   }
   &:not(.is-multiple, .is-loading):hover::after {
-    border-color: $c-primary;
+    border-color: setup.$c-primary;
   }
   &.select-label {
     select {
@@ -105,13 +110,13 @@ select {
   &.select-box {
     height: auto;
     select {
-      background-color: $c-middle-grey;
+      background-color: setup.$c-middle-grey;
       min-width: 24px;
       width: 100%;
       height: 24px;
       padding: 0 16px 0 8px;
-      font-size: $text-input-d;
-      border-radius: $form-radius;
+      font-size: setup.$text-input-d;
+      border-radius: setup.$form-radius;
       border: none;
       text-align: center;
     }
@@ -159,19 +164,19 @@ select {
       display: none;
     }
     select {
-      border-radius: $obj-radius;
-      border: 1px solid $c-primary;
+      border-radius: setup.$obj-radius;
+      border: 1px solid setup.$c-primary;
       padding: 6px 2px 4px;
       min-width: 100px;
       text-align: center;
       background: none;
       height: 32px;
-      font-size: $text-input-m;
+      font-size: setup.$text-input-m;
       opacity: 0;
-      @media (min-width: $break-sm) {
+      @media (min-width: breakpoints.$break-sm) {
         padding: 14px 2px;
         height: 48px;
-        font-size: $text-input-d;
+        font-size: setup.$text-input-d;
       }
 
       &:hover {
@@ -181,7 +186,7 @@ select {
     &.select:not([multiple]),
     &.select:not(.is-multiple) {
       height: 32px;
-      @media (min-width: $break-sm) {
+      @media (min-width: breakpoints.$break-sm) {
         height: 48px;
       }
     }
@@ -190,7 +195,7 @@ select {
       padding: 6px 2px 4px;
       height: 32px;
       width: 100px;
-      @media (min-width: $break-sm) {
+      @media (min-width: breakpoints.$break-sm) {
         width: 120px;
         padding: 14px 2px;
         height: 48px;
@@ -208,7 +213,7 @@ select {
       &:hover {
         opacity: 0.5;
       }
-      @media (min-width: $break-sm) {
+      @media (min-width: breakpoints.$break-sm) {
         padding: 16px 2px 14px;
       }
     }
@@ -220,11 +225,11 @@ select {
       left: 0;
     }
     select {
-      border-radius: $obj-radius;
+      border-radius: setup.$obj-radius;
       padding-left: 16px;
       background: none;
       padding-right: 40px;
-      border-color: $c-primary;
+      border-color: setup.$c-primary;
       &:hover {
         opacity: 0.6;
       }
@@ -243,29 +248,29 @@ select {
   padding: 14px 16px;
   position: relative;
   vertical-align: top;
-  border-radius: $form-radius;
+  border-radius: setup.$form-radius;
   height: 48px;
   box-sizing: border-box;
   background-color: transparent;
-  border-color: $c-middle-grey;
-  color: $c-primary;
+  border-color: setup.$c-middle-grey;
+  color: setup.$c-primary;
   max-width: 100%;
   width: 100%;
-  font-size: $text-input-m;
+  font-size: setup.$text-input-m;
   line-height: 1;
-  @media (min-width: $break-sm) {
-    font-size: $text-input-d;
+  @media (min-width: breakpoints.$break-sm) {
+    font-size: setup.$text-input-d;
   }
   &.validation-error {
-    border-color: $c-error;
+    border-color: setup.$c-error;
   }
 }
 .validation-error-messages {
-  color: $c-error;
+  color: setup.$c-error;
   font-weight: 500;
   svg {
     path {
-      fill: $c-error;
+      fill: setup.$c-error;
     }
   }
 }
@@ -278,26 +283,26 @@ select {
   border-right: 1px solid transparent;
   background-color: transparent;
   padding-left: 0;
-  border-bottom: 1px solid $c-primary;
+  border-bottom: 1px solid setup.$c-primary;
 }
 .input-notouch {
-  @include font-regular;
+  @include mixins.font-regular;
   pointer-events: none;
-  border-color: $c-middle-grey;
+  border-color: setup.$c-middle-grey;
   padding: 24px 0;
 }
 .inputmini {
   //todo revisar
-  border-color: $c-middle-grey;
-  color: $c-primary;
+  border-color: setup.$c-middle-grey;
+  color: setup.$c-primary;
   max-width: 100%;
   width: 58px;
   align-items: center;
-  border: 1px solid $c-middle-grey;
+  border: 1px solid setup.$c-middle-grey;
   box-shadow: none;
   display: inline-flex;
   height: 34px;
-  font-size: $text-md;
+  font-size: setup.$text-md;
   margin-left: 10px;
   text-align: center;
   justify-content: flex-start;
@@ -321,11 +326,11 @@ select {
 .input-gray {
   padding-left: 40px;
   background: rgb(0 0 0 / 5%);
-  border-radius: $obj-radius;
+  border-radius: setup.$obj-radius;
   border: none;
 }
 input::input-placeholder {
-  color: $c-middle-grey;
+  color: setup.$c-middle-grey;
   transform: translate3d(0, 0, 0);
 }
 .checkbox-text {
@@ -339,7 +344,7 @@ input::input-placeholder {
   }
 }
 .info-text {
-  color: $c-dark-grey;
+  color: setup.$c-dark-grey;
   margin-top: 4px;
   width: 100%;
   float: left;
@@ -370,20 +375,20 @@ input::input-placeholder {
 }
 .form-input-label-2,
 .error-zone {
-  font-family: $font-family-form;
+  font-family: fonts.$font-family-form;
   position: relative;
   label {
-    font-size: $text-input-d;
+    font-size: setup.$text-input-d;
   }
 
   .validation-error-messages {
     width: calc(100% - 40px);
   }
   .help {
-    font-family: $font-family-form;
+    font-family: fonts.$font-family-form;
     position: relative;
     line-height: 1.5;
-    font-size: $text-input-d;
+    font-size: setup.$text-input-d;
     margin-top: 0;
     padding-top: 2px;
     margin-bottom: 4px;
@@ -394,12 +399,12 @@ input::input-placeholder {
     align-items: flex-start;
   }
   .input-text {
-    color: $c-dark-grey;
+    color: setup.$c-dark-grey;
     margin-top: 4px;
     line-height: 1;
   }
   .info-text {
-    color: $c-dark-grey;
+    color: setup.$c-dark-grey;
     margin-top: 4px;
     width: auto;
     position: absolute;
@@ -408,7 +413,7 @@ input::input-placeholder {
   & > input,
   & > label,
   & > textarea {
-    font-family: $font-family-form;
+    font-family: fonts.$font-family-form;
     padding: 16px;
     font-weight: normal;
   }
@@ -423,8 +428,8 @@ input::input-placeholder {
     margin-top: 1px;
     margin-bottom: 0;
     line-height: 1.1;
-    color: $c-dark-grey;
-    border-radius: $obj-radius;
+    color: setup.$c-dark-grey;
+    border-radius: setup.$obj-radius;
     transition: all 0.1s ease-in-out;
     pointer-events: none;
   }
@@ -444,8 +449,8 @@ input::input-placeholder {
   & input:not(:placeholder-shown) ~ label {
     padding-top: calc(#{$input-padding-y} / 3 + 1px);
     padding-bottom: calc(#{$input-padding-y} / 3);
-    font-size: $text-sm;
-    color: $c-dark-grey;
+    font-size: setup.$text-sm;
+    color: setup.$c-dark-grey;
   }
   & input::-webkit-list-button,
   & input::-webkit-calendar-picker-indicator {
@@ -461,26 +466,26 @@ input::input-placeholder {
   select:-webkit-autofill,
   select:-webkit-autofill:hover,
   select:-webkit-autofill:focus {
-    border: 1px solid $c-middle-grey;
-    -webkit-text-fill-color: $c-primary;
-    box-shadow: 0 0 0 1000px $c-white inset;
+    border: 1px solid setup.$c-middle-grey;
+    -webkit-text-fill-color: setup.$c-primary;
+    box-shadow: 0 0 0 1000px setup.$c-white inset;
     transition: background-color 5000s ease-in-out 0s;
   }
   &.input-line .input {
     border: none;
   }
   input:-ms-input-placeholder {
-    color: $c-dark-grey !important;
+    color: setup.$c-dark-grey !important;
   }
   input {
-    background-color: $c-white;
+    background-color: setup.$c-white;
   }
   &.has-ico-pre,
   .has-ico-pre {
     &.btn,
     & > input,
     & > label {
-      padding-left: $btn-padding * 3;
+      padding-left: setup.$btn-padding * 3;
     }
     .form-icon {
       top: 0;
@@ -505,10 +510,10 @@ input::input-placeholder {
     &.btn,
     & > input,
     & > label {
-      padding-right: $btn-padding * 3;
+      padding-right: setup.$btn-padding * 3;
     }
     .form-icon {
-      padding: $btn-padding;
+      padding: setup.$btn-padding;
       top: 0;
       right: 0;
       left: auto;
@@ -541,20 +546,20 @@ input::input-placeholder {
   .input,
   label,
   .help {
-    color: $c-error !important;
+    color: setup.$c-error !important;
   }
   .input {
-    border: 1px solid $c-error;
+    border: 1px solid setup.$c-error;
   }
   .input-prefix :nth-child(1)::placeholder {
-    color: $c-error;
+    color: setup.$c-error;
   }
   svg {
     g {
-      stroke: $c-error !important;
+      stroke: setup.$c-error !important;
     }
     path {
-      fill: $c-error !important;
+      fill: setup.$c-error !important;
     }
   }
 }
@@ -562,21 +567,21 @@ input::input-placeholder {
   .input,
   label,
   .help {
-    color: $c-success !important;
+    color: setup.$c-success !important;
   }
   .input {
-    border: 1px solid $c-success;
-    color: $c-success;
+    border: 1px solid setup.$c-success;
+    color: setup.$c-success;
   }
   .input-prefix :nth-child(1)::placeholder {
-    color: $c-success;
+    color: setup.$c-success;
   }
   .input-line {
     border-top: 1px solid transparent;
     border-left: 1px solid transparent;
     border-right: 1px solid transparent;
-    border-bottom: 1px solid $c-success;
-    color: $c-success;
+    border-bottom: 1px solid setup.$c-success;
+    color: setup.$c-success;
   }
 }
 .disabled-input {
@@ -584,12 +589,12 @@ input::input-placeholder {
   opacity: 0.4;
 }
 .form-input-label {
-  font-family: $font-family-form;
+  font-family: fonts.$font-family-form;
   position: relative;
   margin-bottom: 24px;
   & > input,
   & > label {
-    font-family: $font-family-form;
+    font-family: fonts.$font-family-form;
     padding: 16px;
     font-weight: normal;
   }
@@ -604,8 +609,8 @@ input::input-placeholder {
     margin-top: 1px;
     margin-bottom: 0;
     line-height: 1.1;
-    color: $c-dark-grey;
-    border-radius: $btn-radius;
+    color: setup.$c-dark-grey;
+    border-radius: setup.$btn-radius;
     transition: all 0.1s ease-in-out;
     pointer-events: none;
   }
@@ -625,8 +630,8 @@ input::input-placeholder {
   & input:not(:placeholder-shown) ~ label {
     padding-top: calc(#{$input-padding-y} / 3 + 1px);
     padding-bottom: calc(#{$input-padding-y} / 3);
-    font-size: $text-sm;
-    color: $c-dark-grey;
+    font-size: setup.$text-sm;
+    color: setup.$c-dark-grey;
   }
   & input::-webkit-list-button,
   & input::-webkit-calendar-picker-indicator {
@@ -642,9 +647,9 @@ input::input-placeholder {
   select:-webkit-autofill,
   select:-webkit-autofill:hover,
   select:-webkit-autofill:focus {
-    border: 1px solid $c-middle-grey;
-    -webkit-text-fill-color: $c-primary;
-    box-shadow: 0 0 0 1000px $c-white inset;
+    border: 1px solid setup.$c-middle-grey;
+    -webkit-text-fill-color: setup.$c-primary;
+    box-shadow: 0 0 0 1000px setup.$c-white inset;
     transition: background-color 5000s ease-in-out 0s;
   }
   &.input-line .input {
@@ -692,14 +697,14 @@ input::input-placeholder {
   .input:focus,
   .textarea,
   .textarea:focus {
-    @include font-regular;
+    @include mixins.font-regular;
     padding: 12px 0 4px;
     height: auto;
     border: none;
-    border-bottom: 1px solid $c-primary;
+    border-bottom: 1px solid setup.$c-primary;
   }
   .input::input-placeholder {
-    @include font-regular;
+    @include mixins.font-regular;
     text-overflow: inherit;
     line-height: initial;
     white-space: pre;
@@ -725,12 +730,12 @@ input::input-placeholder {
   }
   input,
   label {
-    color: $c-white;
+    color: setup.$c-white;
   }
   .form-input-label,
   .form-input-prefix {
     & > label {
-      color: $c-white;
+      color: setup.$c-white;
     }
     & input::input-placeholder {
       color: transparent;
@@ -742,7 +747,7 @@ input::input-placeholder {
       color: transparent;
     }
     & input:not(:placeholder-shown) ~ label {
-      color: $c-white;
+      color: setup.$c-white;
     }
     input:-webkit-autofill,
     input:-webkit-autofill:hover,
@@ -753,25 +758,25 @@ input::input-placeholder {
     select:-webkit-autofill,
     select:-webkit-autofill:hover,
     select:-webkit-autofill:focus {
-      border: 1px solid $c-white;
-      -webkit-text-fill-color: $c-white;
-      box-shadow: 0 0 0 1000px $c-primary inset;
+      border: 1px solid setup.$c-white;
+      -webkit-text-fill-color: setup.$c-white;
+      box-shadow: 0 0 0 1000px setup.$c-primary inset;
     }
     .input,
     .textarea,
     .select select {
       background-color: transparent;
-      border-color: $c-white;
-      color: $c-white;
+      border-color: setup.$c-white;
+      color: setup.$c-white;
     }
   }
   .form-input-label-2 .info-text,
   .error-zone .info-text {
-    color: $c-white;
+    color: setup.$c-white;
   }
   .input-prefix {
     input::input-placeholder {
-      color: $c-white;
+      color: setup.$c-white;
       transform: translate3d(0, 0, 0);
       opacity: 0.7;
     }
@@ -782,7 +787,7 @@ input::input-placeholder {
     display: none;
   }
   .formlabel input:-ms-input-placeholder {
-    color: $c-dark-grey;
+    color: setup.$c-dark-grey;
   }
 }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -790,7 +795,7 @@ input::input-placeholder {
     display: none;
   }
   .formlabel input:-ms-input-placeholder {
-    color: $c-dark-grey !important;
+    color: setup.$c-dark-grey !important;
   }
 }
 

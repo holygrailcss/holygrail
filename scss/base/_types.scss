@@ -1,7 +1,11 @@
-@import '../abstract/_all';
+@use '../abstract/_all';
+@use '../abstract/breakpoints';
+@use '../abstract/fonts';
+@use '../abstract/mixins';
+@use '../abstract/setup';
 
 body {
-  @include font-regular;
+  @include mixins.font-regular;
 
   -webkit-overflow-scrolling: touch;
   font-variant-ligatures: no-common-ligatures;
@@ -17,59 +21,63 @@ samp {
 }
 
 select {
-  @include font-regular;
+  @include mixins.font-regular;
 }
 
 p {
-  @include font-regular;
+  @include mixins.font-regular;
 
   margin: 0;
-  font-size: $text-sm;
+  font-size: setup.$text-sm;
 
-  @media (min-width: $break-md) {
-    font-size: $text-md;
+  @media (min-width: breakpoints.$break-md) {
+    font-size: setup.$text-md;
   }
 }
 
 a {
-  color: $c-primary;
+  color: setup.$c-primary;
   text-decoration: none;
 }
 
 .secondary {
-  font-family: $font-family-c-r;
+  font-family: fonts.$font-family-c-r;
   font-weight: 100;
 }
 
-@include typesFixers($headersFixers, $fs);
-@include mintypes($minbreakpoints, $minheaders, $fs);
-@include types($breakpoints, $headers, $fs); /* todo una vez incluida */
+@include mixins.typesFixers(setup.$headersFixers, setup.$fs);
+@include mixins.mintypes(breakpoints.$minbreakpoints, setup.$minheaders, setup.$fs);
+@include mixins.types(
+  breakpoints.$breakpoints,
+  setup.$headers,
+  setup.$fs
+); /* todo una vez incluida */
 
-@include typesFluids($headersFluids);
+@include mixins.typesFluids(setup.$headersFluids);
 
 //
 
 .text-light,
 .font-light {
   // 2
-  @include font-light;
+  @include mixins.font-light;
 }
 .text-regular,
 .font-regular {
-  @include font-regular;
+  @include mixins.font-regular;
 }
 .text-medium,
 .font-medium {
-  @include font-medium;
+  @include mixins.font-medium;
 }
 .text-semibold,
 .font-semibold {
-  @include font-semibold;
+  @include mixins.font-semibold;
 }
 .text-bold,
 .font-bold {
   //2
-  @include font-bold;
+  @include mixins.font-bold;
 }
 
 .is-through {
@@ -78,7 +86,7 @@ a {
 
   &::after {
     content: '';
-    background-color: $c-primary;
+    background-color: setup.$c-primary;
     width: 100%;
     position: absolute;
     bottom: 50%;
@@ -89,6 +97,6 @@ a {
 
 .c-gray.is-through {
   &::after {
-    background-color: $c-dark-grey;
+    background-color: setup.$c-dark-grey;
   }
 }

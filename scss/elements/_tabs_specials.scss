@@ -1,4 +1,5 @@
-@import '../abstract/_all';
+@use '../abstract/_all';
+@use '../abstract/setup';
 
 .ico-round {
   width: 56px;
@@ -8,7 +9,7 @@
   display: inline-flex;
   justify-content: center;
   white-space: nowrap;
-  border: 1px solid $c-middle-grey;
+  border: 1px solid setup.$c-middle-grey;
 }
 
 .ico-round-sm {
@@ -19,7 +20,7 @@
   display: inline-flex;
   justify-content: center;
   white-space: nowrap;
-  border: 1px solid $c-middle-grey;
+  border: 1px solid setup.$c-middle-grey;
 }
 
 .checkbox-ico {
@@ -28,7 +29,7 @@
   width: 24px;
   height: 24px;
   left: auto;
-  border: 1px solid $c-middle-grey;
+  border: 1px solid setup.$c-middle-grey;
   outline: 0;
   vertical-align: top;
   margin: 0;
@@ -99,7 +100,7 @@ ul.list-clear li.list-box {
 
   &.is-active,
   &:hover {
-    border: 1px solid $c-primary;
+    border: 1px solid setup.$c-primary;
     opacity: 1;
     cursor: pointer;
   }

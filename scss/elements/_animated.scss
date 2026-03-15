@@ -1,4 +1,5 @@
-@import '../abstract/_all'; /*  deprecated no se usan */
+@use '../abstract/_all'; /*  deprecated no se usan */
+@use '../abstract/setup';
 
 .arrow-cover {
   height: auto;
@@ -6,7 +7,7 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  color: $c-primary;
+  color: setup.$c-primary;
   display: box;
   display: flexbox;
   display: flex;
@@ -38,7 +39,7 @@
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background: $c-primary;
+    background: setup.$c-primary;
     transform: translateX(-50%);
   }
 
@@ -50,7 +51,7 @@
     width: 1px;
     height: 0;
     border-radius: 2px;
-    background: $c-primary;
+    background: setup.$c-primary;
     transform: translateX(-50%);
     animation: stretch 1s 1.5s cubic-bezier(0.55, 0.085, 0, 0.99) forwards;
   }
@@ -58,16 +59,16 @@
 
 .has-light {
   .arrow-cover {
-    color: $c-white;
+    color: setup.$c-white;
   }
 
   .line-scrolldown {
     &::before {
-      background: $c-white;
+      background: setup.$c-white;
     }
 
     &::after {
-      background: $c-white;
+      background: setup.$c-white;
     }
   }
 }

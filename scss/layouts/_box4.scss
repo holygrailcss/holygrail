@@ -1,4 +1,5 @@
-@import '../abstract/_all';
+@use '../abstract/_all';
+@use '../abstract/setup';
 
 .box4 {
   position: relative;
@@ -12,7 +13,7 @@
     height: calc(100% - 48px);
     content: '';
     position: absolute;
-    background-color: $c-dark-grey;
+    background-color: setup.$c-dark-grey;
     top: 44px;
     left: 20px;
   }

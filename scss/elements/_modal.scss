@@ -1,4 +1,6 @@
-@import '../abstract/_all';
+@use '../abstract/_all';
+@use '../abstract/breakpoints';
+@use '../abstract/setup';
 
 .modalx-transparent.modalx-backdrop {
   pointer-events: none;
@@ -9,14 +11,14 @@
   }
 
   .modalx-content {
-    border: 1px solid $c-middle-grey;
+    border: 1px solid setup.$c-middle-grey;
   }
 }
 
 .modalx-xxs {
   max-width: 320px;
 
-  @media (min-width: $break-sm) {
+  @media (min-width: breakpoints.$break-sm) {
     max-width: 445px;
   }
 }
@@ -52,7 +54,7 @@
   .modalx-body {
     padding: 48px 16px 16px;
 
-    @media (min-width: $break-sm) {
+    @media (min-width: breakpoints.$break-sm) {
       padding-top: 64px;
     }
   }
@@ -68,7 +70,7 @@
   .modalx-body {
     padding: 48px 16px 16px;
 
-    @media (min-width: $break-sm) {
+    @media (min-width: breakpoints.$break-sm) {
       padding: 64px 24px 24px;
     }
   }
@@ -78,7 +80,7 @@
   .modalx-body {
     padding: 48px 16px 16px;
 
-    @media (min-width: $break-sm) {
+    @media (min-width: breakpoints.$break-sm) {
       padding: 64px 32px 32px;
     }
   }
@@ -88,7 +90,7 @@
   .modalx-body {
     padding: 40px 16px 16px;
 
-    @media (min-width: $break-sm) {
+    @media (min-width: breakpoints.$break-sm) {
       padding: 40px;
     }
   }
@@ -98,14 +100,14 @@
   .modalx-body {
     padding: 0;
 
-    @media (min-width: $break-sm) {
+    @media (min-width: breakpoints.$break-sm) {
       padding: 64px 24px 24px;
     }
   }
 }
 
 .modalx-fullmobile {
-  @media (max-width: #{$break-sm - 1}) {
+  @media (max-width: #{breakpoints.$break-sm - 1}) {
     margin: 0 !important;
     max-width: initial;
     width: 100%;
@@ -122,7 +124,7 @@
 }
 
 .modalx-fullviewport {
-  @media (max-width: #{$break-sm - 1}) {
+  @media (max-width: #{breakpoints.$break-sm - 1}) {
     margin: 0;
     max-width: initial;
   }
@@ -135,7 +137,7 @@
   align-items: center;
   min-height: calc(100% - (0.5rem * 2));
 
-  @media (min-width: $break-sm) {
+  @media (min-width: breakpoints.$break-sm) {
     min-height: calc(100% - (1.75rem * 2));
   }
 }

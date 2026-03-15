@@ -1,9 +1,11 @@
-@import '../abstract/_all';
+@use '../abstract/_all';
+@use '../abstract/setup';
+
 .ico-big {
   width: 48px;
   height: 48px;
   padding: 10px;
-  border: 1px solid $c-middle-grey;
+  border: 1px solid setup.$c-middle-grey;
   box-sizing: border-box;
   border-radius: 50%;
 }
@@ -22,27 +24,27 @@ svg-icon {
     justify-content: center;
   }
   &.c-invert {
-    fill: $c-white;
+    fill: setup.$c-white;
   }
   &.ico-white,
   &.c-invert {
     path {
-      fill: $c-white;
+      fill: setup.$c-white;
     }
   }
   &.ico-error {
     path {
-      fill: $c-error;
+      fill: setup.$c-error;
     }
   }
   &.ico-success {
     path {
-      fill: $c-valid;
+      fill: setup.$c-valid;
     }
   }
   &.ico-feel {
     path {
-      fill: $c-feel-dark;
+      fill: setup.$c-feel-dark;
     }
   }
 }
@@ -54,33 +56,33 @@ svg-icon {
     }
   }
   a {
-    color: $c-white;
+    color: setup.$c-white;
   }
   a:focus,
   a:hover,
   a:active {
     text-decoration: none;
-    color: $c-white;
+    color: setup.$c-white;
   }
 }
 .has-error {
   svg {
     path {
-      fill: $c-error;
+      fill: setup.$c-error;
     }
   }
 }
 .has-feel {
   svg {
     path {
-      fill: $c-feel-dark;
+      fill: setup.$c-feel-dark;
     }
   }
 }
 .has-success {
   svg {
     path {
-      fill: $c-success;
+      fill: setup.$c-success;
     }
   }
 }
@@ -93,21 +95,21 @@ svg-icon {
   align-content: center;
   justify-content: center;
   align-items: center;
-  background-color: $c-middle-grey;
+  background-color: setup.$c-middle-grey;
   flex: 0 0 40px;
   .ico-count {
     width: 16px;
     height: 16px;
     border-radius: 50%;
     font-size: 10px;
-    background-color: $c-primary;
-    color: $c-white;
+    background-color: setup.$c-primary;
+    color: setup.$c-white;
     text-align: center;
     line-height: 1.6;
     position: absolute;
     left: 5px;
     bottom: 5px;
-    border: 1px solid $c-white;
+    border: 1px solid setup.$c-white;
     font-weight: 600;
   }
   svg {

@@ -1,4 +1,6 @@
-@import '../abstract/_all';
+@use '../abstract/_all';
+@use '../abstract/breakpoints';
+@use '../abstract/setup';
 
 .text-center {
   text-align: center;
@@ -142,91 +144,91 @@
   position: absolute;
   box-sizing: border-box;
   left: 0;
-  padding: 0 $padding-global $padding-global;
+  padding: 0 setup.$padding-global setup.$padding-global;
   bottom: 0;
 }
 
 .xs\:text-center {
-  @media (min-width: #{$break-sm}) {
+  @media (min-width: #{breakpoints.$break-sm}) {
     text-align: center;
   }
 }
 
 .sm\:text-center {
-  @media (min-width: #{$break-sm}) {
+  @media (min-width: #{breakpoints.$break-sm}) {
     text-align: center;
   }
 }
 
 .md\:text-center {
-  @media (min-width: #{$break-md}) {
+  @media (min-width: #{breakpoints.$break-md}) {
     text-align: center;
   }
 }
 
 .lg\:text-center {
-  @media (min-width: #{$break-lg}) {
+  @media (min-width: #{breakpoints.$break-lg}) {
     text-align: center;
   }
 }
 
 .xs\:text-left {
-  @media (min-width: #{$break-sm }) {
+  @media (min-width: #{breakpoints.$break-sm }) {
     text-align: left;
   }
 }
 
 .sm\:text-left {
-  @media (min-width: #{$break-sm }) {
+  @media (min-width: #{breakpoints.$break-sm }) {
     text-align: left;
   }
 }
 
 .md\:text-left {
-  @media (min-width: #{$break-md }) {
+  @media (min-width: #{breakpoints.$break-md }) {
     text-align: left;
   }
 }
 
 .lg\:text-left {
-  @media (min-width: #{$break-lg }) {
+  @media (min-width: #{breakpoints.$break-lg }) {
     text-align: left;
   }
 }
 
 .xs\:text-right {
-  @media (min-width: #{$break-sm }) {
+  @media (min-width: #{breakpoints.$break-sm }) {
     text-align: right;
   }
 }
 
 .sm\:text-right {
-  @media (min-width: #{$break-sm }) {
+  @media (min-width: #{breakpoints.$break-sm }) {
     text-align: right;
   }
 }
 
 .md\:text-right {
-  @media (min-width: #{$break-md }) {
+  @media (min-width: #{breakpoints.$break-md }) {
     text-align: right;
   }
 }
 
 .lg\:text-right {
-  @media (min-width: #{$break-lg }) {
+  @media (min-width: #{breakpoints.$break-lg }) {
     text-align: right;
   }
 }
 
 .sm\:align-middle {
-  @media (min-width: $break-sm) {
+  @media (min-width: breakpoints.$break-sm) {
     display: flex;
     align-content: center;
     flex-wrap: wrap;
   }
 }
 .md\:align-middle {
-  @media (min-width: $break-md) {
+  @media (min-width: breakpoints.$break-md) {
     display: flex;
     align-content: center;
     flex-wrap: wrap;

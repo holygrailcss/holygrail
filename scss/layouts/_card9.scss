@@ -1,4 +1,7 @@
-@import '../abstract/_all';
+@use '../abstract/_all';
+@use '../abstract/breakpoints';
+@use '../abstract/mixins';
+@use '../abstract/setup';
 
 .card9 {
   position: relative;
@@ -35,17 +38,17 @@
     display: inline-flex;
 
     &:last-child {
-      border-right: 1px solid $c-middle-grey;
+      border-right: 1px solid setup.$c-middle-grey;
     }
 
     button {
-      @include font-regular;
+      @include mixins.font-regular;
 
       border: none;
-      background-color: $c-white;
-      border-top: 1px solid $c-middle-grey;
-      border-bottom: 1px solid $c-middle-grey;
-      border-left: 1px solid $c-middle-grey;
+      background-color: setup.$c-white;
+      border-top: 1px solid setup.$c-middle-grey;
+      border-bottom: 1px solid setup.$c-middle-grey;
+      border-left: 1px solid setup.$c-middle-grey;
       border-right: none;
       padding: 10px 0;
       min-width: 48px;
@@ -53,8 +56,8 @@
       appearance: initial;
 
       &:hover {
-        background-color: $c-primary;
-        color: $c-white;
+        background-color: setup.$c-primary;
+        color: setup.$c-white;
         cursor: pointer;
       }
     }
@@ -68,7 +71,7 @@
     z-index: 3;
     width: 100%;
 
-    @media (min-width: $break-md) {
+    @media (min-width: breakpoints.$break-md) {
       padding: 0;
       min-height: 144px;
     }
@@ -89,7 +92,7 @@
     margin-bottom: 0;
 
     .content {
-      background: $c-middle-grey;
+      background: setup.$c-middle-grey;
     }
   }
 
@@ -210,7 +213,7 @@
 }
 
 .card9-left {
-  @media (max-width: #{$break-sm - 1}) {
+  @media (max-width: #{breakpoints.$break-sm - 1}) {
     .card9-wrap {
       margin-left: 0;
     }
@@ -269,9 +272,9 @@
 }
 
 .product-tag {
-  @include font-regular;
+  @include mixins.font-regular;
 
-  color: $c-dark-grey;
+  color: setup.$c-dark-grey;
   letter-spacing: 0;
   line-height: 1;
 }
@@ -297,11 +300,11 @@
     padding-top: calc(133.3333%);
   }
 
-  @media (min-width: $break-sm) {
+  @media (min-width: breakpoints.$break-sm) {
     margin-left: 0;
     margin-right: 0;
   }
-  @media (min-width: $break-lg) {
+  @media (min-width: breakpoints.$break-lg) {
     margin-left: 0;
     margin-right: 0;
   }

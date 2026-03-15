@@ -1,151 +1,155 @@
-@import '../abstract/_all';
+@use '../abstract/_all';
+@use '../abstract/breakpoints';
+@use '../abstract/fonts';
+@use '../abstract/mixins';
+@use '../abstract/setup';
 
 .c-primary {
-  color: $c-primary;
+  color: setup.$c-primary;
 }
 .c-black {
-  color: $c-black;
+  color: setup.$c-black;
 }
 
 .c-dark-grey {
-  color: $c-dark-grey;
+  color: setup.$c-dark-grey;
 }
 .c-middle-grey {
-  color: $c-middle-grey;
+  color: setup.$c-middle-grey;
 }
 .c-light-grey {
-  color: $c-light-grey;
+  color: setup.$c-light-grey;
 }
 .c-white {
-  color: $c-white;
+  color: setup.$c-white;
 }
 .second-color {
-  color: $c-dark-grey;
+  color: setup.$c-dark-grey;
 }
 .is-info {
-  color: $c-info;
+  color: setup.$c-info;
 }
 .c-error {
-  color: $c-error;
+  color: setup.$c-error;
 }
 .c-sale {
-  color: $c-sale;
+  color: setup.$c-sale;
 }
 .c-info {
-  color: $c-info;
+  color: setup.$c-info;
 }
 .c-success {
-  color: $c-success;
+  color: setup.$c-success;
 }
 .c-valid {
-  color: $c-valid;
+  color: setup.$c-valid;
 }
 .c-warning {
-  color: $c-warning;
+  color: setup.$c-warning;
 }
 .c-feel {
-  color: $c-feel;
+  color: setup.$c-feel;
 }
 .c-feel-dark {
-  color: $c-feel-dark;
+  color: setup.$c-feel-dark;
 }
 .c-feel-light {
-  color: $c-feel-light;
+  color: setup.$c-feel-light;
 }
 .c-tier-silver {
-  color: $c-tier-silver;
+  color: setup.$c-tier-silver;
 }
 .c-tier-platinum {
-  color: $c-tier-platinum;
+  color: setup.$c-tier-platinum;
 }
 .c-tier-gold {
-  color: $c-tier-gold;
+  color: setup.$c-tier-gold;
 }
 .c-limited {
-  color: $c-limited;
+  color: setup.$c-limited;
 }
 .bg-clear {
-  background-color: $c-white;
+  background-color: setup.$c-white;
 }
 .bg-light {
-  background-color: $bg-light;
-  color: $c-primary;
+  background-color: setup.$bg-light;
+  color: setup.$c-primary;
 }
 .bg-cream {
-  background-color: $c-light-grey;
+  background-color: setup.$c-light-grey;
 }
 .bg-feel-light {
-  background-color: $c-feel-light;
+  background-color: setup.$c-feel-light;
 }
 .bg-feel-dark {
-  background-color: $c-feel-dark;
+  background-color: setup.$c-feel-dark;
 }
 .bg-dark-grey {
-  background-color: $c-dark-grey;
+  background-color: setup.$c-dark-grey;
 }
 .bg-middle-grey {
-  background-color: $c-middle-grey;
+  background-color: setup.$c-middle-grey;
 }
 .bg-light-grey {
-  background-color: $c-light-grey;
+  background-color: setup.$c-light-grey;
 }
 .bg-primary {
-  background-color: $c-primary;
+  background-color: setup.$c-primary;
 }
 .bg-secondary {
-  background-color: $c-secondary;
+  background-color: setup.$c-secondary;
 }
 .bg-accent {
-  background-color: $c-accent;
+  background-color: setup.$c-accent;
 }
 .bg-white {
-  background-color: $c-white;
+  background-color: setup.$c-white;
 }
 .bg-black {
-  background-color: $c-black;
+  background-color: setup.$c-black;
 }
 .bg-error {
-  background-color: $c-error;
+  background-color: setup.$c-error;
 }
 .bg-info {
-  background-color: $c-info;
-  color: $c-white;
+  background-color: setup.$c-info;
+  color: setup.$c-white;
 }
 .bg-success {
-  background-color: $c-success;
-  color: $c-white;
+  background-color: setup.$c-success;
+  color: setup.$c-white;
 }
 .bg-warning {
-  background-color: $c-warning;
+  background-color: setup.$c-warning;
 }
 .bg-alert {
-  background-color: $c-alert;
+  background-color: setup.$c-alert;
 }
 .bg-feel {
-  background-color: $c-feel;
+  background-color: setup.$c-feel;
 }
 .bg-dark {
-  background-color: $bg-black;
-  color: $c-bg-dark;
+  background-color: setup.$bg-black;
+  color: setup.$c-bg-dark;
 }
 .bg-tier-silver {
-  background-color: $c-tier-silver;
+  background-color: setup.$c-tier-silver;
 }
 .bg-tier-platinum {
-  background-color: $c-tier-platinum;
+  background-color: setup.$c-tier-platinum;
 }
 .bg-tier-gold {
-  background-color: $c-tier-gold;
+  background-color: setup.$c-tier-gold;
 }
 .bg-cover {
   background-position: center center;
   background-size: cover;
 }
 .bold {
-  @include font-bold;
+  @include mixins.font-bold;
 }
 .semibold {
-  @include font-semibold;
+  @include mixins.font-semibold;
 }
 
 .ttc {
@@ -233,7 +237,7 @@
   background-attachment: fixed;
   img {
     height: 100vh;
-    @media (min-width: $break-md) {
+    @media (min-width: breakpoints.$break-md) {
       width: 100vw;
       height: initial;
     }
@@ -249,19 +253,19 @@
 hr {
   width: 100%;
   margin: 0;
-  border-top: 1px solid $c-middle-grey;
+  border-top: 1px solid setup.$c-middle-grey;
   border-bottom: 1px solid transparent;
   border-left: 1px solid transparent;
   border-right: 1px solid transparent;
 }
 .only-mobile {
   display: inline-block;
-  @media (min-width: $break-sm) {
+  @media (min-width: breakpoints.$break-sm) {
     display: none;
   }
 }
 .only-desktop {
-  @media (max-width: #{$break-sm - 1}) {
+  @media (max-width: #{breakpoints.$break-sm - 1}) {
     display: none !important;
   }
 }
@@ -295,27 +299,27 @@ hr {
   }
 }
 .hg-status-a {
-  color: $c-error;
+  color: setup.$c-error;
   &::before {
-    background-color: $c-error;
+    background-color: setup.$c-error;
   }
 }
 .hg-status-b {
-  color: $c-info;
+  color: setup.$c-info;
   &::before {
-    background-color: $c-info;
+    background-color: setup.$c-info;
   }
 }
 .hg-status-c {
-  color: $c-error;
+  color: setup.$c-error;
   &::before {
-    background-color: $c-error;
+    background-color: setup.$c-error;
   }
 }
 .hg-status-d {
-  color: $c-dark-grey;
+  color: setup.$c-dark-grey;
   &::before {
-    background-color: $c-dark-grey;
+    background-color: setup.$c-dark-grey;
   }
 }
 .block-right {
@@ -325,92 +329,92 @@ hr {
   margin-right: auto;
 }
 .sm\:hidden {
-  @media (max-width: #{$break-sm - 1}) {
+  @media (max-width: #{breakpoints.$break-sm - 1}) {
     display: none !important;
   }
 }
 .md\:hidden {
-  @media (max-width: #{$break-md - 1}) {
+  @media (max-width: #{breakpoints.$break-md - 1}) {
     display: none !important;
   }
 }
 .lg\:hidden {
-  @media (max-width: #{$break-lg - 1}) {
+  @media (max-width: #{breakpoints.$break-lg - 1}) {
     display: none !important;
   }
 }
 .xl\:hidden {
-  @media (max-width: #{$break-xl - 1}) {
+  @media (max-width: #{breakpoints.$break-xl - 1}) {
     display: none !important;
   }
 }
 .sm\:visible {
-  @media (min-width: $break-sm) {
+  @media (min-width: breakpoints.$break-sm) {
     display: none !important;
   }
 }
 .md\:visible {
-  @media (min-width: $break-md) {
+  @media (min-width: breakpoints.$break-md) {
     display: none !important;
   }
 }
 .lg\:visible {
-  @media (min-width: $break-lg) {
+  @media (min-width: breakpoints.$break-lg) {
     display: none !important;
   }
 }
 .xl\:visible {
-  @media (min-width: $break-xl) {
+  @media (min-width: breakpoints.$break-xl) {
     display: none !important;
   }
 }
 .smmax\:mb-16 {
-  @media (max-width: #{$break-sm - 1}) {
+  @media (max-width: #{breakpoints.$break-sm - 1}) {
     margin-bottom: 16px;
   }
 }
 .mdmax\:mb-16 {
-  @media (max-width: #{$break-md - 1}) {
+  @media (max-width: #{breakpoints.$break-md - 1}) {
     margin-bottom: 16px;
   }
 }
 .mdmax\:mb-20 {
-  @media (max-width: #{$break-md - 1}) {
+  @media (max-width: #{breakpoints.$break-md - 1}) {
     margin-bottom: 24px;
   }
 }
 .mdmax\:mb-24 {
-  @media (max-width: #{$break-md - 1}) {
+  @media (max-width: #{breakpoints.$break-md - 1}) {
     margin-bottom: 24px;
   }
 }
 .mdmax\:mb-32 {
-  @media (max-width: #{$break-md - 1}) {
+  @media (max-width: #{breakpoints.$break-md - 1}) {
     margin-bottom: 32px;
   }
 }
 .mdmax\:mb-40 {
-  @media (max-width: #{$break-md - 1}) {
+  @media (max-width: #{breakpoints.$break-md - 1}) {
     margin-bottom: 40px;
   }
 }
 .mdmax\:mb-42 {
-  @media (max-width: #{$break-md - 1}) {
+  @media (max-width: #{breakpoints.$break-md - 1}) {
     margin-bottom: 42px;
   }
 }
 .sm\:order-last {
-  @media (min-width: $break-sm) {
+  @media (min-width: breakpoints.$break-sm) {
     order: 3;
   }
 }
 .md\:order-last {
-  @media (min-width: $break-md) {
+  @media (min-width: breakpoints.$break-md) {
     order: 3;
   }
 }
 .lg\:order-last {
-  @media (min-width: $break-lg) {
+  @media (min-width: breakpoints.$break-lg) {
     order: 3;
   }
 }
@@ -418,71 +422,71 @@ hr {
   flex-wrap: wrap-reverse;
 }
 .smmax\:reverse {
-  @media (max-width: #{$break-sm - 1}) {
+  @media (max-width: #{breakpoints.$break-sm - 1}) {
     flex-wrap: wrap-reverse;
   }
 }
 .mdmax\:reverse {
-  @media (max-width: #{$break-md - 1}) {
+  @media (max-width: #{breakpoints.$break-md - 1}) {
     flex-wrap: wrap-reverse;
   }
 }
 .lgmax\:reverse {
-  @media (max-width: #{$break-lg - 1}) {
+  @media (max-width: #{breakpoints.$break-lg - 1}) {
     flex-wrap: wrap-reverse;
   }
 }
 .mdmax\:px-48 {
-  @media (max-width: #{$break-md - 1}) {
+  @media (max-width: #{breakpoints.$break-md - 1}) {
     padding-left: 48px;
     padding-right: 48px;
   }
 }
 .text-12-l {
-  font-family: $font-family-a-m;
+  font-family: fonts.$font-family-a-m;
   font-size: 12px;
 }
 strong {
-  color: $c-primary;
-  font-family: $font-family-a-b;
+  color: setup.$c-primary;
+  font-family: fonts.$font-family-a-b;
 }
 .bb-line {
-  border-bottom: var(--line-width) solid $c-middle-grey;
+  border-bottom: var(--line-width) solid setup.$c-middle-grey;
 }
 .border-1 {
-  border: var(--line-width) solid $c-primary;
+  border: var(--line-width) solid setup.$c-primary;
 }
 .border-1-grey {
-  border: var(--line-width) solid $c-middle-grey;
+  border: var(--line-width) solid setup.$c-middle-grey;
 }
 .border-1-light {
-  border: var(--line-width) solid $c-light-grey;
+  border: var(--line-width) solid setup.$c-light-grey;
 }
 .border-t {
-  border-top: var(--line-width) solid $c-primary;
+  border-top: var(--line-width) solid setup.$c-primary;
 }
 .border-r {
-  border-right: var(--line-width) solid $c-primary;
+  border-right: var(--line-width) solid setup.$c-primary;
 }
 .border-b {
-  border-bottom: var(--line-width) solid $c-primary;
+  border-bottom: var(--line-width) solid setup.$c-primary;
 }
 
 .border-b-grey {
-  border-bottom: var(--line-width) solid $c-light-grey;
+  border-bottom: var(--line-width) solid setup.$c-light-grey;
 }
 .border-l {
-  border-left: var(--line-width) solid $c-primary;
+  border-left: var(--line-width) solid setup.$c-primary;
 }
 .border-b2 {
   border-top: none;
-  border-bottom: var(--line-width) solid $c-primary;
+  border-bottom: var(--line-width) solid setup.$c-primary;
 }
 .border-t2 {
-  border-top: var(--line-width) solid $c-primary;
+  border-top: var(--line-width) solid setup.$c-primary;
 }
 .border-r2 {
-  border-right: var(--line-width) solid $c-primary;
+  border-right: var(--line-width) solid setup.$c-primary;
 }
 .flex-vcenter {
   display: flex;
@@ -496,25 +500,25 @@ strong {
 }
 .only-mobile-flex {
   display: flex;
-  @media (min-width: $break-sm) {
+  @media (min-width: breakpoints.$break-sm) {
     display: flex;
   }
-  @media (min-width: $break-md) {
+  @media (min-width: breakpoints.$break-md) {
     display: none;
   }
-  @media (min-width: $break-lg) {
+  @media (min-width: breakpoints.$break-lg) {
     display: none;
   }
 }
 .only-desktop-flex {
   display: none;
-  @media (min-width: $break-sm) {
+  @media (min-width: breakpoints.$break-sm) {
     display: none;
   }
-  @media (min-width: $break-md) {
+  @media (min-width: breakpoints.$break-md) {
     display: flex;
   }
-  @media (min-width: $break-lg) {
+  @media (min-width: breakpoints.$break-lg) {
     display: flex;
   }
 }
@@ -528,7 +532,7 @@ strong {
 }
 .p-view\:sm {
   // a sustiuir
-  @media (max-width: #{$break-sm - 1}) {
+  @media (max-width: #{breakpoints.$break-sm - 1}) {
     position: absolute;
     width: 100%;
     top: 0;
@@ -538,7 +542,7 @@ strong {
   }
 }
 .smmax\:p-view {
-  @media (max-width: #{$break-sm - 1}) {
+  @media (max-width: #{breakpoints.$break-sm - 1}) {
     position: absolute;
     width: 100%;
     top: 0;
@@ -558,24 +562,24 @@ strong {
   -webkit-overflow-scrolling: touch;
 }
 .scrollbar::-webkit-scrollbar {
-  background-color: $c-white;
+  background-color: setup.$c-white;
   width: 16px;
 }
 .ov-custom {
   &::-webkit-scrollbar-track {
-    background-color: $c-light-grey;
+    background-color: setup.$c-light-grey;
   }
   &::-webkit-scrollbar-track:hover {
-    background-color: $c-light-grey;
+    background-color: setup.$c-light-grey;
   }
   &::-webkit-scrollbar-thumb {
-    background-color: $c-dark-grey;
+    background-color: setup.$c-dark-grey;
     border-radius: 16px;
-    border: 3px solid $c-white;
+    border: 3px solid setup.$c-white;
   }
   &::-webkit-scrollbar-thumb:hover {
-    background-color: $c-dark-grey;
-    border: 2px solid $c-light-grey;
+    background-color: setup.$c-dark-grey;
+    border: 2px solid setup.$c-light-grey;
   }
   &::-webkit-scrollbar-button {
     display: none;
@@ -663,16 +667,16 @@ strong {
   width: 100%;
 }
 .mw-sm {
-  max-width: $container-4;
+  max-width: setup.$container-4;
 }
 .mw-md {
-  max-width: $container-6;
+  max-width: setup.$container-6;
 }
 .col-lg-4 > .mw-md {
-  max-width: $container-6;
+  max-width: setup.$container-6;
 }
 .mw-lg {
-  max-width: $container-9;
+  max-width: setup.$container-9;
 }
 .w-max {
   width: max-content;
@@ -705,38 +709,38 @@ strong {
   flex: none;
 }
 .has-light {
-  color: $c-white;
+  color: setup.$c-white;
   hr {
-    border-top: 1px solid $c-white;
+    border-top: 1px solid setup.$c-white;
   }
 }
 .smmax\:flex {
-  @media (max-width: #{$break-sm - 1}) {
+  @media (max-width: #{breakpoints.$break-sm - 1}) {
     display: flex;
   }
 }
 .mdmax\:flex {
-  @media (max-width: #{$break-md - 1}) {
+  @media (max-width: #{breakpoints.$break-md - 1}) {
     display: flex;
   }
 }
 .lgmax\:flex {
-  @media (max-width: #{$break-lg - 1}) {
+  @media (max-width: #{breakpoints.$break-lg - 1}) {
     display: flex;
   }
 }
 .sm\:flex {
-  @media (min-width: $break-sm) {
+  @media (min-width: breakpoints.$break-sm) {
     display: flex;
   }
 }
 .md\:flex {
-  @media (min-width: $break-md) {
+  @media (min-width: breakpoints.$break-md) {
     display: flex;
   }
 }
 .lg\:flex {
-  @media (min-width: $break-lg) {
+  @media (min-width: breakpoints.$break-lg) {
     display: flex;
   }
 }
@@ -744,19 +748,19 @@ strong {
   pointer-events: none;
 }
 .font-l {
-  font-family: $font-family-a-l;
+  font-family: fonts.$font-family-a-l;
 }
 .font-r {
-  font-family: $font-family-a-r;
+  font-family: fonts.$font-family-a-r;
 }
 .font-m {
-  font-family: $font-family-a-m;
+  font-family: fonts.$font-family-a-m;
 }
 .font-b {
-  font-family: $font-family-a-b;
+  font-family: fonts.$font-family-a-b;
 }
 .font-sb {
-  font-family: $font-family-a-sb;
+  font-family: fonts.$font-family-a-sb;
 }
 .absolute-middle {
   position: absolute;
@@ -764,7 +768,7 @@ strong {
   transform: translateY(-50%);
 }
 .free-product {
-  color: $c-warning;
+  color: setup.$c-warning;
 }
 .is-invert {
   filter: invert(1);
@@ -786,20 +790,20 @@ strong {
 .reset-body {
   margin-left: -20px;
   margin-right: -20px;
-  @media (min-width: $break-md) {
+  @media (min-width: breakpoints.$break-md) {
     margin-left: -40px;
     margin-right: -40px;
   }
 }
 
 .md\:reset-body {
-  @media (max-width: #{$break-md - 1}) {
+  @media (max-width: #{breakpoints.$break-md - 1}) {
     margin-left: -16px;
     margin-right: -16px;
   }
 }
 .sm\:reset-body {
-  @media (max-width: #{$break-sm - 1}) {
+  @media (max-width: #{breakpoints.$break-sm - 1}) {
     margin-left: -16px;
     margin-right: -16px;
   }
@@ -816,7 +820,7 @@ strong {
     max-width: initial;
     width: 60%;
   }
-  @media (min-width: $break-sm) {
+  @media (min-width: breakpoints.$break-sm) {
     grid-template-columns: repeat(6, 1fr);
   }
 }
@@ -824,7 +828,7 @@ strong {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 16px;
-  @media (min-width: $break-sm) {
+  @media (min-width: breakpoints.$break-sm) {
     grid-template-columns: repeat(4, 1fr);
   }
 }
@@ -832,23 +836,23 @@ strong {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 16px;
-  @media (min-width: $break-sm) {
+  @media (min-width: breakpoints.$break-sm) {
     grid-template-columns: repeat(2, 1fr);
   }
-  @media (min-width: $break-md) {
+  @media (min-width: breakpoints.$break-md) {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
 .smmax\:grid-3 {
-  @media (max-width: #{$break-sm - 1}) {
+  @media (max-width: #{breakpoints.$break-sm - 1}) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 16px;
   }
 }
 .sm\:grid-4 {
-  @media (max-width: #{$break-sm - 1}) {
+  @media (max-width: #{breakpoints.$break-sm - 1}) {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -925,7 +929,7 @@ strong {
   }
   /* Track */
   &::-webkit-scrollbar-track {
-    background: $c-middle-grey;
+    background: setup.$c-middle-grey;
     -webkit-border-radius: 10px;
     border-radius: 0;
   }
@@ -933,10 +937,10 @@ strong {
   &::-webkit-scrollbar-thumb {
     -webkit-border-radius: 10px;
     border-radius: 10px;
-    background: $c-primary;
+    background: setup.$c-primary;
   }
   &::-webkit-scrollbar-thumb:window-inactive {
-    background: $c-primary;
+    background: setup.$c-primary;
   }
 }
 .leading-1 {
@@ -961,9 +965,9 @@ strong {
   }
 }
 .is-active.btn-secondary {
-  background-color: $c-primary;
-  color: $c-white;
-  border: 1px solid $c-primary;
+  background-color: setup.$c-primary;
+  color: setup.$c-white;
+  border: 1px solid setup.$c-primary;
 }
 .fixed-bottom {
   position: absolute;
@@ -985,35 +989,35 @@ strong {
 }
 
 .bg-primary-3 {
-  background-color: $c-primary-3;
+  background-color: setup.$c-primary-3;
 }
 .bg-primary-15 {
-  background-color: $c-primary-15;
+  background-color: setup.$c-primary-15;
 }
 .bg-primary-30 {
-  background-color: $c-primary-30;
+  background-color: setup.$c-primary-30;
 }
 .bg-primary-60 {
-  background-color: $c-primary-60;
+  background-color: setup.$c-primary-60;
 }
 .bg-primary-97 {
-  background-color: $c-primary-97;
+  background-color: setup.$c-primary-97;
 }
 
 .bg-secondary-3 {
-  background-color: $c-secondary-3;
+  background-color: setup.$c-secondary-3;
 }
 .bg-secondary-15 {
-  background-color: $c-secondary-15;
+  background-color: setup.$c-secondary-15;
 }
 .bg-secondary-30 {
-  background-color: $c-secondary-30;
+  background-color: setup.$c-secondary-30;
 }
 .bg-secondary-60 {
-  background-color: $c-secondary-60;
+  background-color: setup.$c-secondary-60;
 }
 .bg-secondary-97 {
-  background-color: $c-secondary-97;
+  background-color: setup.$c-secondary-97;
 }
 
 .mx-auto {

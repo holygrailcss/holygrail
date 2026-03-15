@@ -1,4 +1,5 @@
-@import '../abstract/_all';
+@use '../abstract/_all';
+@use '../abstract/setup';
 
 .color-wrap {
   display: inline-block;
@@ -42,7 +43,7 @@
       width: 100%;
 
       &::before {
-        border: 1px solid $c-middle-grey;
+        border: 1px solid setup.$c-middle-grey;
         content: '';
         height: 100%;
         left: 0;
@@ -55,7 +56,7 @@
 
       img,
       .color-plain {
-        border: 1px solid $c-middle-grey;
+        border: 1px solid setup.$c-middle-grey;
         height: 10px;
         left: 50%;
         margin-left: -5px;
@@ -66,7 +67,7 @@
         width: 10px;
       }
       span {
-        border: 1px solid $c-middle-grey;
+        border: 1px solid setup.$c-middle-grey;
         height: 12px;
         left: 50%;
         margin-left: -6px;
@@ -86,7 +87,7 @@
     .color-square {
       border-radius: 0;
       &::before {
-        border: 1px solid $c-middle-grey;
+        border: 1px solid setup.$c-middle-grey;
         border-radius: 0;
       }
       &:hover {
@@ -94,7 +95,7 @@
       }
       img,
       .color-plain {
-        border: 1px solid $c-middle-grey;
+        border: 1px solid setup.$c-middle-grey;
         border-radius: 0;
       }
       span {
@@ -106,7 +107,7 @@
     display: inline-block;
     margin-left: 5px;
     span {
-      border-bottom: 1px dotted $c-dark-grey;
+      border-bottom: 1px dotted setup.$c-dark-grey;
     }
   }
 }

@@ -1,2 +1,4 @@
-@import '../abstract/_all';
-$border-gray: $c-middle-grey;
+@use '../abstract/_all';
+@use '../abstract/setup';
+
+$border-gray: setup.$c-middle-grey;

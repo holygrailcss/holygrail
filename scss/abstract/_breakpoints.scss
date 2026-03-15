@@ -1,3 +1,5 @@
+@use 'sass:list';
+@use 'sass:map';
 $minbreakpoints: (
   xs: 1px,
   md: 992px,
@@ -17,11 +19,11 @@ $breakpointscols: (
   xl: 1440px,
 ) !default;
 
-$colBreakpoints: length($breakpoints) !default;
-$colBreakpointscols: length($breakpointscols) !default;
-$break-xs: nth(map-values($breakpoints), 1) !default;
-$break-sm: nth(map-values($breakpoints), 2) !default;
-$break-md: nth(map-values($breakpoints), 3) !default;
-$break-lg: nth(map-values($breakpoints), 4) !default;
-$break-xl: nth(map-values($breakpointscols), 5) !default;
+$colBreakpoints: list.length($breakpoints) !default;
+$colBreakpointscols: list.length($breakpointscols) !default;
+$break-xs: list.nth(map.values($breakpoints), 1) !default;
+$break-sm: list.nth(map.values($breakpoints), 2) !default;
+$break-md: list.nth(map.values($breakpoints), 3) !default;
+$break-lg: list.nth(map.values($breakpoints), 4) !default;
+$break-xl: list.nth(map.values($breakpointscols), 5) !default;
 $min-width: 320px !default;

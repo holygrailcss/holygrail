@@ -1,6 +1,6 @@
 {
     "name": "holygrailcss",
-    "version": "3.0.9",
+    "version": "3.0.11",
     "description": "A minimal, responsive, style-agnostic CSS framework.",
     "main": "scss/style.scss",
     "directories": {
@@ -29,7 +29,7 @@
     "devDependencies": {
         "open": "^9.1.0",
         "prettier": "^3.0.2",
-        "sass": "^1.65.1",
+        "sass": "^1.77.2",
         "stylelint": "^15.10.2",
         "stylelint-config-standard": "^34.0.0",
         "stylelint-config-standard-scss": "^10.0.0",

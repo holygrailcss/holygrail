@@ -1,4 +1,6 @@
-@import '../abstract/_all';
+@use '../abstract/_all';
+@use '../abstract/mixins';
+@use '../abstract/setup';
 
 $opacity-links: 0.6;
 
@@ -24,7 +26,7 @@ a {
 
   &::after {
     content: '';
-    background-color: $c-primary;
+    background-color: setup.$c-primary;
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -41,7 +43,7 @@ a {
   z-index: 1;
   cursor: pointer;
   border-radius: 50%;
-  border: 1px solid $c-middle-grey;
+  border: 1px solid setup.$c-middle-grey;
 }
 
 .inner-button {
@@ -49,11 +51,11 @@ a {
   display: block;
   width: 40px;
   height: 40px;
-  color: $c-white;
+  color: setup.$c-white;
 
   &::after {
-    border: 1px solid $c-primary;
-    border-radius: $form-radius;
+    border: 1px solid setup.$c-primary;
+    border-radius: setup.$form-radius;
     border-right: 0;
     border-top: 0;
     content: ' ';
@@ -78,7 +80,7 @@ a {
   transform: none;
   cursor: pointer;
   background-color: transparent;
-  background-image: linear-gradient(transparent calc(100% - 1px), $primary 10px);
+  background-image: linear-gradient(transparent calc(100% - 1px), setup.$primary 10px);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   transition: background-size 0.4s;
@@ -88,19 +90,19 @@ a {
   }
 
   &.c-feel-dark {
-    background-image: linear-gradient(transparent calc(100% - 1px), $c-feel-dark 10px);
+    background-image: linear-gradient(transparent calc(100% - 1px), setup.$c-feel-dark 10px);
   }
 
   &.c-feel {
-    background-image: linear-gradient(transparent calc(100% - 1px), $c-feel 10px);
+    background-image: linear-gradient(transparent calc(100% - 1px), setup.$c-feel 10px);
   }
   &.is-error,
   &.c-error {
-    background-image: linear-gradient(transparent calc(100% - 1px), $c-error 10px);
+    background-image: linear-gradient(transparent calc(100% - 1px), setup.$c-error 10px);
   }
 
   .is-error & {
-    background-image: linear-gradient(transparent calc(100% - 1px), $c-error 10px);
+    background-image: linear-gradient(transparent calc(100% - 1px), setup.$c-error 10px);
   }
   &button {
     padding-left: 0;
@@ -133,7 +135,7 @@ a {
 .link-svg-pre {
   padding-left: 20px;
 
-  @include font-regular;
+  @include mixins.font-regular;
 
   position: relative;
   border: 0;
@@ -157,7 +159,7 @@ a {
 .link-svg-post {
   padding-right: 20px;
 
-  @include font-regular;
+  @include mixins.font-regular;
 
   display: initial;
   position: relative;
@@ -181,58 +183,58 @@ a {
 
 .has-light {
   a {
-    color: $c-white;
+    color: setup.$c-white;
   }
   .link1 {
-    color: $c-white;
+    color: setup.$c-white;
 
     &::after {
-      background-color: $c-white;
+      background-color: setup.$c-white;
     }
   }
 
   .link4 {
-    color: $c-white;
+    color: setup.$c-white;
 
     &::after {
-      background-color: $c-white;
+      background-color: setup.$c-white;
     }
 
     .link4-underline {
-      background: $c-white;
+      background: setup.$c-white;
     }
   }
 
   .link5 {
-    color: $c-white;
+    color: setup.$c-white;
 
     &::after {
-      background: $c-white;
+      background: setup.$c-white;
     }
   }
 
   .link6 {
-    color: $c-white;
-    border-bottom: 2px solid $c-white;
+    color: setup.$c-white;
+    border-bottom: 2px solid setup.$c-white;
   }
 
   .link7 {
-    color: $c-white;
+    color: setup.$c-white;
 
     &::after {
-      background: $c-white;
+      background: setup.$c-white;
     }
   }
 
   .link8 {
-    color: $c-white;
+    color: setup.$c-white;
   }
 
   .link9 {
-    color: $c-white;
+    color: setup.$c-white;
 
     &::after {
-      background: $c-white;
+      background: setup.$c-white;
     }
   }
 
@@ -245,7 +247,7 @@ a {
     background-image: linear-gradient(transparent calc(100% - 1px), white 10px);
 
     &::after {
-      background-color: $c-white;
+      background-color: setup.$c-white;
     }
   }
 
@@ -254,7 +256,7 @@ a {
     background-image: linear-gradient(transparent calc(100% - 1px), white 10px);
 
     &::after {
-      background-color: $c-white;
+      background-color: setup.$c-white;
     }
   }
 

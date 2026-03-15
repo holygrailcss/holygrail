@@ -1,45 +1,45 @@
-@import 'abstract/reset.scss';
+@use 'abstract/reset.scss';
 
-@import 'base/_animations.scss';
+@use 'base/_animations.scss';
 
-@import 'abstract/_all.scss';
+@use 'abstract/_all.scss';
 
-@import 'base/alignment';
-@import 'base/grid';
-@import 'base/height';
-@import 'base/icons';
-@import 'base/ratios';
+@use 'base/alignment';
+@use 'base/grid';
+@use 'base/height';
+@use 'base/icons';
+@use 'base/ratios';
 
-@import 'base/types';
+@use 'base/types';
 
-@import 'base/_extras';
-@import 'elements/animated';
-@import 'elements/banners';
-@import 'elements/buttons';
-@import 'elements/checkbox';
-@import 'elements/form';
-@import 'elements/links';
-@import 'elements/list';
-@import 'elements/progressbar';
-@import 'elements/tabs';
-@import 'elements/tag';
-@import 'elements/tooltip';
-@import 'elements/datalist';
-@import 'elements/tabs_specials';
-@import 'elements/color_selector';
-@import 'elements/modal';
-@import 'layouts/row1';
-@import 'layouts/card';
-@import 'layouts/card9';
+@use 'base/_extras';
+@use 'elements/animated';
+@use 'elements/banners';
+@use 'elements/buttons';
+@use 'elements/checkbox';
+@use 'elements/form';
+@use 'elements/links';
+@use 'elements/list';
+@use 'elements/progressbar';
+@use 'elements/tabs';
+@use 'elements/tag';
+@use 'elements/tooltip';
+@use 'elements/datalist';
+@use 'elements/tabs_specials';
+@use 'elements/color_selector';
+@use 'elements/modal';
+@use 'layouts/row1';
+@use 'layouts/card';
+@use 'layouts/card9';
 
-@import 'layouts/box3';
-@import 'layouts/box4';
-@import 'layouts/feel';
+@use 'layouts/box3';
+@use 'layouts/box4';
+@use 'layouts/feel';
 
-@import 'base/spacing';
-@import 'base/helpers';
-@import 'layouts/header_account';
-@import 'layouts/hgbread';
-@import 'base/rtl';
+@use 'base/spacing';
+@use 'base/helpers';
+@use 'layouts/header_account';
+@use 'layouts/hgbread';
+@use 'base/rtl';
 
 //@import 'abstract/0debug';

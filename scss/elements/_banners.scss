@@ -1,4 +1,5 @@
-@import '../abstract/_all';
+@use '../abstract/_all';
+@use '../abstract/setup';
 
 .marketing-spot {
   display: flex;
@@ -6,7 +7,7 @@
   justify-content: center;
   flex-flow: row nowrap;
   padding: 16px;
-  border: 1px solid $c-primary;
+  border: 1px solid setup.$c-primary;
   margin-top: 16px;
 
   svg-icon {
@@ -28,41 +29,41 @@
 .banner-warning {
   @include banner;
 
-  background-color: $c-warning;
-  color: $c-white;
+  background-color: setup.$c-warning;
+  color: setup.$c-white;
 }
 
 .banner-info {
   @include banner;
 
-  background-color: $c-info;
-  color: $c-white;
+  background-color: setup.$c-info;
+  color: setup.$c-white;
 }
 
 .banner-valid {
   @include banner;
 
-  background-color: $c-valid;
-  color: $c-white;
+  background-color: setup.$c-valid;
+  color: setup.$c-white;
 }
 
 .banner-alert {
   @include banner;
 
-  background-color: $c-alert;
-  color: $c-primary;
+  background-color: setup.$c-alert;
+  color: setup.$c-primary;
 }
 
 .banner-feel {
   @include banner;
 
-  background-color: $c-feel;
-  color: $c-primary;
+  background-color: setup.$c-feel;
+  color: setup.$c-primary;
 }
 
 .banner-limited {
   @include banner;
 
-  background-color: $bg-black;
-  color: $c-white;
+  background-color: setup.$bg-black;
+  color: setup.$c-white;
 }

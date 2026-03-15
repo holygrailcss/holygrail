@@ -1,4 +1,5 @@
-@import '../abstract/_all';
+@use '../abstract/_all';
+@use '../abstract/mixins';
 
 .h-auto {
   height: auto;
@@ -16,4 +17,4 @@
   height: 100%;
 }
 
-@include heights-mix;
+@include mixins.heights-mix;

@@ -1,13 +1,14 @@
-@import '../abstract/_all';
+@use '../abstract/_all';
+@use '../abstract/setup';
 
 .form-input-label,
 .form-input-label-2 {
   .validation-error-messages {
-    color: $c-error;
+    color: setup.$c-error;
 
     svg {
       path {
-        fill: $c-error;
+        fill: setup.$c-error;
       }
     }
   }
@@ -39,7 +40,7 @@
     }
 
     .validation-error-messages {
-      color: $c-error;
+      color: setup.$c-error;
 
       svg {
         position: relative;
@@ -47,7 +48,7 @@
         right: auto;
 
         path {
-          fill: $c-error;
+          fill: setup.$c-error;
         }
       }
     }

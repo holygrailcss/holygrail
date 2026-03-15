@@ -1,4 +1,7 @@
-@import '../abstract/_all';
+@use '../abstract/_all';
+@use '../abstract/fonts';
+@use '../abstract/mixins';
+@use '../abstract/setup';
 
 .tabs {
   .list-equal {
@@ -12,14 +15,14 @@
 
   ul {
     align-items: center;
-    border-bottom: 1px solid $c-middle-grey;
+    border-bottom: 1px solid setup.$c-middle-grey;
     display: flex;
     flex-grow: 1;
     flex-shrink: 0;
     justify-content: flex-start;
     margin: 0;
 
-    @include font-regular;
+    @include mixins.font-regular;
   }
 
   li {
@@ -29,33 +32,33 @@
     a,
     span {
       align-items: center;
-      border-bottom: 1px solid $c-middle-grey;
-      color: $c-dark-grey;
+      border-bottom: 1px solid setup.$c-middle-grey;
+      color: setup.$c-dark-grey;
       display: flex;
       justify-content: center;
       margin-bottom: -1px;
-      padding: $padding-global * 2;
+      padding: setup.$padding-global * 2;
       vertical-align: top;
-      padding-bottom: $padding-global * 2 + 1;
-      font-size: $tabs-text;
+      padding-bottom: setup.$padding-global * 2 + 1;
+      font-size: setup.$tabs-text;
 
       &:hover {
-        border-bottom-color: $c-primary;
+        border-bottom-color: setup.$c-primary;
         border-bottom-width: 2px;
-        padding-bottom: $padding-global * 2 - 0;
-        color: $c-primary;
+        padding-bottom: setup.$padding-global * 2 - 0;
+        color: setup.$c-primary;
         cursor: pointer;
       }
     }
 
     &.is-active a,
     &.is-active span {
-      border-bottom-color: $c-primary;
+      border-bottom-color: setup.$c-primary;
       border-bottom-width: 2px;
-      padding-bottom: $padding-global * 2 - 0;
-      color: $c-primary;
+      padding-bottom: setup.$padding-global * 2 - 0;
+      color: setup.$c-primary;
 
-      @include font-bold;
+      @include mixins.font-bold;
     }
 
     &::after {
@@ -99,7 +102,7 @@
         &::after {
           content: '';
           width: 100%;
-          background: $c-primary;
+          background: setup.$c-primary;
           height: 2px;
           position: absolute;
           bottom: -4px;
@@ -112,7 +115,7 @@
       &::after {
         content: '';
         width: 100%;
-        background: $c-primary;
+        background: setup.$c-primary;
         height: 2px;
         position: absolute;
         bottom: -4px;
@@ -126,7 +129,7 @@
   border: none;
   position: relative;
   width: 100%;
-  background-color: $c-light-grey;
+  background-color: setup.$c-light-grey;
 
   ul {
     border: none;
@@ -140,14 +143,14 @@
 
   a,
   span {
-    @include font-regular;
+    @include mixins.font-regular;
 
-    color: $c-dark-grey;
-    border-color: $c-light-grey;
+    color: setup.$c-dark-grey;
+    border-color: setup.$c-light-grey;
     position: relative;
 
     &:hover {
-      color: $c-primary;
+      color: setup.$c-primary;
       cursor: pointer;
     }
   }
@@ -164,10 +167,10 @@
 
   ul {
     border: none;
-    background-color: $c-white;
+    background-color: setup.$c-white;
     padding: 0 14px;
     display: inline-flex;
-    font-family: $font-family-a-r;
+    font-family: fonts.$font-family-a-r;
   }
 
   li {
@@ -178,7 +181,7 @@
     opacity: 0.5;
     border: none;
     padding: 6px 8px 8px;
-    color: $c-primary;
+    color: setup.$c-primary;
   }
 
   li:first-child a::after {
@@ -187,7 +190,7 @@
     right: 0;
     width: 1px;
     height: 20px;
-    background-color: $c-middle-grey;
+    background-color: setup.$c-middle-grey;
   }
 
   li a:hover {
@@ -200,7 +203,7 @@
   li.is-active a {
     padding: 6px 8px 8px;
     opacity: 1;
-    font-family: $font-family-a-b;
+    font-family: fonts.$font-family-a-b;
   }
 
   &.tabs-map {
@@ -210,7 +213,7 @@
     align-items: flex-end;
 
     ul {
-      border: 1px solid $c-middle-grey;
+      border: 1px solid setup.$c-middle-grey;
     }
   }
 }

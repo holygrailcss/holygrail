@@ -1,63 +1,68 @@
 @use 'sass:math';
-@import '../abstract/_all';
+@use 'sass:list';
+@use 'sass:map';
+@use '../abstract/_all';
+@use '../abstract/breakpoints';
+@use '../abstract/mixins';
+@use '../abstract/setup';
 
 //   -CONTAINERS
 
 .container {
-  padding-right: $padding-global;
-  padding-left: $padding-global;
+  padding-right: setup.$padding-global;
+  padding-left: setup.$padding-global;
   margin-right: auto;
   margin-left: auto;
   position: relative;
   width: 100%;
-  max-width: $container;
+  max-width: setup.$container;
 
-  @media (min-width: $break-sm) {
-    padding-right: $padding-global;
-    padding-left: $padding-global;
+  @media (min-width: breakpoints.$break-sm) {
+    padding-right: setup.$padding-global;
+    padding-left: setup.$padding-global;
     width: 90%;
-    max-width: nth(map-values($breakpoints), 2);
+    max-width: list.nth(map.values(breakpoints.$breakpoints), 2);
   }
 
-  @media (min-width: $break-md) {
+  @media (min-width: breakpoints.$break-md) {
     width: 80%;
-    max-width: nth(map-values($breakpoints), 3);
+    max-width: list.nth(map.values(breakpoints.$breakpoints), 3);
   }
 
-  @media (min-width: $break-lg) {
+  @media (min-width: breakpoints.$break-lg) {
     width: 80%;
-    max-width: nth(map-values($breakpoints), 4);
+    max-width: list.nth(map.values(breakpoints.$breakpoints), 4);
   }
 
-  @media (min-width: $break-xl) {
+  @media (min-width: breakpoints.$break-xl) {
     width: 100%;
-    max-width: nth(map-values($breakpointscols), 5);
+    max-width: list.nth(map.values(breakpoints.$breakpointscols), 5);
   }
 }
 
 .container-full {
-  padding-right: $padding-global;
-  padding-left: $padding-global;
+  padding-right: setup.$padding-global;
+  padding-left: setup.$padding-global;
   margin-right: auto;
   margin-left: auto;
   position: relative;
-  max-width: $container-full;
+  max-width: setup.$container-full;
 
-  @media (min-width: $break-sm) {
-    padding-right: $padding-global;
-    padding-left: $padding-global;
+  @media (min-width: breakpoints.$break-sm) {
+    padding-right: setup.$padding-global;
+    padding-left: setup.$padding-global;
     width: 90%;
-    max-width: nth(map-values($breakpoints), 2);
+    max-width: list.nth(map.values(breakpoints.$breakpoints), 2);
   }
 
-  @media (min-width: $break-md) {
+  @media (min-width: breakpoints.$break-md) {
     width: 80%;
-    max-width: nth(map-values($breakpoints), 3);
+    max-width: list.nth(map.values(breakpoints.$breakpoints), 3);
   }
 
-  @media (min-width: $break-lg) {
+  @media (min-width: breakpoints.$break-lg) {
     width: 80%;
-    max-width: nth(map-values($breakpoints), 4);
+    max-width: list.nth(map.values(breakpoints.$breakpoints), 4);
   }
 }
 
@@ -70,8 +75,8 @@
 }
 
 .container-fluid {
-  padding-right: $padding-global;
-  padding-left: $padding-global;
+  padding-right: setup.$padding-global;
+  padding-left: setup.$padding-global;
   margin-right: auto;
   margin-left: auto;
   position: relative;
@@ -85,15 +90,15 @@
   width: 100%;
   max-width: 992px;
 
-  @media (min-width: $break-sm) {
+  @media (min-width: breakpoints.$break-sm) {
     width: 90%;
     max-width: 768px;
   }
-  @media (min-width: $break-md) {
+  @media (min-width: breakpoints.$break-md) {
     width: 80%;
     max-width: 992px;
   }
-  @media (min-width: $break-lg) {
+  @media (min-width: breakpoints.$break-lg) {
     margin: 0;
     width: 80%;
     max-width: 1280px;
@@ -104,7 +109,7 @@
   padding-right: 16px;
   padding-left: 16px;
   max-width: 250px;
-  @media (min-width: $break-sm) {
+  @media (min-width: breakpoints.$break-sm) {
     max-width: 1650px;
     padding-right: 4rem;
     padding-left: 4rem;
@@ -115,7 +120,7 @@
   padding-right: 16px;
   padding-left: 16px;
   max-width: 1440px;
-  @media (min-width: $break-md) {
+  @media (min-width: breakpoints.$break-md) {
     padding-right: 4rem;
     padding-left: 4rem;
   }
@@ -125,7 +130,7 @@
   padding-right: 16px;
   padding-left: 16px;
   max-width: 250px;
-  @media (min-width: $break-md) {
+  @media (min-width: breakpoints.$break-md) {
     max-width: 1440px;
     padding-right: 4rem;
     padding-left: 4rem;
@@ -133,49 +138,49 @@
 }
 
 .container-2 {
-  padding-right: $padding-global;
-  padding-left: $padding-global;
+  padding-right: setup.$padding-global;
+  padding-left: setup.$padding-global;
   margin-right: auto;
   margin-left: auto;
   position: relative;
   width: 90%;
-  max-width: $container-2;
+  max-width: setup.$container-2;
 }
 
 .container-3 {
-  padding-right: $padding-global * 3;
-  padding-left: $padding-global * 3;
+  padding-right: setup.$padding-global * 3;
+  padding-left: setup.$padding-global * 3;
   margin-right: auto;
   margin-left: auto;
   position: relative;
   width: 100%;
-  max-width: $container-3;
+  max-width: setup.$container-3;
 
-  @media (min-width: $break-sm) {
-    padding-right: $padding-global;
-    padding-left: $padding-global;
+  @media (min-width: breakpoints.$break-sm) {
+    padding-right: setup.$padding-global;
+    padding-left: setup.$padding-global;
   }
 }
 
 .container-4 {
-  padding-right: $padding-global;
-  padding-left: $padding-global;
+  padding-right: setup.$padding-global;
+  padding-left: setup.$padding-global;
   margin-right: auto;
   margin-left: auto;
   position: relative;
   width: 90%;
-  max-width: $container-4;
+  max-width: setup.$container-4;
 }
 
 // join life style
 .container-5 {
   position: relative;
-  padding: 0 $padding-global;
+  padding: 0 setup.$padding-global;
   margin: 0 auto;
   width: 100%;
-  max-width: $container-5;
+  max-width: setup.$container-5;
 
-  @media (min-width: $break-lg) {
+  @media (min-width: breakpoints.$break-lg) {
     max-width: 1000px;
     padding: 0;
   }
@@ -183,75 +188,75 @@
 
 .container-6 {
   margin: 0 auto;
-  padding: 0 $padding-global;
+  padding: 0 setup.$padding-global;
   width: 100%;
-  max-width: $container-6;
+  max-width: setup.$container-6;
 }
 
 .container-7 {
   margin: 0 auto;
-  padding: 0 $padding-global * 2;
+  padding: 0 setup.$padding-global * 2;
   width: 100%;
   max-width: 295px;
 
-  @media (min-width: $break-sm) {
+  @media (min-width: breakpoints.$break-sm) {
     max-width: 460px;
-    padding-right: $padding-global;
-    padding-left: $padding-global;
+    padding-right: setup.$padding-global;
+    padding-left: setup.$padding-global;
   }
 
-  @media (min-width: $break-md) {
+  @media (min-width: breakpoints.$break-md) {
     max-width: 460px;
   }
 
-  @media (min-width: $break-lg) {
+  @media (min-width: breakpoints.$break-lg) {
     max-width: 595px;
   }
 }
 
 .container-8 {
   margin: 0 auto;
-  padding: 0 $padding-global;
+  padding: 0 setup.$padding-global;
   width: 100%;
-  max-width: $container-8;
+  max-width: setup.$container-8;
 }
 
 .container-9 {
   margin: 0 auto;
-  padding: 0 $padding-mobile;
+  padding: 0 setup.$padding-mobile;
   width: 100%;
-  max-width: $container-9;
+  max-width: setup.$container-9;
 
-  @media (min-width: $break-sm) {
-    padding: 0 $padding-global;
+  @media (min-width: breakpoints.$break-sm) {
+    padding: 0 setup.$padding-global;
   }
 }
 
 .container-11 {
   margin: 0 auto;
-  padding: 0 $padding-mobile;
+  padding: 0 setup.$padding-mobile;
   width: 100%;
-  max-width: $container-11;
+  max-width: setup.$container-11;
 
-  @media (min-width: $break-sm) {
-    padding: 0 $padding-global;
+  @media (min-width: breakpoints.$break-sm) {
+    padding: 0 setup.$padding-global;
   }
 }
 
 .container-12 {
-  padding: 0 $padding-mobile;
+  padding: 0 setup.$padding-mobile;
   width: 100%;
-  max-width: $container-12;
+  max-width: setup.$container-12;
 
-  @media (min-width: $break-sm) {
-    padding: 0 $padding-global;
+  @media (min-width: breakpoints.$break-sm) {
+    padding: 0 setup.$padding-global;
   }
 }
 
 .container-body {
   padding-left: 16px;
   padding-right: 16px;
-  @media (min-width: $break-md) {
+  @media (min-width: breakpoints.$break-md) {
     padding-left: 40px;
     padding-right: 40px;
   }
@@ -261,7 +266,7 @@
   padding-left: 16px;
   overflow: hidden;
 
-  @media (min-width: $break-md) {
+  @media (min-width: breakpoints.$break-md) {
     padding-left: 40px;
   }
 
@@ -269,7 +274,7 @@
     padding-right: 16px;
     padding-left: 0;
 
-    @media (min-width: $break-md) {
+    @media (min-width: breakpoints.$break-md) {
       padding-right: 40px;
       padding-left: 0;
     }
@@ -285,13 +290,13 @@
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -$padding-global;
-  margin-left: -$padding-global;
+  margin-right: -(setup.$padding-global);
+  margin-left: -(setup.$padding-global);
 
-  @for $i from 2 through length($breakpointscols) {
-    @media (min-width: nth(map-values($breakpointscols), $i)) {
-      margin-right: -$padding-global;
-      margin-left: -$padding-global;
+  @for $i from 2 through list.length(breakpoints.$breakpointscols) {
+    @media (min-width: list.nth(map.values(breakpoints.$breakpointscols), $i)) {
+      margin-right: -(setup.$padding-global);
+      margin-left: -(setup.$padding-global);
     }
   }
 }
@@ -299,23 +304,23 @@
 //   -COLS
 
 @for $i from 1 through 4 {
-  @media (min-width: nth(map-values($breakpointscols), $i)) {
-    @for $c from 1 through $totalCols {
-      .col-#{nth(map-keys($breakpointscols), $i)}-#{$c} {
+  @media (min-width: list.nth(map.values(breakpoints.$breakpointscols), $i)) {
+    @for $c from 1 through setup.$totalCols {
+      .col-#{list.nth(map.keys(breakpoints.$breakpointscols), $i)}-#{$c} {
         -webkit-box-flex: 0;
-        flex: 0 0 math.percentage(math.div($c, $totalCols));
-        max-width: math.percentage(math.div($c, $totalCols));
+        flex: 0 0 math.percentage(math.div($c, setup.$totalCols));
+        max-width: math.percentage(math.div($c, setup.$totalCols));
       }
     }
   }
 }
 
-@for $i from 5 through $colBreakpointscols {
-  @for $c from 1 through $totalColsXl {
-    .col-#{nth(map-keys($breakpointscols), $i)}-#{$c} {
+@for $i from 5 through breakpoints.$colBreakpointscols {
+  @for $c from 1 through setup.$totalColsXl {
+    .col-#{list.nth(map.keys(breakpoints.$breakpointscols), $i)}-#{$c} {
       -webkit-box-flex: 0;
-      flex: 0 0 math.percentage(math.div($c, $totalColsXl));
-      max-width: math.percentage(math.div($c, $totalColsXl));
+      flex: 0 0 math.percentage(math.div($c, setup.$totalColsXl));
+      max-width: math.percentage(math.div($c, setup.$totalColsXl));
     }
   }
 }
@@ -324,49 +329,49 @@
   box-sizing: border-box;
   position: relative;
   min-height: 1px;
-  padding-right: $padding-global;
-  padding-left: $padding-global;
+  padding-right: setup.$padding-global;
+  padding-left: setup.$padding-global;
 }
 
 .col {
   display: block;
   flex: 1 1 0;
-  padding: 0 $padding-global;
+  padding: 0 setup.$padding-global;
 }
 
 .col-sm {
-  @media (min-width: $break-sm) {
+  @media (min-width: breakpoints.$break-sm) {
     display: block;
     flex: 1 1 0;
-    padding: 0 $padding-global;
+    padding: 0 setup.$padding-global;
   }
 }
 
 .col-md {
-  @media (min-width: $break-sm) {
+  @media (min-width: breakpoints.$break-sm) {
     display: block;
     flex: 1 1 0;
-    padding: 0 $padding-global;
+    padding: 0 setup.$padding-global;
   }
 }
 
 .col-lg {
-  @media (min-width: $break-sm) {
+  @media (min-width: breakpoints.$break-sm) {
     display: block;
     flex: 1 1 0;
-    padding: 0 $padding-global;
+    padding: 0 setup.$padding-global;
   }
 }
 
 .bleed {
-  margin-left: -$padding-global;
-  margin-right: -$padding-global;
+  margin-left: -(setup.$padding-global);
+  margin-right: -(setup.$padding-global);
   width: auto;
 }
 
-@include bleed(0);
-@include bleed(4);
-@include bleed(8);
+@include mixins.bleed(0);
+@include mixins.bleed(4);
+@include mixins.bleed(8);
 
 .list-grid {
   display: grid;
@@ -402,7 +407,7 @@
   column-gap: 16px;
 }
 .grid-2-desktop {
-  @media (min-width: $break-sm) {
+  @media (min-width: breakpoints.$break-sm) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 16px;

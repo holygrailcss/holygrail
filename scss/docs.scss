@@ -1,111 +1,117 @@
 @use 'sass:math';
-@import 'abstract/reset.scss';
+@use 'sass:list';
+@use 'sass:map';
+@use 'abstract/reset.scss';
 
-@import 'base/_animations.scss';
+@use 'base/_animations.scss';
 
-@import 'abstract/_all.scss';
+@use 'abstract/_all.scss';
+@use 'abstract/breakpoints';
+@use 'abstract/fonts';
+@use 'abstract/mixins';
+@use 'abstract/setup';
 
 $variable-colors: (
-  c-white: #{$c-white},
-  c-black: #{$c-black},
-  c-dark-grey: #{$c-dark-grey},
-  c-middle-grey: #{$c-middle-grey},
-  c-light-grey: #{$c-light-grey},
-  c-primary: #{$c-primary},
-  c-secondary: #{$c-secondary},
-  c-accent: #{$c-accent},
-  c-error: #{$c-error},
-  c-sale: #{$c-sale},
-  c-info: #{$c-info},
-  c-valid: #{$c-valid},
-  c-warning: #{$c-warning},
-  c-feel: #{$c-feel},
-  c-feel-dark: #{$c-feel-dark},
-  c-feel-light: #{$c-feel-light},
-  c-limited: #{$c-limited},
-  c-success: #{$c-success},
-  c-alert: #{$c-alert},
-  c-facebook: #{$c-facebook},
-  c-google: #{$c-google},
-  c-naver: #{$c-naver},
-  c-wechat: #{$c-wechat},
+  c-white: #{setup.$c-white},
+  c-black: #{setup.$c-black},
+  c-dark-grey: #{setup.$c-dark-grey},
+  c-middle-grey: #{setup.$c-middle-grey},
+  c-light-grey: #{setup.$c-light-grey},
+  c-primary: #{setup.$c-primary},
+  c-secondary: #{setup.$c-secondary},
+  c-accent: #{setup.$c-accent},
+  c-error: #{setup.$c-error},
+  c-sale: #{setup.$c-sale},
+  c-info: #{setup.$c-info},
+  c-valid: #{setup.$c-valid},
+  c-warning: #{setup.$c-warning},
+  c-feel: #{setup.$c-feel},
+  c-feel-dark: #{setup.$c-feel-dark},
+  c-feel-light: #{setup.$c-feel-light},
+  c-limited: #{setup.$c-limited},
+  c-success: #{setup.$c-success},
+  c-alert: #{setup.$c-alert},
+  c-facebook: #{setup.$c-facebook},
+  c-google: #{setup.$c-google},
+  c-naver: #{setup.$c-naver},
+  c-wechat: #{setup.$c-wechat},
 );
 $variable-list: (
-  break-xs: #{$break-xs},
-  break-sm: #{$break-sm},
-  break-md: #{$break-md},
-  break-lg: #{$break-lg},
-  break-xl: #{$break-xl},
-  min-vw: #{$min-vw},
-  height-xs: #{$height-xs},
-  height-sm: #{$height-sm},
-  height-md: #{$height-md},
-  height-lg: #{$height-lg},
-  height-xl: #{$height-xl},
-  height-full: #{$height-full},
-  height-home: #{$height-home},
-  container: #{$container},
-  container-2: #{$container-2},
-  container-3: #{$container-3},
-  container-4: #{$container-4},
-  font-primary: #{$font-family-a-r},
-  font-family-secondary: #{$font-family-b-r},
-  font-primary-weight-light: #{$font-weight-light},
-  font-primary-weight-regular: #{$font-weight-regular},
-  font-primary-weight-medium: #{$font-weight-medium},
-  font-primary-weight-bold: #{$font-weight-bold},
-  font-secondary-weight-light: #{$font-weight-secondary-light},
-  font-secondary-weight-medium: #{$font-weight-secondary-medium},
+  break-xs: #{breakpoints.$break-xs},
+  break-sm: #{breakpoints.$break-sm},
+  break-md: #{breakpoints.$break-md},
+  break-lg: #{breakpoints.$break-lg},
+  break-xl: #{breakpoints.$break-xl},
+  min-vw: #{setup.$min-vw},
+  height-xs: #{setup.$height-xs},
+  height-sm: #{setup.$height-sm},
+  height-md: #{setup.$height-md},
+  height-lg: #{setup.$height-lg},
+  height-xl: #{setup.$height-xl},
+  height-full: #{setup.$height-full},
+  height-home: #{setup.$height-home},
+  container: #{setup.$container},
+  container-2: #{setup.$container-2},
+  container-3: #{setup.$container-3},
+  container-4: #{setup.$container-4},
+  font-primary: #{fonts.$font-family-a-r},
+  font-family-secondary: #{fonts.$font-family-b-r},
+  font-primary-weight-light: #{fonts.$font-weight-light},
+  font-primary-weight-regular: #{fonts.$font-weight-regular},
+  font-primary-weight-medium: #{fonts.$font-weight-medium},
+  font-primary-weight-bold: #{fonts.$font-weight-bold},
+  font-secondary-weight-light: #{setup.$font-weight-secondary-light},
+  font-secondary-weight-medium: #{setup.$font-weight-secondary-medium},
   xl: 1500px,
 );
 
-$variabletotals: length($variable-list);
-$variablecolors: length($variable-colors);
+$variabletotals: list.length($variable-list);
+$variablecolors: list.length($variable-colors);
 
 @for $i from 1 through $variabletotals {
-  .var-a-#{nth(map-keys($variable-list), $i)} {
+  .var-a-#{list.nth(map.keys($variable-list), $i)} {
     &::after {
       display: inline-block;
-      content: '#{nth(map-keys($variable-list), $i)}';
+      content: '#{list.nth(map.keys($variable-list), $i)}';
     }
   }
-  .var-b-#{nth(map-keys($variable-list), $i)} {
+  .var-b-#{list.nth(map.keys($variable-list), $i)} {
     &::after {
-      content: '#{nth(map-values($variable-list), $i)}';
+      content: '#{list.nth(map.values($variable-list), $i)}';
       display: inline-block;
     }
   }
 }
 
 @for $i from 1 through $variablecolors {
-  .var-a-#{nth(map-keys($variable-colors), $i)} {
+  .var-a-#{list.nth(map.keys($variable-colors), $i)} {
     &::before {
       display: inline-block;
-      content: '#{nth(map-keys($variable-colors), $i)}';
+      content: '#{list.nth(map.keys($variable-colors), $i)}';
     }
   }
-  .var-b-#{nth(map-keys($variable-colors), $i)} {
+  .var-b-#{list.nth(map.keys($variable-colors), $i)} {
     &::before {
-      content: '#{nth(map-values($variable-colors), $i)}';
+      content: '#{list.nth(map.values($variable-colors), $i)}';
       display: inline-block;
     }
   }
 }
 
 @for $i from 1 through $variablecolors {
-  .bg-#{nth(map-keys($variable-colors), $i)} {
-    background-color: #{nth(map-values($variable-colors), $i)};
+  .bg-#{list.nth(map.keys($variable-colors), $i)} {
+    background-color: #{list.nth(map.values($variable-colors), $i)};
   }
 }
 
 @mixin tablas($spacingArray, $spacingName, $totalItems) {
   @each $name, $value in $spacingArray {
-    $i: index(($spacingArray), ($name $value));
+    $i: list.index(($spacingArray), ($name $value));
     $spacing0: $name;
-    $spacing1: nth($value, 1);
-    $spacing2: nth($value, 2);
-    $spacing3: nth($value, 3);
-    $spacing4: nth($value, 4);
+    $spacing1: list.nth($value, 1);
+    $spacing2: list.nth($value, 2);
+    $spacing3: list.nth($value, 3);
+    $spacing4: list.nth($value, 4);
     .#{$spacingName} {
       .filas:nth-child(#{$i}) {
         .item {
@@ -142,9 +148,9 @@ $variablecolors: length($variable-colors);
 }
 @mixin tablas2($spacingArray, $spacingName, $totalItems) {
   @each $name, $value in $spacingArray {
-    $i: index(($spacingArray), ($name $value));
+    $i: list.index(($spacingArray), ($name $value));
     $spacing0: $name;
-    $spacing1: nth($value, 1);
+    $spacing1: list.nth($value, 1);
     .#{$spacingName} {
       .filas:nth-child(#{$i}) {
         .item {
@@ -166,11 +172,11 @@ $variablecolors: length($variable-colors);
 }
 @mixin tablas3($spacingArray, $spacingName, $totalItems) {
   @each $name, $value in $spacingArray {
-    $i: index(($spacingArray), ($name $value));
+    $i: list.index(($spacingArray), ($name $value));
     $spacing0: $name;
-    $spacing1: nth($value, 1);
-    $spacing2: nth($value, 2);
-    $spacing3: nth($value, 3);
+    $spacing1: list.nth($value, 1);
+    $spacing2: list.nth($value, 2);
+    $spacing3: list.nth($value, 3);
     .#{$spacingName} {
       .filas:nth-child(#{$i}) {
         .item {
@@ -202,7 +208,7 @@ $variablecolors: length($variable-colors);
 }
 @mixin muestraArray($nombreArray, $nombreClase, $totalItems) {
   @each $name, $value in $nombreArray {
-    $i: index($nombreArray, $name $value);
+    $i: list.index($nombreArray, $name $value);
 
     .#{$nombreClase} {
       .filas:nth-child(#{$i}) {
@@ -215,7 +221,7 @@ $variablecolors: length($variable-colors);
         @for $j from 1 through $totalItems {
           .item-#{$j} {
             &::after {
-              content: '#{nth($value, $j)}';
+              content: '#{list.nth($value, $j)}';
             }
           }
         }
@@ -224,40 +230,40 @@ $variablecolors: length($variable-colors);
   }
 }
 
-@include tablas($margin, 'marginbox', 2);
-@include tablas($margin-y, 'marginbox-y', 2);
-@include tablas($margin-x, 'marginbox-x', 2);
-@include tablas($margin-top, 'marginbox-top', 2);
-@include tablas($margin-right, 'marginbox-right', 2);
-@include tablas($margin-bottom, 'marginbox-bottom', 2);
-@include tablas($margin-left, 'marginbox-left', 2);
-@include tablas($padding, 'paddingbox', 2);
-@include tablas($padding-y, 'paddingbox-y', 2);
-@include tablas($padding-x, 'paddingbox-x', 2);
-@include tablas($padding-top, 'paddingbox-top', 2);
-@include tablas($padding-left, 'paddingbox-left', 2);
-@include tablas($padding-bottom, 'paddingbox-bottom', 2);
-@include tablas($padding-right, 'paddingbox-right', 2);
+@include tablas(setup.$margin, 'marginbox', 2);
+@include tablas(setup.$margin-y, 'marginbox-y', 2);
+@include tablas(setup.$margin-x, 'marginbox-x', 2);
+@include tablas(setup.$margin-top, 'marginbox-top', 2);
+@include tablas(setup.$margin-right, 'marginbox-right', 2);
+@include tablas(setup.$margin-bottom, 'marginbox-bottom', 2);
+@include tablas(setup.$margin-left, 'marginbox-left', 2);
+@include tablas(setup.$padding, 'paddingbox', 2);
+@include tablas(setup.$padding-y, 'paddingbox-y', 2);
+@include tablas(setup.$padding-x, 'paddingbox-x', 2);
+@include tablas(setup.$padding-top, 'paddingbox-top', 2);
+@include tablas(setup.$padding-left, 'paddingbox-left', 2);
+@include tablas(setup.$padding-bottom, 'paddingbox-bottom', 2);
+@include tablas(setup.$padding-right, 'paddingbox-right', 2);
 
-@include muestraArray($heights, 'heights', 2);
-@include muestraArray($headersFluids, 'fluids', 3);
-@include muestraArray($minheaders, 'minheaders', 4);
+@include muestraArray(setup.$heights, 'heights', 2);
+@include muestraArray(setup.$headersFluids, 'fluids', 3);
+@include muestraArray(setup.$minheaders, 'minheaders', 4);
 
 .font-family-a {
   &::after {
-    content: '' + $font-family-a-r;
+    content: '' + fonts.$font-family-a-r;
     position: relative;
   }
 }
 .font-family-b {
   &::after {
-    content: '' + $font-family-b-r;
+    content: '' + fonts.$font-family-b-r;
     position: relative;
   }
 }
 .font-family-c {
   &::after {
-    content: '' + $font-family-c-r;
+    content: '' + fonts.$font-family-c-r;
     position: relative;
   }
 }
@@ -325,7 +331,7 @@ $variablecolors: length($variable-colors);
     margin: 20px auto;
   }
   .bg-dark {
-    background-color: $primary-guide;
+    background-color: setup.$primary-guide;
     color: #fff;
     a {
       color: #fff;
@@ -340,7 +346,7 @@ $variablecolors: length($variable-colors);
     position: relative;
     margin: 0 0 0 55px;
     padding: 0 8px;
-    @media (min-width: $break-lg) {
+    @media (min-width: breakpoints.$break-lg) {
       margin: 0 0 0 180px;
     }
   }
@@ -434,12 +440,12 @@ $variablecolors: length($variable-colors);
       white-space: nowrap;
     }
     thead {
-      background-color: $primary-guide;
+      background-color: setup.$primary-guide;
       color: #fff;
     }
     td {
       &:first-child {
-        color: $primary-guide !important;
+        color: setup.$primary-guide !important;
       }
     }
   }
@@ -447,7 +453,7 @@ $variablecolors: length($variable-colors);
     background-color: #f1f1f1;
     padding-left: 4px;
     padding-right: 4px;
-    color: $secondary-guide;
+    color: setup.$secondary-guide;
   }
   pre > code {
     background-color: transparent;
@@ -469,43 +475,43 @@ $variablecolors: length($variable-colors);
     box-sizing: border-box;
   }
   .item-i:nth-child(1) {
-    background-color: $primary-guide;
+    background-color: setup.$primary-guide;
     opacity: 0.93;
   }
   .item-i:nth-child(2) {
-    background-color: $primary-guide;
+    background-color: setup.$primary-guide;
     opacity: 0.83;
   }
   .item-i:nth-child(3) {
-    background-color: $primary-guide;
+    background-color: setup.$primary-guide;
     opacity: 0.79;
   }
   .item-i:nth-child(4) {
-    background-color: $primary-guide;
+    background-color: setup.$primary-guide;
     opacity: 0.72;
   }
   .item-i:nth-child(5) {
-    background-color: $primary-guide;
+    background-color: setup.$primary-guide;
     opacity: 0.65;
   }
   .item-i:nth-child(6) {
-    background-color: $primary-guide;
+    background-color: setup.$primary-guide;
     opacity: 0.58;
   }
   .item-i:nth-child(7) {
-    background-color: $primary-guide;
+    background-color: setup.$primary-guide;
     opacity: 0.51;
   }
   .item-i:nth-child(8) {
-    background-color: $primary-guide;
+    background-color: setup.$primary-guide;
     opacity: 0.44;
   }
   .item-i:nth-child(9) {
-    background-color: $primary-guide;
+    background-color: setup.$primary-guide;
     opacity: 0.37;
   }
   .item-i:nth-child(10) {
-    background-color: $primary-guide;
+    background-color: setup.$primary-guide;
     opacity: 0.3;
   }
   .box-demo,
@@ -518,7 +524,7 @@ $variablecolors: length($variable-colors);
   .box-demo-inner {
     height: 200px;
     border: 1px solid #fff;
-    background-color: $primary-guide;
+    background-color: setup.$primary-guide;
     opacity: 0.6;
     font-size: 20px;
     padding-top: 100px;
@@ -589,7 +595,7 @@ pre[class*='language-'] {
 }
 .mini-box {
   span {
-    @include font-bold;
+    @include mixins.font-bold;
     display: block;
     font-size: 14px;
   }

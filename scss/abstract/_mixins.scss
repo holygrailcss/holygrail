@@ -1,8 +1,19 @@
 @use 'sass:math';
-@import 'breakpoints';
+@use 'sass:color';
+@use 'sass:list';
+@use 'sass:map';
+@use 'sass:string';
+@use 'breakpoints';
+@use 'fonts';
+@use 'setup';
 
 @mixin background-alpha($color: $color-white, $alpha: 1) {
-  background-color: hsla(hue($color), saturation($color), lightness($color), $alpha);
+  background-color: hsla(
+    color.hue($color),
+    color.saturation($color),
+    color.lightness($color),
+    $alpha
+  );
 }
 
 @mixin user-select($select) {
@@ -10,74 +21,52 @@
 }
 
 @mixin font-light() {
-  & {
-    font-family: $font-family-a-l;
-    font-weight: $font-weight-light;
-  }
+  font-family: fonts.$font-family-a-l;
+  font-weight: fonts.$font-weight-light;
 }
 
 @mixin font-regular() {
-  & {
-    font-family: $font-family-a-r;
-    font-weight: $font-weight-regular;
-  }
+  font-family: fonts.$font-family-a-r;
+  font-weight: fonts.$font-weight-regular;
 }
 
 @mixin font-medium() {
-  & {
-    font-family: $font-family-a-m;
-    font-weight: $font-weight-medium;
-  }
+  font-family: fonts.$font-family-a-m;
+  font-weight: fonts.$font-weight-medium;
 }
 
 @mixin font-semibold() {
-  & {
-    font-family: $font-family-a-sb;
-    font-weight: $font-weight-semibold;
-  }
+  font-family: fonts.$font-family-a-sb;
+  font-weight: fonts.$font-weight-semibold;
 }
 
 @mixin font-bold() {
-  & {
-    font-family: $font-family-a-b;
-    font-weight: $font-weight-bold;
-  }
+  font-family: fonts.$font-family-a-b;
+  font-weight: fonts.$font-weight-bold;
 }
 
 @mixin font-2-regular() {
-  & {
-    font-family: $font-family-b-r;
-  }
+  font-family: fonts.$font-family-b-r;
 }
 
 @mixin font-2-medium() {
-  & {
-    font-family: $font-family-b-m;
-  }
+  font-family: fonts.$font-family-b-m;
 }
 
 @mixin font-2-bold() {
-  & {
-    font-family: $font-family-b-b;
-  }
+  font-family: fonts.$font-family-b-b;
 }
 
 @mixin font-3-regular() {
-  & {
-    font-family: $font-family-c-r;
-  }
+  font-family: fonts.$font-family-c-r;
 }
 
 @mixin font-3-medium() {
-  & {
-    font-family: $font-family-c-m;
-  }
+  font-family: fonts.$font-family-c-m;
 }
 
 @mixin font-3-bold() {
-  & {
-    font-family: $font-family-c-b;
-  }
+  font-family: fonts.$font-family-c-b;
 }
 
 @mixin fonters($param) {
@@ -107,8 +96,8 @@
 @mixin typesFixers($minheadersFixers, $cssattr) {
   @for $i from 1 through 1 {
     @each $name, $fsize in $minheadersFixers {
-      $fontsize: nth($fsize, $i);
-      $fontheight: nth($fsize, 2);
+      $fontsize: list.nth($fsize, $i);
+      $fontheight: list.nth($fsize, 2);
       .text-#{$name}-r {
         @include fonters(regular);
 
@@ -144,7 +133,7 @@
 }
 
 @mixin random-bgr() {
-  background: rgb(random(255) random(255) random(255));
+  background: rgb(math.random(255) math.random(255) math.random(255));
 }
 
 @mixin fixed-bgr() {
@@ -158,14 +147,14 @@
 @mixin typesFluids($minheadersFluids) {
   @for $i from 1 through 1 {
     @each $name, $fsize in $minheadersFluids {
-      $u1: unit($min-vw);
-      $u2: unit($max-vw);
-      $min-font-size: nth($fsize, $i);
-      $max-font-size: nth($fsize, 2);
-      $fluid-line-height: nth($fsize, 3);
-      $u3: unit($min-font-size);
-      $u4: unit($max-font-size);
-      $u5: nth($fsize, 3);
+      $u1: math.unit(setup.$min-vw);
+      $u2: math.unit(setup.$max-vw);
+      $min-font-size: list.nth($fsize, $i);
+      $max-font-size: list.nth($fsize, 2);
+      $fluid-line-height: list.nth($fsize, 3);
+      $u3: math.unit($min-font-size);
+      $u4: math.unit($max-font-size);
+      $u5: list.nth($fsize, 3);
 
       .fluid-#{$name}-l {
         @include font-light;
@@ -175,15 +164,15 @@
             font-size: $min-font-size;
             line-height: $u5;
 
-            @media (min-width: $min-vw) {
+            @media (min-width: setup.$min-vw) {
               font-size: calc(
                 #{$min-font-size} + #{unity($max-font-size - $min-font-size)} *
-                  ((100vw - #{$min-vw}) / #{unity($max-vw - $min-vw)})
+                  ((100vw - #{setup.$min-vw}) / #{unity(setup.$max-vw - setup.$min-vw)})
               );
               line-height: $fluid-line-height;
             }
 
-            @media (min-width: $max-vw) {
+            @media (min-width: setup.$max-vw) {
               font-size: $max-font-size;
               line-height: $fluid-line-height;
             }
@@ -199,15 +188,15 @@
             font-size: $min-font-size;
             line-height: $u5;
 
-            @media (min-width: $min-vw) {
+            @media (min-width: setup.$min-vw) {
               font-size: calc(
                 #{$min-font-size} + #{unity($max-font-size - $min-font-size)} *
-                  ((100vw - #{$min-vw}) / #{unity($max-vw - $min-vw)})
+                  ((100vw - #{setup.$min-vw}) / #{unity(setup.$max-vw - setup.$min-vw)})
               );
               line-height: $fluid-line-height;
             }
 
-            @media (min-width: $max-vw) {
+            @media (min-width: setup.$max-vw) {
               font-size: $max-font-size;
               line-height: $fluid-line-height;
             }
@@ -222,15 +211,15 @@
             font-size: $min-font-size;
             line-height: $u5;
 
-            @media (min-width: $min-vw) {
+            @media (min-width: setup.$min-vw) {
               font-size: calc(
                 #{$min-font-size} + #{unity($max-font-size - $min-font-size)} *
-                  ((100vw - #{$min-vw}) / #{unity($max-vw - $min-vw)})
+                  ((100vw - #{setup.$min-vw}) / #{unity(setup.$max-vw - setup.$min-vw)})
               );
               line-height: $fluid-line-height;
             }
 
-            @media (min-width: $max-vw) {
+            @media (min-width: setup.$max-vw) {
               font-size: $max-font-size;
               line-height: $fluid-line-height;
             }
@@ -246,15 +235,15 @@
             font-size: $min-font-size;
             line-height: $u5;
 
-            @media (min-width: $min-vw) {
+            @media (min-width: setup.$min-vw) {
               font-size: calc(
                 #{$min-font-size} + #{unity($max-font-size - $min-font-size)} *
-                  ((100vw - #{$min-vw}) / #{unity($max-vw - $min-vw)})
+                  ((100vw - #{setup.$min-vw}) / #{unity(setup.$max-vw - setup.$min-vw)})
               );
               line-height: $fluid-line-height;
             }
 
-            @media (min-width: $max-vw) {
+            @media (min-width: setup.$max-vw) {
               font-size: $max-font-size;
               line-height: $fluid-line-height;
             }
@@ -270,15 +259,15 @@
             font-size: $min-font-size;
             line-height: $u5;
 
-            @media (min-width: $min-vw) {
+            @media (min-width: setup.$min-vw) {
               font-size: calc(
                 #{$min-font-size} + #{unity($max-font-size - $min-font-size)} *
-                  ((100vw - #{$min-vw}) / #{unity($max-vw - $min-vw)})
+                  ((100vw - #{setup.$min-vw}) / #{unity(setup.$max-vw - setup.$min-vw)})
               );
               line-height: $fluid-line-height;
             }
 
-            @media (min-width: $max-vw) {
+            @media (min-width: setup.$max-vw) {
               font-size: $max-font-size;
               line-height: $fluid-line-height;
             }
@@ -358,7 +347,7 @@
     max-width: 100%;
   }
 
-  @media (min-width: $break-sm) {
+  @media (min-width: breakpoints.$break-sm) {
     .single {
       flex-basis: 25%;
       max-width: 25%;
@@ -372,14 +361,14 @@
 }
 
 @mixin types($breakpoints, $minheaders, $cssattr) {
-  @for $i from 1 through length($breakpoints) {
-    @media (min-width: nth(map-values($breakpoints), $i)) {
+  @for $i from 1 through list.length($breakpoints) {
+    @media (min-width: list.nth(map.values($breakpoints), $i)) {
       @each $name, $fsize in $minheaders {
-        $fontsize: nth($fsize, $i);
-        $fontheight: nth($fsize, 5);
-        $fontweight: nth($fsize, 6);
+        $fontsize: list.nth($fsize, $i);
+        $fontheight: list.nth($fsize, 5);
+        $fontweight: list.nth($fsize, 6);
         .#{$name} {
-          @if nth(map-values($breakpoints), $i) ==1px {
+          @if list.nth(map.values($breakpoints), $i) ==1px {
             @include fonters($fontweight);
           }
 
@@ -392,10 +381,10 @@
 }
 
 @mixin space($breakpoints, $paddings, $cssattr) {
-  @for $i from 1 through length($breakpoints) {
-    @media (min-width: nth(map-values($breakpoints), $i)) {
+  @for $i from 1 through list.length($breakpoints) {
+    @media (min-width: list.nth(map.values($breakpoints), $i)) {
       @each $name, $pad in $paddings {
-        $padding: nth($pad, $i);
+        $padding: list.nth($pad, $i);
         .#{$name} {
           #{$cssattr }: $padding;
         }
@@ -412,14 +401,14 @@
   &:focus,
   &.focus {
     color: $color;
-    background-color: darken($background, 10%);
-    border-color: darken($border, 25%);
+    background-color: color.adjust($background, $lightness: -10%);
+    border-color: color.adjust($border, $lightness: -25%);
   }
 
   &:hover {
     color: $color;
-    background-color: darken($background, 10%);
-    border-color: darken($border, 12%);
+    background-color: color.adjust($background, $lightness: -10%);
+    border-color: color.adjust($border, $lightness: -12%);
   }
 
   &:active,
@@ -427,14 +416,14 @@
   .open > &.dropdown-toggle {
     background-image: none;
     color: $color;
-    background-color: darken($background, 10%);
-    border-color: darken($border, 12%);
+    background-color: color.adjust($background, $lightness: -10%);
+    border-color: color.adjust($border, $lightness: -12%);
     &:hover,
     &:focus,
     &.focus {
       color: $color;
-      background-color: darken($background, 17%);
-      border-color: darken($border, 25%);
+      background-color: color.adjust($background, $lightness: -17%);
+      border-color: color.adjust($border, $lightness: -25%);
     }
   }
 
@@ -648,23 +637,23 @@ $spriteHeight: 400;
 }
 
 @mixin rgba($property, $background: #000000, $opacity: 0.75, $mix: white) {
-  #{$property}: mix($background, $mix, $opacity * 100%);
+  #{$property}: color.mix($background, $mix, $opacity * 100%);
   #{$property}: rgba($background, $opacity);
 }
 
 @function unicode($str) {
-  @return unquote('"') + unquote(str-insert($str, '\\', 1)) + unquote('"');
+  @return string.unquote('"') + string.unquote(string.insert($str, '\\', 1)) + string.unquote('"');
 }
 
 @mixin mintypes($minbreakpoints, $minheaders, $cssattr) {
-  @for $i from 1 through length($minbreakpoints) {
-    @media (min-width: nth(map-values($minbreakpoints), $i)) {
+  @for $i from 1 through list.length($minbreakpoints) {
+    @media (min-width: list.nth(map.values($minbreakpoints), $i)) {
       @each $name, $fsize in $minheaders {
-        $fontsize: nth($fsize, $i);
-        $fontheight: nth($fsize, 3);
-        $fontweight: nth($fsize, 4);
+        $fontsize: list.nth($fsize, $i);
+        $fontheight: list.nth($fsize, 3);
+        $fontweight: list.nth($fsize, 4);
         .#{$name} {
-          @if nth(map-values($minbreakpoints), $i) ==1px {
+          @if list.nth(map.values($minbreakpoints), $i) ==1px {
             @include fonters($fontweight);
           }
 
@@ -677,19 +666,19 @@ $spriteHeight: 400;
 }
 
 @mixin debug-types($minheaders) {
-  @for $i from 1 through length($minheaders) {
-    .#{nth(map-keys($minheaders), $i)} {
+  @for $i from 1 through list.length($minheaders) {
+    .#{list.nth(map.keys($minheaders), $i)} {
       position: relative;
       border: 1px solid #96c3ac;
       &::after {
-        content: '#{nth(map-keys($minheaders), $i)} ' !important;
+        content: '#{list.nth(map.keys($minheaders), $i)} ' !important;
         position: absolute;
 
         @include fixed-bgr;
 
         opacity: 0.8;
         white-space: nowrap;
-        color: $c-white;
+        color: setup.$c-white;
         padding: 2px;
         left: 0;
         font-size: 10px;
@@ -700,13 +689,13 @@ $spriteHeight: 400;
 }
 
 @mixin heights-mix() {
-  @each $height-name in map-keys($heights) {
-    $values: map-get($heights, $height-name);
+  @each $height-name in map.keys(setup.$heights) {
+    $values: map.get(setup.$heights, $height-name);
     .#{$height-name} {
-      min-height: nth($values, 1);
+      min-height: list.nth($values, 1);
 
-      @media (min-width: $break-sm) {
-        min-height: nth($values, 2);
+      @media (min-width: breakpoints.$break-sm) {
+        min-height: list.nth($values, 2);
       }
     }
   }

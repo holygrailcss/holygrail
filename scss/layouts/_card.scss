@@ -1,4 +1,5 @@
-@import '../abstract/_all';
+@use '../abstract/_all';
+@use '../abstract/setup';
 
 .card {
   width: 100%;
@@ -9,9 +10,9 @@
 
   .text-box-img {
     display: inline-block;
-    width: $text-box-img - $padding-global;
-    height: $text-box-img - $padding-global;
-    margin: 5px $padding-global 0 0;
+    width: $text-box-img - setup.$padding-global;
+    height: $text-box-img - setup.$padding-global;
+    margin: 5px setup.$padding-global 0 0;
     vertical-align: top;
     box-sizing: border-box;
   }

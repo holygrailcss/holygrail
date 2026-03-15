@@ -1,25 +1,26 @@
 @use 'sass:math';
-@import '../abstract/_all';
+@use '../abstract/_all';
+@use '../abstract/setup';
 
 $tooltip-arrow: 10px;
-$tooltip-border-color: $c-middle-grey;
+$tooltip-border-color: setup.$c-middle-grey;
 $tooltip-dist: 10px;
-$tooltip-padding: 8px;
+setup.$tooltip-padding: 8px;
 $tooltip-width: 320px;
 
 .tooltip-sm {
   bottom: 0;
   transform: translateY(100%) translateY($tooltip-arrow);
   right: calc(50% - 16px);
-  background-color: $c-white;
+  background-color: setup.$c-white;
   border: 1px solid $tooltip-border-color;
   position: absolute;
   width: max-content;
   max-width: $tooltip-width;
   z-index: 10;
-  padding: $tooltip-padding;
-  padding-right: $tooltip-padding + 16px;
-  color: $c-primary;
+  padding: setup.$tooltip-padding;
+  padding-right: setup.$tooltip-padding + 16px;
+  color: setup.$c-primary;
 
   &::after {
     content: '';
@@ -30,7 +31,7 @@ $tooltip-width: 320px;
     border-left: 1px solid $tooltip-border-color;
     width: $tooltip-arrow;
     height: $tooltip-arrow;
-    background: $c-white;
+    background: setup.$c-white;
     transform: rotate(45deg);
   }
 
@@ -89,14 +90,14 @@ $tooltip-width: 320px;
   bottom: 0;
   transform: translateY(100%) translateY($tooltip-arrow);
   right: -8px;
-  background-color: $c-white;
+  background-color: setup.$c-white;
   border: 1px solid $tooltip-border-color;
   position: absolute;
   width: 240px;
   z-index: 10;
-  padding: $tooltip-padding;
-  padding-right: $tooltip-padding + 16px;
-  color: $c-primary;
+  padding: setup.$tooltip-padding;
+  padding-right: setup.$tooltip-padding + 16px;
+  color: setup.$c-primary;
 
   &::after {
     content: '';
@@ -107,7 +108,7 @@ $tooltip-width: 320px;
     border-left: 1px solid $tooltip-border-color;
     width: $tooltip-arrow;
     height: $tooltip-arrow;
-    background: $c-white;
+    background: setup.$c-white;
     transform: rotate(45deg);
   }
 
@@ -135,8 +136,8 @@ $tooltip-width: 320px;
 .tooltip-sm-old {
   top: 36px;
   right: 8px;
-  background-color: $c-white;
-  border: 1px solid $c-middle-grey;
+  background-color: setup.$c-white;
+  border: 1px solid setup.$c-middle-grey;
   position: absolute;
   width: 100%;
   max-width: 327px;
@@ -148,16 +149,16 @@ $tooltip-width: 320px;
   right: 18px;
   content: '';
   position: absolute;
-  border-top: 1px solid $c-middle-grey;
-  border-left: 1px solid $c-middle-grey;
+  border-top: 1px solid setup.$c-middle-grey;
+  border-left: 1px solid setup.$c-middle-grey;
   width: 10px;
   height: 10px;
-  background: $c-white;
+  background: setup.$c-white;
   transform: rotate(45deg);
 }
 
 .tooltip-close {
-  border-bottom: 1px solid $c-middle-grey;
+  border-bottom: 1px solid setup.$c-middle-grey;
   width: 100%;
   position: absolute;
   top: 0;
