@@ -1,4 +1,4 @@
-@use 'breakpoints';
-@use 'setup';
-@use 'fonts';
-@use 'mixins';
+@forward 'breakpoints' hide $min-width;
+@forward 'setup';
+@forward 'fonts';
+@forward 'mixins';
