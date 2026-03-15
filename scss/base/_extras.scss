@@ -11,11 +11,3 @@ $links: (
   btn-world: #{$break-lg},
   product-tag: #{$break-lg},
 );
-
-.helper-font {
-  @include debug-types($headers);
-  @include debug-types($links);
-  .form-input-label-2 {
-    border: 1px solid $c-success;
-  }
-}

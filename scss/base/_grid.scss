@@ -28,6 +28,11 @@
     width: 80%;
     max-width: nth(map-values($breakpoints), 4);
   }
+
+  @media (min-width: $break-xl) {
+    width: 100%;
+    max-width: nth(map-values($breakpointscols), 5);
+  }
 }
 
 .container-full {
@@ -70,6 +75,61 @@
   margin-right: auto;
   margin-left: auto;
   position: relative;
+}
+
+.container-0 {
+  padding-right: 16px;
+  padding-left: 16px;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  max-width: 992px;
+
+  @media (min-width: $break-sm) {
+    width: 90%;
+    max-width: 768px;
+  }
+  @media (min-width: $break-md) {
+    width: 80%;
+    max-width: 992px;
+  }
+  @media (min-width: $break-lg) {
+    margin: 0;
+    width: 80%;
+    max-width: 1280px;
+  }
+}
+
+.container-global-2 {
+  padding-right: 16px;
+  padding-left: 16px;
+  max-width: 250px;
+  @media (min-width: $break-sm) {
+    max-width: 1650px;
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
+}
+
+.container-global-3 {
+  padding-right: 16px;
+  padding-left: 16px;
+  max-width: 1440px;
+  @media (min-width: $break-md) {
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
+}
+
+.container-global-4 {
+  padding-right: 16px;
+  padding-left: 16px;
+  max-width: 250px;
+  @media (min-width: $break-md) {
+    max-width: 1440px;
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
 }
 
 .container-2 {
@@ -333,12 +393,6 @@
 .grid-4 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
-}
-
-.grid-4 {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
   gap: 16px;
 }
 

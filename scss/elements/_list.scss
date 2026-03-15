@@ -83,7 +83,6 @@ ul.list-inline-clear {
 ul.list-clear {
   li {
     list-style: none;
-    margin: $padding-global 0;
 
     &::after {
       display: none;

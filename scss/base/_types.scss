@@ -29,34 +29,11 @@ p {
   @media (min-width: $break-md) {
     font-size: $text-md;
   }
-
-  &.b {
-    @include font-regular;
-
-    color: $c-primary;
-  }
 }
 
 a {
   color: $c-primary;
   text-decoration: none;
-}
-
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6,
-.p1 {
-  span {
-    color: $c-primary;
-  }
-}
-
-b,
-mark {
-  color: $c-primary;
 }
 
 .secondary {

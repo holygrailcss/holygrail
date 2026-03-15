@@ -167,12 +167,13 @@ select {
       background: none;
       height: 32px;
       font-size: $text-input-m;
+      opacity: 0;
       @media (min-width: $break-sm) {
         padding: 14px 2px;
         height: 48px;
         font-size: $text-input-d;
       }
-      opacity: 0;
+
       &:hover {
         opacity: 0;
       }
@@ -369,11 +370,12 @@ input::input-placeholder {
 }
 .form-input-label-2,
 .error-zone {
+  font-family: $font-family-form;
+  position: relative;
   label {
     font-size: $text-input-d;
   }
-  font-family: $font-family-form;
-  position: relative;
+
   .validation-error-messages {
     width: calc(100% - 40px);
   }

@@ -93,7 +93,7 @@
   .check-center.check-bleed.checkbox-radio [type='radio']:checked + label .ico-radio,
   .check-center.check-bleed.checkbox-radio [type='radio']:not(:checked) + label .ico-radio {
     left: initial;
-    right: 7px;
+    right: 5px;
   }
   .btn {
     &.btn-separate {

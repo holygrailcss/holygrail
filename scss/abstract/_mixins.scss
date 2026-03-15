@@ -10,52 +10,74 @@
 }
 
 @mixin font-light() {
-  font-family: $font-family-a-l;
-  font-weight: $font-weight-light;
+  & {
+    font-family: $font-family-a-l;
+    font-weight: $font-weight-light;
+  }
 }
 
 @mixin font-regular() {
-  font-family: $font-family-a-r;
-  font-weight: $font-weight-regular;
+  & {
+    font-family: $font-family-a-r;
+    font-weight: $font-weight-regular;
+  }
 }
 
 @mixin font-medium() {
-  font-family: $font-family-a-m;
-  font-weight: $font-weight-medium;
+  & {
+    font-family: $font-family-a-m;
+    font-weight: $font-weight-medium;
+  }
 }
 
 @mixin font-semibold() {
-  font-family: $font-family-a-sb;
-  font-weight: $font-weight-semibold;
+  & {
+    font-family: $font-family-a-sb;
+    font-weight: $font-weight-semibold;
+  }
 }
 
 @mixin font-bold() {
-  font-family: $font-family-a-b;
-  font-weight: $font-weight-bold;
+  & {
+    font-family: $font-family-a-b;
+    font-weight: $font-weight-bold;
+  }
 }
 
 @mixin font-2-regular() {
-  font-family: $font-family-b-r;
+  & {
+    font-family: $font-family-b-r;
+  }
 }
 
 @mixin font-2-medium() {
-  font-family: $font-family-b-m;
+  & {
+    font-family: $font-family-b-m;
+  }
 }
 
 @mixin font-2-bold() {
-  font-family: $font-family-b-b;
+  & {
+    font-family: $font-family-b-b;
+  }
 }
 
 @mixin font-3-regular() {
-  font-family: $font-family-c-r;
+  & {
+    font-family: $font-family-c-r;
+  }
 }
 
 @mixin font-3-medium() {
-  font-family: $font-family-c-m;
+  & {
+    font-family: $font-family-c-m;
+  }
 }
 
 @mixin font-3-bold() {
-  font-family: $font-family-c-b;
+  & {
+    font-family: $font-family-c-b;
+  }
 }
 
 @mixin fonters($param) {
@@ -82,9 +104,9 @@
   }
 }
 
-@mixin typesFixers($headersFixers, $cssattr) {
+@mixin typesFixers($minheadersFixers, $cssattr) {
   @for $i from 1 through 1 {
-    @each $name, $fsize in $headersFixers {
+    @each $name, $fsize in $minheadersFixers {
       $fontsize: nth($fsize, $i);
       $fontheight: nth($fsize, 2);
       .text-#{$name}-r {
@@ -133,9 +155,9 @@
   @return math.div($value, $value * 0 + 1);
 }
 
-@mixin typesFluids($headersFluids) {
+@mixin typesFluids($minheadersFluids) {
   @for $i from 1 through 1 {
-    @each $name, $fsize in $headersFluids {
+    @each $name, $fsize in $minheadersFluids {
       $u1: unit($min-vw);
       $u2: unit($max-vw);
       $min-font-size: nth($fsize, $i);
@@ -349,10 +371,10 @@
   }
 }
 
-@mixin types($breakpoints, $headers, $cssattr) {
+@mixin types($breakpoints, $minheaders, $cssattr) {
   @for $i from 1 through length($breakpoints) {
     @media (min-width: nth(map-values($breakpoints), $i)) {
-      @each $name, $fsize in $headers {
+      @each $name, $fsize in $minheaders {
         $fontsize: nth($fsize, $i);
         $fontheight: nth($fsize, 5);
         $fontweight: nth($fsize, 6);
@@ -634,10 +656,10 @@ $spriteHeight: 400;
   @return unquote('"') + unquote(str-insert($str, '\\', 1)) + unquote('"');
 }
 
-@mixin mintypes($minbreakpoints, $headers, $cssattr) {
+@mixin mintypes($minbreakpoints, $minheaders, $cssattr) {
   @for $i from 1 through length($minbreakpoints) {
     @media (min-width: nth(map-values($minbreakpoints), $i)) {
-      @each $name, $fsize in $headers {
+      @each $name, $fsize in $minheaders {
         $fontsize: nth($fsize, $i);
         $fontheight: nth($fsize, 3);
         $fontweight: nth($fsize, 4);
@@ -654,13 +676,13 @@ $spriteHeight: 400;
   }
 }
 
-@mixin debug-types($headers) {
-  @for $i from 1 through length($headers) {
-    .#{nth(map-keys($headers), $i)} {
+@mixin debug-types($minheaders) {
+  @for $i from 1 through length($minheaders) {
+    .#{nth(map-keys($minheaders), $i)} {
       position: relative;
       border: 1px solid #96c3ac;
       &::after {
-        content: '#{nth(map-keys($headers), $i)} ' !important;
+        content: '#{nth(map-keys($minheaders), $i)} ' !important;
         position: absolute;
 
         @include fixed-bgr;

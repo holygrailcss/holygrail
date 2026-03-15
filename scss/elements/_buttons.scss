@@ -1220,7 +1220,7 @@ button {
   border: none;
   background-color: rgba($c-primary, 0.4);
   color: $c-white;
-  transition: all 0.4s ease-in-out;
+  //transition: all 0.4s ease-in-out;
 
   svg {
     path {
@@ -1321,4 +1321,13 @@ button {
       stroke: none;
     }
   }
+}
+
+.btn--tag {
+  padding: 2px 4px 2px 0;
+  color: $c-dark-grey;
+  font-size: 12px;
+  letter-spacing: 0;
+  @include font-regular;
+  display: inline-block;
 }

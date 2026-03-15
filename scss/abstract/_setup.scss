@@ -1,23 +1,37 @@
-$espaciados: (0, 2, 4, 8, 12, 16, 20, 24, 32, 40, 48, 56, 64, 72, 80, 96, 112, 128, 160);
+$espaciados: (0, 2, 4, 8, 12, 16, 20, 24, 32, 40, 48, 56, 64, 72, 80, 96, 112, 120, 128, 160);
 $c-white: #fff !default;
 $c-black: #000 !default;
-$c-dark-grey: #8e8e8e !default;
-$c-middle-grey: #e3e3e3 !default;
+
 $c-light-grey: #f0f0f0 !default;
-$c-primary: #1a1a1a !default;
-$c-secondary: #1a1a1a !default;
-$c-accent: #b40016 !default;
-$c-error: #b40016 !default;
-$c-sale: #b40016 !default;
+$c-middle-grey: #a9a9a9 !default;
+$c-dark-grey: #666666 !default;
+
+$c-primary-3: rgba(0, 0, 0, 0.3);
+$c-primary-15: rgba(0, 0, 0, 0.15);
+$c-primary-30: rgba(0, 0, 0, 0.3);
+$c-primary-60: rgba(0, 0, 0, 0.6);
+$c-primary-97: rgba(0, 0, 0, 0.97);
+
+$c-secondary-3: rgba(255, 255, 255, 0.3);
+$c-secondary-15: rgba(255, 255, 255, 0.15);
+$c-secondary-30: rgba(255, 255, 255, 0.3);
+$c-secondary-60: rgba(255, 255, 255, 0.6);
+$c-secondary-97: rgba(255, 255, 255, 0.97);
+
+/* functional */
+$c-primary: #000 !default;
+$c-secondary: #000 !default;
+$c-accent: #ed0f2b !default;
+$c-error: #ed0f2b !default;
+$c-sale: #ffce4e !default;
 $c-info: #1a32a4 !default;
-$c-valid: #76ae4a !default;
-$c-warning: #ffc700 !default;
-$c-feel: #fb9962 !default;
-$c-feel-dark: #c94c07 !default;
-$c-feel-light: #fccbb0 !default;
+$c-valid: #12882c !default;
+$c-warning: #ffce4e !default;
+$c-orange: #e5740b !default;
+
 $c-limited: #000 !default;
-$c-success: #76ae4a !default;
-$c-alert: #ffc700 !default;
+$c-success: #12882c !default;
+$c-alert: #ffce4e !default;
 $c-facebook: #1977f3 !default;
 $c-google: #4285f4 !default;
 $c-naver: #03cf5d !default;
@@ -28,14 +42,19 @@ $bg-black: #000 !default;
 $c-bg-light: #000 !default;
 $c-bg-dark: #fff !default;
 $white-smoke: #f0f0f0 !default;
-$primary: #1a1a1a !default;
+$primary: #000000 !default;
 $primary-guide: #363636 !default;
 $secondary-guide: #6759bb !default;
 $ternary-guide: #6759bb !default;
 $list-disc-color: #1a1a1a !default;
+
+$c-feel: #000000 !default;
+$c-feel-light: #f0f0f0 !default;
+$c-feel-dark: #a9a9a9 !default;
 $c-tier-silver: #e3e3e3 !default;
-$c-tier-platinum: #9dbddc !default;
-$c-tier-gold: #e0b279 !default;
+$c-tier-platinum: #99b0c5 !default;
+$c-tier-gold: #dcbe99 !default;
+
 $text-sm: 12px;
 $text-md: 13px;
 $text-lg: 13px;
@@ -43,13 +62,13 @@ $btn-radius: 0 !default;
 $obj-radius: 0 !default;
 $form-radius: 0 !default;
 $btn-line-height: 1 !default;
-$btn-padding: 13px !default;
+$btn-padding: 12px !default;
 $btn-text-mini: 12px !default;
-$btn-text-small: 14px !default;
-$btn-text-medium: 14px !default;
-$btn-text-large: 14px !default;
-$btn-text-xlarge: 16px !default;
-$btn-text-full: 14px !default;
+$btn-text-small: 12px !default;
+$btn-text-medium: 12px !default;
+$btn-text-large: 12px !default;
+$btn-text-xlarge: 12px !default;
+$btn-text-full: 12px !default;
 $btn-text-r: 12px !default;
 $btn-text-m: 12px !default;
 $tabs-text: 12px !default;
@@ -62,13 +81,14 @@ $padding-global: 8px !default;
 $padding-mobile: 24px !default;
 $padding-desktop: 40px !default;
 $padding-button: 8px !default;
-$height-inputs: 48px !default;
+$height-inputs: 40px !default;
+$height-btn: 40px !default;
 $text-input-m: 12px !default;
 $text-input-d: 12px !default;
 $container: 800px !default;
 $container-2: 700px !default;
 $container-3: 900px !default;
-$container-4: 356px !default;
+$container-4: 360px !default;
 $container-5: 800px !default;
 $container-6: 442px !default;
 $container-7: 595px !default;
@@ -78,6 +98,24 @@ $container-10: 200px !default;
 $container-11: 1080px !default;
 $container-12: 1080px !default;
 $container-full: 1500px !default;
+
+$xcontainer-10: 200px !default;
+$xcontainer-4: 360px !default;
+$xcontainer-8: 395px !default;
+$xcontainer-6: 442px !default;
+
+$xcontainer-7: 595px !default;
+
+$xcontainer-2: 700px !default;
+$xcontainer-9: 798px !default;
+$xcontainer: 800px !default;
+$xcontainer-5: 800px !default;
+$xcontainer-3: 900px !default;
+
+$xcontainer-11: 1080px !default;
+$xcontainer-12: 1080px !default;
+$xcontainer-full: 1500px !default;
+
 $height-xs: 60px !default;
 $height-sm: 100px !default;
 $height-md: 350px !default;
@@ -90,10 +128,12 @@ $min-width: 320px !default;
 $min-vw: 320px !default;
 $max-vw: 1500px !default;
 $svg-size: 16px;
+$tooltip-padding: 8px;
 $fs: 'font-size';
 $lh: 'line-height';
+
 $headers: (
-  tit-m: (
+  titularbase-m: (
     14px,
     14px,
     16px,
@@ -103,90 +143,68 @@ $headers: (
   ),
 ) !default;
 $minheaders: (
-  tit-m: (
-    14px,
-    16px,
-    1.2,
-    'medium',
-  ),
-  tit-s: (
-    13px,
-    13px,
-    1.2,
-    'medium',
-  ),
-  tit-xs: (
-    12px,
-    12px,
-    1.2,
-    'regular',
-  ),
-  tit-xs-b: (
-    12px,
-    12px,
-    1.2,
-    'bold',
-  ),
-  sub-xs: (
-    11px,
-    11px,
-    1.2,
-    'regular',
-  ),
-  /* ttu */ p-m:
-    (
-      12px,
-      12px,
-      1.2,
-      'regular',
-    ),
-  p-s: (
-    12px,
-    12px,
-    1.2,
-    'regular',
-  ),
-  /* desaparece y pasa a ser --> p-m ❌ */ p-xs:
-    (
-      11px,
-      11px,
-      1.2,
-      'regular',
-    ),
   p-tag: (
-    10px,
+    8px,
     10px,
     1.3,
     'regular',
   ),
-  p-m-b: (
-    12px,
-    13px,
+  h2: (
+    18px,
+    24px,
     1.2,
     'bold',
   ),
-  /*  ❌ */ p-m-m:
-    (
-      12px,
-      13px,
-      1.2,
-      'medium',
-    ),
-  /*desaparece y pasa a ser p-m❌ */ p-xs-b:
-    (
-      11px,
-      12px,
-      1.3,
-      'bold',
-    ),
-  /* desaparece y pasa a ser sub-xs ❌ */ p-xxs-b:
-    (
-      9px,
-      9px,
-      1.3,
-      'bold',
-    ),
+  title-l: (
+    12px,
+    12px,
+    1.4,
+    'regular',
+  ),
+  title-l-l: (
+    12px,
+    12px,
+    1.4,
+    'light',
+  ),
+  title-l-b: (
+    12px,
+    12px,
+    1.4,
+    'medium',
+  ),
+  title-m: (
+    11px,
+    11px,
+    1.4,
+    'regular',
+  ),
+  title-s: (
+    10px,
+    10px,
+    1.4,
+    'regular',
+  ),
+  text-l: (
+    12px,
+    12px,
+    1.5,
+    'regular',
+  ),
+  text-l-l: (
+    12px,
+    12px,
+    1.5,
+    'light',
+  ),
+  text-m: (
+    11px,
+    11px,
+    1.5,
+    'regular',
+  ),
 ) !default;
+
 $headersFixers: (
   12: (
     12px,
@@ -213,6 +231,7 @@ $headersFixers: (
     1.5,
   ),
 ) !default;
+
 $headersFluids: (
   2: (
     40px,
@@ -297,7 +316,7 @@ $margin-bottom: (
     24px,
   ),
   mbr-32: (
-    24px,
+    16px,
     32px,
     32px,
     32px,
@@ -326,8 +345,8 @@ $margin-left: () !default;
 $p: 'padding';
 $padding: (
   p-body: (
-    16px,
-    16px,
+    20px,
+    20px,
     40px,
     40px,
   ),
@@ -363,8 +382,8 @@ $padding-bottom: (
 $pl: 'padding-left';
 $padding-left: (
   pl-body: (
-    16px,
-    16px,
+    20px,
+    20px,
     40px,
     40px,
   ),
@@ -372,14 +391,9 @@ $padding-left: (
 $pr: 'padding-right';
 $padding-right: (
   pr-body: (
-    16px,
-    16px,
+    20px,
+    20px,
     40px,
     40px,
   ),
 ) !default;
-
-//@include space($breakpoints, $padding-top, $pt);
-//@include space($breakpoints, $padding-left, $pl);
-//@include space($breakpoints, $padding-bottom, $pb);
-//@include space($breakpoints, $padding-right, $pr);
