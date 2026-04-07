@@ -1,6 +1,7 @@
 @use 'sass:list';
 @use '../abstract/_all';
 @use '../abstract/breakpoints';
+@use '../abstract/mixins';
 @use '../abstract/setup';
 
 .margin-auto {
@@ -59,6 +60,18 @@
     padding-left: #{$espaciado}px;
   }
 }
+
+// Responsive spacing — generado desde las variables de setup.scss
+@include mixins.space(breakpoints.$breakpoints, setup.$margin, setup.$mg);
+@include mixins.space(breakpoints.$breakpoints, setup.$margin-top, setup.$mt);
+@include mixins.space(breakpoints.$breakpoints, setup.$margin-right, setup.$mr);
+@include mixins.space(breakpoints.$breakpoints, setup.$margin-bottom, setup.$mb);
+@include mixins.space(breakpoints.$breakpoints, setup.$margin-left, setup.$ml);
+@include mixins.space(breakpoints.$breakpoints, setup.$padding, setup.$p);
+@include mixins.space(breakpoints.$breakpoints, setup.$padding-top, setup.$pt);
+@include mixins.space(breakpoints.$breakpoints, setup.$padding-right, setup.$pr);
+@include mixins.space(breakpoints.$breakpoints, setup.$padding-bottom, setup.$pb);
+@include mixins.space(breakpoints.$breakpoints, setup.$padding-left, setup.$pl);
 
 .sm\:mb-0 {
   @media (min-width: breakpoints.$break-sm) {
