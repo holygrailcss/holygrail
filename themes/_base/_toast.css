@@ -1,0 +1,121 @@
+/**
+ * Toast
+ * Notificación efímera estilo shadcn/sonner.
+ * El JS añade/quita .toast en el contenedor .toaster (no incluído).
+ *
+ * Estructura:
+ *   <div class="toaster" data-position="bottom-right">
+ *     <div class="toast">
+ *       <div class="toast-content">
+ *         <h5 class="toast-title">Saved</h5>
+ *         <p class="toast-description">Your changes are live.</p>
+ *       </div>
+ *       <button class="toast-close">×</button>
+ *     </div>
+ *   </div>
+ */
+
+.toaster {
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  gap: var(--hg-spacing-8);
+  pointer-events: none;
+  padding: var(--hg-spacing-16);
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.toaster[data-position="top-right"], .toaster.toaster-top-right {
+  top: 0;
+  right: 0;
+  align-items: flex-end;
+}
+.toaster[data-position="top-left"], .toaster.toaster-top-left {
+  top: 0;
+  left: 0;
+  align-items: flex-start;
+}
+.toaster[data-position="bottom-right"], .toaster.toaster-bottom-right,
+.toaster {
+  bottom: 0;
+  right: 0;
+  top: auto;
+  left: auto;
+  align-items: flex-end;
+}
+.toaster[data-position="bottom-left"], .toaster.toaster-bottom-left {
+  bottom: 0;
+  left: 0;
+  right: auto;
+  align-items: flex-start;
+}
+.toaster[data-position="top-center"], .toaster.toaster-top-center {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  align-items: center;
+}
+
+.toast {
+  pointer-events: auto;
+  display: flex;
+  align-items: flex-start;
+  gap: var(--hg-spacing-12);
+  width: 360px;
+  max-width: 100%;
+  padding: var(--hg-spacing-12) var(--hg-spacing-16);
+  background: var(--hg-color-white);
+  color: var(--hg-color-primary);
+  border: var(--border-width) var(--border-style) var(--hg-color-middle-grey);
+  border-radius: var(--border-radius);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.10);
+  font-family: var(--hg-typo-font-family-primary-regular);
+  animation: toast-in 0.18s ease-out;
+}
+
+@keyframes toast-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.toast-content {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.toast-title {
+  font-family: var(--hg-typo-font-family-primary-bold);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.3;
+  margin: 0 0 2px;
+}
+
+.toast-description {
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 0;
+  color: var(--hg-color-dark-grey);
+}
+
+.toast-close {
+  background: transparent;
+  border: 0;
+  padding: 0 4px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+  color: currentColor;
+  opacity: 0.6;
+}
+
+.toast-close:hover { opacity: 1; }
+
+/* Variantes */
+.toast-success { border-color: var(--hg-color-success); }
+.toast-error,
+.toast-destructive { border-color: var(--hg-color-error); }
+.toast-warning { border-color: var(--hg-color-warning); }
+.toast-info    { border-color: var(--hg-color-info); }

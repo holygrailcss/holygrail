@@ -1,0 +1,28 @@
+/**
+ * Labels
+ * Variantes: normal, required, inline
+ */
+
+.label {
+  display: block;
+  font-family: var(--hg-typo-font-family-primary-regular);
+  font-size: var(--hg-typo-font-size-12);
+  font-weight: var(--hg-typo-font-weight-700);
+  line-height: var(--hg-typo-line-height-1-5);
+  color: var(--label-color);
+  margin-block-end: var(--hg-spacing-8);
+}
+
+.label-required::after {
+  content: " *";
+  color: var(--label-required);
+}
+
+.label-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--hg-spacing-8);
+  margin-block-end: 0;
+  cursor: pointer;
+}
+

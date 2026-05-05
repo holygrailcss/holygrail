@@ -1,0 +1,203 @@
+/**
+ * Radios
+ * Estados: checked, disabled, focus
+ * Variantes: checkbox-radio, check-center, check-no, check-bleed, check-top, check-clear
+ */
+
+/* ============================================
+   CHECKBOX-RADIO (Radio buttons con estilo checkbox)
+   ============================================ */
+
+.checkbox-radio {
+  position: relative;
+}
+
+/* Input oculto */
+.checkbox-radio [type=radio] {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+  line-height: normal;
+}
+
+/* Label base */
+.checkbox-radio [type=radio] + label {
+  position: relative;
+  padding-left: 0;
+  padding-bottom: 0;
+  cursor: pointer;
+  font-weight: normal;
+  font-size: var(--hg-typo-font-size-xs, 12px);
+  text-align: initial;
+  display: flex;
+  flex-direction: column;
+  float: none;
+}
+
+/* Círculo del radio (::before)
+   Tamaño promedio del proyecto: 24x24, circular. */
+.checkbox-radio [type=radio] + label::before {
+  position: absolute;
+  box-sizing: border-box;
+  content: "";
+  width: 24px;
+  height: 24px;
+  left: 0;
+  border: var(--border-width) var(--border-style) var(--hg-color-primary);
+  outline: 0;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 var(--hg-spacing-10, 10px) 0 0;
+  border-radius: 50%;
+}
+
+/* Texto del label */
+.checkbox-radio [type=radio] + label span {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  line-height: var(--hg-typo-line-height-sm, 16px);
+  padding-top: 2px;
+  padding-left: var(--hg-spacing-32, 32px);
+  min-height: 24px;
+}
+
+/* Indicador interno (punto) — círculo 10x10 centrado dentro del 24x24 */
+.checkbox-radio [type=radio] + label .ico-radio {
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  width: 10px;
+  height: 10px;
+  background-color: var(--hg-color-primary);
+  border-radius: 50%;
+  transition: var(--transition);
+}
+
+/* Estado no seleccionado */
+.checkbox-radio [type=radio]:not(:checked) + label .ico-radio {
+  opacity: 0;
+  transform: scale(0);
+}
+
+/* Estado seleccionado */
+.checkbox-radio [type=radio]:checked + label .ico-radio {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Estado deshabilitado */
+.checkbox-radio [type=radio]:disabled {
+  opacity: 0.5;
+}
+
+.checkbox-radio [type=radio]:disabled + label::before {
+  opacity: 0.5;
+}
+
+/* Estado de error */
+.checkbox-radio.is-error label::before {
+  border-color: var(--hg-color-error) !important;
+}
+
+.checkbox-radio.is-error span {
+  color: var(--hg-color-error) !important;
+}
+
+/* ============================================
+   VARIANTES DE CHECKBOX-RADIO
+   ============================================ */
+
+/* Variante: Centrado verticalmente */
+.check-center.checkbox-radio [type=radio] + label::before {
+  position: absolute;
+  top: 50%;
+  left: var(--hg-spacing-16);
+  transform: translateY(-50%);
+}
+
+.check-center.checkbox-radio [type=radio] + label .ico-radio {
+  top: 50%;
+  left: calc(var(--hg-spacing-16) + 7px);
+  margin-top: -5px;
+}
+
+.check-center .box3-content {
+  padding-left: var(--hg-spacing-30, 30px);
+}
+
+.check-center.checkbox-radio [type=radio]:checked + label .border-1,
+.check-center.checkbox-radio [type=radio]:checked + label .border-1-grey {
+  border-color: var(--hg-color-primary);
+}
+
+/* Variante: Sin indicador visual (solo borde) */
+.check-no.checkbox-radio [type=radio] + label::before {
+  display: none;
+}
+
+.check-no.checkbox-radio [type=radio]:checked + label .ico-radio {
+  display: none;
+}
+
+.check-no.checkbox-radio [type=radio]:checked + label .border-1,
+.check-no.checkbox-radio [type=radio]:checked + label .border-1-grey {
+  border-color: var(--hg-color-primary);
+}
+
+/* Variante: Sin margen izquierdo */
+.check-bleed.checkbox-radio [type=radio] + label::before {
+  left: 0;
+}
+
+.check-bleed.checkbox-radio [type=radio] + label .ico-radio {
+  left: 7px;
+}
+
+/* Variante: Posición superior */
+.check-top.checkbox-radio [type=radio] + label::before {
+  position: absolute;
+  top: var(--hg-spacing-16);
+  left: var(--hg-spacing-16);
+}
+
+.check-top.checkbox-radio [type=radio] + label .ico-radio {
+  top: calc(var(--hg-spacing-16) + 7px);
+  left: calc(var(--hg-spacing-16) + 7px);
+}
+
+.check-top .box3-content {
+  padding-left: var(--hg-spacing-40, 40px);
+}
+
+.check-top.checkbox-radio [type=radio]:checked + label .border-1,
+.check-top.checkbox-radio [type=radio]:checked + label .border-1-grey {
+  border-color: var(--hg-color-primary);
+}
+
+/* Variante: Sin padding izquierdo */
+.check-clear.checkbox-radio [type=radio] + label::before {
+  position: absolute;
+  top: var(--hg-spacing-16);
+  left: 0;
+}
+
+.check-clear.checkbox-radio [type=radio] + label .ico-radio {
+  top: calc(var(--hg-spacing-16) + 7px);
+  left: 7px;
+}
+
+.check-clear .box3-content {
+  padding-left: var(--hg-spacing-40, 40px);
+}
+
+.check-clear.checkbox-radio [type=radio]:checked + label .border-1,
+.check-clear.checkbox-radio [type=radio]:checked + label .border-1-grey {
+  border-color: var(--hg-color-primary);
+}

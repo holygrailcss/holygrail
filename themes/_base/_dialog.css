@@ -1,0 +1,96 @@
+/**
+ * Dialog / Modal
+ * Construido sobre <dialog> nativo (HTML5).
+ * Uso:
+ *   <dialog class="dialog">
+ *     <div class="dialog-header">
+ *       <h3 class="dialog-title">Title</h3>
+ *       <button class="dialog-close" aria-label="Close">×</button>
+ *     </div>
+ *     <div class="dialog-body">…</div>
+ *     <div class="dialog-footer">
+ *       <button class="btn-outline">Cancel</button>
+ *       <button class="btn-primary">Confirm</button>
+ *     </div>
+ *   </dialog>
+ *
+ * Abrir/cerrar con JS: dialog.showModal() / dialog.close()
+ */
+
+.dialog {
+  width: 100%;
+  max-width: 480px;
+  padding: 0;
+  border: var(--border-width) var(--border-style) var(--hg-color-middle-grey);
+  border-radius: var(--border-radius);
+  background: var(--hg-color-white);
+  color: var(--hg-color-primary);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.18);
+  font-family: var(--hg-typo-font-family-primary-regular);
+}
+
+.dialog::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+}
+
+.dialog[open] {
+  display: flex;
+  flex-direction: column;
+}
+
+.dialog-header {
+  position: relative;
+  padding: var(--hg-spacing-24) var(--hg-spacing-24) var(--hg-spacing-12);
+}
+
+.dialog-title {
+  font-family: var(--hg-typo-font-family-primary-bold);
+  font-size: var(--hg-typo-font-size-20, 20px);
+  font-weight: var(--hg-typo-font-weight-700, 700);
+  line-height: 1.3;
+  margin: 0 0 var(--hg-spacing-4);
+}
+
+.dialog-description {
+  font-size: var(--hg-typo-font-size-13, 13px);
+  line-height: 1.5;
+  margin: 0;
+  color: var(--hg-color-dark-grey);
+}
+
+.dialog-body {
+  padding: var(--hg-spacing-12) var(--hg-spacing-24);
+  font-size: var(--hg-typo-font-size-13, 13px);
+  line-height: 1.6;
+}
+
+.dialog-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--hg-spacing-8);
+  padding: var(--hg-spacing-16) var(--hg-spacing-24) var(--hg-spacing-24);
+  border-top: var(--border-width) var(--border-style) var(--hg-color-light-grey);
+  margin-top: auto;
+}
+
+.dialog-close {
+  position: absolute;
+  top: var(--hg-spacing-16);
+  right: var(--hg-spacing-16);
+  background: transparent;
+  border: 0;
+  font-size: 20px;
+  line-height: 1;
+  padding: 4px 8px;
+  cursor: pointer;
+  color: currentColor;
+  opacity: 0.6;
+}
+
+.dialog-close:hover { opacity: 1; }
+
+/* Tamaños */
+.dialog-sm { max-width: 360px; }
+.dialog-lg { max-width: 720px; }
+.dialog-xl { max-width: 960px; }

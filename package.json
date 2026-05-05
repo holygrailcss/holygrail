@@ -1,59 +1,55 @@
 {
-    "name": "holygrailcss",
-    "version": "3.0.14",
-    "description": "A minimal, responsive, style-agnostic CSS framework.",
-    "main": "scss/style.scss",
-    "directories": {
-        "lib": "scss"
+  "name": "holygrailcss",
+  "version": "4.0.0",
+  "description": "Framework CSS generator con Node.js - Genera CSS optimizado con variables CSS desde un archivo JSON de configuración",
+  "main": "generate-css.js",
+  "style": "dist/output.css",
+  "exports": {
+    ".": {
+      "default": "./generate-css.js"
     },
-    "scripts": {
-
-
-        "start": " npm run format  && npm run docs && npm run build &&  npm run open:guide ",
-
-        "open:guide": "open guide/index.html",
-        "docs": "sass scss/docs.scss doc/docs.css --style expanded ",
-        "build": "sass scss/style.scss dist/style.css  && sass scss/docs.scss doc/docs.css   --style expanded ",
-        "build-sass": "sass --style expanded --source-map true scss/style.scss dist/style.css  &&  sass --output-style expanded --source-map true scss/docs.scss doc/docs.css",
-     
-        "lint": "stylelint 'scss/**/*.?(s)css'",
-        "lint2": "stylelint 'scss/*.?(s)css'",
-        "lint:fix": "stylelint --fix 'scss/**/*.?(s)css'",
-        "format": "npm run prettier -- --write",
-        "prettier": "prettier 'scss/**/*.+(css|scss)'"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/holygrailcss/holygrail.git"
-    },
-    "devDependencies": {
-        "open": "^9.1.0",
-        "prettier": "^3.0.2",
-        "sass": "^1.77.2",
-        "stylelint": "^15.10.2",
-        "stylelint-config-standard": "^34.0.0",
-        "stylelint-config-standard-scss": "^10.0.0",
-        "stylelint-order": "^6.0.3",
-        "stylelint-scss": "^5.1.0"
-    },
-    "keywords": [
-        "css",
-        "sass",
-        "minimal",
-        "responsive",
-        "style-agnostic",
-        "framework",
-        "toolkit",
-        "holygrailcss"
-    ],
-    "author": "Manuel Ruiz",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/holygrailcss/holygrail/issues",
-        "email": "dev@digitalstrategy.es"
-    },
-    "homepage": "https://holygrailcss.github.io/",
-    "dependencies": {
-        "stylelint": "^15.10.2"
-    }
+    "./dist/output": "./dist/output.css",
+    "./dist/black-and-white": "./dist/themes/black-and-white.css"
+  },
+  "bin": {
+    "holygrailcss": "./generate-css.js"
+  },
+  "scripts": {
+    "build": "node generate-css.js",
+    "watch": "node src/watch-config.js",
+    "serve": "node src/dev-server.js",
+    "dev": "node src/dev-server.js",
+    "start": "npm run build && npm run serve",
+    "test": "node tests/run-all.js",
+    "vars:report": "node src/docs-generator/variables-cli.js report",
+    "vars:remove-unused": "node src/docs-generator/variables-cli.js remove-all-unused",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "css",
+    "framework",
+    "generator",
+    "css-variables",
+    "responsive",
+    "typography",
+    "css-framework",
+    "design-tokens"
+  ],
+  "author": "holygrailcss",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/holygrailcss/holygrailcss.git"
+  },
+  "files": [
+    "generate-css.js",
+    "config.json",
+    "README.md",
+    "src/**/*",
+    "themes/**/*",
+    "dist/**/*"
+  ],
+  "engines": {
+    "node": ">=12.0.0"
+  }
 }

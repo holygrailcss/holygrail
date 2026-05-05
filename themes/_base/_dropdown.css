@@ -1,0 +1,126 @@
+/**
+ * Dropdown menu / Popover
+ * Menú flotante anclado a un trigger.
+ * El JS controla aria-expanded; el CSS muestra/oculta con [data-open] o .is-open.
+ *
+ * Estructura:
+ *   <div class="dropdown">
+ *     <button class="dropdown-trigger">Open</button>
+ *     <div class="dropdown-menu" role="menu">
+ *       <div class="dropdown-label">Account</div>
+ *       <button class="dropdown-item">Profile</button>
+ *       <button class="dropdown-item">Settings</button>
+ *       <div class="dropdown-separator"></div>
+ *       <button class="dropdown-item dropdown-item-destructive">Logout</button>
+ *     </div>
+ *   </div>
+ */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-trigger {
+  cursor: pointer;
+}
+
+.dropdown-menu,
+.popover {
+  position: absolute;
+  z-index: 70;
+  top: calc(100% + 4px);
+  left: 0;
+  min-width: 200px;
+  background: var(--hg-color-white);
+  border: var(--border-width) var(--border-style) var(--hg-color-middle-grey);
+  border-radius: var(--border-radius);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.10);
+  padding: 4px;
+  font-family: var(--hg-typo-font-family-primary-regular);
+  font-size: 13px;
+  display: none;
+}
+
+.dropdown-menu[data-open],
+.dropdown-menu.is-open,
+.dropdown.is-open > .dropdown-menu,
+.popover.is-open {
+  display: block;
+  animation: dropdown-in 0.12s ease-out;
+}
+
+@keyframes dropdown-in {
+  from { opacity: 0; transform: translateY(-4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Alineación derecha del menú */
+.dropdown-menu-end {
+  left: auto;
+  right: 0;
+}
+
+.dropdown-label {
+  padding: 8px 12px 4px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--hg-color-dark-grey);
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 8px 12px;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  font: inherit;
+  text-align: left;
+  color: var(--hg-color-primary);
+  border-radius: var(--border-radius);
+  box-sizing: border-box;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus-visible {
+  background: var(--hg-color-light-grey);
+  outline: none;
+}
+
+.dropdown-item:disabled,
+.dropdown-item[aria-disabled="true"] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.dropdown-item-destructive {
+  color: var(--hg-color-error);
+}
+
+.dropdown-item-destructive:hover {
+  background: color-mix(in srgb, var(--hg-color-error) 8%, var(--hg-color-white));
+}
+
+.dropdown-shortcut {
+  margin-left: auto;
+  font-size: 11px;
+  color: var(--hg-color-dark-grey);
+  letter-spacing: 0.02em;
+}
+
+.dropdown-separator {
+  height: 1px;
+  background: var(--hg-color-light-grey);
+  margin: 4px 0;
+}
+
+/* Popover (similar al dropdown pero contenido libre) */
+.popover {
+  padding: var(--hg-spacing-16);
+  min-width: 240px;
+}

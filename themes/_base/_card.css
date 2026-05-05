@@ -1,0 +1,55 @@
+/**
+ * Card
+ * Contenedor genérico con header / body / footer.
+ * Variantes: card-bordered (default), card-flat (sin borde, fondo gris).
+ */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background: var(--card-bg, var(--hg-color-white));
+  color: var(--card-color, var(--hg-color-primary));
+  border: var(--border-width) var(--border-style) var(--card-border, var(--hg-color-middle-grey));
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.card-flat {
+  border-color: transparent;
+  background: var(--hg-color-light-grey);
+}
+
+.card-header,
+.card-body,
+.card-footer {
+  padding: var(--hg-spacing-24);
+  box-sizing: border-box;
+}
+
+.card-header {
+  border-bottom: var(--border-width) var(--border-style) var(--hg-color-light-grey);
+}
+
+.card-footer {
+  border-top: var(--border-width) var(--border-style) var(--hg-color-light-grey);
+  display: flex;
+  align-items: center;
+  gap: var(--hg-spacing-8);
+}
+
+.card-title {
+  font-family: var(--hg-typo-font-family-primary-bold);
+  font-size: var(--hg-typo-font-size-20, 20px);
+  line-height: 1.3;
+  margin: 0 0 var(--hg-spacing-4);
+  color: var(--hg-color-primary);
+}
+
+.card-description {
+  font-family: var(--hg-typo-font-family-primary-regular);
+  font-size: var(--hg-typo-font-size-13, 13px);
+  line-height: 1.5;
+  margin: 0;
+  color: var(--hg-color-dark-grey);
+}

@@ -1,0 +1,391 @@
+/**
+ * Inputs
+ * Estados: error, success, warning, disabled
+ */
+
+.input {
+  display: block;
+  width: 100%;
+  font-family: var(--hg-typo-font-family-primary-regular);
+  font-size: var(--hg-typo-font-size-13);
+  font-weight: var(--hg-typo-font-weight-400);
+  line-height: var(--hg-typo-line-height-1-5);
+  color: var(--input-color);
+  background-color: var(--input-bg);
+  border: var(--border-width) var(--border-style) var(--input-border);
+  border-radius: var(--border-radius);
+  padding: var(--input-padding-y) var(--input-padding-x);
+	min-height: 40px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--input-border-focus);
+}
+
+.input::placeholder {
+  color: var(--input-placeholder);
+  opacity: 1;
+}
+
+.input:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background-color: var(--hg-color-light-grey);
+}
+
+/* Estados de inputs */
+.input-error {
+  border-color: var(--input-error-border);
+}
+
+.input-success {
+  border-color: var(--input-success-border);
+}
+
+.input-warning {
+  border-color: var(--input-warning-border);
+}
+
+/* ============================================
+   FORM-INPUT-LABEL-2 (Inputs con label flotante)
+   ============================================ */
+
+.form-input-label-2,
+.error-zone {
+  font-family: var(--hg-typo-font-family-primary-regular);
+  position: relative;
+
+  display: block;
+}
+
+.form-input-label-2 label,
+.error-zone label {
+  font-size: 12px;
+}
+
+.form-input-label-2 .validation-error-messages,
+.error-zone .validation-error-messages {
+  width: calc(100% - 40px);
+}
+
+.form-input-label-2 .help,
+.error-zone .help {
+  font-family: var(--hg-typo-font-family-primary-regular);
+  position: relative;
+  line-height: 1.5;
+  font-size: 12px;
+  margin-top: 0;
+  padding-top: 2px;
+  margin-bottom: var(--hg-spacing-4);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.form-input-label-2 .input-text,
+.error-zone .input-text {
+  color: var(--hg-color-dark-grey);
+  margin-top: var(--hg-spacing-4);
+  line-height: 1;
+}
+
+.form-input-label-2 .info-text,
+.error-zone .info-text {
+  color: var(--hg-color-dark-grey);
+  margin-top: var(--hg-spacing-4);
+  width: auto;
+  position: absolute;
+  right: 0;
+}
+
+.form-input-label-2 > input,
+.form-input-label-2 > textarea,
+.form-input-label-2 > select,
+.form-input-label-2 > label,
+.error-zone > input,
+.error-zone > textarea,
+.error-zone > select,
+.error-zone > label {
+  font-family: var(--hg-typo-font-family-primary-regular);
+  font-weight: normal;
+}
+
+.form-input-label-2 > input,
+.form-input-label-2 > textarea,
+.form-input-label-2 > select,
+.error-zone > input,
+.error-zone > textarea,
+.error-zone > select {
+  border: none;
+  border-bottom: var(--border-width) var(--border-style) var(--hg-color-primary);
+  border-radius: 0;
+  background-color: transparent;
+  padding: var(--hg-spacing-16) 0 var(--hg-spacing-8) 0;
+  padding-left: 0;
+  padding-right: 0;
+  box-sizing: border-box;
+  transition: border-bottom-color 0.1s ease-in-out, border-bottom-width 0.1s ease-in-out;
+  margin: 0;
+  vertical-align: top;
+}
+
+.form-input-label-2 > input,
+.form-input-label-2 > select,
+.error-zone > input,
+.error-zone > select {
+  height: 40px;
+}
+
+/* El textarea mantiene su altura natural (rows) pero respeta el padding
+   superior para dejar aire al label flotado. */
+.form-input-label-2 > textarea,
+.error-zone > textarea {
+  min-height: 40px;
+  resize: vertical;
+}
+
+.form-input-label-2 > label,
+.error-zone > label {
+  box-sizing: border-box;
+  position: absolute;
+  top: var(--hg-spacing-16);
+  left: 0;
+  display: block;
+  width: 100%;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  line-height: 1.1;
+  color: #000000;
+  border-radius: 0;
+  transition: transform 0.1s ease-in-out, font-size 0.1s ease-in-out, color 0.1s ease-in-out, top 0.1s ease-in-out;
+  pointer-events: none;
+  transform-origin: left top;
+}
+
+.form-input-label-2 input::placeholder,
+.form-input-label-2 textarea::placeholder,
+.error-zone input::placeholder,
+.error-zone textarea::placeholder {
+  color: transparent;
+}
+
+.form-input-label-2 input:not(:placeholder-shown) ~ label,
+.form-input-label-2 textarea:not(:placeholder-shown) ~ label,
+.error-zone input:not(:placeholder-shown) ~ label,
+.error-zone textarea:not(:placeholder-shown) ~ label {
+  top: 0;
+  font-size: 12px;
+  color: var(--hg-color-dark-grey);
+  transform: translateY(0);
+}
+
+/* El <select> no soporta :placeholder-shown (siempre tiene una option
+   seleccionada), así que forzamos el label a estar permanentemente
+   flotado arriba cuando el control es un select. */
+.form-input-label-2 > select ~ label,
+.error-zone > select ~ label {
+  top: 0;
+  font-size: 12px;
+  color: var(--hg-color-dark-grey);
+  transform: translateY(0);
+}
+
+.form-input-label-2 input:focus,
+.form-input-label-2 textarea:focus,
+.form-input-label-2 select:focus,
+.error-zone input:focus,
+.error-zone textarea:focus,
+.error-zone select:focus {
+  outline: none;
+}
+
+.form-input-label-2 input:focus ~ label,
+.form-input-label-2 textarea:focus ~ label,
+.form-input-label-2 select:focus ~ label,
+.error-zone input:focus ~ label,
+.error-zone textarea:focus ~ label,
+.error-zone select:focus ~ label {
+  top: 0;
+  font-size: 12px;
+  color: var(--hg-color-dark-grey);
+  transform: translateY(0);
+}
+
+.form-input-label-2 input::-webkit-list-button,
+.form-input-label-2 input::-webkit-calendar-picker-indicator,
+.error-zone input::-webkit-list-button,
+.error-zone input::-webkit-calendar-picker-indicator {
+  display: none;
+  opacity: 0;
+}
+
+.form-input-label-2 input:-webkit-autofill,
+.form-input-label-2 input:-webkit-autofill:hover,
+.form-input-label-2 input:-webkit-autofill:focus,
+.error-zone input:-webkit-autofill,
+.error-zone input:-webkit-autofill:hover,
+.error-zone input:-webkit-autofill:focus {
+  border-bottom: var(--border-width) var(--border-style) var(--hg-color-primary);
+  -webkit-text-fill-color: var(--hg-color-primary);
+  box-shadow: 0 0 0 1000px var(--hg-color-white) inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.form-input-label-2.input-line .input,
+.error-zone.input-line .input {
+  border: none;
+}
+
+.form-input-label-2 input,
+.error-zone input {
+  background-color: transparent;
+}
+
+.form-input-label-2.has-ico-pre.btn,
+.form-input-label-2.has-ico-pre > input,
+.form-input-label-2.has-ico-pre > label,
+.form-input-label-2 .has-ico-pre.btn,
+.form-input-label-2 .has-ico-pre > input,
+.form-input-label-2 .has-ico-pre > label,
+.error-zone.has-ico-pre.btn,
+.error-zone.has-ico-pre > input,
+.error-zone.has-ico-pre > label,
+.error-zone .has-ico-pre.btn,
+.error-zone .has-ico-pre > input,
+.error-zone .has-ico-pre > label {
+  padding-left: var(--hg-spacing-24);
+}
+
+.form-input-label-2.has-ico-pre .form-icon,
+.form-input-label-2 .has-ico-pre .form-icon,
+.error-zone.has-ico-pre .form-icon,
+.error-zone .has-ico-pre .form-icon {
+  top: 0;
+  left: 0;
+}
+
+.form-input-label-2.has-ico-pre .ico-pre,
+.form-input-label-2 .has-ico-pre .ico-pre,
+.error-zone.has-ico-pre .ico-pre,
+.error-zone .has-ico-pre .ico-pre {
+  height: 45px;
+  position: absolute;
+  top: 0;
+  right: auto;
+  left: 0;
+  box-sizing: border-box;
+  margin: 0;
+  cursor: pointer;
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.form-input-label-2.has-ico-post.btn,
+.form-input-label-2.has-ico-post > input,
+.form-input-label-2.has-ico-post > label,
+.form-input-label-2 .has-ico-post.btn,
+.form-input-label-2 .has-ico-post > input,
+.form-input-label-2 .has-ico-post > label,
+.error-zone.has-ico-post.btn,
+.error-zone.has-ico-post > input,
+.error-zone.has-ico-post > label,
+.error-zone .has-ico-post.btn,
+.error-zone .has-ico-post > input,
+.error-zone .has-ico-post > label {
+  padding-inline-end: 36px;
+  padding-inline-start: 0;
+}
+
+.form-input-label-2.has-ico-post .form-icon,
+.form-input-label-2 .has-ico-post .form-icon,
+.error-zone.has-ico-post .form-icon,
+.error-zone .has-ico-post .form-icon {
+  padding: var(--hg-spacing-12);
+  top: 0;
+  right: 0;
+  left: auto;
+}
+
+.form-input-label-2.has-ico-post .ico-post,
+.form-input-label-2 .has-ico-post .ico-post,
+.error-zone.has-ico-post .ico-post,
+.error-zone .has-ico-post .ico-post {
+  height: 45px;
+  position: absolute;
+  top: 0;
+  inset-inline-end: 0;
+  box-sizing: border-box;
+  margin: 0;
+  cursor: pointer;
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.form-input-label-2 .input[type=search]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.form-input-label-2.required label::after {
+  content: " *";
+}
+
+/* Estados de error y éxito para form-input-label-2 */
+.is-error .input,
+.is-error .help {
+  color: var(--hg-color-error) !important;
+}
+
+.is-error .input {
+  border-bottom: var(--border-width) var(--border-style) var(--hg-color-error);
+}
+
+.is-error .input-prefix :nth-child(1)::placeholder {
+  color: var(--hg-color-error);
+}
+
+.is-error svg g {
+  stroke: var(--hg-color-error) !important;
+}
+
+.is-error svg path {
+  fill: var(--hg-color-error) !important;
+}
+
+.is-error .ico-default svg g {
+  stroke: var(--hg-color-primary) !important;
+}
+
+.is-error .ico-default svg path {
+  fill: var(--hg-color-primary) !important;
+}
+
+.ok-input .input,
+.ok-input .help {
+  color: var(--hg-color-success) !important;
+}
+
+.ok-input .input {
+  border-bottom: var(--border-width) var(--border-style) var(--hg-color-success);
+  color: var(--hg-color-success);
+}
+
+.ok-input .input-prefix:nth-child(1)::placeholder {
+  color: var(--hg-color-success);
+}
+
+.ok-input .input-line {
+  border-top: var(--border-width) var(--border-style) transparent;
+  border-left: var(--border-width) var(--border-style) transparent;
+  border-right: var(--border-width) var(--border-style) transparent;
+  border-bottom: var(--border-width) var(--border-style) var(--hg-color-success);
+  color: var(--hg-color-success);
+}

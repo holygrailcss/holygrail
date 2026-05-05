@@ -1,0 +1,92 @@
+/**
+ * Typography
+ * Clases utilitarias para texto: encabezados, lead, muted, blockquote, code, kbd.
+ * Estilo shadcn-like (subtle, neutral).
+ */
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: var(--hg-typo-font-family-primary-bold);
+  font-weight: var(--hg-typo-font-weight-700, 700);
+  line-height: 1.2;
+  margin: 0;
+  color: var(--hg-color-primary);
+}
+
+.h1 { font-size: clamp(32px, 5vw, 48px); letter-spacing: -0.02em; }
+.h2 { font-size: clamp(24px, 4vw, 36px); letter-spacing: -0.02em; }
+.h3 { font-size: clamp(20px, 3vw, 28px); letter-spacing: -0.01em; }
+.h4 { font-size: 20px; }
+.h5 { font-size: 16px; }
+.h6 { font-size: 14px; text-transform: uppercase; letter-spacing: 0.05em; }
+
+.lead {
+  font-family: var(--hg-typo-font-family-primary-regular);
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--hg-color-dark-grey);
+  margin: 0;
+}
+
+.large {
+  font-size: 18px;
+  font-weight: var(--hg-typo-font-weight-600, 600);
+  line-height: 1.5;
+}
+
+.small {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.muted {
+  color: var(--hg-color-dark-grey);
+}
+
+.blockquote {
+  margin: 0;
+  padding-left: var(--hg-spacing-16);
+  border-left: 2px solid var(--hg-color-primary);
+  font-style: italic;
+  color: var(--hg-color-dark-grey);
+  line-height: 1.6;
+}
+
+.code,
+.inline-code {
+  font-family: ui-monospace, "SFMono-Regular", "Menlo", "Monaco", "Consolas", monospace;
+  font-size: 0.9em;
+  padding: 2px 6px;
+  background: var(--hg-color-light-grey);
+  border-radius: var(--border-radius);
+  color: var(--hg-color-primary);
+}
+
+.kbd {
+  display: inline-flex;
+  align-items: center;
+  font-family: ui-monospace, "SFMono-Regular", "Menlo", "Monaco", "Consolas", monospace;
+  font-size: 11px;
+  font-weight: var(--hg-typo-font-weight-500, 500);
+  padding: 2px 6px;
+  border: 1px solid var(--hg-color-middle-grey);
+  border-bottom-width: 2px;
+  border-radius: var(--border-radius);
+  background: var(--hg-color-white);
+  color: var(--hg-color-primary);
+  line-height: 1;
+  vertical-align: middle;
+}
+
+.list,
+.list-disc {
+  margin: 0;
+  padding-left: 1.4em;
+  line-height: 1.6;
+}
+
+.list-disc { list-style: disc; }
+
+.list-disc > li + li,
+.list > li + li {
+  margin-top: 4px;
+}

@@ -1,0 +1,142 @@
+/**
+ * Drawer / Sheet
+ * Panel deslizante desde un lateral. CSS-only mediante un checkbox toggle.
+ *
+ * Patrón sin JS:
+ *   <input type="checkbox" id="drawer-toggle" class="drawer-toggle" hidden>
+ *   <label for="drawer-toggle" class="drawer-overlay"></label>
+ *   <aside class="drawer drawer-right">
+ *     <header class="drawer-header"><h3 class="drawer-title">Title</h3></header>
+ *     <div class="drawer-body">…</div>
+ *   </aside>
+ *
+ * Cambia el lado con: drawer-left, drawer-right (default), drawer-top, drawer-bottom.
+ */
+
+.drawer {
+  position: fixed;
+  z-index: 90;
+  background: var(--hg-color-white);
+  color: var(--hg-color-primary);
+  box-shadow: -8px 0 24px rgba(0, 0, 0, 0.08);
+  transition: transform 0.24s ease-out;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--hg-typo-font-family-primary-regular);
+  box-sizing: border-box;
+}
+
+.drawer-right {
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 360px;
+  max-width: 90vw;
+  transform: translateX(100%);
+  border-left: var(--border-width) var(--border-style) var(--hg-color-middle-grey);
+}
+
+.drawer-left {
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 360px;
+  max-width: 90vw;
+  transform: translateX(-100%);
+  border-right: var(--border-width) var(--border-style) var(--hg-color-middle-grey);
+  box-shadow: 8px 0 24px rgba(0, 0, 0, 0.08);
+}
+
+.drawer-top {
+  top: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  max-height: 80vh;
+  transform: translateY(-100%);
+  border-bottom: var(--border-width) var(--border-style) var(--hg-color-middle-grey);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.drawer-bottom {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  max-height: 80vh;
+  transform: translateY(100%);
+  border-top: var(--border-width) var(--border-style) var(--hg-color-middle-grey);
+  box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.drawer-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease-out;
+  z-index: 89;
+  cursor: pointer;
+}
+
+/* Estados abiertos (vía .drawer-toggle:checked o .is-open manual) */
+.drawer-toggle:checked ~ .drawer-right,
+.drawer-right.is-open { transform: translateX(0); }
+
+.drawer-toggle:checked ~ .drawer-left,
+.drawer-left.is-open { transform: translateX(0); }
+
+.drawer-toggle:checked ~ .drawer-top,
+.drawer-top.is-open { transform: translateY(0); }
+
+.drawer-toggle:checked ~ .drawer-bottom,
+.drawer-bottom.is-open { transform: translateY(0); }
+
+.drawer-toggle:checked ~ .drawer-overlay,
+.drawer-overlay.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Subpartes */
+.drawer-header {
+  padding: var(--hg-spacing-20) var(--hg-spacing-24);
+  border-bottom: var(--border-width) var(--border-style) var(--hg-color-light-grey);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.drawer-title {
+  font-family: var(--hg-typo-font-family-primary-bold);
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.drawer-body {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  padding: var(--hg-spacing-24);
+}
+
+.drawer-footer {
+  padding: var(--hg-spacing-16) var(--hg-spacing-24);
+  border-top: var(--border-width) var(--border-style) var(--hg-color-light-grey);
+  display: flex;
+  gap: var(--hg-spacing-8);
+  justify-content: flex-end;
+}
+
+.drawer-close {
+  background: transparent;
+  border: 0;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1;
+  opacity: 0.6;
+}
+
+.drawer-close:hover { opacity: 1; }

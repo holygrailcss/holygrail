@@ -1,0 +1,72 @@
+/**
+ * Avatar
+ * Imagen circular con fallback de iniciales.
+ * Tamaños: -sm (24), default (40), -lg (56), -xl (80).
+ * Variante .avatar-square para esquinas rectas.
+ *
+ * Estructura:
+ *   <span class="avatar">
+ *     <img class="avatar-image" src="..." alt="..." />
+ *     <span class="avatar-fallback">MR</span>  <!-- se muestra si img falla -->
+ *   </span>
+ */
+
+.avatar {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--hg-color-light-grey);
+  color: var(--hg-color-primary);
+  font-family: var(--hg-typo-font-family-primary-regular);
+  font-size: var(--hg-typo-font-size-13, 13px);
+  font-weight: var(--hg-typo-font-weight-500, 500);
+  line-height: 1;
+  user-select: none;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+
+.avatar-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.avatar-fallback {
+  width: 100%;
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+/* Tamaños */
+.avatar-sm   { width: 24px; height: 24px; font-size: 10px; }
+.avatar-lg   { width: 56px; height: 56px; font-size: 18px; }
+.avatar-xl   { width: 80px; height: 80px; font-size: 24px; }
+
+/* Variante cuadrada */
+.avatar-square { border-radius: var(--border-radius); }
+
+/* Group (avatares solapados) */
+.avatar-group {
+  display: inline-flex;
+  align-items: center;
+}
+
+.avatar-group .avatar {
+  border: 2px solid var(--hg-color-white);
+}
+
+.avatar-group .avatar + .avatar {
+  margin-left: -10px;
+}

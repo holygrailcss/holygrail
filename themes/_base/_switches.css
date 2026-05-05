@@ -1,0 +1,96 @@
+/**
+ * Switches / Toggles
+ * Estados: checked, disabled, focus
+ * Variantes: switch, checkbox-item-2
+ */
+
+/* ============================================
+   SWITCH BÁSICO (Switch estándar)
+   ============================================ */
+
+   .checkbox-item-2 {
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+  }
+  .checkbox-item-2 [type=checkbox]:not(:checked) + label,
+  .checkbox-item-2 [type=checkbox]:checked + label {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    padding-inline-start: 0;
+    cursor: pointer;
+    font-weight: normal;
+    font-size: 12px;
+    text-align: initial;
+    display: flex;
+    min-height: 26px;
+  }
+  .checkbox-item-2 [type=checkbox]:not(:checked) + label::before,
+  .checkbox-item-2 [type=checkbox]:checked + label::before {
+    position: absolute;
+    content: "";
+    width: 62px;
+    height: 26px;
+    border-radius: 0;
+    inset-inline-start: 0;
+    border: none;
+    border: 1px solid #000000;
+    outline: 0;
+    display: inline-block;
+    vertical-align: top;
+    margin-block: 0;
+    margin-inline: 0 10px;
+    top: 0;
+  }
+  .checkbox-item-2 [type=checkbox]:not(:checked) + label span,
+  .checkbox-item-2 [type=checkbox]:checked + label span {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    padding-inline-start: 70px;
+  }
+  .checkbox-item-2 [type=checkbox]:not(:checked),
+  .checkbox-item-2 [type=checkbox]:checked {
+    position: absolute; /* Lo saca del flujo normal */
+    clip: rect(0 0 0 0); /* Recorta el elemento para que no sea visible */
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+  }
+  .checkbox-item-2 input[type=checkbox] {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 4px 0 0;
+    line-height: normal;
+  }
+  .checkbox-item-2 .checkbox-circle {
+    background: #000000;
+    width: 20px;
+    height: 20px;
+    border-radius: 0;
+  }
+  .checkbox-item-2 [type=checkbox]:not(:checked) + label .checkbox-circle,
+  .checkbox-item-2 [type=checkbox]:checked + label .checkbox-circle {
+    position: absolute;
+    top: 3px;
+    inset-inline-start: 6px;
+    color: #000000;
+    transition: all 0.2s;
+  }
+  .checkbox-item-2 [type=checkbox]:not(:checked) + label .checkbox-circle {
+    opacity: 1;
+    transform: scale(1);
+    inset-inline-start: 4px;
+  }
+  .checkbox-item-2 [type=checkbox]:checked + label .checkbox-circle {
+    opacity: 1;
+    transform: scale(1);
+    inset-inline-start: 38px;
+  }
+  

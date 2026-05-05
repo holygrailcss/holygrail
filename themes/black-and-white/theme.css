@@ -1,0 +1,29 @@
+/**
+ * Sistema de Theming Black&White
+ * Basado en holygrailcss CSS Variables
+ *
+ * Los componentes (botones, inputs, checkboxes, radios, switches, labels,
+ * forms, containers, grid, icons) son compartidos desde `themes/_base/`.
+ * Para personalizar un componente SOLO en este tema, crea una copia
+ * local del fichero en `themes/black-and-white/` y cambia su @import aquí para
+ * que apunte a esa versión en vez de a `../_base/`.
+ */
+
+/* Variables del tema (colores, tipografía y mapeo de componentVars) */
+@import url('_variables.css');
+
+/* Componentes compartidos ─ themes/_base/ */
+@import url('../_base/_buttons.css');
+@import url('../_base/_inputs.css');
+@import url('../_base/_labels.css');
+@import url('../_base/_checkboxes.css');
+@import url('../_base/_radios.css');
+@import url('../_base/_switches.css');
+@import url('../_base/_forms.css');
+
+/* Objects (layout) compartidos ─ themes/_base/ */
+@import url('../_base/_containers.css');
+@import url('../_base/objects/_grid.css');
+
+/* Components (icons) compartidos ─ themes/_base/ */
+@import url('../_base/components/_icons.css');

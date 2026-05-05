@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "name": "black-and-white",
+    "displayName": "Black&White",
+    "description": "Tema base que extiende holygrailcss con variables específicas para botones, inputs, formularios, switches y radios. Las variables del tema referencian los tokens de --hg-color-* y --hg-spacing-* para mantener coherencia con el design system global.",
+    "version": "1.0.0",
+    "author": "holygrailcss"
+  },
+  "tokenOverrides": {
+    "color": {},
+    "spacing": {}
+  },
+  "componentVars": {
+    "btn": {
+      "primary-bg": "var(--hg-color-primary)",
+      "primary-color": "var(--hg-color-white)",
+      "primary-hover-bg": "var(--hg-color-dark-grey)",
+
+      "secondary-bg": "var(--hg-color-dark-grey)",
+      "secondary-color": "var(--hg-color-white)",
+      "secondary-hover-bg": "var(--hg-color-middle-grey)",
+
+      "outline-border": "var(--hg-color-primary)",
+      "outline-color": "var(--hg-color-primary)",
+      "outline-hover-bg": "var(--hg-color-primary)",
+      "outline-hover-color": "var(--hg-color-white)",
+
+      "ghost-color": "var(--hg-color-primary)",
+      "ghost-hover-bg": "var(--hg-color-light-grey)",
+
+      "feel-bg": "var(--hg-color-feel)",
+      "feel-color": "var(--hg-color-white)",
+      "feel-hover-bg": "var(--hg-color-feel-dark)",
+
+      "padding-x-sm": "var(--hg-spacing-12)",
+      "padding-y-sm": "var(--hg-spacing-8)",
+      "padding-x-md": "var(--hg-spacing-16)",
+      "padding-y-md": "var(--hg-spacing-12)",
+      "padding-x-lg": "var(--hg-spacing-24)",
+      "padding-y-lg": "var(--hg-spacing-16)"
+    },
+    "input": {
+      "border": "var(--hg-color-middle-grey)",
+      "border-focus": "var(--hg-color-primary)",
+      "bg": "var(--hg-color-white)",
+      "color": "var(--hg-color-primary)",
+      "placeholder": "var(--hg-color-middle-grey)",
+      "error-border": "var(--hg-color-error)",
+      "success-border": "var(--hg-color-success)",
+      "warning-border": "var(--hg-color-warning)",
+      "padding-x": "var(--hg-spacing-16)",
+      "padding-y": "var(--hg-spacing-12)",
+      "gap": "var(--hg-spacing-8)"
+    },
+    "label": {
+      "color": "var(--hg-color-primary)",
+      "required": "var(--hg-color-error)"
+    },
+    "checkbox": {
+      "bg": "var(--hg-color-white)",
+      "border": "var(--hg-color-middle-grey)",
+      "checked-bg": "var(--hg-color-primary)",
+      "checked-border": "var(--hg-color-primary)"
+    },
+    "radio": {
+      "bg": "var(--hg-color-white)",
+      "border": "var(--hg-color-middle-grey)",
+      "checked-bg": "var(--hg-color-primary)",
+      "checked-border": "var(--hg-color-primary)"
+    },
+    "switch": {
+      "bg": "var(--hg-color-middle-grey)",
+      "active-bg": "var(--hg-color-primary)",
+      "thumb": "var(--hg-color-white)"
+    },
+    "form-group": {
+      "gap": "var(--hg-spacing-16)"
+    }
+  },
+  "design": {
+    "border-radius": "0",
+    "border-width": "1px",
+    "border-style": "solid",
+    "transition": "all 0.2s ease"
+  }
+}

@@ -1,0 +1,60 @@
+/**
+ * Skeleton
+ * Placeholder animado mientras se carga contenido.
+ * Modificadores comunes: -text, -title, -avatar, -button, -card.
+ *
+ * Uso:
+ *   <div class="skeleton skeleton-text"></div>
+ *   <div class="skeleton skeleton-avatar"></div>
+ */
+
+.skeleton {
+  display: block;
+  background: linear-gradient(
+    90deg,
+    var(--hg-color-light-grey) 0%,
+    color-mix(in srgb, var(--hg-color-middle-grey) 25%, var(--hg-color-light-grey)) 50%,
+    var(--hg-color-light-grey) 100%
+  );
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.4s ease-in-out infinite;
+  border-radius: var(--border-radius);
+}
+
+@keyframes skeleton-shimmer {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* Modificadores de forma */
+.skeleton-text {
+  height: 12px;
+  width: 100%;
+  margin-block: 4px;
+}
+
+.skeleton-title {
+  height: 24px;
+  width: 60%;
+  margin-block: 8px;
+}
+
+.skeleton-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.skeleton-button {
+  height: 40px;
+  width: 120px;
+}
+
+.skeleton-card {
+  height: 180px;
+  width: 100%;
+}
+
+.skeleton-circle {
+  border-radius: 50%;
+}

@@ -1,0 +1,48 @@
+/**
+ * Progress
+ * Barra de progreso con variante indeterminada.
+ *
+ * Determinado:
+ *   <div class="progress" role="progressbar" aria-valuenow="60">
+ *     <div class="progress-bar" style="width: 60%"></div>
+ *   </div>
+ *
+ * Indeterminado:
+ *   <div class="progress progress-indeterminate"><div class="progress-bar"></div></div>
+ */
+
+.progress {
+  position: relative;
+  width: 100%;
+  height: 8px;
+  background: var(--hg-color-light-grey);
+  overflow: hidden;
+  border-radius: var(--border-radius);
+}
+
+.progress-sm { height: 4px; }
+.progress-lg { height: 12px; }
+
+.progress-bar {
+  height: 100%;
+  background: var(--hg-color-primary);
+  transition: width 0.2s ease-out;
+  border-radius: inherit;
+}
+
+/* Indeterminado: animación contínua */
+.progress-indeterminate .progress-bar {
+  width: 35%;
+  animation: progress-indeterminate 1.4s ease-in-out infinite;
+}
+
+@keyframes progress-indeterminate {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(285%); }
+}
+
+/* Variantes semánticas (color de la barra) */
+.progress-success .progress-bar { background: var(--hg-color-success); }
+.progress-warning .progress-bar { background: var(--hg-color-warning); }
+.progress-error   .progress-bar { background: var(--hg-color-error); }
+.progress-info    .progress-bar { background: var(--hg-color-info); }

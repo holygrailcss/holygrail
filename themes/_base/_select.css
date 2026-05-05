@@ -1,0 +1,126 @@
+/**
+ * Select
+ * <select> nativo estilizado + maquetas para custom dropdown (sin JS).
+ */
+
+.select {
+  display: block;
+  width: 100%;
+  min-height: 40px;
+  padding: var(--input-padding-y) calc(var(--input-padding-x) + 24px) var(--input-padding-y) var(--input-padding-x);
+  font-family: var(--hg-typo-font-family-primary-regular);
+  font-size: var(--hg-typo-font-size-13, 13px);
+  font-weight: var(--hg-typo-font-weight-400, 400);
+  line-height: var(--hg-typo-line-height-1-5, 1.5);
+  color: var(--input-color);
+  background-color: var(--input-bg);
+  border: var(--border-width) var(--border-style) var(--input-border);
+  border-radius: var(--border-radius);
+  /* Caret SVG inline (chevron-down) */
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px 16px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.select:focus {
+  outline: none;
+  border-color: var(--input-border-focus);
+}
+
+.select:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background-color: var(--hg-color-light-grey);
+}
+
+/* Estados */
+.select-error   { border-color: var(--input-error-border); }
+.select-success { border-color: var(--input-success-border); }
+.select-warning { border-color: var(--input-warning-border); }
+
+/* ============================================
+   Custom Dropdown (mock visual sin JS)
+   Estructura de referencia:
+     <div class="select-custom">
+       <button class="select-trigger">Pick one <span class="select-caret">▾</span></button>
+       <ul class="select-menu" hidden>
+         <li class="select-item is-selected">Option 1</li>
+         <li class="select-item">Option 2</li>
+       </ul>
+     </div>
+   ============================================ */
+
+.select-custom {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.select-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 40px;
+  padding: var(--input-padding-y) var(--input-padding-x);
+  font-family: var(--hg-typo-font-family-primary-regular);
+  font-size: var(--hg-typo-font-size-13, 13px);
+  background: var(--input-bg);
+  color: var(--input-color);
+  border: var(--border-width) var(--border-style) var(--input-border);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.select-trigger:focus {
+  outline: none;
+  border-color: var(--input-border-focus);
+}
+
+.select-caret {
+  font-size: 10px;
+  margin-left: 8px;
+  flex-shrink: 0;
+}
+
+.select-menu {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  z-index: 50;
+  margin: 0;
+  padding: 4px;
+  list-style: none;
+  background: var(--hg-color-white);
+  border: var(--border-width) var(--border-style) var(--hg-color-middle-grey);
+  border-radius: var(--border-radius);
+  max-height: 280px;
+  overflow-y: auto;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.select-item {
+  padding: 8px 12px;
+  font-size: var(--hg-typo-font-size-13, 13px);
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  color: var(--hg-color-primary);
+}
+
+.select-item:hover,
+.select-item.is-active {
+  background: var(--hg-color-light-grey);
+}
+
+.select-item.is-selected {
+  font-weight: var(--hg-typo-font-weight-600, 600);
+}

@@ -1,0 +1,48 @@
+/**
+ * Textarea
+ * Hereda casi todo de .input. Solo añade altura mínima y resize.
+ */
+
+.textarea {
+  display: block;
+  width: 100%;
+  min-height: 96px;
+  font-family: var(--hg-typo-font-family-primary-regular);
+  font-size: var(--hg-typo-font-size-13, 13px);
+  font-weight: var(--hg-typo-font-weight-400, 400);
+  line-height: var(--hg-typo-line-height-1-5, 1.5);
+  color: var(--input-color);
+  background-color: var(--input-bg);
+  border: var(--border-width) var(--border-style) var(--input-border);
+  border-radius: var(--border-radius);
+  padding: var(--input-padding-y) var(--input-padding-x);
+  resize: vertical;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-sizing: border-box;
+}
+
+.textarea:focus {
+  outline: none;
+  border-color: var(--input-border-focus);
+}
+
+.textarea::placeholder {
+  color: var(--input-placeholder);
+  opacity: 1;
+}
+
+.textarea:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background-color: var(--hg-color-light-grey);
+}
+
+/* Estados */
+.textarea-error   { border-color: var(--input-error-border); }
+.textarea-success { border-color: var(--input-success-border); }
+.textarea-warning { border-color: var(--input-warning-border); }
+
+/* Sin redimensionar */
+.textarea-fixed { resize: none; }

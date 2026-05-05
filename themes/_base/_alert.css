@@ -1,0 +1,102 @@
+/**
+ * Alert
+ * Banner inline para info / warning / error / success.
+ * Estructura:
+ *   <div class="alert alert-info">
+ *     <svg class="alert-icon">...</svg>
+ *     <div class="alert-content">
+ *       <h5 class="alert-title">Heads up</h5>
+ *       <p class="alert-description">Your trial ends in 3 days.</p>
+ *     </div>
+ *   </div>
+ */
+
+.alert {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: var(--hg-spacing-12);
+  padding: var(--hg-spacing-16);
+  border: var(--border-width) var(--border-style) var(--hg-color-middle-grey);
+  border-radius: var(--border-radius);
+  background: var(--hg-color-white);
+  color: var(--hg-color-primary);
+  box-sizing: border-box;
+  font-family: var(--hg-typo-font-family-primary-regular);
+}
+
+.alert-icon {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+  color: currentColor;
+}
+
+.alert-content {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.alert-title {
+  font-family: var(--hg-typo-font-family-primary-bold);
+  font-size: var(--hg-typo-font-size-14, 14px);
+  font-weight: var(--hg-typo-font-weight-600, 600);
+  line-height: 1.4;
+  margin: 0 0 var(--hg-spacing-4);
+}
+
+.alert-description {
+  font-size: var(--hg-typo-font-size-13, 13px);
+  line-height: 1.5;
+  margin: 0;
+  color: var(--hg-color-dark-grey);
+}
+
+.alert-close {
+  position: absolute;
+  top: var(--hg-spacing-12);
+  right: var(--hg-spacing-12);
+  background: transparent;
+  border: 0;
+  padding: 4px;
+  cursor: pointer;
+  color: currentColor;
+  opacity: 0.6;
+  line-height: 1;
+}
+
+.alert-close:hover { opacity: 1; }
+
+/* Variantes semánticas */
+.alert-info {
+  border-color: var(--hg-color-info);
+  background: color-mix(in srgb, var(--hg-color-info) 8%, var(--hg-color-white));
+  color: var(--hg-color-info);
+}
+
+.alert-info .alert-description { color: var(--hg-color-primary); }
+
+.alert-success {
+  border-color: var(--hg-color-success);
+  background: color-mix(in srgb, var(--hg-color-success) 8%, var(--hg-color-white));
+  color: var(--hg-color-success);
+}
+
+.alert-success .alert-description { color: var(--hg-color-primary); }
+
+.alert-warning {
+  border-color: var(--hg-color-warning);
+  background: color-mix(in srgb, var(--hg-color-warning) 18%, var(--hg-color-white));
+  color: var(--hg-color-primary);
+}
+
+.alert-destructive,
+.alert-error {
+  border-color: var(--hg-color-error);
+  background: color-mix(in srgb, var(--hg-color-error) 8%, var(--hg-color-white));
+  color: var(--hg-color-error);
+}
+
+.alert-destructive .alert-description,
+.alert-error .alert-description { color: var(--hg-color-primary); }

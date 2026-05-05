@@ -1,3 +1,45 @@
+# Dependencias
 node_modules/
 
-.cache/
+# Archivos generados (dist se genera automáticamente)
+dist/
+
+# Archivos de estado y datos
+.data/
+.previous-values.json
+.historical-variables.json
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Variables de entorno
+.env
+.env.local
+.env.*.local
+
+# Directorios temporales
+.npm
+.cache
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.cursor/skills/maquetar-holygrailcss/SKILL.md
+themes/black-and-white/README.md
+src/docs-generator/html-generator.js
+
+# Archivos de test temporales
+test-*.html
+
+# Carpeta de diseño (brief/psd)
+brief/

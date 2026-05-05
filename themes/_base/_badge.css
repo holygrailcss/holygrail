@@ -1,0 +1,60 @@
+/**
+ * Badge
+ * Etiquetas pequeñas para estado/categoría.
+ * Variantes: default, secondary, outline, destructive, success, warning, info.
+ */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--hg-spacing-4);
+  padding: 2px var(--hg-spacing-8);
+  font-family: var(--hg-typo-font-family-primary-regular);
+  font-size: var(--hg-typo-font-size-12, 12px);
+  font-weight: var(--hg-typo-font-weight-500, 500);
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  border: var(--border-width) var(--border-style) transparent;
+  border-radius: var(--border-radius);
+  box-sizing: border-box;
+}
+
+/* default — sólido oscuro */
+.badge,
+.badge-default {
+  background: var(--hg-color-primary);
+  color: var(--hg-color-white);
+}
+
+.badge-secondary {
+  background: var(--hg-color-light-grey);
+  color: var(--hg-color-primary);
+}
+
+.badge-outline {
+  background: transparent;
+  color: var(--hg-color-primary);
+  border-color: var(--hg-color-primary);
+}
+
+.badge-destructive {
+  background: var(--hg-color-error);
+  color: var(--hg-color-white);
+}
+
+.badge-success {
+  background: var(--hg-color-success);
+  color: var(--hg-color-white);
+}
+
+.badge-warning {
+  background: var(--hg-color-warning);
+  color: var(--hg-color-primary);
+}
+
+.badge-info {
+  background: var(--hg-color-info);
+  color: var(--hg-color-white);
+}

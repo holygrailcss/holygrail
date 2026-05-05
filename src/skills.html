@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>holygrailcss — Skills para Claude</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Instrument+Sans:regular,100,500,600,700" media="all">
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+  <link rel="stylesheet" href="output.css">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Instrument Sans', sans-serif;
+      background: #fff;
+      color: #111;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── HEADER ── */
+    .sk-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(255,255,255,0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      padding: 0 2rem;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .sk-logo {
+      font-size: 13px;
+      font-weight: 300;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      border: 1px solid #000;
+      padding: 4px 8px;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #000;
+    }
+
+    .sk-nav { display: flex; gap: 1.5rem; align-items: center; }
+    .sk-nav a {
+      font-size: 13px;
+      color: #666;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .sk-nav a:hover { color: #000; }
+    .sk-nav a.active { color: #000; font-weight: 600; }
+
+    /* ── HERO ── */
+    .sk-hero {
+      padding: 6rem 2rem 4rem;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .sk-hero-label {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: #999;
+      margin-bottom: 1rem;
+    }
+
+    .sk-hero h1 {
+      font-size: clamp(36px, 6vw, 64px);
+      font-weight: 500;
+      line-height: 1.1;
+      color: #000;
+      margin-bottom: 1.5rem;
+    }
+
+    .sk-hero-desc {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #666;
+      max-width: 640px;
+    }
+
+    /* ── GRID DE SKILLS ── */
+    .sk-grid {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 2rem 6rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1px;
+      background: #e5e5e5;
+      border: 1px solid #e5e5e5;
+    }
+
+    @media (min-width: 768px) {
+      .sk-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .sk-card {
+      background: #fff;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      transition: background 0.2s;
+      cursor: default;
+    }
+
+    .sk-card:hover {
+      background: #fafafa;
+    }
+
+    .sk-card-number {
+      font-size: 11px;
+      color: #bbb;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .sk-card h2 {
+      font-size: 20px;
+      font-weight: 600;
+      color: #111;
+      line-height: 1.3;
+    }
+
+    .sk-card-desc {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #666;
+    }
+
+    .sk-card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 0.5rem;
+    }
+
+    .sk-tag {
+      font-size: 11px;
+      padding: 3px 10px;
+      background: #f3f3f3;
+      border-radius: 100px;
+      color: #555;
+    }
+
+    /* ── INSTALACIÓN ── */
+    .sk-install {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 2rem 6rem;
+    }
+
+    .sk-install h2 {
+      font-size: 32px;
+      font-weight: 500;
+      margin-bottom: 1.5rem;
+    }
+
+    .sk-install-desc {
+      font-size: 15px;
+      line-height: 1.7;
+      color: #666;
+      margin-bottom: 2rem;
+      max-width: 640px;
+    }
+
+    .sk-code-block {
+      background: #1a1a1a;
+      border-radius: 12px;
+      padding: 1.5rem 2rem;
+      overflow-x: auto;
+      margin-bottom: 1.5rem;
+    }
+
+    .sk-code-block code {
+      font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', monospace;
+      font-size: 13px;
+      line-height: 1.7;
+      color: #e0e0e0;
+    }
+
+    .sk-code-block .comment { color: #666; }
+    .sk-code-block .path { color: #9a9a9a; }
+
+    .sk-step {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 2rem;
+      align-items: flex-start;
+    }
+
+    .sk-step-num {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: #f0f0f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 600;
+      color: #444;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .sk-step-content h3 {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+
+    .sk-step-content p {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.5;
+    }
+
+    /* ── SKILL DETAIL ── */
+    .sk-detail {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 2rem 4rem;
+    }
+
+    .sk-detail-section {
+      border-top: 1px solid #eee;
+      padding: 3rem 0;
+    }
+
+    .sk-detail-section h2 {
+      font-size: 28px;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
+
+    .sk-detail-section .sk-skill-id {
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      font-size: 12px;
+      color: #999;
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    .sk-detail-section p {
+      font-size: 15px;
+      line-height: 1.7;
+      color: #555;
+      margin-bottom: 1rem;
+      max-width: 640px;
+    }
+
+    .sk-feature-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sk-feature-list li {
+      font-size: 14px;
+      color: #444;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #f5f5f5;
+      display: flex;
+      gap: 0.5rem;
+      align-items: baseline;
+    }
+
+    .sk-feature-list li::before {
+      content: '→';
+      color: #bbb;
+      flex-shrink: 0;
+    }
+
+    /* ── FOOTER ── */
+    .sk-footer {
+      border-top: 1px solid #eee;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .sk-footer p {
+      font-size: 12px;
+      color: #999;
+    }
+
+    .sk-footer a {
+      color: #666;
+      text-decoration: none;
+    }
+
+    .sk-footer a:hover { color: #000; }
+
+    /* ── UTILS ── */
+    .sk-separator {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .sk-separator hr {
+      border: none;
+      border-top: 1px solid #eee;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="sk-header">
+    <a href="index.html" class="sk-logo">holygrailcss</a>
+    <nav class="sk-nav">
+      <a href="index.html">Guía</a>
+      <a href="themes/black-and-white-demo.html">Tema Black&White</a>
+      <a href="themes/limited-demo.html">Tema Limited</a>
+      <a href="skills.html" class="active">Skills</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="sk-hero">
+    <p class="sk-hero-label">Claude Skills</p>
+    <h1>Skills para<br>holygrailcss</h1>
+    <p class="sk-hero-desc">
+      Skills de Claude diseñados para trabajar con holygrailcss.
+      Genera componentes, configura tu design system, crea temas y migra proyectos
+      directamente desde Claude Code o Cowork.
+    </p>
+  </section>
+
+  <!-- SKILLS GRID -->
+  <section class="sk-grid">
+    <div class="sk-card" data-skill="component-generator">
+      <span class="sk-card-number">01</span>
+      <h2>Component Generator</h2>
+      <p class="sk-card-desc">
+        Genera componentes HTML que usan correctamente las clases de holygrailcss.
+        Valida contra el config.json del proyecto y produce marcado responsive.
+      </p>
+      <div class="sk-card-tags">
+        <span class="sk-tag">HTML</span>
+        <span class="sk-tag">responsive</span>
+        <span class="sk-tag">grid</span>
+      </div>
+    </div>
+
+    <div class="sk-card" data-skill="config-builder">
+      <span class="sk-card-number">02</span>
+      <h2>Config Builder</h2>
+      <p class="sk-card-desc">
+        Crea o modifica el config.json de forma correcta y completa.
+        Valida estructura, genera tokens y configura todo el design system.
+      </p>
+      <div class="sk-card-tags">
+        <span class="sk-tag">config.json</span>
+        <span class="sk-tag">tokens</span>
+        <span class="sk-tag">validación</span>
+      </div>
+    </div>
+
+    <div class="sk-card" data-skill="theme-creator">
+      <span class="sk-card-number">03</span>
+      <h2>Theme Creator</h2>
+      <p class="sk-card-desc">
+        Crea temas personalizados con estructura ITCSS.
+        Genera variables, componentes CSS y demo interactiva automáticamente.
+      </p>
+      <div class="sk-card-tags">
+        <span class="sk-tag">temas</span>
+        <span class="sk-tag">ITCSS</span>
+        <span class="sk-tag">CSS</span>
+      </div>
+    </div>
+
+    <div class="sk-card" data-skill="migration-helper">
+      <span class="sk-card-number">04</span>
+      <h2>Migration Helper</h2>
+      <p class="sk-card-desc">
+        Migra proyectos desde Bootstrap, Tailwind u otros frameworks.
+        Mapea clases, genera config.json y ofrece plan paso a paso.
+      </p>
+      <div class="sk-card-tags">
+        <span class="sk-tag">migración</span>
+        <span class="sk-tag">Bootstrap</span>
+        <span class="sk-tag">Tailwind</span>
+      </div>
+    </div>
+
+    <div class="sk-card" data-skill="layout-builder">
+      <span class="sk-card-number">05</span>
+      <h2>Layout Builder</h2>
+      <p class="sk-card-desc">
+        Construye layouts completos y responsive usando grid, flexbox,
+        spacing y aspect ratios de holygrailcss.
+      </p>
+      <div class="sk-card-tags">
+        <span class="sk-tag">layout</span>
+        <span class="sk-tag">grid</span>
+        <span class="sk-tag">flexbox</span>
+      </div>
+    </div>
+
+    <div class="sk-card" style="display:flex; align-items:center; justify-content:center; min-height: 180px;">
+      <p class="sk-card-desc" style="text-align:center; color:#bbb;">
+        Más skills próximamente
+      </p>
+    </div>
+  </section>
+
+  <!-- INSTALACIÓN -->
+  <section class="sk-install" id="instalacion">
+    <h2>Instalación</h2>
+    <p class="sk-install-desc">
+      Los skills se instalan copiando la carpeta <code>skills/</code> del repositorio
+      de holygrailcss en el directorio <code>.claude/skills/</code> de tu proyecto.
+      Claude los detectará automáticamente.
+    </p>
+
+    <div class="sk-step">
+      <span class="sk-step-num">1</span>
+      <div class="sk-step-content">
+        <h3>Clonar o copiar los skills</h3>
+        <p>Desde el repositorio de holygrailcss, copia la carpeta skills/</p>
+      </div>
+    </div>
+
+    <div class="sk-code-block"><code><span class="comment"># Copiar skills al proyecto</span>
+cp -r node_modules/holygrailcss/skills/ .claude/skills/holygrailcss/</code></div>
+
+    <div class="sk-step">
+      <span class="sk-step-num">2</span>
+      <div class="sk-step-content">
+        <h3>Verificar la estructura</h3>
+        <p>Tu proyecto debería tener esta estructura:</p>
+      </div>
+    </div>
+
+    <div class="sk-code-block"><code><span class="path">.claude/skills/holygrailcss/</span>
+├── component-generator/SKILL.md
+├── config-builder/SKILL.md
+├── theme-creator/SKILL.md
+├── migration-helper/SKILL.md
+└── layout-builder/SKILL.md</code></div>
+
+    <div class="sk-step">
+      <span class="sk-step-num">3</span>
+      <div class="sk-step-content">
+        <h3>Usar en Claude</h3>
+        <p>Claude detectará los skills automáticamente. Pide cosas como:</p>
+      </div>
+    </div>
+
+    <div class="sk-code-block"><code><span class="comment"># Ejemplos de uso</span>
+"Genera un componente card de producto con holygrailcss"
+"Crea un config.json para mi proyecto e-commerce"
+"Crea un tema oscuro basado en Black&White"
+"Migra mis clases de Bootstrap a holygrailcss"
+"Construye un layout de landing page responsive"</code></div>
+  </section>
+
+  <div class="sk-separator"><hr></div>
+
+  <!-- DETALLE DE SKILLS -->
+  <section class="sk-detail" id="detalle">
+
+    <div class="sk-detail-section" id="component-generator">
+      <h2>Component Generator</h2>
+      <span class="sk-skill-id">skills/component-generator</span>
+      <p>
+        Genera componentes HTML que aprovechan el sistema completo de utilidades
+        de holygrailcss. Lee el config.json del proyecto para usar solo clases que existen.
+      </p>
+      <ul class="sk-feature-list">
+        <li>Valida clases contra el config.json real del proyecto</li>
+        <li>Usa spacing, helpers, grid, tipografía y aspect ratios</li>
+        <li>Genera marcado mobile-first con variantes responsive (md\:)</li>
+        <li>Incluye comentarios explicando las decisiones de layout</li>
+        <li>Verifica que colores y spacing referenciados existen</li>
+      </ul>
+    </div>
+
+    <div class="sk-detail-section" id="config-builder">
+      <h2>Config Builder</h2>
+      <span class="sk-skill-id">skills/config-builder</span>
+      <p>
+        Asiste en la creación o modificación del config.json, validando
+        la estructura completa y asegurando coherencia entre tokens.
+      </p>
+      <ul class="sk-feature-list">
+        <li>Valida propiedades obligatorias (prefix, breakpoints, typo)</li>
+        <li>Genera colores, spacing, tipografía, helpers y grid</li>
+        <li>Verifica consistencia entre breakpoints y valores</li>
+        <li>Ejecuta build para validar que genera CSS sin errores</li>
+        <li>Detecta duplicados en spacingMap, colors y typo</li>
+      </ul>
+    </div>
+
+    <div class="sk-detail-section" id="theme-creator">
+      <h2>Theme Creator</h2>
+      <span class="sk-skill-id">skills/theme-creator</span>
+      <p>
+        Crea temas personalizados siguiendo la estructura ITCSS del tema Black&White.
+        Genera variables, componentes CSS modulares y demo interactiva.
+      </p>
+      <ul class="sk-feature-list">
+        <li>Estructura ITCSS: Settings → Components → Utilities</li>
+        <li>Variables del tema extienden las de holygrailcss (--hg-color-* → --btn-*)</li>
+        <li>Genera _buttons, _inputs, _checkboxes, _radios, _switches, _forms</li>
+        <li>Crea demo.html con secciones navegables por componente</li>
+        <li>Activa automáticamente el tema en config.json</li>
+      </ul>
+    </div>
+
+    <div class="sk-detail-section" id="migration-helper">
+      <h2>Migration Helper</h2>
+      <span class="sk-skill-id">skills/migration-helper</span>
+      <p>
+        Asiste en la migración desde otros frameworks CSS.
+        Analiza el código existente, mapea clases y genera un plan de migración.
+      </p>
+      <ul class="sk-feature-list">
+        <li>Mapas de equivalencia: Bootstrap → holygrailcss, Tailwind → holygrailcss</li>
+        <li>Analiza CSS actual para extraer tokens (colores, spacing, tipografía)</li>
+        <li>Genera config.json a partir del análisis del proyecto</li>
+        <li>Plan de 7 pasos: instalar → config → generar → enlazar → reemplazar → limpiar</li>
+        <li>Buscar y reemplazar clases en lote</li>
+      </ul>
+    </div>
+
+    <div class="sk-detail-section" id="layout-builder">
+      <h2>Layout Builder</h2>
+      <span class="sk-skill-id">skills/layout-builder</span>
+      <p>
+        Construye layouts de página completos combinando grid,
+        flexbox, spacing responsive y aspect ratios.
+      </p>
+      <ul class="sk-feature-list">
+        <li>Grid de 12-24 columnas con 5 breakpoints (xs → xl)</li>
+        <li>Patrones: hero, grid de cards, sidebar layout, split content</li>
+        <li>Helpers de flexbox para alineación dentro de componentes</li>
+        <li>Aspect ratios para imágenes y media</li>
+        <li>Verifica que no hay overflow horizontal en mobile</li>
+      </ul>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="sk-footer">
+    <p>
+      holygrailcss — <a href="https://github.com/holygrailcss/holygrailcss" target="_blank">GitHub</a>
+      · <a href="https://www.npmjs.com/package/holygrailcss" target="_blank">npm</a>
+      · <a href="index.html">Guía</a>
+    </p>
+  </footer>
+
+  <script>
+    // Lenis smooth scroll
+    const lenis = new Lenis({ duration: 1.2, easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)) });
+    function raf(time) { lenis.raf(time); requestAnimationFrame(raf); }
+    requestAnimationFrame(raf);
+
+    // Smooth scroll to skill detail on card click
+    document.querySelectorAll('.sk-card[data-skill]').forEach(card => {
+      card.style.cursor = 'pointer';
+      card.addEventListener('click', () => {
+        const target = document.getElementById(card.dataset.skill);
+        if (target) lenis.scrollTo(target, { offset: -80 });
+      });
+    });
+  </script>
+
+</body>
+</html>

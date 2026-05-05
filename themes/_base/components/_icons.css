@@ -1,0 +1,16 @@
+  :root {
+    --hg-icon-size: var(--hg-spacing-16);
+  }
+
+  .hg-icon {
+    align-items: center;
+    display: inline-flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+  }
+  
+  .hg-icon svg {
+    display: block;
+    height: auto;
+    width: var(--hg-icon-size);
+  }

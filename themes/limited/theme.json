@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "name": "limited",
+    "displayName": "Limited",
+    "description": "Tema de lujo cálido con paleta dorada, bronces y crema, y tipografía 100% serif: Neutrif tanto en titulares como en texto corrido. Redefine los colores semánticos sobre la base holygrailcss, manteniendo los componentVars mapeados a los tokens --hg-color-* para heredar automáticamente la paleta del tema.",
+    "version": "1.0.0",
+    "author": "holygrailcss"
+  },
+  "tokenOverrides": {
+    "color": {
+      "primary": "#1D1D1D",
+      "feel": "#A38A6B",
+      "feel-dark": "#7A6346",
+      "error": "#9B2A1E",
+      "success": "#7A8D5F",
+      "warning": "#D4A84B",
+      "info": "#5B7FA1",
+      "special": "#B99D6B",
+      "bg-light": "#F4F2ED",
+      "bg-cream": "#F4F2ED"
+    },
+    "spacing": {}
+  },
+  "typography": {
+    "fontFamilyMap": {
+      "primary-light": "\"neutrif-regular\", Georgia, \"Times New Roman\", serif",
+      "primary-regular": "\"neutrif-regular\", Georgia, \"Times New Roman\", serif",
+      "primary-bold": "\"neutrif-bold\", Georgia, \"Times New Roman\", serif",
+      "secondary": "\"neutrif-medium\", Georgia, \"Times New Roman\", serif"
+    }
+  },
+  "componentVars": {
+    "btn": {
+      "primary-bg": "var(--hg-color-primary)",
+      "primary-color": "var(--hg-color-white)",
+      "primary-hover-bg": "var(--hg-color-feel-dark)",
+
+      "secondary-bg": "var(--hg-color-feel)",
+      "secondary-color": "var(--hg-color-white)",
+      "secondary-hover-bg": "var(--hg-color-feel-dark)",
+
+      "outline-border": "var(--hg-color-feel-dark)",
+      "outline-color": "var(--hg-color-feel-dark)",
+      "outline-hover-bg": "var(--hg-color-feel-dark)",
+      "outline-hover-color": "var(--hg-color-white)",
+
+      "ghost-color": "var(--hg-color-primary)",
+      "ghost-hover-bg": "var(--hg-color-bg-cream)",
+
+      "feel-bg": "var(--hg-color-feel)",
+      "feel-color": "var(--hg-color-white)",
+      "feel-hover-bg": "var(--hg-color-feel-dark)",
+
+      "padding-x-sm": "var(--hg-spacing-12)",
+      "padding-y-sm": "var(--hg-spacing-8)",
+      "padding-x-md": "var(--hg-spacing-16)",
+      "padding-y-md": "var(--hg-spacing-12)",
+      "padding-x-lg": "var(--hg-spacing-24)",
+      "padding-y-lg": "var(--hg-spacing-16)"
+    },
+    "input": {
+      "border": "var(--hg-color-middle-grey)",
+      "border-focus": "var(--hg-color-feel-dark)",
+      "bg": "var(--hg-color-white)",
+      "color": "var(--hg-color-primary)",
+      "placeholder": "var(--hg-color-middle-grey)",
+      "error-border": "var(--hg-color-error)",
+      "success-border": "var(--hg-color-success)",
+      "warning-border": "var(--hg-color-warning)",
+      "padding-x": "var(--hg-spacing-16)",
+      "padding-y": "var(--hg-spacing-12)",
+      "gap": "var(--hg-spacing-8)"
+    },
+    "label": {
+      "color": "var(--hg-color-primary)",
+      "required": "var(--hg-color-error)"
+    },
+    "checkbox": {
+      "bg": "var(--hg-color-white)",
+      "border": "var(--hg-color-middle-grey)",
+      "checked-bg": "var(--hg-color-feel-dark)",
+      "checked-border": "var(--hg-color-feel-dark)"
+    },
+    "radio": {
+      "bg": "var(--hg-color-white)",
+      "border": "var(--hg-color-middle-grey)",
+      "checked-bg": "var(--hg-color-feel-dark)",
+      "checked-border": "var(--hg-color-feel-dark)"
+    },
+    "switch": {
+      "bg": "var(--hg-color-middle-grey)",
+      "active-bg": "var(--hg-color-feel)",
+      "thumb": "var(--hg-color-white)"
+    },
+    "form-group": {
+      "gap": "var(--hg-spacing-16)"
+    }
+  },
+  "design": {
+    "border-radius": "0",
+    "border-width": "1px",
+    "border-style": "solid",
+    "transition": "all 0.3s ease"
+  }
+}

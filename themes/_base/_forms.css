@@ -1,0 +1,62 @@
+/**
+ * Form Groups, Form Rows y Helper Text
+ */
+
+/* Form Groups */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-block-end: var(--hg-spacing-24);
+}
+
+.form-group:last-child {
+  margin-block-end: 0;
+}
+
+.form-group-inline {
+  flex-direction: row;
+  align-items: center;
+  gap: var(--hg-spacing-16);
+}
+
+.form-group-inline .label {
+  margin-block-end: 0;
+  flex-shrink: 0;
+}
+
+/* Helper Text / Messages */
+.helper-text {
+  display: block;
+  font-family: var(--hg-typo-font-family-primary-regular);
+  font-size: var(--hg-typo-font-size-12);
+  font-weight: var(--hg-typo-font-weight-400);
+  line-height: var(--hg-typo-line-height-1-5);
+  margin-block-start: var(--hg-spacing-4);
+  color: var(--hg-color-dark-grey);
+}
+
+.helper-text-error {
+  color: var(--hg-color-error);
+}
+
+.helper-text-success {
+  color: var(--hg-color-success);
+}
+
+.helper-text-warning {
+  color: var(--hg-color-warning);
+}
+
+/* Form Row */
+.form-row {
+  display: flex;
+  gap: var(--hg-spacing-16);
+  flex-wrap: wrap;
+}
+
+.form-row > * {
+  flex: 1;
+  min-width: 200px;
+}
+

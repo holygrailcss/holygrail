@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Theming Limited - Demo</title>
+    <link rel="stylesheet" href="../output.css">
+    <link rel="stylesheet" href="limited.css">
+    <style>
+
+    </style>
+  </head>
+  <body>
+
+    <div class="demo-container guide-main-content">
+      <h2 class="demo-title">Limited Theme</h2>
+
+
+      <div class="demo-section-2">
+        <h3>¿Dónde se customiza el tema?</h3>
+        <p class="mb-16">
+          Limited se construye en <strong>dos capas</strong> sobre holygrailcss:
+        </p>
+
+        <div class="mb-16">
+          <strong>1. Tokens base</strong> — <code>config.json</code> define la paleta, espaciados y tipografía compartidos. <code>npm run build</code> regenera <code>dist/output.css</code>.
+        </div>
+        <div class="mb-16">
+          <strong>2. Overrides del tema</strong> — <code>themes/limited/theme.json</code> declara los metadatos y overrides (paleta dorada, Neutrif serif). <code>themes/limited/_variables.css</code> los materializa como CSS custom properties y mapea las variables de componente (ej. <code>--btn-primary-bg: var(--hg-color-primary)</code>).
+        </div>
+
+        <p class="mb-24">
+          <code>themes/limited/theme.css</code> es el punto de entrada: importa todos los módulos del tema. Las variables tipográficas (<code>--hg-typo-font-family-*</code>) se redefinen para aplicar Neutrif a titulares y texto corrido.
+        </p>
+      </div>
+
+      <!-- BLOQUE DEL TEMA (meta + variables) generado en build a partir de themes/<tema>/theme.json -->
+      <!-- HG_THEME_BLOCK -->
+
+      <!-- TIPOGRAFÍA (tabla generada en build a partir de config.json → typo) -->
+      <!-- HG_TYPO_TABLE -->
+
+      <!-- BOTONES -->
+      <section class="demo-section" id="buttons">
+        <h2 class="demo-title">Botones</h2>
+
+        <h3 class="demo-subtitle">Variantes</h3>
+        <div class="demo-grid">
+          <div class="demo-item">
+            <button class="btn btn-primary">Primary</button>
+            <div class="demo-code">.btn .btn-primary</div>
+          </div>
+          <div class="demo-item">
+            <button class="btn btn-secondary">Secondary</button>
+            <div class="demo-code">.btn .btn-secondary</div>
+          </div>
+          <div class="demo-item">
+            <button class="btn btn-tertiary">Tertiary</button>
+            <div class="demo-code">.btn .btn-tertiary</div>
+          </div>
+          <div class="demo-item">
+            <button class="btn btn-label-m">Label M</button>
+            <div class="demo-code">.btn .btn-label-m</div>
+          </div>
+          <div class="demo-item">
+            <button class="btn btn-link">Link</button>
+            <div class="demo-code">.btn .btn-link</div>
+          </div>
+          <div class="demo-item">
+            <button class="btn btn-badge">Badge</button>
+            <div class="demo-code">.btn .btn-badge</div>
+          </div>
+
+          <div class="demo-item">
+            <button class="btn btn-primary" disabled>Disabled</button>
+            <div class="demo-code">.btn[disabled]</div>
+          </div>
+        </div>
+
+        <h3 class="demo-subtitle">Tamaños</h3>
+        <div class="demo-grid">
+          <div class="demo-item">
+            <button class="btn btn-primary btn-sm">Small</button>
+            <div class="demo-code">.btn-sm</div>
+          </div>
+          <div class="demo-item">
+            <button class="btn btn-primary btn-md">Medium</button>
+            <div class="demo-code">.btn-md</div>
+          </div>
+          <div class="demo-item">
+            <button class="btn btn-primary btn-lg">Large</button>
+            <div class="demo-code">.btn-lg</div>
+          </div>
+        </div>
+
+        <h3 class="demo-subtitle">Ancho completo</h3>
+        <div class="demo-item">
+          <button class="btn btn-primary btn-md btn-full">Botón ancho completo</button>
+          <div class="demo-code">.btn-full</div>
+        </div>
+      </section>
+
+      <!-- INPUTS -->
+      <section class="demo-section" id="inputs">
+        <h2 class="demo-title">Inputs</h2>
+
+        <h3 class="demo-subtitle">Tipos básicos</h3>
+        <div class="demo-grid">
+          <div class="demo-item">
+            <div class="form-input-label-2">
+              <input type="text" id="input-text" class="input" placeholder="Escribe algo...">
+              <label for="input-text">Texto</label>
+            </div>
+            <div class="demo-code">.input</div>
+          </div>
+          <div class="demo-item">
+            <div class="form-input-label-2">
+              <input type="email" id="input-email" class="input" placeholder="email@ejemplo.com">
+              <label for="input-email">Email</label>
+            </div>
+            <div class="demo-code">type="email"</div>
+          </div>
+          <div class="demo-item">
+            <div class="form-input-label-2">
+              <input type="password" id="input-password" class="input" placeholder="••••••••">
+              <label for="input-password">Contraseña</label>
+            </div>
+            <div class="demo-code">type="password"</div>
+          </div>
+          <div class="demo-item">
+            <div class="form-input-label-2">
+              <input type="number" id="input-number" class="input" placeholder="123">
+              <label for="input-number">Número</label>
+            </div>
+            <div class="demo-code">type="number"</div>
+          </div>
+        </div>
+
+        <h3 class="demo-subtitle">Estados</h3>
+        <div class="demo-grid">
+          <div class="demo-item">
+            <div class="form-input-label-2">
+              <input type="text" id="input-error" class="input input-error" value="Valor inválido" placeholder=" ">
+              <label for="input-error">Error</label>
+            </div>
+            <span class="helper-text helper-text-error">Este campo tiene un error</span>
+            <div class="demo-code">.input-error</div>
+          </div>
+          <div class="demo-item">
+            <div class="form-input-label-2">
+              <input type="text" id="input-success" class="input input-success" value="Valor válido" placeholder=" ">
+              <label for="input-success">Success</label>
+            </div>
+            <span class="helper-text helper-text-success">Campo válido</span>
+            <div class="demo-code">.input-success</div>
+          </div>
+          <div class="demo-item">
+            <div class="form-input-label-2">
+              <input type="text" id="input-warning" class="input input-warning" value="Atención" placeholder=" ">
+              <label for="input-warning">Warning</label>
+            </div>
+            <span class="helper-text helper-text-warning">Revisa este campo</span>
+            <div class="demo-code">.input-warning</div>
+          </div>
+          <div class="demo-item">
+            <div class="form-input-label-2">
+              <input type="text" id="input-disabled" class="input" value="No editable" placeholder=" " disabled>
+              <label for="input-disabled">Disabled</label>
+            </div>
+            <div class="demo-code">input[disabled]</div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- CHECKBOXES -->
+      <section class="demo-section" id="checkboxes">
+        <h2 class="demo-title">Checkboxes</h2>
+
+        <div class="demo-grid">
+          <div class="demo-item">
+            <label class="checkbox">
+              <input type="checkbox">
+              <span class="checkbox-indicator">
+                <svg class="cbox__icon" viewBox="0 0 10 8" width="10" height="8" aria-hidden="true" focusable="false">
+                  <path d="M9.05823.198273 9.69185.801721 3.5417 7.25937.308228 3.86422.941848 3.26077 3.5417 5.99062 9.05823.198273Z" fill="currentColor"/>
+                </svg>
+              </span>
+              <span class="checkbox-label">Checkbox sin marcar</span>
+            </label>
+            <div class="demo-code">.checkbox</div>
+          </div>
+          <div class="demo-item">
+            <label class="checkbox">
+              <input type="checkbox" checked>
+              <span class="checkbox-indicator">
+                <svg class="cbox__icon" viewBox="0 0 10 8" width="10" height="8" aria-hidden="true" focusable="false">
+                  <path d="M9.05823.198273 9.69185.801721 3.5417 7.25937.308228 3.86422.941848 3.26077 3.5417 5.99062 9.05823.198273Z" fill="currentColor"/>
+                </svg>
+              </span>
+              <span class="checkbox-label">Checkbox marcado</span>
+            </label>
+            <div class="demo-code">input[checked]</div>
+          </div>
+          <div class="demo-item">
+            <label class="checkbox">
+              <input type="checkbox" disabled>
+              <span class="checkbox-indicator">
+                <svg class="cbox__icon" viewBox="0 0 10 8" width="10" height="8" aria-hidden="true" focusable="false">
+                  <path d="M9.05823.198273 9.69185.801721 3.5417 7.25937.308228 3.86422.941848 3.26077 3.5417 5.99062 9.05823.198273Z" fill="currentColor"/>
+                </svg>
+              </span>
+              <span class="checkbox-label">Checkbox disabled</span>
+            </label>
+            <div class="demo-code">input[disabled]</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- RADIOS -->
+      <section class="demo-section" id="radios">
+        <h2 class="demo-title">Radios</h2>
+
+        <div class="demo-grid">
+          <div class="demo-item">
+            <div class="checkbox-radio">
+              <input id="radio_1_lim" name="gender_lim" type="radio" value="F" />
+              <label for="radio_1_lim">
+                <i class="ico-radio"></i>
+                <span class="title-m">checkbox-radio</span>
+              </label>
+            </div>
+            <div class="checkbox-radio">
+              <input id="radio_2_lim" name="gender_lim" type="radio" value="M" />
+              <label for="radio_2_lim">
+                <i class="ico-radio"></i>
+                <span class="title-m">checkbox-radio</span>
+              </label>
+            </div>
+            <div class="demo-code">.checkbox-radio</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SWITCHES -->
+      <section class="demo-section" id="switches">
+        <h2 class="demo-title">Switches / Toggles</h2>
+
+        <h3 class="demo-subtitle">Checkbox-item-2</h3>
+        <div class="demo-grid">
+          <div class="demo-item">
+            <div class="checkbox-item-2">
+              <input id="checkbox18_lim" name="checkbox18_lim" type="checkbox" />
+              <label for="checkbox18_lim">
+                <div class="checkbox-circle"></div>
+                <span class="theta">checkbox-item-2</span>
+              </label>
+            </div>
+            <div class="demo-code">.checkbox-item-2</div>
+          </div>
+          <div class="demo-item">
+            <div class="checkbox-item-2">
+              <input id="checkbox19_lim" name="checkbox19_lim" type="checkbox" checked />
+              <label for="checkbox19_lim">
+                <div class="checkbox-circle"></div>
+                <span class="theta">checkbox-item-2 activado</span>
+              </label>
+            </div>
+            <div class="demo-code">input[checked]</div>
+          </div>
+          <div class="demo-item">
+            <div class="checkbox-item-2">
+              <input id="checkbox20_lim" name="checkbox20_lim" type="checkbox" disabled />
+              <label for="checkbox20_lim">
+                <div class="checkbox-circle"></div>
+                <span class="theta">checkbox-item-2 disabled</span>
+              </label>
+            </div>
+            <div class="demo-code">input[disabled]</div>
+          </div>
+          <div class="demo-item">
+            <div class="checkbox-item-2 is-error">
+              <input id="checkbox21_lim" name="checkbox21_lim" type="checkbox" />
+              <label for="checkbox21_lim">
+                <div class="checkbox-circle"></div>
+                <span class="theta">checkbox-item-2 error</span>
+              </label>
+            </div>
+            <div class="demo-code">.is-error</div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </body>
+</html>

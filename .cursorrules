@@ -1,0 +1,24 @@
+# Reglas de Cursor para holygrailcss
+
+## Idioma
+
+- Todos los mensajes de commit generados por IA deben estar SIEMPRE en español
+- Todas las respuestas y explicaciones deben estar en español
+- Los comentarios en el código deben estar en español cuando sean explicativos
+
+## Estilo de Commits
+
+- Usar formato convencional de commits en español
+- Tipos: `feat:`, `fix:`, `docs:`, `style:`, `refactor:`, `test:`, `chore:`, `perf:`
+- SIEMPRE explicar dónde tiene afectación el cambio
+- Formato: `tipo: descripción (afecta a: ubicación/componente)`
+- Ejemplos:
+  - "feat: agregar nuevos estilos de checkbox (afecta a: themes/black-and-white/_checkboxes.css, dist/themes/black-and-white-demo.html)"
+  - "fix: corregir desplazamiento en inputs (afecta a: themes/black-and-white/_inputs.css)"
+  - "refactor: simplificar generador de variables (afecta a: src/generators/variables-generator.js)"
+  - "docs: actualizar README del tema black-and-white (afecta a: themes/black-and-white/README.md)"
+
+## Privacidad y contenido sensible
+
+- No mostrar ni mencionar información de marcas/empresas sensibles solicitadas por el usuario.
+- Este repositorio es público/genérico: nunca reintroducir referencias a clientes anteriores ni a sus marcas matrices. El proyecto se llama **holygrailcss** y el tema base se llama **Black&White**.
