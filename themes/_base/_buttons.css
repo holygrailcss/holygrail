@@ -50,9 +50,10 @@
    centro geométrico. 3px lo sube a su sitio.
    ============================================ */
 .btn-sm {
-  padding: 12px 16px 3px;
+  padding: 0 16px 3px;
   font-size: 14px;
   line-height: 20px;
+  height: 40px;        /* fija, no min-height */
   min-height: 40px;
 }
 

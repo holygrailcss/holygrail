@@ -40,14 +40,19 @@
 }
 
 /* Círculo del radio (::before)
-   Tamaño promedio del proyecto: 24x24, circular. */
+   Tamaño promedio del proyecto: 24x24, circular.
+   top: 50% + translateY(-50%) lo centra verticalmente respecto al
+   label completo. Así, sea el texto de 1 línea o de varias, sea
+   font-size 12 o 24, el círculo siempre queda al centro vertical. */
 .checkbox-radio [type=radio] + label::before {
   position: absolute;
   box-sizing: border-box;
   content: "";
   width: 24px;
   height: 24px;
+  top: 50%;
   left: 0;
+  transform: translateY(-50%);
   border: var(--border-width) var(--border-style) var(--hg-color-primary);
   outline: 0;
   display: inline-block;
@@ -56,22 +61,27 @@
   border-radius: 50%;
 }
 
-/* Texto del label */
+/* Texto del label.
+   min-height 24 garantiza que el label tenga al menos la altura del
+   círculo, así el centrado vertical de éste coincide con el del texto
+   cuando sólo hay una línea corta. */
 .checkbox-radio [type=radio] + label span {
   display: inline-block;
   vertical-align: top;
   margin: 0;
   line-height: var(--hg-typo-line-height-sm, 16px);
-  padding-top: 2px;
   padding-left: var(--hg-spacing-32, 32px);
   min-height: 24px;
 }
 
-/* Indicador interno (punto) — círculo 10x10 centrado dentro del 24x24 */
+/* Indicador interno (punto) — círculo 10x10 centrado dentro del 24x24.
+   También usa top: 50% para seguir al círculo cuando éste se centra
+   verticalmente. translateY(-50%) lo recentra dentro del aro. */
 .checkbox-radio [type=radio] + label .ico-radio {
   position: absolute;
-  top: 7px;
+  top: 50%;
   left: 7px;
+  transform: translateY(-50%);
   width: 10px;
   height: 10px;
   background-color: var(--hg-color-primary);
@@ -79,16 +89,16 @@
   transition: var(--transition);
 }
 
-/* Estado no seleccionado */
+/* Estado no seleccionado — escala 0 + mantén el centrado vertical */
 .checkbox-radio [type=radio]:not(:checked) + label .ico-radio {
   opacity: 0;
-  transform: scale(0);
+  transform: translateY(-50%) scale(0);
 }
 
-/* Estado seleccionado */
+/* Estado seleccionado — escala 1 + mantén el centrado vertical */
 .checkbox-radio [type=radio]:checked + label .ico-radio {
   opacity: 1;
-  transform: scale(1);
+  transform: translateY(-50%) scale(1);
 }
 
 /* Estado deshabilitado */
@@ -164,12 +174,19 @@
   position: absolute;
   top: var(--hg-spacing-16);
   left: var(--hg-spacing-16);
+  transform: none;  /* anula el translateY(-50%) del default */
 }
 
 .check-top.checkbox-radio [type=radio] + label .ico-radio {
   top: calc(var(--hg-spacing-16) + 7px);
   left: calc(var(--hg-spacing-16) + 7px);
+  transform: none;
 }
+
+/* Re-activar la animación de scale sin el translateY (el ico ya no
+   está vertically centered en estas variantes) */
+.check-top.checkbox-radio [type=radio]:not(:checked) + label .ico-radio { transform: scale(0); }
+.check-top.checkbox-radio [type=radio]:checked + label .ico-radio { transform: scale(1); }
 
 .check-top .box3-content {
   padding-left: var(--hg-spacing-40, 40px);
@@ -185,12 +202,17 @@
   position: absolute;
   top: var(--hg-spacing-16);
   left: 0;
+  transform: none;
 }
 
 .check-clear.checkbox-radio [type=radio] + label .ico-radio {
   top: calc(var(--hg-spacing-16) + 7px);
   left: 7px;
+  transform: none;
 }
+
+.check-clear.checkbox-radio [type=radio]:not(:checked) + label .ico-radio { transform: scale(0); }
+.check-clear.checkbox-radio [type=radio]:checked + label .ico-radio { transform: scale(1); }
 
 .check-clear .box3-content {
   padding-left: var(--hg-spacing-40, 40px);
