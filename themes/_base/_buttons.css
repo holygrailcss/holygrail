@@ -1,9 +1,11 @@
-/**
- * Botones
- * Variantes: primary, secondary, tertiary, label-m, link, badge
- * Tamaños: sm, md, lg
- */
+/* PURPOSE: Botón base + variantes (primary, secondary, tertiary, outline, ghost, link, label-m, badge).
+   KEY CLASSES: .btn, .btn-{variant}, .btn-{size}, .btn-full, .has-light .btn-badge.
+   DEPENDS ON: --btn-primary-* / --btn-secondary-* / --btn-outline-* (theme), --btn-radius (theme), --hg-spacing-* / --hg-color-* / --hg-typo-* (config).
+   DEMO: dist/componentes.html#buttons */
 
+/* ============================================
+   BASE
+   ============================================ */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -12,371 +14,265 @@
   font-family: var(--hg-typo-font-family-primary-regular);
   font-size: var(--hg-typo-font-size-13);
   font-weight: var(--hg-typo-font-weight-400);
-  line-height: var(--hg-typo-line-height-1-5);
+  line-height: 1;
   text-decoration: none;
   border: var(--border-width) var(--border-style) transparent;
-  border-radius: var(--border-radius);
+  border-radius: var(--btn-radius, var(--border-radius));
   cursor: pointer;
-  transition: var(--transition);
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
   white-space: nowrap;
   user-select: none;
   -webkit-tap-highlight-color: transparent;
   min-height: 32px;
+  box-sizing: border-box;
 }
 
-/* Tamaños de botones */
+/* Iconos heredan el color de texto del botón.
+   Reemplaza ~30 reglas específicas (`btn-primary svg path`, etc.) por una sola. */
+.btn svg,
+.btn svg * {
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+.btn svg circle:not([fill]) {
+  fill: none;
+}
+
+/* ============================================
+   TAMAÑOS — réplica Ramp (dos tamaños canon)
+   sm  = "See a demo"          (nav / pill)
+   lg  = "Get started for free" (hero CTA)
+
+   El padding-bottom de 3px es una corrección óptica:
+   con line-height 1 las fuentes geométricas (Neutrif /
+   Lausanne) sitúan el texto visualmente bajo respecto al
+   centro geométrico. 3px lo sube a su sitio.
+   ============================================ */
 .btn-sm {
-  padding: var(--btn-padding-y-sm) var(--btn-padding-x-sm);
-  font-size: var(--hg-typo-font-size-12);
-}
-
-.btn-md {
-  padding: var(--btn-padding-y-md) var(--btn-padding-x-md);
-  font-size: var(--hg-typo-font-size-13);
+  padding: 12px 16px 3px;
+  font-size: 14px;
+  line-height: 20px;
+  min-height: 40px;
 }
 
 .btn-lg {
-  padding: var(--btn-padding-y-lg) var(--btn-padding-x-lg);
-  font-size: var(--hg-typo-font-size-14);
+  padding: 0 16px 3px;
+  font-size: 15px;
+  line-height: 21px;
+  height: 42px;
+  min-height: 42px;
 }
 
-/* PRIMARY BUTTON */
+@media (min-width: 992px) {
+  .btn-lg {
+    padding: 0 20px 3px;
+    font-size: 16px;
+    line-height: 22px;
+    height: 51px;
+    min-height: 51px;
+  }
+}
+
+.btn-full { width: 100%; }
+
+/* ============================================
+   PRIMARY
+   ============================================ */
 .btn-primary {
-  color: var(--hg-color-white);
-  background-color: var(--hg-color-black);
-  border: var(--border-width) var(--border-style) var(--hg-color-black);
-  font-family: var(--hg-typo-font-family-primary-regular);
-  font-weight: var(--hg-typo-font-weight-400);
+  color: var(--btn-primary-color, var(--hg-color-white));
+  background-color: var(--btn-primary-bg, var(--hg-color-primary));
+  border-color: var(--btn-primary-bg, var(--hg-color-primary));
 }
 
-.btn-primary svg g {
-  fill: var(--hg-color-white);
-  stroke: var(--hg-color-white);
-}
-
-.btn-primary svg circle {
-  stroke: var(--hg-color-white);
-}
-
-.btn-primary svg path {
-  fill: var(--hg-color-white);
-}
-
-.btn-primary:focus,
-.btn-primary.focus,
 .btn-primary:hover,
-.btn-primary.hover,
+.btn-primary:focus,
 .btn-primary:active,
 .btn-primary.active {
-  color: var(--hg-color-white);
-  background-color: var(--hg-color-dark-grey);
-  border: var(--border-width) var(--border-style) var(--hg-color-dark-grey);
-  opacity: 1;
-  cursor: pointer;
+  background-color: var(--btn-primary-hover-bg, var(--hg-color-dark-grey));
+  border-color: var(--btn-primary-hover-bg, var(--hg-color-dark-grey));
 }
 
-.btn-primary[disabled],
 .btn-primary:disabled,
+.btn-primary[disabled],
 .btn-primary.disabled {
   background-color: var(--hg-color-bg-light);
-  border: var(--border-width) var(--border-style) var(--hg-color-bg-light);
+  border-color: var(--hg-color-bg-light);
   color: var(--hg-color-dark-grey);
-  opacity: 1;
   cursor: not-allowed;
   pointer-events: none;
 }
 
-.btn-primary[disabled] svg g,
-.btn-primary:disabled svg g,
-.btn-primary.disabled svg g {
-  fill: var(--hg-color-dark-grey);
-  stroke: var(--hg-color-dark-grey);
-}
-
-.btn-primary[disabled] svg circle,
-.btn-primary:disabled svg circle,
-.btn-primary.disabled svg circle {
-  stroke: var(--hg-color-dark-grey);
-}
-
-.btn-primary[disabled] svg path,
-.btn-primary:disabled svg path,
-.btn-primary.disabled svg path {
-  fill: var(--hg-color-dark-grey);
-}
-
-/* SECONDARY BUTTON */
+/* ============================================
+   SECONDARY
+   ============================================ */
 .btn-secondary {
-  color: var(--hg-color-black);
-  background-color: var(--hg-color-white);
-  border: var(--border-width) var(--border-style) var(--hg-color-black);
-  line-height: 1;
+  color: var(--btn-secondary-color, var(--hg-color-black));
+  background-color: var(--btn-secondary-bg, var(--hg-color-white));
+  border-color: var(--btn-secondary-color, var(--hg-color-black));
 }
 
-.btn-secondary svg circle {
-  stroke: var(--hg-color-black);
-}
-
-.btn-secondary:focus,
-.btn-secondary.focus,
 .btn-secondary:hover,
-.btn-secondary.hover,
+.btn-secondary:focus,
 .btn-secondary:active,
 .btn-secondary.active {
-  color: var(--hg-color-black);
-  background-color: var(--hg-color-white);
-  border: var(--border-width) var(--border-style) var(--hg-color-dark-grey);
-  opacity: 1;
+  background-color: var(--btn-secondary-hover-bg, var(--hg-color-white));
+  border-color: var(--hg-color-dark-grey);
 }
 
-.btn-secondary[disabled],
 .btn-secondary:disabled,
+.btn-secondary[disabled],
 .btn-secondary.disabled {
   background-color: var(--hg-color-bg-light);
-  border: var(--border-width) var(--border-style) var(--hg-color-bg-light);
+  border-color: var(--hg-color-bg-light);
   color: var(--hg-color-dark-grey);
-  opacity: 1;
   cursor: not-allowed;
   pointer-events: none;
 }
 
-.btn-secondary[disabled] svg g,
-.btn-secondary:disabled svg g,
-.btn-secondary.disabled svg g {
-  fill: var(--hg-color-middle-grey);
-  stroke: var(--hg-color-middle-grey);
+/* ============================================
+   OUTLINE
+   ============================================ */
+.btn-outline {
+  color: var(--btn-outline-color, var(--hg-color-primary));
+  background-color: transparent;
+  border-color: var(--btn-outline-border, var(--hg-color-primary));
 }
 
-.btn-secondary[disabled] svg circle,
-.btn-secondary:disabled svg circle,
-.btn-secondary.disabled svg circle {
-  stroke: var(--hg-color-middle-grey);
+.btn-outline:hover,
+.btn-outline:focus,
+.btn-outline:active {
+  background-color: var(--btn-outline-hover-bg, var(--hg-color-primary));
+  color: var(--btn-outline-hover-color, var(--hg-color-white));
 }
 
-.btn-secondary[disabled] svg path,
-.btn-secondary:disabled svg path,
-.btn-secondary.disabled svg path {
-  fill: var(--hg-color-middle-grey);
+/* ============================================
+   GHOST (sin borde, hover suave)
+   ============================================ */
+.btn-ghost {
+  color: var(--btn-ghost-color, var(--hg-color-primary));
+  background-color: transparent;
+  border-color: transparent;
 }
 
-/* TERTIARY BUTTON */
+.btn-ghost:hover,
+.btn-ghost:focus {
+  background-color: var(--btn-ghost-hover-bg, var(--hg-color-light-grey));
+}
+
+/* ============================================
+   TERTIARY (texto plano, sin fondo)
+   ============================================ */
 .btn-tertiary {
   background-color: transparent;
   border: 0 solid transparent;
+  color: var(--hg-color-primary);
   height: auto;
   min-height: auto;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding: 6px 0;
   line-height: 1;
   min-width: 24px;
-  padding-inline: 0;
 }
 
-.btn-tertiary svg g {
-  fill: var(--hg-color-black);
-  stroke: var(--hg-color-black);
-}
-
-.btn-tertiary svg circle {
-  stroke: var(--hg-color-black);
-}
-
-.btn-tertiary:focus,
-.btn-tertiary.focus,
 .btn-tertiary:hover,
-.btn-tertiary.hover,
-.btn-tertiary:active,
-.btn-tertiary.active {
-  border: 0 solid transparent;
-  background-color: transparent;
-  cursor: pointer;
-}
+.btn-tertiary:focus { background-color: transparent; }
 
 .btn-tertiary.active {
-  border-bottom: 0.5px solid var(--hg-color-black);
+  border-bottom: 0.5px solid var(--hg-color-primary);
 }
 
 .btn-tertiary:disabled,
 .btn-tertiary[disabled],
 .btn-tertiary.disabled {
+  color: var(--hg-color-dark-grey);
   pointer-events: none;
   cursor: default;
-  background-color: var(--hg-color-bg-light);
-  border: var(--border-width) var(--border-style) var(--hg-color-bg-light);
-  color: var(--hg-color-dark-grey);
-  filter: none;
-  opacity: 1;
 }
 
-.btn-tertiary:disabled svg-icon,
-.btn-tertiary:disabled svg-icon2,
-.btn-tertiary:disabled md-icon,
-.btn-tertiary[disabled] svg-icon,
-.btn-tertiary[disabled] svg-icon2,
-.btn-tertiary[disabled] md-icon,
-.btn-tertiary.disabled svg-icon,
-.btn-tertiary.disabled svg-icon2,
-.btn-tertiary.disabled md-icon {
-  background-color: transparent !important;
-  border: 0 solid transparent !important;
-}
-
-/* LABEL M BUTTON (similar a tertiary) */
+/* ============================================
+   LABEL-M (similar a tertiary, con tracking)
+   ============================================ */
 .btn-label-m {
   background-color: transparent;
   border: 0 solid transparent;
+  color: var(--hg-color-primary);
   height: auto;
   min-height: auto;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding: 6px 0;
   line-height: 1;
-  min-width: 24px;
-  padding-inline: 0;
-  color: var(--hg-color-black);
   letter-spacing: 0.16em;
 }
 
-.btn-label-m svg g {
-  fill: var(--hg-color-black);
-  stroke: var(--hg-color-black);
-}
-
-.btn-label-m svg circle {
-  stroke: var(--hg-color-black);
-}
-
-.btn-label-m:focus,
-.btn-label-m.focus,
 .btn-label-m:hover,
-.btn-label-m.hover,
-.btn-label-m:active,
-.btn-label-m.active {
-  border: 0 solid transparent;
-  background-color: transparent;
-  cursor: pointer;
+.btn-label-m:focus {
   font-family: var(--hg-typo-font-family-primary-bold);
   font-weight: var(--hg-typo-font-weight-500);
 }
 
 .btn-label-m.active {
-  border-bottom: 0.5px solid var(--hg-color-black);
+  border-bottom: 0.5px solid var(--hg-color-primary);
 }
 
 .btn-label-m:disabled,
 .btn-label-m[disabled],
 .btn-label-m.disabled {
+  color: var(--hg-color-dark-grey);
   pointer-events: none;
   cursor: default;
-  background-color: var(--hg-color-bg-light);
-  border: var(--border-width) var(--border-style) var(--hg-color-bg-light);
-  color: var(--hg-color-dark-grey);
-  filter: none;
-  opacity: 1;
 }
 
-.btn-label-m:disabled svg-icon,
-.btn-label-m:disabled svg-icon2,
-.btn-label-m:disabled md-icon,
-.btn-label-m[disabled] svg-icon,
-.btn-label-m[disabled] svg-icon2,
-.btn-label-m[disabled] md-icon,
-.btn-label-m.disabled svg-icon,
-.btn-label-m.disabled svg-icon2,
-.btn-label-m.disabled md-icon {
-  background-color: transparent !important;
-  border: 0 solid transparent !important;
-}
-
-/* LINK BUTTON */
+/* ============================================
+   LINK (texto subrayable, sin caja)
+   ============================================ */
 .btn-link {
   background-color: transparent;
-  border: none;
-  color: var(--hg-color-black);
+  border: 0;
+  color: var(--hg-color-primary);
   padding: 0;
   min-height: auto;
-  font-weight: var(--hg-typo-font-weight-400);
 }
 
 .btn-link:hover,
 .btn-link:focus {
   color: var(--hg-color-dark-grey);
-  background-color: transparent;
 }
 
 .btn-link:disabled,
 .btn-link[disabled],
 .btn-link.disabled {
   color: var(--hg-color-dark-grey);
-  background-color: transparent;
   cursor: not-allowed;
   pointer-events: none;
   opacity: 0.5;
 }
 
-
+/* ============================================
+   BADGE (chip pequeño con padding)
+   ============================================ */
 .btn-badge {
   min-height: auto;
-  height: auto;
   padding: var(--hg-spacing-4) var(--hg-spacing-12);
-
   background-color: transparent;
   color: var(--hg-color-dark-grey);
   font-size: var(--hg-typo-font-size-12);
-  white-space: nowrap;
 }
 
-.btn-badge:focus,
-.btn-badge.focus,
 .btn-badge:hover,
-.btn-badge.hover,
-.btn-badge:active,
+.btn-badge:focus,
 .btn-badge.active {
-  background-color:transparent;
   color: var(--hg-color-primary);
-  border-color: transparent;
-  cursor: pointer;
+  background-color: transparent;
 }
 
 .btn-badge:disabled,
 .btn-badge[disabled],
 .btn-badge.disabled {
-  pointer-events: none;
-  cursor: default;
-  background-color: var(--hg-color-white);
-  border-color: transparent;
   color: var(--hg-color-middle-grey);
-  opacity: 1;
+  pointer-events: none;
 }
 
-/* Badge en contexto claro (fondo oscuro) */
-.has-light .btn-badge {
-  background-color: transparent;
-  color: var(--hg-color-white);
-  border-color: transparent;
-}
-
-.has-light .btn-badge:focus,
-.has-light .btn-badge.focus,
+/* Variante para fondos oscuros */
+.has-light .btn-badge { color: var(--hg-color-white); }
 .has-light .btn-badge:hover,
-.has-light .btn-badge.hover,
-.has-light .btn-badge:active,
-.has-light .btn-badge.active {
-  background-color: transparent;
-  color: var(--hg-color-white);
-  border-color: transparent;
-  cursor: pointer;
-}
-
-.has-light .btn-badge:disabled,
-.has-light .btn-badge[disabled],
-.has-light .btn-badge.disabled {
-  background-color: transparent;
-  border-color: transparent;
-  color: var(--hg-color-light-grey);
-  opacity: 1;
-}
-
-/* Ancho completo */
-.btn-full {
-  width: 100%;
-}
+.has-light .btn-badge.active { color: var(--hg-color-white); }
+.has-light .btn-badge:disabled { color: var(--hg-color-light-grey); }

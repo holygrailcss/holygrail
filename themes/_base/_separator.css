@@ -1,8 +1,7 @@
-/**
- * Separator
- * Divisor horizontal o vertical.
- * Uso: <hr class="separator"> o <div class="separator separator-vertical"></div>
- */
+/* PURPOSE: Divisor horizontal / vertical / con texto en el centro.
+   KEY CLASSES: .separator, .separator-vertical, .separator-horizontal, .separator-with-label
+   DEPENDS ON: --hg-color-dark-grey, --hg-color-middle-grey, --hg-spacing-12, --hg-typo-font-family-primary-regular, --hg-typo-font-size-12 (config).
+   DEMO: dist/componentes.html#separator */
 
 .separator {
   flex-shrink: 0;

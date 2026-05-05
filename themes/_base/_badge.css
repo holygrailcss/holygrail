@@ -1,8 +1,7 @@
-/**
- * Badge
- * Etiquetas pequeñas para estado/categoría.
- * Variantes: default, secondary, outline, destructive, success, warning, info.
- */
+/* PURPOSE: Etiqueta pequeña para estado/categoría (default, secondary, outline, destructive, success, warning, info).
+   KEY CLASSES: .badge, .badge-info, .badge-default, .badge-outline, .badge-success, .badge-warning
+   DEPENDS ON: --hg-color-error, --hg-color-info, --hg-color-light-grey, --hg-color-primary, --hg-color-success (config); --border-radius, --border-style, --border-width.
+   DEMO: dist/componentes.html#badge */
 
 .badge {
   display: inline-flex;

@@ -1,8 +1,7 @@
-/**
- * Switches / Toggles
- * Estados: checked, disabled, focus
- * Variantes: switch, checkbox-item-2
- */
+/* PURPOSE: Switch on/off (.checkbox-item-2). Pista rectangular + thumb que se desplaza al marcar.
+   KEY CLASSES: .checkbox-item-2
+   DEPENDS ON: tokens base.
+   DEMO: dist/componentes.html#switches */
 
 /* ============================================
    SWITCH BÁSICO (Switch estándar)

@@ -1,7 +1,7 @@
-/**
- * Slider (range input)
- * Estiliza <input type="range"> en WebKit + Firefox.
- */
+/* PURPOSE: Range input estilizado en WebKit + Firefox. Variante con relleno (--slider-fill).
+   KEY CLASSES: .slider, .slider-filled
+   DEPENDS ON: --slider-fill (theme); --hg-color-light-grey, --hg-color-primary, --hg-color-white (config); --border-radius.
+   DEMO: dist/componentes.html#slider */
 
 .slider {
   -webkit-appearance: none;

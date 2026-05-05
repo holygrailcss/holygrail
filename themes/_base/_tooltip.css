@@ -1,15 +1,7 @@
-/**
- * Tooltip
- * CSS-only con :hover/:focus-visible. No requiere JS.
- *
- * Estructura:
- *   <span class="tooltip">
- *     <button>Hover me</button>
- *     <span class="tooltip-content">More info</span>
- *   </span>
- *
- * Posiciones: tooltip-top (default), -bottom, -left, -right.
- */
+/* PURPOSE: Tooltip CSS-only con :hover/:focus-within. Posiciones top/bottom/left/right.
+   KEY CLASSES: .tooltip, .tooltip-content
+   DEPENDS ON: --hg-color-primary, --hg-color-white, --hg-typo-font-family-primary-regular (config); --border-radius.
+   DEMO: dist/componentes.html#tooltip */
 
 .tooltip {
   position: relative;

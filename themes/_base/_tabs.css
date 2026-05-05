@@ -1,20 +1,7 @@
-/**
- * Tabs
- * CSS-only con <input type="radio">:checked + label.
- *
- * Estructura:
- *   <div class="tabs">
- *     <input type="radio" name="t1" id="t1-a" class="tabs-input" checked>
- *     <label for="t1-a" class="tabs-trigger">Tab A</label>
- *     <input type="radio" name="t1" id="t1-b" class="tabs-input">
- *     <label for="t1-b" class="tabs-trigger">Tab B</label>
- *
- *     <div class="tabs-panel" data-for="t1-a">Content A</div>
- *     <div class="tabs-panel" data-for="t1-b">Content B</div>
- *   </div>
- *
- * Para React/JS: usa .tabs-trigger.is-active y .tabs-panel.is-active manualmente.
- */
+/* PURPOSE: Tabs con :has() + radios ocultos. Underline (default) y pills.
+   KEY CLASSES: .tabs, .tabs-list, .tabs-input, .tabs-panel, .tabs-trigger
+   DEPENDS ON: --hg-color-dark-grey, --hg-color-middle-grey, --hg-color-primary, --hg-color-white, --hg-spacing-16 (config); --border-radius.
+   DEMO: dist/componentes.html#tabs */
 
 .tabs {
   display: flex;

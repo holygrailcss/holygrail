@@ -32,11 +32,11 @@ import 'holygrailcss/dist/output';
 import 'holygrailcss/dist/output';
 ```
 
-**Con tema Black&White** (opcional — importar después del base):
+**Con tema Black&Yellow** (opcional — importar después del base):
 
 ```js
 import 'holygrailcss/dist/output';
-import 'holygrailcss/dist/black-and-white';
+import 'holygrailcss/dist/black-yellow';
 ```
 
 **CodePen / JSFiddle / playground online:**
@@ -45,11 +45,11 @@ import 'holygrailcss/dist/black-and-white';
 <link rel="stylesheet" href="https://unpkg.com/holygrailcss/dist/output.css">
 ```
 
-Con tema Black&White:
+Con tema Black&Yellow:
 
 ```html
 <link rel="stylesheet" href="https://unpkg.com/holygrailcss/dist/output.css">
-<link rel="stylesheet" href="https://unpkg.com/holygrailcss/dist/themes/black-and-white.css">
+<link rel="stylesheet" href="https://unpkg.com/holygrailcss/dist/themes/black-yellow.css">
 ```
 
 En CodePen, pega la URL en **Settings → CSS → Add External Stylesheets**.

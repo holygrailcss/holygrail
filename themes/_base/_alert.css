@@ -1,15 +1,7 @@
-/**
- * Alert
- * Banner inline para info / warning / error / success.
- * Estructura:
- *   <div class="alert alert-info">
- *     <svg class="alert-icon">...</svg>
- *     <div class="alert-content">
- *       <h5 class="alert-title">Heads up</h5>
- *       <p class="alert-description">Your trial ends in 3 days.</p>
- *     </div>
- *   </div>
- */
+/* PURPOSE: Banner inline para info / warning / error / success con icono y descripción.
+   KEY CLASSES: .alert, .alert-icon, .alert-info, .alert-close, .alert-error, .alert-title
+   DEPENDS ON: --hg-color-dark-grey, --hg-color-error, --hg-color-info, --hg-color-middle-grey, --hg-color-primary (config); --border-radius, --border-style, --border-width.
+   DEMO: dist/componentes.html#alert */
 
 .alert {
   position: relative;

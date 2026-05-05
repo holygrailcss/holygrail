@@ -1,0 +1,30 @@
+{
+  "colors": {
+    "white": "#ffffff",
+    "black": "#0c0a08",
+    "dark-grey": "#6e6a68",
+    "middle-grey": "#d2cecb",
+    "light-grey": "#f4f2f0",
+    "grey-ultra": "#1a1919",
+    "orange": "#e96516",
+    "mustard": "#FFE693",
+    "primary": "#0c0a08",
+    "error": "#dd2d01",
+    "info": "#5683d2",
+    "success": "#12882C",
+    "warning": "#ffce4e",
+    "feel": "#fb9962",
+    "feel-dark": "#c94c07",
+    "silver": "#87888D",
+    "gold": "#A38A6B",
+    "platinum": "#5B7FA1",
+    "bg-light": "#fcfbfa",
+    "bg-cream": "#f4f2ed",
+    "solar": "#e4f222",
+    "solar-light": "#f5ff78",
+    "smolder": "#17332d",
+    "blaze": "#e96516",
+    "spring": "#5683d2",
+    "spring-light": "#e4ebf6"
+  }
+}

@@ -1,9 +1,46 @@
+# Cosas que NO se suben a npm.
+# El paquete final solo necesita: generate-css.js, config.json, README.md,
+# CLAUDE.md, src/, themes/, dist/. Todo lo demás fuera.
+
+# Dev / VCS / IDE
+.git/
+.gitignore
+.github/
+.cursor/
+.cursorrules
+.claude/
+.vscode/
+.idea/
+*.swp
+
+# OS
 .DS_Store
+Thumbs.db
+
+# Logs / state
 *.log
+.npm
+.cache
+.data/
+
+# Diseño / binarios pesados
+brief/
+*.psd
+*.pptx
+*.ai
+*.sketch
+*.fig
+
+# Skills internas (las del paquete viven en skills/, no en .claude/)
+# .claude/ ya excluido arriba
+
+# Tests no se publican
+tests/
+
+# Env
 .env
 .env.local
-.git
-.gitignore
-node_modules/
-output.css
+.env.*.local
 
+# Tests temporales
+test-*.html

@@ -1,0 +1,29 @@
+{
+  "grid": {
+    "enabled": true,
+    "gutter": "8px",
+    "containerMargin": "16px",
+    "breakpoints": {
+      "xs": {
+        "minWidth": "1px",
+        "columns": 12
+      },
+      "sm": {
+        "minWidth": "768px",
+        "columns": 12
+      },
+      "md": {
+        "minWidth": "992px",
+        "columns": 12
+      },
+      "lg": {
+        "minWidth": "1280px",
+        "columns": 12
+      },
+      "xl": {
+        "minWidth": "1440px",
+        "columns": 24
+      }
+    }
+  }
+}

@@ -64,47 +64,80 @@ function writeFile(filePath, content, description) {
   }
 }
 
-// Combina todos los archivos CSS de un tema en un solo archivo
-// Lee el theme.css principal y resuelve todos los @import
+// Enumera todos los archivos CSS base (themes/_base/_*.css + objects + components)
+// y devuelve sus rutas absolutas. Lo usa combineThemeCSS para auto-incluir
+// componentes nuevos sin tener que listarlos a mano en cada theme.css.
+function enumerateBaseCSS(baseDir) {
+  if (!fs.existsSync(baseDir)) return [];
+  const result = [];
+  const visit = (dir) => {
+    for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+      const full = path.join(dir, entry.name);
+      if (entry.isDirectory()) {
+        visit(full);
+      } else if (entry.isFile() && entry.name.endsWith('.css')) {
+        result.push(full);
+      }
+    }
+  };
+  visit(baseDir);
+  // Orden estable: los _*.css primero (componentes principales),
+  // luego objects/, luego components/icons.
+  return result.sort();
+}
+
+// Combina todos los archivos CSS de un tema en un solo archivo.
+// 1. Lee theme.css y resuelve los @import explícitos (variables del tema, etc.)
+// 2. AUTO-DISCOVERY: enumera themes/_base/_*.css (recursivo) y añade los que
+//    aún no se hayan incluido. Así un componente nuevo en _base/ entra sin
+//    tocar theme.css.
 function combineThemeCSS(themeDir) {
   try {
     const themeCSSPath = path.join(themeDir, 'theme.css');
-    
     if (!fs.existsSync(themeCSSPath)) {
       throw new Error(`No se encontró theme.css en ${themeDir}`);
     }
 
     let combinedCSS = '';
+    const includedFiles = new Set();   // rutas absolutas ya añadidas
     const themeContent = fs.readFileSync(themeCSSPath, 'utf8');
-    
-    // Procesar cada línea del theme.css
-    const lines = themeContent.split('\n');
-    
-    for (const line of lines) {
-      // Buscar @import
+
+    // 1) Procesar @imports explícitos del theme.css
+    for (const line of themeContent.split('\n')) {
       const importMatch = line.match(/@import\s+url\(['"]?([^'"]+)['"]?\)/);
-      
       if (importMatch) {
-        // Resolver la ruta del archivo importado
         const importPath = importMatch[1];
-        const importedFilePath = path.join(themeDir, importPath);
-        
+        const importedFilePath = path.resolve(themeDir, importPath);
         if (fs.existsSync(importedFilePath)) {
-          // Leer el contenido del archivo importado
           const importedContent = fs.readFileSync(importedFilePath, 'utf8');
-          // Añadir comentario con el nombre del archivo
           combinedCSS += `\n/* === ${path.basename(importPath)} === */\n`;
-          combinedCSS += importedContent;
-          combinedCSS += '\n';
+          combinedCSS += importedContent + '\n';
+          includedFiles.add(importedFilePath);
         } else {
           console.warn(`⚠️  Archivo importado no encontrado: ${importedFilePath}`);
         }
       } else if (line.trim() && !line.trim().startsWith('/*') && !line.trim().startsWith('*')) {
-        // Si no es un @import ni un comentario, añadirlo tal cual (por si hay otros estilos)
         combinedCSS += line + '\n';
       }
     }
-    
+
+    // 2) AUTO-DISCOVERY: enumerar themes/_base/ y añadir los que falten
+    const baseDir = path.resolve(themeDir, '..', '_base');
+    const baseFiles = enumerateBaseCSS(baseDir);
+    const autoAdded = [];
+    for (const filePath of baseFiles) {
+      if (includedFiles.has(filePath)) continue;
+      const content = fs.readFileSync(filePath, 'utf8');
+      const rel = path.relative(baseDir, filePath);
+      combinedCSS += `\n/* === ${rel} (auto) === */\n`;
+      combinedCSS += content + '\n';
+      includedFiles.add(filePath);
+      autoAdded.push(rel);
+    }
+    if (autoAdded.length) {
+      console.log(`   ↳ Auto-incluidos ${autoAdded.length} archivo(s) base: ${autoAdded.join(', ')}`);
+    }
+
     return combinedCSS.trim();
   } catch (error) {
     console.error(`❌ Error al combinar CSS del tema:`, error.message);

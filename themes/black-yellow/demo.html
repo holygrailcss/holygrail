@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema de Theming Black&White - Demo</title>
+    <title>Sistema de Theming Black&Yellow - Demo</title>
     <link rel="stylesheet" href="../output.css">
-    <link rel="stylesheet" href="black-and-white.css">
+    <link rel="stylesheet" href="black-yellow.css">
     <style>
  
     </style>
@@ -13,24 +13,24 @@
   <body>
 
     <div class="demo-container guide-main-content">
-      <h2 class="demo-title">Black&White Theme</h2>
+      <h2 class="demo-title">Black&Yellow Theme</h2>
 
       
       <div class="demo-section-2">
         <h3>¿Dónde se customiza el tema?</h3>
         <p class="mb-16">
-          Black&White se construye en <strong>dos capas</strong> sobre holygrailcss:
+          Black&Yellow se construye en <strong>dos capas</strong> sobre holygrailcss:
         </p>
 
         <div class="mb-16">
           <strong>1. Tokens base</strong> — <code>config.json</code> define la paleta, espaciados y tipografía compartidos. <code>npm run build</code> regenera <code>dist/output.css</code>.
         </div>
         <div class="mb-16">
-          <strong>2. Overrides del tema</strong> — <code>themes/black-and-white/theme.json</code> declara los metadatos y overrides del tema. <code>themes/black-and-white/_variables.css</code> los materializa como CSS custom properties y mapea las variables de componente (ej. <code>--btn-primary-bg: var(--hg-color-primary)</code>).
+          <strong>2. Overrides del tema</strong> — <code>themes/black-yellow/theme.json</code> declara los metadatos y overrides del tema. <code>themes/black-yellow/_variables.css</code> los materializa como CSS custom properties y mapea las variables de componente (ej. <code>--btn-primary-bg: var(--hg-color-primary)</code>).
         </div>
 
         <p class="mb-24">
-          <code>themes/black-and-white/theme.css</code> es el punto de entrada: importa todos los módulos (<code>_buttons.css</code>, <code>_inputs.css</code>, etc.) que consumen esas variables.
+          <code>themes/black-yellow/theme.css</code> es el punto de entrada: importa todos los módulos (<code>_buttons.css</code>, <code>_inputs.css</code>, etc.) que consumen esas variables.
         </p>
       </div>
 
@@ -84,8 +84,8 @@
             <div class="demo-code">.btn-sm</div>
           </div>
           <div class="demo-item">
-            <button class="btn btn-primary btn-md">Medium</button>
-            <div class="demo-code">.btn-md</div>
+            <button class="btn btn-primary btn-lg">Medium</button>
+            <div class="demo-code">.btn-lg</div>
           </div>
           <div class="demo-item">
             <button class="btn btn-primary btn-lg">Large</button>
@@ -95,7 +95,7 @@
 
         <h3 class="demo-subtitle">Ancho completo</h3>
         <div class="demo-item">
-          <button class="btn btn-primary btn-md btn-full">Botón ancho completo</button>
+          <button class="btn btn-primary btn-lg btn-full">Botón ancho completo</button>
           <div class="demo-code">.btn-full</div>
         </div>
       </section>
@@ -227,14 +227,14 @@
           <input id="radio_1" name="gender" type="radio" value="F" />
           <label for="radio_1">
             <i class="ico-radio"></i>
-            <span class="title-m">checkbox-radio</span>
+            <span class="headline-xs">checkbox-radio</span>
           </label>
         </div>
         <div class="checkbox-radio">
           <input id="radio_2" name="gender" type="radio" value="M" />
           <label for="radio_2">
             <i class="ico-radio"></i>
-            <span class="title-m">checkbox-radio</span>
+            <span class="headline-xs">checkbox-radio</span>
           </label>
         </div>
         <div class="demo-code">.checkbox-radio</div>

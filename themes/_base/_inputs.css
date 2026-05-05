@@ -1,7 +1,7 @@
-/**
- * Inputs
- * Estados: error, success, warning, disabled
- */
+/* PURPOSE: Input de texto con estados (error, success, warning, disabled) y floating label dentro de .form-input-label-2.
+   KEY CLASSES: .input, .error-zone, .input-error, .input-success, .input-warning, .form-input-label-2
+   DEPENDS ON: --input-bg, --input-border, --input-border-focus, --input-color, --input-error-border (theme); --hg-color-dark-grey, --hg-color-error, --hg-color-light-grey, --hg-color-primary, --hg-color-success (config); --border-radius, --border-style, --border-width.
+   DEMO: dist/componentes.html#inputs */
 
 .input {
   display: block;

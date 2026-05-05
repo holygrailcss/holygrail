@@ -13,7 +13,7 @@ const { resolveActiveThemes } = require('../generators/utils');
 // activo. Si el BuildOrchestrator llama a `generateSkillsPage(root, config)`,
 // este fallback queda ignorado y se usa la lista real de temas activos.
 const FALLBACK_THEMES_IN_NAV = [
-  { name: 'black-and-white', label: 'Tema Black&White' },
+  { name: 'black-yellow', label: 'Tema Black&Yellow' },
   { name: 'limited', label: 'Tema Limited' }
 ];
 
@@ -220,9 +220,9 @@ function extractSections(md) {
  * @param {Object} [configData] - config.json ya cargado. Si se pasa,
  *   los enlaces a demos en la nav de skills.html se construyen a partir
  *   de los temas realmente activos (`config.themes[]` o `config.theme`),
- *   evitando enlazar a ficheros `black-and-white-demo.html` / `limited-demo.html`
+ *   evitando enlazar a ficheros `black-yellow-demo.html` / `limited-demo.html`
  *   que quizá no existan en dist/. Si se omite, se usa el fallback
- *   histórico con Black&White + Limited para no romper ejecuciones standalone.
+ *   histórico con Black&Yellow + Limited para no romper ejecuciones standalone.
  */
 function generateSkillsPage(projectRoot, configData = null) {
   const skillsDir = path.join(projectRoot, 'skills');

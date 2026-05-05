@@ -1,8 +1,7 @@
-/**
- * Typography
- * Clases utilitarias para texto: encabezados, lead, muted, blockquote, code, kbd.
- * Estilo shadcn-like (subtle, neutral).
- */
+/* PURPOSE: Encabezados .h1-.h6, .lead, .large, .small, .muted, .blockquote, .code, .kbd, listas. Las clases .headline-* y .body-* se generan desde config.json → typo.
+   KEY CLASSES: .h1, .h2, .h3, .h4, .h5, .h6
+   DEPENDS ON: --hg-color-dark-grey, --hg-color-light-grey, --hg-color-middle-grey, --hg-color-primary, --hg-color-white (config); --border-radius.
+   DEMO: dist/componentes.html#typography */
 
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: var(--hg-typo-font-family-primary-bold);
@@ -90,3 +89,10 @@
 .list > li + li {
   margin-top: 4px;
 }
+
+/*
+ * NOTA: las clases .headline-xs/.s/.m/.l/.xl (escala estilo ramp.com)
+ * NO viven aquí. Se generan automáticamente desde config.json → typo
+ * y aparecen en dist/output.css. Esto permite que la página de docs
+ * (Tipografía) muestre la fila por cada talla con su tamaño real.
+ */

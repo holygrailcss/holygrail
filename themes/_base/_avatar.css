@@ -1,15 +1,7 @@
-/**
- * Avatar
- * Imagen circular con fallback de iniciales.
- * Tamaños: -sm (24), default (40), -lg (56), -xl (80).
- * Variante .avatar-square para esquinas rectas.
- *
- * Estructura:
- *   <span class="avatar">
- *     <img class="avatar-image" src="..." alt="..." />
- *     <span class="avatar-fallback">MR</span>  <!-- se muestra si img falla -->
- *   </span>
- */
+/* PURPOSE: Imagen circular con fallback de iniciales. Tamaños xs/sm/md/lg/xl + group.
+   KEY CLASSES: .avatar, .avatar-lg, .avatar-sm, .avatar-xl, .avatar-group, .avatar-image
+   DEPENDS ON: --hg-color-light-grey, --hg-color-primary, --hg-color-white, --hg-typo-font-family-primary-regular, --hg-typo-font-size-13 (config); --border-radius.
+   DEMO: dist/componentes.html#avatar */
 
 .avatar {
   position: relative;

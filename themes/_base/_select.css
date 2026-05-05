@@ -1,7 +1,7 @@
-/**
- * Select
- * <select> nativo estilizado + maquetas para custom dropdown (sin JS).
- */
+/* PURPOSE: Select nativo estilizado con caret SVG + maqueta de custom dropdown sin JS.
+   KEY CLASSES: .select, .select-item, .select-menu, .select-caret, .select-error, .select-custom
+   DEPENDS ON: --input-bg, --input-border, --input-border-focus, --input-color, --input-error-border (theme); --hg-color-light-grey, --hg-color-middle-grey, --hg-color-primary, --hg-color-white, --hg-typo-font-family-primary-regular (config); --border-radius, --border-style, --border-width.
+   DEMO: dist/componentes.html#select */
 
 .select {
   display: block;

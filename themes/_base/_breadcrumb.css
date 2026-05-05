@@ -1,17 +1,7 @@
-/**
- * Breadcrumb
- * Cadena de enlaces con separadores.
- *
- * <nav class="breadcrumb">
- *   <ol class="breadcrumb-list">
- *     <li class="breadcrumb-item"><a href="/">Home</a></li>
- *     <li class="breadcrumb-separator">/</li>
- *     <li class="breadcrumb-item"><a href="/products">Products</a></li>
- *     <li class="breadcrumb-separator">/</li>
- *     <li class="breadcrumb-item is-active" aria-current="page">Item</li>
- *   </ol>
- * </nav>
- */
+/* PURPOSE: Cadena de navegación con separadores y estado activo.
+   KEY CLASSES: .breadcrumb, .breadcrumb-item, .breadcrumb-list, .breadcrumb-separator
+   DEPENDS ON: --hg-color-dark-grey, --hg-color-middle-grey, --hg-color-primary, --hg-typo-font-family-primary-regular (config).
+   DEMO: dist/componentes.html#breadcrumb */
 
 .breadcrumb {
   font-family: var(--hg-typo-font-family-primary-regular);

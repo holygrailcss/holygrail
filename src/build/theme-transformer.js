@@ -7,9 +7,9 @@ const { generateTypographyHTML } = require('./typo-table-generator');
 const { generateThemeBlockHTML } = require('./theme-vars-table-generator');
 const { applyThemeTypographyOverrides } = require('../generators/utils');
 
-// Estilos del sidebar + Lenis (solo para black-and-white-demo.html en dist)
+// Estilos del sidebar + Lenis (solo para black-yellow-demo.html en dist)
 const SIDEBAR_STYLES = `
-    /* Lenis Smooth Scroll - Solo para demo Black&White */
+    /* Lenis Smooth Scroll - Solo para demo Black&Yellow */
     html.lenis {
       height: auto;
     }
@@ -39,12 +39,12 @@ const SIDEBAR_STYLES = `
 // con el fichero generado themes/<name>-demo.html). `label` es el
 // texto visible en la nav principal.
 const THEMES_IN_NAV = [
-  { name: 'black-and-white', label: 'Tema Black&White' },
+  { name: 'black-yellow', label: 'Tema Black&Yellow' },
   { name: 'limited', label: 'Tema Limited' }
 ];
 
 // Capitaliza un slug para usarlo como nombre legible en el sidebar
-// (p. ej. 'black-and-white' → 'Black&White', 'limited' → 'Limited').
+// (p. ej. 'black-yellow' → 'Black&Yellow', 'limited' → 'Limited').
 function capitalize(s) {
   if (!s) return '';
   return s.charAt(0).toUpperCase() + s.slice(1);
@@ -56,7 +56,7 @@ function capitalize(s) {
  * el usuario vea en qué tema está. Los enlaces a otros temas apuntan
  * al fichero `../themes/<slug>-demo.html` correspondiente.
  *
- * @param {string} currentTheme - slug del tema activo (p. ej. 'black-and-white')
+ * @param {string} currentTheme - slug del tema activo (p. ej. 'black-yellow')
  * @param {Array<{name:string,label:string}>} [themesForNav] - Lista de
  *   temas a mostrar en la nav. Si se omite o viene vacía, se usa el
  *   fallback `THEMES_IN_NAV`. Inyectar esta lista desde el build evita
@@ -138,13 +138,13 @@ ${themeLinks}
 
 // Script de Lenis para el head
 const LENIS_HEAD_SCRIPT = `
-  <!-- Lenis Smooth Scroll - Solo para demo Tema Black&White -->
+  <!-- Lenis Smooth Scroll - Solo para demo Tema Black&Yellow -->
   <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>`;
 
 // Script de inicialización de Lenis
 const LENIS_INIT_SCRIPT = `
   <script>
-    // Inicializar Lenis Smooth Scroll - Solo para demo Tema Black&White
+    // Inicializar Lenis Smooth Scroll - Solo para demo Tema Black&Yellow
     const lenis = new Lenis({
       duration: 1.2,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
@@ -214,10 +214,10 @@ class ThemeTransformer {
    * @param {Object} [themeData] - theme.json parseado (para inyectar meta + tablas de variables del tema)
    * @param {Array<{name:string,label:string}>} [themesForNav] - Lista de
    *   temas activos a exponer en la nav del demo. Si se omite, se usa
-   *   el fallback estático de theme-transformer (black-and-white + limited).
+   *   el fallback estático de theme-transformer (black-yellow + limited).
    * @returns {boolean} - true si se transformó exitosamente
    */
-  transform(sourcePath, destPath, themeName = 'black-and-white', silent = false, config = null, themeData = null, themesForNav = null) {
+  transform(sourcePath, destPath, themeName = 'black-yellow', silent = false, config = null, themeData = null, themesForNav = null) {
     const fullSourcePath = path.isAbsolute(sourcePath)
       ? sourcePath
       : path.join(this.projectRoot, sourcePath);

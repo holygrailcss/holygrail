@@ -14,7 +14,7 @@ El `BuildOrchestrator` itera sobre `config.themes[]` y, para cada tema activo, c
 
 Cuando el usuario pida crear un tema:
 
-1. **Lee los temas existentes como referencia**: `themes/black-and-white/` (paleta negro + sans-serif) y `themes/limited/` (paleta dorada + 100% serif). Ambos son ejemplos mínimos de la nueva estructura.
+1. **Lee los temas existentes como referencia**: `themes/black-yellow/` (paleta negro + sans-serif) y `themes/limited/` (paleta dorada + 100% serif). Ambos son ejemplos mínimos de la nueva estructura.
 
 2. **Crea la carpeta del tema** en `themes/{nombre}/` SOLO con estos cuatro ficheros (los componentes se heredan de `_base/`, no se duplican):
 
@@ -119,14 +119,14 @@ Cuando el usuario pida crear un tema:
    @import url('../_base/components/_icons.css');
    ```
 
-6. **`demo.html`** — copia `themes/black-and-white/demo.html` como base, cambia el título a `{Nombre} Theme`, y **mantén los placeholders** `<!-- HG_THEME_BLOCK -->` y `<!-- HG_TYPO_TABLE -->`. El build los sustituye automáticamente por la tabla de variables del tema y la tabla de tipografía.
+6. **`demo.html`** — copia `themes/black-yellow/demo.html` como base, cambia el título a `{Nombre} Theme`, y **mantén los placeholders** `<!-- HG_THEME_BLOCK -->` y `<!-- HG_TYPO_TABLE -->`. El build los sustituye automáticamente por la tabla de variables del tema y la tabla de tipografía.
 
 7. **Registra el tema** en `config.json` dentro del array `themes`:
 
    ```json
    {
      "themes": [
-       { "name": "black-and-white", "enabled": true },
+       { "name": "black-yellow", "enabled": true },
        { "name": "limited", "enabled": true },
        { "name": "{nombre}", "enabled": true }
      ]

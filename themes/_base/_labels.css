@@ -1,7 +1,7 @@
-/**
- * Labels
- * Variantes: normal, required, inline
- */
+/* PURPOSE: Etiquetas de formulario: base, obligatoria (-required) e inline (-inline).
+   KEY CLASSES: .label, .label-inline
+   DEPENDS ON: --label-color, --label-required (theme); --hg-spacing-8, --hg-typo-font-family-primary-regular, --hg-typo-font-size-12, --hg-typo-font-weight-700, --hg-typo-line-height-1-5 (config).
+   DEMO: dist/componentes.html#labels */
 
 .label {
   display: block;

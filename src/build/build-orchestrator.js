@@ -1,6 +1,7 @@
 // Orquestador centralizado de build
 // Coordina la generación de CSS, HTML, copia de assets y transformación de temas
 
+const fs = require('fs');
 const path = require('path');
 const { loadConfig } = require('../config-loader');
 const { generateCSS } = require('../css-generator');
@@ -34,6 +35,31 @@ class BuildOrchestrator {
     
     this.assetManager = new AssetManager(this.projectRoot, assetsConfig);
     this.themeTransformer = new ThemeTransformer(this.projectRoot);
+  }
+
+  /**
+   * Si la config se cargó desde la carpeta `config/` (modular), regenera
+   * `config.json` en raíz como espejo plano. Esto permite que los
+   * consumidores externos sigan copiándolo y editándolo igual que antes,
+   * mientras los humanos/AI editan los archivos modulares.
+   *
+   * Idempotente: si el contenido no cambió, no toca el archivo.
+   */
+  syncMonolithicConfig(configData) {
+    const splitDir = path.join(this.projectRoot, 'config');
+    if (!fs.existsSync(splitDir) || !fs.statSync(splitDir).isDirectory()) {
+      return; // No hay carpeta modular, nada que sincronizar
+    }
+    const monolithicPath = path.join(this.projectRoot, 'config.json');
+    const newContent = JSON.stringify(configData, null, 2) + '\n';
+    if (fs.existsSync(monolithicPath)) {
+      const current = fs.readFileSync(monolithicPath, 'utf-8');
+      if (current === newContent) return;
+    }
+    fs.writeFileSync(monolithicPath, newContent, 'utf-8');
+    if (!this.silent) {
+      console.log('✅ config.json sincronizado desde config/ (espejo para npm consumers)');
+    }
   }
 
   /**
@@ -154,9 +180,14 @@ class BuildOrchestrator {
     };
 
     try {
-      // 1. Cargar configuración
+      // 1. Cargar configuración (modular desde config/ o legacy desde config.json)
       const configData = loadConfig(this.configPath);
-      
+
+      // 1b. Si la fuente fue config/ (modo modular), regenerar config.json
+      //     en raíz como espejo plano para los consumidores npm que copian
+      //     ese archivo y lo editan en sus proyectos.
+      this.syncMonolithicConfig(configData);
+
       // 2. Generar CSS
       const cssContent = generateCSS(configData);
       writeFile(this.outputPath, cssContent, 'CSS');
@@ -211,7 +242,7 @@ class BuildOrchestrator {
 
       // 6. Generar página de skills si existe la carpeta skills/.
       // Pasamos el config para que la nav de skills.html enlace sólo a
-      // demos de temas realmente activos (black-and-white+limited por defecto,
+      // demos de temas realmente activos (black-yellow+limited por defecto,
       // pero un consumidor puede tener sólo uno).
       try {
         const skillsHtml = generateSkillsPage(this.projectRoot, configData);
@@ -232,7 +263,7 @@ class BuildOrchestrator {
       }
 
       // 7. Generar página de componentes base si existe themes/_base/.
-      // Se renderiza con el tema Black&White como base genérica (ver
+      // Se renderiza con el tema Black&Yellow como base genérica (ver
       // components-generator.js → BASE_THEME). La nav recibe la lista
       // de temas activos para enlazar a sus demos.
       try {

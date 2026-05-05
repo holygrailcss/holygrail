@@ -1,17 +1,18 @@
-# Dependencias
+# Dependencies
 node_modules/
 
-# Archivos generados (dist se genera automáticamente)
+# Build artifacts (regenerados por `npm run build`; se incluyen en el paquete npm vía .npmignore)
 dist/
-
-# Archivos de estado y datos
 .data/
-.previous-values.json
-.historical-variables.json
 
-# Sistema operativo
+# Editor / OS
 .DS_Store
 Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
 
 # Logs
 *.log
@@ -19,27 +20,25 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Variables de entorno
+# Env
 .env
 .env.local
 .env.*.local
 
-# Directorios temporales
+# Caches
 .npm
 .cache
 
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-.cursor/skills/maquetar-holygrailcss/SKILL.md
-themes/black-and-white/README.md
-src/docs-generator/html-generator.js
+# Diseño / binarios pesados que no van al código
+brief/
+*.psd
+*.pptx
+*.ai
+*.sketch
+*.fig
 
-# Archivos de test temporales
+# Tests temporales
 test-*.html
 
-# Carpeta de diseño (brief/psd)
-brief/
+# Cursor IDE (no se usa; lo gobierna .claude/)
+.cursor/

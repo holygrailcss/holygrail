@@ -1,7 +1,7 @@
-/**
- * Table
- * Estilo shadcn-like: divisores horizontales, header sutil, hover de fila.
- */
+/* PURPOSE: Tabla con divisores, header sutil y hover de fila. Variantes -bordered, -striped, -compact, -sticky + wrapper para scroll.
+   KEY CLASSES: .table, .table-wrapper, .table-bordered
+   DEPENDS ON: --hg-color-dark-grey, --hg-color-light-grey, --hg-color-middle-grey, --hg-color-primary, --hg-color-white (config); --border-radius, --border-style, --border-width.
+   DEMO: dist/componentes.html#table */
 
 .table {
   width: 100%;

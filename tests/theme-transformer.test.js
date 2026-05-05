@@ -49,7 +49,7 @@ function testThemeTransformer() {
   // Test 3: Verificar que transform agrega sidebar
   try {
     const projectRoot = path.join(__dirname, '..');
-    const demoPath = path.join(projectRoot, 'themes', 'black-and-white', 'demo.html');
+    const demoPath = path.join(projectRoot, 'themes', 'black-yellow', 'demo.html');
     
     if (fs.existsSync(demoPath)) {
       const transformer = new ThemeTransformer(projectRoot);
@@ -64,7 +64,7 @@ function testThemeTransformer() {
       const result = transformer.transform(
         demoPath,
         testOutputPath,
-        'black-and-white',
+        'black-yellow',
         true
       );
       
@@ -86,7 +86,7 @@ function testThemeTransformer() {
         throw new Error('transform no creó el archivo de salida');
       }
     } else {
-      console.log('⚠️  Test 3: Saltado (themes/black-and-white/demo.html no encontrado)');
+      console.log('⚠️  Test 3: Saltado (themes/black-yellow/demo.html no encontrado)');
     }
   } catch (error) {
     console.log('❌ Test 3: Error al verificar sidebar:', error.message);
@@ -96,7 +96,7 @@ function testThemeTransformer() {
   // Test 4: Verificar que transform agrega Lenis
   try {
     const projectRoot = path.join(__dirname, '..');
-    const demoPath = path.join(projectRoot, 'themes', 'black-and-white', 'demo.html');
+    const demoPath = path.join(projectRoot, 'themes', 'black-yellow', 'demo.html');
     
     if (fs.existsSync(demoPath)) {
       const transformer = new ThemeTransformer(projectRoot);
@@ -110,7 +110,7 @@ function testThemeTransformer() {
       const result = transformer.transform(
         demoPath,
         testOutputPath,
-        'black-and-white',
+        'black-yellow',
         true
       );
       
@@ -132,7 +132,7 @@ function testThemeTransformer() {
         throw new Error('transform no creó el archivo de salida');
       }
     } else {
-      console.log('⚠️  Test 4: Saltado (themes/black-and-white/demo.html no encontrado)');
+      console.log('⚠️  Test 4: Saltado (themes/black-yellow/demo.html no encontrado)');
     }
   } catch (error) {
     console.log('❌ Test 4: Error al verificar Lenis:', error.message);
@@ -142,7 +142,7 @@ function testThemeTransformer() {
   // Test 5: Verificar que transform ajusta rutas CSS
   try {
     const projectRoot = path.join(__dirname, '..');
-    const demoPath = path.join(projectRoot, 'themes', 'black-and-white', 'demo.html');
+    const demoPath = path.join(projectRoot, 'themes', 'black-yellow', 'demo.html');
     
     if (fs.existsSync(demoPath)) {
       const transformer = new ThemeTransformer(projectRoot);
@@ -156,14 +156,14 @@ function testThemeTransformer() {
       const result = transformer.transform(
         demoPath,
         testOutputPath,
-        'black-and-white',
+        'black-yellow',
         true
       );
       
       if (result && fs.existsSync(testOutputPath)) {
         const content = fs.readFileSync(testOutputPath, 'utf8');
         
-        if (content.includes('href="black-and-white.css"') && 
+        if (content.includes('href="black-yellow.css"') && 
             content.includes('href="../guide-styles.css"') &&
             content.includes('href="../output.css"')) {
           console.log('✅ Test 5: transform ajusta rutas CSS correctamente');
@@ -178,7 +178,7 @@ function testThemeTransformer() {
         throw new Error('transform no creó el archivo de salida');
       }
     } else {
-      console.log('⚠️  Test 5: Saltado (themes/black-and-white/demo.html no encontrado)');
+      console.log('⚠️  Test 5: Saltado (themes/black-yellow/demo.html no encontrado)');
     }
   } catch (error) {
     console.log('❌ Test 5: Error al verificar rutas CSS:', error.message);
@@ -217,7 +217,7 @@ function testThemeTransformer() {
     };
 
     const transformer = new ThemeTransformer(projectRoot);
-    const ok = transformer.transform(srcPath, outPath, 'black-and-white', true, config, null, null);
+    const ok = transformer.transform(srcPath, outPath, 'black-yellow', true, config, null, null);
 
     if (!ok) throw new Error('transform() devolvió false');
     const out = fs.readFileSync(outPath, 'utf8');
@@ -256,7 +256,7 @@ function testThemeTransformer() {
     fs.writeFileSync(srcPath, '<html><body><!-- HG_TYPO_TABLE --></body></html>', 'utf8');
 
     const transformer = new ThemeTransformer(projectRoot);
-    const ok = transformer.transform(srcPath, outPath, 'black-and-white', true, null, null, null);
+    const ok = transformer.transform(srcPath, outPath, 'black-yellow', true, null, null, null);
 
     if (!ok) throw new Error('transform() devolvió false');
     const out = fs.readFileSync(outPath, 'utf8');

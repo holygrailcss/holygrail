@@ -1,12 +1,12 @@
 /**
- * Tema Limited
+ * Tema Black&Yellow
  *
  * Sólo importa las variables del tema. Los componentes (botones,
  * inputs, card, alert, table, etc.) se incluyen automáticamente
  * desde themes/_base/ por el build (ver combineThemeCSS).
  *
  * Si quieres OVERRIDE local de un componente sólo en este tema:
- *   1) Crea themes/limited/_<component>.css
+ *   1) Crea themes/black-yellow/_<component>.css
  *   2) Añade `@import url('_<component>.css')` aquí debajo
  *      → ese override gana sobre la versión de _base/
  */

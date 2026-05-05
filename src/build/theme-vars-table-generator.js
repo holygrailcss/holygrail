@@ -318,8 +318,8 @@ function generateThemeVarsHTML(themeData, config = null) {
   return `      <section class="demo-section" id="theme-vars">
         <h2 class="demo-title">Variables del tema</h2>
         <p class="mb-24">
-          Definidas en <code>themes/${escapeHtml(themeData.meta?.name || 'black-and-white')}/theme.json</code>. La fuente del CSS sigue siendo
-          <code>themes/${escapeHtml(themeData.meta?.name || 'black-and-white')}/_variables.css</code>; este JSON sirve como manifiesto del tema y para que
+          Definidas en <code>themes/${escapeHtml(themeData.meta?.name || 'black-yellow')}/theme.json</code>. La fuente del CSS sigue siendo
+          <code>themes/${escapeHtml(themeData.meta?.name || 'black-yellow')}/_variables.css</code>; este JSON sirve como manifiesto del tema y para que
           la demo muestre tablas siempre coherentes con sus tokens.
         </p>
         <div class="hg-vars-columns">

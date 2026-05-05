@@ -1,0 +1,147 @@
+/**
+ * Variables del Tema Black&Yellow
+ *
+ * Paleta inspirada en ramp.com:
+ *   - Solar (#e4f222) como CTA primario sobre texto casi-negro
+ *   - Negro tinta (#0c0a08) y grises cálidos (#f4f2f0, #d2cecb, #6e6a68)
+ *   - Acentos: blaze (#e96516), spring (#5683d2), smolder (#17332d)
+ *
+ * Tipografía: Neutrif (sans). Si quieres TWK Lausanne (la real de Ramp),
+ * añádela a src/assets/fonts/lausanne/ y crea las @font-face en
+ * guide-styles.css apuntando a "lausanne-{peso}".
+ */
+
+:root {
+  /* ============================================
+     Tokens del tema (acceso directo desde componentes)
+     ============================================ */
+  --by-solar:        #e4f222;
+  --by-solar-light:  #f5ff78;
+  --by-ink:          #0c0a08;  /* texto primario */
+  --by-paper:        #ffffff;  /* fondo principal */
+  --by-surface:      #f4f2f0;  /* surface / bg cards */
+  --by-border:       #d2cecb;  /* default border */
+  --by-muted:        #6e6a68;  /* texto muted */
+  --by-blaze:        #e96516;  /* acento warm */
+  --by-smolder:      #17332d;  /* acento cool dark */
+
+  /* ============================================
+     BUTTONS
+     Primary = solar yellow + ink. Secondary = ink + paper.
+     Outline = border ink + ink. Ghost = sólo texto.
+     ============================================ */
+  --btn-primary-bg: var(--by-solar);
+  --btn-primary-color: var(--by-ink);
+  --btn-primary-hover-bg: var(--by-solar-light);
+
+  --btn-secondary-bg: var(--by-ink);
+  --btn-secondary-color: var(--by-paper);
+  --btn-secondary-hover-bg: var(--hg-color-grey-ultra, #1a1919);
+
+  --btn-outline-border: var(--by-ink);
+  --btn-outline-color: var(--by-ink);
+  --btn-outline-hover-bg: var(--by-ink);
+  --btn-outline-hover-color: var(--by-paper);
+
+  --btn-ghost-color: var(--by-ink);
+  --btn-ghost-hover-bg: var(--by-surface);
+
+  --btn-feel-bg: var(--by-blaze);
+  --btn-feel-color: var(--by-paper);
+  --btn-feel-hover-bg: #c94c07;
+
+  /* ============================================
+     INPUTS
+     ============================================ */
+  --input-border: var(--by-border);
+  --input-border-focus: var(--by-ink);
+  --input-bg: var(--by-paper);
+  --input-color: var(--by-ink);
+  --input-placeholder: var(--by-muted);
+
+  --input-error-border: var(--hg-color-error);
+  --input-success-border: var(--hg-color-success);
+  --input-warning-border: var(--hg-color-warning);
+
+  /* ============================================
+     LABELS / FORMS
+     ============================================ */
+  --label-color: var(--by-ink);
+  --label-required: var(--hg-color-error);
+
+  /* ============================================
+     CHECKBOXES / RADIOS
+     ============================================ */
+  --checkbox-bg: var(--by-paper);
+  --checkbox-border: var(--by-border);
+  --checkbox-checked-bg: var(--by-ink);
+  --checkbox-checked-border: var(--by-ink);
+
+  --radio-bg: var(--by-paper);
+  --radio-border: var(--by-border);
+  --radio-checked-bg: var(--by-ink);
+  --radio-checked-border: var(--by-ink);
+
+  /* ============================================
+     SWITCH
+     ============================================ */
+  --switch-bg: var(--by-border);
+  --switch-active-bg: var(--by-ink);
+  --switch-thumb: var(--by-paper);
+
+  /* ============================================
+     CARD / ALERT / TOAST overrides
+     ============================================ */
+  --card-bg: var(--by-paper);
+  --card-color: var(--by-ink);
+  --card-border: var(--by-border);
+
+  /* ============================================
+     SELECTION (al estilo Ramp: solar + ink)
+     ============================================ */
+
+  /* ============================================
+     ESPACIADOS
+     ============================================ */
+  --btn-padding-x-sm: var(--hg-spacing-12);
+  --btn-padding-y-sm: var(--hg-spacing-8);
+
+  --btn-padding-x-lg: var(--hg-spacing-24);
+  --btn-padding-y-lg: var(--hg-spacing-16);
+
+  --input-padding-x: var(--hg-spacing-16);
+  --input-padding-y: var(--hg-spacing-12);
+  --input-gap: var(--hg-spacing-8);
+
+  --form-group-gap: var(--hg-spacing-16);
+
+  /* ============================================
+     TIPOGRAFÍA — Neutrif (sans) por peso
+     Cada peso es su propia font-family declarada en guide-styles.css.
+     ============================================ */
+  --hg-typo-font-family-primary-light:    "neutrif-light",    Arial, Helvetica, sans-serif;
+  --hg-typo-font-family-primary-regular:  "neutrif-regular",  Arial, Helvetica, sans-serif;
+  --hg-typo-font-family-primary-bold:     "neutrif-semibold", Arial, Helvetica, sans-serif;
+  --hg-typo-font-family-secondary:        "neutrif-medium",   Arial, Helvetica, sans-serif;
+
+  /* ============================================
+     BORDES Y RADIOS
+     - Cards/inputs/checkboxes mantienen esquinas cuadradas (--border-radius: 0).
+     - Botones tienen su propio radio --btn-radius: 6px (estilo Ramp rounded-md).
+     ============================================ */
+  --border-radius: 0;
+  --border-width: 1px;
+  --border-style: solid;
+  --btn-radius: 6px;
+
+  /* ============================================
+     TRANSICIONES
+     ============================================ */
+  --transition: all 0.2s ease;
+}
+
+/* Selección de texto al estilo Ramp: solar yellow + ink */
+::selection {
+  background: var(--by-solar);
+  color: var(--by-ink);
+}

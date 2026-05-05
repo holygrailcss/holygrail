@@ -1,0 +1,17 @@
+{
+  "prefix": "hg",
+  "breakpoints": {
+    "mobile": "1px",
+    "desktop": "992px"
+  },
+  "themes": [
+    {
+      "name": "black-yellow",
+      "enabled": true
+    },
+    {
+      "name": "limited",
+      "enabled": true
+    }
+  ]
+}

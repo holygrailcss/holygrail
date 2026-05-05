@@ -1,5 +1,10 @@
+/* PURPOSE: Contenedores centrados con max-width responsivo (.container, .container-2) y anchos fijos (.container-640/-512/-360).
+   KEY CLASSES: .container, .container-2, .container-3, .container-4, .container-5, .container-6
+   DEPENDS ON: --hg-spacing-20 (config).
+   DEMO: dist/componentes.html#containers */
+
 /* ============================================
-   CONTAINERS — Black&White Theme
+   CONTAINERS — Black&Yellow Theme
    $padding-global: var(--hg-spacing-20) = 20px
    $padding-mobile: var(--hg-spacing-20) = 20px
    ============================================ */

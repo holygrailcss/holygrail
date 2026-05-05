@@ -1,15 +1,7 @@
-/**
- * Progress
- * Barra de progreso con variante indeterminada.
- *
- * Determinado:
- *   <div class="progress" role="progressbar" aria-valuenow="60">
- *     <div class="progress-bar" style="width: 60%"></div>
- *   </div>
- *
- * Indeterminado:
- *   <div class="progress progress-indeterminate"><div class="progress-bar"></div></div>
- */
+/* PURPOSE: Barra de progreso (sm/md/lg) + variante indeterminada con animación + variantes semánticas.
+   KEY CLASSES: .progress, .progress-lg, .progress-sm, .progress-bar
+   DEPENDS ON: --hg-color-error, --hg-color-info, --hg-color-light-grey, --hg-color-primary, --hg-color-success (config); --border-radius.
+   DEMO: dist/componentes.html#progress */
 
 .progress {
   position: relative;

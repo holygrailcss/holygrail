@@ -1,7 +1,7 @@
-/**
- * Textarea
- * Hereda casi todo de .input. Solo añade altura mínima y resize.
- */
+/* PURPOSE: Multilinea con misma estética del input. Estados error/success/warning + variante -fixed sin redimensionar.
+   KEY CLASSES: .textarea, .textarea-error, .textarea-fixed, .textarea-success, .textarea-warning
+   DEPENDS ON: --input-bg, --input-border, --input-border-focus, --input-color, --input-error-border (theme); --hg-color-light-grey, --hg-typo-font-family-primary-regular, --hg-typo-font-size-13, --hg-typo-font-weight-400, --hg-typo-line-height-1-5 (config); --border-radius, --border-style, --border-width.
+   DEMO: dist/componentes.html#textarea */
 
 .textarea {
   display: block;

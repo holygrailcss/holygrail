@@ -110,7 +110,7 @@ function watch(configPath = path.join(__dirname, '..', 'config.json'), outputPat
   ];
   
   // Archivos de tema a observar.
-  // Antes solo se vigilaba themes/black-and-white/demo.html. Con la arquitectura
+  // Antes solo se vigilaba themes/black-yellow/demo.html. Con la arquitectura
   // actual:
   //   - Puede haber varios temas activos (config.themes[]).
   //   - Los componentes compartidos viven en themes/_base/ y cambios ahí
@@ -131,7 +131,7 @@ function watch(configPath = path.join(__dirname, '..', 'config.json'), outputPat
     } catch (e) {
       // Si no podemos leer el config, caemos al fallback histórico
       // para no romper flujos existentes.
-      activeThemes = [{ name: 'black-and-white', enabled: true, label: 'Tema Black&White' }];
+      activeThemes = [{ name: 'black-yellow', enabled: true, label: 'Tema Black&Yellow' }];
     }
 
     activeThemes.forEach(t => {

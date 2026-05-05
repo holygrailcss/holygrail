@@ -1,21 +1,7 @@
-/**
- * Dialog / Modal
- * Construido sobre <dialog> nativo (HTML5).
- * Uso:
- *   <dialog class="dialog">
- *     <div class="dialog-header">
- *       <h3 class="dialog-title">Title</h3>
- *       <button class="dialog-close" aria-label="Close">×</button>
- *     </div>
- *     <div class="dialog-body">…</div>
- *     <div class="dialog-footer">
- *       <button class="btn-outline">Cancel</button>
- *       <button class="btn-primary">Confirm</button>
- *     </div>
- *   </dialog>
- *
- * Abrir/cerrar con JS: dialog.showModal() / dialog.close()
- */
+/* PURPOSE: Modal sobre <dialog> nativo. Tamaños sm/lg/xl + backdrop blur.
+   KEY CLASSES: .dialog, .dialog-lg, .dialog-sm, .dialog-xl, .dialog-body, .dialog-close
+   DEPENDS ON: --hg-color-dark-grey, --hg-color-light-grey, --hg-color-middle-grey, --hg-color-primary, --hg-color-white (config); --border-radius, --border-style, --border-width.
+   DEMO: dist/componentes.html#dialog */
 
 .dialog {
   width: 100%;

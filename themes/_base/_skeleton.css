@@ -1,12 +1,7 @@
-/**
- * Skeleton
- * Placeholder animado mientras se carga contenido.
- * Modificadores comunes: -text, -title, -avatar, -button, -card.
- *
- * Uso:
- *   <div class="skeleton skeleton-text"></div>
- *   <div class="skeleton skeleton-avatar"></div>
- */
+/* PURPOSE: Placeholder animado de carga. Modificadores -text, -title, -avatar, -button, -card, -circle.
+   KEY CLASSES: .skeleton, .skeleton-card, .skeleton-text, .skeleton-title, .skeleton-avatar, .skeleton-button
+   DEPENDS ON: --hg-color-light-grey, --hg-color-middle-grey (config); --border-radius.
+   DEMO: dist/componentes.html#skeleton */
 
 .skeleton {
   display: block;

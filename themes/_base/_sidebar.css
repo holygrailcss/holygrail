@@ -1,7 +1,7 @@
-/**
- * Sidebar / Side Navigation
- * Barra lateral con grupos, items y estado activo.
- */
+/* PURPOSE: Barra lateral con secciones, items y estado activo. Variante sidebar-collapsed (icon-only).
+   KEY CLASSES: .sidebar, .sidebar-link, .sidebar-list, .sidebar-brand, .sidebar-label, .sidebar-footer
+   DEPENDS ON: --hg-color-dark-grey, --hg-color-light-grey, --hg-color-primary, --hg-color-white, --hg-spacing-12 (config); --border-radius, --border-style, --border-width.
+   DEMO: dist/componentes.html#sidebar */
 
 .sidebar {
   display: flex;

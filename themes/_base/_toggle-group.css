@@ -1,13 +1,7 @@
-/**
- * Toggle / Toggle Group
- * Botones tipo pill en grupo (single o multi). Estado activo = .is-active.
- *
- * Single (radio):
- *   <div class="toggle-group">
- *     <button class="toggle is-active">A</button>
- *     <button class="toggle">B</button>
- *   </div>
- */
+/* PURPOSE: Botones tipo pill agrupados con estado activo (single + group).
+   KEY CLASSES: .toggle, .toggle-group
+   DEPENDS ON: --hg-color-light-grey, --hg-color-middle-grey, --hg-color-primary, --hg-color-white, --hg-typo-font-family-primary-regular (config); --border-radius, --border-style, --border-width.
+   DEMO: dist/componentes.html#toggle-group */
 
 .toggle {
   display: inline-flex;

@@ -1,0 +1,66 @@
+{
+  "assets": {
+    "css": [
+      {
+        "source": "src/docs-generator/guide-styles.css",
+        "dest": "dist/guide-styles.css"
+      }
+    ],
+    "images": [
+      {
+        "source": "src/assets/intro.jpg",
+        "dest": "dist/assets/intro.jpg"
+      },
+      {
+        "source": "src/assets/introm.jpg",
+        "dest": "dist/assets/introm.jpg"
+      },
+      {
+        "source": "src/assets/margen.webp",
+        "dest": "dist/assets/margen.webp"
+      }
+    ],
+    "fonts": [
+      {
+        "source": "src/assets/fonts/neutrif/font-light.woff2",
+        "dest": "dist/assets/fonts/neutrif/font-light.woff2"
+      },
+      {
+        "source": "src/assets/fonts/neutrif/font-light.woff",
+        "dest": "dist/assets/fonts/neutrif/font-light.woff"
+      },
+      {
+        "source": "src/assets/fonts/neutrif/font-regular.woff2",
+        "dest": "dist/assets/fonts/neutrif/font-regular.woff2"
+      },
+      {
+        "source": "src/assets/fonts/neutrif/font-regular.woff",
+        "dest": "dist/assets/fonts/neutrif/font-regular.woff"
+      },
+      {
+        "source": "src/assets/fonts/neutrif/font-medium.woff2",
+        "dest": "dist/assets/fonts/neutrif/font-medium.woff2"
+      },
+      {
+        "source": "src/assets/fonts/neutrif/font-medium.woff",
+        "dest": "dist/assets/fonts/neutrif/font-medium.woff"
+      },
+      {
+        "source": "src/assets/fonts/neutrif/font-semibold.woff2",
+        "dest": "dist/assets/fonts/neutrif/font-semibold.woff2"
+      },
+      {
+        "source": "src/assets/fonts/neutrif/font-semibold.woff",
+        "dest": "dist/assets/fonts/neutrif/font-semibold.woff"
+      },
+      {
+        "source": "src/assets/fonts/neutrif/font-bold.woff2",
+        "dest": "dist/assets/fonts/neutrif/font-bold.woff2"
+      },
+      {
+        "source": "src/assets/fonts/neutrif/font-bold.woff",
+        "dest": "dist/assets/fonts/neutrif/font-bold.woff"
+      }
+    ]
+  }
+}

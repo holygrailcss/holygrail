@@ -1,6 +1,7 @@
-/**
- * Form Groups, Form Rows y Helper Text
- */
+/* PURPOSE: Composición de campos: form-group, form-input-label-2 (floating label), error-zone, helper-text-{state}.
+   KEY CLASSES: .form-row, .form-group, .helper-text, .form-group-inline, .helper-text-error, .helper-text-success
+   DEPENDS ON: --hg-color-dark-grey, --hg-color-error, --hg-color-success, --hg-color-warning, --hg-spacing-16 (config).
+   DEMO: dist/componentes.html#forms */
 
 /* Form Groups */
 .form-group {

@@ -1,3 +1,8 @@
+/* PURPOSE: Reset y dimensiones base de iconos SVG inline.
+   KEY CLASSES: .hg-icon
+   DEPENDS ON: --hg-icon-size, --hg-spacing-16 (config).
+   DEMO: dist/componentes.html#icons */
+
   :root {
     --hg-icon-size: var(--hg-spacing-16);
   }

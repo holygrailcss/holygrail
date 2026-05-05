@@ -90,8 +90,7 @@
   /* Espaciados - usando variables de holygrailcss */
   --btn-padding-x-sm: var(--hg-spacing-12);
   --btn-padding-y-sm: var(--hg-spacing-8);
-  --btn-padding-x-md: var(--hg-spacing-16);
-  --btn-padding-y-md: var(--hg-spacing-12);
+
   --btn-padding-x-lg: var(--hg-spacing-24);
   --btn-padding-y-lg: var(--hg-spacing-16);
 

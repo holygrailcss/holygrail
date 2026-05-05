@@ -1,16 +1,7 @@
-/**
- * Input OTP
- * Celdas individuales para códigos OTP / 2FA.
- *
- * Estructura:
- *   <div class="otp">
- *     <input class="otp-slot" maxlength="1" inputmode="numeric">
- *     <input class="otp-slot" maxlength="1" inputmode="numeric">
- *     <span class="otp-separator">-</span>
- *     <input class="otp-slot" maxlength="1" inputmode="numeric">
- *     ...
- *   </div>
- */
+/* PURPOSE: Celdas individuales para códigos OTP / 2FA. Tamaños sm/md/lg + estados error/success.
+   KEY CLASSES: .otp, .otp-slot, .otp-separator
+   DEPENDS ON: --input-bg, --input-border, --input-border-focus, --input-error-border, --input-success-border (theme); --hg-color-light-grey, --hg-color-middle-grey, --hg-color-primary, --hg-typo-font-family-primary-regular (config); --border-radius, --border-style, --border-width.
+   DEMO: dist/componentes.html#input-otp */
 
 .otp {
   display: inline-flex;

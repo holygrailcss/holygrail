@@ -1,17 +1,7 @@
-/**
- * Drawer / Sheet
- * Panel deslizante desde un lateral. CSS-only mediante un checkbox toggle.
- *
- * Patrón sin JS:
- *   <input type="checkbox" id="drawer-toggle" class="drawer-toggle" hidden>
- *   <label for="drawer-toggle" class="drawer-overlay"></label>
- *   <aside class="drawer drawer-right">
- *     <header class="drawer-header"><h3 class="drawer-title">Title</h3></header>
- *     <div class="drawer-body">…</div>
- *   </aside>
- *
- * Cambia el lado con: drawer-left, drawer-right (default), drawer-top, drawer-bottom.
- */
+/* PURPOSE: Panel lateral deslizante (left/right/top/bottom). Toggle vía checkbox o .is-open.
+   KEY CLASSES: .drawer, .drawer-top, .drawer-body, .drawer-left, .drawer-close, .drawer-right
+   DEPENDS ON: --hg-color-light-grey, --hg-color-middle-grey, --hg-color-primary, --hg-color-white, --hg-spacing-16 (config); --border-style, --border-width.
+   DEMO: dist/componentes.html#drawer */
 
 .drawer {
   position: fixed;

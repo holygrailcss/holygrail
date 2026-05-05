@@ -1,8 +1,7 @@
-/**
- * Card
- * Contenedor genérico con header / body / footer.
- * Variantes: card-bordered (default), card-flat (sin borde, fondo gris).
- */
+/* PURPOSE: Contenedor con header / body / footer. Variante card-flat sin borde.
+   KEY CLASSES: .card, .card-body, .card-flat, .card-title, .card-footer, .card-header
+   DEPENDS ON: --card-bg, --card-border, --card-color (theme); --hg-color-dark-grey, --hg-color-light-grey, --hg-color-middle-grey, --hg-color-primary, --hg-color-white (config); --border-radius, --border-style, --border-width.
+   DEMO: dist/componentes.html#card */
 
 .card {
   display: flex;

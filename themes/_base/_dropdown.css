@@ -1,20 +1,7 @@
-/**
- * Dropdown menu / Popover
- * Menú flotante anclado a un trigger.
- * El JS controla aria-expanded; el CSS muestra/oculta con [data-open] o .is-open.
- *
- * Estructura:
- *   <div class="dropdown">
- *     <button class="dropdown-trigger">Open</button>
- *     <div class="dropdown-menu" role="menu">
- *       <div class="dropdown-label">Account</div>
- *       <button class="dropdown-item">Profile</button>
- *       <button class="dropdown-item">Settings</button>
- *       <div class="dropdown-separator"></div>
- *       <button class="dropdown-item dropdown-item-destructive">Logout</button>
- *     </div>
- *   </div>
- */
+/* PURPOSE: Menú flotante anclado a un trigger. Items, separators, shortcuts, item-destructive.
+   KEY CLASSES: .popover, .dropdown, .dropdown-item, .dropdown-menu, .dropdown-label, .dropdown-trigger
+   DEPENDS ON: --hg-color-dark-grey, --hg-color-error, --hg-color-light-grey, --hg-color-middle-grey, --hg-color-primary (config); --border-radius, --border-style, --border-width.
+   DEMO: dist/componentes.html#dropdown */
 
 .dropdown {
   position: relative;

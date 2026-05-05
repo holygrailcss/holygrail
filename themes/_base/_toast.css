@@ -1,19 +1,7 @@
-/**
- * Toast
- * Notificación efímera estilo shadcn/sonner.
- * El JS añade/quita .toast en el contenedor .toaster (no incluído).
- *
- * Estructura:
- *   <div class="toaster" data-position="bottom-right">
- *     <div class="toast">
- *       <div class="toast-content">
- *         <h5 class="toast-title">Saved</h5>
- *         <p class="toast-description">Your changes are live.</p>
- *       </div>
- *       <button class="toast-close">×</button>
- *     </div>
- *   </div>
- */
+/* PURPOSE: Notificación efímera (.toaster contenedor + .toast). Posiciones top/bottom × left/right/center + variantes semánticas.
+   KEY CLASSES: .toast, .toaster, .toast-info, .toast-close, .toast-error, .toast-title
+   DEPENDS ON: --hg-color-dark-grey, --hg-color-error, --hg-color-info, --hg-color-middle-grey, --hg-color-primary (config); --border-radius, --border-style, --border-width.
+   DEMO: dist/componentes.html#toast */
 
 .toaster {
   position: fixed;

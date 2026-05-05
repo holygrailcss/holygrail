@@ -9,7 +9,7 @@
       "default": "./generate-css.js"
     },
     "./dist/output": "./dist/output.css",
-    "./dist/black-and-white": "./dist/themes/black-and-white.css"
+    "./dist/black-yellow": "./dist/themes/black-yellow.css"
   },
   "bin": {
     "holygrailcss": "./generate-css.js"

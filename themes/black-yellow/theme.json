@@ -1,24 +1,32 @@
 {
   "meta": {
-    "name": "black-and-white",
-    "displayName": "Black&White",
-    "description": "Tema base que extiende holygrailcss con variables específicas para botones, inputs, formularios, switches y radios. Las variables del tema referencian los tokens de --hg-color-* y --hg-spacing-* para mantener coherencia con el design system global.",
+    "name": "black-yellow",
+    "displayName": "Black&Yellow",
+    "description": "Tema con CTA solar yellow (#e4f222) sobre tinta casi-negra y grises cálidos. Inspiración: la paleta y geometría de ramp.com — botón primario amarillo solar, esquinas cuadradas, tipografía sans-serif geométrica. Las variables del tema referencian tokens --hg-color-* (incluidos los nuevos --hg-color-solar y --hg-color-solar-light) para mantener coherencia con el design system global.",
     "version": "1.0.0",
     "author": "holygrailcss"
   },
   "tokenOverrides": {
-    "color": {},
+    "color": {
+      "solar": "#e4f222",
+      "solar-light": "#f5ff78",
+      "ink": "#0c0a08",
+      "paper": "#ffffff",
+      "surface": "#f4f2f0",
+      "border": "#d2cecb",
+      "muted": "#6e6a68"
+    },
     "spacing": {}
   },
   "componentVars": {
     "btn": {
-      "primary-bg": "var(--hg-color-primary)",
-      "primary-color": "var(--hg-color-white)",
-      "primary-hover-bg": "var(--hg-color-dark-grey)",
+      "primary-bg": "var(--hg-color-solar)",
+      "primary-color": "var(--hg-color-primary)",
+      "primary-hover-bg": "var(--hg-color-solar-light)",
 
-      "secondary-bg": "var(--hg-color-dark-grey)",
+      "secondary-bg": "var(--hg-color-primary)",
       "secondary-color": "var(--hg-color-white)",
-      "secondary-hover-bg": "var(--hg-color-middle-grey)",
+      "secondary-hover-bg": "var(--hg-color-grey-ultra)",
 
       "outline-border": "var(--hg-color-primary)",
       "outline-color": "var(--hg-color-primary)",
@@ -28,7 +36,7 @@
       "ghost-color": "var(--hg-color-primary)",
       "ghost-hover-bg": "var(--hg-color-light-grey)",
 
-      "feel-bg": "var(--hg-color-feel)",
+      "feel-bg": "var(--hg-color-blaze)",
       "feel-color": "var(--hg-color-white)",
       "feel-hover-bg": "var(--hg-color-feel-dark)",
 
@@ -44,7 +52,7 @@
       "border-focus": "var(--hg-color-primary)",
       "bg": "var(--hg-color-white)",
       "color": "var(--hg-color-primary)",
-      "placeholder": "var(--hg-color-middle-grey)",
+      "placeholder": "var(--hg-color-dark-grey)",
       "error-border": "var(--hg-color-error)",
       "success-border": "var(--hg-color-success)",
       "warning-border": "var(--hg-color-warning)",

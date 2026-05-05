@@ -1,8 +1,7 @@
-/**
- * Checkboxes
- * Estados: checked, disabled, focus
- * Variantes: checkbox, checkbox-item, checkbox-item-2, checkbox-item-img, checkbox-radio, checkbox-card
- */
+/* PURPOSE: Checkbox 24×24 con SVG check inline. Sin JS. Variantes: -indicator, -item, -item-2, -item-img, -card.
+   KEY CLASSES: .checkbox, .checkbox-item, .checkbox-label, .checkbox-item-2, .checkbox-item-box, .checkbox-item-img
+   DEPENDS ON: --checkbox-bg, --checkbox-border, --checkbox-check-color, --checkbox-checked-bg, --checkbox-checked-border (theme); --hg-color-dark-grey, --hg-color-error, --hg-color-info, --hg-color-middle-grey, --hg-color-primary (config); --border-radius, --border-style, --border-width, --transition.
+   DEMO: dist/componentes.html#checkboxes */
 
 /* ============================================
    CHECKBOX BÁSICO (SVG INLINE)

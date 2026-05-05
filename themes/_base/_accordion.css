@@ -1,16 +1,7 @@
-/**
- * Accordion
- * CSS-only con <details>/<summary>. Sin JS.
- *
- * Estructura:
- *   <div class="accordion">
- *     <details class="accordion-item">
- *       <summary class="accordion-trigger">Question 1</summary>
- *       <div class="accordion-content">Answer 1</div>
- *     </details>
- *     <details class="accordion-item">…</details>
- *   </div>
- */
+/* PURPOSE: Lista colapsable basada en <details>/<summary> nativo (sin JS).
+   KEY CLASSES: .accordion, .accordion-item, .accordion-content, .accordion-trigger
+   DEPENDS ON: --hg-color-dark-grey, --hg-color-light-grey, --hg-color-middle-grey, --hg-color-primary, --hg-spacing-16 (config); --border-radius, --border-style, --border-width.
+   DEMO: dist/componentes.html#accordion */
 
 .accordion {
   width: 100%;

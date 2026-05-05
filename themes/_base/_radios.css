@@ -1,8 +1,7 @@
-/**
- * Radios
- * Estados: checked, disabled, focus
- * Variantes: checkbox-radio, check-center, check-no, check-bleed, check-top, check-clear
- */
+/* PURPOSE: Radio circular 24×24 con punto interior. Sin JS. Variantes: check-center, check-no, check-bleed, check-top, check-clear.
+   KEY CLASSES: .checkbox-radio
+   DEPENDS ON: --hg-color-error, --hg-color-primary, --hg-spacing-10, --hg-spacing-16, --hg-spacing-30 (config); --border-style, --border-width, --transition.
+   DEMO: dist/componentes.html#radios */
 
 /* ============================================
    CHECKBOX-RADIO (Radio buttons con estilo checkbox)
