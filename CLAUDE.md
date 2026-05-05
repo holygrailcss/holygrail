@@ -34,15 +34,17 @@ generate-css.js
       ├─ src/config-loader.js         ← lee config/*.json (modular) o config.json (legacy)
       │                                 y sincroniza config.json al final
       ├─ src/generators/*.js          ← genera output.css desde la config cargada
-      │     - variables-generator.js  → :root con --hg-color-*, --hg-spacing-*, …
+      │     - reset-generator.js      → reset CSS mínimo (html, *, box-sizing)
+      │     - variables-generator.js  → :root con --hg-color-*, --hg-spacing-*, --hg-typo-*
       │     - typo-generator.js       → .headline-*, .body-* (mobile + desktop)
       │     - spacing-generator.js    → .p-*, .m-*, .hg-px-*, .hg-mx-*
       │     - grid-generator.js       → .row, .col-{bp}-{n}
       │     - helpers-generator.js    → .hg-d-flex, .hg-justify-*, etc.
+      │     - ratio-generator.js      → .aspect-1-1, .aspect-16-9, …
       │     - utils.js                → combineThemeCSS, resolveActiveThemes
       ├─ src/docs-generator/html-generator.js   ← genera dist/index.html
       ├─ src/build/theme-transformer.js         ← genera dist/themes/<name>.css + demo.html
-      │                                           (auto-discovery: enumera themes/_base/_*.css)
+      │                                           (auto-discovery: enumera themes/_base/**/*.css)
       ├─ src/build/components-generator.js      ← genera dist/componentes.html
       │                                           (datos en components.data.json)
       ├─ src/build/skills-generator.js          ← genera dist/skills.html
@@ -51,7 +53,7 @@ generate-css.js
 
 Outputs en `dist/` (gitignored, pero **sí publicado a npm** vía `.npmignore`).
 
-**Auto-discovery de componentes**: cuando `combineThemeCSS` ensambla un tema, primero procesa los `@import` explícitos del `theme.css` (sólo `_variables.css` por convención), luego enumera `themes/_base/_*.css` recursivamente y añade los que falten. Resultado: nuevos componentes en `_base/` aparecen sin tocar nada más.
+**Auto-discovery de componentes**: cuando `combineThemeCSS` ensambla un tema, primero procesa los `@import` explícitos del `theme.css` (sólo `_variables.css` por convención), luego enumera `themes/_base/**/*.css` **recursivamente** (incluye `_base/_*.css`, `_base/objects/*.css` y `_base/components/*.css`) y añade los que falten. Resultado: nuevos componentes en `_base/` aparecen sin tocar nada más.
 
 ---
 
@@ -90,7 +92,7 @@ Cada componente tiene un comentario-cabecera estandarizado:
 
 Si añades un componente, **añade ese cabecero**.
 
-Componentes existentes (35): buttons, inputs, textarea, select, labels, checkboxes, radios, switches, slider, input-otp, toggle-group, forms, typography, card, badge, alert, avatar, separator, progress, skeleton, table, tabs, accordion, breadcrumb, pagination, sidebar, dialog, drawer, dropdown, tooltip, toast, containers, grid, icons.
+Componentes existentes (34 = 32 archivos en `themes/_base/_*.css` + `objects/_grid.css` + `components/_icons.css`): accordion, alert, avatar, badge, breadcrumb, buttons, card, checkboxes, containers, dialog, drawer, dropdown, forms, grid, icons, input-otp, inputs, labels, pagination, progress, radios, select, separator, sidebar, skeleton, slider, switches, table, tabs, textarea, toast, toggle-group, tooltip, typography.
 
 ---
 
@@ -117,7 +119,7 @@ Formato: `font-size / line-height` (mobile → desktop).
 
 ## Botones (dos tamaños canon)
 
-- `.btn-sm`: padding `12 16 3`, font 14/20, min-height 40px. Tipo "See a demo".
+- `.btn-sm`: padding `0 16 3`, font 14/20, height **40px** fijo. Tipo "See a demo".
 - `.btn-lg`: padding `0 16 3` (`0 20 3` desktop), height **42px → 51px** fijo. Tipo "Get started for free".
 - `padding-bottom: 3px` es **corrección óptica** intencional (Neutrif sienta el texto bajo respecto al centro geométrico).
 - Variantes: `btn-primary`, `btn-secondary`, `btn-tertiary`, `btn-outline`, `btn-ghost`, `btn-link`, `btn-label-m`, `btn-badge`. Modificadores: `btn-full` (100% ancho), `disabled`.
@@ -139,18 +141,27 @@ Formato: `font-size / line-height` (mobile → desktop).
 ## Comandos
 
 ```bash
-npm run build      # genera dist/
-npm run watch      # rebuild on change
-npm run serve      # dist server local
-npm run dev        # build + serve
-npm test           # tests
-npm publish        # publica a npm (corre prepublishOnly = build)
+npm run build           # genera dist/
+npm run watch           # rebuild on change
+npm run serve           # dist server local
+npm run dev             # build + serve
+npm test                # tests (tests/run-all.js)
+npm run vars:report     # reporte de variables CSS sin usar
+npm run vars:remove-unused   # elimina variables sin usar
+npm publish             # publica a npm (corre prepublishOnly = build)
 ```
 
 Repo: `github.com/holygrailcss/holygrail`. Paquete npm: `holygrailcss`.
 
 ---
 
-## Detalle exhaustivo
+## Detalle exhaustivo (skills)
 
-Para conocimiento completo (cheat sheet de clases, parámetros del CLI, reglas de mantenimiento), lee `.claude/skills/holygrailcss/SKILL.md`. Es ~300 líneas y cubre todo, pero rara vez lo necesitarás si esto te basta.
+Las skills viven en `skills/` (raíz, no en `.claude/`) y cubren tareas concretas. Léelas cuando esta guía no baste:
+
+- `skills/developer-guide/SKILL.md` — referencia completa de clases (colores, spacing, tipografía, helpers, grid, ratios, temas) para quien usa el framework.
+- `skills/theme-creator/SKILL.md` — crear un tema nuevo reutilizando `themes/_base/`.
+- `skills/component-generator/SKILL.md` — generar HTML que usa las clases correctamente.
+- `skills/layout-builder/SKILL.md` — construir layouts responsive con grid + helpers.
+- `skills/config-builder/SKILL.md` — crear o modificar `config.json` sin romper el build.
+- `skills/migration-helper/SKILL.md` — migrar proyectos desde Bootstrap/Tailwind.

@@ -76,13 +76,13 @@ Para crear un tema, mira `themes/black-yellow/` como ejemplo (`_variables.css`, 
 
 ## Componentes
 
-35 componentes base en `themes/_base/`:
+34 componentes base en `themes/_base/`:
 
-**Form**: button, input, textarea, select, label, checkbox, radio, switch, slider, input-otp, toggle-group, form
+**Form**: buttons, inputs, textarea, select, labels, checkboxes, radios, switches, slider, input-otp, toggle-group, forms
 **Display**: typography (headline-*, body-*), card, badge, alert, avatar, separator, progress, skeleton, table
 **Navigation**: tabs, accordion, breadcrumb, pagination, sidebar
 **Overlays**: dialog, drawer, dropdown, tooltip, toast
-**Layout**: container, grid, aspect ratios, icons
+**Layout**: containers, grid, icons (aspect ratios se generan desde `config/aspect-ratios.json`)
 
 Demo viva en `dist/componentes.html`.
 
@@ -91,8 +91,13 @@ Demo viva en `dist/componentes.html`.
 ## Documentación
 
 - **Para asistentes/AI** que vayan a editar este repo: lee `CLAUDE.md` (raíz). Es un mapa de 5 minutos.
-- **Para mantenimiento profundo**: `.claude/skills/holygrailcss/SKILL.md` (~300 líneas, cubre arquitectura, generadores, watch, publicación).
-- **Para extender**: `skills/theme-creator/SKILL.md` (crear temas), `skills/component-generator/SKILL.md` (crear componentes), `skills/config-builder/SKILL.md` (modificar config), `skills/migration-helper/SKILL.md` (migrar desde Bootstrap/Tailwind).
+- **Para usar el framework en tu proyecto**: `skills/developer-guide/SKILL.md` — referencia completa de clases (colores, spacing, tipografía, helpers, grid, ratios, temas).
+- **Para extender**:
+  - `skills/theme-creator/SKILL.md` — crear temas reutilizando `_base/`.
+  - `skills/component-generator/SKILL.md` — generar HTML con las clases correctas.
+  - `skills/layout-builder/SKILL.md` — construir layouts responsive.
+  - `skills/config-builder/SKILL.md` — modificar `config.json` sin romper el build.
+  - `skills/migration-helper/SKILL.md` — migrar desde Bootstrap/Tailwind.
 
 ---
 
