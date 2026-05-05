@@ -456,7 +456,7 @@ ${themeNavLinks}
   <footer class="sk-footer">
     <p>
       holygrailcss —
-      <a href="https://github.com/holygrailcss/holygrailcss" target="_blank">GitHub</a> ·
+      <a href="https://github.com/holygrailcss/holygrail" target="_blank">GitHub</a> ·
       <a href="https://www.npmjs.com/package/holygrailcss" target="_blank">npm</a> ·
       <a href="index.html">Guía</a>
     </p>

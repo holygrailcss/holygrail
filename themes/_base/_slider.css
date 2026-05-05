@@ -1,0 +1,78 @@
+/**
+ * Slider (range input)
+ * Estiliza <input type="range"> en WebKit + Firefox.
+ */
+
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 4px;
+  background: var(--hg-color-light-grey);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slider::-webkit-slider-runnable-track {
+  height: 4px;
+  background: var(--hg-color-light-grey);
+  border-radius: var(--border-radius);
+}
+
+.slider::-moz-range-track {
+  height: 4px;
+  background: var(--hg-color-light-grey);
+  border-radius: var(--border-radius);
+  border: 0;
+}
+
+/* Thumb (handle) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  margin-top: -7px;
+  background: var(--hg-color-primary);
+  border: 2px solid var(--hg-color-white);
+  border-radius: 50%;
+  cursor: grab;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.18);
+  transition: transform 0.12s ease;
+}
+
+.slider::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  background: var(--hg-color-primary);
+  border: 2px solid var(--hg-color-white);
+  border-radius: 50%;
+  cursor: grab;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.18);
+}
+
+.slider:focus::-webkit-slider-thumb,
+.slider:hover::-webkit-slider-thumb {
+  transform: scale(1.08);
+}
+
+.slider:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.slider:disabled::-webkit-slider-thumb { cursor: not-allowed; }
+
+/* Variante con relleno (necesita JS para actualizar --slider-fill, p.ej. en input) */
+.slider-filled {
+  background: linear-gradient(
+    to right,
+    var(--hg-color-primary) 0%,
+    var(--hg-color-primary) var(--slider-fill, 50%),
+    var(--hg-color-light-grey) var(--slider-fill, 50%),
+    var(--hg-color-light-grey) 100%
+  );
+}

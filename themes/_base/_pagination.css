@@ -1,0 +1,75 @@
+/**
+ * Pagination
+ * Lista de páginas. Usa <nav><ul>.
+ */
+
+.pagination {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: var(--hg-typo-font-family-primary-regular);
+}
+
+.pagination-item {
+  display: inline-flex;
+}
+
+.pagination-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 36px;
+  height: 36px;
+  padding: 0 10px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--hg-color-primary);
+  background: transparent;
+  border: var(--border-width) var(--border-style) transparent;
+  border-radius: var(--border-radius);
+  text-decoration: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: background-color 0.12s ease, border-color 0.12s ease;
+}
+
+.pagination-link:hover {
+  background: var(--hg-color-light-grey);
+}
+
+.pagination-link.is-active,
+.pagination-item[aria-current="page"] .pagination-link {
+  background: var(--hg-color-primary);
+  color: var(--hg-color-white);
+  border-color: var(--hg-color-primary);
+}
+
+.pagination-link[aria-disabled="true"],
+.pagination-link.is-disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.pagination-prev,
+.pagination-next {
+  border: var(--border-width) var(--border-style) var(--hg-color-middle-grey);
+  gap: 6px;
+}
+
+.pagination-prev:hover,
+.pagination-next:hover {
+  border-color: var(--hg-color-primary);
+}
+
+.pagination-ellipsis {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 36px;
+  height: 36px;
+  color: var(--hg-color-dark-grey);
+  user-select: none;
+}

@@ -1,0 +1,54 @@
+/**
+ * Breadcrumb
+ * Cadena de enlaces con separadores.
+ *
+ * <nav class="breadcrumb">
+ *   <ol class="breadcrumb-list">
+ *     <li class="breadcrumb-item"><a href="/">Home</a></li>
+ *     <li class="breadcrumb-separator">/</li>
+ *     <li class="breadcrumb-item"><a href="/products">Products</a></li>
+ *     <li class="breadcrumb-separator">/</li>
+ *     <li class="breadcrumb-item is-active" aria-current="page">Item</li>
+ *   </ol>
+ * </nav>
+ */
+
+.breadcrumb {
+  font-family: var(--hg-typo-font-family-primary-regular);
+  font-size: 13px;
+  color: var(--hg-color-dark-grey);
+}
+
+.breadcrumb-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumb-item a,
+.breadcrumb-item {
+  color: var(--hg-color-dark-grey);
+  text-decoration: none;
+  transition: color 0.12s ease;
+}
+
+.breadcrumb-item a:hover {
+  color: var(--hg-color-primary);
+  text-decoration: underline;
+}
+
+.breadcrumb-item.is-active,
+.breadcrumb-item[aria-current="page"] {
+  color: var(--hg-color-primary);
+  font-weight: 600;
+}
+
+.breadcrumb-separator {
+  color: var(--hg-color-middle-grey);
+  user-select: none;
+  font-size: 12px;
+}

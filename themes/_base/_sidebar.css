@@ -1,0 +1,105 @@
+/**
+ * Sidebar / Side Navigation
+ * Barra lateral con grupos, items y estado activo.
+ */
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  height: 100%;
+  padding: var(--hg-spacing-16) var(--hg-spacing-12);
+  background: var(--hg-color-white);
+  border-right: var(--border-width) var(--border-style) var(--hg-color-light-grey);
+  font-family: var(--hg-typo-font-family-primary-regular);
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.sidebar-header {
+  padding: var(--hg-spacing-8) var(--hg-spacing-12) var(--hg-spacing-16);
+  display: flex;
+  align-items: center;
+  gap: var(--hg-spacing-8);
+}
+
+.sidebar-brand {
+  font-family: var(--hg-typo-font-family-primary-bold);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.sidebar-section {
+  padding: var(--hg-spacing-8) 0;
+}
+
+.sidebar-label {
+  padding: 4px 12px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--hg-color-dark-grey);
+}
+
+.sidebar-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--hg-color-primary);
+  text-decoration: none;
+  border-radius: var(--border-radius);
+  transition: background 0.12s ease;
+  cursor: pointer;
+}
+
+.sidebar-link:hover {
+  background: var(--hg-color-light-grey);
+}
+
+.sidebar-link.is-active,
+.sidebar-link[aria-current="page"] {
+  background: var(--hg-color-primary);
+  color: var(--hg-color-white);
+}
+
+.sidebar-link-icon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.sidebar-footer {
+  margin-top: auto;
+  padding: var(--hg-spacing-12);
+  border-top: var(--border-width) var(--border-style) var(--hg-color-light-grey);
+}
+
+/* Versión collapsible (icon only) */
+.sidebar-collapsed {
+  width: 64px;
+  align-items: center;
+}
+
+.sidebar-collapsed .sidebar-label,
+.sidebar-collapsed .sidebar-link span,
+.sidebar-collapsed .sidebar-brand {
+  display: none;
+}
+
+.sidebar-collapsed .sidebar-link {
+  justify-content: center;
+  padding: 10px;
+}

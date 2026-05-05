@@ -1,0 +1,90 @@
+/**
+ * Table
+ * Estilo shadcn-like: divisores horizontales, header sutil, hover de fila.
+ */
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--hg-typo-font-family-primary-regular);
+  font-size: 13px;
+  color: var(--hg-color-primary);
+  caption-side: bottom;
+}
+
+.table caption {
+  padding: var(--hg-spacing-12) 0;
+  color: var(--hg-color-dark-grey);
+  font-size: 12px;
+  text-align: left;
+}
+
+.table thead th {
+  text-align: left;
+  font-weight: 600;
+  color: var(--hg-color-dark-grey);
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  padding: var(--hg-spacing-12) var(--hg-spacing-16);
+  border-bottom: var(--border-width) var(--border-style) var(--hg-color-middle-grey);
+  white-space: nowrap;
+}
+
+.table tbody td {
+  padding: var(--hg-spacing-12) var(--hg-spacing-16);
+  border-bottom: var(--border-width) var(--border-style) var(--hg-color-light-grey);
+  vertical-align: middle;
+}
+
+.table tbody tr:last-child td { border-bottom: 0; }
+
+.table tbody tr:hover {
+  background: var(--hg-color-light-grey);
+}
+
+.table tfoot td {
+  padding: var(--hg-spacing-12) var(--hg-spacing-16);
+  font-weight: 600;
+  border-top: var(--border-width) var(--border-style) var(--hg-color-middle-grey);
+}
+
+/* Variantes */
+.table-bordered {
+  border: var(--border-width) var(--border-style) var(--hg-color-middle-grey);
+}
+
+.table-bordered th,
+.table-bordered td {
+  border: var(--border-width) var(--border-style) var(--hg-color-light-grey);
+}
+
+.table-striped tbody tr:nth-child(even) {
+  background: var(--hg-color-light-grey);
+}
+
+.table-compact thead th,
+.table-compact tbody td,
+.table-compact tfoot td {
+  padding: 6px 12px;
+}
+
+/* Header sticky (necesita contenedor con overflow + altura) */
+.table-sticky thead th {
+  position: sticky;
+  top: 0;
+  background: var(--hg-color-white);
+  z-index: 1;
+}
+
+/* Wrapper para scroll horizontal */
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: var(--border-radius);
+  border: var(--border-width) var(--border-style) var(--hg-color-light-grey);
+}
+
+.table-wrapper > .table {
+  margin: 0;
+}

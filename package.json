@@ -39,7 +39,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/holygrailcss/holygrailcss.git"
+    "url": "https://github.com/holygrailcss/holygrail.git"
   },
   "files": [
     "generate-css.js",

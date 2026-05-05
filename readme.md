@@ -522,7 +522,7 @@ npm run build
 
 ## 14. Recursos y soporte
 
-- **Repositorio**: [github.com/holygrailcss/holygrailcss](https://github.com/holygrailcss/holygrailcss)
+- **Repositorio**: [github.com/holygrailcss/holygrail](https://github.com/holygrailcss/holygrail)
 - **npm**: [holygrailcss](https://www.npmjs.com/package/holygrailcss)
 - **Issues y PRs**: Bienvenidos. Sigue el flujo clásico: fork → rama → PR
 - **Documentación**: Ver `docs/` para guías detalladas

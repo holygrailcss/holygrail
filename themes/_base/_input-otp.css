@@ -1,0 +1,71 @@
+/**
+ * Input OTP
+ * Celdas individuales para códigos OTP / 2FA.
+ *
+ * Estructura:
+ *   <div class="otp">
+ *     <input class="otp-slot" maxlength="1" inputmode="numeric">
+ *     <input class="otp-slot" maxlength="1" inputmode="numeric">
+ *     <span class="otp-separator">-</span>
+ *     <input class="otp-slot" maxlength="1" inputmode="numeric">
+ *     ...
+ *   </div>
+ */
+
+.otp {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--hg-typo-font-family-primary-regular);
+}
+
+.otp-slot {
+  width: 40px;
+  height: 48px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--hg-color-primary);
+  background: var(--input-bg);
+  border: var(--border-width) var(--border-style) var(--input-border);
+  border-radius: var(--border-radius);
+  caret-color: var(--hg-color-primary);
+  outline: none;
+  -moz-appearance: textfield;
+  appearance: textfield;
+  box-sizing: border-box;
+}
+
+.otp-slot::-webkit-outer-spin-button,
+.otp-slot::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.otp-slot:focus {
+  border-color: var(--input-border-focus);
+  outline: 2px solid color-mix(in srgb, var(--hg-color-primary) 12%, transparent);
+  outline-offset: -1px;
+}
+
+.otp-slot:disabled {
+  opacity: 0.5;
+  background: var(--hg-color-light-grey);
+  cursor: not-allowed;
+}
+
+.otp-separator {
+  color: var(--hg-color-middle-grey);
+  font-size: 18px;
+  user-select: none;
+  padding: 0 4px;
+}
+
+/* Tamaños */
+.otp-sm .otp-slot { width: 32px; height: 40px; font-size: 14px; }
+.otp-lg .otp-slot { width: 48px; height: 56px; font-size: 22px; }
+
+/* Estado de error / éxito en todo el grupo */
+.otp.is-error .otp-slot   { border-color: var(--input-error-border); }
+.otp.is-success .otp-slot { border-color: var(--input-success-border); }

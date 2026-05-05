@@ -1,0 +1,84 @@
+/**
+ * Accordion
+ * CSS-only con <details>/<summary>. Sin JS.
+ *
+ * Estructura:
+ *   <div class="accordion">
+ *     <details class="accordion-item">
+ *       <summary class="accordion-trigger">Question 1</summary>
+ *       <div class="accordion-content">Answer 1</div>
+ *     </details>
+ *     <details class="accordion-item">…</details>
+ *   </div>
+ */
+
+.accordion {
+  width: 100%;
+  font-family: var(--hg-typo-font-family-primary-regular);
+}
+
+.accordion-item {
+  border-bottom: var(--border-width) var(--border-style) var(--hg-color-light-grey);
+}
+
+.accordion-item:first-child {
+  border-top: var(--border-width) var(--border-style) var(--hg-color-light-grey);
+}
+
+.accordion-trigger {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: var(--hg-spacing-16) 0;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--hg-color-primary);
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+
+.accordion-trigger::-webkit-details-marker {
+  display: none;
+}
+
+.accordion-trigger::after {
+  content: "";
+  flex-shrink: 0;
+  margin-left: 12px;
+  width: 12px;
+  height: 12px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transition: transform 0.18s ease-out;
+}
+
+.accordion-item[open] .accordion-trigger::after {
+  transform: rotate(180deg);
+}
+
+.accordion-trigger:hover {
+  color: var(--hg-color-dark-grey);
+}
+
+.accordion-content {
+  padding: 0 0 var(--hg-spacing-16);
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--hg-color-dark-grey);
+}
+
+/* Variante con borde envolvente y padding interior */
+.accordion-bordered .accordion-item {
+  border: var(--border-width) var(--border-style) var(--hg-color-middle-grey);
+  border-radius: var(--border-radius);
+  margin-bottom: 8px;
+  padding: 0 var(--hg-spacing-16);
+}
+
+.accordion-bordered .accordion-item:first-child { border-top: var(--border-width) var(--border-style) var(--hg-color-middle-grey); }

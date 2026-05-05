@@ -348,6 +348,654 @@ const COMPONENT_SECTIONS = [
         ]
       }
     ]
+  },
+
+  /* ============================================
+     TYPOGRAPHY
+     ============================================ */
+  {
+    id: 'typography',
+    title: 'Typography',
+    description:
+      'Clases utilitarias para texto: encabezados <code>.h1</code>–<code>.h6</code>, <code>.lead</code>, <code>.muted</code>, <code>.large</code>, <code>.small</code>, <code>.blockquote</code>, <code>.code</code>, <code>.kbd</code>. Clases en <code>themes/_base/_typography.css</code>.',
+    examples: [
+      {
+        subtitle: 'Encabezados',
+        items: [
+          { html: '<h1 class="h1">Heading 1</h1>', cls: '.h1' },
+          { html: '<h2 class="h2">Heading 2</h2>', cls: '.h2' },
+          { html: '<h3 class="h3">Heading 3</h3>', cls: '.h3' },
+          { html: '<h4 class="h4">Heading 4</h4>', cls: '.h4' },
+          { html: '<h5 class="h5">Heading 5</h5>', cls: '.h5' },
+          { html: '<h6 class="h6">Heading 6</h6>', cls: '.h6' }
+        ]
+      },
+      {
+        subtitle: 'Cuerpo',
+        items: [
+          { html: '<p class="lead">Texto de entradilla, ligero y grande.</p>', cls: '.lead' },
+          { html: '<p class="large">Texto grande y semibold.</p>', cls: '.large' },
+          { html: '<p class="small">Texto pequeño 12px.</p>', cls: '.small' },
+          { html: '<p class="muted">Texto en gris para detalles secundarios.</p>', cls: '.muted' },
+          { html: '<blockquote class="blockquote">Cita destacada con borde lateral.</blockquote>', cls: '.blockquote' }
+        ]
+      },
+      {
+        subtitle: 'Inline',
+        items: [
+          { html: '<code class="code">npm install holygrailcss</code>', cls: '.code' },
+          { html: '<span class="kbd">⌘</span> <span class="kbd">K</span>', cls: '.kbd' }
+        ]
+      }
+    ]
+  },
+
+  /* ============================================
+     CARD
+     ============================================ */
+  {
+    id: 'card',
+    title: 'Card',
+    description:
+      'Contenedor genérico con <code>card-header</code>, <code>card-body</code> y <code>card-footer</code>. Usa <code>.card-flat</code> para fondo gris sin borde. Clases en <code>themes/_base/_card.css</code>.',
+    examples: [
+      {
+        subtitle: 'Variantes',
+        items: [
+          {
+            html:
+              '<div class="card" style="max-width:320px;"><div class="card-header"><h3 class="card-title">Plan Pro</h3><p class="card-description">Para equipos en crecimiento.</p></div><div class="card-body">29 €/mes con todas las funcionalidades incluidas.</div><div class="card-footer"><button class="btn btn-primary btn-sm">Comprar</button></div></div>',
+            cls: '.card (con header/body/footer)'
+          },
+          {
+            html:
+              '<div class="card card-flat" style="max-width:320px; padding:var(--hg-spacing-16);">Card flat: sin borde, fondo gris.</div>',
+            cls: '.card.card-flat'
+          }
+        ]
+      }
+    ]
+  },
+
+  /* ============================================
+     BADGE
+     ============================================ */
+  {
+    id: 'badge',
+    title: 'Badge',
+    description:
+      'Etiquetas pequeñas para estado / categoría. Variantes semánticas: default, secondary, outline, destructive, success, warning, info. Clases en <code>themes/_base/_badge.css</code>.',
+    examples: [
+      {
+        subtitle: 'Variantes',
+        items: [
+          { html: '<span class="badge">Default</span>', cls: '.badge' },
+          { html: '<span class="badge badge-secondary">Secondary</span>', cls: '.badge-secondary' },
+          { html: '<span class="badge badge-outline">Outline</span>', cls: '.badge-outline' },
+          { html: '<span class="badge badge-destructive">Destructive</span>', cls: '.badge-destructive' },
+          { html: '<span class="badge badge-success">Success</span>', cls: '.badge-success' },
+          { html: '<span class="badge badge-warning">Warning</span>', cls: '.badge-warning' },
+          { html: '<span class="badge badge-info">Info</span>', cls: '.badge-info' }
+        ]
+      }
+    ]
+  },
+
+  /* ============================================
+     ALERT
+     ============================================ */
+  {
+    id: 'alert',
+    title: 'Alert',
+    description:
+      'Banner inline para info / warning / error / success. Usa <code>alert-icon</code>, <code>alert-content</code> con <code>alert-title</code> y <code>alert-description</code>. Clases en <code>themes/_base/_alert.css</code>.',
+    examples: [
+      {
+        subtitle: 'Variantes',
+        items: [
+          {
+            html:
+              '<div class="alert alert-info" style="max-width:480px;"><div class="alert-content"><h5 class="alert-title">Heads up</h5><p class="alert-description">Tu trial expira en 3 días.</p></div></div>',
+            cls: '.alert.alert-info'
+          },
+          {
+            html:
+              '<div class="alert alert-success" style="max-width:480px;"><div class="alert-content"><h5 class="alert-title">Guardado</h5><p class="alert-description">Tus cambios están publicados.</p></div></div>',
+            cls: '.alert.alert-success'
+          },
+          {
+            html:
+              '<div class="alert alert-warning" style="max-width:480px;"><div class="alert-content"><h5 class="alert-title">Atención</h5><p class="alert-description">El stock es limitado.</p></div></div>',
+            cls: '.alert.alert-warning'
+          },
+          {
+            html:
+              '<div class="alert alert-destructive" style="max-width:480px;"><div class="alert-content"><h5 class="alert-title">Error</h5><p class="alert-description">No se pudo guardar.</p></div></div>',
+            cls: '.alert.alert-destructive'
+          }
+        ]
+      }
+    ]
+  },
+
+  /* ============================================
+     AVATAR
+     ============================================ */
+  {
+    id: 'avatar',
+    title: 'Avatar',
+    description:
+      'Círculo con imagen + fallback de iniciales. Tamaños <code>-sm</code> 24, default 40, <code>-lg</code> 56, <code>-xl</code> 80. Variante <code>.avatar-square</code>. Clases en <code>themes/_base/_avatar.css</code>.',
+    examples: [
+      {
+        subtitle: 'Tamaños',
+        items: [
+          { html: '<span class="avatar avatar-sm"><span class="avatar-fallback">MR</span></span>', cls: '.avatar.avatar-sm' },
+          { html: '<span class="avatar"><span class="avatar-fallback">MR</span></span>', cls: '.avatar' },
+          { html: '<span class="avatar avatar-lg"><span class="avatar-fallback">MR</span></span>', cls: '.avatar.avatar-lg' },
+          { html: '<span class="avatar avatar-xl"><span class="avatar-fallback">MR</span></span>', cls: '.avatar.avatar-xl' }
+        ]
+      },
+      {
+        subtitle: 'Variantes',
+        items: [
+          { html: '<span class="avatar avatar-square"><span class="avatar-fallback">SQ</span></span>', cls: '.avatar.avatar-square' },
+          {
+            html:
+              '<div class="avatar-group"><span class="avatar"><span class="avatar-fallback">A</span></span><span class="avatar"><span class="avatar-fallback">B</span></span><span class="avatar"><span class="avatar-fallback">C</span></span></div>',
+            cls: '.avatar-group'
+          }
+        ]
+      }
+    ]
+  },
+
+  /* ============================================
+     SEPARATOR
+     ============================================ */
+  {
+    id: 'separator',
+    title: 'Separator',
+    description:
+      'Divisor horizontal o vertical. Variante con texto en el centro. Clases en <code>themes/_base/_separator.css</code>.',
+    examples: [
+      {
+        subtitle: 'Variantes',
+        items: [
+          { html: '<div style="width:240px;"><hr class="separator"></div>', cls: '.separator' },
+          {
+            html:
+              '<div style="display:flex; height:24px; align-items:center; gap:8px;">Izq<div class="separator separator-vertical"></div>Der</div>',
+            cls: '.separator.separator-vertical'
+          },
+          {
+            html:
+              '<div class="separator separator-with-label" style="width:240px;">o continúa con</div>',
+            cls: '.separator-with-label'
+          }
+        ]
+      }
+    ]
+  },
+
+  /* ============================================
+     PROGRESS
+     ============================================ */
+  {
+    id: 'progress',
+    title: 'Progress',
+    description:
+      'Barra de progreso con tamaños <code>-sm</code>, default y <code>-lg</code>. Variante indeterminada. Clases en <code>themes/_base/_progress.css</code>.',
+    examples: [
+      {
+        subtitle: 'Determinado',
+        items: [
+          {
+            html: '<div class="progress" style="width:240px;"><div class="progress-bar" style="width:30%"></div></div>',
+            cls: '.progress (30%)'
+          },
+          {
+            html: '<div class="progress" style="width:240px;"><div class="progress-bar" style="width:65%"></div></div>',
+            cls: '.progress (65%)'
+          },
+          {
+            html: '<div class="progress progress-success" style="width:240px;"><div class="progress-bar" style="width:100%"></div></div>',
+            cls: '.progress.progress-success'
+          }
+        ]
+      },
+      {
+        subtitle: 'Tamaños',
+        items: [
+          { html: '<div class="progress progress-sm" style="width:240px;"><div class="progress-bar" style="width:50%"></div></div>', cls: '.progress.progress-sm' },
+          { html: '<div class="progress progress-lg" style="width:240px;"><div class="progress-bar" style="width:50%"></div></div>', cls: '.progress.progress-lg' }
+        ]
+      },
+      {
+        subtitle: 'Indeterminado',
+        items: [
+          {
+            html: '<div class="progress progress-indeterminate" style="width:240px;"><div class="progress-bar"></div></div>',
+            cls: '.progress.progress-indeterminate'
+          }
+        ]
+      }
+    ]
+  },
+
+  /* ============================================
+     SKELETON
+     ============================================ */
+  {
+    id: 'skeleton',
+    title: 'Skeleton',
+    description:
+      'Placeholders animados durante la carga. Modificadores <code>-text</code>, <code>-title</code>, <code>-avatar</code>, <code>-button</code>, <code>-card</code>. Clases en <code>themes/_base/_skeleton.css</code>.',
+    examples: [
+      {
+        subtitle: 'Variantes',
+        items: [
+          {
+            html:
+              '<div style="width:240px;"><div class="skeleton skeleton-title"></div><div class="skeleton skeleton-text"></div><div class="skeleton skeleton-text" style="width:80%;"></div></div>',
+            cls: '.skeleton-title + .skeleton-text'
+          },
+          { html: '<div class="skeleton skeleton-avatar"></div>', cls: '.skeleton-avatar' },
+          { html: '<div class="skeleton skeleton-button"></div>', cls: '.skeleton-button' },
+          { html: '<div class="skeleton skeleton-card" style="width:240px;"></div>', cls: '.skeleton-card' }
+        ]
+      }
+    ]
+  },
+
+  /* ============================================
+     TEXTAREA
+     ============================================ */
+  {
+    id: 'textarea',
+    title: 'Textarea',
+    description:
+      'Multilinea con misma estética del Input. Estados error / success / warning. Variante <code>-fixed</code> sin redimensionar. Clases en <code>themes/_base/_textarea.css</code>.',
+    examples: [
+      {
+        subtitle: 'Estados',
+        items: [
+          { html: '<textarea class="textarea" placeholder="Escribe aquí…"></textarea>', cls: '.textarea' },
+          { html: '<textarea class="textarea textarea-error" value="">No puede estar vacío</textarea>', cls: '.textarea-error' },
+          { html: '<textarea class="textarea" disabled>Deshabilitado</textarea>', cls: '.textarea[disabled]' },
+          { html: '<textarea class="textarea textarea-fixed" placeholder="Sin resize"></textarea>', cls: '.textarea-fixed' }
+        ]
+      }
+    ]
+  },
+
+  /* ============================================
+     SELECT
+     ============================================ */
+  {
+    id: 'select',
+    title: 'Select',
+    description:
+      'Select nativo con caret SVG personalizado, más una maqueta de dropdown custom. Clases en <code>themes/_base/_select.css</code>.',
+    examples: [
+      {
+        subtitle: 'Nativo',
+        items: [
+          {
+            html:
+              '<select class="select"><option>Selecciona una opción</option><option>Opción A</option><option>Opción B</option></select>',
+            cls: '.select'
+          },
+          {
+            html:
+              '<select class="select" disabled><option>Deshabilitado</option></select>',
+            cls: '.select[disabled]'
+          }
+        ]
+      },
+      {
+        subtitle: 'Custom (mock)',
+        items: [
+          {
+            html:
+              '<div class="select-custom" style="width:220px; position:relative;"><button class="select-trigger" type="button">Opción A <span class="select-caret">▾</span></button><ul class="select-menu" style="position:relative; display:block; margin-top:4px;"><li class="select-item is-selected">Opción A</li><li class="select-item">Opción B</li><li class="select-item">Opción C</li></ul></div>',
+            cls: '.select-custom (open)'
+          }
+        ]
+      }
+    ]
+  },
+
+  /* ============================================
+     SLIDER
+     ============================================ */
+  {
+    id: 'slider',
+    title: 'Slider',
+    description:
+      'Range input estilizado en WebKit + Firefox. Clases en <code>themes/_base/_slider.css</code>.',
+    examples: [
+      {
+        subtitle: 'Variantes',
+        items: [
+          { html: '<input type="range" class="slider" value="50" style="width:240px;">', cls: '.slider' },
+          { html: '<input type="range" class="slider" value="50" disabled style="width:240px;">', cls: '.slider[disabled]' }
+        ]
+      }
+    ]
+  },
+
+  /* ============================================
+     TOGGLE GROUP
+     ============================================ */
+  {
+    id: 'toggle-group',
+    title: 'Toggle Group',
+    description:
+      'Botones tipo pill agrupados con estado activo. Clases en <code>themes/_base/_toggle-group.css</code>.',
+    examples: [
+      {
+        subtitle: 'Single',
+        items: [
+          { html: '<button class="toggle">Inactivo</button>', cls: '.toggle' },
+          { html: '<button class="toggle is-active">Activo</button>', cls: '.toggle.is-active' }
+        ]
+      },
+      {
+        subtitle: 'Group',
+        items: [
+          {
+            html:
+              '<div class="toggle-group"><button class="toggle is-active">Bold</button><button class="toggle">Italic</button><button class="toggle">Underline</button></div>',
+            cls: '.toggle-group'
+          }
+        ]
+      }
+    ]
+  },
+
+  /* ============================================
+     INPUT OTP
+     ============================================ */
+  {
+    id: 'otp',
+    title: 'Input OTP',
+    description:
+      'Celdas individuales para códigos OTP / 2FA. Tamaños <code>-sm</code>, default y <code>-lg</code>. Clases en <code>themes/_base/_input-otp.css</code>.',
+    examples: [
+      {
+        subtitle: 'Default',
+        items: [
+          {
+            html:
+              '<div class="otp"><input class="otp-slot" maxlength="1" inputmode="numeric" value="1"><input class="otp-slot" maxlength="1" inputmode="numeric" value="2"><input class="otp-slot" maxlength="1" inputmode="numeric" value="3"><span class="otp-separator">-</span><input class="otp-slot" maxlength="1" inputmode="numeric"><input class="otp-slot" maxlength="1" inputmode="numeric"><input class="otp-slot" maxlength="1" inputmode="numeric"></div>',
+            cls: '.otp'
+          }
+        ]
+      }
+    ]
+  },
+
+  /* ============================================
+     TABLE
+     ============================================ */
+  {
+    id: 'table',
+    title: 'Table',
+    description:
+      'Tabla con divisores horizontales, header sutil y hover de fila. Variantes <code>-bordered</code>, <code>-striped</code>, <code>-compact</code>. Clases en <code>themes/_base/_table.css</code>.',
+    examples: [
+      {
+        subtitle: 'Default',
+        items: [
+          {
+            html:
+              '<div class="table-wrapper" style="max-width:480px;"><table class="table"><thead><tr><th>Cliente</th><th>Estado</th><th>Importe</th></tr></thead><tbody><tr><td>Acme Inc.</td><td><span class="badge badge-success">Pagado</span></td><td>250,00 €</td></tr><tr><td>Globex</td><td><span class="badge badge-warning">Pendiente</span></td><td>1.500,00 €</td></tr><tr><td>Initech</td><td><span class="badge badge-destructive">Vencido</span></td><td>820,00 €</td></tr></tbody></table></div>',
+            cls: '.table'
+          }
+        ]
+      }
+    ]
+  },
+
+  /* ============================================
+     TABS
+     ============================================ */
+  {
+    id: 'tabs',
+    title: 'Tabs',
+    description:
+      'CSS-only con <code>:has()</code> + radio inputs ocultos. Variante <code>tabs-pills</code>. Clases en <code>themes/_base/_tabs.css</code>.',
+    examples: [
+      {
+        subtitle: 'Underline (default)',
+        items: [
+          {
+            html:
+              '<div class="tabs" style="max-width:480px;"><div class="tabs-list"><input type="radio" name="cmp-tabs-1" id="t1-a" class="tabs-input" checked><label for="t1-a" class="tabs-trigger">General</label><input type="radio" name="cmp-tabs-1" id="t1-b" class="tabs-input"><label for="t1-b" class="tabs-trigger">Notificaciones</label><input type="radio" name="cmp-tabs-1" id="t1-c" class="tabs-input"><label for="t1-c" class="tabs-trigger">Facturación</label></div><div class="tabs-panel" data-for="t1-a">Panel General</div><div class="tabs-panel" data-for="t1-b">Panel Notificaciones</div><div class="tabs-panel" data-for="t1-c">Panel Facturación</div></div>',
+            cls: '.tabs'
+          }
+        ]
+      }
+    ]
+  },
+
+  /* ============================================
+     ACCORDION
+     ============================================ */
+  {
+    id: 'accordion',
+    title: 'Accordion',
+    description:
+      'Construido con <code>&lt;details&gt;</code>/<code>&lt;summary&gt;</code> nativo, sin JS. Variante <code>-bordered</code>. Clases en <code>themes/_base/_accordion.css</code>.',
+    examples: [
+      {
+        subtitle: 'Default',
+        items: [
+          {
+            html:
+              '<div class="accordion" style="max-width:480px;"><details class="accordion-item" open><summary class="accordion-trigger">¿Qué incluye el plan?</summary><div class="accordion-content">Acceso completo a todas las funciones, soporte por email y actualizaciones gratuitas.</div></details><details class="accordion-item"><summary class="accordion-trigger">¿Puedo cancelar en cualquier momento?</summary><div class="accordion-content">Sí, sin permanencia. Cancela desde tu panel cuando quieras.</div></details></div>',
+            cls: '.accordion'
+          }
+        ]
+      }
+    ]
+  },
+
+  /* ============================================
+     BREADCRUMB
+     ============================================ */
+  {
+    id: 'breadcrumb',
+    title: 'Breadcrumb',
+    description:
+      'Cadena de navegación con separadores. Clases en <code>themes/_base/_breadcrumb.css</code>.',
+    examples: [
+      {
+        subtitle: 'Default',
+        items: [
+          {
+            html:
+              '<nav class="breadcrumb"><ol class="breadcrumb-list"><li class="breadcrumb-item"><a href="#">Home</a></li><li class="breadcrumb-separator">/</li><li class="breadcrumb-item"><a href="#">Productos</a></li><li class="breadcrumb-separator">/</li><li class="breadcrumb-item is-active" aria-current="page">Camiseta</li></ol></nav>',
+            cls: '.breadcrumb'
+          }
+        ]
+      }
+    ]
+  },
+
+  /* ============================================
+     PAGINATION
+     ============================================ */
+  {
+    id: 'pagination',
+    title: 'Pagination',
+    description:
+      'Lista de páginas con prev/next y elipsis. Clases en <code>themes/_base/_pagination.css</code>.',
+    examples: [
+      {
+        subtitle: 'Default',
+        items: [
+          {
+            html:
+              '<nav><ul class="pagination"><li class="pagination-item"><a class="pagination-link pagination-prev" href="#">‹ Prev</a></li><li class="pagination-item"><a class="pagination-link" href="#">1</a></li><li class="pagination-item" aria-current="page"><a class="pagination-link is-active" href="#">2</a></li><li class="pagination-item"><a class="pagination-link" href="#">3</a></li><li class="pagination-item"><span class="pagination-ellipsis">…</span></li><li class="pagination-item"><a class="pagination-link" href="#">9</a></li><li class="pagination-item"><a class="pagination-link pagination-next" href="#">Next ›</a></li></ul></nav>',
+            cls: '.pagination'
+          }
+        ]
+      }
+    ]
+  },
+
+  /* ============================================
+     SIDEBAR
+     ============================================ */
+  {
+    id: 'sidebar',
+    title: 'Sidebar',
+    description:
+      'Barra lateral con secciones, items y estado activo. Variante <code>sidebar-collapsed</code> (icon only). Clases en <code>themes/_base/_sidebar.css</code>.',
+    examples: [
+      {
+        subtitle: 'Default',
+        items: [
+          {
+            html:
+              '<aside class="sidebar" style="height:auto; min-height:280px;"><div class="sidebar-header"><span class="sidebar-brand">holygrailcss</span></div><div class="sidebar-section"><div class="sidebar-label">Workspace</div><ul class="sidebar-list"><li><a class="sidebar-link is-active" href="#"><span>Dashboard</span></a></li><li><a class="sidebar-link" href="#"><span>Projects</span></a></li><li><a class="sidebar-link" href="#"><span>Settings</span></a></li></ul></div></aside>',
+            cls: '.sidebar'
+          }
+        ]
+      }
+    ]
+  },
+
+  /* ============================================
+     DIALOG
+     ============================================ */
+  {
+    id: 'dialog',
+    title: 'Dialog',
+    description:
+      'Modal sobre <code>&lt;dialog&gt;</code> nativo. Tamaños <code>-sm</code>, default, <code>-lg</code>, <code>-xl</code>. En el demo se muestra inline (con atributo <code>open</code>) para visualizar los estilos. Clases en <code>themes/_base/_dialog.css</code>.',
+    examples: [
+      {
+        subtitle: 'Estructura',
+        items: [
+          {
+            html:
+              '<dialog class="dialog" open style="position:relative; inset:auto; margin:0;"><div class="dialog-header"><h3 class="dialog-title">¿Estás seguro?</h3><p class="dialog-description">Esta acción no se puede deshacer.</p></div><div class="dialog-body">Se eliminarán permanentemente todos los datos asociados a tu cuenta.</div><div class="dialog-footer"><button class="btn btn-tertiary btn-sm">Cancelar</button><button class="btn btn-primary btn-sm">Confirmar</button></div></dialog>',
+            cls: '.dialog'
+          }
+        ]
+      }
+    ]
+  },
+
+  /* ============================================
+     DRAWER
+     ============================================ */
+  {
+    id: 'drawer',
+    title: 'Drawer',
+    description:
+      'Panel lateral. Lados: <code>-left</code>, <code>-right</code>, <code>-top</code>, <code>-bottom</code>. En el demo se muestra inline con override de posición. Clases en <code>themes/_base/_drawer.css</code>.',
+    examples: [
+      {
+        subtitle: 'Estructura',
+        items: [
+          {
+            html:
+              '<aside class="drawer drawer-right is-open" style="position:relative; inset:auto; height:280px; max-width:320px; transform:none;"><div class="drawer-header"><h3 class="drawer-title">Filtros</h3></div><div class="drawer-body"><p class="muted small">Categoría, precio, color…</p></div><div class="drawer-footer"><button class="btn btn-tertiary btn-sm">Limpiar</button><button class="btn btn-primary btn-sm">Aplicar</button></div></aside>',
+            cls: '.drawer.drawer-right.is-open'
+          }
+        ]
+      }
+    ]
+  },
+
+  /* ============================================
+     DROPDOWN
+     ============================================ */
+  {
+    id: 'dropdown',
+    title: 'Dropdown menu',
+    description:
+      'Menú flotante anclado a un trigger. <code>.is-open</code> activa la visibilidad. Clases en <code>themes/_base/_dropdown.css</code>.',
+    examples: [
+      {
+        subtitle: 'Estructura',
+        items: [
+          {
+            html:
+              '<div class="dropdown is-open" style="height:240px;"><button class="btn btn-tertiary btn-sm dropdown-trigger" type="button">Acciones ▾</button><div class="dropdown-menu" role="menu"><div class="dropdown-label">Cuenta</div><button class="dropdown-item">Perfil <span class="dropdown-shortcut">⌘P</span></button><button class="dropdown-item">Ajustes <span class="dropdown-shortcut">⌘,</span></button><div class="dropdown-separator"></div><button class="dropdown-item dropdown-item-destructive">Cerrar sesión</button></div></div>',
+            cls: '.dropdown.is-open'
+          }
+        ]
+      }
+    ]
+  },
+
+  /* ============================================
+     TOOLTIP
+     ============================================ */
+  {
+    id: 'tooltip',
+    title: 'Tooltip',
+    description:
+      'CSS-only con <code>:hover</code> / <code>:focus-within</code>. Posiciones <code>-top</code> (default), <code>-bottom</code>, <code>-left</code>, <code>-right</code>. Pasa el cursor sobre el botón. Clases en <code>themes/_base/_tooltip.css</code>.',
+    examples: [
+      {
+        subtitle: 'Posiciones',
+        items: [
+          {
+            html:
+              '<span class="tooltip tooltip-top" style="margin:24px;"><button class="btn btn-tertiary btn-sm">Hover top</button><span class="tooltip-content">Tooltip arriba</span></span>',
+            cls: '.tooltip-top'
+          },
+          {
+            html:
+              '<span class="tooltip tooltip-bottom" style="margin:24px;"><button class="btn btn-tertiary btn-sm">Hover bottom</button><span class="tooltip-content">Tooltip debajo</span></span>',
+            cls: '.tooltip-bottom'
+          },
+          {
+            html:
+              '<span class="tooltip tooltip-right" style="margin:24px;"><button class="btn btn-tertiary btn-sm">Hover right</button><span class="tooltip-content">Tooltip derecha</span></span>',
+            cls: '.tooltip-right'
+          }
+        ]
+      }
+    ]
+  },
+
+  /* ============================================
+     TOAST
+     ============================================ */
+  {
+    id: 'toast',
+    title: 'Toast',
+    description:
+      'Notificación efímera. En producción vive dentro de <code>.toaster</code> (fixed). En el demo se muestra inline. Clases en <code>themes/_base/_toast.css</code>.',
+    examples: [
+      {
+        subtitle: 'Variantes',
+        items: [
+          {
+            html:
+              '<div class="toast"><div class="toast-content"><h5 class="toast-title">Guardado</h5><p class="toast-description">Tus cambios están publicados.</p></div><button class="toast-close" aria-label="Cerrar">×</button></div>',
+            cls: '.toast'
+          },
+          {
+            html:
+              '<div class="toast toast-success"><div class="toast-content"><h5 class="toast-title">Compra confirmada</h5><p class="toast-description">Recibirás el pedido en 24 h.</p></div></div>',
+            cls: '.toast.toast-success'
+          },
+          {
+            html:
+              '<div class="toast toast-destructive"><div class="toast-content"><h5 class="toast-title">Error</h5><p class="toast-description">No se pudo conectar.</p></div></div>',
+            cls: '.toast.toast-destructive'
+          }
+        ]
+      }
+    ]
   }
 ];
 

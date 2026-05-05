@@ -1,0 +1,102 @@
+/**
+ * Tabs
+ * CSS-only con <input type="radio">:checked + label.
+ *
+ * Estructura:
+ *   <div class="tabs">
+ *     <input type="radio" name="t1" id="t1-a" class="tabs-input" checked>
+ *     <label for="t1-a" class="tabs-trigger">Tab A</label>
+ *     <input type="radio" name="t1" id="t1-b" class="tabs-input">
+ *     <label for="t1-b" class="tabs-trigger">Tab B</label>
+ *
+ *     <div class="tabs-panel" data-for="t1-a">Content A</div>
+ *     <div class="tabs-panel" data-for="t1-b">Content B</div>
+ *   </div>
+ *
+ * Para React/JS: usa .tabs-trigger.is-active y .tabs-panel.is-active manualmente.
+ */
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: var(--hg-typo-font-family-primary-regular);
+}
+
+.tabs-input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  width: 0;
+  height: 0;
+}
+
+.tabs-trigger {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--hg-color-dark-grey);
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px; /* superpone el border de la lista */
+  transition: color 0.12s ease, border-color 0.12s ease;
+  user-select: none;
+}
+
+.tabs-trigger:hover {
+  color: var(--hg-color-primary);
+}
+
+.tabs-input:checked + .tabs-trigger,
+.tabs-trigger.is-active {
+  color: var(--hg-color-primary);
+  border-bottom-color: var(--hg-color-primary);
+}
+
+.tabs-list {
+  display: flex;
+  gap: 4px;
+  border-bottom: 1px solid var(--hg-color-middle-grey);
+  width: 100%;
+}
+
+/* Variante: tabs en pill */
+.tabs-pills .tabs-trigger,
+.tabs-trigger.tabs-pill {
+  border: 1px solid transparent;
+  border-radius: var(--border-radius);
+  margin-bottom: 0;
+}
+
+.tabs-pills .tabs-input:checked + .tabs-trigger,
+.tabs-pill.is-active {
+  background: var(--hg-color-primary);
+  color: var(--hg-color-white);
+  border-color: var(--hg-color-primary);
+}
+
+/* Panels */
+.tabs-panel {
+  width: 100%;
+  padding: var(--hg-spacing-16) 0;
+  display: none;
+}
+
+.tabs-panel.is-active {
+  display: block;
+}
+
+/* Patrón sin JS: cada panel se muestra solo si su radio asociado está :checked.
+   Se requiere un orden donde el panel sigue a un radio con id correspondiente.
+   El selector :has() lo hace posible en navegadores modernos. */
+.tabs:has(.tabs-input:checked) .tabs-panel { display: none; }
+
+.tabs:has(#t1-a:checked) .tabs-panel[data-for="t1-a"],
+.tabs:has(#t1-b:checked) .tabs-panel[data-for="t1-b"],
+.tabs:has(#t1-c:checked) .tabs-panel[data-for="t1-c"],
+.tabs:has(#t1-d:checked) .tabs-panel[data-for="t1-d"] {
+  display: block;
+}
