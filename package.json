@@ -1,6 +1,6 @@
 {
   "name": "holygrailcss",
-  "version": "4.0.0",
+  "version": "4.0.2",
   "description": "Framework CSS generator con Node.js - Genera CSS optimizado con variables CSS desde un archivo JSON de configuración",
   "main": "generate-css.js",
   "style": "dist/output.css",
@@ -8,8 +8,9 @@
     ".": {
       "default": "./generate-css.js"
     },
-    "./dist/output": "./dist/output.css",
-    "./dist/black-yellow": "./dist/themes/black-yellow.css"
+    "./dist/output.css": "./dist/output.css",
+    "./dist/themes/*.css": "./dist/themes/*.css",
+    "./dist/*.css": "./dist/*.css"
   },
   "bin": {
     "holygrailcss": "./generate-css.js"
